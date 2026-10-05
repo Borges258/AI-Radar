@@ -2,7 +2,6 @@
 // 将最新报告渲染为单个 HTML 并用浏览器打开（仅预览，不含源码视图）
 import { execSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
 const root = resolve(process.cwd());
@@ -111,7 +110,7 @@ if (!existsSync(mdPath)) { console.error("未找到 recommendations.md"); proces
 
 const body = renderMarkdown(readFileSync(mdPath, "utf8"));
 const page = buildPage(`信息雷达 · ${latest}`, body);
-const outPath = join(tmpdir(), `info-radar-${latest}.html`);
+const outPath = join(digestsDir, latest, "preview.html");
 writeFileSync(outPath, page, "utf8");
 
 const open = process.platform === "win32"
