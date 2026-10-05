@@ -46,6 +46,12 @@ function renderRecommendations(date: string, recs: Recommendation[], summary?: s
     "",
     `> 共推荐 ${recs.length} 条高质量内容，按综合评分排序`,
     "",
+    "## 项目概述",
+    "",
+    "信息雷达（周报机器人）是一个每日自动收集并精选 AI 领域资讯的自动化工具：它定时从 Hacker News、ArXiv、Lobste.rs、Dev.to、GitHub、Hugging Face 等多个来源抓取链接，经过 URL/标题/内容多维去重后，按相关性、权威性、时效性与热度进行质量评分，最终自动推荐每日 Top5，并生成摘要与个性化推荐理由。",
+    "",
+    "它的价值在于：无需人工逐一浏览多个站点，即可快速拿到当日 AI 领域最值得关注的内容，适合日常信息追踪与周报素材积累。",
+    "",
   ];
   if (summary) {
     lines.push("## 每日摘要", "");
