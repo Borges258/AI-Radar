@@ -45,6 +45,11 @@ export async function runPipeline(log: Logger): Promise<PipelineResult> {
           r.reasons = [report.reasons[i]];
         });
       }
+      if (report.overviews.length === recommendations.length) {
+        recommendations.forEach((r, i) => {
+          r.overview = report.overviews[i];
+        });
+      }
       log.info(`LLM (${llmCfg.model}) 已生成推荐报告与个性化理由`);
     } catch (e) {
       log.error("LLM 生成失败，回退到规则理由", e);

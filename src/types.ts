@@ -48,6 +48,8 @@ export interface ScoredLink extends DedupedLink {
 export interface Recommendation extends ScoredLink {
   rank: number;
   reasons: string[];
+  /** LLM 生成的针对该条内容的中文概述（做了什么/有什么用/新闻讲了什么） */
+  overview?: string;
 }
 
 /** 用户偏好（预留接口，当前默认为纯评分排序） */

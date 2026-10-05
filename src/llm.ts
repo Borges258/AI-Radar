@@ -26,6 +26,7 @@ export function llmEnabled(cfg: LlmConfig): boolean {
 export interface LlmReport {
   summary: string;
   reasons: string[];
+  overviews: string[];
 }
 
 /** 生成每日推荐报告：导语摘要 + 每条个性化推荐理由（OpenAI 兼容接口） */
@@ -39,10 +40,11 @@ export async function generateReport(recs: Recommendation[]): Promise<LlmReport>
 
   const prompt = `你是「信息雷达」每日资讯推荐助手。请根据下面的 Top 推荐链接生成：
 1. "summary"：一段简短的中文每日导语摘要（80~120 字，概括今天值得关注的主题与亮点）；
-2. "reasons"：为每一条推荐写一句个性化推荐理由（中文，30 字以内，突出其核心价值）。
+2. "overviews"：为每一条推荐写一句中文概述（60~100 字，简要说明这个项目/工具做了什么、有什么用，或这篇新闻主要讲了什么）；
+3. "reasons"：为每一条推荐写一句个性化推荐理由（中文，30 字以内，突出其核心价值）。
 
-只输出 JSON，不要任何多余文字，格式：
-{"summary":"...","reasons":["...","..."]}
+只输出 JSON，不要任何多余文字，且 overviews 与 reasons 的数组长度必须与推荐列表条数一致，格式：
+{"summary":"...","overviews":["...","..."],"reasons":["...","..."]}
 
 推荐列表：
 ${listText}`;
@@ -86,11 +88,14 @@ function parseReportJson(content: string, count: number): LlmReport {
   const start = cleaned.indexOf("{");
   const end = cleaned.lastIndexOf("}");
   if (start === -1 || end === -1) throw new Error("LLM 返回内容不是合法 JSON");
-  const obj = JSON.parse(cleaned.slice(start, end + 1)) as { summary?: string; reasons?: string[] };
+  const obj = JSON.parse(cleaned.slice(start, end + 1)) as { summary?: string; reasons?: string[]; overviews?: string[] };
   return {
     summary: typeof obj.summary === "string" ? obj.summary.trim() : "",
     reasons: Array.isArray(obj.reasons)
       ? obj.reasons.slice(0, count).map((r) => String(r).trim())
+      : [],
+    overviews: Array.isArray(obj.overviews)
+      ? obj.overviews.slice(0, count).map((r) => String(r).trim())
       : [],
   };
 }
