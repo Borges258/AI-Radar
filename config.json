@@ -1,0 +1,42 @@
+{
+  "targetLinks": 30,
+  "recommendationCount": 5,
+  "dedupSimilarityThreshold": 0.85,
+  "keywords": [
+    "ai",
+    "artificial intelligence",
+    "llm",
+    "large language model",
+    "machine learning",
+    "deep learning",
+    "agent",
+    "rag",
+    "transformer",
+    "gpt",
+    "claude",
+    "openai",
+    "anthropic",
+    "model",
+    "neural",
+    "inference",
+    "vector database",
+    "fine-tun",
+    "generative",
+    "langchain",
+    "multimodal"
+  ],
+  "sources": {
+    "hackernews": { "enabled": true, "max": 30 },
+    "arxiv": { "enabled": true, "max": 30 },
+    "lobsters": { "enabled": true, "max": 30 },
+    "devto": { "enabled": true, "max": 30 },
+    "github": { "enabled": true, "max": 30 },
+    "huggingface": { "enabled": true, "max": 20 }
+  },
+  "preference": {
+    "keywords": [],
+    "preferredSources": [],
+    "excludedSources": [],
+    "minScore": 0
+  }
+}
