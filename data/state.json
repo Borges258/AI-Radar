@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-05T07:59:23.478Z",
+  "lastRun": "2026-10-05T08:03:51.198Z",
   "seenFingerprints": [
     "u:https://github.com/allenv0/SCM",
     "t:a179ed429c2f4b1f104534c6c23d0a861a2d6c590816254e4705510d6923abde",
@@ -516,6 +516,12 @@
     "c:69dea9ed521ded999fed190520eadd01320d68c049337c1004099b118078f9de",
     "u:https://github.com/unclecode/crawl4ai",
     "t:e9b4e715d3993dc1685eee95295fe9a3c53d1d788df4bc078df2ccd2cbcc16b2",
-    "c:69ef461b2371fd27d46e36f0bd3d28f8cbe993192de531d06f608706ccfd0312"
+    "c:69ef461b2371fd27d46e36f0bd3d28f8cbe993192de531d06f608706ccfd0312",
+    "u:https://www.politico.com/news/2026/10/04/sam-altman-decoded-interview-ai-01106217",
+    "t:f04745f3a0ee0ee14e3398012cb7333c766fe7f6ed36e942ebbf90cea6965cb5",
+    "c:f04745f3a0ee0ee14e3398012cb7333c766fe7f6ed36e942ebbf90cea6965cb5",
+    "u:https://news.ycombinator.com/item?id=49960818",
+    "t:b636b520cd964bb6815ea2b9f69d04b726d1b656c7363950b3ceb69572461a98",
+    "c:130808659e2a89fae5110a211accc39cab271efcc0c8582e4a96d0c5d77ec639"
   ]
 }

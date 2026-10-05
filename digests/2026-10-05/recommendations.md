@@ -1,13 +1,26 @@
 # 信息雷达 · 每日推荐 (2026-10-05)
 
-> 共推荐 0 条高质量内容，按综合评分排序
-
-## 项目概述
-
-信息雷达（周报机器人）是一个每日自动收集并精选 AI 领域资讯的自动化工具：它定时从 Hacker News、ArXiv、Lobste.rs、Dev.to、GitHub、Hugging Face 等多个来源抓取链接，经过 URL/标题/内容多维去重后，按相关性、权威性、时效性与热度进行质量评分，最终自动推荐每日 Top5，并生成摘要与个性化推荐理由。
-
-它的价值在于：无需人工逐一浏览多个站点，即可快速拿到当日 AI 领域最值得关注的内容，适合日常信息追踪与周报素材积累。
+> 共推荐 2 条高质量内容，按综合评分排序
 
 ## 每日摘要
 
-今日资讯聚焦前沿科技突破与全球热点事件，精选人工智能最新进展、创新产品发布及重要国际动态。通过多维视角解读行业趋势与关键新闻，帮助您高效把握核心信息，洞察未来发展方向，提供极具价值的决策参考与视野拓展。
+今日AI资讯聚焦安全治理与高层态度。一方面，社区热议LLM安全应作为产品责任由前沿实验室主导，而非单纯依赖公众恐慌；另一方面，Altman最新言论引发争议，主张为AI发展收益接受部分负面事件，反映出行业在激进发展与风险管控间的深层博弈。
+
+## 1. Safety is a product liability Issue
+
+- **来源**: Hacker News
+- **链接**: https://news.ycombinator.com/item?id=49960818
+- **概述**: 该讨论质疑为何LLM安全问题多由前沿实验室推动且易引发公众担忧，主张安全本质上是产品责任，应由开发者承担核心义务而非将焦虑转嫁给大众。
+- **摘要**: Why is safety in LLMS talked so much in the public forum and why is it driven by the frontier labs themselves. Is it not their responsibility  and getting public to be worried looks puzzling?<p>Thoughts welcome
+- **作者**: natrajs
+- **综合评分**: 66 (相关性 60% / 权威性 80% / 时效性 97% / 热度 16%)
+- **推荐理由**: 揭示LLM安全责任归属的关键争议
+
+## 2. Altman: `World should accept some bad things happening' for the benefits of AI
+
+- **来源**: Hacker News
+- **链接**: https://www.politico.com/news/2026/10/04/sam-altman-decoded-interview-ai-01106217
+- **概述**: Altman公开表示世界应接受一些坏事发生以换取AI发展的红利，这一观点引发了关于AI风险容忍度、伦理底线及社会责任边界的激烈辩论。
+- **作者**: theanonymousone
+- **综合评分**: 60 (相关性 45% / 权威性 75% / 时效性 97% / 热度 23%)
+- **推荐理由**: 解读巨头对AI风险容忍度的最新立场
