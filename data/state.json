@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-05T05:09:35.815Z",
+  "lastRun": "2026-10-05T07:57:06.862Z",
   "seenFingerprints": [
     "u:https://github.com/allenv0/SCM",
     "t:a179ed429c2f4b1f104534c6c23d0a861a2d6c590816254e4705510d6923abde",
@@ -495,6 +495,27 @@
     "c:3f3ec07e0654ae3483a1dec157ad2c83bc92ce6c01c9709f93b6b15cdf2fc1e2",
     "u:https://huggingface.co/Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
     "t:2c1b54aadd0a8d0468a2179bf8976adfe8e4ae9e92f9b8ceb95333ad8492bef4",
-    "c:8134bd9f8c3b539dab59aba543031e6c3c315f92caafc0f09a3afc51fe1f2f63"
+    "c:8134bd9f8c3b539dab59aba543031e6c3c315f92caafc0f09a3afc51fe1f2f63",
+    "u:https://news.ycombinator.com/item?id=49954166",
+    "t:8a65c92383e7aa85e1d492447e7563a8740ad382f4a4c4471a645f71f0ae8235",
+    "c:8a65c92383e7aa85e1d492447e7563a8740ad382f4a4c4471a645f71f0ae8235",
+    "u:https://noperator.dev/posts/on-the-money",
+    "t:bf8a9d723fefa01d7bd1998f0d13b955daa2914bb76b2be19c232f1dd9e07ff5",
+    "c:bf8a9d723fefa01d7bd1998f0d13b955daa2914bb76b2be19c232f1dd9e07ff5",
+    "u:https://github.com/lusob/nlc",
+    "t:269564445057997bc16b209a8ff5cb132540f0ead81e900b4fb7416dcd1de61a",
+    "c:269564445057997bc16b209a8ff5cb132540f0ead81e900b4fb7416dcd1de61a",
+    "u:https://github.com/maplibre/maplibre-compose",
+    "t:fd703552c6215a00705dcfd621a92dd19ca5906ee0471b70583ae7d68bc39689",
+    "c:3a02c735d92f61275e79124e6c86e6853359d4e4227d02ca26f93ed2e643377f",
+    "u:https://github.com/sagapranav/jev-pages",
+    "t:4bc08bb3c6713d0045bdc2d025ae65e8eed6bc36f0c58dde947b0867c0c0f44a",
+    "c:95b2a1680f3b71795ce60447d52adcdce9aca56da0d189053099815e497120dd",
+    "u:https://dev.to/debashish_ghosal/the-15-line-test-that-catches-the-1-killer-of-operator-trust-3db7",
+    "t:81d81473c23cc859a3aecf3205793bd85b15c7190befc11107b87ae458138dd4",
+    "c:69dea9ed521ded999fed190520eadd01320d68c049337c1004099b118078f9de",
+    "u:https://github.com/unclecode/crawl4ai",
+    "t:e9b4e715d3993dc1685eee95295fe9a3c53d1d788df4bc078df2ccd2cbcc16b2",
+    "c:69ef461b2371fd27d46e36f0bd3d28f8cbe993192de531d06f608706ccfd0312"
   ]
 }
