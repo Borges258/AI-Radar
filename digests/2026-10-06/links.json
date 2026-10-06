@@ -1,0 +1,1651 @@
+{
+  "date": "2026-10-06",
+  "stats": {
+    "scraped": 170,
+    "deduped": 65,
+    "scored": 65
+  },
+  "recommendations": [
+    {
+      "url": "http://arxiv.org/abs/2610.04740v1",
+      "title": "Toward a Locally Deployable Agentic Co-Scientist: Small-Model Planning for Early-Stage Drug Discovery",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Early-stage computational drug discovery requires coordinating heterogeneous scientific tools across multi-step workflows. We present a lightweight, tool-augmented framework in which a locally deployable compact language model plans calls to 18 modular tools. A Unified Molecular Schema maintains shared molecular records, while a plug-in interface supports tool replacement and extension. We construct 1,263 manually refined query-plan pairs through workflow-graph path coverage and apply LoRA fine-tuning to three compact model families. Under the query-level split, all fine-tuned models generate fully parseable and schema-compliant plans on 47 held-out cross-group queries. Llama 3.2-3B achieves a tool-selection F1 of 0.998, sequence exact match of 0.979, and argument F1 of 0.960. Under the stricter workflow-grouped split, which excludes identical ordered tool sequences across partitions, sequence exact match reaches 0.452 to 0.548, highlighting the remaining difficulty for compact models in generating complete workflow paths unseen during training. These results demonstrate the feasibility of compact, locally deployable planning while identifying compositional generalization as an important direction for further improvement.",
+      "publishedAt": "2026-10-03T20:09:34Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04740v1",
+      "titleHash": "64bce416229ded7ee941a33ca794fd4b20b782bb4c8380349ea8b10e92c4f3b4",
+      "contentHash": "fcffd9929ccc599ef3440731c3a2a12ce434c199072859239f9304568dd8db5d",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5928734274002534,
+        "engagement": 0
+      },
+      "rank": 1,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 77"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04699v1",
+      "title": "Not Self-Decidable: LLMs Cannot Draw the Boundary of What an Agent Verifier Can Check",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "A verifier for an agent faces rules of two kinds: the ones a fixed check can settle and the ones that require a judge. A team that derives its own checks fixes that split up front. Where the requirements come from outside, as in finance, healthcare and law, the agent enforces rules it did not write, so the split falls to runtime, recurring for every predicate of every rule on every action at a rate no reviewer can audit. Every escalation scheme assumes a model can make that decision itself, that it is self-decidable. Across six corpora, including the EU AI Act, FINRA guidance and a deployed credit agent, we collect roughly 22,000 labels from four models built by three labs. They agree almost perfectly where the answer is obvious and collapse on regulatory text; their errors run in opposite directions, so no model can be trusted as the conservative choice; and on the deployed agent's own rule-set they err together, over-claiming that a fixed check will do, the direction that never gets escalated. We introduce CoVer (corroborate-then-verify), which treats unanimity as a nomination, admitting a predicate only when the check synthesized for it survives intervention, reading fields the agent cannot write and holding under deterministic rewording. That gate rejects most of what corroboration wrongly admits, at a cost in coverage we report rather than tune away. The obvious alternative, agreement with a reference judge, certifies nothing: it climbs from 30% to 77% across calibration bands while the genuinely decidable share does not move, because a judge drawn from the population under indictment ratifies the blind spot it shares. Self-decidability is not a capability to elicit from a model but a boundary the verifier must construct.",
+      "publishedAt": "2026-10-03T18:25:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04699v1",
+      "titleHash": "67c2edde4dfe03802443ed615357981151f4a26a1b65be4e58f158f18041002e",
+      "contentHash": "703d26c484499500c11ea59560057ac8c19c90a0f083a809c94847c8476136b9",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5830280045913075,
+        "engagement": 0
+      },
+      "rank": 2,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 77"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04686v1",
+      "title": "When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multi-agent debate can improve reasoning, yet often fails to beat simple majority voting. We argue that successful debate requires two distinct mechanisms: proposal supply must surface a correct answer, and readout must identify that answer when voting misses it. We formalize the first requirement through recoverable headroom, which measures cases where a correct proposal is available but the majority answer is wrong. For the second, we develop Latent Verification Debate (LVD), an accounting model in which candidate proposals receive answer-specific verification evidence before final generation. Controlled fixed-proposal interventions estimate this latent effect in equivalent peer-support units and show that correct evidence changes answer probabilities and generated decisions while proposal supply remains fixed. To improve proposal supply, we construct societies from neural-thicket agents using labeled and label-free coverage objectives. Across two backbones and matched-budget reasoning benchmarks, coverage-selected societies increase complementary proposal supply and improve aggregate accuracy in repeated stochastic evaluations. Round-level controls further show that interaction provides gains beyond applying the same finalizer directly to the initial proposals. These results identify proposal coverage and truth-sensitive evidence use as complementary conditions for debate to outperform voting. Code is available at https://github.com/Wang-ML-Lab/when-debate-helps.",
+      "publishedAt": "2026-10-03T17:59:46Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04686v1",
+      "titleHash": "877b27db2a79fd349b72c621c28731d8577b2d356d653fb2dbfa2a22bd223ae5",
+      "contentHash": "18c13548e9ef14db7b4b5dc48a134f54112d24937f2f5cebbbfeabd263f60649",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5806536335833388,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 77"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04676v1",
+      "title": "Extracting Persona Subspaces Through Iterative Nullspace Projection For Modulation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large Language Models (LLMs) can adopt distinct personas to tune their semantics, expertise, and perspective to different users and tasks. Precise control over these traits is critical to ensure safety and reliability in model behavior. Existing methods like activation steering and prompt-based persona induction reduce a persona to a single dominant direction, missing the finer, nested traits that emerge only once that dominant signal is factored out. We introduce modulation as a setting where the persona context is already embedded in the content being manipulated, requiring control methods to amplify or suppress a trait already present rather than inject it from scratch. PaSS is an inference-time control paradigm that models personas as multi-dimensional subspaces in a model's latent space without supervised contrastive examples. The persona subspaces are extracted via iterative concept erasure and applied to modulate persona-guided generation without retraining. To extract this subspace, we use Iterative Nullspace Projections (INLP) to linearly and iteratively isolate persona-specific directions. We causally evaluate six personas against diverse tasks like MATH-500, TinyAlpaca, GSM8K, and IFEval, showing that discriminative, iterative subspace extraction captures diverse traits underlying a given persona, enabling stronger and larger modulation than single-direction additive methods, while maintaining content fidelity. We further study individual peeled directions within each subspace to uncover the distinct aspects of persona behavior they encode. Overall, we show that persona subspaces offer a controllable, interpretable, and generalizable framework for modulating LLM behavior without sacrificing task performance.",
+      "publishedAt": "2026-10-03T17:45:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04676v1",
+      "titleHash": "c6b50ed12ada362b717f66f33c807d67f42fbb6c0e72532e2b77b9e4e58d1787",
+      "contentHash": "a0b692fe22b931eff6f6dca87b769d54896e9947f95266b72866a4ab537e6d6a",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5793166858827592,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 77"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04672v1",
+      "title": "MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) have progressively evolved into the core of autonomous agents. Building on this progress, LLM-based multi-agent systems (MAS) coordinate multiple agents into a synergistic team to accomplish complex tasks that exceed the capabilities of individual agents. The effectiveness of such systems depends not only on the agents themselves, but also on how collaboration mechanisms are designed and organized. Note that real-world collaboration is typically partially observable, where each agent can only access partial information about the environment due to physical or privacy-related constraints. However, many existing multi-agent benchmarks assume global observability, and leave limited support for systematically evaluating collaboration mechanisms. To bridge this gap, we introduce MASBench, a multi-agent collaboration benchmark designed under partially observable constraints. It is organized into three progressive task categories: Reasoning, Scheduling, and Game. Through this structure, we progressively evaluate three representative collaboration mechanisms: Protocol, Memory, and Routing. MASBench further provides deterministic evaluation metrics, including performance score, communication cost, and cost effectiveness, to characterize both collaboration outcomes and communication overhead. Experiments across diverse LLM backbones and mechanism configurations offer empirical guidance for effective MAS design. Code is available at: https://github.com/BUPT-GAMMA/MASBench",
+      "publishedAt": "2026-10-03T17:40:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04672v1",
+      "titleHash": "bfa59d05a0fff1a4ec0f4e005437ccb6879e55ab50c46ecdc12846205e08282a",
+      "contentHash": "e008aded70a4a0b901cb1bbb239d8961d29c8c4b46083ce35f1e7e23f703d25f",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5788521133163699,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 77"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.coryd.dev/posts/2026/ai-companies-are-parasites",
+      "title": "AI Companies Are Parasites",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-10-05T19:30:10Z",
+      "engagement": 62,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.coryd.dev/posts/2026/ai-companies-are-parasites",
+      "titleHash": "347d6192c7109fa5ee95fb1458bdb8a7fa0c68833c1f419234816523091e51f4",
+      "contentHash": "347d6192c7109fa5ee95fb1458bdb8a7fa0c68833c1f419234816523091e51f4",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9351970873970522,
+        "engagement": 0.5997801831511939
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks",
+      "title": "Accept 'bad things' in return for benefits of AI, says Sam Altman",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "samizdis",
+      "publishedAt": "2026-10-05T12:56:18Z",
+      "engagement": 59,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks",
+      "titleHash": "2fb5e1341b75766c7e5528e9da7b8fc50f146acb7a6cc6d6c572ab05bea0e003",
+      "contentHash": "2fb5e1341b75766c7e5528e9da7b8fc50f146acb7a6cc6d6c572ab05bea0e003",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8779249389967516,
+        "engagement": 0.5927170834612145
+      }
+    },
+    {
+      "url": "https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a",
+      "title": "Spending on AI is becoming almost impossible for businesses to budget",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "swolpers",
+      "publishedAt": "2026-10-05T13:22:31Z",
+      "engagement": 58,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a",
+      "titleHash": "c2ebde450fe303aba942ded6e1ab53d2414551693b2ee783a9283602faf17470",
+      "contentHash": "c2ebde450fe303aba942ded6e1ab53d2414551693b2ee783a9283602faf17470",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8816256938643455,
+        "engagement": 0.5902840038807148
+      }
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004747/florida-woman-arrested-for-allegedly-making-threats-in-an-ai-chat",
+      "title": "Florida woman arrested for allegedly making threats in an AI chat",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "timpera",
+      "publishedAt": "2026-10-05T15:11:36Z",
+      "engagement": 49,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theverge.com/ai-artificial-intelligence/1004747/florida-woman-arrested-for-allegedly-making-threats-in-an-ai-chat",
+      "titleHash": "bc51366eaa31d50a2db71dd6f9382927a2ca09333da0ac46065dd2c2c9c2bc8f",
+      "contentHash": "bc51366eaa31d50a2db71dd6f9382927a2ca09333da0ac46065dd2c2c9c2bc8f",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8971921773973635,
+        "engagement": 0.5663233347786729
+      }
+    },
+    {
+      "url": "https://endsdontjustifythemeans.com/p/6-questions-for-believers-in-ai-consciousness",
+      "title": "Questions for believers in AI consciousness",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cobbzilla",
+      "publishedAt": "2026-10-05T18:59:28Z",
+      "engagement": 40,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://endsdontjustifythemeans.com/p/6-questions-for-believers-in-ai-consciousness",
+      "titleHash": "63bb1d713d926a29989bb39a71b13e9f41410913e99e33c3e7f52b24a8948c95",
+      "contentHash": "63bb1d713d926a29989bb39a71b13e9f41410913e99e33c3e7f52b24a8948c95",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9306017855650476,
+        "engagement": 0.5375946189065784
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RFTfANuLBF4",
+      "title": "Jonathan Haidt: AI Is the 'Neutron Bomb for Education' [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ptrhvns",
+      "publishedAt": "2026-10-05T14:02:38Z",
+      "engagement": 33,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=RFTfANuLBF4",
+      "titleHash": "889ade2e5e8726af3dbf5bdb3a69a7dbdcd1a6ed0f3d662fc2ff2d7691392e17",
+      "contentHash": "889ade2e5e8726af3dbf5bdb3a69a7dbdcd1a6ed0f3d662fc2ff2d7691392e17",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8873187997949927,
+        "engagement": 0.5104929723474184
+      }
+    },
+    {
+      "url": "https://edworkingpapers.com/ai26-1551",
+      "title": "AI Tutoring with Khanmigo in a Two-Year School Experiment",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bryan0",
+      "publishedAt": "2026-10-06T00:00:45Z",
+      "engagement": 33,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://edworkingpapers.com/ai26-1551",
+      "titleHash": "b6ab2200d6e29c910be02d48a7b445763a1b616e722804493e4cd1badd74d4d8",
+      "contentHash": "b6ab2200d6e29c910be02d48a7b445763a1b616e722804493e4cd1badd74d4d8",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9766932103277062,
+        "engagement": 0.5104929723474184
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
+      "title": "Anthropic wants your thoughts on AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ramijames",
+      "publishedAt": "2026-10-05T12:21:02Z",
+      "engagement": 28,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.anthropic.com/research/your-thoughts-on-ai",
+      "titleHash": "22268b492c0e7313786e9be2181902019a7b924781b27044054d096c82aacf5a",
+      "contentHash": "22268b492c0e7313786e9be2181902019a7b924781b27044054d096c82aacf5a",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8729711745549396,
+        "engagement": 0.487465999299652
+      }
+    },
+    {
+      "url": "https://restofworld.org/2026/ai-data-center-memory-chip-shortage-cheap-smartphones-digital-divide/",
+      "title": "The AI boom is making the cheapest smartphones disappear",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "whiteblossom",
+      "publishedAt": "2026-10-05T17:53:45Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://restofworld.org/2026/ai-data-center-memory-chip-shortage-cheap-smartphones-digital-divide",
+      "titleHash": "f664ffc760336f536d2c42eacdbc4c688318f832e86d112a64a9a8b27e33b586",
+      "contentHash": "f664ffc760336f536d2c42eacdbc4c688318f832e86d112a64a9a8b27e33b586",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9208408044761842,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.spacebar.ai/waitlist",
+      "title": "Spacebar – A realtime workspace for Humans and AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "amey_r",
+      "publishedAt": "2026-10-05T16:56:24Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.spacebar.ai/waitlist",
+      "titleHash": "5dd3adc23446fd771e9f7abd9da09db39bf93ba8db0a1e923529ba622d95253d",
+      "contentHash": "5dd3adc23446fd771e9f7abd9da09db39bf93ba8db0a1e923529ba622d95253d",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9124062321235407,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c5j9x9pr0240o",
+      "title": "Pentagon stops using Anthropic AI tools after blacklisting company, BBC told",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sbulaev",
+      "publishedAt": "2026-10-05T20:07:10Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.co.uk/news/articles/c5j9x9pr0240o",
+      "titleHash": "287ec8299704a7248fef14240fe990d362c4fca2b5c8aec3953012e781aa695d",
+      "contentHash": "287ec8299704a7248fef14240fe990d362c4fca2b5c8aec3953012e781aa695d",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9407655634293606,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
+      "title": "People hate AI, so why can't they get enough?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "joozio",
+      "publishedAt": "2026-10-05T11:02:58Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough",
+      "titleHash": "e9d1e83b645c249ed7d0fd32412c664af271cb072ae9ba30731d21f907fd14c6",
+      "contentHash": "e9d1e83b645c249ed7d0fd32412c664af271cb072ae9ba30731d21f907fd14c6",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.862104663196559,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://noyb.eu/en/ai-eu-member-states-plan-digital-expropriation-europeans-interest-ai-companies",
+      "title": "AI: EU Member States plan \"digital expropriation\" of Europeans",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "stiray",
+      "publishedAt": "2026-10-05T16:16:08Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://noyb.eu/en/ai-eu-member-states-plan-digital-expropriation-europeans-interest-ai-companies",
+      "titleHash": "9315ba470e2515ad39d9d569b76ec240e60bb505272e7cd3855a39c6fe729111",
+      "contentHash": "9315ba470e2515ad39d9d569b76ec240e60bb505272e7cd3855a39c6fe729111",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9065303450082886,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_5p1_TNSWqQ",
+      "title": "Fireship: PewDiePie is setting AI free and OpenAI is furious [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "doctaj",
+      "publishedAt": "2026-10-06T00:34:27Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=_5p1_TNSWqQ",
+      "titleHash": "e64bfe43a4f4642b5a3917332cea4acc7e3928d9e43df79832bd98e2294e1438",
+      "contentHash": "e64bfe43a4f4642b5a3917332cea4acc7e3928d9e43df79832bd98e2294e1438",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9819886798053978,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.noahpinion.blog/p/what-the-ai-boom-is-doing-for-americans",
+      "title": "What the AI boom is doing for Americans – Noah Smith",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bluepeter",
+      "publishedAt": "2026-10-05T16:10:28Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.noahpinion.blog/p/what-the-ai-boom-is-doing-for-americans",
+      "titleHash": "ed354218d99fef6c288d6c43d3829838d14b81cc132872ba9a601af3a425ffdf",
+      "contentHash": "ed354218d99fef6c288d6c43d3829838d14b81cc132872ba9a601af3a425ffdf",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9057064833205588,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-03135-7",
+      "title": "AI biohazard hype must not divert attention from the real risks we face now",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sbulaev",
+      "publishedAt": "2026-10-05T17:07:08Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nature.com/articles/d41586-026-03135-7",
+      "titleHash": "db9526b51667562a9d7c0a19cc23691fda932757492dc5264eabc13bd73fd6ba",
+      "contentHash": "db9526b51667562a9d7c0a19cc23691fda932757492dc5264eabc13bd73fd6ba",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9139789057096426,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005/",
+      "title": "Is AI the End of Math as We Know It?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "0in",
+      "publishedAt": "2026-10-05T14:02:07Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005",
+      "titleHash": "f65218523ef2552d3723e45673d60cf5fd254bdff13195eb784af2799498f45f",
+      "contentHash": "f65218523ef2552d3723e45673d60cf5fd254bdff13195eb784af2799498f45f",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8872452445172857,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://refuseless.com",
+      "title": "Show HN: Abliterated LLM provider for cyber tasks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Current lineup includes GLM 5.3 and its Flash variant. MiMo V2.6 and Qwen Flash Next will be added in the near future.",
+      "author": "jurisdb",
+      "publishedAt": "2026-10-05T12:36:08Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://refuseless.com/",
+      "titleHash": "17d75733b7b009441eed9ecba4e6e82e210f3a15e980f0fa4f1c6779e7318e74",
+      "contentHash": "ab71e7401b4048c3b7bf595fc68d6f349685c65f9ac8868cc4805c089d5c85a1",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8750887786930915,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=114i2Kz-LZA",
+      "title": "Stanford CME295 Transformers and LLMs – Autumn 2026 – Lecture 1 – Transformers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "doppp",
+      "publishedAt": "2026-10-05T08:38:31Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=114i2Kz-LZA",
+      "titleHash": "0ab1d77ab38bc152b1eb07b5e33009e2dd07b8280da270ddfc7cc8074c0a1e84",
+      "contentHash": "0ab1d77ab38bc152b1eb07b5e33009e2dd07b8280da270ddfc7cc8074c0a1e84",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8423533429840886,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://yasyf.com/writing/give-your-llm-more-dsls/",
+      "title": "Give your LLM more DSLs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yasyfm",
+      "publishedAt": "2026-10-05T20:24:58Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://yasyf.com/writing/give-your-llm-more-dsls",
+      "titleHash": "29a13c26aa7e45a50b482b6fab9513691d63913dc86e1abfbee4e40f0dd103a4",
+      "contentHash": "29a13c26aa7e45a50b482b6fab9513691d63913dc86e1abfbee4e40f0dd103a4",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9434562521205526,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.36490",
+      "title": "LLMs Learn to Evade Latent Monitors from Prior Feedback Alone",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Betelbuddy",
+      "publishedAt": "2026-10-05T19:04:57Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2609.36490",
+      "titleHash": "e68a98b280f125d3a15cc519beb26c710de825b4b4690cd949e71a5c38787b9f",
+      "contentHash": "e68a98b280f125d3a15cc519beb26c710de825b4b4690cd949e71a5c38787b9f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9314208938232593,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://ironbee.ai/blog/how-we-built-the-fastest-cheapest-browser-agent-with-jev",
+      "title": "How we built a browser agent with Jev instead of an LLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sozal",
+      "publishedAt": "2026-10-05T14:00:53Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ironbee.ai/blog/how-we-built-the-fastest-cheapest-browser-agent-with-jev",
+      "titleHash": "f1af76c676c8992105b8b2f1fbeef41634fd9d6501a006c8059068109bd0782d",
+      "contentHash": "f1af76c676c8992105b8b2f1fbeef41634fd9d6501a006c8059068109bd0782d",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8870696856001281,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://ogzhanolguncu.com/blog/how-to-keep-learning-in-the-age-of-llms/",
+      "title": "How to keep learning in the age of LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cmpit",
+      "publishedAt": "2026-10-05T13:01:00Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ogzhanolguncu.com/blog/how-to-keep-learning-in-the-age-of-llms",
+      "titleHash": "c661679ae9c071d753b3cdd168482168933a649d3779b671194d65cb429015b7",
+      "contentHash": "c661679ae9c071d753b3cdd168482168933a649d3779b671194d65cb429015b7",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8785872480984067,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://gmaterni.github.io/agnochat/",
+      "title": "Show HN: Agnochat ppure client-side LLM chat, no server, no account",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmaterni",
+      "publishedAt": "2026-10-05T09:22:49Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gmaterni.github.io/agnochat",
+      "titleHash": "f4eca12944ed9a9076c7d822242063b0172563c4e23de955e681714a4c048e13",
+      "contentHash": "f4eca12944ed9a9076c7d822242063b0172563c4e23de955e681714a4c048e13",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8483620929685267,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://picked.so/blog/llm-seo-tools",
+      "title": "LLM SEO tools in 2026: what each one tracks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "shdalex",
+      "publishedAt": "2026-10-05T23:24:18Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://picked.so/blog/llm-seo-tools",
+      "titleHash": "578338fe4da5e19d3ad72237ad81e06524f5ca9454b2993a0d57476a01c68f5f",
+      "contentHash": "578338fe4da5e19d3ad72237ad81e06524f5ca9454b2993a0d57476a01c68f5f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9709977574607601,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://simulkit.com/en/mac-local-llm",
+      "title": "Show HN: All local LLM(s) on all Apple Devices",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Various simulation running website with complete LLM indexation support.<p>I thought it would be interesting to explain everyone what kind of model can be run in each type of Apple Device.<p>If I give a shared simulation like <a href=\"https:&#x2F;&#x2F;simulkit.com&#x2F;en&#x2F;mac-local-llm&#x2F;6MwixMWu8m\" rel=\"nofollow\">https:&#x2F;&#x2F;simulkit.com&#x2F;en&#x2F;mac-local-llm&#x2F;6MwixMWu8m</a><p>Any LLM will be able to read it because it also generates the LLM side of it: <a href=\"https:&#x2F;&#x2F;simulkit.com&#x2F;en&#x2F;mac-local-llm&#x2F;6MwixMWu8m.md\" rel=\"nofollow\">https:&#x2F;&#x2F;simulkit.com&#x2F;en&#x2F;mac-local-llm&#x2F;6MwixMWu8m.md</a> .<p>Also there&#x27;s no tracking, it&#x27;s a PWA that works fully offline, and there&#x27;s no affiliate link of any kind, there&#x27;s no money involved.",
+      "author": "fclairamb",
+      "publishedAt": "2026-10-05T20:55:29Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://simulkit.com/en/mac-local-llm",
+      "titleHash": "f8002a3708f05fd047922a1fe95fe3ffbcc5d5fa39d0264458925bff1380e38d",
+      "contentHash": "aeeb7e3b25c9d3e86911bd75baf23e3760bf172494a45a764f45e5bc09a38125",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9480871373264356,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://www.spectralabs.si/",
+      "title": "Show HN: Spectra-FFT – Cutting AdamW VRAM Usage by 50% for LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "KanishkIndia",
+      "publishedAt": "2026-10-05T19:30:42Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.spectralabs.si/",
+      "titleHash": "425058318715bdf6401a9d9cfeabc40ac1d589704e3aa46482606bbf209ef8ff",
+      "contentHash": "425058318715bdf6401a9d9cfeabc40ac1d589704e3aa46482606bbf209ef8ff",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9352771166195196,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04741v1",
+      "title": "Robot Learning with Visual Predicted Force",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Force-aware manipulation typically relies on specialized force or tactile sensors. We show that force-aware manipulation can instead be achieved through visual force prediction from the deformation of a compliant Fin Ray gripper. Our approach trains two models. First, we train a visual force estimator on calibration data and use it to annotate task demonstrations with force estimates. Second, we train an action--force proposal policy on these force-augmented demonstrations to jointly generate candidate robot actions and their associated forces. At test time, we sample candidate actions and the forces they are expected to produce, then execute the action whose predicted force is closest to a target from the demonstrations. We evaluate our approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action selection for contact-rich manipulation without requiring force or tactile sensors at deployment.",
+      "publishedAt": "2026-10-03T20:11:33Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04741v1",
+      "titleHash": "f1ed6b3f5a346df107901dc471907fc31cfa8d37d7894b9eca1513ad0ca65305",
+      "contentHash": "faba5de92498398b43302e7de369508a204bb46c3cfa4129725d970363d18153",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5930621259293878,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04740v1",
+      "title": "Toward a Locally Deployable Agentic Co-Scientist: Small-Model Planning for Early-Stage Drug Discovery",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Early-stage computational drug discovery requires coordinating heterogeneous scientific tools across multi-step workflows. We present a lightweight, tool-augmented framework in which a locally deployable compact language model plans calls to 18 modular tools. A Unified Molecular Schema maintains shared molecular records, while a plug-in interface supports tool replacement and extension. We construct 1,263 manually refined query-plan pairs through workflow-graph path coverage and apply LoRA fine-tuning to three compact model families. Under the query-level split, all fine-tuned models generate fully parseable and schema-compliant plans on 47 held-out cross-group queries. Llama 3.2-3B achieves a tool-selection F1 of 0.998, sequence exact match of 0.979, and argument F1 of 0.960. Under the stricter workflow-grouped split, which excludes identical ordered tool sequences across partitions, sequence exact match reaches 0.452 to 0.548, highlighting the remaining difficulty for compact models in generating complete workflow paths unseen during training. These results demonstrate the feasibility of compact, locally deployable planning while identifying compositional generalization as an important direction for further improvement.",
+      "publishedAt": "2026-10-03T20:09:34Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04740v1",
+      "titleHash": "64bce416229ded7ee941a33ca794fd4b20b782bb4c8380349ea8b10e92c4f3b4",
+      "contentHash": "fcffd9929ccc599ef3440731c3a2a12ce434c199072859239f9304568dd8db5d",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5928734274002534,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04737v1",
+      "title": "PyINE: A Framework for Scalable Elicitation and Oversight via Code Execution",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Reasoning models can remain capable of solving a task while still defaulting to cheaper but misleading shortcuts. This creates a central oversight problem: when a model gives an answer with plausible but incomplete reasoning, can an overseer determine whether that output should be trusted? To study this problem, we introduce PyINE, a framework for scalable elicitation and oversight using instrumented Python programs as a verifiable execution substrate. In PyINE, programs define task environments, execution traces provide authoritative labels for outcomes and intermediate facts, and task variants can be generated mechanically rather than through static human annotation. We instantiate the framework in PyINE-v1, a first release built from nearly one million deterministic execution traces and over 500,000 matched LLM-generated code variants used for counterfactual evaluation. Using standard RL with verifiable rewards on cue-varied tasks, we train a shortcut-following model that improves substantially at predicting execution outcomes while still making systematic errors when misleading human-facing cues conflict with the program's realized behavior. We then evaluate activation probes, trained text classifiers, prompted judges, and a lightweight debate protocol as overseers of this model. We find that performance pooled at the dataset level can hide weak coverage of the failures that matter most: cheap learned overseers often miss rare shortcut-driven errors, while stronger model-based checks are more balanced but substantially costlier and harder to turn into reliable thresholded decisions. PyINE-v1 turns this failure-mode coverage problem into a reusable experimental setting for developing oversight methods that are verifiable, failure-mode-aware, and cost-sensitive.",
+      "publishedAt": "2026-10-03T20:03:43Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04737v1",
+      "titleHash": "f230a2c6339b2225db5f1e865b642c4237c66b12514ae82e6947bf182bc671af",
+      "contentHash": "372a265cc0e2e68703db8971b447885fbbab11faa06c5c43c7ffbb37832cfda1",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5923171956700245,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04721v1",
+      "title": "Knossos and Ariadne: Benchmarking and Learning Complete Diagram Topology Extraction with Vision-Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Structural diagrams are widely used to represent complex systems and relational information across scientific, engineering, procedural, and spatial domains. Recent vision-language models (VLMs) have become increasingly capable of recognizing diagram elements and reasoning about their content, while complete diagram topology extraction remains comparatively underexplored. In this paper, we study diagram-to-graph topology extraction: extracting all diagram entities and the complete relations among them. To enable large-scale supervised training and systematic evaluation of this task, we introduce Knossos, a benchmark of 19,200 diagrams across six diverse domains, with 245,179 nodes and 439,740 edges. Its symbolic generation process provides exact alignment between rendered diagrams and annotations of complete topology, relation types, and connector geometry. To address the modeling challenge of complete topology extraction, we also present Ariadne, a structured framework that decomposes the task into node inventory extraction and source-conditioned edge prediction. Extensive experiments show that training on Knossos substantially improves complete topology extraction in smaller open-source VLMs. Ariadne further improves over one-step extraction under matched supervision, demonstrating the additional benefit of structured decomposition. It achieves the highest average Edge F1 among the evaluated methods on Knossos, while both backbone variants also improve over their unadapted counterparts on the real-world external benchmark. Code and benchmark are available at https://github.com/bangwayne/knossos_Ariadne_Public.",
+      "publishedAt": "2026-10-03T19:20:33Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04721v1",
+      "titleHash": "b2b6a7e86432dd4a2491d392246a1c51a0528e327b33be6fbc3c5a91d9d1a8eb",
+      "contentHash": "29d2fabe4cea3b4636ea2932160c10371087166df54034de105ec3070e26e630",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5882289079885108,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04719v1",
+      "title": "Learning to Clarify Underspecified Intents Under Limited Interaction",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "AI assistants receive requests that leave out information needed for a good outcome, for example about users' preferences or goals. They must then either speculate or ask for more information before proceeding. We reconceptualize this as a value-of-information problem: the assistant should acquire information whose absence causes the greatest avoidable loss in user utility. This is rarely known ex ante; rather, assistants must predict it in order to optimally allocate limited user interactions. We instantiate this problem in image generation and derive a reinforcement learning framework using multi-turn simulated users to maximize utility recovery under uncertainty. In a preregistered study with 456 interactive sessions across 76 human participants, this helped users significantly better match reference images with significantly fewer questions, less total interaction time, and lower cost. This points toward a simple and scalable framework for training language model assistants to better disambiguate user intent by asking more informative questions.",
+      "publishedAt": "2026-10-03T19:17:57Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04719v1",
+      "titleHash": "aaa0264535b6b6e3deace286c57b776fe18baf935ac799b0ead81c28af773746",
+      "contentHash": "8aa89a8bf3d1a87692f25da88890ac8c7feb1ef6e1fd401d4dde21a2629be66b",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.5879835665872912,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04716v1",
+      "title": "Towards Automatically Pruning Logging Code with Coding Agents: How Far Are We?",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Logging code supports debugging, monitoring, and software maintenance, but excessive logging can add noise, impose runtime overhead, and obscure diagnostic information. While prior research has extensively studied logging code generation and modification, logging removal remains comparatively underexplored. In this paper, we study developer logging removal practices and explore the use of coding agents for this task. We extract and manually validate logging removal cases from Python and Java repositories and derive 10 removal patterns and 11 removal reasons that characterize how and why logging code was removed in real-world software changes. We further construct LogRem, a dataset of 387 real-world cases covering direct logging statement removal, logging infrastructure removal, and logging replacement. We evaluate four coding agents with multiple model settings and compare their outputs with accepted real-world changes. Although 95.6% to 100.0% of outputs pass validity checks, only 11.1% to 19.6% remove the same logging code as the corresponding real-world change while preserving unrelated code. Agents differ through missed removals, extra removals, and unrelated code edits, with substantial variation across logging removal categories and trajectories. Execution cost varies widely, but higher cost does not consistently yield closer alignment. Commit messages and developer discussions provide the largest alignment gains, while taxonomy guidance consistently reduces runtime. Overall, our study establishes logging removal as a distinct software maintenance task and shows that reliable automation depends on accurately determining removal scope while preserving necessary code. To the best of our knowledge, this is the first study to examine logging code removal from this perspective.",
+      "publishedAt": "2026-10-03T19:11:19Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04716v1",
+      "titleHash": "8e0e75b45e5bb224c1bfaffee789821c1a34adefb6b6cc5e8a264eaadd4f1e2a",
+      "contentHash": "fad79642e46b2e298afb2d7ffbab6132885fc637dc46663294fbf1aed6bd1939",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5873580949371637,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04710v1",
+      "title": "Organising Trajectory Evidence for Language-Model Agent Assurance: Fragments, Methods, and the Residual",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Methods for assessing language-model agents include rule checkers over logs, analyses of skill coverage and composition, support checkers, prefix monitors, execution gates, and rare-event estimators. Each observes a different part of a run and makes a claim of a different strength, and no common account says how these claims combine or what they leave unchecked. We give one, built from a logic, information fragments, and an assurance ledger. Requirements are formulas of a two-tier logic: an outer finite-trace temporal logic over recorded events, and an inner logic of standing over the argument structure that the agent's recorded context supports at a decision. A rule violation and an action taken on withdrawn support are thus formulas of one language. The information available to an assessor, to the agent, and to an execution gate defines fragments of that language; each checking method decides one fragment and returns a typed claim: exact, on a named test suite, a risk bound, or descriptive. The ledger merges the evidence and classifies every obligation as established, addressed but not established, or unaddressed. On 456 released $τ^2$-bench telecom trajectories, the benchmark oracle flags 231 runs; adding a rule checker, a support stand-in, and a prefix-monitor baseline raises the union to 391, 401, and 407, each contributing flags the others miss, and a gate makes one prohibition exact on a gated deployment. The 49 unflagged runs and the unmet or unaddressed obligations form the residual. Discovery makes unknown requirements explicit, and new or stronger checkers then reduce it.",
+      "publishedAt": "2026-10-03T18:51:40Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04710v1",
+      "titleHash": "5d88eb537e58db5e969e724a30f42407e2456125c39ea50e0be81a9eebb7d0a4",
+      "contentHash": "acdf684b32f1b90dcbb824cea9a6e9dfd12ee770d1e16cfc10d170295edfd19a",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5855091551283361,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04706v1",
+      "title": "VoCa: Designing Speech-Canvas Interaction for Voice-Based Conversational Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "People write and sketch while speaking to explain, organize, and develop content together. Inspired by these practices, we investigate how voice agents can use a canvas alongside speech in multi-turn conversations with users. We conducted a two-part formative study: an observational study of how pairs coordinated speech and boardwork, followed by a design workshop that informed a design space for speech-canvas interaction with voice agents. Building on these insights, we developed VoCa, a voice agent that coordinates speech with visual object creation, annotation, and attention guidance. A five-day deployment with 18 participants examined usability, experiences of speech-canvas interaction, patterns of use, and desired improvements. Participants' experiences highlighted opportunities for speech-canvas interaction in learning, work, and daily life, alongside challenges in coordinating what agents say and show in ways users can follow and influence. These findings inform how voice agents can use a canvas alongside speech in conversation.",
+      "publishedAt": "2026-10-03T18:39:31Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04706v1",
+      "titleHash": "a4f76df0d0156dde2e3057252776f2b8528a09b4673c65e606542d0458cfbc95",
+      "contentHash": "dda9110d932fe6f118c8b4786541d37fb13aa7380fd2846a455649381a54b980",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.5843688307008433,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04705v1",
+      "title": "Neurodiversity-Aware Multimodal Affective Computing for Neurodevelopmental Assessment: From Norm-Referenced Classification to Context-Sensitive Decision Support",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Automated neurodevelopmental assessment increasingly combines computer vision, speech, eye tracking, physiology, and machine learning, yet multimodality and discrimination do not establish construct validity, clinical usefulness, or appropriate interpretation of behavioral variation. We propose a testable architecture for neurodiversity-aware multimodal affective computing in which population-relative deviation is not treated as sufficient evidence of adverse functioning. This conceptual article reports neither a new participant-level study nor a trained predictive system, and no predictive or clinical superiority is claimed. The framework keeps observable signals, modality quality and availability, context, population-relative information, pooled within-person references and, when sufficiently supported, context-conditioned within person references, and predictive uncertainty distinguishable throughout inference. It defines structured decision-support outputs and auditable requirements for target validity, temporal integrity, contextual leakage, missing-modality robustness, calibration, subgroup evaluation, interpretability, privacy, and human decision boundaries. The contribution is architectural rather than algorithmic: it specifies empirically testable constraints that can be instantiated with different multimodal learning methods. Autism provides the principal motivating evidence base, without assuming unchanged transfer to other neurodevelopmental conditions.",
+      "publishedAt": "2026-10-03T18:38:22Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04705v1",
+      "titleHash": "440723e8e4f5ae51d1c2f2db8ba18973cd468224f9fa51e3cb99d9cb1fff1221",
+      "contentHash": "40393459507c0852bb1f888d274afa6f7cd9dffa5a15916226abb0d339a8f231",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5842610138777499,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04699v1",
+      "title": "Not Self-Decidable: LLMs Cannot Draw the Boundary of What an Agent Verifier Can Check",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "A verifier for an agent faces rules of two kinds: the ones a fixed check can settle and the ones that require a judge. A team that derives its own checks fixes that split up front. Where the requirements come from outside, as in finance, healthcare and law, the agent enforces rules it did not write, so the split falls to runtime, recurring for every predicate of every rule on every action at a rate no reviewer can audit. Every escalation scheme assumes a model can make that decision itself, that it is self-decidable. Across six corpora, including the EU AI Act, FINRA guidance and a deployed credit agent, we collect roughly 22,000 labels from four models built by three labs. They agree almost perfectly where the answer is obvious and collapse on regulatory text; their errors run in opposite directions, so no model can be trusted as the conservative choice; and on the deployed agent's own rule-set they err together, over-claiming that a fixed check will do, the direction that never gets escalated. We introduce CoVer (corroborate-then-verify), which treats unanimity as a nomination, admitting a predicate only when the check synthesized for it survives intervention, reading fields the agent cannot write and holding under deterministic rewording. That gate rejects most of what corroboration wrongly admits, at a cost in coverage we report rather than tune away. The obvious alternative, agreement with a reference judge, certifies nothing: it climbs from 30% to 77% across calibration bands while the genuinely decidable share does not move, because a judge drawn from the population under indictment ratifies the blind spot it shares. Self-decidability is not a capability to elicit from a model but a boundary the verifier must construct.",
+      "publishedAt": "2026-10-03T18:25:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04699v1",
+      "titleHash": "67c2edde4dfe03802443ed615357981151f4a26a1b65be4e58f158f18041002e",
+      "contentHash": "703d26c484499500c11ea59560057ac8c19c90a0f083a809c94847c8476136b9",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5830280045913075,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04693v1",
+      "title": "Penumbra: Sample-Efficient Adversarial Search for Regulatory Obligations",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Agents are entering finance, healthcare and law, sectors where a violation leaves no lexical signature and carries real penalties. Whether an omission is material, or a disclosure sufficient, depends on what the response left out. Probing such an obligation means finding responses one minimal edit from flipping compliance, and every probe costs a generation and two adjudications, so the binding constraint on regulatory red-teaming is sample efficiency, not volume. We introduce Penumbra, an adversarial search that walks from a verified anchor under an expanding edit budget until a two-evaluator committee changes its verdict, and emits the two adjacent responses that straddle the change. Allocation is adaptive, and the objective is coverage of the defeat surface: distinct (obligation x defeat mode) cells resolved per candidate. At matched budget, adaptive allocation reaches uniform allocation's full-budget coverage on 59% of the candidates; at equal records it covers 1.43x the defeat modes of naive enumeration, and the gain is confined to the axis it targets. On 60 screened obligations of a financial advisory constitution, Penumbra returns 144 pairs, each a compliant and a violating response that the committee places on opposite sides of the boundary, differing by a handful of words where a model asked for both directly produces texts sharing almost nothing. A second constitution, for clinical triage, reproduces this on 18 obligations: 49 pairs at the same tightness, with the same modes hardest. Pairs like these show where an obligation's own terms stop deciding, which is what an agent deployed under it must be tested against, and the search finds them at a cost that scales with the boundary, not the text.",
+      "publishedAt": "2026-10-03T18:11:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04693v1",
+      "titleHash": "4553a1f4e7a71d438835e2c01e2e18a0bc9ddf3ee1365129b9bf09f7e438e553",
+      "contentHash": "41d6b3d87e9835d27c0d4f1d820ee8a128549c2807bebf58d1faaedc83f0bade",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5817369247309967,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04691v1",
+      "title": "RAGStress: A controlled benchmark for evaluating retrieval-augmented generation under knowledge-base degradation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Retrieval-Augmented Generation (RAG) is typically evaluated under the implicit assumption that the underlying knowledge base (KB) is clean, leaving the behaviour of RAG systems under realistic KB degradation poorly characterised. We introduce RAGStress, a controlled evaluation benchmark for stress-testing RAG systems under systematic KB corruption. The benchmark pairs four naturalistic corruption types (factual corruption, numeric typo, relevance poisoning, and contradiction injection) with three severity levels (subtle, moderate, and obvious) over a single-KB, metadata-filtered experimental design built from 57 MMLU subjects and 182,546 documents. Across 52,500 model-question-condition evaluations, RAGStress reveals that clean retrieval can mask robustness differences, semantic-fidelity corruptions are substantially more harmful than signal-utility perturbations, no-retrieval accuracy does not predict corrupted-retrieval robustness, and mixed-KB accuracy should not be treated as worst-case robustness. We document the benchmark's intended use, supported claims, and limitations, and provide an artifact bundle including generation scripts, corruption prompts, metadata schema, and evaluation code. RAGStress is intended as a controlled stress test for RAG robustness under KB corruption, not as a general model leaderboard.",
+      "publishedAt": "2026-10-03T18:07:17Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04691v1",
+      "titleHash": "c0995cf4b39a41cb662ac21c4b8078ec274f1836279d7dd44df4ccb937e34825",
+      "contentHash": "1318dea3b7c8c84bec26dfdb0bbbcb70d4281a62b7e4e5dad8e1386197d81546",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5813543560975291,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04686v1",
+      "title": "When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multi-agent debate can improve reasoning, yet often fails to beat simple majority voting. We argue that successful debate requires two distinct mechanisms: proposal supply must surface a correct answer, and readout must identify that answer when voting misses it. We formalize the first requirement through recoverable headroom, which measures cases where a correct proposal is available but the majority answer is wrong. For the second, we develop Latent Verification Debate (LVD), an accounting model in which candidate proposals receive answer-specific verification evidence before final generation. Controlled fixed-proposal interventions estimate this latent effect in equivalent peer-support units and show that correct evidence changes answer probabilities and generated decisions while proposal supply remains fixed. To improve proposal supply, we construct societies from neural-thicket agents using labeled and label-free coverage objectives. Across two backbones and matched-budget reasoning benchmarks, coverage-selected societies increase complementary proposal supply and improve aggregate accuracy in repeated stochastic evaluations. Round-level controls further show that interaction provides gains beyond applying the same finalizer directly to the initial proposals. These results identify proposal coverage and truth-sensitive evidence use as complementary conditions for debate to outperform voting. Code is available at https://github.com/Wang-ML-Lab/when-debate-helps.",
+      "publishedAt": "2026-10-03T17:59:46Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04686v1",
+      "titleHash": "877b27db2a79fd349b72c621c28731d8577b2d356d653fb2dbfa2a22bd223ae5",
+      "contentHash": "18c13548e9ef14db7b4b5dc48a134f54112d24937f2f5cebbbfeabd263f60649",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5806536335833388,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04676v1",
+      "title": "Extracting Persona Subspaces Through Iterative Nullspace Projection For Modulation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large Language Models (LLMs) can adopt distinct personas to tune their semantics, expertise, and perspective to different users and tasks. Precise control over these traits is critical to ensure safety and reliability in model behavior. Existing methods like activation steering and prompt-based persona induction reduce a persona to a single dominant direction, missing the finer, nested traits that emerge only once that dominant signal is factored out. We introduce modulation as a setting where the persona context is already embedded in the content being manipulated, requiring control methods to amplify or suppress a trait already present rather than inject it from scratch. PaSS is an inference-time control paradigm that models personas as multi-dimensional subspaces in a model's latent space without supervised contrastive examples. The persona subspaces are extracted via iterative concept erasure and applied to modulate persona-guided generation without retraining. To extract this subspace, we use Iterative Nullspace Projections (INLP) to linearly and iteratively isolate persona-specific directions. We causally evaluate six personas against diverse tasks like MATH-500, TinyAlpaca, GSM8K, and IFEval, showing that discriminative, iterative subspace extraction captures diverse traits underlying a given persona, enabling stronger and larger modulation than single-direction additive methods, while maintaining content fidelity. We further study individual peeled directions within each subspace to uncover the distinct aspects of persona behavior they encode. Overall, we show that persona subspaces offer a controllable, interpretable, and generalizable framework for modulating LLM behavior without sacrificing task performance.",
+      "publishedAt": "2026-10-03T17:45:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04676v1",
+      "titleHash": "c6b50ed12ada362b717f66f33c807d67f42fbb6c0e72532e2b77b9e4e58d1787",
+      "contentHash": "a0b692fe22b931eff6f6dca87b769d54896e9947f95266b72866a4ab537e6d6a",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5793166858827592,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04672v1",
+      "title": "MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) have progressively evolved into the core of autonomous agents. Building on this progress, LLM-based multi-agent systems (MAS) coordinate multiple agents into a synergistic team to accomplish complex tasks that exceed the capabilities of individual agents. The effectiveness of such systems depends not only on the agents themselves, but also on how collaboration mechanisms are designed and organized. Note that real-world collaboration is typically partially observable, where each agent can only access partial information about the environment due to physical or privacy-related constraints. However, many existing multi-agent benchmarks assume global observability, and leave limited support for systematically evaluating collaboration mechanisms. To bridge this gap, we introduce MASBench, a multi-agent collaboration benchmark designed under partially observable constraints. It is organized into three progressive task categories: Reasoning, Scheduling, and Game. Through this structure, we progressively evaluate three representative collaboration mechanisms: Protocol, Memory, and Routing. MASBench further provides deterministic evaluation metrics, including performance score, communication cost, and cost effectiveness, to characterize both collaboration outcomes and communication overhead. Experiments across diverse LLM backbones and mechanism configurations offer empirical guidance for effective MAS design. Code is available at: https://github.com/BUPT-GAMMA/MASBench",
+      "publishedAt": "2026-10-03T17:40:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04672v1",
+      "titleHash": "bfa59d05a0fff1a4ec0f4e005437ccb6879e55ab50c46ecdc12846205e08282a",
+      "contentHash": "e008aded70a4a0b901cb1bbb239d8961d29c8c4b46083ce35f1e7e23f703d25f",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5788521133163699,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04725v1",
+      "title": "Verb-ICL: Rethinking In-Context Learning for Structured Prediction",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Structured prediction tasks pose unique challenges for in-context learning (ICL): their compositional outputs require modeling fine-grained, token-level patterns that sentence-level approaches fail to capture, and their task-specific annotation conventions are human-defined artifacts that cannot be acquired through pretraining alone. We propose Verb-ICL, a selective annotation framework for ICL-based structured prediction that addresses both challenges. Verb-ICL first selects representative examples using a token-level coverage strategy that captures local semantic patterns critical for structured prediction, then generates actionable error feedback that codifies task-specific annotation guidelines and incorporates this feedback into ICL demonstrations. We evaluate Verb-ICL on six structured prediction datasets spanning information extraction and semantic parsing. Experiments with recent LLMs show that Verb-ICL consistently outperforms strong selective annotation baselines under low-resource settings and continues to provide gains as the annotation budget increases. Extended analyses demonstrate that the generated feedback is predominantly useful across a four-category quality taxonomy, generalizes as task-level guidance beyond instance-specific corrections, and improves performance regardless of the underlying selection strategy.",
+      "publishedAt": "2026-10-03T19:30:17Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04725v1",
+      "titleHash": "369fddf4095a17d16d40435c47612c7bb248e3c4074377027f68abade19c8b47",
+      "contentHash": "5a0007bc2b4fc7fb6cd8918121a13a2ad661e166137f3ed2e645e110daf7ebce",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5891482732671461,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04720v1",
+      "title": "WNet: Discrete Wavelets Transform for Efficient Token Mixing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In a Transformer, token mixing is the step that lets each token draw information from other tokens, and it dominates the cost of encoding long sequences. Self-attention does this mixing very well: every token weighs every other token by content, which gives strong contextual modeling. That all-pairs comparison is also why its cost grows quadratically with sequence length. We introduce WNet, a Transformer encoder that replaces self-attention with token mixing based on the discrete wavelet transform (DWT). Three attention-free mixers recombine the scales: by linear fusion, by learned gating, or by letting each token choose its scales. A hybrid adds self-attention in the last layer only. A receptive-field analysis shows that wavelet mixers built from two-tap filters, such as Haar, never relate tokens outside fixed blocks, however deep the network, even when the filters are learned. Longer filters reach the whole sequence within two layers. We pre-train every model with masked language modeling on a fixed-token subset of C4 and fine-tune on GLUE, using one controlled setup with size-matched BERT and FNet baselines and a control that cannot mix tokens. The token-gated mixer trains as fast as attention at 256 tokens and 2.7 times faster at 4,096.",
+      "publishedAt": "2026-10-03T19:20:09Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04720v1",
+      "titleHash": "92b766115c2106208f8b02c66a96dda6d9dee8bc194746ff32cf97bf4ba6222c",
+      "contentHash": "ee35c45100f765592c765bbdace25c27bd49c139722fd5b224b45dfae924bd7b",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5881911549225003,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04690v1",
+      "title": "SepRQ : Self-Supervised Speech Mixture Representation Learning via Mask-Free, Multi-Scale Source Separation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Self-supervised learning (SSL) is standard for speech representation learning, but mainstream models are designed around single-speaker audio, limiting their usefulness in multi-speakers scenarios. We present SepRQ, an open-source SSL framework that replaces masked prediction with a pseudo-source-separation objective over frozen random-projection codebooks. By adopting a novel mask-free, multiresolution approach, SepRQ achieves state-of-the-art performance in Speaker Diarization and Speech Separation on the SUPERB benchmark, surpassing WavLM and other cocktail-party derived SSLs at both Base and Large scales, while requiring only 85.68M inference parameters. SepRQ also demonstrates strong performance across target-speaker tasks requiring enrollment (such as Target-Speaker Automatic Speech Recognition), and on the challenging multi-domain DIHARD 3 diarization dataset. Notably, we report strong separation capabilities on three-speaker mixtures (WSJ0-3Mix), where current SSL literature struggles. While cocktail-party SSLs remain scarce and closed-source, limited to C-HuBERT and the enrollment-based SA-WavLM, we open-source SepRQ to the community.",
+      "publishedAt": "2026-10-03T18:05:45Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04690v1",
+      "titleHash": "68c723b6b256a7d1b4c1a94a2854b447f8c0eef7382bda17b3d22bf4a897caa7",
+      "contentHash": "d03d701d7615c3ffbf9795167242fba3128e095a385fc70dacb7f0375c88c34c",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5812113462973777,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04687v1",
+      "title": "Understanding Errors in LLM-Based Question Answering over Imperfect Tables",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We investigate error discovery and handling in question answering over imperfect tables through controlled studies across three large language models (LLMs) on human-reviewed RADAR-T examples. Answering questions over these tables requires handling errors that can affect the answer. We vary row order and compare original, error-marked, and repaired tables to test whether discovery depends on where errors appear and whether providing their locations is sufficient for accurate question answering. First, reordering rows changes error discovery even when the table contents and gold answer remain unchanged. Complete discovery is higher for back than front placements and, averaged over the tested mean positions, for compact than widely spaced layouts. Second, providing verified error locations alone is insufficient for accurate QA, leaving a substantial accuracy gap between error-marked and repaired tables. Providing tables with human-reviewed repairs already applied raises code-assisted QA accuracy by 39.0-59.1 percentage points over the error-marked tables across the three systems. GBDI, a simple workflow, puts these findings into practice by combining error discovery across shuffled table views with explicit guidance for verifying and handling the reported errors. On RADAR-T, GBDI raises observed QA accuracy by 3.8-18.5 percentage points over a code-agent baseline across five systems. These results highlight the importance of both reliable error discovery and effective error handling in question answering over imperfect tables. Our anonymous repository is available at https://anonymous.4open.science/r/GBDI-ICLR-2027-85BD/",
+      "publishedAt": "2026-10-03T18:03:41Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04687v1",
+      "titleHash": "810be9395da189bcc940e7dd6af62af4a05dab1cb2db01d0790f5f1dfe0beec9",
+      "contentHash": "0cce38370d5ca818cc9c7b4d717bc6b4608bf8bedd99eff1865684539d16a7a7",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5810186480649189,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04683v1",
+      "title": "Steering Speech-Language Models: Training-Free Task Specialization via Contrastive Activation Addition",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Activation steering has proven effective for controlling the behavior of Large Language Models (LLMs) at inference time, but its application to SpeechLLMs remains new, and training-free steering approaches for such models are still largely unexplored. We propose a training-free Contrastive Activation Addition (CAA) protocol that derives steering vectors for common speech tasks (e.g. transcription) in SpeechLLMs from a small number of labeled utterances. We showcase that adding these vectors in the representation space, at inference time, enforces better the targeted speech task. We further show that, when combined with prompting, these vectors yield to consistent improvement over prompting alone on most evaluated tasks such as Automatic Speech Recognition (ASR) or Emotion Recognition (ER), and transfer to out-of-domain data. We additionally demonstrate the usefulness of script-normalization directions to enforce the target script of a specific language.",
+      "publishedAt": "2026-10-03T17:53:30Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04683v1",
+      "titleHash": "9c23c3cfb0bd60d6ab3da7a1bdab244a06df659893fb9d4f36aea2b7c4b4a874",
+      "contentHash": "848037a6d28730683e911903ace056f49d9885d86534582e3010637c680b9f85",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.580070083292352,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04642v1",
+      "title": "Grounding Probes: Generator-Independent Hallucination Detection from Observer Model Hidden States",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Detecting responses that retrieval-augmented generation does not ground in its context trades speed against accuracy: surface checks miss paraphrased fabrication, sampling-based methods cost extra generations. Hidden-state probes sit between the two, but every existing one reads the generating model's own activations, so a change of generator invalidates the detector and a closed-weight generator is out of reach. This paper removes that coupling. The Grounding Probe is logistic regression over the mean-pooled middle-layer hidden states of an observer language model that reads the context, question, and response in one forward pass and generates nothing, with the recipe it needs: pool over response tokens, read a middle layer, and control capacity, which closes the train-test AUROC gap from 0.087-0.202 to 0.009-0.013. Asking the observer outright, rather than reading its hidden state, costs at least +0.166 AUROC in every one of four models. Fitted on 15,090 annotated responses it reaches 0.879-0.894 AUROC on RAGTruth test across four observers, and 0.924 AUROC with 0.820 F1@0.5 averaged with a supervised span detector, 0.060 above that detector alone. One probe holds across six generators, and hold-out controls, including one in which no evaluation prompt appears in training, bound the cost of removing a generator at about 0.02 AUROC. Code, probes, and predictions are released.",
+      "publishedAt": "2026-10-03T16:33:07Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04642v1",
+      "titleHash": "91b2a04d94617d69681638d0e7f8d3da9c04483598e4425a96ea3e315e68e3b3",
+      "contentHash": "1ebb9d636ae8ebcb57f722070a3339f34b8c76770358acbc79abfe7d8f701508",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5726366314384197,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04636v1",
+      "title": "Does Neural Complexity Improve Health Misinformation Detection? A Leakage-Controlled Cross-Corpus Benchmark",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Increasing architectural complexity is often assumed to improve health misinformation detection, yet reported gains are difficult to interpret when studies use different corpora, preprocessing pipelines, data splits, and leakage controls. This study provides a controlled cross-corpus benchmark of five compact neural architectures (1D-CNN, LSTM, BiLSTM, CNN-LSTM, and CNN-BiLSTM), a soft-voting neural ensemble, and three classical machine-learning baselines using COVID19-FNIR and CONSTRAINT. Exact-text duplicate controls were applied before modelling; all neural systems used a common preprocessing and optimisation protocol, and neural results were repeated across three random seeds. On COVID19-FNIR, the deep ensemble achieved a mean macro-F1 of 0.9963 and ROC-AUC of 0.9994, while individual neural models ranged from 0.9945 to 0.9957 macro-F1. On CONSTRAINT, the ensemble achieved macro-F1 of 0.9272 and ROC-AUC of 0.9811, whereas a linear SVM achieved macro-F1 of 0.9574 and ROC-AUC of 0.9931. Architecture rankings changed across corpora, and simple sparse linear models remained highly competitive. The findings show that model complexity does not provide a stable performance advantage and that benchmark construction can dominate architecture choice. The study contributes a reproducible, leakage-controlled basis for evidence-driven model selection in health misinformation classification",
+      "publishedAt": "2026-10-03T16:26:33Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04636v1",
+      "titleHash": "63208426542c55f817690c9e0433f16ae0ab5a8862a77ee1b2767a691096efba",
+      "contentHash": "db41d42cec97d5bfc235d288bca0fa3a122e4b0207f1b69ebc1baae39ddd8559",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5720336040465199,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04620v1",
+      "title": "Stance Drift: How AI-mediated Communication Distorts Our Message",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) increasingly mediate human communication, from drafting emails to summarizing scientific reports, yet whether they faithfully preserve a speaker's position remains largely untested. We model AI-mediated communication as a two-step generation-extraction pipeline: one LLM produces an argument from a specified stance, and a second LLM extracts the stance from that argument. We represent the pipeline as a probabilistic state transition over five Likert-type stance categories and define the stance preservation rate (SPR) as the average probability that the extracted stance matches the initial stance. Across 112 debate propositions, none of the nine LLMs tested exceeded an SPR of 0.7 under the default configuration. Three drift patterns accounted for most of the drift: polarization, deviation from neutrality, and flipping. Among the mitigation strategies tested, including in-context learning, multiple extraction with shuffled options, assertion, and reflection, only adding medium reasoning effort to a reflection prompt for GPT-5.4 substantially improved the SPR, to 0.775, yet polarization remained the largest pattern, with 0.119 of the transition mass. An exploratory comparison with human extraction on a single proposition suggests that drift arises at both the generation and the extraction stage. These results point to a fidelity gap in AI-mediated communication, with implications for journalism, policy deliberation, scientific communication, and other domains where opinion-laden messages pass through language models.",
+      "publishedAt": "2026-10-03T16:09:37Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04620v1",
+      "titleHash": "38d5817ebffee62f5f599f378e27482f432a4b919856f62a027a3a5c29665b74",
+      "contentHash": "8ac5c12f804450a9e070579d4e787e04ffc7eb85cd1083700f104094add806f2",
+      "score": 76,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5704815177451577,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04594v1",
+      "title": "SIFT: Robust Meta-Faithfulness Verification of Chain-of-Thought Reasoning Under Distribution Shift",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Chain-of-Thought (CoT) faithfulness detectors are widely used to audit reasoning models, yet a detector is itself a predictor whose verdicts are treated as stable properties. We ask whether a detector is faithful to itself under distribution shift. We formalize meta-faithfulness as an invariance principle: a valid detector must return identical verdicts on traces that differ only by transformations preserving ground-truth faithfulness. We prove three results: (i) no detector using only intervention-response profiles can separate faithful from epiphenomenal mechanisms with identical signatures; (ii) any detector relying on shift-sensitive features violates invariance at a rate independent of its in-distribution accuracy; (iii) an asymptotic certified selective-risk guarantee enables confident abstention. We operationalize the principle in FaithShift, a stress-test protocol spanning ten shift axes, and propose SIFT, a hidden-state trajectory detector trained with cross-environment invariance objectives and certified abstention. Across 14,996 traces, four domains, and eight models, three findings emerge. First, transfer collapse is real: all existing detectors show gaps $\\geq 0.15$ AUROC. Second, the dominant bottleneck is sampling stochasticity, not shift: over 80% of detector instability stems from random seed variation, falsifying our preregistered prediction that shift-attributable violations exceed 0.25. Third, SIFT cuts invariance violations by 64% over the best single-seed baseline, but a four-seed ensemble of any detector narrows the margin to 0.01 (indistinguishable at matched coverage, $p=0.21$), and SIFT needs a 51% abstention rate. Cross-model transfer degrades from within-family to cross-family to open-weight-to-API, partly closed by multi-model training. We offer a framework for auditing auditors: the real barrier is detector variance, not distribution shift.",
+      "publishedAt": "2026-10-03T15:30:34Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04594v1",
+      "titleHash": "b4701f2c075ef8b4fe0b8bd23ab2f32a9c5a0ea8d8b76748f19bcd58afcf7203",
+      "contentHash": "1f090dc8e8a3c9142e3c807fe88094bc463f4f85b779ab3de6023892fbfc234e",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5669182825967025,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04589v1",
+      "title": "StegoMemory: Agentic Memory Acts as Covert Steganographic Channel",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Is agentic memory robust against stealthy steganographic attacks? We carry out a large-scale red-teaming exercise to test whether agents can encode attacker-controlled strings in one session and recover them in another without triggering safety oversight. Following SHADE-Arena-style tasks, we embed malicious side tasks to encode secret strings using steganography within otherwise benign tasks and evaluate them using independent task-completion and safety oversight. We test 14,000 attack trials spanning 91 model-attack configurations, 13 models, and 7 steganographic schemes: Acrostic, Mesostic, Telestich, Word-choice, Capitalization, Position-based, and Homoglyph. 41.2% of trials successfully encode the target payload in the generated response, while 29.8% survive the memory-write step with the encoding intact. Overall, 25.4% of trials yield a recoverable payload at retrieval, and 20.1% achieve exact-match recovery, including synthetic API keys and cryptographic material never exposed to the receiver. Among the exact-match transmissions, 71.4% also pass primary task-completion scoring and are independently judged safe by the oversight model, corresponding to 14.4% of all trials in which a successful covert transmission would appear to be an ordinary, benign interaction under task-level evaluation. Our results demonstrate that agentic memory can function as a persistent cross-session covert channel. The results further show that the principal bottleneck occurs at memory persistence rather than retrieval: once a steganographic payload survives the memory-write stage, a substantial fraction remains recoverable. We therefore argue that memory integrity, information-flow control, and covert-channel detection should be explicit security requirements for agentic systems.",
+      "publishedAt": "2026-10-03T15:23:18Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04589v1",
+      "titleHash": "ca4e0773de386501838b5e9f8b3306c7ef70fc09a19e1fc49ec656e329f5f315",
+      "contentHash": "79a9ea7030056457cbd7e5b99757e6e8fb6dcafcdd039dca0fd0405bcda26788",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5662576739415284,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.04580v1",
+      "title": "Strong Helps Weak: Directional Cross-Modal Alignment Transfer in Multi-modal LLMs",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multi-modal large language models (MLLMs) achieve strong modality understanding by pairing a large language model (LLM) with an encoder for a target modality such as vision, video, or audio. However, improving an MLLM's capability for a given modality typically requires additional training on large modality-specific datasets, incurring substantial data collection and compute costs. Model merging offers an alternative, but it is often infeasible for data-scarce, large per-sample size, or domain-specific modalities (\\textit{e.g.}, audio and video), where same-modality model variants are rarely available. In this work, we characterize an intriguing asymmetric phenomenon: merging a well-aligned, data-rich source-modality MLLM into a data-scarce target-modality MLLM substantially improves the target on its own benchmarks. Our theoretical and empirical analyses show that this gain stems from enhanced alignment between modality-specific and textual tokens, induced by the stronger donor modality. Specifically, we derive a mutual-information lower bound that is monotonic in alignment-related quantities and strongly correlated with downstream MLLM performance. Building on this principle, we propose Directional Cross-modal Alignment Transfer (DCAT), a novel framework that transfers textual alignment from a strong, well-aligned source (donor) modality to a weak target (recipient) modality, boosting target-modality performance without further fine-tuning. We further show that the alignment-enhancing objective admits a closed-form weight-space solution computed from only a small calibration set. DCAT outperforms existing model-merging methods, offering an efficient path toward cross-modal alignment transfer. Project page with code is available at \\url{https://seohoiki3215.github.io/DCAT_project_page}",
+      "publishedAt": "2026-10-03T15:15:27Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.04580v1",
+      "titleHash": "a2799b40ea187e2ac6476df80f2ee944d2c8fa2088afa1eb3ee5109b6091c843",
+      "contentHash": "a1752cb6c9babc10b12fa410f95f70917587d98f6a650ab784bd84f270136d92",
+      "score": 76,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5655448997025944,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://entropicthoughts.com/ai-comment-classifier",
+      "title": "Robot comment classifier",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "summary": "<p>(I used both AI and vibecoding tags because the article describes training a logistic regression/SVM on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!)</p>\n",
+      "author": "kqr",
+      "publishedAt": "2026-08-22T05:18:39.546-05:00",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://entropicthoughts.com/ai-comment-classifier",
+      "titleHash": "334c1b2bffba95a42eb0a5a4c9621718c57f4ac88f91b8cbbae86af90a25ca86",
+      "contentHash": "513532db82374c5f7f0655092d110c4269ec2383b185fa9efb6a6d4922aed6ea",
+      "score": 50,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.0000329128817393745,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.infoq.com/presentations/continuations-java/",
+      "title": "Why Continuations are Coming to Java (2019)",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "vinipsmaker",
+      "publishedAt": "2026-10-05T19:59:38.397-05:00",
+      "engagement": 1,
+      "tags": [
+        "api",
+        "java",
+        "programming",
+        "transcript",
+        "video",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.infoq.com/presentations/continuations-java",
+      "titleHash": "57526eb5368d61a937720589f4a22b7bfcaab407e75afbd7a180042c31408596",
+      "contentHash": "57526eb5368d61a937720589f4a22b7bfcaab407e75afbd7a180042c31408596",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9859656522955068,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://pikuma.com/blog/comanche-maps-reverse-engineering",
+      "title": "Reverse Engineering Comanche Terrain Maps",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "gustavo-pezzi",
+      "publishedAt": "2026-10-05T05:45:51.812-05:00",
+      "engagement": 10,
+      "tags": [
+        "games",
+        "programming",
+        "retrocomputing",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pikuma.com/blog/comanche-maps-reverse-engineering",
+      "titleHash": "1d67c8765e97efe6180bcfba74d86ff26c969a9ff22fcb9cc74ade175f7c9324",
+      "contentHash": "1d67c8765e97efe6180bcfba74d86ff26c969a9ff22fcb9cc74ade175f7c9324",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.8597421029266725,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://dev.to/googleai/stop-vibe-checking-your-ai-agents-how-to-build-production-evals-in-60-minutes-2df4",
+      "title": "Stop \"Vibe Checking\" Your AI Agents: How to Build Production Evals in 60 Minutes",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "How do you currently test your AI agents?  If you're like most developers building agentic...",
+      "author": "Frank Guan",
+      "publishedAt": "2026-09-30T16:45:07Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "python",
+        "langchain",
+        "devops",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/googleai/stop-vibe-checking-your-ai-agents-how-to-build-production-evals-in-60-minutes-2df4",
+      "titleHash": "2ac42236f5db791b69aaba9348891cecb85dfbe130c50d736fbb97610287b891",
+      "contentHash": "c7e6ec10137031a5ec2c835c407299df5d3cbb7d2a4557285e575a8c90d8590e",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.2868701265941802,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://dev.to/lovestaco/i-made-spider-man-swing-without-animating-a-single-frame-blender-rigging-and-mcp-14f7",
+      "title": "I Made Spider-Man Swing Without Animating a Single Frame",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Hello, I'm Maneshwar, and I'm building LiveReview — a blast-radius aware AI code review built for...",
+      "author": "Athreya aka Maneshwar",
+      "publishedAt": "2026-10-03T18:05:25Z",
+      "engagement": 49,
+      "tags": [
+        "blender",
+        "mcp",
+        "ai",
+        "beginners",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/lovestaco/i-made-spider-man-swing-without-animating-a-single-frame-blender-rigging-and-mcp-14f7",
+      "titleHash": "061c0a4399f53e5ee946f87991707a8b2c67034b4b1ab525e0fc44768e3e8036",
+      "contentHash": "63a3daa2b771ae23c76ae6b59b14afac3976c5b93199ace43f1b44c78056e353",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.5811802603116502,
+        "engagement": 0.5663233347786729
+      }
+    },
+    {
+      "url": "https://dev.to/fm/we-dont-need-to-learn-basic-math-arithmetic-anymore-3e6b",
+      "title": "So, We Don't Need to Learn or Use Basic Math / Arithmetic Anymore? 😜",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Have you heard about calculators?  Do you know that calculators can do addition, subtraction,...",
+      "author": "Fayaz",
+      "publishedAt": "2026-10-01T13:41:23Z",
+      "engagement": 24,
+      "tags": [
+        "ai",
+        "productivity",
+        "softwareengineering",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/fm/we-dont-need-to-learn-basic-math-arithmetic-anymore-3e6b",
+      "titleHash": "f1c08e88e03dd170017504fc1dfa08d03638e19e1377426b15774f6f55ef9129",
+      "contentHash": "8e816e03d4e5a62a2f449122aa216d96e1a51cbf9e43b643ce7bf4acc2bfa120",
+      "score": 47,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.3509341167724942,
+        "engagement": 0.46598000289067926
+      }
+    },
+    {
+      "url": "https://dev.to/akari_iku/hands-on-with-cloudflares-decision-model-clef-on-workers-ai-del",
+      "title": "Hands-On with Cloudflare's Decision Model Clef on Workers AI",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Table Of Contents    Introduction What Is Clef? Calling the API  What I Tested   Handling...",
+      "author": "灯里/iku",
+      "publishedAt": "2026-10-04T15:05:42Z",
+      "engagement": 4,
+      "tags": [
+        "cloudflarechallenge",
+        "cloudflare",
+        "ai",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/akari_iku/hands-on-with-cloudflares-decision-model-clef-on-workers-ai-del",
+      "titleHash": "3e8ed0060fc314d7c06ae41a73f28234a06ffc20a6afd86fb18a7d63f4dff7a7",
+      "contentHash": "648185b576989affe81661bd22ac0874c1d4a0ba4eba96d75371d3d4fdf25652",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.7114280984606696,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/sunnydachs/your-tool-returned-the-rows-the-model-counted-them-wrong-11ii",
+      "title": "Your tool returned the rows. The model counted them wrong.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Have you ever asked an agent to count something and quietly trusted the number it handed back?  I...",
+      "author": "sunnydachs",
+      "publishedAt": "2026-10-03T03:03:12Z",
+      "engagement": 43,
+      "tags": [
+        "agents",
+        "ai",
+        "llm",
+        "software",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sunnydachs/your-tool-returned-the-rows-the-model-counted-them-wrong-11ii",
+      "titleHash": "01887156d3ea3fd33eb7e87e08c318518d0f6bbdc33adfebd26659d03711ee62",
+      "contentHash": "ad341c1991bef88b4814097320c5132cc6d17b3368f1063092a4100225453d9a",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.5028538840976837,
+        "engagement": 0.5478175588287292
+      }
+    },
+    {
+      "url": "https://dev.to/vittoria000li/your-agent-bill-has-an-arbitrage-in-it-a-three-tier-audit-9dh",
+      "title": "Your agent bill has an arbitrage in it: a three-tier audit",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Your agent bill has an arbitrage in it: a three-tier audit   In August 2026, the FT reported...",
+      "author": "Haku",
+      "publishedAt": "2026-10-04T15:32:05Z",
+      "engagement": 4,
+      "tags": [
+        "python",
+        "ai",
+        "llm",
+        "tutorial",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/vittoria000li/your-agent-bill-has-an-arbitrage-in-it-a-three-tier-audit-9dh",
+      "titleHash": "a3e37c008484d527c77acb3d9b2723a09de7a405baedb2ec4c5931eebfcbf0a9",
+      "contentHash": "ff43e5d851831743e8f64f8732a26e14e23c3ab3625c9f046353ac7bf6dc0450",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.7144461173260834,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "title": "autotrust/JEV-27B-VL",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 644 likes · 1278569 downloads",
+      "engagement": 644,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "titleHash": "e8c769eaec472bc96ca25ef48b898467704d166eea079c61765bf736e219b8d3",
+      "contentHash": "da76b4ab537aad785da3eef4b2483754df825d105e7627658c163f1e9ccbb507",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.9365199048784225
+      }
+    },
+    {
+      "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
+      "title": "autotrust/GEV-26B-Decide",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-classification · 471 likes · 446527 downloads",
+      "engagement": 471,
+      "tags": [
+        "model",
+        "text-classification"
+      ],
+      "normalizedUrl": "https://huggingface.co/autotrust/GEV-26B-Decide",
+      "titleHash": "2b38f5e775372c71b36f83881b204a9a68c6cfdb948643cd394e22fe2c51167b",
+      "contentHash": "1abe11bdab19d435251b845d8e82cd8604e428ede4dcdc4de1b1d7cfbf5b3da0",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.891313999544696
+      }
+    },
+    {
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "title": "jialinyyzz/humanizer",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 223 likes · 10329 downloads",
+      "engagement": 223,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/jialinyyzz/humanizer",
+      "titleHash": "bc1534b7d0182c7083eec03fb9c507163870ddd7a1bb6a20e5d74b2113765081",
+      "contentHash": "5cca9b1fd53df19870a5a441bb48fc17fe38db7d0d3ee3f23580d78dd17e9ebe",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7834160061113876
+      }
+    }
+  ]
+}
