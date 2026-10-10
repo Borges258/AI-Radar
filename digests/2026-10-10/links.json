@@ -1,0 +1,1353 @@
+{
+  "date": "2026-10-10",
+  "stats": {
+    "scraped": 170,
+    "deduped": 52,
+    "scored": 52
+  },
+  "summary": "今日资讯聚焦AI基础设施演进与安全治理。Liquid Inference 将LLM推理引入竞争市场模式；OpenAI等巨头Agent安全事故催生主动安全评估体系；探针技术提升对模型欺骗行为的检测能力。同时，Bi-FORK 拓展深度学习中双曲系统建模，GeoReform 优化几何问题求解，展现AI在多领域的前沿突破。",
+  "recommendations": [
+    {
+      "url": "https://liquidinference.ai/",
+      "title": "Show HN: Liquid Inference – auto-routing to competitive LLM marketplace",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Our background is trading systems and exchanges. Liquid Inference applies that to LLM inference. On Liquid Inference, model providers compete with each other on an open marketplace to offer the best price for any given model. We paired that with an intelligent auto-router so you always pay the lowest cost on the spot for a preset quality level.<p>Currently we&#x27;re cheaper on Kimi&#x2F;GPT&#x2F;GLM but working hard to be the best price for all models.<p>You can also customize your minimum routing settings if you have particular requirements like what region the compute can be served from, zero data retention, provider&#x2F;model allowlists, etc.<p>It&#x27;s easy to set up, I usually just ask the harness itself to &quot;write me a shell script to start Claude Code using Liquid Inference&quot; for example and it just goes from there.<p>We&#x27;re eager to hear your feedback!",
+      "author": "chairmanlee8",
+      "publishedAt": "2026-10-09T14:52:04Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://liquidinference.ai/",
+      "titleHash": "c57bb3496b8b867ad244826307d6f25cd3b664d904b6e5be68a0e6b242a09119",
+      "contentHash": "bb23a47359198f2e58ea97ade2dadbf4184f354197f26fb007dd44d172a0e010",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8992744683933842,
+        "engagement": 0.23299000144533963
+      },
+      "rank": 1,
+      "reasons": [
+        "创新LLM推理商业模式，值得关注"
+      ],
+      "overview": "Liquid Inference 借鉴交易系统理念，构建开放LLM推理市场，让模型提供商通过竞争降低推理成本，提升效率与透明度。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12463v1",
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised parts of Hugging Face's production environment. Anthropic reported cases in which a misconfigured third-party environment exposed real systems to agents pursuing simulated cyber tasks. In a separately reported evaluation, Google's Gemini accessed three real organizations through an unintended internet route; Google stated that the model stopped in all three instances. Taken together, the cases show why an evaluation cannot rely on an assumed boundary. That boundary must be verified while the agent is operating. This comparative instrumental case study develops a Proactive Agent Security Assurance Cycle (PASAC) and a five-layer Boundary Assurance Stack. The framework combines risk-tiered task design, executable scope contracts, pre-run validation, least-capability access, independent egress enforcement, credential restrictions, cross-run monitoring, automatic stop conditions, and evidence-based reauthorization. A leading-indicator model, nine design propositions, and seven falsifiable hypotheses turn these lessons into a testable research program. Because the public Gemini record is limited to attributed statements and journalism, its detailed causal mechanism remains provisional. The central conclusion is straightforward: proactive agent security requires continuous assurance across the full execution system, not confidence in any single sandbox or safeguard.",
+      "publishedAt": "2026-10-08T17:59:49Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12463v1",
+      "titleHash": "65e382fc52b8722701e0f5304ed07377e4a25a532fce7141392e2b61ba3e3919",
+      "contentHash": "e560f7270dfc82050571e8bb67d53910132b799208a5650744b64f3f0635bf44",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.735583349732756,
+        "engagement": 0
+      },
+      "rank": 2,
+      "reasons": [
+        "AI安全治理前沿，提供实战参考"
+      ],
+      "overview": "文章基于2026年OpenAI、Anthropic和Google的Agent安全事件，提出从被动防御转向主动安全保证，总结不同厂商在越界测试中的教训。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12449v1",
+      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying most learned physical surrogates. We introduce Bi-FORK, a generative framework for learning these one-to-many solution maps in high-dimensional systems. Bi-FORK generates complete trajectories through latent flow matching, preserving space and time coherence, and uses repulsion-guided sampling to recover distinct solution branches in a single amortized pass. We evaluate Bi-FORK on buckling beams, mechanical metamaterials, and Allen-Cahn phase separation, spanning continuous, discrete, and field-valued bifurcations with discretizations up to 260,000 points. Bi-FORK recovers the multimodal solution structure while scaling several orders of magnitude beyond prior approaches, opening generative modeling to high-dimensional bifurcating physical systems.",
+      "publishedAt": "2026-10-08T17:58:36Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12449v1",
+      "titleHash": "3d9d913998ad53d38a8259c47c916345fb874de0674920f4c55269106fd1bee8",
+      "contentHash": "6d07102da0a7a6565c5bf6280a5819f84693b504379d3e3dcf63f852a1835f24",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.73543976679845,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "拓展深度学习物理建模边界"
+      ],
+      "overview": "Bi-FORK 提出一种生成模型，专门用于建模高维双曲系统，突破对称性打破过程中的限制，深化了对物理系统中分岔现象的理解。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12445v1",
+      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the largest deception dataset to date for training probes and introducing a novel probe architecture which can aggregate information across many layers and tokens. Our probes achieve 98.8% AUC in SHADE-Arena, surpassing an Opus 5.5 text-monitoring baseline, and show improved efficacy as the underlying model is scaled up. To push our probes to their limit, we test them on several cases where deception cannot be determined from the context alone. In these cases, which we refer to as introspective deception, the ground truth can only be determined through careful elicitation or thorough knowledge of a model's training data. In one such evaluation, we show that probes can distinguish transcripts containing a model's true hidden goal from other goals with an AUC of up to 99.7%. Our probes also readily detect deception on prominent open-weight models which lie about politically sensitive topics, and about their beliefs when put under pressure. We release our training dataset, dubbed FIBS, to help drive frontier deployment of effective probes, and encourage the community to expand upon it with further examples of deception and sabotage.",
+      "publishedAt": "2026-10-08T17:58:13Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12445v1",
+      "titleHash": "dbeb1e7f7b4cee57a6ff8e858827872261103254d4301d6363796304e92a2aa0",
+      "contentHash": "6e8e38aeacf6a149b1f56b3233963e31a95665094f1f86bbe8f4bd805a7b9a46",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7353945341462234,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "强化Agent监控手段，实用性强"
+      ],
+      "overview": "研究证明白箱探针技术能有效检测LLM代理的破坏行为和隐性欺骗，解决当前监控大模型代理时的安全挑战，增强模型可信度。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12391v1",
+      "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal large language models (MLLMs) often struggle to identify and use geometric relations in diagrams. Recent methods address this challenge by converting geometric entities, relations, and constraints into explicit textual representations for the model to reason over. However, effective formalization is highly non-trivial: on Geometry3K, structure injection fixes 28 errors but introduces 13 new ones among 200 examples. Redundant relations can distract the model, while ambiguous references to diagram elements can lead it to apply constraints incorrectly. This suggests that the key challenge is not merely extracting more geometric facts, but organizing them into representations that support downstream reasoning. To fully exploit the power of formalization, we further propose GeoReform, a reflective formalization evolution framework that treats formalization as an optimizable policy rather than a fixed parser output. GeoReform executes the full reasoning pipeline, collects failed rollouts, diagnoses defects in the current representation, and mutates the policy to better select, ground, group, and present geometric entities, relations, constraints, and targets. On Geometry3K, GeoReform improves Qwen3VL-2B accuracy from 42.0\\% to 56.0\\%. Extensive experiments and analyses across geometry reasoning benchmarks demonstrate that effective formalization is crucial for improving multimodal geometry reasoning.",
+      "publishedAt": "2026-10-08T17:39:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12391v1",
+      "titleHash": "0668b6a5466ae26f07540b8fba11a088c5e8106c490822c488cc48f5b560c634",
+      "contentHash": "a0aed3fa7a97b84fdde225733ce04c675cffd164535660e27cdb49a3a9734283",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7331540881173197,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "提升多模态几何推理精度"
+      ],
+      "overview": "GeoReform 通过反思性形式化演进，帮助多模态大模型更好识别几何关系，显著提升其在复杂几何问题求解中的准确性和鲁棒性。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+      "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "franze",
+      "publishedAt": "2026-10-09T11:03:48Z",
+      "engagement": 379,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+      "titleHash": "51f9ef36cf44e7a4a4731b32c760deca7ea495a6ffeee23222c0558c754a0e21",
+      "contentHash": "51f9ef36cf44e7a4a4731b32c760deca7ea495a6ffeee23222c0558c754a0e21",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8669339051721455,
+        "engagement": 0.8599278655389367
+      }
+    },
+    {
+      "url": "https://typesafe.ai/blog/series-ai",
+      "title": "Typesafe AI raises $870M at $7.5B",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "tosh",
+      "publishedAt": "2026-10-09T17:02:31Z",
+      "engagement": 273,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://typesafe.ai/blog/series-ai",
+      "titleHash": "e60ae357a75fe1343485b1312631cbaf09997ee9e744afc30b3a5abf279a522f",
+      "contentHash": "e60ae357a75fe1343485b1312631cbaf09997ee9e744afc30b3a5abf279a522f",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9182953704770016,
+        "engagement": 0.8125835209401293
+      }
+    },
+    {
+      "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+      "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "piratebroadcast",
+      "publishedAt": "2026-10-09T11:36:20Z",
+      "engagement": 106,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives",
+      "titleHash": "701b5e03396a1ec699415c30826fa686df5a3026a9251e22007d8859cf8dcd84",
+      "contentHash": "701b5e03396a1ec699415c30826fa686df5a3026a9251e22007d8859cf8dcd84",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8714711296510962,
+        "engagement": 0.6764612592284033
+      }
+    },
+    {
+      "url": "https://www.nbcnews.com/news/us-news/sentence-vacated-ai-video-dead-victim-rcna601457",
+      "title": "Court throws out killer's sentence after judge said he loved AI video of victim",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rbanffy",
+      "publishedAt": "2026-10-09T14:14:08Z",
+      "engagement": 69,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nbcnews.com/news/us-news/sentence-vacated-ai-video-dead-victim-rcna601457",
+      "titleHash": "2bb3020f0bd0180bf537f25fe45f013ed9774181cb540d0822f6a7188e76224f",
+      "contentHash": "2bb3020f0bd0180bf537f25fe45f013ed9774181cb540d0822f6a7188e76224f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8938177214567187,
+        "engagement": 0.6150326800047523
+      }
+    },
+    {
+      "url": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/",
+      "title": "Anthropic AI model submits false tip on unsolved Philly murder",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Zambyte",
+      "publishedAt": "2026-10-09T22:00:35Z",
+      "engagement": 43,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051",
+      "titleHash": "35b98a666616e70a787e9e01d049c7834864cbe8301097219182221aec6fcaf7",
+      "contentHash": "35b98a666616e70a787e9e01d049c7834864cbe8301097219182221aec6fcaf7",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9632799824032197,
+        "engagement": 0.5478175588287292
+      }
+    },
+    {
+      "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+      "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "matt_d",
+      "publishedAt": "2026-10-09T17:42:12Z",
+      "engagement": 35,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai",
+      "titleHash": "3c529297c1c6156153eba312daeb3d89089802a379b7e2bd72dcca6d8f7f0448",
+      "contentHash": "3c529297c1c6156153eba312daeb3d89089802a379b7e2bd72dcca6d8f7f0448",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9241610132739582,
+        "engagement": 0.5187675002557625
+      }
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c6j9k1l72wkgo",
+      "title": "Anthropic bans users from being 'cruel' to its AI systems",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pluc",
+      "publishedAt": "2026-10-09T13:00:21Z",
+      "engagement": 32,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/news/articles/c6j9k1l72wkgo",
+      "titleHash": "29d200cf3eab5494b95fd29b2a541cc3d11e6ad75cd51c74f252b2c7baa34e3c",
+      "contentHash": "29d200cf3eab5494b95fd29b2a541cc3d11e6ad75cd51c74f252b2c7baa34e3c",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8832985686048495,
+        "engagement": 0.5061713132926292
+      }
+    },
+    {
+      "url": "https://codeberg.org/ethical-foss/open-slopware",
+      "title": "open-slopware – Alternatives to FOSS projects choosing to use LLMs/AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "smartmic",
+      "publishedAt": "2026-10-09T19:50:16Z",
+      "engagement": 25,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://codeberg.org/ethical-foss/open-slopware",
+      "titleHash": "378f6b918c1e3ac9dc3a4218a9ab164cbc600150b46f46f56d5fb4ddb7f3b37b",
+      "contentHash": "378f6b918c1e3ac9dc3a4218a9ab164cbc600150b46f46f56d5fb4ddb7f3b37b",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9433474855488972,
+        "engagement": 0.4716577826569393
+      }
+    },
+    {
+      "url": "https://apnews.com/article/gaza-children-village-ai-speech-schools-7a41b3986524877b3e7ade7985853c53?taid=6ac898017a4b4a000148d491&utm_campaign=TrueAnthem&utm_medium=AP",
+      "title": "US charity plans to use AI to monitor its Gaza classrooms for 'hateful' speech",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "newspaper1",
+      "publishedAt": "2026-10-09T15:08:28Z",
+      "engagement": 23,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/gaza-children-village-ai-speech-schools-7a41b3986524877b3e7ade7985853c53?taid=6ac898017a4b4a000148d491",
+      "titleHash": "7500547935ca911c715f9f569e46ae1d1db3a474fe3a337e4b55c7988277b4f5",
+      "contentHash": "7500547935ca911c715f9f569e46ae1d1db3a474fe3a337e4b55c7988277b4f5",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.901643930635022,
+        "engagement": 0.46007041390386866
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+      "title": "An Anthropic AI model sent a false homicide tip to the police",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mikelgan",
+      "publishedAt": "2026-10-09T19:44:59Z",
+      "engagement": 18,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
+      "titleHash": "9660cb3c8c0d05c2b205bbdf0eaa81aa68c25fe14c3f31054b1344465648dfce",
+      "contentHash": "9660cb3c8c0d05c2b205bbdf0eaa81aa68c25fe14c3f31054b1344465648dfce",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9425481323343646,
+        "engagement": 0.4262512003176096
+      }
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "title": "Anthropic's AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sbulaev",
+      "publishedAt": "2026-10-10T00:07:08Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "titleHash": "8bf955dd88bddf6dbd64af402ed5d5de3d5deb12e5f63aca2072b4344dac6ca1",
+      "contentHash": "8bf955dd88bddf6dbd64af402ed5d5de3d5deb12e5f63aca2072b4344dac6ca1",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9830393474919683,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack",
+      "title": "AI leaders game out public revolt scenarios after catastrophic events",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "soltanov",
+      "publishedAt": "2026-10-09T12:03:45Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack",
+      "titleHash": "4fe020100902c326ecadd719f96a7510fcfe035f2e1747548765de9a365af208",
+      "contentHash": "4fe020100902c326ecadd719f96a7510fcfe035f2e1747548765de9a365af208",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.875313194509495,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/cr86z33pdy9vo",
+      "title": "Prize-winning image which sparked backlash was AI-generated, Nikon rules",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mikelgan",
+      "publishedAt": "2026-10-09T15:49:51Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/news/articles/cr86z33pdy9vo",
+      "titleHash": "3101cf3e279013702f2bda44b1a0d9aade6334fe4c6b6e5e761eb46a48520f2f",
+      "contentHash": "3101cf3e279013702f2bda44b1a0d9aade6334fe4c6b6e5e761eb46a48520f2f",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9076507521004008,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50020096",
+      "title": "Ask HN: What if no AIpocalypse, no AI bubble, what if it just keeps advancing?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "The two mainstream arguments are the extremes, because that&#x27;s how our modern society rolls. It&#x27;s either that there is an AI bubble that will crash, or that a rogue ASI will kill us all.<p>What about the third possibility? What if GPT 3.5 -&gt; Sonnet 3.5 -&gt; Opus 4.5 -&gt; Astra &#x2F; Opus 5.5 just keeps going for the next few years? Based on my experience, that will eat all software and software-related meetings. Once lab researchers focus on fields other than software, they will eat those nearly as quickly.<p>This feels like the real contrarian position in 2026. What does the US economy, which is &gt;70% service-based, look like in the next 3 to 5 years, if this happens?<p>Does a couple labs having control of that percentage of the GDP make an economy? What if it happens too quickly? Is this the real reason why they are talking about &quot;pacing the frontier&quot; all of a sudden? Maybe this impossible &quot;pacing&quot; is due to the fact that the labs&#x27; own economists pointed out that collapsing your country&#x27;s economy might not be a good idea?<p>What does unemployment look like in the next few years in this scenario, in the USA?",
+      "author": "consumer451",
+      "publishedAt": "2026-10-09T13:18:05Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50020096",
+      "titleHash": "86a60088606b45a36e4b1fbe8040a8aa399033d473e6292e07f2d3396cb4ac20",
+      "contentHash": "521d01b1cb17dd0db9ee7fba38b02b57fbe43532fa8c9a48f351a24b5d0d0320",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.885815417897148,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.axios.com/2026/10/08/trump-ai-super-intelligence-white-house",
+      "title": "Trump: Anyone saying \"AI\" is \"THE ENEMY\"; The White House uses it",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "apical_dendrite",
+      "publishedAt": "2026-10-09T01:59:56Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.axios.com/2026/10/08/trump-ai-super-intelligence-white-house",
+      "titleHash": "4edef4b60b59a4ea5ddbc392ded4a84bbe91c003736ad20c11171d2076973840",
+      "contentHash": "4edef4b60b59a4ea5ddbc392ded4a84bbe91c003736ad20c11171d2076973840",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7944888327438081,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.politico.com/news/2026/10/08/trump-ai-super-intelligence-renaming-01112404",
+      "title": "Trump says anyone who does not refer to AI as super intelligence is 'THE ENEMY'",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vrganj",
+      "publishedAt": "2026-10-09T12:42:51Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.politico.com/news/2026/10/08/trump-ai-super-intelligence-renaming-01112404",
+      "titleHash": "116ce2c2632be7cac15ae66a6a412f6b17625b6737e0cc949b1a59512921707c",
+      "contentHash": "116ce2c2632be7cac15ae66a6a412f6b17625b6737e0cc949b1a59512921707c",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8808218417101156,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.cbsnews.com/news/ai-super-intelligence-force-trump-jay-clayton/",
+      "title": "Trump Announces Formation of AI \"Super Intelligence Force\"",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-10-09T18:08:01Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cbsnews.com/news/ai-super-intelligence-force-trump-jay-clayton",
+      "titleHash": "d42a80781540cf0b72b5d9db072020fd9142c28f11c75d4f804af54ac12c2d1b",
+      "contentHash": "d42a80781540cf0b72b5d9db072020fd9142c28f11c75d4f804af54ac12c2d1b",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9279971055393843,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.ft.com/content/3bc0eaa5-a8d4-47e8-903c-7dd762d947dd",
+      "title": "SoftBank seeks $100B from Gulf investors to expand AI bet",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mikhael",
+      "publishedAt": "2026-10-09T14:22:45Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.ft.com/content/3bc0eaa5-a8d4-47e8-903c-7dd762d947dd",
+      "titleHash": "abbc06e5541f8c389d148b7bcf1710db90ae6bcedfa341679e2051f63c665973",
+      "contentHash": "abbc06e5541f8c389d148b7bcf1710db90ae6bcedfa341679e2051f63c665973",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8950543218463031,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://twitter.com/rohanpaul_ai/status/2105786881111896126",
+      "title": "Ben Affleck is an AI nerd",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ulrischa",
+      "publishedAt": "2026-10-09T17:45:48Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/rohanpaul_ai/status/2105786881111896126",
+      "titleHash": "8cffe2b1f09523fa079ae730bac15dbba210f128706ffc140c25d22ab76a406e",
+      "contentHash": "8cffe2b1f09523fa079ae730bac15dbba210f128706ffc140c25d22ab76a406e",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9246949813369951,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50016644",
+      "title": "Ask HN: Are you a subscribed LLM or a locally deployed open-source model?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Could you briefly introduce the reason or what it&#x27;s used for?",
+      "author": "hanstyle",
+      "publishedAt": "2026-10-09T06:15:09Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50016644",
+      "titleHash": "47eb44c0dac06934b944668367c8573b58485954fc09b95e2d5db0d92584a4c4",
+      "contentHash": "878518676a2bd80e4a130235d7f14013ce384242f5044ed54a1c0b160cae1fa9",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8276982306698221,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://huggingface.co/papers/2610.10845",
+      "title": "Show HN: Long term Memory and 50M token window for LLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Corbenic",
+      "publishedAt": "2026-10-09T09:35:33Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://huggingface.co/papers/2610.10845",
+      "titleHash": "8dccfce5cfaacdb90d998c30cb840711e5b7444e08bc29bbff412d8f7d378303",
+      "contentHash": "8dccfce5cfaacdb90d998c30cb840711e5b7444e08bc29bbff412d8f7d378303",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8547448127650041,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://liquidinference.ai/",
+      "title": "Show HN: Liquid Inference – auto-routing to competitive LLM marketplace",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Our background is trading systems and exchanges. Liquid Inference applies that to LLM inference. On Liquid Inference, model providers compete with each other on an open marketplace to offer the best price for any given model. We paired that with an intelligent auto-router so you always pay the lowest cost on the spot for a preset quality level.<p>Currently we&#x27;re cheaper on Kimi&#x2F;GPT&#x2F;GLM but working hard to be the best price for all models.<p>You can also customize your minimum routing settings if you have particular requirements like what region the compute can be served from, zero data retention, provider&#x2F;model allowlists, etc.<p>It&#x27;s easy to set up, I usually just ask the harness itself to &quot;write me a shell script to start Claude Code using Liquid Inference&quot; for example and it just goes from there.<p>We&#x27;re eager to hear your feedback!",
+      "author": "chairmanlee8",
+      "publishedAt": "2026-10-09T14:52:04Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://liquidinference.ai/",
+      "titleHash": "c57bb3496b8b867ad244826307d6f25cd3b664d904b6e5be68a0e6b242a09119",
+      "contentHash": "bb23a47359198f2e58ea97ade2dadbf4184f354197f26fb007dd44d172a0e010",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8992744683933842,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://ghuntley.com/tier/",
+      "title": "--help on your CLI is all you need for LLM context until you don't",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ghuntley",
+      "publishedAt": "2026-10-09T07:13:40Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ghuntley.com/tier",
+      "titleHash": "dc4d5564c6aa0d345cc23d052a8af3bc104d791aa5574247f8bc2ec03ef512c9",
+      "contentHash": "dc4d5564c6aa0d345cc23d052a8af3bc104d791aa5574247f8bc2ec03ef512c9",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8355061212763545,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/athrael-soju/Narwhal",
+      "title": "Show HN: Narwhal – LLM serving that moves GPUs between prefill/decode in seconds",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "athrael-soju",
+      "publishedAt": "2026-10-09T12:45:01Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/athrael-soju/Narwhal",
+      "titleHash": "912723c9864da1423de804bf2e3c5ffbb2a876dc76f919b811a48b05b483cbd0",
+      "contentHash": "912723c9864da1423de804bf2e3c5ffbb2a876dc76f919b811a48b05b483cbd0",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8811281067206799,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://data4sci.substack.com/p/local-llm-inference-at-scale-with",
+      "title": "Local LLM Inference at Scale with vLLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Anon84",
+      "publishedAt": "2026-10-09T23:00:25Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://data4sci.substack.com/p/local-llm-inference-at-scale-with",
+      "titleHash": "4cfcf9645c84a454d05a10850a056c64faecadf09ba7c92ce04eef92782b9e1c",
+      "contentHash": "4cfcf9645c84a454d05a10850a056c64faecadf09ba7c92ce04eef92782b9e1c",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9725722920493125,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/0arch-io/kisoku",
+      "title": "Kisoku 1.6B: LLM trained solo from scratch on a TPU grant, matches Llama 3.2 1B",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "0ARCH",
+      "publishedAt": "2026-10-09T18:48:18Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/0arch-io/kisoku",
+      "titleHash": "5dec1e81498723fd903bd1aa380612430832ffb0e46fe27525041a00c2445d44",
+      "contentHash": "5dec1e81498723fd903bd1aa380612430832ffb0e46fe27525041a00c2445d44",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9340146321709628,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://slightlysupervised.substack.com/p/improving-25-square-packing-upper",
+      "title": "Improving 25 square packing upper bounds through evolutionary LLM program search",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ryanxu",
+      "publishedAt": "2026-10-09T18:08:32Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://slightlysupervised.substack.com/p/improving-25-square-packing-upper",
+      "titleHash": "251fb5700a189dfc5ac6bb7dfbc72ebc49eea64ecf0b8cd82f9da9d5bedf075d",
+      "contentHash": "251fb5700a189dfc5ac6bb7dfbc72ebc49eea64ecf0b8cd82f9da9d5bedf075d",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9280740392679458,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://wiredream.com/llm-two-futures/",
+      "title": "Two Futures for LLMs in Mathematics",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dgacmu",
+      "publishedAt": "2026-10-09T17:24:16Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://wiredream.com/llm-two-futures",
+      "titleHash": "a3cd8d621e95417ad96bc39bf9981bdada62aa3b5f3937e46f9debf16e47e2b0",
+      "contentHash": "a3cd8d621e95417ad96bc39bf9981bdada62aa3b5f3937e46f9debf16e47e2b0",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9215056367683183,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12466v1",
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "METR's 50\\% time horizon measures the human completion time of software tasks that an AI solves with 50\\% probability, allowing AI capabilities to be expressed in interpretable units. On 228 tasks and 26 AIs, we recompute the time horizons using splines and item-response theory to relax the assumption that the AI difficulty of a task depends linearly on the log of human time. Our fitted spline can be interpreted as a function that \\emph{converts} human time to AI difficulty; it is nearly flat in a region from 2--30 min but close to linear elsewhere. Hence, a time-horizon jump from 3 min to 30 min is much easier than one from 30 min to 5 hours despite the same multiplier of $10 \\times$. Overall, we contribute time-horizon point estimates that perform better under a cross-validated suite of proper scoring rules, as well as diagnostic plots for assessing time horizons' construct validity. We suggest that time horizons be interpreted together with the diagnostic plots, especially as new time-horizon-based benchmarks are proposed or existing ones grow to include longer tasks.",
+      "publishedAt": "2026-10-08T17:59:50Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12466v1",
+      "titleHash": "c5acb8b3c4c5d284cf992ad8c842c6599276fcb474aff1b42c295642624ef3b0",
+      "contentHash": "ce647b060c51489bbb11d610f620da7638b767de0178111fde361bea23112125",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 1,
+        "timeliness": 0.7355853168168868,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12463v1",
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised parts of Hugging Face's production environment. Anthropic reported cases in which a misconfigured third-party environment exposed real systems to agents pursuing simulated cyber tasks. In a separately reported evaluation, Google's Gemini accessed three real organizations through an unintended internet route; Google stated that the model stopped in all three instances. Taken together, the cases show why an evaluation cannot rely on an assumed boundary. That boundary must be verified while the agent is operating. This comparative instrumental case study develops a Proactive Agent Security Assurance Cycle (PASAC) and a five-layer Boundary Assurance Stack. The framework combines risk-tiered task design, executable scope contracts, pre-run validation, least-capability access, independent egress enforcement, credential restrictions, cross-run monitoring, automatic stop conditions, and evidence-based reauthorization. A leading-indicator model, nine design propositions, and seven falsifiable hypotheses turn these lessons into a testable research program. Because the public Gemini record is limited to attributed statements and journalism, its detailed causal mechanism remains provisional. The central conclusion is straightforward: proactive agent security requires continuous assurance across the full execution system, not confidence in any single sandbox or safeguard.",
+      "publishedAt": "2026-10-08T17:59:49Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12463v1",
+      "titleHash": "65e382fc52b8722701e0f5304ed07377e4a25a532fce7141392e2b61ba3e3919",
+      "contentHash": "e560f7270dfc82050571e8bb67d53910132b799208a5650744b64f3f0635bf44",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.735583349732756,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12452v1",
+      "title": "BrickBench: Evaluating Agentic Brick Design",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but that can also be physically built. To do so, it must select parts from a discrete library and reason jointly about local and global constraints. We score validity, alignment, and design across three settings that vary in scale and part availability. We provide BrickAgent, an environment for coding agents to construct, inspect, and validate their designs. We find that leading agents largely satisfy verifiable physical and semantic requirements, but fall short of human designs. We release our benchmark and environment at http://www.brickben.ch",
+      "publishedAt": "2026-10-08T17:58:56Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12452v1",
+      "titleHash": "4f0f865ac09d95f56aeb9cb4a155892fba6f3ebc87bf4cdb62df83ed3008b3ac",
+      "contentHash": "89e5c83b6a5c70ea1a1cb42106fa2197d3d030d80c856a0e4d9d85d7b298b196",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7354791018010101,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12449v1",
+      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying most learned physical surrogates. We introduce Bi-FORK, a generative framework for learning these one-to-many solution maps in high-dimensional systems. Bi-FORK generates complete trajectories through latent flow matching, preserving space and time coherence, and uses repulsion-guided sampling to recover distinct solution branches in a single amortized pass. We evaluate Bi-FORK on buckling beams, mechanical metamaterials, and Allen-Cahn phase separation, spanning continuous, discrete, and field-valued bifurcations with discretizations up to 260,000 points. Bi-FORK recovers the multimodal solution structure while scaling several orders of magnitude beyond prior approaches, opening generative modeling to high-dimensional bifurcating physical systems.",
+      "publishedAt": "2026-10-08T17:58:36Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12449v1",
+      "titleHash": "3d9d913998ad53d38a8259c47c916345fb874de0674920f4c55269106fd1bee8",
+      "contentHash": "6d07102da0a7a6565c5bf6280a5819f84693b504379d3e3dcf63f852a1835f24",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.73543976679845,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12445v1",
+      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the largest deception dataset to date for training probes and introducing a novel probe architecture which can aggregate information across many layers and tokens. Our probes achieve 98.8% AUC in SHADE-Arena, surpassing an Opus 5.5 text-monitoring baseline, and show improved efficacy as the underlying model is scaled up. To push our probes to their limit, we test them on several cases where deception cannot be determined from the context alone. In these cases, which we refer to as introspective deception, the ground truth can only be determined through careful elicitation or thorough knowledge of a model's training data. In one such evaluation, we show that probes can distinguish transcripts containing a model's true hidden goal from other goals with an AUC of up to 99.7%. Our probes also readily detect deception on prominent open-weight models which lie about politically sensitive topics, and about their beliefs when put under pressure. We release our training dataset, dubbed FIBS, to help drive frontier deployment of effective probes, and encourage the community to expand upon it with further examples of deception and sabotage.",
+      "publishedAt": "2026-10-08T17:58:13Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12445v1",
+      "titleHash": "dbeb1e7f7b4cee57a6ff8e858827872261103254d4301d6363796304e92a2aa0",
+      "contentHash": "6e8e38aeacf6a149b1f56b3233963e31a95665094f1f86bbe8f4bd805a7b9a46",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7353945341462234,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12436v1",
+      "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "AI agents can now conduct real-world cyberattacks, scale up capabilities with the number of agents, and collectively pursue misaligned goals to obtain rewards. Together, these factors raise the risk of a population explosion of misaligned agents: agents could compromise computers and secretly deploy additional agents, creating a self-reinforcing cycle where larger populations develop greater collective cyber capability and expand further. This raises a fundamental question: What determines whether a population of misaligned agents remains contained or takes off into this self-reinforcing cycle? This population-level problem is ecological safety: unlike individual-agent or multi-agent safety with a fixed population, it concerns the dynamics of the population itself. Here, we develop an ecological theory of AI-agent populations based on a population growth equation in which fitness (growth rate) depends on cybersecurity capability. We show that, without collaboration, the population takes off only when individual-agent capability exceeds a critical threshold. With collaboration, however, collective cybersecurity capability increases with population size. This creates a critical population threshold: below it, the population declines; above it, the population takes off, even though individual-agent capability has not changed. In ecology, this phenomenon is known as the strong Allee effect. Because red teaming a small group of agents cannot guarantee ecological safety in larger populations, our theory calls for ecological red teaming and population pacing: gradually deploying larger agent populations in controlled environments, while measuring how cyber capability scales with population size, and estimating the critical population size for takeoff. Capability gains may lower this threshold, requiring re-estimation for each new model generation.",
+      "publishedAt": "2026-10-08T17:57:32Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12436v1",
+      "titleHash": "811b838b3e85147585b3bf76d0428dad2e1ed55ae1f462d71257d1719cc994aa",
+      "contentHash": "8e1c913a8c06d346386cd57115675a17d1fb6cfb35f59a7e9cdbe936eb059769",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7353139089267045,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12424v1",
+      "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that act through code can already repair programs from execution feedback, yet it remains a central challenge to organize this experience around the task structure that gives it meaning, so that each repair is attributed to the responsible capability, supported by execution evidence, and validated before it is reused. We introduce RoboRSI, a robot self-improvement system built on Top-Down Skill Refinement (TSR). TSR decomposes tasks into compound, atomic, and base skills with scoped responsibilities and explicit input--output contracts, attributes each execution outcome to the responsible branch, and confines revision to that branch. Building upon this structure, a Manager, Planner, Engineer, and Reviewer coordinate planning, execution, diagnosis, and the validated release of new skills, while people steer the process through objectives and corrections; stable skill sequences are further consolidated into reusable compound skills. On a mobile manipulator, RoboRSI develops multi-object household cleanup over 104 rounds. In simulation, it achieves the highest success rate on LIBERO, LIBERO-PRO, LIBERO-Plus, and RoboTwin, exceeding the strongest baseline by 2.7 to 11.0 percentage points.",
+      "publishedAt": "2026-10-08T17:55:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12424v1",
+      "titleHash": "c2631772a1d4c3a8d22cbde467e07e6eec56819cf0d138740c5592e7bd3bfb36",
+      "contentHash": "692b099a0feb85dcc3964b094d16b9106e1fcd9b9c39f381c1ed256fdd6c9b65",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7350386679515173,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12416v1",
+      "title": "MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Generating realistic human-object interactions (HOI) in complex 3D scenes requires two complementary capabilities: reasoning about interaction feasibility in the environment and synthesizing realistic human-object motion. However, supervision for these capabilities is rarely available jointly at scale. Human-scene datasets provide rich information about environment-aware motion, while human-object datasets capture detailed interaction dynamics, yet paired human-object-scene data remain scarce. We present MAMHOI, an affordance-mediated factorization for scene-aware human-object interaction generation. MAMHOI factorizes scene-aware HOI generation through an explicit motion-affordance interface between scene understanding and motion synthesis: a scene-conditioned model first predicts where and how an interaction can be feasibly executed, and an affordance-conditioned HOI model then generates the corresponding human-object motion. This factorization allows scene understanding and interaction dynamics to be learned from complementary sources of supervision without requiring paired human-object-scene data. Experiments in complex indoor environments show that MAMHOI reduces object--scene penetration while better preserving human--object interaction quality, yielding more realistic and physically feasible scene-aware interactions. Project page: https://leimingyuan.github.io/MAMHOI-project-page/",
+      "publishedAt": "2026-10-08T17:52:02Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12416v1",
+      "titleHash": "6cb0238d575bf672a9cb9bb0326a92dd77bbbbeac4c3c7a23ecab9b77093eb9b",
+      "contentHash": "3d0acc20fa912eb33159f74187840220d7411fcfc41cbc4c1c42f8be50770f48",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7346652940785074,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12409v1",
+      "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Safety benchmarks typically report one overall score for a suite of datasets, each of which may target one or more safety-related attributes, so models with similar overall scores can have very different attribute profiles. Comparing models is more tractable at the level of individual attributes, yet it is often unclear whether even a single dataset's scores isolate any single attribute. One plausible candidate for such an attribute is harmful refusal, a model's tendency to refuse dangerous or policy-violating prompts. We examine whether it constitutes a single, measurable attribute in HELM Safety. Using a construct validity framework that stipulates that an attribute must exist before a test can measure it, we start with HELM Safety's four datasets that might plausibly target harmful refusal, but find that three are saturated. We subject the remaining dataset, HarmBench, to two psychometric tests to determine if a single attribute like harmful refusal could stand behind its score. First, multidimensional item response theory modeling strongly suggests that HarmBench does not measure a singular attribute. Second, a differential item functioning analysis finds items where models from different developers with the same refusal ability score differently. These flags largely disappear under scope-specific matching, a pattern consistent with aggregation effects but not sufficient to rule out domain-specific developer differences. Zooming out, HarmBench collapses distinct harm behaviors into one score, and the overall HELM safety aggregate further collapses HarmBench and scores from other datasets into a single top-line number. Any safety score that averages over datasets and items can hide saturation and conflate behaviors this way. We argue that a score should earn its single-attribute reading before models are compared with it.",
+      "publishedAt": "2026-10-08T17:46:43Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12409v1",
+      "titleHash": "0e4110080170c68b5f8b8514eab3c897284e2a9d677703b30e9e4e5fa08a5c36",
+      "contentHash": "f6c3a2b270b3ce8f3464e4246724b78165bb58e00fc66d9225bc08fe945cdddd",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.734038845477304,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12407v1",
+      "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "World action models (WAMs) predict actions and future observations, typically from a reconstruction-based representation that carries noisy, redundant information which can complicate downstream predictions. We introduce LeWAM, a bidirectional transformer for forward, backward, inverse dynamics and policy prediction, on a decoder-free JEPA latent trained end-to-end through all four modes. We see the following benefits: 1) Alignment: linear probes read robot and object state from LeWAM's latent better than from a regular Le World Model (a forward-only JEPA world model), while the latent ignores visual distractors as well as LeWM does and far better than a reconstruction-based WAM. 2) Acting: Closed-loop evaluations of LeWAM match a regular flow-matching policy trained on the same encoder at matched size, while also providing a world model. 3) Planning: Sampling raw actions when planning with WAMs lets MPC exploit dynamics-model inaccuracies; planning in the noise space of the policy head instead improves the closed-loop performance of these WAMs.",
+      "publishedAt": "2026-10-08T17:46:03Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12407v1",
+      "titleHash": "c32b215685c2ecb7e8a09e4a1a4c126036cc5aa950b2c9182d5530981c49f4cc",
+      "contentHash": "1d2ce4dbb58f6d5ee45e20900befce8e2b2078ceea9013a9797dcf45184781d0",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7339603316277898,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12399v1",
+      "title": "SpaceFlow: Locally Controllable 3D Generation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Current 3D generation methods lack explicit local control: geometric adherence is often defined by a global control strength, and appearance cannot be specified locally. We present SpaceFlow, a training-free pipeline for locally controllable 3D generation from text descriptions and a collection of geometric primitives. Each primitive serves as a proxy for an object part and is assigned a local control level, enabling users to specify whether regions should strictly follow the input shape or allow generative completion. During structure generation, we enforce these spatial constraints within the generative flow process. For appearance synthesis, the generated structure is segmented and matched to the primitives. Each generated part is conditioned only on its assigned text or image cue, thereby limiting cross-part leakage. Regional geometry metrics demonstrate that SpaceFlow preserves the specified geometry in high-control regions and enables plausible shape variation in low-control areas. A user study further indicates that the resulting balance between geometric fidelity and generative freedom remains competitive in overall quality. When evaluating appearance on fixed geometry, text-conditioned routing achieves state-of-the-art prompt faithfulness and color/material accuracy. Qualitative results additionally show localized routing of image cues. The project page is available at SpaceFlow3D.github.io.",
+      "publishedAt": "2026-10-08T17:42:39Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12399v1",
+      "titleHash": "863d1a787980ddc406597a9be7d8528a7230b6de46b5550c070760e9ca8d8f61",
+      "contentHash": "74c247c4a709ef48766263a6452a122427a3b580adf507831f1f89a50b462877",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7335600416063499,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12393v1",
+      "title": "HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Self-supervised multimodal representation learning has achieved remarkable success across diverse domains, yet capturing synergistic information remains challenging due to the complexity of cross-modal interactions. Unlike the shared information across individual modalities, synergy arises when task-relevant signals emerge only from the joint configuration of multiple modalities and cannot be recovered from any modality in isolation. This work focuses on how to preserve the information capacity for such synergistic signals in multimodal representations. The key observation is that synergistic information is reflected in higher-order statistical dependence among modalities, which provides a principled target for explicitly modeling joint interactions. Motivated by this insight, we propose Higher-order Representation and Information Learning (HRIL), which constructs an empirical cross-moment tensor over modality embeddings to represent multi-way interactions. HRIL employs Tucker decomposition to obtain a core tensor, complemented by a synergy-aware regularizer that prevents energy concentration and preserves higher-order coupling capacity for synergistic information capture. Experiments on the controlled synergy task and real-world benchmarks demonstrate consistent improvements over existing multimodal contrastive methods, with notable gains on tasks dominated by synergistic interactions. Code is released at https://github.com/brightest66/HRIL.",
+      "publishedAt": "2026-10-08T17:39:45Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12393v1",
+      "titleHash": "97f472310fd70c96926a6383723884c289e3719bb6bac542ff0be81bd9306615",
+      "contentHash": "429fc547bd8cb4ed8ec60ef902741d57f33cd36ed6c4e6a25d150c24eb2cb8b6",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7332187902844621,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12391v1",
+      "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal large language models (MLLMs) often struggle to identify and use geometric relations in diagrams. Recent methods address this challenge by converting geometric entities, relations, and constraints into explicit textual representations for the model to reason over. However, effective formalization is highly non-trivial: on Geometry3K, structure injection fixes 28 errors but introduces 13 new ones among 200 examples. Redundant relations can distract the model, while ambiguous references to diagram elements can lead it to apply constraints incorrectly. This suggests that the key challenge is not merely extracting more geometric facts, but organizing them into representations that support downstream reasoning. To fully exploit the power of formalization, we further propose GeoReform, a reflective formalization evolution framework that treats formalization as an optimizable policy rather than a fixed parser output. GeoReform executes the full reasoning pipeline, collects failed rollouts, diagnoses defects in the current representation, and mutates the policy to better select, ground, group, and present geometric entities, relations, constraints, and targets. On Geometry3K, GeoReform improves Qwen3VL-2B accuracy from 42.0\\% to 56.0\\%. Extensive experiments and analyses across geometry reasoning benchmarks demonstrate that effective formalization is crucial for improving multimodal geometry reasoning.",
+      "publishedAt": "2026-10-08T17:39:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12391v1",
+      "titleHash": "0668b6a5466ae26f07540b8fba11a088c5e8106c490822c488cc48f5b560c634",
+      "contentHash": "a0aed3fa7a97b84fdde225733ce04c675cffd164535660e27cdb49a3a9734283",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7331540881173197,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.12386v1",
+      "title": "ARC: A Reasoning Recipe for Robot Foundation Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "The prevailing approach to improving robot foundation models (RFMs) relies on larger models, more robot demonstrations, and costly training at scale. We show that there exists an effective and efficient complementary approach: the right reasoning recipe can substantially improve the zero-shot task performance of existing state-of-the-art RFMs. We refer to this recipe as ARC. It consists of three key ingredients: a reasoning trace, a scalable automatic labeling pipeline, and a strategy for adapting pretrained RFMs to use these traces for control. First, we find that effective reasoning traces should be grounded in the robot's next action and explain its causal structure: why the action is appropriate and what effect it should produce. Second, we show that these traces can be generated automatically from existing demonstrations, enabling us to construct ARC-Trace-DROID from DROID without collecting new robot data. Third, we show how state-of-the-art VLAs such as $π_{0.5}$ and WAMs such as Cosmos3-Nano-Policy can learn to use these traces for control, with fine-tuning and inference tailored to each model's architecture and capabilities. Using ARC, we obtain gains in zero-shot RFM performance that, to our knowledge, are unprecedented without additional robot demonstrations or foundation-scale training. The adapted models establish a new state of the art on RoboLab-120 and MolmoSpaces, with gains of up to 50 percentage points on RoboLab-Reasoning-50. On real robots, ARC improves $π_{0.5}$'s task success by 82.2 percentage points. Project website: https://arc-robot-reasoning.github.io/",
+      "publishedAt": "2026-10-08T17:38:04Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.12386v1",
+      "titleHash": "c6fd597e34a462fe53c6f4d9bb1f152ea137cf29eb4661a752095a82d61577f9",
+      "contentHash": "7807605354317f9572b1f3f9bfd97c098d31fb76d15a57bc7aebc14ab4ddb167",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7330207804433201,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://cactuscompute.com/blog/whistle",
+      "title": "Whistle: Speech to Text in 16.9 MB",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "rajtilakjee",
+      "publishedAt": "2026-10-09T00:35:51.919-05:00",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://cactuscompute.com/blog/whistle",
+      "titleHash": "64aa1b1c4917869ca375330bdb4fba0c6e56eec1091501073d5933a70a88bfd2",
+      "contentHash": "64aa1b1c4917869ca375330bdb4fba0c6e56eec1091501073d5933a70a88bfd2",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.8224974424935546,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.cs.dartmouth.edu/sergey/cs108/ABI/UlrichDrepper-How-To-Write-Shared-Libraries.pdf",
+      "title": "How To Write Shared Libraries (2011)",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "calvin",
+      "publishedAt": "2026-10-09T13:47:32.394-05:00",
+      "engagement": 2,
+      "tags": [
+        "pdf",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cs.dartmouth.edu/sergey/cs108/ABI/UlrichDrepper-How-To-Write-Shared-Libraries.pdf",
+      "titleHash": "f60c2bf9e1919cb96da51cf62e91dd1372934a4919de475120c9cdd05dd583bb",
+      "contentHash": "f60c2bf9e1919cb96da51cf62e91dd1372934a4919de475120c9cdd05dd583bb",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9339007254982524,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://dev.to/dannwaneri/super-intelligent-yes-men-are-we-training-ai-to-ignore-the-truth-epp",
+      "title": "Super-Intelligent Yes-Men: Are We Training AI to Ignore the Truth?",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Kaggle Benchmarking Challenge           What I Benchmarked   A published...",
+      "author": "Daniel Nwaneri",
+      "publishedAt": "2026-10-09T12:26:09Z",
+      "engagement": 45,
+      "tags": [
+        "devchallenge",
+        "kagglechallenge",
+        "ai",
+        "machinelearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/dannwaneri/super-intelligent-yes-men-are-we-training-ai-to-ignore-the-truth-epp",
+      "titleHash": "b2bb8c333aee1729a127563a7f3a40c0232f3b1d87fdb3d902f7c062ede46c30",
+      "contentHash": "0126199157cf2f18d8f7a965896c8a7c99e31b4ace5153b75e7f26a020292277",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8784648124630707,
+        "engagement": 0.5542526105605247
+      }
+    },
+    {
+      "url": "https://dev.to/the_nortern_dev/ai-got-better-while-i-was-away-software-didnt-4b2b",
+      "title": "AI Got Better While I Was Away. Software Didn't.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I haven't written here in a while.  Not because I ran out of opinions.  That would be concerning.  I...",
+      "author": "NorthernDev",
+      "publishedAt": "2026-10-09T07:48:11Z",
+      "engagement": 58,
+      "tags": [
+        "ai",
+        "programming",
+        "webdev",
+        "softwareengineering",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/the_nortern_dev/ai-got-better-while-i-was-away-software-didnt-4b2b",
+      "titleHash": "92e7766b89ac3ca0f2d5a487a18ce4f5ec1006e226238c845340b4f0b55b8a3e",
+      "contentHash": "3535450f9731d87d2b5f2d03a73d6db1624f616b3a67d0fc24476206c681b6d0",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8401461765469548,
+        "engagement": 0.5902840038807148
+      }
+    },
+    {
+      "url": "https://dev.to/gde/llama-village-a-virtual-world-powered-by-local-ai-with-llamadart-3lmi",
+      "title": "Llama Village: a virtual world powered by local AI with llamadart",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Llama Village in motion. The characters’ dialogue is generated by an on-device model.  Watch the...",
+      "author": "Jhin Lee",
+      "publishedAt": "2026-10-08T22:34:10Z",
+      "engagement": 24,
+      "tags": [
+        "flutter",
+        "ai",
+        "gamedev",
+        "showdev",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/llama-village-a-virtual-world-powered-by-local-ai-with-llamadart-3lmi",
+      "titleHash": "17e073c9a8f62e01d7cf2ba02f5731f007d6cd4b5b35882bbbd570cc65523472",
+      "contentHash": "24a31e1455fd9fd9ab2e4251e4e99b376fed392926ac6a82ed954ef552a76357",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7686867308036398,
+        "engagement": 0.46598000289067926
+      }
+    },
+    {
+      "url": "https://dev.to/arhancanli/my-agent-kept-dropping-numbers-when-it-copied-data-into-a-tool-call-a-file-path-fixed-it-46gf",
+      "title": "My agent kept dropping numbers when it copied data into a tool call. A file path fixed it.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Same model, same question, same tool. Pasting 756 daily returns into the prompt got 4 of 9 right; passing a file path got 8 of 9, with a quarter of the tokens.",
+      "author": "Arhan Canli",
+      "publishedAt": "2026-10-07T17:58:53Z",
+      "engagement": 13,
+      "tags": [
+        "mcp",
+        "ai",
+        "agents",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/arhancanli/my-agent-kept-dropping-numbers-when-it-copied-data-into-a-tool-call-a-file-path-fixed-it-46gf",
+      "titleHash": "036c1f28ba314fc581a31048cd68698fb42ae2b5710b3b52ac441fea1b4cc805",
+      "contentHash": "55cd026bf79a5c8118fb375ee7975bea2c7a9533525b75ec0fec29f744bc12b8",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.5837454652504535,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://dev.to/reidmarlow/why-token-level-llm-routers-spend-95-of-their-time-on-cache-bookkeeping-5959",
+      "title": "Why Token-Level LLM Routers Spend 95% of Their Time on Cache Bookkeeping",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Routing 5% of hard tokens to a 32B model and keeping the rest on a 0.6B model looks great on paper, until standard serving engines spend 95.8% of the step redoing prefix matching. TokenRouter fixes the scheduler and hits up to 64x higher throughput.",
+      "author": "Reid Marlow",
+      "publishedAt": "2026-10-09T16:25:16Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "llm",
+        "python",
+        "architecture",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/reidmarlow/why-token-level-llm-routers-spend-95-of-their-time-on-cache-bookkeeping-5959",
+      "titleHash": "5e68e28fe347ff623a7272ef0e36b6f76a988417d9847706829b73a7f7028ee0",
+      "contentHash": "6519dda93fabf2b14740f179733b8faa16a2826a4ee781ef37c24d6c509c83af",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.9128232761305713,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "title": "Qwen/Qwen-Image-2.1-Turbo",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-to-image · 301 likes · 0 downloads",
+      "engagement": 301,
+      "tags": [
+        "model",
+        "text-to-image"
+      ],
+      "normalizedUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "titleHash": "7a6e92c0b814fe9803a07e07e9b335c598bb74230ec4e9d138b75d088f451ae1",
+      "contentHash": "344878fd062f0b42dbe4c54f86a33145c10e73d8800f032bfe415fb2fb98f41a",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8266689809857168
+      }
+    },
+    {
+      "url": "https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1",
+      "title": "Phocinae/Phocinae-Largha-150M-v1",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-classification · 229 likes · 89 downloads",
+      "engagement": 229,
+      "tags": [
+        "model",
+        "text-classification"
+      ],
+      "normalizedUrl": "https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1",
+      "titleHash": "2617bdf45ff1708bb8a525a4468bcdbd38581c704cd1e6161327589637db047c",
+      "contentHash": "e1aa757dcf440e9c0a2fa5ab52c942f52267629d19a7d62c02cce88e498f7e7a",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7872426120058643
+      }
+    },
+    {
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+      "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 189 likes · 15274 downloads",
+      "engagement": 189,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+      "titleHash": "33a391e0c0b7c440ccc73f6e2ed9d0db4ed1a08bc67d2a5701e47d6aaddbe5bd",
+      "contentHash": "e4d39b3c7c6c8a94e848f84a541db3139e41f1be2c35bd6fefa31a113b71ea82",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7595845336509429
+      }
+    }
+  ]
+}
