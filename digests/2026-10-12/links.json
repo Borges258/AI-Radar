@@ -1,0 +1,1013 @@
+{
+  "date": "2026-10-12",
+  "stats": {
+    "scraped": 170,
+    "deduped": 36,
+    "scored": 36
+  },
+  "summary": "今日热点聚焦AI智能体协作与能力认知偏差。Karpathy揭示LLM使用体验的巨大鸿沟，探讨智能体蜂群机制。同时，OpenAI因安全风险争议解雇三位研究员，引发行业关注。还有通过500B令牌实现FPS游戏反编译的实践，以及智能体参与电话会议的趣味尝试，全面展现AI进化的多元面貌。",
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50047180",
+      "title": "Ask HN: How do swarms of AI agents work?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Andrej Karpathy posted about the growing gap in how people experience AI:<p>~75% have barely used LLMs\n~20% use them casually\n~0.2% use frontier models professionally for math and code\n~0.00006% have access to frontier systems internally<p>He writes:<p>&quot;And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics.&quot;<p>Source: https:&#x2F;&#x2F;x.com&#x2F;karpathy&#x2F;status&#x2F;2109361546505966046<p>Does anyone have an intuition, or even firsthand experience, of how these swarms of thousands of agents actually work?<p>I&#x27;m already struggling to get 2-3 agents to work together reliably. I can&#x27;t really wrap my head around how you&#x27;d coordinate thousands of them, or what benefits you get from scaling to that many.",
+      "author": "dsrtslnd23",
+      "publishedAt": "2026-10-11T19:57:45Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50047180",
+      "titleHash": "c5757eaca6693d6908192918f4af09a9de6e95e9093215da21022642dcc49122",
+      "contentHash": "6a9ac1f6d48684e7170c04d561dcd494bd3616577a501eee672bc14fdd25b631",
+      "score": 79,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.946421244380999,
+        "engagement": 0.28169934667141894
+      },
+      "rank": 1,
+      "reasons": [
+        "洞察智能体架构与用户分层"
+      ],
+      "overview": "讨论AI智能体蜂群的工作机制，并引用Karpathy观点指出不同用户对大模型体验的巨大差距，从 barely 使用到专业应用的分层明显。"
+    },
+    {
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "albertzeyer",
+      "publishedAt": "2026-10-11T20:20:52Z",
+      "engagement": 241,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/karpathy/status/2109361546505966046",
+      "titleHash": "183c569c66439f7055329417c6fccb0fd75a230d1e662a000dafcc2bac6e53df",
+      "contentHash": "183c569c66439f7055329417c6fccb0fd75a230d1e662a000dafcc2bac6e53df",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9499381205112003,
+        "engagement": 0.794605121993477
+      },
+      "rank": 2,
+      "reasons": [
+        "揭示认知偏差核心"
+      ],
+      "overview": "深入分析LLM能力认知鸿沟扩大的现象，探讨普通用户与专业开发者之间对AI实际能力边界理解的差异日益显著。"
+    },
+    {
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "title": "500B tokens later: Letting AI agents decompile a first-person shooter",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "davikr",
+      "publishedAt": "2026-10-11T02:02:38Z",
+      "engagement": 157,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://momo5502.com/posts/2026-10-09-game-decompilation",
+      "titleHash": "f61fafee6a36f097513d0e59349901da578aca4acc0ffcee91848a864af06a38",
+      "contentHash": "f61fafee6a36f097513d0e59349901da578aca4acc0ffcee91848a864af06a38",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.796466050126063,
+        "engagement": 0.7328856956514742
+      },
+      "rank": 3,
+      "reasons": [
+        "硬核逆向工程实战"
+      ],
+      "overview": "展示利用500B令牌训练智能体自动反编译第一人称射击游戏的实验，验证了AI在复杂代码逆向工程任务上的可行性。"
+    },
+    {
+      "url": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
+      "title": "OpenAI fires 3 safety researchers in dispute over AI risks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "devonnull",
+      "publishedAt": "2026-10-11T20:35:03Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
+      "titleHash": "c5c69c0f910e88aefa139f89108f98a7fbf1449a09c263d5abbeacc566f92ec7",
+      "contentHash": "c5c69c0f910e88aefa139f89108f98a7fbf1449a09c263d5abbeacc566f92ec7",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.952102386443087,
+        "engagement": 0.3920304196852271
+      },
+      "rank": 4,
+      "reasons": [
+        "AI安全伦理焦点"
+      ],
+      "overview": "报道OpenAI解雇三名安全研究员的新闻，揭露内部在AI风险管控与开发速度之间的激烈争议及后果。"
+    },
+    {
+      "url": "https://atoll92.github.io/agent-standup/",
+      "title": "AI agents in a stand-up call",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jonbaer",
+      "publishedAt": "2026-10-11T03:42:47Z",
+      "engagement": 47,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://atoll92.github.io/agent-standup",
+      "titleHash": "38f3929273d91b1f4cc8c6e44a7c741effe874a7fd55f37432888d437360b947",
+      "contentHash": "38f3929273d91b1f4cc8c6e44a7c741effe874a7fd55f37432888d437360b947",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8093679592505043,
+        "engagement": 0.5604137457918624
+      },
+      "rank": 5,
+      "reasons": [
+        "智能体协作趣味演示"
+      ],
+      "overview": "描述AI智能体参与模拟站立会议的有趣场景，展示多智能体在即时通讯与协作场景中的交互能力与局限性。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "title": "500B tokens later: Letting AI agents decompile a first-person shooter",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "davikr",
+      "publishedAt": "2026-10-11T02:02:38Z",
+      "engagement": 157,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://momo5502.com/posts/2026-10-09-game-decompilation",
+      "titleHash": "f61fafee6a36f097513d0e59349901da578aca4acc0ffcee91848a864af06a38",
+      "contentHash": "f61fafee6a36f097513d0e59349901da578aca4acc0ffcee91848a864af06a38",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.796466050126063,
+        "engagement": 0.7328856956514742
+      }
+    },
+    {
+      "url": "https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute",
+      "title": "Nicolas Cage says he won't work with Amazon again over AI dispute",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Bluestein",
+      "publishedAt": "2026-10-11T11:03:21Z",
+      "engagement": 83,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute",
+      "titleHash": "6804b01526cc05682c5e77e7f1f0b6d6c8efc7501fe448378b5e4056a683edb2",
+      "contentHash": "6804b01526cc05682c5e77e7f1f0b6d6c8efc7501fe448378b5e4056a683edb2",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8686522667837283,
+        "engagement": 0.6414264286872938
+      }
+    },
+    {
+      "url": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+      "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "giuliomagnifico",
+      "publishedAt": "2026-10-11T10:47:21Z",
+      "engagement": 72,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+      "titleHash": "6c3cb3ff48fee579671cb369510d797d38bae3cdf9d0c34086670602f636d6d5",
+      "contentHash": "6c3cb3ff48fee579671cb369510d797d38bae3cdf9d0c34086670602f636d6d5",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8664251124634353,
+        "engagement": 0.621107620040152
+      }
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
+      "title": "AI is creating a 'human premium' for art created by people",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "colinprince",
+      "publishedAt": "2026-10-11T11:34:28Z",
+      "engagement": 70,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
+      "titleHash": "102f90395c77c37a9d4eca23e5b33409520451fe2fc5d57cc553ea1de87c6f01",
+      "contentHash": "102f90395c77c37a9d4eca23e5b33409520451fe2fc5d57cc553ea1de87c6f01",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8730000245494256,
+        "engagement": 0.6170861162396918
+      }
+    },
+    {
+      "url": "https://atoll92.github.io/agent-standup/",
+      "title": "AI agents in a stand-up call",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jonbaer",
+      "publishedAt": "2026-10-11T03:42:47Z",
+      "engagement": 47,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://atoll92.github.io/agent-standup",
+      "titleHash": "38f3929273d91b1f4cc8c6e44a7c741effe874a7fd55f37432888d437360b947",
+      "contentHash": "38f3929273d91b1f4cc8c6e44a7c741effe874a7fd55f37432888d437360b947",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8093679592505043,
+        "engagement": 0.5604137457918624
+      }
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "title": "Satya Nadella says we should assume all AI models are 'compromised'",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jonbaer",
+      "publishedAt": "2026-10-11T03:41:53Z",
+      "engagement": 42,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "titleHash": "b40e3f65699ca897c7e404d37b23111a0612cadbf7e559b46a21324b24c92b38",
+      "contentHash": "b40e3f65699ca897c7e404d37b23111a0612cadbf7e559b46a21324b24c92b38",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8092510903725151,
+        "engagement": 0.5444894851931955
+      }
+    },
+    {
+      "url": "https://petapixel.com/2026/10/07/someone-rebuilt-free-open-source-versions-of-photoshop-premiere-and-lightroom-using-ai/",
+      "title": "Open-source version of Adobe Creative Suite, built with Rust, using AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "trakkstar",
+      "publishedAt": "2026-10-11T08:53:32Z",
+      "engagement": 24,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://petapixel.com/2026/10/07/someone-rebuilt-free-open-source-versions-of-photoshop-premiere-and-lightroom-using-ai",
+      "titleHash": "f5b52c186f2948b81452cfa10dab11bdb8a13d51b12de8c82630d2e4809f9836",
+      "contentHash": "f5b52c186f2948b81452cfa10dab11bdb8a13d51b12de8c82630d2e4809f9836",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8507460855043663,
+        "engagement": 0.46598000289067926
+      }
+    },
+    {
+      "url": "https://www.mira.tours/wander",
+      "title": "Show HN: Mira, AI Walking Tours",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bleonard",
+      "publishedAt": "2026-10-11T17:04:21Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.mira.tours/wander",
+      "titleHash": "049540f9bceaf302e7388536cce93721436366882ce9a8b86ee29cf4956e12fb",
+      "contentHash": "049540f9bceaf302e7388536cce93721436366882ce9a8b86ee29cf4956e12fb",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9204526939536892,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
+      "title": "OpenAI fires 3 safety researchers in dispute over AI risks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "devonnull",
+      "publishedAt": "2026-10-11T20:35:03Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
+      "titleHash": "c5c69c0f910e88aefa139f89108f98a7fbf1449a09c263d5abbeacc566f92ec7",
+      "contentHash": "c5c69c0f910e88aefa139f89108f98a7fbf1449a09c263d5abbeacc566f92ec7",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.952102386443087,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://thelastwave.substack.com/p/theres-no-going-back",
+      "title": "There's No \"Going Back\": On the receding horizons of the AI transition",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "johanam",
+      "publishedAt": "2026-10-11T21:13:47Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thelastwave.substack.com/p/theres-no-going-back",
+      "titleHash": "1eb6c1afcaa2b44c544f670abfc48c55e02691cc9181439864b0c5635f9bd597",
+      "contentHash": "1eb6c1afcaa2b44c544f670abfc48c55e02691cc9181439864b0c5635f9bd597",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9580379270113195,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/ck9dzpw4ll8po",
+      "title": "Nvidia-backed data centre firm Firmus scraps IPO as AI valuation concerns deepen",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "devonnull",
+      "publishedAt": "2026-10-11T19:26:05Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/news/articles/ck9dzpw4ll8po",
+      "titleHash": "eed830c1cf5f12b6e8d415c7acb29adc284edebffd8dd040e7f454cb77318f68",
+      "contentHash": "eed830c1cf5f12b6e8d415c7acb29adc284edebffd8dd040e7f454cb77318f68",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9416247330779676,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.shpyrd.io",
+      "title": "Show HN: Shpyrd – A new type of cloud for AI era",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "patricknegri",
+      "publishedAt": "2026-10-11T22:42:08Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.shpyrd.io/",
+      "titleHash": "3241911ce390c96865e019dd16f91f3598f1f34555d8916741b5341e8b042eab",
+      "contentHash": "3241911ce390c96865e019dd16f91f3598f1f34555d8916741b5341e8b042eab",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9717156198832083,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.nytimes.com/2026/10/07/opinion/jensen-huang-ai-tech-nvidia.html",
+      "title": "Jensen Huang thinks AI is going great",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-10-11T22:26:38Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nytimes.com/2026/10/07/opinion/jensen-huang-ai-tech-nvidia.html",
+      "titleHash": "b66f2e3f96d1723f268c43137fb07d6c0b8e3fe8f00c5c415c3608e84c8150b3",
+      "contentHash": "b66f2e3f96d1723f268c43137fb07d6c0b8e3fe8f00c5c415c3608e84c8150b3",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9693019789306687,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://github.com/vscarpenter/gsd-task-manager",
+      "title": "Show HN: GSD Task Manager – an MCP server that gives your AI agent a task list",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vscarpenter",
+      "publishedAt": "2026-10-11T03:42:56Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/vscarpenter/gsd-task-manager",
+      "titleHash": "72cbe433a9eeca2b8ec47163de47008a8cfc2e01f58188a70c469b60c2c2cf14",
+      "contentHash": "72cbe433a9eeca2b8ec47163de47008a8cfc2e01f58188a70c469b60c2c2cf14",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8093874368732152,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://github.com/plimsollmark/plimsoll",
+      "title": "Show HN: Plimsoll, a self-hosted sandbox for code your AI agent writes",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cagster",
+      "publishedAt": "2026-10-11T23:47:59Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/plimsollmark/plimsoll",
+      "titleHash": "411377f46ad870d488e64c5beed72095671608989354f6ac88289b847e4ef1f8",
+      "contentHash": "411377f46ad870d488e64c5beed72095671608989354f6ac88289b847e4ef1f8",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9820368867174205,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://jesserichardson78.medium.com/calculate-your-probability-of-doom-6bd18de3e0e4",
+      "title": "Calculate your p[DOOM], An interactive article to think critically about AI risk",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "routelastresort",
+      "publishedAt": "2026-10-11T22:55:24Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jesserichardson78.medium.com/calculate-your-probability-of-doom-6bd18de3e0e4",
+      "titleHash": "ea9e89da7f28bac69fa62651b73cdf2df7c60a592449e2fdffe7f8e2849b9447",
+      "contentHash": "ea9e89da7f28bac69fa62651b73cdf2df7c60a592449e2fdffe7f8e2849b9447",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9737862619229921,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50047180",
+      "title": "Ask HN: How do swarms of AI agents work?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Andrej Karpathy posted about the growing gap in how people experience AI:<p>~75% have barely used LLMs\n~20% use them casually\n~0.2% use frontier models professionally for math and code\n~0.00006% have access to frontier systems internally<p>He writes:<p>&quot;And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics.&quot;<p>Source: https:&#x2F;&#x2F;x.com&#x2F;karpathy&#x2F;status&#x2F;2109361546505966046<p>Does anyone have an intuition, or even firsthand experience, of how these swarms of thousands of agents actually work?<p>I&#x27;m already struggling to get 2-3 agents to work together reliably. I can&#x27;t really wrap my head around how you&#x27;d coordinate thousands of them, or what benefits you get from scaling to that many.",
+      "author": "dsrtslnd23",
+      "publishedAt": "2026-10-11T19:57:45Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50047180",
+      "titleHash": "c5757eaca6693d6908192918f4af09a9de6e95e9093215da21022642dcc49122",
+      "contentHash": "6a9ac1f6d48684e7170c04d561dcd494bd3616577a501eee672bc14fdd25b631",
+      "score": 79,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.946421244380999,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/c6rmy7zmvx3lo",
+      "title": "AI is less regulated than milk, says Microsoft president",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mikelgan",
+      "publishedAt": "2026-10-11T23:09:56Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/news/articles/c6rmy7zmvx3lo",
+      "titleHash": "b577edcdec58cb7e11251fae690e8f80c6cd179720599220b35cbe19ad6d69c4",
+      "contentHash": "b577edcdec58cb7e11251fae690e8f80c6cd179720599220b35cbe19ad6d69c4",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.976059665578637,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.rnz.co.nz/news/science-and-technology/1824809/europe-confident-its-rules-can-thwart-rogue-ai",
+      "title": "Europe confident its rules can thwart rogue AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "billybuckwheat",
+      "publishedAt": "2026-10-11T03:57:03Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.rnz.co.nz/news/science-and-technology/1824809/europe-confident-its-rules-can-thwart-rogue-ai",
+      "titleHash": "c9566a4e6a9a2d2effbc147ea7b3692042aade9724b1ac8a8edb5421930ae69a",
+      "contentHash": "c9566a4e6a9a2d2effbc147ea7b3692042aade9724b1ac8a8edb5421930ae69a",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8112227989662962,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "albertzeyer",
+      "publishedAt": "2026-10-11T20:20:52Z",
+      "engagement": 241,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/karpathy/status/2109361546505966046",
+      "titleHash": "183c569c66439f7055329417c6fccb0fd75a230d1e662a000dafcc2bac6e53df",
+      "contentHash": "183c569c66439f7055329417c6fccb0fd75a230d1e662a000dafcc2bac6e53df",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9499381205112003,
+        "engagement": 0.794605121993477
+      }
+    },
+    {
+      "url": "https://kemendo.com/yes-i-understand-how-llms-work.html",
+      "title": "Yes I Understand How LLMs Work",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "AndrewKemendo",
+      "publishedAt": "2026-10-12T00:16:28Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kemendo.com/yes-i-understand-how-llms-work.html",
+      "titleHash": "c0c61d3a1965eadbd832c626db9c407ff290c565e6eb5133724c8d52a16811cf",
+      "contentHash": "c0c61d3a1965eadbd832c626db9c407ff290c565e6eb5133724c8d52a16811cf",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9865352326526954,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/LogneBudo/llmxray",
+      "title": "Show HN: LLMxRay an open-source observability tool for LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "lognebudo",
+      "publishedAt": "2026-10-11T21:17:45Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/LogneBudo/llmxray",
+      "titleHash": "ffd500f28533ed0ae5d708c5f47d997911c429fdc4764f3c7b7c15d670f22bff",
+      "contentHash": "ffd500f28533ed0ae5d708c5f47d997911c429fdc4764f3c7b7c15d670f22bff",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9586478661604856,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50045579",
+      "title": "Ask HN: Is there any defense against LLM-based reverse engineering?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Recent news headlines [1] about LLM-based reverse engineering make it seem that anyone with a monthly subscription is capable of translating any executable into an equivalent source code representation.<p>If this is true, then how can one guard against having their source code essentially unveiled with the correct semantic meaning of the underlying algorithms by someone with an extremely low amount of effort? I bet that using obfuscators would still not be enough.<p>I&#x27;m distinguishing between recreating the source code of your software vs vibe coding an inexact clone without knowing your source code (which is not exactly reverse engineering).<p>Example: Imagine it would be possible to faithfully recreate the source code of the firmware running on a foreign military device, even with correct semantic meaning of variables, functions and of the whole algorithm. On the other hand, vibe coding a clone would require that you know the underlying algorithm (or at least that you have a high-level idea of how does it work), which you don&#x27;t have for such device.<p>Does it mean that companies like Denuvo are now out of business (assuming anything can be reverse engineered with the correct semantic meaning)?<p>[1] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50028275",
+      "author": "semidror",
+      "publishedAt": "2026-10-11T17:27:00Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50045579",
+      "titleHash": "d86b86c404a4050148f2d16fb178babea4ab8d01cf56dc29ab8e0b890fa27562",
+      "contentHash": "2a17108d5af2523b05a3f125ee0189566ef44b4d565b30ff058f27761f40b803",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9238038924378678,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://parteiprogramm.com/en",
+      "title": "What broke when an LLM read 9k pages of German election programs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "michaelpomogajk",
+      "publishedAt": "2026-10-11T17:01:20Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://parteiprogramm.com/en",
+      "titleHash": "8d1d7a27283426666467586414b7ef25e3df79b9d772e9421b29066b4eff9c5a",
+      "contentHash": "8d1d7a27283426666467586414b7ef25e3df79b9d772e9421b29066b4eff9c5a",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9200072734458401,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://gnueaj.github.io/unlearning-depth-score/",
+      "title": "Measuring the Depth of LLM Unlearning via Activation Patching",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jaeunglee",
+      "publishedAt": "2026-10-11T16:42:16Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gnueaj.github.io/unlearning-depth-score",
+      "titleHash": "3e1a0064cd1913efd3e7bf2f26b32dc305fd91a01b77af4f78e2b380f6876294",
+      "contentHash": "3e1a0064cd1913efd3e7bf2f26b32dc305fd91a01b77af4f78e2b380f6876294",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9171970321686217,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://tool-use-smith.github.io/",
+      "title": "Training LLMs to write tools generalized beyond self use",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "blackcat201",
+      "publishedAt": "2026-10-11T10:29:12Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://tool-use-smith.github.io/",
+      "titleHash": "0d93ab68adc709d894bfcf092314c0712674761c7a05895136f18719687c20a1",
+      "contentHash": "0d93ab68adc709d894bfcf092314c0712674761c7a05895136f18719687c20a1",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8639055916354871,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://zml.ai/llmd/",
+      "title": "The Universal LLM Server",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ahamez",
+      "publishedAt": "2026-10-11T21:03:35Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://zml.ai/llmd",
+      "titleHash": "3d1eb5798295772b2b308c43f5a76dd4872bf3a204353d36c68b0762596ab97c",
+      "contentHash": "3d1eb5798295772b2b308c43f5a76dd4872bf3a204353d36c68b0762596ab97c",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9564712842974118,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://mnvr.in/p/llms-and-humans",
+      "title": "LLMs should not be treated as humans",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "zdw",
+      "publishedAt": "2026-10-11T17:29:20Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://mnvr.in/p/llms-and-humans",
+      "titleHash": "774f58a27d4c493c843190c8754cf928aa54b856aed0eda3468aad29bd7e2611",
+      "contentHash": "774f58a27d4c493c843190c8754cf928aa54b856aed0eda3468aad29bd7e2611",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9241498155556447,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50039529",
+      "title": "Ask HN: Best Local LLM Box ?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "What are people using for local AI setups? This is for my startup usecase where lower intelligence, cleanups, routine tasks, logs&#x2F;summaries type LLM usage I can see that catching up to use in cost in the next year or so.<p>I am really considering buying a AMD strix Halo or something similiar wanted to understand what people have thought of it and where it falls short?",
+      "author": "enoughahnaf",
+      "publishedAt": "2026-10-11T03:19:32Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50039529",
+      "titleHash": "ac7fbec9ddcefc51b01629a0efa467add145e55b5e453457d18d373677d5516b",
+      "contentHash": "1e3b2f8950f6686c1853d7de760965aac624e89f07d47961fb3ba742dc3a46c3",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8063542490419358,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://dev.to/georgekobaidze/georgian-language-benchmark-two-biggest-ai-labs-clash-in-a-language-that-doesnt-play-by-anyones-5b22",
+      "title": "Georgian Language Benchmark: Two Biggest AI Labs Clash in a Language That Doesn't Play by Anyone's Rules",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Kaggle Benchmarking Challenge           Table of Contents    One Eye,...",
+      "author": "Giorgi Kobaidze",
+      "publishedAt": "2026-10-11T19:40:43Z",
+      "engagement": 22,
+      "tags": [
+        "devchallenge",
+        "kagglechallenge",
+        "ai",
+        "machinelearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/georgekobaidze/georgian-language-benchmark-two-biggest-ai-labs-clash-in-a-language-that-doesnt-play-by-anyones-5b22",
+      "titleHash": "5d5183231ad6f910b8eb6d452c8f43d905ea2347a6dae9bfba0a77dc6fcfb165",
+      "contentHash": "b00a4b0ae51484750231d245f15ed13018e484e5cbad695dac8a35e2ede483a2",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.9438381961859618,
+        "engagement": 0.45390927867253095
+      }
+    },
+    {
+      "url": "https://dev.to/cheetah100/the-epistemology-of-quality-4cmi",
+      "title": "The Epistemology of Quality",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "How do we know code is correct, and what role does human code review play in knowing it?",
+      "author": "Peter Harrison",
+      "publishedAt": "2026-10-10T00:28:26Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "codereview",
+        "codequality",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/cheetah100/the-epistemology-of-quality-4cmi",
+      "titleHash": "d115feba7b40e9e6b07594e918cd4e18e6d2903fba32cc8d5cea727567df8e31",
+      "contentHash": "70f6428ade978d48128eef67dbfea79048eb88a1a167fc8226cdaf2aab01cca7",
+      "score": 51,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.6226726751864489,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/gde/what-llms-know-that-you-dont-know-they-know-stop-inventing-prompt-dsls-and-ride-50-years-of-2bl6",
+      "title": "What LLMs 'Know' That You Don't Know They Know: Stop Inventing Prompt DSLs and Ride 50 Years of Unix Pre-Training Gravity",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Why did a 1976 Makefile (Part 3.6) and a 1983 Unix init.d directory (Part 3.7) outperform 2,000 lines of English prompt rules? Because prompt engineering is static symbol linkage against 50 years of pre-trained computer science canon.",
+      "author": "Randal L. Schwartz",
+      "publishedAt": "2026-10-11T00:59:52Z",
+      "engagement": 30,
+      "tags": [
+        "ai",
+        "programming",
+        "unix",
+        "architecture",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/what-llms-know-that-you-dont-know-they-know-stop-inventing-prompt-dsls-and-ride-50-years-of-2bl6",
+      "titleHash": "33ad8733e8486779c771e5e4e7e38313339aa4ea252738cceb58ad324b8f4e70",
+      "contentHash": "6ef6075c8378019552a8926d07f12cd8dcf6fea621a08b5b901e812119c48481",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7884851250803547,
+        "engagement": 0.49712056461142423
+      }
+    },
+    {
+      "url": "https://dev.to/wiseai/no-seriously-neural-networks-cannot-produce-genuine-intelligence-4l39",
+      "title": "No, Seriously. Neural Networks Cannot Produce Genuine Intelligence.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Hey everyone 👋,  I want to start by saying something that I know is going to make a certain type of...",
+      "author": "Mahmoud 🦀",
+      "publishedAt": "2026-10-11T05:36:17Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "llm",
+        "lmm",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/wiseai/no-seriously-neural-networks-cannot-produce-genuine-intelligence-4l39",
+      "titleHash": "1c414d6c187bdd3c4bca8ccc866fed1855fa2c74951192571d3a312454df2a4c",
+      "contentHash": "24e483a645abfb69045b5a9e7f3aab9433a8764b59cb61c48bc5e3134a43087f",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.824242513468243,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/valyuai/how-to-build-a-competitive-intelligence-agent-for-public-companies-op6",
+      "title": "How to Build a Competitive Intelligence Agent for Public Companies",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Day 10 of 30 Days of Search.  Most competitor research breaks in the same place: it finds a few...",
+      "author": "Prosper Otemuyiwa",
+      "publishedAt": "2026-10-10T15:56:29Z",
+      "engagement": 9,
+      "tags": [
+        "agents",
+        "ai",
+        "automation",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/valyuai/how-to-build-a-competitive-intelligence-agent-for-public-companies-op6",
+      "titleHash": "f942bfceb068ca06b13d692588c6606aacb286c397ccc4ed12e594292977b891",
+      "contentHash": "8805d9b373386e011616da2c65869507ba3c3f7796e5832bb87322e189eb8f16",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.7226516437448223,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://dev.to/susheem-k/how-8-bit-quantization-shrinks-an-llm-to-a-quarter-of-its-size-and-why-a-single-outlier-weight-3fa9",
+      "title": "How 8-bit quantization shrinks an LLM to a quarter of its size — and why a single outlier weight can quietly ruin it",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A beginner-friendly walk through INT8 quantization: one running example, the math in plain words, and why a single large weight decides how well it works. With an interactive playground.",
+      "author": "Susheem Koul",
+      "publishedAt": "2026-10-11T07:50:16Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "llm",
+        "machinelearning",
+        "python",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/susheem-k/how-8-bit-quantization-shrinks-an-llm-to-a-quarter-of-its-size-and-why-a-single-outlier-weight-3fa9",
+      "titleHash": "e0a48085c31065312a43073a381532cd907af74c56e3f29f1f0a73bfafffa9ee",
+      "contentHash": "177bbfb25925a27fba2353b55512070c19a9d32506cf1a40fa5274b39e2f9804",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8421536868586104,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/rdiegoss/bedrock-and-langchain-disagree-on-what-inputtokens-means-never-price-it-without-knowing-who-210a",
+      "title": "Bedrock and LangChain disagree on what input_tokens means — never price it without knowing who counted",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I was adding cache-read and cache-write columns to a usage ledger, and I put two usage payloads side...",
+      "author": "Rodrigo Diego",
+      "publishedAt": "2026-10-08T19:06:37Z",
+      "engagement": 5,
+      "tags": [
+        "bedrock",
+        "llm",
+        "aws",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/rdiegoss/bedrock-and-langchain-disagree-on-what-inputtokens-means-never-price-it-without-knowing-who-210a",
+      "titleHash": "12983ee01db9be89dd08931890b45b9a96c831ef3871acb48de0530a521886fb",
+      "contentHash": "bbd5eb952468414b4d48c9170e2a093627973166178dfaff52888e9cd050c8e9",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.4693441048415871,
+        "engagement": 0.25938375012788123
+      }
+    }
+  ]
+}
