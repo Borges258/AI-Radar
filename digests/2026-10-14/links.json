@@ -1,0 +1,1265 @@
+{
+  "date": "2026-10-14",
+  "stats": {
+    "scraped": 170,
+    "deduped": 46,
+    "scored": 46
+  },
+  "summary": "今日资讯聚焦 AI 安全与实用创新：Consus 推出合规网关保障敏感数据，Parsimony 评测模型代码冗余度，Pulse Local 实现 Mac 端本地化智能记账。Character.ai 申请破产引发关注，另有深度文章揭示 LLM 记忆污染验证难题，助您把握 AI 落地、合规及行业变局关键动向。",
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50073471",
+      "title": "Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hey Hacker News! I&#x27;m Eric, the founder of Consus. We route all AI requests to ITAR restricted and controlled unclassified information (CUI) compliant infrastructure.\nConsus itself satisfies ITAR restrictions, and we recently completed our FedRAMP equivalency audit against the 410 FedRAMP High controls. FedRAMP High is the U.S. government’s strictest security baseline for cloud services handling sensitive unclassified data. A breach of this data could cause severe or catastrophic harm. Achieving FedRAMP equivalency, or authorization, is required before processing CUI information.<p>Demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;6MYxJe6P4oY\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;6MYxJe6P4oY</a><p>Aerospace and defense is experiencing rapid growth. Unfortunately, most companies are struggling to use AI because of necessary data protections &amp; compliance risk. These companies can move even faster if they could use the AI tools that most other industries take for granted.<p>I spent most of my career prior to Consus in aerospace &amp; defense. I launched national security payloads at SpaceX, and was an early employee at Castelion. I’ve watched first hand how compliance red-tape makes it difficult for companies to adopt new technologies and trust vendors that touch their sensitive data. For example, I worked with a satellite manufacturer that doesn’t allow any AI tools, even for non-sensitive work.<p>Even as AI has become extremely useful over the past 9-12 months, I was surprised by how many aerospace &amp; defense companies refused to touch it. They could see how it could be helpful, but they were scared about model providers training on their data, violating an ITAR rule, or risk losing new business because of a failed cyber assessment. These are all rational fears.<p>There were a lot of ways to solve some&#x2F;all of these problems, but we focused on building a compliant AI inference layer that can &quot;plug&quot; into any AI tool or workflow. Just as OpenRouter integrates with most tools, Consus can connect to tools like ChatGPT or Claude, open source tools including the Pi coding agent or Open WebUI, or integrate with applications built and maintained by individual organizations.<p>Almost no aerospace &amp; defense company lives in all three major GovClouds (AWS, Azure, Google). When I mapped where frontier models can legally run for ITAR and CUI work, each provider had some subset of models, and each model achieved varying levels of compliance. Our customers don’t think in terms of cloud providers. They think about the data controls they require, and the model they want to use.\nThat is why we built the compliance suffix. Under the hood, every request hits a single OpenAI-compatible endpoint, where keys are verified and policy is enforced before anything touches inference. Every model name must carry a compliance suffix, such as gpt-5.6-sol:fedramp-high or claude-opus-5-5:itar, and any bare model name is rejected. We never proxy to the standard commercial endpoints.<p>Our customers are also able to build an allowlist of models, and assign spend &amp; model restrictions to individual users in the organization. This is all handled through our Consus Portal where teams can manage spend, keys, and policies.<p>A typical question we hear is why not just use Bedrock in AWS GovCloud or Azure Government directly. For small teams, just getting access to these platforms is difficult. For larger organizations, GovCloud lets you inherit some but not all of the controls needed to handle sensitive data. Also, models are split across providers: GPT-5.6 Sol is only available in Azure Government, while Claude Opus 5.5 is served through Bedrock in AWS GovCloud. If you want both, you are standing up and securing two separate government cloud environments. We run all of them behind one endpoint so customers don’t have to pick a cloud, and we handle the compliance work for each one.<p>Given the data sensitivities, Consus does not store any customer data at rest. All prompts and completions stay in memory only for the length of the request and are never logged or written to disk. Zero data retention is strictly enforced both on ourselves and the infrastructure&#x2F;model providers. We do keep metadata on each request and response for billing and audit purposes.<p>Consus is not self-serve by design. ITAR requires us to know exactly who is on the other end of every key, so we verify every organization and put a contract in place before issuing API keys. We charge our customers a compliance fee starting at $40&#x2F;mo&#x2F;seat plus AI tokens at cost.<p>We are actively serving customers, and would love any feedback from security experts, or developers&#x2F;engineers working in highly regulated industries!<p>References:\nAPI Documentation: <a href=\"https:&#x2F;&#x2F;gateway.consus.io&#x2F;overview\">https:&#x2F;&#x2F;gateway.consus.io&#x2F;overview</a>\nSecurity &amp; Architecture: <a href=\"https:&#x2F;&#x2F;gateway.consus.io&#x2F;security\">https:&#x2F;&#x2F;gateway.consus.io&#x2F;security</a>\nCompliance Details: <a href=\"https:&#x2F;&#x2F;consus.io&#x2F;compliance\">https:&#x2F;&#x2F;consus.io&#x2F;compliance</a>",
+      "author": "ericmags",
+      "publishedAt": "2026-10-13T15:41:00Z",
+      "engagement": 33,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50073471",
+      "titleHash": "46e7b84998cc3e2ab01a90a6b1c181e5cc87998617ee6ec402f5d8b268cfd6d0",
+      "contentHash": "a5ed164cdb049d11e3b1d2b91b42ea27d2d2afb50cace8bccefd5e82e4915101",
+      "score": 86,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9110772641719369,
+        "engagement": 0.5104929723474184
+      },
+      "rank": 1,
+      "reasons": [
+        "保障企业敏感数据合规流转的核心方案"
+      ],
+      "overview": "Consus 推出 LLM 网关，将 AI 请求路由至符合 ITAR 和 CUI 标准的合规基础设施，专为企业处理敏感数据提供安全解决方案。"
+    },
+    {
+      "url": "https://parsimony.lasu.dev/",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Existing benchmarks measure solve rate and token output&#x2F;cost, but don&#x27;t punish excess code, which makes a codebase harder to work with in the long term. I wanted to measure this since it matters most for long-term projects.<p>Method: it takes the patches that benchmarks already publish (DeepSWE, SWE-bench Verified, SWE-bench Live) and counts &quot;coding units&quot;: syntax elements like statements, calls, names and literals. I didn&#x27;t use lines of code, so cramming code isn&#x27;t rewarded. Deleted code is subtracted, so it measures net units.<p>GPT-6 and Claude 5.5 have no public patches yet, so I ran them myself on 3–10 tasks on my own subscriptions (shown as faded circles, not ranked).<p>Any feedback or model contributions are welcome, especially public patch exports for newer models.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;La5u&#x2F;Parsimony\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;La5u&#x2F;Parsimony</a><p>Not affiliated with any of the benchmarks.",
+      "author": "lasu",
+      "publishedAt": "2026-10-13T19:50:31Z",
+      "engagement": 44,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://parsimony.lasu.dev/",
+      "titleHash": "41071fdaba6533fc5e260ece17d1dd0d7216d6995f756865fd3e44451f5f4658",
+      "contentHash": "38dbef978a94805a33095b004411942bf7b7a4cf0d4d13aa10cfb7fbd2682625",
+      "score": 83,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9482923483193789,
+        "engagement": 0.5510708379251146
+      },
+      "rank": 2,
+      "reasons": [
+        "精准评估 AI 代码生成效率与质量"
+      ],
+      "overview": "Parsimony 是一个开源基准测试工具，专门衡量 AI 模型生成代码的冗余程度，旨在解决现有评测未惩罚过量代码导致维护成本高的问题。"
+    },
+    {
+      "url": "https://pulseos.finance",
+      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, I&#x27;m Niz. Pulse Local is a budgeting app for Mac (Apple Silicon, beta) that answers questions about your spending with models that run on your machine. Local mode needs no account. The ledger and your questions stay on the machine, and the app sends no analytics or crash logs.<p>I felt there are not enough consumer apps that run locally with no calls to the outside world that help us manage sensitive corners of our lives. This app in its local variant only downloads a couple of models and occasional updates, it does not send any analytics nor data.<p>Features-wise, Pulse local is a complete budgeting app that offers an assistant built on top of a fine-tuned model and thousands of rules embedded in the code itself. I&#x27;m sharing it for free with options to help me continue experimenting with fine-tuning and expanding along this direction.<p>How it works: you import a CSV from any bank, in any currency. When you ask a question, a tuned Qwen3 0.6B model reads it into a structured query, and code, not the model, does the money math against the ledger. A 4B checker model double-checks each money answer; when the two readings disagree, the app says it is not sure instead of guessing. That change took wrong answers from about one in five to 5 in 494 questions across our last three tests. The write-up covers how we test, the designs that failed, and the limits of the claim: <a href=\"https:&#x2F;&#x2F;pulseos.finance&#x2F;pulse-local&#x2F;writing&#x2F;agree-or-not-sure\" rel=\"nofollow\">https:&#x2F;&#x2F;pulseos.finance&#x2F;pulse-local&#x2F;writing&#x2F;agree-or-not-sur...</a><p>The tuned weights are on Hugging Face (PulseOS&#x2F;pulse-local-qwen3-0.6b).<p>Limitations: the first start downloads about 2.9 GB of models. With the checker on, a money answer takes 12 to 14 seconds (you can turn the checker off). Small models can still misread an open-ended question. The app answers in English. Mac only for now; Windows is next.<p>The app is free. An optional Connected mode (Sync Pass, $29&#x2F;year) syncs US banks through Plaid; transactions pass through our server&#x27;s memory and are not stored.<p>Feedback welcome, especially on wrong answers and on questions it should handle but does not.",
+      "author": "niztk",
+      "publishedAt": "2026-10-13T23:13:23Z",
+      "engagement": 36,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pulseos.finance/",
+      "titleHash": "505899c5cc045d8e4ed050ca0c472e1e113a123f841e294761f727f45ed6661a",
+      "contentHash": "8343caac6ccd25ec7ac4b6e83782bbe45bfd07a1f65e6109007a1bc68bc11cc6",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9796672224239457,
+        "engagement": 0.5227339080223317
+      },
+      "rank": 3,
+      "reasons": [
+        "隐私优先的本地化智能记账工具"
+      ],
+      "overview": "Pulse Local 是一款 Mac 预算应用，其 AI 模型完全在本地运行，保护隐私的同时帮助用户分析消费行为并回答财务问题。"
+    },
+    {
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "title": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;ai-artificial-intelligence&#x2F;1009802&#x2F;character-ai-files-for-bankruptcy-disney\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theverge.com&#x2F;ai-artificial-intelligence&#x2F;1009802&#x2F;...</a> <a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;10&#x2F;13&#x2F;just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;10&#x2F;13&#x2F;just-5-years-in-interactiv...</a> <a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;litigation&#x2F;characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;litigation&#x2F;characterai-files-b...</a> <a href=\"https:&#x2F;&#x2F;variety.com&#x2F;2026&#x2F;biz&#x2F;news&#x2F;disney-bids-on-character-ai-assets-chapter-11-bankruptcy-1236909984&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;variety.com&#x2F;2026&#x2F;biz&#x2F;news&#x2F;disney-bids-on-character-a...</a>",
+      "author": "nryoo",
+      "publishedAt": "2026-10-13T07:28:34Z",
+      "engagement": 289,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.character.ai/an-update-on-character-ai",
+      "titleHash": "d2f0b7c5ad31aef8ed5a690a8253cca093176a9fb3c251e601c2b1cec2cc3c39",
+      "contentHash": "f2cf8b904455c7b53982a1b5a96e1caef5d5468138b799b41d54029680826045",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8418622631785715,
+        "engagement": 0.8207993326329853
+      },
+      "rank": 4,
+      "reasons": [
+        "AI 行业资本洗牌的关键信号"
+      ],
+      "overview": "Character.ai 申请自愿进入第 11 章破产保护程序，这一消息揭示了 AI 社交角色平台在商业模式与市场生存方面的巨大挑战。"
+    },
+    {
+      "url": "https://dev.to/toxy4ny/cosine-similarity-said-092-the-payload-was-already-dead-387h",
+      "title": "Cosine Similarity Said 0.92. The Payload Was Already Dead.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Claiming an LLM agent's memory poisoned its behaviour is easy. Proving it is not. A measurement rig built on counterfactual amputation, a noise floor, and three honest negative results.",
+      "author": "KL3FT3Z",
+      "publishedAt": "2026-10-13T13:45:59Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "rag",
+        "llm",
+        "webdev",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/toxy4ny/cosine-similarity-said-092-the-payload-was-already-dead-387h",
+      "titleHash": "ac4a512f384295fc007dc39c0d76c7b15de68558dbb2b1cd4797e936a4df87df",
+      "contentHash": "cd74bd589575cf3f520b1c68b1692d59ccfa2c826e62d03072d964ee80867700",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8944179730582875,
+        "engagement": 0.25938375012788123
+      },
+      "rank": 5,
+      "reasons": [
+        "避免 LLM 评估中常见误判的科学方法"
+      ],
+      "overview": "文章通过构建反事实消融测试和噪声地板，证明仅凭余弦相似度无法证实 LLM 记忆被污染导致行为异常，强调了科学验证的重要性。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://blog.character.ai/an-update-on-character-ai/",
+      "title": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;ai-artificial-intelligence&#x2F;1009802&#x2F;character-ai-files-for-bankruptcy-disney\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theverge.com&#x2F;ai-artificial-intelligence&#x2F;1009802&#x2F;...</a> <a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;10&#x2F;13&#x2F;just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;10&#x2F;13&#x2F;just-5-years-in-interactiv...</a> <a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;litigation&#x2F;characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;litigation&#x2F;characterai-files-b...</a> <a href=\"https:&#x2F;&#x2F;variety.com&#x2F;2026&#x2F;biz&#x2F;news&#x2F;disney-bids-on-character-ai-assets-chapter-11-bankruptcy-1236909984&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;variety.com&#x2F;2026&#x2F;biz&#x2F;news&#x2F;disney-bids-on-character-a...</a>",
+      "author": "nryoo",
+      "publishedAt": "2026-10-13T07:28:34Z",
+      "engagement": 289,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.character.ai/an-update-on-character-ai",
+      "titleHash": "d2f0b7c5ad31aef8ed5a690a8253cca093176a9fb3c251e601c2b1cec2cc3c39",
+      "contentHash": "f2cf8b904455c7b53982a1b5a96e1caef5d5468138b799b41d54029680826045",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8418622631785715,
+        "engagement": 0.8207993326329853
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.13928",
+      "title": "AI models can provably hide arbitrary capabilities",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sbulaev",
+      "publishedAt": "2026-10-13T02:07:08Z",
+      "engagement": 272,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.13928",
+      "titleHash": "04009fc15d44a30a8e9a156c0872a55bd35a4a3438d2b64f9f8d95adabe41589",
+      "contentHash": "04009fc15d44a30a8e9a156c0872a55bd35a4a3438d2b64f9f8d95adabe41589",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.7995445099461713,
+        "engagement": 0.812054215680252
+      }
+    },
+    {
+      "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sammy0910",
+      "publishedAt": "2026-10-13T15:25:50Z",
+      "engagement": 245,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.sammystraus.com/",
+      "titleHash": "932c4a14b83bf6715a30ddb9ec88f0cd1e76ddf115e1d349628fa59ffd27fad5",
+      "contentHash": "932c4a14b83bf6715a30ddb9ec88f0cd1e76ddf115e1d349628fa59ffd27fad5",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9088628529826784,
+        "engagement": 0.7969783690344597
+      }
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "title": "Character.ai Files for Bankruptcy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yanis_t",
+      "publishedAt": "2026-10-13T11:24:08Z",
+      "engagement": 145,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "titleHash": "dac8b756501614b55e42c1e23319c7702133e12de2c03454b538b06a7726c874",
+      "contentHash": "dac8b756501614b55e42c1e23319c7702133e12de2c03454b538b06a7726c874",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8742909920036411,
+        "engagement": 0.7214509519281457
+      }
+    },
+    {
+      "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+      "title": "How to engineer an AI harness for game development",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kkukshtel",
+      "publishedAt": "2026-10-13T14:14:23Z",
+      "engagement": 130,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+      "titleHash": "45bb7f94b5683b26798289ab7f39a0dad80e6410573b5b306653f2ce2a8a6439",
+      "contentHash": "45bb7f94b5683b26798289ab7f39a0dad80e6410573b5b306653f2ce2a8a6439",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8985029602565993,
+        "engagement": 0.7057570985519215
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "title": "Threat of AI share crash puts world financial stability at risk, says IMF",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "novaRom",
+      "publishedAt": "2026-10-13T05:57:32Z",
+      "engagement": 110,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "titleHash": "83df2c133ec2d73b62bc8cb014a444d7ebe065fba4057ea3a581b3bf0ece2fdc",
+      "contentHash": "83df2c133ec2d73b62bc8cb014a444d7ebe065fba4057ea3a581b3bf0ece2fdc",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8296550836737914,
+        "engagement": 0.6817743262622192
+      }
+    },
+    {
+      "url": "https://parsimony.lasu.dev/",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Existing benchmarks measure solve rate and token output&#x2F;cost, but don&#x27;t punish excess code, which makes a codebase harder to work with in the long term. I wanted to measure this since it matters most for long-term projects.<p>Method: it takes the patches that benchmarks already publish (DeepSWE, SWE-bench Verified, SWE-bench Live) and counts &quot;coding units&quot;: syntax elements like statements, calls, names and literals. I didn&#x27;t use lines of code, so cramming code isn&#x27;t rewarded. Deleted code is subtracted, so it measures net units.<p>GPT-6 and Claude 5.5 have no public patches yet, so I ran them myself on 3–10 tasks on my own subscriptions (shown as faded circles, not ranked).<p>Any feedback or model contributions are welcome, especially public patch exports for newer models.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;La5u&#x2F;Parsimony\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;La5u&#x2F;Parsimony</a><p>Not affiliated with any of the benchmarks.",
+      "author": "lasu",
+      "publishedAt": "2026-10-13T19:50:31Z",
+      "engagement": 44,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://parsimony.lasu.dev/",
+      "titleHash": "41071fdaba6533fc5e260ece17d1dd0d7216d6995f756865fd3e44451f5f4658",
+      "contentHash": "38dbef978a94805a33095b004411942bf7b7a4cf0d4d13aa10cfb7fbd2682625",
+      "score": 83,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9482923483193789,
+        "engagement": 0.5510708379251146
+      }
+    },
+    {
+      "url": "https://www.scientificamerican.com/article/scientists-worry-ai-is-stealing-their-ideas/",
+      "title": "Scientists wonder: Is my AI stealing my ideas?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "geox",
+      "publishedAt": "2026-10-13T16:05:51Z",
+      "engagement": 41,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.scientificamerican.com/article/scientists-worry-ai-is-stealing-their-ideas",
+      "titleHash": "b9b823259fb7feda07849ca7834c3c06d1d7f0294161532a27a557dc4a7f1f5b",
+      "contentHash": "b9b823259fb7feda07849ca7834c3c06d1d7f0294161532a27a557dc4a7f1f5b",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9147171638477322,
+        "engagement": 0.5410830967993002
+      }
+    },
+    {
+      "url": "https://www.reuters.com/business/ai-models-may-soon-self-replicate-without-access-data-centers-anthropic-warns-2026-10-13/",
+      "title": "AI models may soon self-replicate without access to data centers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "samizdis",
+      "publishedAt": "2026-10-13T10:08:18Z",
+      "engagement": 39,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/business/ai-models-may-soon-self-replicate-without-access-data-centers-anthropic-warns-2026-10-13",
+      "titleHash": "bb31f8a55e047d71df5a8f26f6dc545505cab6b4b11f947d0d7e415ff48c987a",
+      "contentHash": "bb31f8a55e047d71df5a8f26f6dc545505cab6b4b11f947d0d7e415ff48c987a",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8637174986640918,
+        "engagement": 0.5340199971093208
+      }
+    },
+    {
+      "url": "https://pulseos.finance",
+      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, I&#x27;m Niz. Pulse Local is a budgeting app for Mac (Apple Silicon, beta) that answers questions about your spending with models that run on your machine. Local mode needs no account. The ledger and your questions stay on the machine, and the app sends no analytics or crash logs.<p>I felt there are not enough consumer apps that run locally with no calls to the outside world that help us manage sensitive corners of our lives. This app in its local variant only downloads a couple of models and occasional updates, it does not send any analytics nor data.<p>Features-wise, Pulse local is a complete budgeting app that offers an assistant built on top of a fine-tuned model and thousands of rules embedded in the code itself. I&#x27;m sharing it for free with options to help me continue experimenting with fine-tuning and expanding along this direction.<p>How it works: you import a CSV from any bank, in any currency. When you ask a question, a tuned Qwen3 0.6B model reads it into a structured query, and code, not the model, does the money math against the ledger. A 4B checker model double-checks each money answer; when the two readings disagree, the app says it is not sure instead of guessing. That change took wrong answers from about one in five to 5 in 494 questions across our last three tests. The write-up covers how we test, the designs that failed, and the limits of the claim: <a href=\"https:&#x2F;&#x2F;pulseos.finance&#x2F;pulse-local&#x2F;writing&#x2F;agree-or-not-sure\" rel=\"nofollow\">https:&#x2F;&#x2F;pulseos.finance&#x2F;pulse-local&#x2F;writing&#x2F;agree-or-not-sur...</a><p>The tuned weights are on Hugging Face (PulseOS&#x2F;pulse-local-qwen3-0.6b).<p>Limitations: the first start downloads about 2.9 GB of models. With the checker on, a money answer takes 12 to 14 seconds (you can turn the checker off). Small models can still misread an open-ended question. The app answers in English. Mac only for now; Windows is next.<p>The app is free. An optional Connected mode (Sync Pass, $29&#x2F;year) syncs US banks through Plaid; transactions pass through our server&#x27;s memory and are not stored.<p>Feedback welcome, especially on wrong answers and on questions it should handle but does not.",
+      "author": "niztk",
+      "publishedAt": "2026-10-13T23:13:23Z",
+      "engagement": 36,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pulseos.finance/",
+      "titleHash": "505899c5cc045d8e4ed050ca0c472e1e113a123f841e294761f727f45ed6661a",
+      "contentHash": "8343caac6ccd25ec7ac4b6e83782bbe45bfd07a1f65e6109007a1bc68bc11cc6",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9796672224239457,
+        "engagement": 0.5227339080223317
+      }
+    },
+    {
+      "url": "https://www.seangoedecke.com/software-engineers-dont-get-to-be-luddites-about-ai/",
+      "title": "Software engineers don't get to be Luddites about AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vismit2000",
+      "publishedAt": "2026-10-13T04:48:45Z",
+      "engagement": 27,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.seangoedecke.com/software-engineers-dont-get-to-be-luddites-about-ai",
+      "titleHash": "fe602b0953465a7ab924edee22a05c0bf5ff1e9675a3c1894dc48abc3f64649c",
+      "contentHash": "fe602b0953465a7ab924edee22a05c0bf5ff1e9675a3c1894dc48abc3f64649c",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8205490697494318,
+        "engagement": 0.4823860104474064
+      }
+    },
+    {
+      "url": "https://github.com/maharshi365/deslop",
+      "title": "Show HN: Deslop – Oxlint rules for AI-generated TypeScript",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Catches unsafe types, duplicate code, and low-value tests.",
+      "author": "maharshi365",
+      "publishedAt": "2026-10-13T17:52:57Z",
+      "engagement": 25,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/maharshi365/deslop",
+      "titleHash": "09d1f5a2a250c4262e5d4361cb1f83a5829b0717ec48a1aa6772c72bd0b8e793",
+      "contentHash": "e4340cded767c0483c8950a16b45c489c35d65442635dd5340e2f59f3f327d50",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9305717486997784,
+        "engagement": 0.4716577826569393
+      }
+    },
+    {
+      "url": "https://memorysync.io/try",
+      "title": "Show HN: MemorySync – Memory for AI Agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I created MemorySync because I kept running into the problem of AI agents not being able to remember useful things about users between conversations. I wanted an easy way to give the agents memory in my application without having to build the whole thing myself.\nMemorySync is an API for giving AI agents memory. The application sends MemorySync information provided by the user, MemorySync saves useful memories for that user, and they can be retrieved later when needed.\nGive it a try without creating an account: <a href=\"https:&#x2F;&#x2F;memorysync.io&#x2F;try\" rel=\"nofollow\">https:&#x2F;&#x2F;memorysync.io&#x2F;try</a>\nStore a memory, refresh the page, and ask for it back to see if it remembers.\nIf you&#x27;re interested in using the API, I put the documentation here: <a href=\"https:&#x2F;&#x2F;docs.memorysync.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.memorysync.io&#x2F;</a>\nIt&#x27;s hosted only at the moment, so there is no self-hosting option. It&#x27;s currently available in one US region, and it takes a few seconds to store a memory.\nThe free plan allows 10k saves and 1k searches per month, and no credit card is required.\nI&#x27;d like to know if you think this is a useful abstraction for building AI agents, and what else you would expect from a memory API.",
+      "author": "mohd_rafay",
+      "publishedAt": "2026-10-13T12:35:42Z",
+      "engagement": 22,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://memorysync.io/try",
+      "titleHash": "5cf6c3f0617f32bdd8a317eff54dd25d8d88e14cb7b395225e7e450ba502357b",
+      "contentHash": "c6db96766e828bb78f7a5e21adcd09289bdced3f1dcf333eefd67fb3c818cd6d",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8843882691643121,
+        "engagement": 0.45390927867253095
+      }
+    },
+    {
+      "url": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13/",
+      "title": "Character.ai files for bankruptcy, agrees to sell some assets for $20M",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "toomuchtodo",
+      "publishedAt": "2026-10-13T06:16:58Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/legal/litigation/characterai-files-bankruptcy-agrees-sell-some-assets-disney-20-million-2026-10-13",
+      "titleHash": "1bba658933b5f031af8d74875aa9133fd010ec733c9767c94876c3410cfa3023",
+      "contentHash": "1bba658933b5f031af8d74875aa9133fd010ec733c9767c94876c3410cfa3023",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8322460602158237,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://www.businessinsider.com/ai-researchers-smoking-ai-cure-cancer-palantir-cto-2026-10",
+      "title": "Palantir CTO:Some AI researchers taking up smoking;they expect AI to cure cancer",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-10-13T15:29:46Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.businessinsider.com/ai-researchers-smoking-ai-cure-cancer-palantir-cto-2026-10",
+      "titleHash": "db17708f2b39e9a5e4c817ae5198ef21e136159f119392314b704ff090f9204d",
+      "contentHash": "db17708f2b39e9a5e4c817ae5198ef21e136159f119392314b704ff090f9204d",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9094366205945806,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.phoronix.com/news/Linus-Torvalds-Assoc-Array",
+      "title": "Linus Torvalds \"Did What I Preach\" Used AI to Make Code Decipherabl, Find Bugs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "raybb",
+      "publishedAt": "2026-10-13T07:55:10Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.phoronix.com/news/Linus-Torvalds-Assoc-Array",
+      "titleHash": "d399dad08882a8841a441556651421354683dab2463b6be7d04bd07cae36b460",
+      "contentHash": "d399dad08882a8841a441556651421354683dab2463b6be7d04bd07cae36b460",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8454629987780664,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://mezha.net/eng/news/mezha-28304fbbe08e489bfe006d9c_china_is_building/",
+      "title": "China is building AI data centers at speed as the US wrestles with the costs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-10-13T12:50:04Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://mezha.net/eng/news/mezha-28304fbbe08e489bfe006d9c_china_is_building",
+      "titleHash": "4817e0d51c6977cf43af14f38e05c52a5fd7b7712a258eb8c903c1c198f50a90",
+      "contentHash": "4817e0d51c6977cf43af14f38e05c52a5fd7b7712a258eb8c903c1c198f50a90",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8864292614086096,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://github.com/preset-io/agor",
+      "title": "Show HN: Agor, multiplayer AI – stop running agents alone",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "caravel",
+      "publishedAt": "2026-10-13T15:19:35Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/preset-io/agor",
+      "titleHash": "16ca1c5dcb4e90453a1bde90ebc8ddab1c215b400c3f42f31c5b62d0cf31b7da",
+      "contentHash": "16ca1c5dcb4e90453a1bde90ebc8ddab1c215b400c3f42f31c5b62d0cf31b7da",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9079518841854286,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://apnews.com/article/kroger-layoffs-grocery-job-cuts-30f0a5d88377e9969ce8994644e14498",
+      "title": "Kroger to lay off 3k corporate employees over 3 years as it leans into AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vrganj",
+      "publishedAt": "2026-10-13T16:49:57Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/kroger-layoffs-grocery-job-cuts-30f0a5d88377e9969ce8994644e14498",
+      "titleHash": "e6b649fc866b6f722c20a6048b48c0f0a9c49c671af3e8f269c478141fa4af5b",
+      "contentHash": "e6b649fc866b6f722c20a6048b48c0f0a9c49c671af3e8f269c478141fa4af5b",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.921212543571822,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.visualcapitalist.com/wp-content/uploads/2026/09/Examining-Chinas-AI-Financing.pdf",
+      "title": "Examining China's AI Financing [pdf]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-10-13T01:25:16Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.visualcapitalist.com/wp-content/uploads/2026/09/Examining-Chinas-AI-Financing.pdf",
+      "titleHash": "a0855ba0c65f1ed47b92bace76711b32e6d37c45c1d4f999f5d01347bc4853ab",
+      "contentHash": "a0855ba0c65f1ed47b92bace76711b32e6d37c45c1d4f999f5d01347bc4853ab",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7941915371215924,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50073471",
+      "title": "Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hey Hacker News! I&#x27;m Eric, the founder of Consus. We route all AI requests to ITAR restricted and controlled unclassified information (CUI) compliant infrastructure.\nConsus itself satisfies ITAR restrictions, and we recently completed our FedRAMP equivalency audit against the 410 FedRAMP High controls. FedRAMP High is the U.S. government’s strictest security baseline for cloud services handling sensitive unclassified data. A breach of this data could cause severe or catastrophic harm. Achieving FedRAMP equivalency, or authorization, is required before processing CUI information.<p>Demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;6MYxJe6P4oY\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;6MYxJe6P4oY</a><p>Aerospace and defense is experiencing rapid growth. Unfortunately, most companies are struggling to use AI because of necessary data protections &amp; compliance risk. These companies can move even faster if they could use the AI tools that most other industries take for granted.<p>I spent most of my career prior to Consus in aerospace &amp; defense. I launched national security payloads at SpaceX, and was an early employee at Castelion. I’ve watched first hand how compliance red-tape makes it difficult for companies to adopt new technologies and trust vendors that touch their sensitive data. For example, I worked with a satellite manufacturer that doesn’t allow any AI tools, even for non-sensitive work.<p>Even as AI has become extremely useful over the past 9-12 months, I was surprised by how many aerospace &amp; defense companies refused to touch it. They could see how it could be helpful, but they were scared about model providers training on their data, violating an ITAR rule, or risk losing new business because of a failed cyber assessment. These are all rational fears.<p>There were a lot of ways to solve some&#x2F;all of these problems, but we focused on building a compliant AI inference layer that can &quot;plug&quot; into any AI tool or workflow. Just as OpenRouter integrates with most tools, Consus can connect to tools like ChatGPT or Claude, open source tools including the Pi coding agent or Open WebUI, or integrate with applications built and maintained by individual organizations.<p>Almost no aerospace &amp; defense company lives in all three major GovClouds (AWS, Azure, Google). When I mapped where frontier models can legally run for ITAR and CUI work, each provider had some subset of models, and each model achieved varying levels of compliance. Our customers don’t think in terms of cloud providers. They think about the data controls they require, and the model they want to use.\nThat is why we built the compliance suffix. Under the hood, every request hits a single OpenAI-compatible endpoint, where keys are verified and policy is enforced before anything touches inference. Every model name must carry a compliance suffix, such as gpt-5.6-sol:fedramp-high or claude-opus-5-5:itar, and any bare model name is rejected. We never proxy to the standard commercial endpoints.<p>Our customers are also able to build an allowlist of models, and assign spend &amp; model restrictions to individual users in the organization. This is all handled through our Consus Portal where teams can manage spend, keys, and policies.<p>A typical question we hear is why not just use Bedrock in AWS GovCloud or Azure Government directly. For small teams, just getting access to these platforms is difficult. For larger organizations, GovCloud lets you inherit some but not all of the controls needed to handle sensitive data. Also, models are split across providers: GPT-5.6 Sol is only available in Azure Government, while Claude Opus 5.5 is served through Bedrock in AWS GovCloud. If you want both, you are standing up and securing two separate government cloud environments. We run all of them behind one endpoint so customers don’t have to pick a cloud, and we handle the compliance work for each one.<p>Given the data sensitivities, Consus does not store any customer data at rest. All prompts and completions stay in memory only for the length of the request and are never logged or written to disk. Zero data retention is strictly enforced both on ourselves and the infrastructure&#x2F;model providers. We do keep metadata on each request and response for billing and audit purposes.<p>Consus is not self-serve by design. ITAR requires us to know exactly who is on the other end of every key, so we verify every organization and put a contract in place before issuing API keys. We charge our customers a compliance fee starting at $40&#x2F;mo&#x2F;seat plus AI tokens at cost.<p>We are actively serving customers, and would love any feedback from security experts, or developers&#x2F;engineers working in highly regulated industries!<p>References:\nAPI Documentation: <a href=\"https:&#x2F;&#x2F;gateway.consus.io&#x2F;overview\">https:&#x2F;&#x2F;gateway.consus.io&#x2F;overview</a>\nSecurity &amp; Architecture: <a href=\"https:&#x2F;&#x2F;gateway.consus.io&#x2F;security\">https:&#x2F;&#x2F;gateway.consus.io&#x2F;security</a>\nCompliance Details: <a href=\"https:&#x2F;&#x2F;consus.io&#x2F;compliance\">https:&#x2F;&#x2F;consus.io&#x2F;compliance</a>",
+      "author": "ericmags",
+      "publishedAt": "2026-10-13T15:41:00Z",
+      "engagement": 33,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50073471",
+      "titleHash": "46e7b84998cc3e2ab01a90a6b1c181e5cc87998617ee6ec402f5d8b268cfd6d0",
+      "contentHash": "a5ed164cdb049d11e3b1d2b91b42ea27d2d2afb50cace8bccefd5e82e4915101",
+      "score": 86,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9110772641719369,
+        "engagement": 0.5104929723474184
+      }
+    },
+    {
+      "url": "https://sayora.ai/many-hands/jev-vs-embeddings/",
+      "title": "Jev handed our LLM the wrong page a tenth as often as our embeddings",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Bocajmai",
+      "publishedAt": "2026-10-13T12:08:53Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sayora.ai/many-hands/jev-vs-embeddings",
+      "titleHash": "4e84407e6c6b329a2ce86a7f6d3d0a0628d1370ca15c34b9ff9569170ace2318",
+      "contentHash": "4e84407e6c6b329a2ce86a7f6d3d0a0628d1370ca15c34b9ff9569170ace2318",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8805911389976159,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.theregister.com/paas-and-iaas/2026/10/13/cheap-chinese-and-open-source-llms-could-trigger-trillion-dollar-ai-infrastructure-reset/5302774",
+      "title": "Chinese cheap LLMs could trigger trillion-dollar AI infrastructure reset",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "runtimewire",
+      "publishedAt": "2026-10-13T16:32:31Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theregister.com/paas-and-iaas/2026/10/13/cheap-chinese-and-open-source-llms-could-trigger-trillion-dollar-ai-infrastructure-reset/5302774",
+      "titleHash": "6c9cac5b7b5750391171c741e9608e8665615e5b38be7d943b3fab49ba94bf75",
+      "contentHash": "6c9cac5b7b5750391171c741e9608e8665615e5b38be7d943b3fab49ba94bf75",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9186393365344555,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.phoronix.com/news/Linux-Dropping-Assisted-By-Req",
+      "title": "Linux Kernel Developers Plan to Remove \"Assisted-By\" Tag Requirement for AI/LLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "majorchord",
+      "publishedAt": "2026-10-13T14:15:04Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.phoronix.com/news/Linux-Dropping-Assisted-By-Req",
+      "titleHash": "74fb599aee3a6ef83d840da201f61006140ac35412518e5df81618e77fddbce3",
+      "contentHash": "74fb599aee3a6ef83d840da201f61006140ac35412518e5df81618e77fddbce3",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8986014763196775,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/RayenMlayeh/jevcrawl",
+      "title": "Show HN: Jevcrawl – A web crawler for AI agents with no LLM in the crawl loop",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rayenmlayeh",
+      "publishedAt": "2026-10-13T23:35:20Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/RayenMlayeh/jevcrawl",
+      "titleHash": "0e4210bd9d1ae5b6dacdb59409b1c5f2d24a5faa2f9db47393c639987504e067",
+      "contentHash": "0e4210bd9d1ae5b6dacdb59409b1c5f2d24a5faa2f9db47393c639987504e067",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9831235891092892,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50067325",
+      "title": "Ask HN: CAD for wood working with LLM support?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I’m a hobbyist woodworker. I manually design simple things in Shapr3d with a lot of patience when I build things. I wonder in the time of LLMs if there is an effective way to accelerate the 3D model design using AI.. Anybody tried using AI to model wood projects? Any tools to recommend?",
+      "author": "reacharavindh",
+      "publishedAt": "2026-10-13T05:54:01Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50067325",
+      "titleHash": "73ba4ad05157743912cecd5d6c923a8ca8bef3eca1e6b82f9906445655561992",
+      "contentHash": "aaa2d1f84c9640658b44377e90825396e6dbff946c7fd210416726fbde8fd9ea",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8291870791667159,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.30266",
+      "title": "LLM Agents Can Easily Tamper with Their Own Traces",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Kaedon",
+      "publishedAt": "2026-10-13T05:00:05Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2609.30266",
+      "titleHash": "70df87ffc4de021e213df0e11643864667423f677c2b51f413a050d41de3e639",
+      "contentHash": "70df87ffc4de021e213df0e11643864667423f677c2b51f413a050d41de3e639",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8220425478660935,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/seuros/mdma",
+      "title": "MDMA: An open source federated LLM inference engine",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "urzil",
+      "publishedAt": "2026-10-13T11:59:30Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/seuros/mdma",
+      "titleHash": "86cf6e61a25203f2eb6e0675941627b94c10743d4f3fdb973583949ed85378d2",
+      "contentHash": "86cf6e61a25203f2eb6e0675941627b94c10743d4f3fdb973583949ed85378d2",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8792663513137796,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.zaproxy.org/blog/2026-10-13-developing-zap-in-the-llm-age/",
+      "title": "Developing Zap in the LLM Age",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "psiinon",
+      "publishedAt": "2026-10-13T14:56:21Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.zaproxy.org/blog/2026-10-13-developing-zap-in-the-llm-age",
+      "titleHash": "3d6b5e8bfa64a1f84ea99d147d41582670b1ea1d393cb45bc513545ac4d67e3f",
+      "contentHash": "3d6b5e8bfa64a1f84ea99d147d41582670b1ea1d393cb45bc513545ac4d67e3f",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9045735170734661,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+      "title": "Running RAG with a (small) language model in the browser",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "bart",
+      "publishedAt": "2026-10-13T10:56:29.994-05:00",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "javascript",
+        "web",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser",
+      "titleHash": "924602e033da7cca3182fb510e3c9636ef59607ad6c31829ad1ced449bcb2a4c",
+      "contentHash": "924602e033da7cca3182fb510e3c9636ef59607ad6c31829ad1ced449bcb2a4c",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.8,
+        "timeliness": 0.9133459061830953,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://scriptc.dev",
+      "title": "scriptc | TypeScript-to-Native Compiler",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "alanmeira",
+      "publishedAt": "2026-10-13T10:29:01.993-05:00",
+      "engagement": 1,
+      "tags": [
+        "compilers",
+        "javascript",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://scriptc.dev/",
+      "titleHash": "4e2e97931b06141df87f135864f8dd2517c1d97f3cc2fd3bb7e3acb349b7035b",
+      "contentHash": "4e2e97931b06141df87f135864f8dd2517c1d97f3cc2fd3bb7e3acb349b7035b",
+      "score": 52,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9093296020325929,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://pikuma.com/blog/ease-creation-decrease-quality-value",
+      "title": "Can Ease of Creation Lead to Decrease in Quality & Value?",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "gustavo-pezzi",
+      "publishedAt": "2026-10-13T08:52:46.284-05:00",
+      "engagement": 4,
+      "tags": [
+        "art",
+        "programming",
+        "vibecoding",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pikuma.com/blog/ease-creation-decrease-quality-value",
+      "titleHash": "ea5f92cd0b532ebf3234c17db1358ee0a5a91272429e1aa384e515878981d3bf",
+      "contentHash": "ea5f92cd0b532ebf3234c17db1358ee0a5a91272429e1aa384e515878981d3bf",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8953926593504664,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://easylang.online/ide",
+      "title": "Easylang: A Simple, Browser-Based Programming Language in the Spirit of the Old Home Computer BASIC",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "chkas",
+      "publishedAt": "2026-10-13T08:37:44.114-05:00",
+      "engagement": 8,
+      "tags": [
+        "education",
+        "programming",
+        "show",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://easylang.online/ide",
+      "titleHash": "7250e592bc6e2255af477d16da3124788d678a5c556b4fff34d586944a1400ad",
+      "contentHash": "7250e592bc6e2255af477d16da3124788d678a5c556b4fff34d586944a1400ad",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8932350709505705,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/francistrdev/ai-fatigue-yea-i-know-f9",
+      "title": "AI Fatigue? Yea I know.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I don't know how to start this off really haha. Though to be fair, everyone is talking about AI...",
+      "author": "FrancisTRᴅᴇᴠ",
+      "publishedAt": "2026-10-13T14:57:34Z",
+      "engagement": 68,
+      "tags": [
+        "discuss",
+        "community",
+        "ai",
+        "writing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/francistrdev/ai-fatigue-yea-i-know-f9",
+      "titleHash": "e07d80c43dcea731a2eaf6a7efa30e7a9e659e4c9786629071e69915d126b0cc",
+      "contentHash": "9ab572c8b317a862ff50fcf6e6c99319d384d25122640ebd537d487b4f342084",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.9047501206863526,
+        "engagement": 0.6129496969124184
+      }
+    },
+    {
+      "url": "https://dev.to/gde/local-embeddings-with-llamadart-how-llamas-share-secrets-46o",
+      "title": "Local embeddings with llamadart: how llamas share secrets",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Beyond chat with llamadart · Part 2    Llama Village, where five llamas share a world without sharing...",
+      "author": "Jhin Lee",
+      "publishedAt": "2026-10-12T18:18:49Z",
+      "engagement": 32,
+      "tags": [
+        "dart",
+        "ai",
+        "flutter",
+        "tutorial",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/local-embeddings-with-llamadart-how-llamas-share-secrets-46o",
+      "titleHash": "e4f5cefc903e161c8279f52117e3ff2b50940034bdedd42619194c192cae8c5a",
+      "contentHash": "36f7b0e8ae06378b3ca1d5afa9cd6a8e56fb97f4d3868ccdab642ea7cd314bcd",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.741667067452572,
+        "engagement": 0.5061713132926292
+      }
+    },
+    {
+      "url": "https://dev.to/peter/someone-hacked-the-freezers-at-400-french-supermarkets-5flm",
+      "title": "Someone hacked the freezers at 400 French supermarkets",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Friends ask me some version of this a lot: how would a bad actor with super powerful AI actually hurt...",
+      "author": "Peter Kim Frank",
+      "publishedAt": "2026-10-13T18:25:56Z",
+      "engagement": 13,
+      "tags": [
+        "news",
+        "security",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/peter/someone-hacked-the-freezers-at-400-french-supermarkets-5flm",
+      "titleHash": "fdaadcb63cbbbb4abf94666aecb868fc48423fe5280017fd5ee51fb37128fc50",
+      "contentHash": "0a5d85506644281e375c547e34c5ec1156a265f4d02c9c080bd76490bf094577",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.9355095750751643,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://dev.to/rudratosh/your-ai-agent-said-it-blocked-the-attack-i-read-the-source-of-5-tools-that-check-if-its-lying-l1n",
+      "title": "Your AI agent said it blocked the attack. I read the source of 5 tools that check if it's lying.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Here's a failure your test suite probably can't see.  An AI agent with a send_email tool summarizes a...",
+      "author": "Rudratosh Shastri",
+      "publishedAt": "2026-10-13T13:31:39Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "security",
+        "opensource",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/rudratosh/your-ai-agent-said-it-blocked-the-attack-i-read-the-source-of-5-tools-that-check-if-its-lying-l1n",
+      "titleHash": "1b63e83c491ca47310272aee5089fdb1871f19f5893b2b5e9684b3480ab73a75",
+      "contentHash": "46256319173d0c1f16c14fb09f3d5d94ef6d360e5b819caefe1d2dba47ed2379",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.8923633595715621,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://dev.to/toxy4ny/cosine-similarity-said-092-the-payload-was-already-dead-387h",
+      "title": "Cosine Similarity Said 0.92. The Payload Was Already Dead.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Claiming an LLM agent's memory poisoned its behaviour is easy. Proving it is not. A measurement rig built on counterfactual amputation, a noise floor, and three honest negative results.",
+      "author": "KL3FT3Z",
+      "publishedAt": "2026-10-13T13:45:59Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "rag",
+        "llm",
+        "webdev",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/toxy4ny/cosine-similarity-said-092-the-payload-was-already-dead-387h",
+      "titleHash": "ac4a512f384295fc007dc39c0d76c7b15de68558dbb2b1cd4797e936a4df87df",
+      "contentHash": "cd74bd589575cf3f520b1c68b1692d59ccfa2c826e62d03072d964ee80867700",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8944179730582875,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://dev.to/rudratosh/i-spent-three-weekends-trying-to-secure-an-ai-agent-heres-everything-that-didnt-work-and-the-g5o",
+      "title": "I spent three weekends trying to secure an AI agent. Here's everything that didn't work — and the ~600 lines that did.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A few weeks ago I watched an AI agent get owned, lie to me about it, and pass its test.  Not in a...",
+      "author": "Rudratosh Shastri",
+      "publishedAt": "2026-10-13T22:38:26Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "security",
+        "opensource",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/rudratosh/i-spent-three-weekends-trying-to-secure-an-ai-agent-heres-everything-that-didnt-work-and-the-g5o",
+      "titleHash": "4482358bbae3f99e81899262a417e63ca305314ade142ecc8902469ec7f9cf2b",
+      "contentHash": "d4cd1c184b392dffb22c19f68782caa79a9a8355ab2159d1933fb7bf9f3a7e11",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.9741888653851225,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/h1manshu01/when-to-use-an-ai-agent-instead-of-a-simple-llm-call-djk",
+      "title": "When to Use an AI Agent Instead of a Simple LLM Call",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The word “agent” is being attached to almost every AI feature right now. A prompt calls a model, the...",
+      "author": "Himanshu Sharma",
+      "publishedAt": "2026-10-13T08:57:00Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "agents",
+        "architecture",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/h1manshu01/when-to-use-an-ai-agent-instead-of-a-simple-llm-call-djk",
+      "titleHash": "6570bafdef2d4181d708a7fd6f960611145039d3ba54603214a7ebfc4ce00d37",
+      "contentHash": "048218e435ec492babb93c1554cff0d2fec708bfc98fb53fd02ca735688070ee",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8538927570730378,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/debashish_ghosal/i-signed-a-regression-and-almost-shipped-it-aeh",
+      "title": "I Signed a Regression and Almost Shipped It",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The regression report said blocked=True. A critical task had regressed. The promotion proceeded...",
+      "author": "Debashish Ghosal",
+      "publishedAt": "2026-10-13T02:13:00Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "testing",
+        "release",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/debashish_ghosal/i-signed-a-regression-and-almost-shipped-it-aeh",
+      "titleHash": "99d1eebdb59b424e5c4a4057b768e5a454800989ed5181d332c151f8915323ce",
+      "contentHash": "8d90d07ca55d83b0f22412621efd3a72f335ae58880711f56f6142db2f418508",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8002974821729206,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/yatuk/the-readme-looked-harmless-the-model-saw-a-hidden-instruction-3fde",
+      "title": "The README looked harmless. The model saw a hidden instruction.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "How indirect prompt injection reaches an agent through a tool result, and how an open source proxy stops it before the model reads it.",
+      "author": "yatuk",
+      "publishedAt": "2026-10-12T20:17:37Z",
+      "engagement": 8,
+      "tags": [
+        "security",
+        "ai",
+        "llm",
+        "opensource",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/yatuk/the-readme-looked-harmless-the-model-saw-a-hidden-instruction-3fde",
+      "titleHash": "e0147a563290fae51cd6ba8f3c2eb8aa814fb8efbc63372aee0bd791344a1a3e",
+      "contentHash": "f9c375ab56cd2a4c2e0e9fae4dc37ff3771e9659280af22889d17976cdd13510",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.7559399892901297,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 466 likes · 630 downloads",
+      "engagement": 466,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "titleHash": "9152332d560cbaae206fc02b4136a73333083765bec86c654d7736355dad41c5",
+      "contentHash": "9e6e05ed0268b3a6cb9130e5677b25c46e7eff5ba53801102fc04cf5c416a252",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8897722935220375
+      }
+    },
+    {
+      "url": "https://huggingface.co/autotrust/JEV-35B",
+      "title": "autotrust/JEV-35B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-classification · 505 likes · 17426 downloads",
+      "engagement": 505,
+      "tags": [
+        "model",
+        "text-classification"
+      ],
+      "normalizedUrl": "https://huggingface.co/autotrust/JEV-35B",
+      "titleHash": "a6cfa5b611c865e8be4bf8bbb37c79947172fd185880cddf5e466e1e51741853",
+      "contentHash": "7da582406a74e256b04fab497bc4f76191ee1f92d49645ca1ac94cd3335cf620",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.9013835056132664
+      }
+    },
+    {
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+      "title": "openbmb/MiniCPM-V-4.7-1B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 284 likes · 263 downloads",
+      "engagement": 284,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+      "titleHash": "37649b441d9edb077c3e949d201323ab82a7b2971e654329254365f094dbd321",
+      "contentHash": "15c0e956a9c39a0e059788ff20993e1d4716632bc818c47d54d5283410239b35",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8182816200028368
+      }
+    },
+    {
+      "url": "https://huggingface.co/autotrust/JEV-35B-NVFP4",
+      "title": "autotrust/JEV-35B-NVFP4",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-classification · 300 likes · 20494 downloads",
+      "engagement": 300,
+      "tags": [
+        "model",
+        "text-classification"
+      ],
+      "normalizedUrl": "https://huggingface.co/autotrust/JEV-35B-NVFP4",
+      "titleHash": "dd53d72a43f6fbf771dcd31bf83584409019b80e120bf03f147addc49c7446f1",
+      "contentHash": "240fb420e2ceb56c2175ebed1238be1dc89ced7b0163fda1ee0d72e66848c592",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8261888318646143
+      }
+    }
+  ]
+}
