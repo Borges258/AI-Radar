@@ -1,0 +1,1583 @@
+{
+  "date": "2026-10-16",
+  "stats": {
+    "scraped": 170,
+    "deduped": 63,
+    "scored": 63
+  },
+  "summary": "今日资讯聚焦AI前沿：涵盖人形机器人权重理解、智能体市场博弈、合成数据强化学习、物理驱动3D生成及LLM社交智能。从底层算法到应用落地，全面展示机器人在灵巧控制、物理世界交互及社会属性方面的最新突破，适合关注具身智能与多模态AI的研究者。",
+  "recommendations": [
+    {
+      "url": "http://arxiv.org/abs/2610.20606v1",
+      "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid control networks are typically obtained through conventional training procedures, while comparatively little attention has been given to directly modeling the distribution of their learned weights and generating functional networks in weight space. In this work, we investigate whether high-performing humanoid control networks can be generatively modeled directly through their weights. We adopt a latent diffusion framework that couples a linear autoencoder with a Diffusion Transformer. The autoencoder compresses actor network parameters into a compact latent space, and the Diffusion Transformer models the distribution of these latents. Trained on networks collected from reinforcement learning for the Unitree G1 robot, our approach generates deployable networks that perform various motions in the real world, including walking, dancing, and spin kick. Beyond generation, we further study the learned weight space to better understand the structure captured by these humanoid control networks. We identify a structural principle in the first-layer weights that consistently reflects the robot's kinematic prior. Notably, this kinematic prior emerges under both Reinforcement Learning (RL) and Imitation Learning (IL) training, suggesting that it is not specific to a particular optimization process but may instead reflect common knowledge associated with humanoid embodiment. Together, these results demonstrate the feasibility of generative modeling in humanoid network weight space, while providing initial insights into the information encoded by their learned weights. Additional results are available on our project website: https://humanoid-weight-diffusion.github.io/",
+      "publishedAt": "2026-10-14T17:59:52Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20606v1",
+      "titleHash": "03ce4dd67d9c0b2a09217598a97fd6cc9dd2bb5940de438900a72feba58491c8",
+      "contentHash": "c0d4e9b5410f785bc5e7d0e5c16c3de2460158e51c5a3d3cd1da266a03b3613c",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7442781861001898,
+        "engagement": 0
+      },
+      "rank": 1,
+      "reasons": [
+        "解读机器人黑盒，优化灵巧控制"
+      ],
+      "overview": "该研究探索如何使用扩散模型去建模和解释人形机器人控制策略的神经权重，旨在解决网络不透明问题，从而帮助开发者更好地理解和优化现实世界中的灵巧机器人控制策略。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20587v1",
+      "title": "Price of Anarchy of First-Price Auctions in Agentic Markets",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "An agentic market is a decentralized serving-time market where AI agents bid to claim each user prompt. An agent's bid is based on its expected value for the prompt, which is the expectation of the reward for its response minus its inference costs. First-price auctions (FPAs), in which the highest bidder pays its bid and receives the prompt, are a natural way to allocate prompts in such a market, since they are simple and transparent to run, and do not require central knowledge of private capabilities and costs. However, FPAs are not truthful: participants may bid less than their true value in the hope of a larger profit, and the prompt may then be allocated to someone other than the bidder who values it the most. This welfare loss is quantified by the $\\textit{price-of-anarchy}$ (PoA). In this paper, we argue that agentic markets are likely to possess features that reduce the price-of-anarchy. The first is a $\\textit{competitive floor}$, which occurs when multiple bidders usually value the prompt above some baseline share of the optimal welfare (e.g., because the best models are often distilled into cheaper alternatives, which perform similarly). We show that competition among them then limits the welfare loss, which can be driven to zero as the floor rises. The second feature is $\\textit{near-independence}$ of values after conditioning on the prompt, which occurs when most of the predictable variation in the expected value is determined by the difficulty of the prompt. As the value distribution approaches conditional independence, we can derive an efficiency guarantee that approaches a factor of $1 - 1/e^2$ of the optimal welfare. Thus, both features give rise to welfare lower bounds that are significantly better than the well-known general case of $1 - 1/e$. We validate these results empirically using auctions with strategic bidders simulated on the EmbedLLM prompt routing dataset.",
+      "publishedAt": "2026-10-14T17:57:57Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20587v1",
+      "titleHash": "da2508e70d102f935b4647f21cf6495b27f80ede2177dbeb51e3cf321085f1eb",
+      "contentHash": "1ed32c349635109c18ba469240315c1c3d3e997c9320c4c7e0bc65f58e9badc8",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7440493329910465,
+        "engagement": 0
+      },
+      "rank": 2,
+      "reasons": [
+        "量化AI代理市场竞争效率"
+      ],
+      "overview": "文章分析了智能体市场中的第一价格拍卖机制，探讨AI代理如何为处理用户提示而竞标，研究旨在量化该去中心化服务时市场中代理人策略互动的无效率（无政府状态的价格）。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20584v1",
+      "title": "Player-1: Learning to Play from Synthetic Experience",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044 curated gameplay trajectories that pair recorded actions with task instructions and visual reasoning. We construct Player-1-Gym, sixteen synthetic 2D and 3D environments designed around control demands shared across games. Programmatically verifiable rewards and randomized observations and control dynamics support multi-environment reinforcement learning with PPO. The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline, with further gains over SFT on ViZDoom-10 and GameWorld. Further analyses show that broader synthetic environment coverage improves transfer, while the use of composite actions that combine multiple keyboard and mouse inputs increases during RL. We demonstrate that learning from synthetic experience substantially improves game control beyond supervised initialization, with gains that generalize beyond the RL training suite.",
+      "publishedAt": "2026-10-14T17:57:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20584v1",
+      "titleHash": "871a0eea420b8c242caa5834555aa024a8aefcf9bd8d0f5158c289338bec4cb3",
+      "contentHash": "11a327163e2424648be22a3c6d578b6106059d51b323b8337081f22b05b401b2",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7439597989412714,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "解决真实交互数据稀缺难题"
+      ],
+      "overview": "论文提出Player-1，通过生成合成体验来训练计算机使用智能体玩游戏，利用视觉丰富且交互多样的游戏世界数据提升智能体的界面理解与键鼠操作能力，突破了真实数据收集的局限。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20560v1",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality.",
+      "publishedAt": "2026-10-14T17:47:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20560v1",
+      "titleHash": "b66ec27a42646e11532c2cf267b7f7506197a3577b01354489af89cfbd517330",
+      "contentHash": "19a2b56960c08f3ade3b7244a080b3a322afbb78005560a5ba2ca70ddf542b1f",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7427909029829345,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "构建具身智能物理世界基准"
+      ],
+      "overview": "PhySGA提出一个基于物理空间接地智能体框架，通过物理模拟生成可交互和泛化性强的3D物体组合，为数字内容创作、机器人仿真及基础模型的物理智能评估提供新的测试基准。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20548v1",
+      "title": "PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Understanding the social intelligence of large language models (LLMs) is increasingly important for applications involving human-AI interaction and multi-agent environments. Social intelligence comprises two aspects: cognitive intelligence, the ability to infer others' mental states, and behavioral intelligence, the ability to select appropriate social actions based on these inferences to achieve social goals. Persuasion provides a natural testbed in which both aspects are simultaneously at play, yet prior benchmarks typically evaluate them in isolation using synthetic scenarios. We introduce PerSo, a benchmark that evaluates both aspects on real-world persuasion dialogues from Reddit's ChangeMyView community, using an LLM-in-the-loop pipeline to construct the evaluation tasks, validated through human annotation. Our evaluation of diverse LLMs shows that performance generally scales with model size but varies across dimensions. The strongest LLM slightly surpasses the best observed human performance on the behavioral task, while the best human participant remains ahead on the cognitive task.",
+      "publishedAt": "2026-10-14T17:39:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20548v1",
+      "titleHash": "faf8fc060c9aa8e4758a093d8fbc76930a4ff8b084e134015b7b8a8b0d509a5a",
+      "contentHash": "375db221977a341f4aafb1f6d96eec45f7e4b46807886583353f8d3320885863",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7418598860765966,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "探索LLM社会属性新边界"
+      ],
+      "overview": "研究PerSo深入剖析LLM在真实劝说场景下的社交智能，考察模型在人类AI互动及多代理环境中的社会认知与情感处理能力，为开发更具同理心和社交适应性的AI系统提供理论依据。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
+      "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "aaraujo002",
+      "publishedAt": "2026-10-15T14:58:48Z",
+      "engagement": 226,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era",
+      "titleHash": "870380a59ce079cef5d1df86ff318e2afac7e12c99d05cb19bf4a5a3150558ff",
+      "contentHash": "870380a59ce079cef5d1df86ff318e2afac7e12c99d05cb19bf4a5a3150558ff",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9108804451280561,
+        "engagement": 0.7853419523977075
+      }
+    },
+    {
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "title": "Why We're Banning AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vinyl7",
+      "publishedAt": "2026-10-15T18:32:29Z",
+      "engagement": 218,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "titleHash": "47d87cbe8e23e770dbebf8c9a27cd2b771ae9b7266740546a4ebd16cbdee773a",
+      "contentHash": "47d87cbe8e23e770dbebf8c9a27cd2b771ae9b7266740546a4ebd16cbdee773a",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.942652115483277,
+        "engagement": 0.7801480382800395
+      }
+    },
+    {
+      "url": "https://thetheorygirlie.substack.com/p/ai-was-great-until-it-was-not",
+      "title": "AI was great until it was not",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "JohnHammersley",
+      "publishedAt": "2026-10-15T08:18:38Z",
+      "engagement": 117,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thetheorygirlie.substack.com/p/ai-was-great-until-it-was-not",
+      "titleHash": "d8a8c4ae9fdcb1268ea6f8ccfad1b2a2e6b40c7a81143c29fdd66f2af6b1ec4d",
+      "contentHash": "d8a8c4ae9fdcb1268ea6f8ccfad1b2a2e6b40c7a81143c29fdd66f2af6b1ec4d",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8542335358573321,
+        "engagement": 0.6906273357687085
+      }
+    },
+    {
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "title": "Using AI to reverse engineer hardware",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ErenayDev",
+      "publishedAt": "2026-10-15T14:35:15Z",
+      "engagement": 97,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware",
+      "titleHash": "61f7d8e08514ea67ee051fc230134a1f06e770528ac33e57985975dff536b9ae",
+      "contentHash": "61f7d8e08514ea67ee051fc230134a1f06e770528ac33e57985975dff536b9ae",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.907445073322962,
+        "engagement": 0.6637420252308316
+      }
+    },
+    {
+      "url": "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
+      "title": "Market selloff, rising rates test AI data centre deal boom",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "tartoran",
+      "publishedAt": "2026-10-15T16:17:40Z",
+      "engagement": 68,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15",
+      "titleHash": "2c94d84da32ede973835d10a8e4bbe6f7bb93975fedffcfa650005191b36aa9f",
+      "contentHash": "2c94d84da32ede973835d10a8e4bbe6f7bb93975fedffcfa650005191b36aa9f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9224801597278423,
+        "engagement": 0.6129496969124184
+      }
+    },
+    {
+      "url": "https://boldagents.co/blog/call-center-jobs-declining-14000-calls-humans-outperform-ai",
+      "title": "Call Center Jobs Are Declining, but 14,000 Calls Show Humans Still Outperform AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thomas_unise",
+      "publishedAt": "2026-10-15T22:11:24Z",
+      "engagement": 35,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://boldagents.co/blog/call-center-jobs-declining-14000-calls-humans-outperform-ai",
+      "titleHash": "c847364c87c629426030e2d473757df72d97920b5732ed5577e625040c3bd369",
+      "contentHash": "c847364c87c629426030e2d473757df72d97920b5732ed5577e625040c3bd369",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.976351477895305,
+        "engagement": 0.5187675002557625
+      }
+    },
+    {
+      "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "title": "Frontier Pre-Training at Microsoft AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "psoulos",
+      "publishedAt": "2026-10-15T16:12:13Z",
+      "engagement": 32,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai",
+      "titleHash": "aef91fa10f28c038e7b42f56c8192d10923adb2d6bbb281c2ad0e9e6d5278381",
+      "contentHash": "aef91fa10f28c038e7b42f56c8192d10923adb2d6bbb281c2ad0e9e6d5278381",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9216738435401067,
+        "engagement": 0.5061713132926292
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/oct/13/ai-companies-rushed-workers-fallout",
+      "title": "Companies rushed in on AI. Now some are pulling back",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "agent_turtle",
+      "publishedAt": "2026-10-15T18:29:29Z",
+      "engagement": 23,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/technology/2026/oct/13/ai-companies-rushed-workers-fallout",
+      "titleHash": "85a0bda7c3bd5d11005b97a6f2f1840b3f5d55a5cfbc3198a3e6457efe28788a",
+      "contentHash": "85a0bda7c3bd5d11005b97a6f2f1840b3f5d55a5cfbc3198a3e6457efe28788a",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9421984769941358,
+        "engagement": 0.46007041390386866
+      }
+    },
+    {
+      "url": "https://github.com/awslabs/aidlc-workflows",
+      "title": "Aidlc: Adaptive workflow steering rules for AI coding agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pramodbiligiri",
+      "publishedAt": "2026-10-15T07:20:39Z",
+      "engagement": 20,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/awslabs/aidlc-workflows",
+      "titleHash": "b2ecd960a0e8258378a9032bbf2703b99a03b68630528987042cbaa542cf5d1a",
+      "contentHash": "b2ecd960a0e8258378a9032bbf2703b99a03b68630528987042cbaa542cf5d1a",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8463230555546608,
+        "engagement": 0.44073976491130645
+      }
+    },
+    {
+      "url": "https://torrentfreak.com/riaa-flags-annas-archive-and-ai-voice-cloner-to-u-s-government/",
+      "title": "RIAA Flags Anna's Archive and AI Voice Cloner to U.S. Government",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "iamnothere",
+      "publishedAt": "2026-10-15T12:26:59Z",
+      "engagement": 19,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://torrentfreak.com/riaa-flags-annas-archive-and-ai-voice-cloner-to-u-s-government",
+      "titleHash": "618fc078f24a60de70fd71cb4f52bb32de47f1dc24e54f0f30f86bc0c89c114a",
+      "contentHash": "618fc078f24a60de70fd71cb4f52bb32de47f1dc24e54f0f30f86bc0c89c114a",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8889602801481524,
+        "engagement": 0.4336766652213271
+      }
+    },
+    {
+      "url": "https://domstol.fe1.tangora.com/Domsoversigt-(H%C3%B8jesteret).31478.aspx?recordid31478=2930",
+      "title": "Danish Supreme Court Finds That AI CSAM Is CSAM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "delusional",
+      "publishedAt": "2026-10-15T16:39:58Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://domstol.fe1.tangora.com/Domsoversigt-(H%C3%B8jesteret).31478.aspx?recordid31478=2930",
+      "titleHash": "32710be86af906bf8f2782d2d3fbfe0fd1f63cfb546a5402e9f25e1df66440b2",
+      "contentHash": "32710be86af906bf8f2782d2d3fbfe0fd1f63cfb546a5402e9f25e1df66440b2",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9257867507489365,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://www.astralcodexten.com/p/ai-safety-is-not-a-corporate-plot",
+      "title": "AI Safety Is Not a Corporate Plot",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Analemma_",
+      "publishedAt": "2026-10-15T01:22:03Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.astralcodexten.com/p/ai-safety-is-not-a-corporate-plot",
+      "titleHash": "cc1cbaff2118b09e8e3299670e0ba865c4f5226af9efd0bd39ead1fe45cd5872",
+      "contentHash": "cc1cbaff2118b09e8e3299670e0ba865c4f5226af9efd0bd39ead1fe45cd5872",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7990020507293951,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://www1.folha.uol.com.br/internacional/en/brazil/2026/10/meta-ai-creates-campaign-material-for-flavio-bolsonaro-and-blocks-lula-content.shtml",
+      "title": "Meta AI creates campaign material for Flávio Bolsonaro and blocks Lula content",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "latinodev",
+      "publishedAt": "2026-10-15T03:54:09Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www1.folha.uol.com.br/internacional/en/brazil/2026/10/meta-ai-creates-campaign-material-for-flavio-bolsonaro-and-blocks-lula-content.shtml",
+      "titleHash": "47c58e94da2b93f1c0cd7a5060deb806f2996d8a6ebaba2e0dc7ccb9dcbcf876",
+      "contentHash": "47c58e94da2b93f1c0cd7a5060deb806f2996d8a6ebaba2e0dc7ccb9dcbcf876",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8187412250249211,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+      "title": "Asia chip stocks fall, AI funding worries",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kristianp",
+      "publishedAt": "2026-10-15T02:29:41Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+      "titleHash": "377e398caccaa524ccbb003abae254fd94ffde6c0116a23a47a25a82d90a546b",
+      "contentHash": "377e398caccaa524ccbb003abae254fd94ffde6c0116a23a47a25a82d90a546b",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8077198923310328,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://www.theregister.com/security/2026/10/15/us-air-force-pilots-used-malware-laden-usb-drives-to-plan-afghanistan-missions/5303156",
+      "title": "US Air Force pilots used malware-laden USB drives to plan Afghanistan missions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nephihaha",
+      "publishedAt": "2026-10-15T10:43:51Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theregister.com/security/2026/10/15/us-air-force-pilots-used-malware-laden-usb-drives-to-plan-afghanistan-missions/5303156",
+      "titleHash": "334c30777ac93204132c458dc76216f330997e9a0423d499d3144d7bda7b0174",
+      "contentHash": "334c30777ac93204132c458dc76216f330997e9a0423d499d3144d7bda7b0174",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8743709696505577,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://github.com/rlshaw-ml/BlastLoop",
+      "title": "Show HN: BlastLoop, a structure-first coding method for AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rossleeshaw",
+      "publishedAt": "2026-10-15T16:26:39Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/rlshaw-ml/BlastLoop",
+      "titleHash": "968e8b69b5d4b5ceb3706557647072b29ab535cf6c96b867c345752fe0805399",
+      "contentHash": "968e8b69b5d4b5ceb3706557647072b29ab535cf6c96b867c345752fe0805399",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.923810762692845,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://lkml.iu.edu/2610.1/13255.html",
+      "title": "Linus Torvalds on AI contribution rules",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Wingy",
+      "publishedAt": "2026-10-15T17:42:21Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://lkml.iu.edu/2610.1/13255.html",
+      "titleHash": "605704b2c23f083143e0d251d17ab3aaa9d70a46fa013038b2535bf267967bed",
+      "contentHash": "605704b2c23f083143e0d251d17ab3aaa9d70a46fa013038b2535bf267967bed",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9350999005786627,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://capsem.org/",
+      "title": "Capsem – a Rust hypervisor sandboxing AI agents in air-gapped Linux VMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "madars",
+      "publishedAt": "2026-10-15T00:58:26Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://capsem.org/",
+      "titleHash": "18ce46f05062642c5e77f0a8810276149646d32e54cf2762bd7c940182370135",
+      "contentHash": "18ce46f05062642c5e77f0a8810276149646d32e54cf2762bd7c940182370135",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.7959801121760309,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://github.com/canaanmckenzie/sidelong",
+      "title": "Show HN: How to Use LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I think one of the biggest issues with the current LLM format is the vertical scrolling, it makes it really difficult to track how your are working, and to cover multiple conversation topics. This I think is going to be an easier format to use.",
+      "author": "prince_nez",
+      "publishedAt": "2026-10-15T04:01:52Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/canaanmckenzie/sidelong",
+      "titleHash": "08ad63877b2ee774b3879434f90ed6ba75963d04f2d2f957d7797f1c56f50c80",
+      "contentHash": "ed3338932f9f0807fbf7120bfddb97b119aeede4660706487c2e282c74c0203a",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8197555730798495,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://vinithavn.substack.com/p/context-engineering-giving-llms-the",
+      "title": "Context Engineering: Giving LLMs the Right Context",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vinithavn_01",
+      "publishedAt": "2026-10-15T13:06:08Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://vinithavn.substack.com/p/context-engineering-giving-llms-the",
+      "titleHash": "e32c5ae8149a7e26702527c7e1af2bf5beb5d92ad123f3a54ead161ef2725550",
+      "contentHash": "e32c5ae8149a7e26702527c7e1af2bf5beb5d92ad123f3a54ead161ef2725550",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8945619897834929,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "title": "Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ingve",
+      "publishedAt": "2026-10-15T17:12:48Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "titleHash": "c5ea38051dfdadb3ee56c135342f09ce236fde6013d4cbe92c1b7ab33ff090f3",
+      "contentHash": "c5ea38051dfdadb3ee56c135342f09ce236fde6013d4cbe92c1b7ab33ff090f3",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9306767873957011,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://web-assets.dd-static.net/42588/1792071077-datadog-scout_technical_report.pdf",
+      "title": "Datadog trained their own cheap SOTA SRE LLM [pdf]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ersiees",
+      "publishedAt": "2026-10-15T15:05:02Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://web-assets.dd-static.net/42588/1792071077-datadog-scout_technical_report.pdf",
+      "titleHash": "38bdce82c2ed9af68f300cce99b31eb7613aa8d20b213a80272020a3797ac09f",
+      "contentHash": "38bdce82c2ed9af68f300cce99b31eb7613aa8d20b213a80272020a3797ac09f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9117919090425948,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://anvaka.github.io/imaginary-faces/#",
+      "title": "Show HN: Asked LLM to show the most stereotypical man/woman for each country",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "anvaka",
+      "publishedAt": "2026-10-15T21:42:12Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://anvaka.github.io/imaginary-faces",
+      "titleHash": "81179b8fd5a5ebbf1b31b9c3c7d61184f3faccb15488494660abf1e7774b7fd1",
+      "contentHash": "81179b8fd5a5ebbf1b31b9c3c7d61184f3faccb15488494660abf1e7774b7fd1",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9717878100459397,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://renkuos.org/",
+      "title": "RenkuOS: Haiku OS forked with AI-assisted coding and LLM integrations",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rguiscard",
+      "publishedAt": "2026-10-15T05:36:27Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://renkuos.org/",
+      "titleHash": "416559390bec8141c04f9bb3b30fc8c48af7277de4d34dfd40b174d6da42988c",
+      "contentHash": "416559390bec8141c04f9bb3b30fc8c48af7277de4d34dfd40b174d6da42988c",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8322910336226292,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://guessthellm.com/",
+      "title": "Show HN: Guess the LLM – read an answer and guess which model wrote it",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, I made a game to test if people can really tell AI models apart.<p>Models from all the frontier labs answer the same question. You read one answer and guess who wrote it. You can also pick just the models you want to compare.<p>I made it and still only get 5&#x2F;10 lol. Curious how you all do.",
+      "author": "aravindnatch",
+      "publishedAt": "2026-10-15T21:53:54Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://guessthellm.com/",
+      "titleHash": "e8e342865792a003ac05c8ad21a3e12d481ee3c5d52339b6e2f706756b54bb68",
+      "contentHash": "5baa4eae6e44226b64d79ff9600637a174cb39ce49ecd98de86f5b3cbe65cb4a",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.97361383509822,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://cacm.acm.org/research/cash-or-comfort-how-llms-value-your-inconvenience/",
+      "title": "Cash or Comfort? How LLMs Value Your Inconvenience",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "njrc",
+      "publishedAt": "2026-10-15T19:31:04Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://cacm.acm.org/research/cash-or-comfort-how-llms-value-your-inconvenience",
+      "titleHash": "194a6c0b599f4bbea4d7aad3415d677f8f064c3ee382d9fb8cb98813aa1f35f8",
+      "contentHash": "194a6c0b599f4bbea4d7aad3415d677f8f064c3ee382d9fb8cb98813aa1f35f8",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9515545716045487,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/IshekKhal/bitrun",
+      "title": "Show HN: BitRun v0.2 – Run 8B ternary LLMs on CPU with live wattage telemetry",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ishekofficial",
+      "publishedAt": "2026-10-15T17:15:08Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/IshekKhal/bitrun",
+      "titleHash": "97e14f04323379a835b5ed1be253cd55525c43e6cb45af07475758f35d4bf435",
+      "contentHash": "97e14f04323379a835b5ed1be253cd55525c43e6cb45af07475758f35d4bf435",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9310252841043358,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://machinelearningmastery.com/choosing-a-chunking-strategy-for-your-llm-apps-a-decision-tree-approach/",
+      "title": "Choosing a Chunking Strategy for Your LLM Apps: A Decision-Tree Approach",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "eigenBasis",
+      "publishedAt": "2026-10-15T13:19:11Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://machinelearningmastery.com/choosing-a-chunking-strategy-for-your-llm-apps-a-decision-tree-approach",
+      "titleHash": "3a51bb5cf28c06a1f9751a1ef7a2199e3a03dc1ee045295749d2ec1c3617c007",
+      "contentHash": "3a51bb5cf28c06a1f9751a1ef7a2199e3a03dc1ee045295749d2ec1c3617c007",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8964370595307636,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20606v1",
+      "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid control networks are typically obtained through conventional training procedures, while comparatively little attention has been given to directly modeling the distribution of their learned weights and generating functional networks in weight space. In this work, we investigate whether high-performing humanoid control networks can be generatively modeled directly through their weights. We adopt a latent diffusion framework that couples a linear autoencoder with a Diffusion Transformer. The autoencoder compresses actor network parameters into a compact latent space, and the Diffusion Transformer models the distribution of these latents. Trained on networks collected from reinforcement learning for the Unitree G1 robot, our approach generates deployable networks that perform various motions in the real world, including walking, dancing, and spin kick. Beyond generation, we further study the learned weight space to better understand the structure captured by these humanoid control networks. We identify a structural principle in the first-layer weights that consistently reflects the robot's kinematic prior. Notably, this kinematic prior emerges under both Reinforcement Learning (RL) and Imitation Learning (IL) training, suggesting that it is not specific to a particular optimization process but may instead reflect common knowledge associated with humanoid embodiment. Together, these results demonstrate the feasibility of generative modeling in humanoid network weight space, while providing initial insights into the information encoded by their learned weights. Additional results are available on our project website: https://humanoid-weight-diffusion.github.io/",
+      "publishedAt": "2026-10-14T17:59:52Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20606v1",
+      "titleHash": "03ce4dd67d9c0b2a09217598a97fd6cc9dd2bb5940de438900a72feba58491c8",
+      "contentHash": "c0d4e9b5410f785bc5e7d0e5c16c3de2460158e51c5a3d3cd1da266a03b3613c",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7442781861001898,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20607v1",
+      "title": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Mobile Manipulation (MoMa) is a cornerstone of autonomous robotic systems, yet real-world fine-tuning remains a formidable challenge because of high-dimensional action spaces and intricate coupling between heterogeneous modules. In this paper, we propose HiRe-MoMa (Hierarchical Residual Mobile Manipulation), a systematic framework for stable and sample-efficient real-world fine-tuning of complex MoMa systems. At its core, HiRe-MoMa adopts a Hierarchical Residual Architecture that fine-tunes a frozen base policy. A Policy-Agnostic Residual learns additive corrections atop the base policy, while Hierarchical Decoupling splits the residual into mobile-base and manipulator-arm heads with unidirectional conditioning, mitigating gradient interference and aligning corrections with the platform's physical hierarchy. To improve sample efficiency in data-expensive real-world settings, we propose Expert-Guided Value Alignment, which leverages sparse human interventions with under 20% training coverage to reshape the critic's value landscape, effectively guiding autonomous exploration through expert priors. Extensive real-world experiments on the TIAGo++ platform demonstrate that HiRe-MoMa consistently enhances task performance with only around 30 minutes of online interaction, regardless of the base policy architecture. To our knowledge, this is among the first frameworks to enable efficient on-robot fine-tuning for mobile manipulation in the real world, providing a practical paradigm for deploying complex robotic systems in dynamic, human-centric environments. Further details can be found on our project website: https://hire-moma.github.io/",
+      "publishedAt": "2026-10-14T17:59:52Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20607v1",
+      "titleHash": "82094688f996d22041f061606b5e1f9f22a8fef3602f5c2a67a6a1eb44b32b16",
+      "contentHash": "22d88ab3806f755e0a1af7fdac730ac611a6b1383af7a68bc408fb6b37721fe6",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7442781861001898,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20597v1",
+      "title": "Co-Evolving Acting and Forecasting for Language Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Training language agents is bottlenecked by the high cost of long-horizon rollouts, yet standard agentic reinforcement learning (RL) learns only from a terminal scalar reward, leaving the supervision in intermediate steps largely unused. Prior work exploits this supervision through value targets that estimate per-step success probabilities or observation targets that fit environment response. Both are hard to construct well: (1) value targets come from the same single scalar signal for each step in the trajectory, and (2) observation targets, such as web pages and terminal logs, are long and noisy and reach only one step ahead. We propose \\name, which adds a third kind of multi-step action targets. On successful on-policy trajectories, \\name trains the policy backbone to generate the action sequences that follows each history. Each action is also supervised when forecast from the preceding histories, forming a temporal ensemble that the shared backbone absorbs during training, and this enables acting and forecasting to co-evolve. The policy still acts one step at a time at inference, with no overhead. Across five benchmarks (ALFWorld, ScienceWorld, WebShop, $τ^2$-bench, and AppWorld), \\name (1) achieves stronger aggregate performance than GRPO and RL baselines with predictive auxiliary targets across simulated environments, while improving overall performance on both realistic applications; (2) delivers up to $1.9\\times$ and $2.0\\times$ higher sample efficiency than ECHO and GRPO, respectively, on ScienceWorld; and (3) achieves these gains with a single policy backbone, without additional models, separate pretraining, or inference overhead. The codebase is available at https://github.com/ulab-uiuc/CoPE.",
+      "publishedAt": "2026-10-14T17:59:28Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20597v1",
+      "titleHash": "5e24a50de399fad4eed2a25dd5e425d889f93ce4f91b75edbe9f676836a54036",
+      "contentHash": "837cf38a7bd84f037d6fef573334ca1246eae3995124bf37cc9cefa696657b37",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7442304196398679,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20588v1",
+      "title": "Your Transformer Is Secretly Elastic",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Scaling up transformers has produced models with broad capabilities, deployed across heterogeneous hardware and fluctuating workloads. Yet, model families offer only a few fixed sizes (e.g., S, B, L), forcing users to commit to a model based on hardware and latency constraints. This rigidity is often suboptimal under varying query loads. We introduce a retraining-free method that elastifies pre-trained transformers into a single model that adapts on-the-fly across a continuum of computational budgets. Our key contribution is a differentiable relaxation of the functional unit-ranking problem: unlike prior work, which optimizes a single importance weight per MLP block or attention head, we rank every individual MLP neuron and attention head jointly, on a common scale, by minimizing the model's loss under soft pruning across many sparsity targets, all at once. Across 27 vision and text transformer encoders ranging from 22M to 8B parameters, our method yields smooth degradation up to 60% sparsity and outperforms one-shot baselines under deep pruning. For example, pruning DINOv3 ViT-H+/16 to 50% sparsity removes 427M parameters while reducing ImageNet-1k linear-probing accuracy by only 0.8%, without the need for weight correction or retraining. At 60% sparsity, a pruned AugReg ViT-B/16 model achieves up to $1.80\\times$ higher throughput and $1.26\\times$ lower single-query latency on an A100 GPU. Elastic models are produced in minutes, with construction time scaling sub-linearly with parameter count.",
+      "publishedAt": "2026-10-14T17:58:08Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20588v1",
+      "titleHash": "4922f0fcdd8f0f9958ce677c6351fad4a0ac8bca43e01af1369c39346bcd8f86",
+      "contentHash": "4208d417fc994daa85341ad95ec1b01ebaa8b1ef521657de9e41fd77deb0cd5c",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7440712202445632,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20587v1",
+      "title": "Price of Anarchy of First-Price Auctions in Agentic Markets",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "An agentic market is a decentralized serving-time market where AI agents bid to claim each user prompt. An agent's bid is based on its expected value for the prompt, which is the expectation of the reward for its response minus its inference costs. First-price auctions (FPAs), in which the highest bidder pays its bid and receives the prompt, are a natural way to allocate prompts in such a market, since they are simple and transparent to run, and do not require central knowledge of private capabilities and costs. However, FPAs are not truthful: participants may bid less than their true value in the hope of a larger profit, and the prompt may then be allocated to someone other than the bidder who values it the most. This welfare loss is quantified by the $\\textit{price-of-anarchy}$ (PoA). In this paper, we argue that agentic markets are likely to possess features that reduce the price-of-anarchy. The first is a $\\textit{competitive floor}$, which occurs when multiple bidders usually value the prompt above some baseline share of the optimal welfare (e.g., because the best models are often distilled into cheaper alternatives, which perform similarly). We show that competition among them then limits the welfare loss, which can be driven to zero as the floor rises. The second feature is $\\textit{near-independence}$ of values after conditioning on the prompt, which occurs when most of the predictable variation in the expected value is determined by the difficulty of the prompt. As the value distribution approaches conditional independence, we can derive an efficiency guarantee that approaches a factor of $1 - 1/e^2$ of the optimal welfare. Thus, both features give rise to welfare lower bounds that are significantly better than the well-known general case of $1 - 1/e$. We validate these results empirically using auctions with strategic bidders simulated on the EmbedLLM prompt routing dataset.",
+      "publishedAt": "2026-10-14T17:57:57Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20587v1",
+      "titleHash": "da2508e70d102f935b4647f21cf6495b27f80ede2177dbeb51e3cf321085f1eb",
+      "contentHash": "1ed32c349635109c18ba469240315c1c3d3e997c9320c4c7e0bc65f58e9badc8",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7440493329910465,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20586v1",
+      "title": "Continuum Attention",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We introduce Continuum Attention (CA), a causal Transformer attention operator that replaces discrete key and value lookup with integration over a continuous, piecewise linear memory curve. Each query induces an exponential relevance density along the curve. Integrating the density and interpolated values yields exact normalized attention from closed form exponential moments, including half token boundary contributions. The gradients follow analytically from moments of order at most two, enabling parallel GPU implementations while retaining quadratic sequence complexity and the standard Transformer decoder. Compared with ordinary softmax and focal attention, CA reduces mean validation negative log likelihood by 0.0200 and 0.0480 nats per byte, respectively, winning all paired comparisons. An additional disjoint validation slice yields a 0.0457 nats per byte advantage over the strongest selected softmax baseline, with a paired 95% confidence interval. These findings motivate continuous integration as a promising attention alternative while leaving larger scale generalization open.",
+      "publishedAt": "2026-10-14T17:57:40Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20586v1",
+      "titleHash": "079d7bcf936eb32fbb9c036c904d9e4f3760ef0708e2caabc5c365e75bde3ced",
+      "contentHash": "e7b412d11d5ce02930769593a045e7cf3fb438dcccd0281e4a59b42d32eb59a5",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7440155085019718,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20584v1",
+      "title": "Player-1: Learning to Play from Synthetic Experience",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044 curated gameplay trajectories that pair recorded actions with task instructions and visual reasoning. We construct Player-1-Gym, sixteen synthetic 2D and 3D environments designed around control demands shared across games. Programmatically verifiable rewards and randomized observations and control dynamics support multi-environment reinforcement learning with PPO. The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline, with further gains over SFT on ViZDoom-10 and GameWorld. Further analyses show that broader synthetic environment coverage improves transfer, while the use of composite actions that combine multiple keyboard and mouse inputs increases during RL. We demonstrate that learning from synthetic experience substantially improves game control beyond supervised initialization, with gains that generalize beyond the RL training suite.",
+      "publishedAt": "2026-10-14T17:57:12Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20584v1",
+      "titleHash": "871a0eea420b8c242caa5834555aa024a8aefcf9bd8d0f5158c289338bec4cb3",
+      "contentHash": "11a327163e2424648be22a3c6d578b6106059d51b323b8337081f22b05b401b2",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7439597989412714,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20576v1",
+      "title": "One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Post-training binds the competence of an LLM agent to the interface it was trained on. Semantics-preserving perturbations of that interface, such as renaming an action or changing the notation, leave the underlying task unchanged yet make the agent worse at it. Scoring each sample independently means interface randomization only broadens this dependence from a single interface to the training interface distribution, so out-of-distribution perturbations still degrade the agent. We propose Cross-Interface Policy Regularization (CIPR), a self-supervised objective that replaces action names with uninformative identifiers and presents each training sample under two interfaces in which equivalent actions are identified by construction. CIPR penalizes the KL divergence between the action distributions induced under the two interfaces, so the policy behaves consistently across them. We evaluate CIPR in both supervised and reinforcement-learning post-training, where it improves robustness. On agentic function calling, held-out interface perturbations reduce the accuracy of a post-trained agent by nearly 25%, and CIPR recovers 10.5% while leaving accuracy on the unchanged interface intact.",
+      "publishedAt": "2026-10-14T17:56:06Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20576v1",
+      "titleHash": "89573bc6c381e1872858ee864c1c6805b6a3f49f2a6fcda18625bf545c16d467",
+      "contentHash": "38a3989e4de1abf6b76603331fc360e88a5b90a398fd6734f9837b5d9849efcf",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7438285047408293,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20573v1",
+      "title": "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We introduce a novel method for verifying Lean formalizations that goes beyond LLM-judged faithfulness. Unlike most verification methods, which rely on LLMs or trained models, our method combines LLM-based semantic review with mechanical numerical and vacuity checks, providing checkable feedback and detecting errors missed by LLM judges. We apply this method, along with our Extract-Verify-Proof autoformalization pipeline, to construct the Formalized Library of Mathematical Functions (FLMF), a partial formalization of the NIST Digital Library of Mathematical Functions (DLMF). On three labeled datasets, our method achieves the lowest accepted-error rate among the evaluated methods, measured as the fraction of incorrect statements accepted by the verification method. Expert review of the results also identifies translation and source defects in existing datasets. Code available at https://github.com/annamei1/FLMF-Ch7ErrFunc-Release.git.",
+      "publishedAt": "2026-10-14T17:54:48Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20573v1",
+      "titleHash": "184556330eca652c9bb058f7f3f94754a33613d2427fddf7db71592e669d95f4",
+      "contentHash": "f7c3451d1c75b9280de1b73b8e6c46f2d2f6bb0b750d1fa1ad361f5532d0d0a4",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7436733687403981,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20572v1",
+      "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "On-policy distillation (OPD) trains a student model on its own rollouts with token-level supervision from a teacher, assuming that the teacher can reach a correct answer from any prefix the student writes. We call this property the recoverability of the teacher and show it fails on incorrect rollouts: the teacher follows student errors, although it recognizes them. We propose CriticOPD, using error recognition to restore recoverability. The teacher critiques an incorrect rollout, allowing the student to rewrite its solution following the error. The resulting output, including the critique as privileged information, is scored by the teacher while the student uses the revision without the critique for training. On two Qwen3 students and six mathematical reasoning benchmarks, CriticOPD improves OPD, with the largest gains on competition problems.",
+      "publishedAt": "2026-10-14T17:54:34Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20572v1",
+      "titleHash": "c6ee1bb4f358e637af25043eb0a33df938e6043e4f9ca9182233516a8c076e35",
+      "contentHash": "2d05d5e26e20121b45155cdf8afddc855454e8f2c3264bab75fdc4c64fb78c31",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7436455272423481,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20563v1",
+      "title": "Scaling Discovery Requires Forgetting",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Automated research with LLM agents has shown promising results in various domains. Through iterative refinement and scored verifiers, LLM agents are capable of discovering new ideas. There are different ways to scale automated research: let one agent iterate for longer, run several agents in parallel, or further let the parallel agents communicate and build on one another's candidates. However, we find that all three strategies eventually plateau as the agents accumulate history. Each agent becomes anchored to its own past attempts, making fewer and smaller edits. Beyond this point, additional budget brings little further improvement. In this paper, we show that the key to scaling discovery further is to forget. Periodically discarding the search state, including every agent's session and the candidate history, and restarting from the best candidate found so far, unblocks the search and pushes the same budget further. We implement forgetting in a team of agents with communication and evaluate it on four tasks spanning heuristic programming, kernel optimization and model training. The results show up to 15% improvement compared to parallel agents, and up to 39% compared to a single agent. Our results suggest that, for open-ended discovery, what an agent is allowed to remember matters as much as how much compute it is given.",
+      "publishedAt": "2026-10-14T17:49:37Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20563v1",
+      "titleHash": "e68c91e8e011a2e0cbb0217d93127342852a83314bc3ea0f74c9e363bc20e55b",
+      "contentHash": "47a68ce16cc86934cf83ad95f9a8c7567231aaaecfb9a906f5b872368ea86ad0",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7430551352890982,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20560v1",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality.",
+      "publishedAt": "2026-10-14T17:47:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20560v1",
+      "titleHash": "b66ec27a42646e11532c2cf267b7f7506197a3577b01354489af89cfbd517330",
+      "contentHash": "19a2b56960c08f3ade3b7244a080b3a322afbb78005560a5ba2ca70ddf542b1f",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7427909029829345,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20548v1",
+      "title": "PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Understanding the social intelligence of large language models (LLMs) is increasingly important for applications involving human-AI interaction and multi-agent environments. Social intelligence comprises two aspects: cognitive intelligence, the ability to infer others' mental states, and behavioral intelligence, the ability to select appropriate social actions based on these inferences to achieve social goals. Persuasion provides a natural testbed in which both aspects are simultaneously at play, yet prior benchmarks typically evaluate them in isolation using synthetic scenarios. We introduce PerSo, a benchmark that evaluates both aspects on real-world persuasion dialogues from Reddit's ChangeMyView community, using an LLM-in-the-loop pipeline to construct the evaluation tasks, validated through human annotation. Our evaluation of diverse LLMs shows that performance generally scales with model size but varies across dimensions. The strongest LLM slightly surpasses the best observed human performance on the behavioral task, while the best human participant remains ahead on the cognitive task.",
+      "publishedAt": "2026-10-14T17:39:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20548v1",
+      "titleHash": "faf8fc060c9aa8e4758a093d8fbc76930a4ff8b084e134015b7b8a8b0d509a5a",
+      "contentHash": "375db221977a341f4aafb1f6d96eec45f7e4b46807886583353f8d3320885863",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7418598860765966,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20544v1",
+      "title": "Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Potato is an important food-security crop in Ethiopia, but its production is affected by foliar diseases, particularly early blight and late blight. This study develops a lightweight convolutional neural network (CNN) to classify potato leaves into three categories: healthy, early blight, and late blight. The proposed model was trained using 2,215 images from the PlantVillage dataset and evaluated on an independent field dataset containing 247 images collected from potato farms in Banja, Awi Zone, Ethiopia. On PlantVillage, the model achieved 99.04% training accuracy, 98.21% validation accuracy, and 98.66% test accuracy. On the field dataset, it achieved 90.28% accuracy. The study also compares the proposed CNN with VGG16 and MobileNetV2 in terms of classification performance and computational efficiency. The proposed model contains 446,787 trainable parameters, occupies approximately 1.70 MB, and requires an average of 5.58 seconds per training epoch in the reported experimental setup, compared with 9.96 seconds for VGG16 and 7.68 seconds for MobileNetV2. The results demonstrate the potential of a compact CNN for potato leaf disease classification and highlight the importance of independent field evaluation, where image conditions are more variable than in controlled benchmark datasets. The proposed approach may support preliminary disease identification for smallholder farmers in Ethiopia and similar agricultural settings.",
+      "publishedAt": "2026-10-14T17:36:33Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20544v1",
+      "titleHash": "52d0a8708ed112fd9113b87e22880dbe69ec67c67a85aa7c2a56565d683e68d8",
+      "contentHash": "f9c1b51c1a95ecdd8af4d8f708f7de5e06f85a89077fa6114c411b6b0b8354e5",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7414989103003906,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20538v1",
+      "title": "PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal code intelligence connects the symbolic world of programs with the visual world their execution creates. Interest in this capability is burgeoning, as models are increasingly asked to produce charts, webpages, animations, and semi-structured documents. Recently, proprietary models have pushed far ahead, producing interactive artifacts even from a text description or a screenshot alone. Yet their data and training remain closed, and open progress is held back by the quantity and quality of available data and by the pipelines and methods for producing it. Quality is the harder of the two, since a sample must be correct as a program, well built, and above all visually right once rendered. No existing signal covers all three. Execution often returns just a pass or fail, code similarity does not map to the visual output, and task-specific verifiers do not generalize. To push open progress further, we start from the data side with PrismaForge, a hierarchical data pipeline centered on a synthesized rubric that decomposes these factors into checkable criteria. The same rubric serves as both filter and reward: it curates the supervised corpus, then drives reinforcement learning on visual-coding tasks. Leveraging PrismaForge for data synthesis and filtering, we build PrismaCoder-2M, the most diverse open dataset for multimodal code intelligence and the largest to date. On the model side, we train PrismaCoder-9B and PrismaCoder-35B on this data and release both. They lead the open state of the art by a wide margin and rival leading proprietary systems. Our analyses further show that the proposed rubric-based pipeline improves multimodal coding performance across model backbones. We release our code and data at https://qiushisun.github.io/PrismaCoder-Home/.",
+      "publishedAt": "2026-10-14T17:32:54Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20538v1",
+      "titleHash": "e7b96fa221deaae202d87810739ebd4ae7b8536b590e4f4f8c62248bef5dd6d4",
+      "contentHash": "d01f989661c3c69d52b897a3f3784dc1b088a65501e28bb5413479dabcf9cd6f",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7410647821671349,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20582v1",
+      "title": "Latent Compaction with Test-Time Training",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Long contexts enlarge key--value (KV) caches, increasing memory use and attention costs during generation. Compressing these caches must preserve information for unseen questions. We introduce **Latent Compaction**, which learns a compact document-specific cache through test-time training. We initialize cache entries using reconstruction importance, teacher attention, and key-space diversity. Training first fits attention outputs and log-normalizers to those of the full cache, with reconstruction-selected entries held fixed. It then jointly optimizes the entire cache through end-to-end distillation from the full-cache model. Model weights remain frozen throughout, and training uses only generic prompts about the document, without access to downstream questions or answers. Experiments on RULER, LongBench, and Phonebook Lookup demonstrate substantial gains over budget-matched compression baselines. On a RULER, for example, our method achieves 96.7% accuracy at 32$\\times$ compression, compared with 40.0% for KVZip+. The method also transfers across model scales and families, with retrieval gains on both Qwen3 and MiniCPM5. These results show that treating the KV cache as a neural network and optimizing it with test-time training can preserve retrieval accuracy under aggressive compression. The code is released at https://www.github.com/THUNLP/latent-compaction",
+      "publishedAt": "2026-10-14T17:57:01Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20582v1",
+      "titleHash": "435948999879c35c6d7dc85ec0c030eb48e610c276c825a8be2d99824e2c136a",
+      "contentHash": "33de414d088a950c3cd37252d0e5a668831593df6ed21d46582e85753fc523e8",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7439379129758489,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20570v1",
+      "title": "Manacá-1B-Instruct-2: Reproducible Safety Alignment for a Native Brazilian-Portuguese LLM. Negative DPO Results, a Controlled Composition Scan, and a Silent Failure Mode of the LLM Judge",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Brazilian Portuguese remains underserved by open-source language models, and the few that are safety-aligned rarely document what did not work or validate comparisons with statistical significance. We present Manacá-1B-Instruct-2, the second-generation post-training alignment of Manacá-1B (1.72B parameters, trained from scratch for PT-BR), with an SFT corpus of 291,223 examples. We document three DPO attempts, all negative, including a case where the training reward margin reaches 1.0 while free generation does not change at all, and show that safety came from a dedicated safety-SFT (LLM-jp AnswerCarefully style), refined over three iterations until closing the safety-helpfulness frontier. A controlled scan of the fraction of general data in the safety-SFT mix (10% to 60%) reveals a non-monotonic over-refusal curve with a knee point at 40-50%. The final model is compared against four external PT-BR models on the same items, with Wilson confidence intervals and paired McNemar tests with Holm-Bonferroni correction: the lower bound of its safety interval (94.1%) lies above the upper bound of all four baselines. We also report a methodological finding for LLM-judge evaluation: on two of six safety items in MT-Bench-PT, the judge categorically refuses to assign a score regardless of the evaluated response, silently reducing the effective N of that category in every prior report of the project. We complement this with an n-gram decontamination check and a Chinchilla-anchored compute-budget table that attributes the gap in general capability to pre-training scale rather than alignment methodology. All code, raw data, logs, and scripts that produce every reported number are publicly released.",
+      "publishedAt": "2026-10-14T17:53:46Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20570v1",
+      "titleHash": "60b25b3a7ce6e21a8939f3dadf1786f04f4528a9e75ca3ed40432a43fec542a2",
+      "contentHash": "29aaa89e3d424aabcb87b655394e18d5d97ba4887dd630afc27101843ad958d4",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7435500766021372,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20516v1",
+      "title": "VASPO: Self-Distillation with Privileged Value Estimation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "On-policy self-distillation provides dense supervision for reasoning models via a privileged self-teacher. However, this supervision reflects local token preferences rather than the expected return of an unguided student continuation. Recent methods combine this signal with GRPO. They use GRPO for update directions and the teacher for signal scaling. However, we demonstrate a more effective integration within PPO. Specifically, we identify complementary positional dynamics: privileged information enhances a critic's value-prediction accuracy toward the response's end, whereas self-teacher guidance is strong initially, drops mid-generation, and rebounds finally. These insights motivate Value-Augmented Self-Distillation Policy Optimization (VASPO), wherein a self-teacher and critic evaluate identical privileged information at student-generated prefixes. The critic computes token-level PPO advantages from predicted continuation returns, while the self-teacher modulates selected positive advantages via bounded probability ratios. Across six mathematical reasoning benchmarks, VASPO improves mean accuracy over PPO by 2.59 and 1.81 percentage points on Qwen3-4B and OLMo3-7B variants, respectively, and achieves the highest mean accuracy among evaluated methods on Knights and Knaves. Our code is available at https://github.com/cii030/VASPO.",
+      "publishedAt": "2026-10-14T17:17:18Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20516v1",
+      "titleHash": "f62d431192dfb0dd050b408ed5b1c4d23948b0ceec42a0ad8c799b8f466f64b6",
+      "contentHash": "1041288820dc35f2f389996e4c7c634c114717240a3ccee738513100316c6b41",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7392121912193902,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20503v1",
+      "title": "ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Speculative decoding accelerates autoregressive generation by drafting multiple tokens per step, yet feature-based drafters rely on target hidden features whose contextual emphasis may not align with the needs of subsequent draft positions. Hybrid linear attention (HLA) models maintain compact recurrent states that accumulate historical associations, offering an efficient source of complementary context for speculative drafting. We introduce ReaDy, the first speculative decoding method, to the best of our knowledge, to leverage HLA recurrent states for position-specific context retrieval during drafting. ReaDy equips each draft position with a learned query to retrieve supplementary context directly from the target's committed recurrent states. A lightweight state reader integrates this context into draft representations through residual updates, while low-rank state reads and fused operators keep additional computation and I/O overhead low. Building on DSpark's parallel backbone and sequential prediction head, ReaDy employs a lightweight two-stage adaptation strategy, with reader capacity, state sources, and residual placement examined through ablation studies. Across seven benchmarks spanning mathematics, code generation, and dialogue, ReaDy achieves an average $3.16\\times$ decoding speedup over autoregressive decoding with Qwen3.8-27B on a single NVIDIA B200 GPU. It outperforms DSpark on every benchmark, improving throughput by 7.97% and acceptance length by 8.50% on average. Our code is available at https://github.com/StartLuxLabs/ReaDy.",
+      "publishedAt": "2026-10-14T17:08:52Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20503v1",
+      "titleHash": "7e3426ad2dd3861f1a05685c6461caf4450fd87b3cfb97da8d69f75363dbebff",
+      "contentHash": "2752b27dbde8a6ba10c57e5c88585fc109eb650b24fb86895af7689247e6684e",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7382126141030427,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20479v1",
+      "title": "Lost in Translation: Why Lower Bias Scores Don't Mean Fairer Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Bias audits of multilingual language models usually compare a model's average stereotype score in English with its average in another language and read the difference as a difference in fairness. We ask how much of that difference is noise. Auditing ten open models in eight languages, we measure how far scores move when English test items are merely reworded, test every language shift item by item, and check that the test catches shifts we inject on purpose. In all 70 model-language pairs the stereotype score falls below its English level, and for Hindi, Korean and Swahili the drop clearly exceeds what rewording English produces; most of it comes from StereoSet items. Judging every translation, we find that imperfect ones drop more, but faithful translations alone drop nearly as much. Still, a lower average does not show that a model is fairer. An item's English score predicts its translated score far less well than its reworded score (correlation 0.23, 0.27 on faithful translations, vs. 0.48), while scores stay as far from neutral, models agree on translated items, and within Hindi or Spanish a translated item's score correlates with its own rewording at 0.84 and 0.82. The average cannot distinguish lower bias from a different pattern of item-level scores. We also document three common pipeline errors that silently erase bias signal, and release our code.",
+      "publishedAt": "2026-10-14T16:52:00Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20479v1",
+      "titleHash": "f7b9520a9ddb7ff24ea14ac164b2532cc608b7c5301f0e909588074d09565169",
+      "contentHash": "db5c97d41fbc75eb73a8009d2bf9fbbe397d37f8e802020f9214ea46bdc859a2",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7362175129855348,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20474v1",
+      "title": "AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Pretrained vision-language-action models (VLAs) often fail midway through unseen long-horizon tasks. Recursive self-improvement (RSI) offers a remedy, but embodied RSI methods either refine the harness around a frozen executor and so cannot add a missing motion, or train the executor on persistent failures without asking whether a failure lies in how the executor is called or in what it can do. We ask when a self-improving embodied system should change the weights of its executor, and propose AdaRSI, an on-demand RSI framework for embodied agents. A coding agent first improves its skills and harness, then attributes persistent failures by retrying failing sub-steps from saved states, and fine-tunes only the sub-steps that remain unreliable, with demonstrations it collects itself and experience carried over from earlier tasks. On all 50 target tasks of RoboCasa365, with GR00T N1.5 as the executor and no human demonstrations, AdaRSI improves the VLA on all three suites and raises its success on unseen composite tasks from 4.6% to 13.8%. Compared with fine-tuning every sub-step, it reaches slightly higher success while using only 28% of the GPU time and 22% of the self-collected demonstrations, and fine-tuning without a harness trains more yet gains far less.",
+      "publishedAt": "2026-10-14T16:51:09Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20474v1",
+      "titleHash": "4c6ab3114e78f5e58774a40d8f64de57dc79f3ee422e013344ce1381fef38933",
+      "contentHash": "a51b27a0ee97052a71cd0e64aa6a5455be3b6885338c71751f263d5f507e1699",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7361171121864847,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20472v1",
+      "title": "ChronoCulture: Evaluating Cultural Awareness Across Time in Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Cultural attitudes and social norms evolve over time, yet most cultural benchmarks for large language models (LLMs) treat culture as a static attribute of a country or region. We introduce ChronoCulture, a benchmark of 10,360 temporal pairs built from longitudinal survey data across 72 countries. Each pair contains the same survey question asked in the same country in an older and a newer year, with full population response distributions as ground truth. Across six LLMs, we find that models can often predict a country's attitudes at one point in time but do not reliably capture how those attitudes change. Their predictions for different years tend to stay close together, failing to capture much of the observed change. Specifying the intended year in the prompt also offers little overall improvement in alignment with survey responses. These findings suggest that models often present a largely static picture of cultural attitudes, highlighting the need to evaluate cultural awareness across time.",
+      "publishedAt": "2026-10-14T16:50:35Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20472v1",
+      "titleHash": "d3c6fba0f2de62b0746b398b586dcb98037024bd6f2f6012789de6fd88793ccc",
+      "contentHash": "753102fbefd98cd2534737db9d697ecb5c5b95d41cda20f565eedfad087d9b90",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7360501859272561,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20461v1",
+      "title": "Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Character Error Rate (CER), the standard metric for OCR and vision-language models (VLMs), charges a typo as much as a wrong name. We introduce semCER, which keeps CER's alignment and denominator and charges each grapheme edit a severity from an LLM judge, with no word segmentation. Normalized CER keeps the score of a whole transcription, where it tracks readers as well as semCER or better, and semCER breaks that score down into named edits. The charges track readers' ratings edit by edit in English, Vietnamese, and Chinese and put the edits readers rate most severe near the top of a sorted list. On pairs drawn where CER and semCER disagreed, readers side with semCER more often than with normalized CER in English and Chinese, and equally often in Vietnamese. Across 16 languages, the judge charges a wrong diacritic or tone mark almost nothing in Spanish but nearly a wrong letter's severity in Telugu. Where we can count real words, a general VLM's wrong letter forms one far above chance while a classical pipeline's stays near it. We release the 61 million judged edits, the aggregated reader ratings, and the distilled scorer at https://github.com/nguyenx2t/semcer.",
+      "publishedAt": "2026-10-14T16:44:22Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20461v1",
+      "titleHash": "6ff792a0a54f9f1dd099f28a85fe15f8b39810a0cf8ac33ab31434f7f1c0f9ee",
+      "contentHash": "1ce65315165be6460f9675b4135507f994c23826dd3d99f44642649a403a620e",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7353163649156546,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20459v1",
+      "title": "MolLean: A Process-Verifiable Language for Chemical Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Chemical chain-of-thought can contain hallucinated structural and property claims. We thereby introduce MolLean, a process-verifiable language that grounds chemical reasoning in an explicit molecular state. A layered Lean-based kernel checks state transitions and assertions over molecular readouts, from primitive graph edits to compound transformations. Meanwhile, a typed witness protocol separates native structural checks from externally supplied measurements. We further introduce MolLean-MCP, a stateful tool interface that exposes these transitions, checks, and readouts during generation: the model receives feedback to decide its next action, and rejected actions leave the state unchanged. MolLean supports one-pass trace execution, whole-trace refinement, and interactive reasoning through MolLean-MCP. We evaluate these three modes with direct chain-of-thought on 8,800 matched examples across 12 tasks spanning molecular generation, editing, optimization, and reactions. With Qwen3.6-27B, whole-trace refinement outperforms direct chain-of-thought on all 12 tasks. MolLean-MCP complements whole-trace refinement with stepwise verification feedback, reaching better performance in reaction tasks. Together, these results highlight an executable foundation for chemical reasoning, in which explicit chemical commitments can be checked and revised rather than remaining solely in free-form explanations.",
+      "publishedAt": "2026-10-14T16:43:10Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20459v1",
+      "titleHash": "eb2e12eab0665f2db20a7aa6bf22ebc169d26a1287ce52af2aaa39028b9eb524",
+      "contentHash": "a843b0ae6f392d8b72a07bd02eeefc41221bcacee5f6892fedaa0d659130f02f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7351748000820563,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20457v1",
+      "title": "Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Co-scientists and agentic scientific claim verifiers are increasingly used to assess claims across the sciences. Natural-language scientific claims, written for human experts, are often underspecified and so admit several defensible interpretations. Such verifiers usually pick one, often tacitly, and benchmarks score their verdicts against expert labels without recording the expert's interpretation or the verifier's in a comparable form. This leads to disagreements with expert labels that cannot be traced to the evidence or the interpretation, and to compute spent on unchecked interpretations. We introduce Claim Cards to make such interpretations explicit in the reasoning itself. A Claim Card records a verifier's interpretation as nine fields before evidence gathering, each marked stated, inferred, or default. To test whether an agent's interpretation can change its verdict, we ran a GPT-5.4 agent five times on each of 60 expert-labeled materials-science and biomedical claims with a card, without one, and with one card frozen across runs (900 runs). Over 40% of card fields were not marked stated, and a card added about a tenth to a run's GPT-5.4 tokens and time without measurably changing agreement with expert labels. The agent's own interpretations varied between runs, although within a claim this variation did not measurably track the verdict. A deliberate change to one field of the frozen card, however, making the quantifier universal or the threshold for support stricter, changed the verdict on about a third of the claims, against about one in seven expected by chance (p < 0.001 for each edit). On 24 materials-science claims run with computational tools, the stricter threshold also changed what the agent asked those tools to compute. We therefore argue that verdicts should be reported with their interpretations and that benchmarks could publish the interpretation behind each label.",
+      "publishedAt": "2026-10-14T16:42:05Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20457v1",
+      "titleHash": "a2e4dfaa6de674d4e3e0034f3c85ca0edb0a0f299f3507f2278130d2441f6c37",
+      "contentHash": "250000c4ce3b248ed9abad18ea5d6335d0972cd872cc35ebc6a2f1637f0c90bc",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7350470219049166,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.20456v1",
+      "title": "The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "The scaling relationship of compute and performance for language models (LMs) has been extensively studied; more recently, models are being designed to scale memory use, as well. In particular, adding embeddings for n-grams scales memory separately from compute use, because each pass only processes individual embedding rows, which are much smaller than the storage used for the whole embedding table. However, existing methods train embeddings from scratch, which needs expensive GPU memory for fast reading and writing. Meanwhile, the ordinary memory of the host system is cheap and underutilized by these training methods. To scale on host memory, we introduce COUNT (Counting Offline Unlocks N-gram Transformers), which builds n-gram embeddings without adding learned parameters by storing precomputed n-gram counts on host. We use the corpus frequencies to weight together the LM's own unembeddings of the next tokens most often following the current n-gram history. At a fixed compute budget, COUNT can be added as an additional input embedding for pretraining 1B-parameter LMs to improve validation loss as much as an LM with 57% more compute. If GPU memory is limited, using COUNT to let backbone parameters fill GPU memory gives better performance than splitting memory with additional learned n-gram embeddings. Beyond efficiency, COUNT allows switching in a different table of n-gram counts from a domain-specific corpus at inference time to adapt to a new task without any training.",
+      "publishedAt": "2026-10-14T16:38:19Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.20456v1",
+      "titleHash": "a81478507e6eab809af7bb150e8eb96df72a4711d34df55f4cf21ae85c700517",
+      "contentHash": "db40fe0da1961c712a4359cb8b9182e403da05c0d8e0c75383817a6e74c6a23f",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7346029198365334,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://already-clean.goodfire.com/",
+      "title": "Neural Networks Are Already Clean",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "Yogthos",
+      "publishedAt": "2026-10-15T17:25:03.621-05:00",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://already-clean.goodfire.com/",
+      "titleHash": "7d3551994802e6d102d90ef0db8d7f2d2addd035e3d8c0ad08354b6cd7d5221c",
+      "contentHash": "7d3551994802e6d102d90ef0db8d7f2d2addd035e3d8c0ad08354b6cd7d5221c",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.8,
+        "timeliness": 0.9784937970495149,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://entropicthoughts.com/geometric-model-of-maintenance",
+      "title": "The geometric model of maintenance",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "lcapaldo",
+      "publishedAt": "2026-10-15T05:48:58.656-05:00",
+      "engagement": 17,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://entropicthoughts.com/geometric-model-of-maintenance",
+      "titleHash": "f40dd996b6e8abee5e7498db314dee309c4eae16d4e6b293911d7af960927a43",
+      "contentHash": "f40dd996b6e8abee5e7498db314dee309c4eae16d4e6b293911d7af960927a43",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.8,
+        "timeliness": 0.8750906297489377,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://www.gtoal.com/sbt/",
+      "title": "An Emulator Writer's HOWTO for Static Binary Translation",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "spc476",
+      "publishedAt": "2026-10-15T00:28:48.255-05:00",
+      "engagement": 8,
+      "tags": [
+        "assembly",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.gtoal.com/sbt",
+      "titleHash": "09db8e3044c63038a8323fcc2d7b6195c0654bc92606e6e0abcb3af50cf63cd8",
+      "contentHash": "09db8e3044c63038a8323fcc2d7b6195c0654bc92606e6e0abcb3af50cf63cd8",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8312706286786593,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/dailycontext/design-for-churn-5c6h",
+      "title": "Design for Churn",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The biggest design shift of the AI era isn’t about who writes the code. It’s about how long the code...",
+      "author": "Ben Halpern",
+      "publishedAt": "2026-10-14T12:03:29Z",
+      "engagement": 55,
+      "tags": [
+        "aie",
+        "design",
+        "churn",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/dailycontext/design-for-churn-5c6h",
+      "titleHash": "ab579be5bbb69b72e2d8ee9a177754b2d1424778779564f3456736b277a41275",
+      "contentHash": "928aa0e6646e00c558fbaaee1693cc0118fef042fa98c4a906c4404106acac26",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.7029128373548152,
+        "engagement": 0.5827293423354002
+      }
+    },
+    {
+      "url": "https://dev.to/webdeveloperhyper/ai-avatar-v25-avatar-run-voxel-avatar-muscle-brain-5gi3",
+      "title": "AI Avatar v25 (Avatar Run, Voxel Avatar, Muscle Brain)💪",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Intro   AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its...",
+      "author": "Web Developer Hyper",
+      "publishedAt": "2026-10-14T11:12:17Z",
+      "engagement": 66,
+      "tags": [
+        "ai",
+        "webdev",
+        "productivity",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/webdeveloperhyper/ai-avatar-v25-avatar-run-voxel-avatar-muscle-brain-5gi3",
+      "titleHash": "5dc0dd9cb4d182e61f71de44b84d7482911bab5974985d55eba01f73483390d6",
+      "contentHash": "239e07896c2d45b1146049e3018142dd3506bcb2619fa4701ecc306eb92c93cd",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.6971620078806251,
+        "engagement": 0.6086916009002755
+      }
+    },
+    {
+      "url": "https://dev.to/gramli/i-vibe-coded-my-way-out-of-angular-upgrades-4fkh",
+      "title": "I Vibe-Coded My Way Out of Angular Upgrades",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Do you also hate upgrading Angular versions? Because I do. I maintain a few open-source projects, and...",
+      "author": "Daniel Balcarek",
+      "publishedAt": "2026-10-15T07:10:18Z",
+      "engagement": 59,
+      "tags": [
+        "ai",
+        "vibecoding",
+        "angular",
+        "showdev",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gramli/i-vibe-coded-my-way-out-of-angular-upgrades-4fkh",
+      "titleHash": "8f14f2868fddf40f6c8589978235366058e1965caf3301991da91edc4cdd6b44",
+      "contentHash": "4804770ba515a6757aab772bed40c6a119b4dc4d810f7c7bd6b441c174c9e94c",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8449187559503682,
+        "engagement": 0.5927170834612145
+      }
+    },
+    {
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "title": "meta-models/Muse-Spark-Open-816B-A42B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 238 likes · 402 downloads",
+      "engagement": 238,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "titleHash": "6eabf33fe1d5dec722e4194d76655789ca884c462e354a95a35da9ffb26d7cf7",
+      "contentHash": "a672cd6676146bdfc87fa95f1f810d690a696bb8477fcbd2a4179fb56ac139f3",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7927993003160458
+      }
+    },
+    {
+      "url": "https://huggingface.co/facebook/sam3",
+      "title": "facebook/sam3",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "mask-generation · 4436 likes · 2034602 downloads",
+      "engagement": 4436,
+      "tags": [
+        "model",
+        "mask-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/facebook/sam3",
+      "titleHash": "ece54f0261e454255f6cc0481c3a016d98d9b442d5d03c776a82b0ceed3a802f",
+      "contentHash": "64fe3115515dde04ea894963c3f3d4f5336e69cab5ae3626a54b77da4faf8f13",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "title": "black-forest-labs/flux-3-image-klein",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-to-image · 217 likes · 3241 downloads",
+      "engagement": 217,
+      "tags": [
+        "model",
+        "image-to-image"
+      ],
+      "normalizedUrl": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "titleHash": "cb5385a581a1160fd69e310a8bfe25591f90f009ce9adf54b9f8abfaefb0c1ff",
+      "contentHash": "10f5785f2a667af42977a4987be2c7d286e265df02c560c5306516df5463f098",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7794854978682015
+      }
+    }
+  ]
+}

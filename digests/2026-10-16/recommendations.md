@@ -1,0 +1,52 @@
+# 信息雷达 · 每日推荐 (2026-10-16)
+
+> 共推荐 5 条高质量内容，按综合评分排序
+
+## 每日摘要
+
+今日资讯聚焦AI前沿：涵盖人形机器人权重理解、智能体市场博弈、合成数据强化学习、物理驱动3D生成及LLM社交智能。从底层算法到应用落地，全面展示机器人在灵巧控制、物理世界交互及社会属性方面的最新突破，适合关注具身智能与多模态AI的研究者。
+
+## 1. Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.20606v1
+- **概述**: 该研究探索如何使用扩散模型去建模和解释人形机器人控制策略的神经权重，旨在解决网络不透明问题，从而帮助开发者更好地理解和优化现实世界中的灵巧机器人控制策略。
+- **摘要**: Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid control networks are typically obtained through conventional training procedures, while comparatively little attention has been given to directly modeling the distribution of their learned weights and generating functional networks in weight space. In this work, we investigate whether high-performing humanoid control networks can be generatively modeled directly through their weights. We adopt a latent diffusion framework that couples a linear autoencoder with a Diffusion Transformer. The autoencoder compresses actor network parameters into a compact latent space, and the Diffusion Transformer models the distribution of these latents. Trained on networks collected from reinforcement learning for the Unitree G1 robot, our approach generates deployable networks that perform various motions in the real world, including walking, dancing, and spin kick. Beyond generation, we further study the learned weight space to better understand the structure captured by these humanoid control networks. We identify a structural principle in the first-layer weights that consistently reflects the robot's kinematic prior. Notably, this kinematic prior emerges under both Reinforcement Learning (RL) and Imitation Learning (IL) training, suggesting that it is not specific to a particular optimization process but may instead reflect common knowledge associated with humanoid embodiment. Together, these results demonstrate the feasibility of generative modeling in humanoid network weight space, while providing initial insights into the information encoded by their learned weights. Additional results are available on our project website: https://humanoid-weight-diffusion.github.io/
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 解读机器人黑盒，优化灵巧控制
+
+## 2. Price of Anarchy of First-Price Auctions in Agentic Markets
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.20587v1
+- **概述**: 文章分析了智能体市场中的第一价格拍卖机制，探讨AI代理如何为处理用户提示而竞标，研究旨在量化该去中心化服务时市场中代理人策略互动的无效率（无政府状态的价格）。
+- **摘要**: An agentic market is a decentralized serving-time market where AI agents bid to claim each user prompt. An agent's bid is based on its expected value for the prompt, which is the expectation of the reward for its response minus its inference costs. First-price auctions (FPAs), in which the highest bidder pays its bid and receives the prompt, are a natural way to allocate prompts in such a market, since they are simple and transparent to run, and do not require central knowledge of private capabilities and costs. However, FPAs are not truthful: participants may bid less than their true value in the hope of a larger profit, and the prompt may then be allocated to someone other than the bidder who values it the most. This welfare loss is quantified by the $\textit{price-of-anarchy}$ (PoA). In this paper, we argue that agentic markets are likely to possess features that reduce the price-of-anarchy. The first is a $\textit{competitive floor}$, which occurs when multiple bidders usually value the prompt above some baseline share of the optimal welfare (e.g., because the best models are often distilled into cheaper alternatives, which perform similarly). We show that competition among them then limits the welfare loss, which can be driven to zero as the floor rises. The second feature is $\textit{near-independence}$ of values after conditioning on the prompt, which occurs when most of the predictable variation in the expected value is determined by the difficulty of the prompt. As the value distribution approaches conditional independence, we can derive an efficiency guarantee that approaches a factor of $1 - 1/e^2$ of the optimal welfare. Thus, both features give rise to welfare lower bounds that are significantly better than the well-known general case of $1 - 1/e$. We validate these results empirically using auctions with strategic bidders simulated on the EmbedLLM prompt routing dataset.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 量化AI代理市场竞争效率
+
+## 3. Player-1: Learning to Play from Synthetic Experience
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.20584v1
+- **概述**: 论文提出Player-1，通过生成合成体验来训练计算机使用智能体玩游戏，利用视觉丰富且交互多样的游戏世界数据提升智能体的界面理解与键鼠操作能力，突破了真实数据收集的局限。
+- **摘要**: Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044 curated gameplay trajectories that pair recorded actions with task instructions and visual reasoning. We construct Player-1-Gym, sixteen synthetic 2D and 3D environments designed around control demands shared across games. Programmatically verifiable rewards and randomized observations and control dynamics support multi-environment reinforcement learning with PPO. The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline, with further gains over SFT on ViZDoom-10 and GameWorld. Further analyses show that broader synthetic environment coverage improves transfer, while the use of composite actions that combine multiple keyboard and mouse inputs increases during RL. We demonstrate that learning from synthetic experience substantially improves game control beyond supervised initialization, with gains that generalize beyond the RL training suite.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 解决真实交互数据稀缺难题
+
+## 4. PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.20560v1
+- **概述**: PhySGA提出一个基于物理空间接地智能体框架，通过物理模拟生成可交互和泛化性强的3D物体组合，为数字内容创作、机器人仿真及基础模型的物理智能评估提供新的测试基准。
+- **摘要**: 3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 构建具身智能物理世界基准
+
+## 5. PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.20548v1
+- **概述**: 研究PerSo深入剖析LLM在真实劝说场景下的社交智能，考察模型在人类AI互动及多代理环境中的社会认知与情感处理能力，为开发更具同理心和社交适应性的AI系统提供理论依据。
+- **摘要**: Understanding the social intelligence of large language models (LLMs) is increasingly important for applications involving human-AI interaction and multi-agent environments. Social intelligence comprises two aspects: cognitive intelligence, the ability to infer others' mental states, and behavioral intelligence, the ability to select appropriate social actions based on these inferences to achieve social goals. Persuasion provides a natural testbed in which both aspects are simultaneously at play, yet prior benchmarks typically evaluate them in isolation using synthetic scenarios. We introduce PerSo, a benchmark that evaluates both aspects on real-world persuasion dialogues from Reddit's ChangeMyView community, using an LLM-in-the-loop pipeline to construct the evaluation tasks, validated through human annotation. Our evaluation of diverse LLMs shows that performance generally scales with model size but varies across dimensions. The strongest LLM slightly surpasses the best observed human performance on the behavioral task, while the best human participant remains ahead on the cognitive task.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 探索LLM社会属性新边界
