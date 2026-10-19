@@ -1,0 +1,944 @@
+{
+  "date": "2026-10-19",
+  "stats": {
+    "scraped": 170,
+    "deduped": 34,
+    "scored": 34
+  },
+  "summary": "今日资讯聚焦AI技术演进与安全博弈。前沿实验显示混合推理智能体正探索潜空间思维模式，开发者工具Sphinx旨在增强AI代码理解力。监管层面，Anthropic法案草案引发争议，而网站针对AI爬虫的封锁趋势加剧，Leviathan则展示了大模型推理的新突破，呈现出技术狂飙与现实约束并存的复杂局面。",
+  "recommendations": [
+    {
+      "url": "https://arxiv.org/abs/2610.18861",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;x.com&#x2F;Jiaru_Zou&#x2F;status&#x2F;2110400256647340476\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;Jiaru_Zou&#x2F;status&#x2F;2110400256647340476</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;togethercomputer&#x2F;HybridAgent\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;togethercomputer&#x2F;HybridAgent</a><p><a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;collections&#x2F;togethercomputer&#x2F;hybridagent\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;collections&#x2F;togethercomputer&#x2F;hybridag...</a><p>Evaluations: <a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;html&#x2F;2610.18861v1#S5\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;html&#x2F;2610.18861v1#S5</a>",
+      "author": "allinonai",
+      "publishedAt": "2026-10-18T20:48:14Z",
+      "engagement": 169,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.18861",
+      "titleHash": "10d3040ea46d0068466db6bc868df2409f0e836cf53aa4360679ad6a71c07bdd",
+      "contentHash": "31d50cd24040c390cb046f2630c9d34c02f045b3eb96b8378c42090e373d120a",
+      "score": 80,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9657002765739016,
+        "engagement": 0.7434829737927581
+      },
+      "rank": 1,
+      "reasons": [
+        "洞察LLM推理范式的前沿实验突破"
+      ],
+      "overview": "介绍一种结合潜空间思维与文本行动的混合推理智能体架构，探索LLM在非显式推理路径上的新能力边界。"
+    },
+    {
+      "url": "https://sphinx-six-theta.vercel.app/",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it&#x27;ll throw up a questionnaire that checks if you understand how the code you&#x27;re pushing works.",
+      "author": "critiquebrowser",
+      "publishedAt": "2026-10-18T04:33:49Z",
+      "engagement": 240,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sphinx-six-theta.vercel.app/",
+      "titleHash": "f8b78a510e3bb85b78e77961294db79a5df5392b934253bf04803831d8fafcca",
+      "contentHash": "c888d8f88b3416818a736049327a21195aa61657547e78ca74469b546bfc4021",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8259280323324124,
+        "engagement": 0.7940056808582895
+      },
+      "rank": 2,
+      "reasons": [
+        "实战利器，确保AI代码可维护性"
+      ],
+      "overview": "开源钩子工具Sphinx，集成于现有AI编程代理工作流中，通过部署前的强制问答测试开发者对AI生成代码的理解程度。"
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "f-serif",
+      "publishedAt": "2026-10-18T14:30:27Z",
+      "engagement": 153,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "titleHash": "68181b17667c722c865f5932f516d0513212ef586fb433481d7bd96700b431e3",
+      "contentHash": "68181b17667c722c865f5932f516d0513212ef586fb433481d7bd96700b431e3",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9089025651672101,
+        "engagement": 0.7291735736121544
+      },
+      "rank": 3,
+      "reasons": [
+        "解读关键AI监管法案的门槛争议"
+      ],
+      "overview": "解析Anthropic提出的AI安全法案草案，指出其触发条件设定为造成50人死亡或10亿美元损失时才生效，引发外界对监管效力的质疑。"
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "title": "Websites are closing their doors to AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "evolve2k",
+      "publishedAt": "2026-10-18T14:58:10Z",
+      "engagement": 133,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "titleHash": "887b7fa45016896d035c0607b2e5eb5bb64b46d2e08f7dafd495b5b03a674a68",
+      "contentHash": "887b7fa45016896d035c0607b2e5eb5bb64b46d2e08f7dafd495b5b03a674a68",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9129536010355924,
+        "engagement": 0.7090349327882692
+      },
+      "rank": 4,
+      "reasons": [
+        "揭示AI与Web生态的对抗现状"
+      ],
+      "overview": "报道网站日益增多地关闭对AI智能体的访问权限，反映了内容生态在保护知识产权与数据隐私方面对AI爬虫的抵制趋势。"
+    },
+    {
+      "url": "https://github.com/CuppaTea1983/Leviathan",
+      "title": "Leviathan LLM Inference",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "michaelrickynea",
+      "publishedAt": "2026-10-18T19:38:37Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/CuppaTea1983/Leviathan",
+      "titleHash": "cf80a3a3cc70261d9c55f46004ff96254bd64187bc28d6cacbf55899e459922d",
+      "contentHash": "cf80a3a3cc70261d9c55f46004ff96254bd64187bc28d6cacbf55899e459922d",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9549733821030284,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 5,
+      "reasons": [
+        "关注大模型推理性能优化方案"
+      ],
+      "overview": "展示名为Leviathan的大模型推理系统，旨在优化LLM的计算效率与响应速度，提升大规模模型部署的性能表现。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://sphinx-six-theta.vercel.app/",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it&#x27;ll throw up a questionnaire that checks if you understand how the code you&#x27;re pushing works.",
+      "author": "critiquebrowser",
+      "publishedAt": "2026-10-18T04:33:49Z",
+      "engagement": 240,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sphinx-six-theta.vercel.app/",
+      "titleHash": "f8b78a510e3bb85b78e77961294db79a5df5392b934253bf04803831d8fafcca",
+      "contentHash": "c888d8f88b3416818a736049327a21195aa61657547e78ca74469b546bfc4021",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8259280323324124,
+        "engagement": 0.7940056808582895
+      }
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "f-serif",
+      "publishedAt": "2026-10-18T14:30:27Z",
+      "engagement": 153,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "titleHash": "68181b17667c722c865f5932f516d0513212ef586fb433481d7bd96700b431e3",
+      "contentHash": "68181b17667c722c865f5932f516d0513212ef586fb433481d7bd96700b431e3",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9089025651672101,
+        "engagement": 0.7291735736121544
+      }
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "title": "Websites are closing their doors to AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "evolve2k",
+      "publishedAt": "2026-10-18T14:58:10Z",
+      "engagement": 133,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "titleHash": "887b7fa45016896d035c0607b2e5eb5bb64b46d2e08f7dafd495b5b03a674a68",
+      "contentHash": "887b7fa45016896d035c0607b2e5eb5bb64b46d2e08f7dafd495b5b03a674a68",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9129536010355924,
+        "engagement": 0.7090349327882692
+      }
+    },
+    {
+      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
+      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-10-18T17:27:30Z",
+      "engagement": 90,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming",
+      "titleHash": "730ab6e247c335cf9843dcc2dcf66879766edeeb554e21a43671d6332c981466",
+      "contentHash": "730ab6e247c335cf9843dcc2dcf66879766edeeb554e21a43671d6332c981466",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9350927313158233,
+        "engagement": 0.6530137974403646
+      }
+    },
+    {
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "DeepLogin",
+      "publishedAt": "2026-10-18T12:22:58Z",
+      "engagement": 77,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.vals.ai/blogs/impossible-refund",
+      "titleHash": "7f9f5dd268e4e6e112eb085b9a973ddbe5ee66d4c8cb05683c1b5e8da6a046a6",
+      "contentHash": "7f9f5dd268e4e6e112eb085b9a973ddbe5ee66d4c8cb05683c1b5e8da6a046a6",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8905000017595207,
+        "engagement": 0.6306982008968268
+      }
+    },
+    {
+      "url": "https://www.thebignewsletter.com/p/how-the-federal-reserve-secretly",
+      "title": "How the Fed Is Quietly Inflating the AI Bubble While Hiking Your Electric Bill",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "toomuchtodo",
+      "publishedAt": "2026-10-18T16:48:25Z",
+      "engagement": 26,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.thebignewsletter.com/p/how-the-federal-reserve-secretly",
+      "titleHash": "e0b5277c38c9b9f02f71029a332eb854e607b23bc9f7e88f93c9c8a648d1e791",
+      "contentHash": "e0b5277c38c9b9f02f71029a332eb854e607b23bc9f7e88f93c9c8a648d1e791",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9292471597176454,
+        "engagement": 0.47712125471966244
+      }
+    },
+    {
+      "url": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+      "title": "America's $10T AI infrastructure boom is starting to fray",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cheesecompiler",
+      "publishedAt": "2026-10-18T06:46:50Z",
+      "engagement": 22,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+      "titleHash": "b8f28c1777c33c19afa1d32f79ddc24614daca0cacbe6af5b16bfc3869a3f9aa",
+      "contentHash": "b8f28c1777c33c19afa1d32f79ddc24614daca0cacbe6af5b16bfc3869a3f9aa",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8437449558332893,
+        "engagement": 0.45390927867253095
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
+      "title": "World Bank says 'small AI' could transform developing countries",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "simonpure",
+      "publishedAt": "2026-10-18T14:37:55Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
+      "titleHash": "85709d2d5b6fcd171929c3c79e5960c910b0c51fced62e71f760343f8b8d6851",
+      "contentHash": "85709d2d5b6fcd171929c3c79e5960c910b0c51fced62e71f760343f8b8d6851",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9099921122000372,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://defuzex.ai/blog/we-ran-53-open-source-ai-agents-through-behavioral-tests-and-filed-37-bugs",
+      "title": "We ran 53 open-source AI agents through behavioral tests and filed 37 bugs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "YaoAnthony",
+      "publishedAt": "2026-10-18T00:36:34Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://defuzex.ai/blog/we-ran-53-open-source-ai-agents-through-behavioral-tests-and-filed-37-bugs",
+      "titleHash": "37b6d8d24aa414c45451a5bd5be2999bd0a322dc3006fda5e7767539b87e4ae3",
+      "contentHash": "37b6d8d24aa414c45451a5bd5be2999bd0a322dc3006fda5e7767539b87e4ae3",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.7950783828906168,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://apnews.com/article/ai-prices-dynamic-customers-technology-64c446cd117d3be664de4ab570fb9857",
+      "title": "Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "geox",
+      "publishedAt": "2026-10-18T19:39:36Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/ai-prices-dynamic-customers-technology-64c446cd117d3be664de4ab570fb9857",
+      "titleHash": "07722f6b3a0a39c4e9ed2190e9d3367ab2d36f9ca20430c15a63111106631c62",
+      "contentHash": "07722f6b3a0a39c4e9ed2190e9d3367ab2d36f9ca20430c15a63111106631c62",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9551240664024854,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://abolish-ai.net/abolish-ai-a-manifesto/",
+      "title": "Abolish AI Manifesto (under construction)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "classified",
+      "publishedAt": "2026-10-18T08:20:45Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://abolish-ai.net/abolish-ai-a-manifesto",
+      "titleHash": "d47098a60b212737194b63a537686557aa59722067a4fc7709534c64d8967244",
+      "contentHash": "d47098a60b212737194b63a537686557aa59722067a4fc7709534c64d8967244",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8565556267234289,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+      "title": "Microsoft drops AI datacentre project in Essex over power supply concerns",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wondersky",
+      "publishedAt": "2026-10-18T15:48:32Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+      "titleHash": "f8ff05b80435561e55abb21529b7e4512a39ee0ad755e4eccc810441ab146f39",
+      "contentHash": "f8ff05b80435561e55abb21529b7e4512a39ee0ad755e4eccc810441ab146f39",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9203614080299136,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.engadget.com/2286898/deezer-will-let-listeners-completely-filter-out-ai-music/",
+      "title": "Deezer Will Let Listeners Filter Out AI Music",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rdmuser",
+      "publishedAt": "2026-10-18T09:19:13Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.engadget.com/2286898/deezer-will-let-listeners-completely-filter-out-ai-music",
+      "titleHash": "59124ffffa3b6a0cc6d98c5afe0b3b3b8ce15f6ac8413a4deb71b94e5e0a35bc",
+      "contentHash": "59124ffffa3b6a0cc6d98c5afe0b3b3b8ce15f6ac8413a4deb71b94e5e0a35bc",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8646288000357558,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50139584",
+      "title": "Ask HN: Why people keep posting AI-generated projects around the Internet?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Programming-related subreddits and other media platforms are current flooded by the waterfall of AI-generated projects. A typical post contains a problem description and the link to GitHub repo created just recently with sustainable amount of generated code in it. With the invite to review it, and to give a community feedback.<p>The quality of the projects vary, but very often these are codebases generated in a few days solely by the AI-agentic systems with little to no human review and prior history of development and recognition.<p>I&#x27;m asking this question not out of critiques. I genuinely don&#x27;t understand motivation and the roots of this phenomena.<p>Asking for the professional code review seems to be pointless for the publisher. Many of them didn&#x27;t have prior experience in the programming language in which the code has been generated. Furthermore, the code is seemingly not interested for the publisher either. It does not look to me as a good start for community-driven (F)OSS project anyway.<p>Another motivation that I can imaging is seeking for public recognition. But considering the amount of postings, I think it&#x27;s highly unlikely in the current situation even for the genuinely high-effort works.<p>I can also assume that some are seeking for the self promotion by faking professional skills with AI assistance. That might be true for some, but the majority don&#x27;t hide the fact that the presented code has been generated. It&#x27;s unlikely the main motivation too.<p>So, I completely lost in understanding on what&#x27;s going on, and what steams this never-stopping process. At a first glance the author doesn&#x27;t gain anything in return, and I don&#x27;t understand what they are seeking for.",
+      "author": "Eliah_Lakhin",
+      "publishedAt": "2026-10-18T10:00:32Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50139584",
+      "titleHash": "933034d16fbd99bc39f8678479f846fa866594bded987e5f9f0660d2767854aa",
+      "contentHash": "db51e2d2ca0f8d3cae4853a833d056b22f2cf6094ee4276566c540dd15816606",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8703797159171853,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.wired.com/story/men-cant-stop-faking-how-much-they-know-about-ai/",
+      "title": "Men Can't Stop Faking How Much They Know About AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ceejayoz",
+      "publishedAt": "2026-10-18T17:15:01Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.wired.com/story/men-cant-stop-faking-how-much-they-know-about-ai",
+      "titleHash": "960a575710fd87d7ebb9817ce237f6cdf4dfc4e62d387eb526cb29d0da78f104",
+      "contentHash": "960a575710fd87d7ebb9817ce237f6cdf4dfc4e62d387eb526cb29d0da78f104",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9332216524298433,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.cgtn.com/news/2026-10-15/Chinese-researchers-solve-3D-Ghys-conjecture-with-homegrown-AI-model-1RgD8zQ3Z3a/p.html",
+      "title": "Chinese researchers solve 3D Ghys conjecture with homegrown AI model",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yogthos",
+      "publishedAt": "2026-10-18T20:19:01Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.cgtn.com/news/2026-10-15/Chinese-researchers-solve-3D-Ghys-conjecture-with-homegrown-AI-model-1RgD8zQ3Z3a/p.html",
+      "titleHash": "f8ca5befa478d7915fed86c4f9f3ebc9ac0db1cddb4d890b0a91a899b9938217",
+      "contentHash": "f8ca5befa478d7915fed86c4f9f3ebc9ac0db1cddb4d890b0a91a899b9938217",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9611838268221169,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50142650",
+      "title": "Tell HN: I picked up knitting while waiting for my AI agent to complete",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Any new hobbies you are willing to share that AI made you start?",
+      "author": "amelius",
+      "publishedAt": "2026-10-18T16:39:46Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50142650",
+      "titleHash": "70254a2942ad9e790b983b64232917350957f6cb28af460fec52a0720d3fb5fc",
+      "contentHash": "0e64a9f17d2e983e6fd994bc969088e275eefc78a78699be282dbe1692fa75e8",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9279583532095617,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/aldohushi1-stack/shipback-sftp",
+      "title": "Show HN: Shipback – SFTP deploys your AI agent can undo",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "aldoh",
+      "publishedAt": "2026-10-18T11:48:48Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/aldohushi1-stack/shipback-sftp",
+      "titleHash": "86f66ad0844e9f647629cbc195759ba60425fa0f81f434aa31cdcce1a6d56466",
+      "contentHash": "86f66ad0844e9f647629cbc195759ba60425fa0f81f434aa31cdcce1a6d56466",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8856315779501752,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://martinalderson.com/posts/how-the-ai-boom-might-really-end/",
+      "title": "How the AI boom might end: 5 scenarios",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "martinald",
+      "publishedAt": "2026-10-18T12:37:42Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://martinalderson.com/posts/how-the-ai-boom-might-really-end",
+      "titleHash": "956217efac53f8c2d5d51f100a4df3c01a31785b0b64b53064d308b663bd61a8",
+      "contentHash": "956217efac53f8c2d5d51f100a4df3c01a31785b0b64b53064d308b663bd61a8",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8926076109568701,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.18861",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;x.com&#x2F;Jiaru_Zou&#x2F;status&#x2F;2110400256647340476\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;Jiaru_Zou&#x2F;status&#x2F;2110400256647340476</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;togethercomputer&#x2F;HybridAgent\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;togethercomputer&#x2F;HybridAgent</a><p><a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;collections&#x2F;togethercomputer&#x2F;hybridagent\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;collections&#x2F;togethercomputer&#x2F;hybridag...</a><p>Evaluations: <a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;html&#x2F;2610.18861v1#S5\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;html&#x2F;2610.18861v1#S5</a>",
+      "author": "allinonai",
+      "publishedAt": "2026-10-18T20:48:14Z",
+      "engagement": 169,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.18861",
+      "titleHash": "10d3040ea46d0068466db6bc868df2409f0e836cf53aa4360679ad6a71c07bdd",
+      "contentHash": "31d50cd24040c390cb046f2630c9d34c02f045b3eb96b8378c42090e373d120a",
+      "score": 80,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9657002765739016,
+        "engagement": 0.7434829737927581
+      }
+    },
+    {
+      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/",
+      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "giuliomagnifico",
+      "publishedAt": "2026-10-18T16:45:35Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1",
+      "titleHash": "291b423b3cd9635e8c23d4c288102b3ca52091ca9be368167acf0265c792deba",
+      "contentHash": "291b423b3cd9635e8c23d4c288102b3ca52091ca9be368167acf0265c792deba",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9288248102861876,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "title": "If you don't run your own LLM proxy how the fuck do you even know whats going on",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hnaccount93",
+      "publishedAt": "2026-10-18T07:12:11Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on",
+      "titleHash": "eba53d67d5a5b6fa944777023b380d7d85bc2a5223d59bc8890c6c95980117b9",
+      "contentHash": "eba53d67d5a5b6fa944777023b380d7d85bc2a5223d59bc8890c6c95980117b9",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.847183815054095,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://bench.killswitch-lang.org/",
+      "title": "Show HN: Benchmarking LLM ability to code in an adversarial language",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dom96",
+      "publishedAt": "2026-10-18T09:53:06Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://bench.killswitch-lang.org/",
+      "titleHash": "bb7b5193f7289b1e191e0486ae9df1a0b7cba2fe397a68a576ff5bde88b1e4dd",
+      "contentHash": "bb7b5193f7289b1e191e0486ae9df1a0b7cba2fe397a68a576ff5bde88b1e4dd",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8693422469341018,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/CuppaTea1983/Leviathan",
+      "title": "Leviathan LLM Inference",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "michaelrickynea",
+      "publishedAt": "2026-10-18T19:38:37Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/CuppaTea1983/Leviathan",
+      "titleHash": "cf80a3a3cc70261d9c55f46004ff96254bd64187bc28d6cacbf55899e459922d",
+      "contentHash": "cf80a3a3cc70261d9c55f46004ff96254bd64187bc28d6cacbf55899e459922d",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9549733821030284,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/vivshaw/neurastheniacc",
+      "title": "Neurastheniacc: LLM-based C->WASM compiler you didn't need",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cpeterso",
+      "publishedAt": "2026-10-18T19:20:47Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/vivshaw/neurastheniacc",
+      "titleHash": "16f616092645a440e3abe6167611eb17fccb9e5e85d48b8410139f833378794a",
+      "contentHash": "16f616092645a440e3abe6167611eb17fccb9e5e85d48b8410139f833378794a",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9522447541903216,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://danilafe.com/blog/comments_not_for_you/",
+      "title": "The LLM Comments Are Not for You",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nsdfg",
+      "publishedAt": "2026-10-18T17:51:55Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://danilafe.com/blog/comments_not_for_you",
+      "titleHash": "e1689056eb1efada68161d6137dc57af24291b64738878901bb0146f86fdcf91",
+      "contentHash": "e1689056eb1efada68161d6137dc57af24291b64738878901bb0146f86fdcf91",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9387633034149417,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://medium.com/@gbenga-awodokun/building-clinical-ai-agents-with-langchain-and-jev-decision-healthcare-trustworthy-ai-lab-v2-1b81e271f1c9",
+      "title": "Replacing an LLM judge with a deterministic model: 9.2x faster, 4.5x cheaper",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "newadays",
+      "publishedAt": "2026-10-18T16:07:52Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://medium.com/@gbenga-awodokun/building-clinical-ai-agents-with-langchain-and-jev-decision-healthcare-trustworthy-ai-lab-v2-1b81e271f1c9",
+      "titleHash": "84af664f7e065f3081b759a3f064cce9d4553e4cd77ff4d4602f03c5cd24cc50",
+      "contentHash": "84af664f7e065f3081b759a3f064cce9d4553e4cd77ff4d4602f03c5cd24cc50",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9232208456595616,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/openaccountants/openaccountants",
+      "title": "Open-source tax rules for 100 countries that your LLM can use",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "MichaelCutajar",
+      "publishedAt": "2026-10-18T10:09:28Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/openaccountants/openaccountants",
+      "titleHash": "39775593b85e00273aa7bf6cbd98b4ee69919c23e1e9046f8236c7686ec3451a",
+      "contentHash": "39775593b85e00273aa7bf6cbd98b4ee69919c23e1e9046f8236c7686ec3451a",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.871628177842709,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "title": "Kolibri: A Sovereign Open-Weight Model",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "miro",
+      "publishedAt": "2026-10-04T02:57:55.868-05:00",
+      "engagement": 37,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model",
+      "titleHash": "aec2d1483b6c1588f9ad5962479302ed123de15fe53ac3ffb41994fc2218bf88",
+      "contentHash": "aec2d1483b6c1588f9ad5962479302ed123de15fe53ac3ffb41994fc2218bf88",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.8,
+        "timeliness": 0.03360151366940855,
+        "engagement": 0.5265945322056034
+      }
+    },
+    {
+      "url": "https://nathanho.me/posts/evograin/",
+      "title": "Algorithmic Sound Design with L-Systems and Granular Synthesis",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "chrisl",
+      "publishedAt": "2026-10-18T07:06:05.111-05:00",
+      "engagement": 10,
+      "tags": [
+        "art",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://nathanho.me/posts/evograin",
+      "titleHash": "b384908103cbbc0a9be89a5c4119fc0f4ad8e08b966509ea3081cc343ead7fee",
+      "contentHash": "b384908103cbbc0a9be89a5c4119fc0f4ad8e08b966509ea3081cc343ead7fee",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8880912158565273,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.lf-lang.org/",
+      "title": "Intuitive concurrent programming in any language",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "mpweiher",
+      "publishedAt": "2026-10-17T07:17:20.307-05:00",
+      "engagement": 24,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.lf-lang.org/",
+      "titleHash": "3b192fb5ae28864037625e6b53f456f4c7201dd813ee7803dab468d0342df67c",
+      "contentHash": "3b192fb5ae28864037625e6b53f456f4c7201dd813ee7803dab468d0342df67c",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.7061523398290668,
+        "engagement": 0.46598000289067926
+      }
+    },
+    {
+      "url": "https://dev.to/numbpill3d/an-esp32-and-a-local-vision-model-drive-my-iphone-4nh3",
+      "title": "An ESP32 and a Local Vision Model Drive My iPhone",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Apple spent 17 years convincing us that controlling an iPhone requires Xcode, a $99 developer...",
+      "author": "v. Splicer",
+      "publishedAt": "2026-10-17T20:08:59Z",
+      "engagement": 3,
+      "tags": [
+        "iot",
+        "esp32",
+        "llm",
+        "programming",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/numbpill3d/an-esp32-and-a-local-vision-model-drive-my-iphone-4nh3",
+      "titleHash": "6643266d22d9a5a7da88b4b909b8810805b84493bd5c1c585597a56b2d058bdd",
+      "contentHash": "54f4ada8fdb7393a8425904e6dcb4025ce64c8204163e20fbf5e511099242145",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7616649507294695,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local",
+      "title": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 213 likes · 4876 downloads",
+      "engagement": 213,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local",
+      "titleHash": "b143f90f0f53b8d6af103d3596721b08381dda3851deeae44197260ee2ed1dbf",
+      "contentHash": "50fb8248e0a2827b3715deeb0bc46dad5dc911ceda05a6b771ddf148da5a180a",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.776804591116397
+      }
+    },
+    {
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+      "title": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 206 likes · 107599 downloads",
+      "engagement": 206,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+      "titleHash": "3070edea3102ff91c710bbe8e8de0e61ba5d3b004c0d7fd86ec995a95c8581ae",
+      "contentHash": "6862aa1164cbea333aa66dd5764a66dfa6b56495b983f8a68c222ab916a2e029",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.771990115152306
+      }
+    }
+  ]
+}
