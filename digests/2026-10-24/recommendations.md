@@ -1,0 +1,52 @@
+# 信息雷达 · 每日推荐 (2026-10-24)
+
+> 共推荐 5 条高质量内容，按综合评分排序
+
+## 每日摘要
+
+今日资讯聚焦LLM前沿与治理：探讨成本感知拒答在IT工单分类中的应用、记忆增强测试时适应提升元强化学习效率；通过OLMo-3检查点证据质疑工具性收敛假设；提供符合欧盟AI法案的负责任AI评估仪表盘；并深入剖析模型自信对信任校准及谄媚现象的反向影响。
+
+## 1. Cost-Aware Abstention for LLM-Based IT Ticket Classification
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.31657v1
+- **概述**: 该研究评估成本感知拒答策略，将离线成本条件就绪评估应用于LLM驱动的IT工单分类，旨在降低错误自动路由带来的高昂试错成本，提升智能分流效率。
+- **摘要**: Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then evaluate that frozen policy once on held-out test data. On a public 47,837-ticket, eight-class corpus, we compare four trained non-LLM classifiers with four large language models under zero- and few-shot prompting. Under the illustrative cost model (c_ok, c_triage, c_wrong) = (0, 1, 5), TF-IDF with logistic regression and a threshold of 0.60 selected on calibration reduces test cost from 0.763 to 0.472, a 38.1% relative reduction (paired ratio-bootstrap 95% CI [35.7%, 40.4%]), while lowering wrong routes from 15.3% to 3.5%. Frozen calibration-selected policies also beat both always-route and always-defer on held-out test data in 14 of 16 settings in a post-hoc cost-parameter analysis. The strongest prompted configuration reaches 0.477 accuracy on a stratified 1,000-ticket test subset, versus 0.879 for fine-tuned DistilBERT on the same tickets. Isotonic lowers expected calibration error without reliably improving discrimination: GPT-4o-mini few-shot has one confidence value before and after recalibration and correctness AUROC 0.500. We therefore report correctness AUROC and tie-aware risk-coverage area alongside ECE. At the analytically derived break-even probability 0.80, seven prompted configurations defer all tickets; Haiku few-shot routes only 19/1,000. An LLM-only agreement control and margin/entropy rejection baselines further separate calibration from discrimination. The findings are scoped to this dataset, prompt design, model endpoints, and illustrative costs; the work is an evaluation framework, not a new abstention algorithm or universal deployment certification.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 降低LLM误路由成本，实用性强。
+
+## 2. METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.31656v1
+- **概述**: 提出METTA框架，通过记忆增强测试时适应解决元强化学习中快速适应新任务的挑战，利用长交互历史中的任务证据提升代理在有限交互下的适应能力。
+- **摘要**: Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast adaptation phase into two temporal scales: a causal neural memory performs fine-grained within-episode adaptation with linear sequence complexity, while compact episode-level summaries support long-range cross-episode task inference without attending over the full interaction history. Moreover, equipping agents with neural memory provides sufficient expressive capacity and test-time training capability, enabling effective adaptation to unseen held-out tasks and task families at meta-test time. On unseen held-out Meta-World ML10/45 test environments, METTA achieves a success rate over $50\%$ while maintaining a low training budget and short wall-clock time. On long-context sparse-reward PointMaze tasks, it outperforms transformer-based baselines by exhibiting more structured exploration behavior. These results show that METTA provides an efficient path toward more adaptive and scalable long-context meta-RL.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 革新元强化学习适应机制，效率更高。
+
+## 3. Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.31624v1
+- **概述**: 基于OLMo-3检查点证据，重新审视强化学习中的工具性收敛假设，分析代理是否真正习得自保或资源获取等权力寻求子目标，为AI对齐研究提供实证参考。
+- **摘要**: Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-convergence behavior, or does this depend on the training regime, evaluation frame, and stage of post-training? We study this question as a checkpoint-conditioned behavioral trajectory rather than as a single before/after safety score. Using InstrumentalEval, we evaluate OLMo-3-7B-Think across SFT, DPO, 13 intermediate RLVR checkpoints, and the final RLVR model. The trajectory is nonmonotonic: instrumental rate rises from 25.0% at SFT to 46.1% near RLVR step 200, then falls to 11.8% at the final checkpoint. Paired item-level tests and step-wise regression support the final SFT-to-RLVR reduction. Prompt framing does not explain this pattern: a harmful-prompt indicator combined with other framing effects explains only 15% of within-checkpoint score variance on average, and Iterative Null-space Projection (INLP) removes a detectable framing direction without changing the SFT-to-final-RLVR gap. Together with preliminary 32B endpoint results (35.53% SFT to 22.37% RLVR final), these findings indicate that RLVR does not monotonically increase instrumental behavior in this setting: the rate rises early, then falls below the SFT baseline. The result is specific to this model family and benchmark, and judge agreement is moderate, so absolute rates should be read cautiously.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 提供工具性收敛实证，助力对齐研究。
+
+## 4. VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.31588v1
+- **概述**: 开发VERA仪表盘，协助机构在欧盟AI法案监管下部署LLM，通过提供负责任AI实践的技术证据，满足合规审批前的评估需求，推动规范化落地。
+- **摘要**: Institutions that deploy large language models in regulated settings often need technical evidence of responsible AI practices before approving a deployment. COMPL-AI provides a technical interpretation of the EU AI Act that organises this evidence under six principle groups and eighteen technical requirements, twelve of which current benchmarks can measure. The benchmark suites that produce this evidence are typically operated from a command line, while the staff who approve deployments are non-engineers. We present VERA, an open-source self-hosted dashboard deployed to facilitate responsible AI processes within a large European bank. A reviewer selects a model and runs public benchmarks against it. VERA scores the twelve requirements that current benchmarks can measure and instruments the energy consumed by each evaluation, adding run-level evidence for environmental impact. We run four served open-weight models through the requirement pipeline, and the dashboard displays a score for each measurable requirement. A within-subject study then compares how participants read these benchmark results: from the raw output files in one condition, and through the VERA dashboard in the other. The dashboard reduced the time needed to perform the responsible AI assessment, reducing the time required from 56 seconds using raw files to 30 seconds using our dashboard, on average. Our dashboard scored highly (4.36 out of 5) on usefulness in the survey conducted within the organization. The dashboard and the study material are released publicly to promote replicability and reproducibility in different organisational contexts.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 直击欧盟合规痛点，落地价值高。
+
+## 5. Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration
+
+- **来源**: ArXiv
+- **链接**: http://arxiv.org/abs/2610.31579v1
+- **概述**: 研究反向探索LLM谄媚机制，分析当模型表现自信且一致时，人类如何产生顺从及信任校准崩塌现象，揭示人机交互中隐性认知偏差对判断力的影响。
+- **摘要**: Research on sycophancy asks whether large language models (LLMs) bend towards what their users want to hear. We ask the reverse question: when an LLM is confident, consistent, and wrong, do users bend towards it? In a within-subjects experiment, 32 participants learned up to five science topics by chatting with five assistants built on the same model (GPT-5-mini). Unknown to participants, each assistant's briefing had 0, 25, 50, 75, or 100% of its facts replaced by plausible falsehoods, and every assistant spoke with full confidence. A surprise quiz after each topic offered the correct fact, the planted falsehood, and two distractors, with a confidence rating for every answer. Across 104 quizzes and 1,040 answers, scores fell from 7.4 to 2.9 out of 10, and the planted option was chosen on 60% of falsified items against 11% of correctly taught ones (odds ratio 12.5). Transcript coding showed that whenever the assistant stated a falsehood, it was adopted about 65% of the time at every falsification level. Absorbed falsehoods were held with high confidence (8.4/10), the modeled confidence advantage of right over wrong answers vanished, and the discrimination of confidence for correctness fell from an AUROC of 0.70 to chance, while post-task trust ratings barely moved. Participants tended to return to the chat more when the assistant was worse, but returning went with more absorption, not less, and 30% of all turns pasted quiz questions back to the source being checked. The assistant itself was almost never sycophantic and never conceded under pushback. We introduce a baseline-corrected Human Deference Index to quantify this human-side sycophancy and argue that trustworthiness is a property of the human-AI pair, that sycophancy evaluations should measure both directions, and that learning interfaces must make reliability legible claim by claim.
+- **综合评分**: 80 (相关性 100% / 权威性 100% / 时效性 74% / 热度 0%)
+- **推荐理由**: 洞察信任崩塌，优化人机交互认知。
