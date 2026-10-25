@@ -1,0 +1,1044 @@
+{
+  "date": "2026-10-25",
+  "stats": {
+    "scraped": 170,
+    "deduped": 37,
+    "scored": 37
+  },
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50219762",
+      "title": "Show HN: Benchmarks of continual learning model trained for a month on a laptop",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "A month ago, I shared mini-AGI, an experiment in training a byte-level, continually learning language model from scratch on a single 8 GB laptop GPU (an RTX 3070).\nTo recap the setup briefly: it completely decouples model size from VRAM by paging experts to and from an NVMe drive (currently 397 experts &#x2F; 1.26B total parameters on disk, with only 32 resident &#x2F; ~109M active in 5.1 GB of VRAM). It trains on a single stream at batch 1, with the attention&#x2F;embedding trunk learning rate dampened to 0.1x to mitigate catastrophic forgetting.<p>The training is still going and went only through ~35% of the training corpus selected at the beginning of the run (about 8GB in total). Here is the current status:<p>1. enwik9 (First 10^9 bytes of English Wikipedia):<p><pre><code>    Model               Params   Data Read       Cost     enwik9 (bits&#x2F;byte) ↓\n\n    Llama-3.2-1B        1.23B    36 TB (9T tok)  ~$900k   0.68\n    Chinchilla 1B       1.00B    5.6 TB          ~$68k    0.90\n    GPT-2 XL            1.56B    40 GB           ~$43k    1.07\n    GPT-2 Large         0.77B    40 GB           ~$21k    1.12\n    mini-AGI (online)   1.26B    2.8 GB          ~$56     1.14\n    GPT-2 Medium        0.35B    40 GB           ~$10k    1.17\n    mini-AGI (dynamic)  1.26B    2.8 GB          ~$56     1.23\n    mini-AGI (frozen)   1.26B    2.8 GB          ~$56     1.29\n    GPT-2 Small         0.12B    40 GB           ~$3k     1.33\n\n</code></pre>\n2. PG19 (100 Project Gutenberg books, 41 MB test split):<p><pre><code>    Model               Params   Trained On        Cost    PG19 (bits&#x2F;byte) ↓\n\n    MambaByte-972M       0.97B   75 GB (PG19)      ~$4k    0.883\n    MegaByte-1B          1.02B   80 GB (PG19)      ~$1.6k  1.000\n    Transformer-320M     0.32B   80 GB (PG19)      ~$1.6k  1.057\n    mini-AGI (online)    1.26B   2.8 GB (0 PG19)   ~$56    1.447\n    mini-AGI (frozen)    1.26B   2.8 GB (0 PG19)   ~$56    1.995\n\n    The published models were trained on PG19&#x27;s own training books, 75 to 80 GB of them, and are scored on more books like those. mini-AGI has never been trained on PG19 and has read no Victorian novels, so for it these books are completely out of its domain.\n\n</code></pre>\nThere are more details in the repository. The most important part is a difference between &quot;frozen&quot; and &quot;online&quot; attempts where we allow the model to specialize on the task as it goes through the evaluation dataset. Clearly showcasing the power of continual learning regime simply unavailable for any other typical LLM.<p>Full methodology, and replication code is in the repo:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;volotat&#x2F;mini-AGI\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;volotat&#x2F;mini-AGI</a><p>Intermediate weights snapshot on Hugging Face:\n<a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;Volotat&#x2F;mini-AGI-undertrained\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;Volotat&#x2F;mini-AGI-undertrained</a>",
+      "author": "volotat",
+      "publishedAt": "2026-10-24T10:09:27Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50219762",
+      "titleHash": "a7110e45f593da25f49a848ad33e88e0d34353adaddbfe6d4bc62c12a30a3b0b",
+      "contentHash": "9e2dfac56304602d023262893cf9a3eca72370374af7b835debd31c7a5c51bb9",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8710345556213861,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 1,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 80"
+      ]
+    },
+    {
+      "url": "https://github.com/gtanczyk/genaicode",
+      "title": "Show HN: Claude Code(and others) embedded in your app",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I started this project in 2024 when I got fascinated with LLMs, and what I did was a coding agent (CLI -&gt; interactive -&gt; GUI). I also added an integration with Vite for having it embedded inside my apps(mostly games).\nFew months ago I pivoted it to become a low profile AI provider wrapper library (think jQuery for LLM usage), because I realized there is no point to have custom coding agent.<p>Recently I did yet another pivot, and now it is a solution that allows you to embed Claude Code inside of your app, and use it directly from there for 1. development, 2. every day ops and automate the tasks in the app<p>In theory all you need to try it is this command: `npx genaicode embed`, I wonder if anyone would like to give it a try, and let me know how it worked!",
+      "author": "fullstackwife",
+      "publishedAt": "2026-10-24T20:54:27Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/gtanczyk/genaicode",
+      "titleHash": "2b993814a429ea04e0155c00d86f35f444c80b1555a087c55fd0c9ca40fe4a8b",
+      "contentHash": "98c1491711b7e41ff23d8a371bdacd7163970f9b90829447187e32a7d978e983",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9660082498989491,
+        "engagement": 0.10034333188799373
+      },
+      "rank": 2,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 77"
+      ]
+    },
+    {
+      "url": "https://dev.to/gde/926-steps-two-lobotomies-and-zero-nudges-flight-testing-the-commitment-machine-across-gemini-55ca",
+      "title": "926 Steps, Two Lobotomies, and Zero Nudges: Flight-Testing the Commitment Machine Across Gemini, Claude, and GPT-OSS",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A 2026 Harvard study of 718 companies found that AI agents write 30% more code and close zero additional tickets because review times jump 49%. Here is what happened when I put my 1986 Commitment Machine into live production across Gemini, Claude, and GPT-OSS.",
+      "author": "Randal L. Schwartz",
+      "publishedAt": "2026-10-22T23:51:30Z",
+      "engagement": 56,
+      "tags": [
+        "ai",
+        "programming",
+        "architecture",
+        "unix",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/926-steps-two-lobotomies-and-zero-nudges-flight-testing-the-commitment-machine-across-gemini-55ca",
+      "titleHash": "1f5d935b566b6660cb45058276e32604aa8ec607e4a3b41b568a592cc1a5862f",
+      "contentHash": "8da452925e8ce88070663805ff954b641ef6fce881cca929086e5a5ce754507f",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.6260824407526789,
+        "engagement": 0.5852916185574971
+      },
+      "rank": 3,
+      "reasons": [
+        "领域相关性高",
+        "社区热度高",
+        "综合评分 72"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50222093",
+      "title": "Ask HN: Kimi Code hit its 5-hour limit after $1.37 of API usage",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I paid $19 for Kimi Code to test K3.1 Pro Standard (not Highspeed) using the official CLI v2.3.1.<p>I ran two tasks on small repositories:<p>1. Recommend movies based on an existing movie database.\n2. Analyze a website&#x27;s codebase.<p>Neither task completed. The entire 5-hour quota was exhausted within minutes.<p>I analyzed the actual session logs, including background agents:<p>- Fresh input: 368,203 tokens\n- Cached input: 1,183,744 tokens\n- Output: 39,324 tokens\n- Total: 1.59M tokens<p>At Kimi&#x27;s published API rates, that&#x27;s just $1.37 worth of usage before hitting the 5-hour limit which is easily less than 5% of what Claude Code offers at $20 subscription.<p>The logs show: &quot;429 You&#x27;ve reached your 5-hour usage limit.&quot;<p>For comparison, Claude Code on a $20 subscription processed roughly 381M tokens over 4-5 hours using Opus 5.5 xhigh, mostly cached input. That&#x27;s not a controlled benchmark, but the difference in usable capacity is staggering.<p>Both Kimi tasks failed without delivering results. I have video evidence and detailed logs, but won&#x27;t publish private repository data.<p>Video: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=hSr-DLn88AM<p>Is this a quota-accounting bug, or are Kimi&#x27;s $19 subscription limits intentionally this restrictive?<p>Disclosure: I also develop a competing coding agent. These tests used Kimi&#x27;s official CLI.",
+      "author": "waximabbax",
+      "publishedAt": "2026-10-24T15:16:04Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50222093",
+      "titleHash": "7234de9236309257647a7b672cff93806c41a1ec1c6594663dd80e57e95fe5c9",
+      "contentHash": "413b9d8254f8be7e3494aa089660d3a67593eccb84f685f34920eb8f8722d884",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9149583265453879,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 71"
+      ]
+    },
+    {
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "title": "No signs of AI payoff outside the tech sector",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "the-mitr",
+      "publishedAt": "2026-10-24T19:47:19Z",
+      "engagement": 453,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "titleHash": "b7fae33623e93fb091e46ced94dfb4ac0a685e3c4f030559f92bf981ccdd8f91",
+      "contentHash": "b7fae33623e93fb091e46ced94dfb4ac0a685e3c4f030559f92bf981ccdd8f91",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9556586459270389,
+        "engagement": 0.8856852842857013
+      },
+      "rank": 5,
+      "reasons": [
+        "时效性强",
+        "社区热度高",
+        "综合评分 69"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "title": "No signs of AI payoff outside the tech sector",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "the-mitr",
+      "publishedAt": "2026-10-24T19:47:19Z",
+      "engagement": 453,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "titleHash": "b7fae33623e93fb091e46ced94dfb4ac0a685e3c4f030559f92bf981ccdd8f91",
+      "contentHash": "b7fae33623e93fb091e46ced94dfb4ac0a685e3c4f030559f92bf981ccdd8f91",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9556586459270389,
+        "engagement": 0.8856852842857013
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.29162",
+      "title": "Why is AI generated language so hard to understand?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "canjobear",
+      "publishedAt": "2026-10-24T18:04:57Z",
+      "engagement": 146,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.29162",
+      "titleHash": "fc51412de31b3b8eea5334d3924760aa62ef79f6022b21e62de744b5c79a2e19",
+      "contentHash": "fc51412de31b3b8eea5334d3924760aa62ef79f6022b21e62de744b5c79a2e19",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9400903402786269,
+        "engagement": 0.7224391115827253
+      }
+    },
+    {
+      "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+      "title": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "TangerineDream",
+      "publishedAt": "2026-10-24T11:18:54Z",
+      "engagement": 93,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist",
+      "titleHash": "05e2dffae1a4670959f026cc948677d69fe5672314100b2ddc59c2ddf6e57d89",
+      "contentHash": "05e2dffae1a4670959f026cc948677d69fe5672314100b2ddc59c2ddf6e57d89",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8807950415208247,
+        "engagement": 0.6577092845332329
+      }
+    },
+    {
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gnabgib",
+      "publishedAt": "2026-10-24T23:11:54Z",
+      "engagement": 60,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "titleHash": "73aaf2a2f3125d0521231e055f79fb4ae86e7052b6b61f5e0ac700ff8be3e133",
+      "contentHash": "73aaf2a2f3125d0521231e055f79fb4ae86e7052b6b61f5e0ac700ff8be3e133",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9875492123400268,
+        "engagement": 0.595109945003589
+      }
+    },
+    {
+      "url": "https://www.nngroup.com/articles/ai-in-ux-survey-26/",
+      "title": "AI in UX: Work Is Faster, but Practitioners Have Mixed Feelings",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "elwingo1",
+      "publishedAt": "2026-10-24T00:32:17Z",
+      "engagement": 19,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nngroup.com/articles/ai-in-ux-survey-26",
+      "titleHash": "7132d3929a330b471e4bf2eafee7b98a59f01f385c2cd39f43f4cd793362fa99",
+      "contentHash": "7132d3929a330b471e4bf2eafee7b98a59f01f385c2cd39f43f4cd793362fa99",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7939931512996542,
+        "engagement": 0.4336766652213271
+      }
+    },
+    {
+      "url": "https://www.tbray.org/ongoing/When/202x/2026/10/19/The-AI-Temptation",
+      "title": "That AI Temptation",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "robin_reala",
+      "publishedAt": "2026-10-24T06:18:39Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tbray.org/ongoing/When/202x/2026/10/19/The-AI-Temptation",
+      "titleHash": "5e7b83ef171036172780b6b87a9471158ad5b17e1e258447f0c8de962c364916",
+      "contentHash": "5e7b83ef171036172780b6b87a9471158ad5b17e1e258447f0c8de962c364916",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8393683312266658,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://homepage.farm/ai.html",
+      "title": "What's Wrong with AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "meetpateltech",
+      "publishedAt": "2026-10-24T12:30:32Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://homepage.farm/ai.html",
+      "titleHash": "a6e457722b811b4bf7b7c92ce12cbac9cf9f7845ec578c255706f0c185e72ae4",
+      "contentHash": "a6e457722b811b4bf7b7c92ce12cbac9cf9f7845ec578c255706f0c185e72ae4",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8909769674815695,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50220934",
+      "title": "Is AI just another get rich quick scheme?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "You too can get rich quick in real estate --- details in this book; only $49.95.<p>If there really was a sure fire way to get rich quick, why sell books to the public? Why not keep it to yourself and apply it to make money?<p>The same applies to AI. If it was really all that, they wouldn&#x27;t be selling tokens to the public.  They would be forming corporate partnerships, building products and conquering markets --- starting with the financial markets.<p>Those who can --- do. Those who can&#x27;t --- sell books and &quot;tokens&quot;.",
+      "author": "jqpabc123",
+      "publishedAt": "2026-10-24T13:11:37Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50220934",
+      "titleHash": "cd2f7c4a27f90d80c10f0bb2e652ed6137884f1a249e493ea10f5df50550ad35",
+      "contentHash": "8214ac277c2ed4426b1db94f78ada5a88eb93a2cb4f6b01ff7b34d1a1b651feb",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8968695551603524,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://cowagent.ai/en/",
+      "title": "CowAgent – Open-Source Super AI Assistant",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ankitg12",
+      "publishedAt": "2026-10-24T03:32:47Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://cowagent.ai/en",
+      "titleHash": "51afe319d65157ff0ec3a1da12d41b3e717d3fe381eadfa0c712a4fca9c95b18",
+      "contentHash": "51afe319d65157ff0ec3a1da12d41b3e717d3fe381eadfa0c712a4fca9c95b18",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8173244940406321,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.adweek.com/media/advertisers-pull-meta-ads-that-had-unwanted-ai-glow-ups/",
+      "title": "Advertisers Pull Meta Ads That Had Unwanted AI Glow-Ups",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thm",
+      "publishedAt": "2026-10-24T05:27:03Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.adweek.com/media/advertisers-pull-meta-ads-that-had-unwanted-ai-glow-ups",
+      "titleHash": "a6cfcde486fa18647f4ef31284dad0e37282df2ba192ff193fc093815b5393be",
+      "contentHash": "a6cfcde486fa18647f4ef31284dad0e37282df2ba192ff193fc093815b5393be",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8324476727542379,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://github.com/google-deepmind/detectorscope",
+      "title": "DetectorScope: AI text detectors that show their work",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wondersky",
+      "publishedAt": "2026-10-24T15:13:07Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/google-deepmind/detectorscope",
+      "titleHash": "70a97e6f1b6a30d33a5faace162708510a579b1ebe1ea4750bba2e4c79884c02",
+      "contentHash": "70a97e6f1b6a30d33a5faace162708510a579b1ebe1ea4750bba2e4c79884c02",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9145253545443871,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2026/oct/24/forget-the-live-aid-image-africa-is-only-a-broken-continent-in-the-minds-of-the-west",
+      "title": "Forget Live Aid, Africa is only a broken continent in the minds of the West",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "prmph",
+      "publishedAt": "2026-10-24T17:52:06Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/global-development/2026/oct/24/forget-the-live-aid-image-africa-is-only-a-broken-continent-in-the-minds-of-the-west",
+      "titleHash": "f911ab740e046cf44a0c996ad252f13100991224efd771c4f2a3446128b4f5f3",
+      "contentHash": "f911ab740e046cf44a0c996ad252f13100991224efd771c4f2a3446128b4f5f3",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9381540663556418,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://medicalxpress.com/news/2026-10-ai-generalist-doctors-medical.html",
+      "title": "AI gets more diagnoses right than generalist doctors in medical challenge",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "geox",
+      "publishedAt": "2026-10-24T12:38:09Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://medicalxpress.com/news/2026-10-ai-generalist-doctors-medical.html",
+      "titleHash": "5cb4a72ebb8dfecd127c4e0b61e54e6c2f1e5389efd1f54217804dd516706f1f",
+      "contentHash": "5cb4a72ebb8dfecd127c4e0b61e54e6c2f1e5389efd1f54217804dd516706f1f",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.89206649585308,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://kouh.me/ai-text-detector",
+      "title": "Show HN: AI text detector that never sees your text (runs 100% in-browser)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mrkn1",
+      "publishedAt": "2026-10-24T11:28:36Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kouh.me/ai-text-detector",
+      "titleHash": "17303c13006c57b4e8981e0a2b2720af81b945a2b32fcbb54ed8ac2a14406b49",
+      "contentHash": "17303c13006c57b4e8981e0a2b2720af81b945a2b32fcbb54ed8ac2a14406b49",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.882166953711876,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/swrdfish/narro",
+      "title": "Show HN: Narro – Read web pages and Kindle books using local AI voices",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I wanted a read-aloud extension that could read from the Kindle Online Reader. The ones I tried used voices I did not enjoy listening to or had a UX that was too cluttered or annoying or needed a signup.<p>So I decided to vibe code my own. It is open source and uses open weight models that run in the browser.<p><a href=\"https:&#x2F;&#x2F;swrdfish.github.io&#x2F;Narro&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;swrdfish.github.io&#x2F;Narro&#x2F;</a>",
+      "author": "ghoshbinayak",
+      "publishedAt": "2026-10-24T19:37:32Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/swrdfish/narro",
+      "titleHash": "6cff75e7af586abdf432a36a7c1babf151416592f50f854c883c7b4bf0711afb",
+      "contentHash": "fb16e40b4240c863e2a581e2d649655967db195a506a333fc9289938b2e19d1f",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9541596842227367,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://stevekrouse.com/10x",
+      "title": "AI gets about 10x cheaper every year",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Curiositry",
+      "publishedAt": "2026-10-24T14:15:23Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://stevekrouse.com/10x",
+      "titleHash": "bee8c7dfec19fdf1e2a2c8d05a7758e44c00f5f8217140df9a3b93ba8d12f4e5",
+      "contentHash": "bee8c7dfec19fdf1e2a2c8d05a7758e44c00f5f8217140df9a3b93ba8d12f4e5",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9060928974854949,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.ndw.jp/nintendo-interview-261023/",
+      "title": "Shigeru Miyamoto on Gen AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "glimshe",
+      "publishedAt": "2026-10-24T11:52:32Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.ndw.jp/nintendo-interview-261023",
+      "titleHash": "1dbc346218f0d0124faea3df4f10ae52fffcc936e2ebf5ee6777bf6271f51b99",
+      "contentHash": "1dbc346218f0d0124faea3df4f10ae52fffcc936e2ebf5ee6777bf6271f51b99",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8855610942999912,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/Ablation-Tool/kevlar",
+      "title": "Kevlar = MCP Firewall for LLM's",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "zellkernel",
+      "publishedAt": "2026-10-24T22:24:09Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Ablation-Tool/kevlar",
+      "titleHash": "cb247a7029e9b122703b40c539cd0c194506f7e046bec74a7779977ab63e23c7",
+      "contentHash": "cb247a7029e9b122703b40c539cd0c194506f7e046bec74a7779977ab63e23c7",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9800119918379475,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://utkusen.substack.com/p/how-llm-based-penetration-testing",
+      "title": "How LLM-Based Penetration Testing Harnesses Work",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "utku1337",
+      "publishedAt": "2026-10-24T17:15:47Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://utkusen.substack.com/p/how-llm-based-penetration-testing",
+      "titleHash": "bccefd93f68239d5f883f4e64f47f5ef7383bf7a0a6099df341511eb2fe45f20",
+      "contentHash": "bccefd93f68239d5f883f4e64f47f5ef7383bf7a0a6099df341511eb2fe45f20",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9327033052404975,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://kat-assessment.com/",
+      "title": "Show HN: A client-side adaptive cognitive test measuring micro-hesitations",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN!\nI’m not a software engineer by trade. My background is in behavioral science and human-computer interaction, but I wanted to solve a specific problem I found when applying for jobs which is the logical test. They are booooring, easy to cheat on if you really want to and provides very limited information about people. I built this prototype from scratch sing AI to bring my idea to life.\nSo now I&#x27;ve been working on this side project for a Cognitive Adaption Engine (CAT&#x2F;KAT in swedish) for about three weeks. Many pre-employment screening tests i&#x27;ve done use a static item bank and are very liberal with the time allowed on each question, making it easy for Vision LLMs or bots to beat. \nI wanted to see if I could build a fast, client-side engine (JS&#x2F;SVG) that combats this problem by measuring certain biometric cognitive signatures like &quot;switch cost&quot; (how long it takes for your brain to re-adjust when logical rules change) and &quot;post error-slowing&quot;. \nTo go beyond the simple grading of correct&#x2F;incorrect, this test dynamically gives you waves of patterns&#x2F;challenges through a local item bank based on your millisecond response times. If you use an LLM, the constant latencies gets punished with a lower score. If they use a script, the complete lack of natural human variance will be picked up on.\nI am currently trying to calibrate a baseline and need high-aptitude users to stress-test it and to provide more data. It also makes it very fast to complete.<p>Everything runs 100% locally in your browser and since I did use AI, I would love your feedback on how the architecture holds up and the technical approach to anti-cheating or anything that comes to mind on this topic.<p>(Optional) When you finish the test, you can press Ctrl + Shift + X on the results page which unlocks a hidden admin console. There you can see more info on your performance and even download a HR-pdf that translate your data into three tailored interview questions. Unfortunately the admin page is in Swedish, but I believe you will get the idea.",
+      "author": "mr-boombastic",
+      "publishedAt": "2026-10-24T21:56:06Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kat-assessment.com/",
+      "titleHash": "238027573130fdc604d3d3f30110f3827fddd620d467fca615b02c1fe8f37c67",
+      "contentHash": "a00e95d048b28a341ddaac0fe6f1bfcdf5bf48ce18cc20a32da5af6e97f88669",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.97561121816282,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50219762",
+      "title": "Show HN: Benchmarks of continual learning model trained for a month on a laptop",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "A month ago, I shared mini-AGI, an experiment in training a byte-level, continually learning language model from scratch on a single 8 GB laptop GPU (an RTX 3070).\nTo recap the setup briefly: it completely decouples model size from VRAM by paging experts to and from an NVMe drive (currently 397 experts &#x2F; 1.26B total parameters on disk, with only 32 resident &#x2F; ~109M active in 5.1 GB of VRAM). It trains on a single stream at batch 1, with the attention&#x2F;embedding trunk learning rate dampened to 0.1x to mitigate catastrophic forgetting.<p>The training is still going and went only through ~35% of the training corpus selected at the beginning of the run (about 8GB in total). Here is the current status:<p>1. enwik9 (First 10^9 bytes of English Wikipedia):<p><pre><code>    Model               Params   Data Read       Cost     enwik9 (bits&#x2F;byte) ↓\n\n    Llama-3.2-1B        1.23B    36 TB (9T tok)  ~$900k   0.68\n    Chinchilla 1B       1.00B    5.6 TB          ~$68k    0.90\n    GPT-2 XL            1.56B    40 GB           ~$43k    1.07\n    GPT-2 Large         0.77B    40 GB           ~$21k    1.12\n    mini-AGI (online)   1.26B    2.8 GB          ~$56     1.14\n    GPT-2 Medium        0.35B    40 GB           ~$10k    1.17\n    mini-AGI (dynamic)  1.26B    2.8 GB          ~$56     1.23\n    mini-AGI (frozen)   1.26B    2.8 GB          ~$56     1.29\n    GPT-2 Small         0.12B    40 GB           ~$3k     1.33\n\n</code></pre>\n2. PG19 (100 Project Gutenberg books, 41 MB test split):<p><pre><code>    Model               Params   Trained On        Cost    PG19 (bits&#x2F;byte) ↓\n\n    MambaByte-972M       0.97B   75 GB (PG19)      ~$4k    0.883\n    MegaByte-1B          1.02B   80 GB (PG19)      ~$1.6k  1.000\n    Transformer-320M     0.32B   80 GB (PG19)      ~$1.6k  1.057\n    mini-AGI (online)    1.26B   2.8 GB (0 PG19)   ~$56    1.447\n    mini-AGI (frozen)    1.26B   2.8 GB (0 PG19)   ~$56    1.995\n\n    The published models were trained on PG19&#x27;s own training books, 75 to 80 GB of them, and are scored on more books like those. mini-AGI has never been trained on PG19 and has read no Victorian novels, so for it these books are completely out of its domain.\n\n</code></pre>\nThere are more details in the repository. The most important part is a difference between &quot;frozen&quot; and &quot;online&quot; attempts where we allow the model to specialize on the task as it goes through the evaluation dataset. Clearly showcasing the power of continual learning regime simply unavailable for any other typical LLM.<p>Full methodology, and replication code is in the repo:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;volotat&#x2F;mini-AGI\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;volotat&#x2F;mini-AGI</a><p>Intermediate weights snapshot on Hugging Face:\n<a href=\"https:&#x2F;&#x2F;huggingface.co&#x2F;Volotat&#x2F;mini-AGI-undertrained\" rel=\"nofollow\">https:&#x2F;&#x2F;huggingface.co&#x2F;Volotat&#x2F;mini-AGI-undertrained</a>",
+      "author": "volotat",
+      "publishedAt": "2026-10-24T10:09:27Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50219762",
+      "titleHash": "a7110e45f593da25f49a848ad33e88e0d34353adaddbfe6d4bc62c12a30a3b0b",
+      "contentHash": "9e2dfac56304602d023262893cf9a3eca72370374af7b835debd31c7a5c51bb9",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8710345556213861,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/gtanczyk/genaicode",
+      "title": "Show HN: Claude Code(and others) embedded in your app",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I started this project in 2024 when I got fascinated with LLMs, and what I did was a coding agent (CLI -&gt; interactive -&gt; GUI). I also added an integration with Vite for having it embedded inside my apps(mostly games).\nFew months ago I pivoted it to become a low profile AI provider wrapper library (think jQuery for LLM usage), because I realized there is no point to have custom coding agent.<p>Recently I did yet another pivot, and now it is a solution that allows you to embed Claude Code inside of your app, and use it directly from there for 1. development, 2. every day ops and automate the tasks in the app<p>In theory all you need to try it is this command: `npx genaicode embed`, I wonder if anyone would like to give it a try, and let me know how it worked!",
+      "author": "fullstackwife",
+      "publishedAt": "2026-10-24T20:54:27Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/gtanczyk/genaicode",
+      "titleHash": "2b993814a429ea04e0155c00d86f35f444c80b1555a087c55fd0c9ca40fe4a8b",
+      "contentHash": "98c1491711b7e41ff23d8a371bdacd7163970f9b90829447187e32a7d978e983",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9660082498989491,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://terfi.fyi/blog/my-current-llm-driver",
+      "title": "GLM 5.3 Flash Is Ace",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "taran_narat",
+      "publishedAt": "2026-10-24T19:25:58Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://terfi.fyi/blog/my-current-llm-driver",
+      "titleHash": "0a8813d7b977e1a8ed39195c2439df9c537c4c7e9ffb0d56d6813d21ffa3b5ed",
+      "contentHash": "0a8813d7b977e1a8ed39195c2439df9c537c4c7e9ffb0d56d6813d21ffa3b5ed",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.952390517812837,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://ratfactor.com/cards/limitations",
+      "title": "The Importance of Limitations for Creativity and Learning",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-10-24T21:42:47Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ratfactor.com/cards/limitations",
+      "titleHash": "0746f38dd2e3246c47f1863b8b10fd173bba2f54e2b352aa90d04a58a0891e3f",
+      "contentHash": "0746f38dd2e3246c47f1863b8b10fd173bba2f54e2b352aa90d04a58a0891e3f",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9735288827620343,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://apnews.com/article/russia-ukraine-war-starlink-drones-a3a0139dfc23365550306dd66fe43daa",
+      "title": "Musk says he was behind Starlink speed limit after service in Ukraine restored",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "toomanyrichies",
+      "publishedAt": "2026-10-24T20:20:53Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/russia-ukraine-war-starlink-drones-a3a0139dfc23365550306dd66fe43daa",
+      "titleHash": "da6bfe14d7d3198b173c1bb1973b55d50972dc829c2c9daf0c7e5c15523af7ab",
+      "contentHash": "da6bfe14d7d3198b173c1bb1973b55d50972dc829c2c9daf0c7e5c15523af7ab",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9608195114505353,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.nbcnews.com/world/ukraine/ukraine-says-starlink-back-normal-week-limits-rcna605368",
+      "title": "Ukraine says Starlink is back to normal after limits hobbled its drones",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "MilnerRoute",
+      "publishedAt": "2026-10-24T19:57:00Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nbcnews.com/world/ukraine/ukraine-says-starlink-back-normal-week-limits-rcna605368",
+      "titleHash": "434e95d2fe1788587b3f4423d8bdb09df8e1cf012098f3015d430254f70e73eb",
+      "contentHash": "434e95d2fe1788587b3f4423d8bdb09df8e1cf012098f3015d430254f70e73eb",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9571446023253587,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50222093",
+      "title": "Ask HN: Kimi Code hit its 5-hour limit after $1.37 of API usage",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I paid $19 for Kimi Code to test K3.1 Pro Standard (not Highspeed) using the official CLI v2.3.1.<p>I ran two tasks on small repositories:<p>1. Recommend movies based on an existing movie database.\n2. Analyze a website&#x27;s codebase.<p>Neither task completed. The entire 5-hour quota was exhausted within minutes.<p>I analyzed the actual session logs, including background agents:<p>- Fresh input: 368,203 tokens\n- Cached input: 1,183,744 tokens\n- Output: 39,324 tokens\n- Total: 1.59M tokens<p>At Kimi&#x27;s published API rates, that&#x27;s just $1.37 worth of usage before hitting the 5-hour limit which is easily less than 5% of what Claude Code offers at $20 subscription.<p>The logs show: &quot;429 You&#x27;ve reached your 5-hour usage limit.&quot;<p>For comparison, Claude Code on a $20 subscription processed roughly 381M tokens over 4-5 hours using Opus 5.5 xhigh, mostly cached input. That&#x27;s not a controlled benchmark, but the difference in usable capacity is staggering.<p>Both Kimi tasks failed without delivering results. I have video evidence and detailed logs, but won&#x27;t publish private repository data.<p>Video: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=hSr-DLn88AM<p>Is this a quota-accounting bug, or are Kimi&#x27;s $19 subscription limits intentionally this restrictive?<p>Disclosure: I also develop a competing coding agent. These tests used Kimi&#x27;s official CLI.",
+      "author": "waximabbax",
+      "publishedAt": "2026-10-24T15:16:04Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50222093",
+      "titleHash": "7234de9236309257647a7b672cff93806c41a1ec1c6594663dd80e57e95fe5c9",
+      "contentHash": "413b9d8254f8be7e3494aa089660d3a67593eccb84f685f34920eb8f8722d884",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9149583265453879,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://scrawl.kitlangton.com/",
+      "title": "Scrawl: show an agent the problem",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "loige",
+      "publishedAt": "2026-10-24T18:38:21.847-05:00",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "ai-tooling",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://scrawl.kitlangton.com/",
+      "titleHash": "563c3acb407ecc9831f1e5a2242c1402e3aac2d15aee38b87c1512e97f366030",
+      "contentHash": "563c3acb407ecc9831f1e5a2242c1402e3aac2d15aee38b87c1512e97f366030",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.8,
+        "timeliness": 0.99175144374021,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
+      "title": "How to run a city builder on 16 MHz",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "Yogthos",
+      "publishedAt": "2026-10-24T09:18:48.714-05:00",
+      "engagement": 7,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz",
+      "titleHash": "e99fb6220aa480770be1b983f4de07c7e850b5ad731ccc9ae5371824f640e091",
+      "contentHash": "e99fb6220aa480770be1b983f4de07c7e850b5ad731ccc9ae5371824f640e091",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9065914884326384,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://dev.to/james_anderson_h/security-changed-with-ai-and-small-teams-are-falling-behind-5ebg",
+      "title": "Hours, Not Weeks: How AI Rewrote the Clock of Software Security",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The third week of October 2026 was a rough one for anyone who runs software on the internet.  Two...",
+      "author": "James Anderson",
+      "publishedAt": "2026-10-24T05:41:38Z",
+      "engagement": 28,
+      "tags": [
+        "security",
+        "ai",
+        "startup",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/james_anderson_h/security-changed-with-ai-and-small-teams-are-falling-behind-5ebg",
+      "titleHash": "a8936e04211e502a0f89b9c440a2c95d079cbb9b570984113afa18a0203aae71",
+      "contentHash": "530c00dcf0f04cfd27c8df5efbbbaf6797a8c414443eeda6e18cb7ace5212aef",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8343978009734689,
+        "engagement": 0.487465999299652
+      }
+    },
+    {
+      "url": "https://dev.to/sarvar_04/i-let-an-open-model-delete-1242-of-my-saved-articles-on-purpose-i-feel-lighter-l7f",
+      "title": "I let an open model delete 1,242 of my saved articles. On purpose. I feel lighter.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Unpile is a 100% local read-later triage agent. TabPFN decides which saved articles you will actually read, Gemma writes the digest, offline and free.",
+      "author": "Sarvar Nadaf",
+      "publishedAt": "2026-10-23T10:16:38Z",
+      "engagement": 42,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "ai",
+        "opensource",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sarvar_04/i-let-an-open-model-delete-1242-of-my-saved-articles-on-purpose-i-feel-lighter-l7f",
+      "titleHash": "1b21fcddc636782935fa736d84388da09fb1d140e2a40f38e0346888f87f43cf",
+      "contentHash": "f47f1a24b76a34be49802d68f7329c2cac67a95f6a63f67455a4fcfff957f7d9",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.6921378635125598,
+        "engagement": 0.5444894851931955
+      }
+    },
+    {
+      "url": "https://dev.to/gde/926-steps-two-lobotomies-and-zero-nudges-flight-testing-the-commitment-machine-across-gemini-55ca",
+      "title": "926 Steps, Two Lobotomies, and Zero Nudges: Flight-Testing the Commitment Machine Across Gemini, Claude, and GPT-OSS",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A 2026 Harvard study of 718 companies found that AI agents write 30% more code and close zero additional tickets because review times jump 49%. Here is what happened when I put my 1986 Commitment Machine into live production across Gemini, Claude, and GPT-OSS.",
+      "author": "Randal L. Schwartz",
+      "publishedAt": "2026-10-22T23:51:30Z",
+      "engagement": 56,
+      "tags": [
+        "ai",
+        "programming",
+        "architecture",
+        "unix",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/926-steps-two-lobotomies-and-zero-nudges-flight-testing-the-commitment-machine-across-gemini-55ca",
+      "titleHash": "1f5d935b566b6660cb45058276e32604aa8ec607e4a3b41b568a592cc1a5862f",
+      "contentHash": "8da452925e8ce88070663805ff954b641ef6fce881cca929086e5a5ce754507f",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.6260824407526789,
+        "engagement": 0.5852916185574971
+      }
+    },
+    {
+      "url": "https://dev.to/devstackhub/i-explored-respan-gateway-a-plugin-first-open-source-llm-gateway-4d6b",
+      "title": "I Explored Respan Gateway: A Plugin-First, Open-Source LLM Gateway",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Every time I connect an application to a new LLM provider, I run into the same problem: how much...",
+      "author": "Dev Stack Hub",
+      "publishedAt": "2026-10-21T17:39:05Z",
+      "engagement": 64,
+      "tags": [
+        "ai",
+        "llm",
+        "opensource",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/devstackhub/i-explored-respan-gateway-a-plugin-first-open-source-llm-gateway-4d6b",
+      "titleHash": "fe9c95e03b168edd3f0483cfdcced5aa04f11c93e3ef0719f05e154a7fc3688b",
+      "contentHash": "4aa61cf41b0214a01b82788bf9d358c75c6f31b359937934d4968d97d98aa22d",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.468098371049745,
+        "engagement": 0.6043044522142852
+      }
+    },
+    {
+      "url": "https://dev.to/tom_jones_230c4659491adcd/four-models-one-job-each-what-our-own-logs-say-about-splitting-the-work-4lfe",
+      "title": "Four models, one job each: what our own logs say about splitting the work",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Most people pick one model and ask it to do everything. We stopped doing that months ago, mostly...",
+      "author": "Tom Jones",
+      "publishedAt": "2026-10-19T20:00:24Z",
+      "engagement": 50,
+      "tags": [
+        "discuss",
+        "ai",
+        "llm",
+        "productivity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/tom_jones_230c4659491adcd/four-models-one-job-each-what-our-own-logs-say-about-splitting-the-work-4lfe",
+      "titleHash": "120ddaf9f403ee5a25837ccd286ce1489ae0abaf5932a8f7ce0bff0f9aae62f3",
+      "contentHash": "01a1be89e71baf1d184a6f39cb691f09716cfdcb8ac5d7048c0d358f9fcecd7c",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.3016461709788339,
+        "engagement": 0.569190058699312
+      }
+    },
+    {
+      "url": "https://dev.to/jaehyun_cho_0dff271e0d2e5/sending-text-as-images-cut-my-claude-tokens-by-up-to-81-it-also-started-inventing-numbers-57ol",
+      "title": "Sending text as images cut my Claude tokens by up to 81%. It also started inventing numbers.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "There is a trick going around for cutting Claude Code bills: render bulky context (system prompt,...",
+      "author": "Johmisking",
+      "publishedAt": "2026-10-21T07:14:03Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "claude",
+        "llm",
+        "productivity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/jaehyun_cho_0dff271e0d2e5/sending-text-as-images-cut-my-claude-tokens-by-up-to-81-it-also-started-inventing-numbers-57ol",
+      "titleHash": "86c2657ed149c6e1fcd1fe3b8fb4baf6951e46f5ea48401458fd2adc88d5479f",
+      "contentHash": "143b4323911a7ce4511bf3fc71be7dc77fee43d1948c6852c3ec5fa1b9e3420d",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.423431354426919,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://huggingface.co/unsloth/flint-GGUF",
+      "title": "unsloth/flint-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 228 likes · 78891 downloads",
+      "engagement": 228,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/unsloth/flint-GGUF",
+      "titleHash": "ef47aee2e7350f6116ef86b127a3ca8f76bd19dfe05083d27d9d714a06cc06e5",
+      "contentHash": "dc2993bc56842dec04461b8386810ea103e4d4a4a47f1195593664c9992bb38b",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7866118274466293
+      }
+    },
+    {
+      "url": "https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0",
+      "title": "orcarouter/OrcaCyber-Nano-1.0",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 235 likes · 27054 downloads",
+      "engagement": 235,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0",
+      "titleHash": "04472cf4b6014b705200e96ae0d80d12e9bb1b2ee00b5a5a8b7f4d5fb804a44a",
+      "contentHash": "a77e6f91c84cc1f734120634539868f2135540c057e4bfb8c8032a8a45e5a58c",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7909706676567022
+      }
+    }
+  ]
+}
