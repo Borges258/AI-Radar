@@ -1,0 +1,944 @@
+{
+  "date": "2026-10-26",
+  "stats": {
+    "scraped": 170,
+    "deduped": 34,
+    "scored": 34
+  },
+  "summary": "今日焦点涵盖AI行业动态与前沿技术突破。OpenAI与Anthropic大幅降价引发市场震荡，Cerebras部署万亿参数模型展现算力新高度。同时，10岁CNN在皮肤癌诊断中超越前沿LLM，彰显专用模型价值。此外，Linux发行商遭遇版权诉讼，以及一款纯C语言从零构建的无Linux依赖新操作系统LimonOS亮相，展现技术多样性。",
+  "recommendations": [
+    {
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "minimaxir",
+      "publishedAt": "2026-10-25T21:11:31Z",
+      "engagement": 107,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://minimaxir.com/2026/10/cheap-llms",
+      "titleHash": "1bfc175499fb01e47af69620606ff872e4d8d6ae16e5f29762600413b2c50ae5",
+      "contentHash": "1bfc175499fb01e47af69620606ff872e4d8d6ae16e5f29762600413b2c50ae5",
+      "score": 84,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.75,
+        "timeliness": 0.9672985597112463,
+        "engagement": 0.6778079184956499
+      },
+      "rank": 1,
+      "reasons": [
+        "解析LLM价格战背后的商业逻辑"
+      ],
+      "overview": "探讨OpenAI和Anthropic在数月内将大语言模型价格下调最高80%的原因，分析其背后的市场竞争策略、成本结构变化及行业价格战对开发者和企业用户产生的深远影响。"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50234861",
+      "title": "LimonOS new OS no Unix no Linux",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Wrote everything myself from scratch in pure C without any Linux or pre-built distros. It&#x27;s a custom monolithic architecture with the Limine bootloader, custom drivers, window manager, and terminal.<p>As for models and agents: I used LLM agents as co-authors for routine tasks, writing tests, and debugging low-level code. I tuned them to strictly generate code without the standard library (libc) and to create host-side unit tests to verify modules before packing them into the kernel.<p>https:&#x2F;&#x2F;github.com&#x2F;AnonimusShamshiAlex&#x2F;LimonOS",
+      "author": "DrMoris",
+      "publishedAt": "2026-10-25T18:56:21Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50234861",
+      "titleHash": "111bfae84dbebb91a5cdb0c9b7e7050d523e1671d24f43ec98117bcc19dc4ec0",
+      "contentHash": "ffe641ad248813df5d9da479c2ff46fd1be893ae0eaf338376d8388ee1ed54cd",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9465460335579834,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 2,
+      "reasons": [
+        "纯C语言从零构建OS的独特技术实践"
+      ],
+      "overview": "介绍一款名为LimonOS的新型操作系统，开发者使用纯C语言从零编写，摒弃了Unix和Linux基础，采用自定义单片架构、Limine引导加载程序及自研驱动程序，体现了底层系统构建的创新尝试。"
+    },
+    {
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sungam",
+      "publishedAt": "2026-10-25T17:15:38Z",
+      "engagement": 407,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://lynchlab.net/llm-skin-cancer",
+      "titleHash": "b7442fc4f9e99b54cb3d8c45da3ae3a82bd439102e976971c8e6bc5282c7f201",
+      "contentHash": "b7442fc4f9e99b54cb3d8c45da3ae3a82bd439102e976971c8e6bc5282c7f201",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9313727207743987,
+        "engagement": 0.8702200543632933
+      },
+      "rank": 3,
+      "reasons": [
+        "揭示专用CNN在垂直领域超越LLM的价值"
+      ],
+      "overview": "研究表明，一个训练长达10年的卷积神经网络（CNN）在皮肤癌诊断任务上的表现优于当前前沿大语言模型，证明了针对特定垂直领域深度优化的传统深度学习模型仍具有强大的竞争力和实际应用价值。"
+    },
+    {
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-10-25T01:33:49Z",
+      "engagement": 350,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "titleHash": "4608b4eac7df6dcd0ba1679816688c0e9cba5ad224167be01a5dddebdcab2c59",
+      "contentHash": "4608b4eac7df6dcd0ba1679816688c0e9cba5ad224167be01a5dddebdcab2c59",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8007464572088334,
+        "engagement": 0.8484357054886079
+      },
+      "rank": 4,
+      "reasons": [
+        "见证万亿参数模型落地的算力突破"
+      ],
+      "overview": "Cerebras宣布成功部署了具有万亿参数规模的AI模型，展示了其在大规模推理算力领域的技术突破，标志着AI硬件基础设施能够支撑更大规模模型的实时运行，推动高端AI应用的发展。"
+    },
+    {
+      "url": "https://www.hollywoodreporter.com/music/music-industry-news/anthropic-elvis-presley-lawsuit-ai-1236739617/",
+      "title": "Anthropic Sued for Using Elvis Presley Music to Train AI Models",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ersinesen",
+      "publishedAt": "2026-10-25T09:15:56Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.hollywoodreporter.com/music/music-industry-news/anthropic-elvis-presley-lawsuit-ai-1236739617",
+      "titleHash": "50ce3a37226b6401299d75c9c53d944e6059d8000632a137bbd10fe9f84bffd3",
+      "contentHash": "50ce3a37226b6401299d75c9c53d944e6059d8000632a137bbd10fe9f84bffd3",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8623759595374682,
+        "engagement": 0.318080836479775
+      },
+      "rank": 5,
+      "reasons": [
+        "AI训练数据版权争议的法律警示"
+      ],
+      "overview": "Anthropic面临一项诉讼，指控其在使用Elvis Presley的音乐数据训练AI模型时侵犯了版权，该案件引发了关于AI训练数据合法性、艺术家权益保护及行业合规标准的广泛讨论。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-10-25T01:33:49Z",
+      "engagement": 350,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "titleHash": "4608b4eac7df6dcd0ba1679816688c0e9cba5ad224167be01a5dddebdcab2c59",
+      "contentHash": "4608b4eac7df6dcd0ba1679816688c0e9cba5ad224167be01a5dddebdcab2c59",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8007464572088334,
+        "engagement": 0.8484357054886079
+      }
+    },
+    {
+      "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+      "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "romanhn",
+      "publishedAt": "2026-10-25T16:28:26Z",
+      "engagement": 193,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+      "titleHash": "8a8db393e38213f27d4b57f577b435780d6e0eb1c6a0e59784d025b5900b81e3",
+      "contentHash": "8a8db393e38213f27d4b57f577b435780d6e0eb1c6a0e59784d025b5900b81e3",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9243458211707885,
+        "engagement": 0.7626005766434086
+      }
+    },
+    {
+      "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+      "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thunderbong",
+      "publishedAt": "2026-10-25T09:51:17Z",
+      "engagement": 130,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+      "titleHash": "e13e35b4ac8f134cf4bd42971a76272a2bfeed4f445389b7ff09fcd46f3ee3f0",
+      "contentHash": "e13e35b4ac8f134cf4bd42971a76272a2bfeed4f445389b7ff09fcd46f3ee3f0",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8672811965932798,
+        "engagement": 0.7057570985519215
+      }
+    },
+    {
+      "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+      "title": "Imagine an AI future where being banned means you are now economically useless",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "MrBuddyCasino",
+      "publishedAt": "2026-10-25T12:47:20Z",
+      "engagement": 94,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/boneGPT/status/2114035719853265264",
+      "titleHash": "8db436e2d46cc68dd786cb1f4a1ac26aa874cce5276267ba6c95f7e14445069d",
+      "contentHash": "8db436e2d46cc68dd786cb1f4a1ac26aa874cce5276267ba6c95f7e14445069d",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8921288824331203,
+        "engagement": 0.6592412017629493
+      }
+    },
+    {
+      "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
+      "title": "A mathematician reads the AI future",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "artninja1988",
+      "publishedAt": "2026-10-25T16:31:21Z",
+      "engagement": 46,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133",
+      "titleHash": "bc70eb7f8bb5b6fda7f09fa7fc6504a36baee2a2f6db674d9ca3adf9c1c41eeb",
+      "contentHash": "bc70eb7f8bb5b6fda7f09fa7fc6504a36baee2a2f6db674d9ca3adf9c1c41eeb",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9247784989774708,
+        "engagement": 0.5573659526452391
+      }
+    },
+    {
+      "url": "https://www.businessinsider.com/apollo-ai-zero-financial-payoff-corporate-america-economic-analysis-2026-10",
+      "title": "Apollo says AI has delivered 'zero financial payoff' outside the tech industry",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "levzettelin",
+      "publishedAt": "2026-10-25T22:49:06Z",
+      "engagement": 23,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.businessinsider.com/apollo-ai-zero-financial-payoff-corporate-america-economic-analysis-2026-10",
+      "titleHash": "3dfc6b6bc98f2a894d3a0ad8a41e281451de8d4e5f58f9712dc15372fe3392c7",
+      "contentHash": "3dfc6b6bc98f2a894d3a0ad8a41e281451de8d4e5f58f9712dc15372fe3392c7",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9825630491891885,
+        "engagement": 0.46007041390386866
+      }
+    },
+    {
+      "url": "https://vithushansylvester.com/writing/the-real-impact-of-ai-on-tech-jobs",
+      "title": "AI didn't cause the tech jobs bust, but it explains why there's no recovery",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hacker_v_s",
+      "publishedAt": "2026-10-25T18:42:23Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://vithushansylvester.com/writing/the-real-impact-of-ai-on-tech-jobs",
+      "titleHash": "615d0fed3037f615e4d1b250ded74563b025d8af9e19b8668cf2f54e7847738c",
+      "contentHash": "615d0fed3037f615e4d1b250ded74563b025d8af9e19b8668cf2f54e7847738c",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9444272348736505,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://medium.com/@thomasunise/this-open-source-cybersecurity-platform-uses-ai-agents-to-detect-threats-and-protect-businesses-762e65392b42",
+      "title": "Show HN: Open-Source Cybersecurity Platform Uses AI Agents to Protect Businesses",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "modern_cmo",
+      "publishedAt": "2026-10-25T13:41:19Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://medium.com/@thomasunise/this-open-source-cybersecurity-platform-uses-ai-agents-to-detect-threats-and-protect-businesses-762e65392b42",
+      "titleHash": "b80c9d43ad5ce144a414ff25d777853c01d644e5b274286c903a91f82926507c",
+      "contentHash": "b80c9d43ad5ce144a414ff25d777853c01d644e5b274286c903a91f82926507c",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8998897670375214,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://unverifiablerewards.substack.com/p/why-im-short-the-ai-buildout-even",
+      "title": "Why I'm Short the AI Buildout Even Though I'm Long Computers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "paulbaumgart",
+      "publishedAt": "2026-10-25T20:44:07Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://unverifiablerewards.substack.com/p/why-im-short-the-ai-buildout-even",
+      "titleHash": "fb854ffc0dda844edbd34a492cdf234867e13476d82482e589e3f286dbefdbff",
+      "contentHash": "fb854ffc0dda844edbd34a492cdf234867e13476d82482e589e3f286dbefdbff",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9630553107594729,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://github.com/socrates6969/jukebox-os",
+      "title": "Jukebox-OS: Deterministic time-travel replay and ACID tool sandbox for AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mariuscarlsson",
+      "publishedAt": "2026-10-25T16:29:46Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/socrates6969/jukebox-os",
+      "titleHash": "92aeb12315f6bf02c47269fa2effeaeba172973997525431a6b9ab86d371b8c6",
+      "contentHash": "92aeb12315f6bf02c47269fa2effeaeba172973997525431a6b9ab86d371b8c6",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9245435916150403,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "title": "Forced to pick, Grok's AI model chooses Republicans. OpenAI's picks Democrats",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "blooalien",
+      "publishedAt": "2026-10-25T01:07:24Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats",
+      "titleHash": "38e79efb6338bf3da8256c91dcb05c12d00aac6f52845531084ebf831deb71fc",
+      "contentHash": "38e79efb6338bf3da8256c91dcb05c12d00aac6f52845531084ebf831deb71fc",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.7973596171584112,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.hollywoodreporter.com/music/music-industry-news/anthropic-elvis-presley-lawsuit-ai-1236739617/",
+      "title": "Anthropic Sued for Using Elvis Presley Music to Train AI Models",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ersinesen",
+      "publishedAt": "2026-10-25T09:15:56Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.hollywoodreporter.com/music/music-industry-news/anthropic-elvis-presley-lawsuit-ai-1236739617",
+      "titleHash": "50ce3a37226b6401299d75c9c53d944e6059d8000632a137bbd10fe9f84bffd3",
+      "contentHash": "50ce3a37226b6401299d75c9c53d944e6059d8000632a137bbd10fe9f84bffd3",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8623759595374682,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50234108",
+      "title": "Ask HN: What is the main bottleneck facing Agentic AI today?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hey guys, today I read a statistic that showed that Agentic traffic surpassed human traffic on the internet and that statistic was very shocking to me.  At the same time I saw another statistic that showed only 10% of agents built, actually get into production. These two statistics seemed ironic to me. So I wondered to myself what is the major bottleneck that is causing a lot of the agents that are being built not get into production and what is the infrastructure missing to make Agentic traffic to thrive even more?",
+      "author": "Francis221",
+      "publishedAt": "2026-10-25T17:52:28Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50234108",
+      "titleHash": "f807186945c5770c1d8af4534dc5d04b301f5c56096876efaaa07fc80e608dcd",
+      "contentHash": "6e9e0230340bb46817bf2a9815eef79426ce627f8a83a4b4a0da5d00d10eace0",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9368933707094204,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "title": "The AI graveyard: a running list of projects and startups that didn't make it",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "theanonymousone",
+      "publishedAt": "2026-10-25T13:16:49Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
+      "titleHash": "8316e142267b1aef5e8a32ea64e0be894b6f9e66734949ba5facc68a98a27851",
+      "contentHash": "8316e142267b1aef5e8a32ea64e0be894b6f9e66734949ba5facc68a98a27851",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8963592055749703,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.cbc.ca/news/world/ai-coding-hack-smart-tvs-9.7392179",
+      "title": "People are using AI to 'dumb down' their smart TVs. Is that a good idea?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "devonnull",
+      "publishedAt": "2026-10-25T19:10:53Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cbc.ca/news/world/ai-coding-hack-smart-tvs-9.7392179",
+      "titleHash": "63c48f42b5fb2fe35b381ae2a46722da5752fc48d58e5c0377cfd5d1133404b3",
+      "contentHash": "63c48f42b5fb2fe35b381ae2a46722da5752fc48d58e5c0377cfd5d1133404b3",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9487558446507302,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://observer.co.uk/news/technology/article/bill-gates-warns-the-evolutionary-age-of-ai-will-be-brutal-for-workers",
+      "title": "Bill Gates warns the 'evolutionary' age of AI will be brutal for workers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "iamflimflam1",
+      "publishedAt": "2026-10-25T09:19:04Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://observer.co.uk/news/technology/article/bill-gates-warns-the-evolutionary-age-of-ai-will-be-brutal-for-workers",
+      "titleHash": "dbde69c00ac121f21d21c4fb38dbf83f9130a33f93078c068a496d8e4f4f12bb",
+      "contentHash": "dbde69c00ac121f21d21c4fb38dbf83f9130a33f93078c068a496d8e4f4f12bb",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8628096242937555,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://blog.eunach.scot/struggling-to-keep-ai-out",
+      "title": "Struggling to Keep AI Out",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "latexr",
+      "publishedAt": "2026-10-25T20:47:39Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.eunach.scot/struggling-to-keep-ai-out",
+      "titleHash": "5785e123700d94b6a05d17a49081b38ac7d7a0d741e246ae57864f4abd00f46a",
+      "contentHash": "5785e123700d94b6a05d17a49081b38ac7d7a0d741e246ae57864f4abd00f46a",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9636014465863642,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://ai.jagular.io",
+      "title": "Show HN: AI Heat Map Sourced from over 140 News Feeds",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "psiberaktiv",
+      "publishedAt": "2026-10-25T03:25:15Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ai.jagular.io/",
+      "titleHash": "811308018e3536aca5b4425399870a4684d3c9e58dad8696f6b011c2b6988794",
+      "contentHash": "811308018e3536aca5b4425399870a4684d3c9e58dad8696f6b011c2b6988794",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8151922088487612,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/SRN0129/Agenttrust",
+      "title": "Show HN: AgentTrust – Zero-trust security and human approvals for AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "SRN0129",
+      "publishedAt": "2026-10-25T20:46:50Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/SRN0129/Agenttrust",
+      "titleHash": "b4bf2c2f4f2f826fb3a18936054cb991f7fb19b4c5236f9ec58774593ad38fd2",
+      "contentHash": "b4bf2c2f4f2f826fb3a18936054cb991f7fb19b4c5236f9ec58774593ad38fd2",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.963475189566644,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.nytimes.com/2026/10/25/opinion/ai-bubble-financial-crisis-lehman.html",
+      "title": "AI Boom Looks a Lot Like the Housing Bubble",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "saikatsg",
+      "publishedAt": "2026-10-25T18:00:28Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nytimes.com/2026/10/25/opinion/ai-bubble-financial-crisis-lehman.html",
+      "titleHash": "b25577b60f07358d415aa88648f1f546088f08f0971192fb51403be77916b5c3",
+      "contentHash": "b25577b60f07358d415aa88648f1f546088f08f0971192fb51403be77916b5c3",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.938096744722053,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sungam",
+      "publishedAt": "2026-10-25T17:15:38Z",
+      "engagement": 407,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://lynchlab.net/llm-skin-cancer",
+      "titleHash": "b7442fc4f9e99b54cb3d8c45da3ae3a82bd439102e976971c8e6bc5282c7f201",
+      "contentHash": "b7442fc4f9e99b54cb3d8c45da3ae3a82bd439102e976971c8e6bc5282c7f201",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9313727207743987,
+        "engagement": 0.8702200543632933
+      }
+    },
+    {
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "minimaxir",
+      "publishedAt": "2026-10-25T21:11:31Z",
+      "engagement": 107,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://minimaxir.com/2026/10/cheap-llms",
+      "titleHash": "1bfc175499fb01e47af69620606ff872e4d8d6ae16e5f29762600413b2c50ae5",
+      "contentHash": "1bfc175499fb01e47af69620606ff872e4d8d6ae16e5f29762600413b2c50ae5",
+      "score": 84,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.75,
+        "timeliness": 0.9672985597112463,
+        "engagement": 0.6778079184956499
+      }
+    },
+    {
+      "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
+      "title": "R/open source bans all solo projects and projects using LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "schleck8",
+      "publishedAt": "2026-10-25T14:05:03Z",
+      "engagement": 78,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
+      "titleHash": "2b70dd4f2c0bda87559e46000367552bdcdf1017a9362a6b398f9f861d1d8a82",
+      "contentHash": "2b70dd4f2c0bda87559e46000367552bdcdf1017a9362a6b398f9f861d1d8a82",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9033231079782089,
+        "engagement": 0.6325423637634805
+      }
+    },
+    {
+      "url": "https://github.com/aymen94/NeuronDump",
+      "title": "NeuronDump: Open a local LLM as a 3D graph, cut parts, see what breaks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "aymen1994",
+      "publishedAt": "2026-10-25T19:45:09Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/aymen94/NeuronDump",
+      "titleHash": "c0c5329dce3ec185ae79bf876395ef3cddd4c64e0f540030a326d661b271378f",
+      "contentHash": "c0c5329dce3ec185ae79bf876395ef3cddd4c64e0f540030a326d661b271378f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9539865768445298,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://alexalejandre.com/interviews/michal-wallace/",
+      "title": "Michal Wallace on Narrative Programming: Why Learn J when LLMs Code?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "veqq",
+      "publishedAt": "2026-10-25T05:14:39Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://alexalejandre.com/interviews/michal-wallace",
+      "titleHash": "eb28de07ccac67ede44b7214f19c3ae9253115b2721b50f6e8eefc8edf2c43e6",
+      "contentHash": "eb28de07ccac67ede44b7214f19c3ae9253115b2721b50f6e8eefc8edf2c43e6",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8296278568949985,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://zenodo.org/records/23441596",
+      "title": "Let Your LLM Talks About ARIO",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Ario_Framework",
+      "publishedAt": "2026-10-25T17:04:12Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://zenodo.org/records/23441596",
+      "titleHash": "06be8f55774b257a610468a48529f5830d9266a337d0eafd402d4ea470bcf2f0",
+      "contentHash": "06be8f55774b257a610468a48529f5830d9266a337d0eafd402d4ea470bcf2f0",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9296656960936845,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://www.redwoodresearch.org/blog/simulated-control-evaluations",
+      "title": "Red-teaming AI agent monitors with an LLM that fakes tool outputs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sgiannopoulos",
+      "publishedAt": "2026-10-25T15:41:09Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.redwoodresearch.org/blog/simulated-control-evaluations",
+      "titleHash": "9fc2ef15838d1338d3b08d7e9a5e868ccedd1b2ae18054e66d3dbe06adfa6265",
+      "contentHash": "9fc2ef15838d1338d3b08d7e9a5e868ccedd1b2ae18054e66d3dbe06adfa6265",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9173596712025814,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50235819",
+      "title": "Ask HN: Where is GTAcraft VI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Since everyone is starting to recreate popular apps and games in Rust using LLMs and REA, I&#x27;m wondering where the GTA 6 clone is...<p>SCNR.",
+      "author": "tobwen",
+      "publishedAt": "2026-10-25T20:37:08Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50235819",
+      "titleHash": "e4a2df754dac6d22fbc7c033f16fdd9085917f8624e63ec74a5350aeb357d2b7",
+      "contentHash": "03c9411b53219827234754dbb537f2e1e5a7733971b2b8d98e9c664f28a7e3a0",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.961976829927598,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50234861",
+      "title": "LimonOS new OS no Unix no Linux",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Wrote everything myself from scratch in pure C without any Linux or pre-built distros. It&#x27;s a custom monolithic architecture with the Limine bootloader, custom drivers, window manager, and terminal.<p>As for models and agents: I used LLM agents as co-authors for routine tasks, writing tests, and debugging low-level code. I tuned them to strictly generate code without the standard library (libc) and to create host-side unit tests to verify modules before packing them into the kernel.<p>https:&#x2F;&#x2F;github.com&#x2F;AnonimusShamshiAlex&#x2F;LimonOS",
+      "author": "DrMoris",
+      "publishedAt": "2026-10-25T18:56:21Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50234861",
+      "titleHash": "111bfae84dbebb91a5cdb0c9b7e7050d523e1671d24f43ec98117bcc19dc4ec0",
+      "contentHash": "ffe641ad248813df5d9da479c2ff46fd1be893ae0eaf338376d8388ee1ed54cd",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9465460335579834,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://git-ing-over-it.vercel.app/",
+      "title": "Show HN: Git-ing Over it, learn Git like you'll use it IRL",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN! I made a browser game called Git-ing Over It around the git situations you might actually run into at work. It&#x27;s completely free, 14 levels, no sign up!<p>A Slack message, some objectives, a terminal, and at times a browser window or a code file welcome you in each level.<p>Each level is a mix of &#x27;whose fault it is &#x27;- sometimes it&#x27;s you, sometimes it&#x27;s your made-up teammate&#x27;s, and sometimes it&#x27;s just a bad Monday situation.<p>It&#x27;s a real git engine so the answers are judged on the final state of the repo. No LLMs checking it, and no direct command-based solutions.<p>It is more intended for early devs and students.<p>Of course AI can solve all your git problems but at the end of the day, fundamentals tell the difference. So git is needed. Even if AI handles git for you, it doesn&#x27;t hurt to know the whys and hows. And this is where a game like this helps.<p>Please go and break something. I&#x27;d love to know of levels where the commands don&#x27;t behave as expected. Link: <a href=\"https:&#x2F;&#x2F;git-ing-over-it.vercel.app&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;git-ing-over-it.vercel.app&#x2F;</a>",
+      "author": "k2maan",
+      "publishedAt": "2026-10-25T04:23:11Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://git-ing-over-it.vercel.app/",
+      "titleHash": "aaebf90d1b473d306c2038170cfa3c27cd267a2a86b684d811f5548e5bcc978a",
+      "contentHash": "b1d92f1d7cecb6640e72b03412f481220229dde794d18c9dae1e45d501463a58",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8228051096422617,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://refi64.dev/posts/chromium-audio-break.html",
+      "title": "When a glibc update accidentally breaks Chromium's audio (2021)",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "seb",
+      "publishedAt": "2026-10-25T10:34:21.618-05:00",
+      "engagement": 12,
+      "tags": [
+        "c",
+        "debugging",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://refi64.dev/posts/chromium-audio-break.html",
+      "titleHash": "2a91bef27f3d623835b1261934e50c6eb72035fc335e7daa1e6ffb1a7cc320ef",
+      "contentHash": "2a91bef27f3d623835b1261934e50c6eb72035fc335e7daa1e6ffb1a7cc320ef",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9163608299566132,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://dev.to/debashish_ghosal/three-times-my-test-failed-and-the-llm-was-right-43l2",
+      "title": "Three Times My Test Failed and the LLM Was Right",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A test fails, and the reflex is: the code is wrong. Debug the code, fix the code, move on. That...",
+      "author": "Debashish Ghosal",
+      "publishedAt": "2026-10-25T01:03:43Z",
+      "engagement": 40,
+      "tags": [
+        "ai",
+        "programming",
+        "llm",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/debashish_ghosal/three-times-my-test-failed-and-the-llm-was-right-43l2",
+      "titleHash": "a319ce9ed8638786e77978b5e429f96f3d69541a0f11b5ba983bb682ceeecb54",
+      "contentHash": "9189d58a825f5e81bda6e8c80bdd8d8e5126e0d5039085be7e7723edf80f0802",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7968885198612949,
+        "engagement": 0.5375946189065784
+      }
+    },
+    {
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "title": "Nanbeige/Nanbeige4.3-33B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 365 likes · 0 downloads",
+      "engagement": 365,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "titleHash": "3c9097235d13af605156b3898e4cc766d6ecddd4c4f6a921255a6bc8e1431cb6",
+      "contentHash": "da5388724f10b09e05f525f6e11a53498fa4b4b912824e8165538cb4646b46a7",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8544936951314702
+      }
+    },
+    {
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 280 likes · 412392 downloads",
+      "engagement": 280,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "titleHash": "d0323a012185219149ac4583d4864b3fc1728b4fea81f724afbfd2a39d92a37b",
+      "contentHash": "69f033e7ade58de93c9ce1d1d92360ff5adaff90e00725b0c2b217c9c676f48d",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8162354399683599
+      }
+    }
+  ]
+}
