@@ -1,0 +1,1603 @@
+{
+  "date": "2026-10-28",
+  "stats": {
+    "scraped": 170,
+    "deduped": 62,
+    "scored": 62
+  },
+  "summary": "今日聚焦AI前沿与工程实践：从Bash驱动的极简Agent框架，到GUI、推荐系统、Agent记忆机制的算法突破，再到RAG知识冲突的决策模型。涵盖Agent基础设施、多模态交互及LLM应用深度优化，为构建高效、智能的AI系统提供新思路与技术洞察。",
+  "recommendations": [
+    {
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "title": "shareAI-lab/learn-claude-code",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "author": "shareAI-lab",
+      "publishedAt": "2026-10-27T04:47:00Z",
+      "engagement": 79373,
+      "tags": [
+        "agent",
+        "agent-development",
+        "ai-agent",
+        "claude",
+        "claude-code",
+        "educational",
+        "llm",
+        "python",
+        "teaching",
+        "tutorial",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/shareAI-lab/learn-claude-code",
+      "titleHash": "cb04d32c8421d2288ad718ec2b63532754ee8f62abd7516bd895f3915ed47aba",
+      "contentHash": "9fa2de18f3fdfebae9b99bf2a04bde70ff9f5f52787e3e2005ef3c9f05998ce2",
+      "score": 91,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.95,
+        "timeliness": 0.8182139450836943,
+        "engagement": 1
+      },
+      "rank": 1,
+      "reasons": [
+        "Bash极简主义，适合理解Agent底层。"
+      ],
+      "overview": "一个基于Bash构建的极简Claude Code风格Agent框架，从零实现核心逻辑，旨在以最小依赖展示Agent Harness的构建原理。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36877v1",
+      "title": "GUI-JEPA: Candidate-Conditioned JEPA Latents as a Fast Action Policy for Mobile GUI Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Mobile GUI agents are typically fine-tuned 7B-scale vision-language models (VLMs) that generate each action as text. However, these VLMs decode every action token by token, and even agents that score candidate actions keep a large language model or VLM in the loop, making them slow and memory-hungry. To address these issues, we propose GUI-JEPA, to our knowledge the first decoder-free GUI agent policy built on a Joint-Embedding Predictive Architecture (JEPA), which selects actions in the latent space of a JEPA encoder pretrained on unlabelled GUI screenshots. Its action- and region-conditioned latent predictor turns the screen latent into one latent per candidate action, letting lightweight heads score all candidates against the instruction in a single batched pass, without decoding a token. We further show that the scorer relies on this latent pathway and that the predictor is trained for the decision itself: a randomly initialised predictor does just as well as one pretrained on screen dynamics. On AndroidControl, GUI-JEPA is 2.8-4.0x faster on the same GPU than a Qwen2.5-VL-7B agent we fine-tune with the same inputs, while reaching 86-92% of its in-distribution accuracy with 6% of its parameters. Code is available at https://github.com/bcwang-sjtu/GUI-JEPA",
+      "publishedAt": "2026-10-27T09:17:51Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36877v1",
+      "titleHash": "460a40ee2512d42780b9dac4b1957f083dbf68ed347e75da67cb936e830c31fd",
+      "contentHash": "943ce7b39e1b74684d65984320dea1c7fdc1455eb021c83d1e12790c271973d4",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8545559148969404,
+        "engagement": 0
+      },
+      "rank": 2,
+      "reasons": [
+        "突破VLM解码瓶颈，提升GUI响应速度。"
+      ],
+      "overview": "提出GUI-JEPA模型，利用候选条件化JEPA潜空间作为快速动作策略，替代传统VLM逐token解码，显著提升移动GUI智能体效率。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36937v1",
+      "title": "JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Generative recommendation (GR) represents items as semantic identifiers (SIDs) and autoregressively generates the next item's SID from interaction history. However, most methods assign the same SID length to all items despite highly unequal interaction frequencies. This uniform design repeatedly incurs the cost of fine-grained codes for popular items, while shortening codes to reduce this cost also compresses the semantic representations of long-tail items. Inspired by the compact forms of frequent expressions in natural language, we propose JevRec to encode items as variable-length words and generate the next item from interaction context. Linguistic encoding retains frequency-dependent semantic prefixes from shared codebooks, producing shorter SIDs for popular items and richer descriptions for long-tail items. Yet predicting a sequence-level length and generating token-level content impose different optimization requirements that may conflict under a shared output head. Our Jev-like decision modeling component therefore predicts a length distribution with a dedicated head and generates content conditioned on length through a separate head while sharing the interaction-history representation. Experiments on three public datasets show that JevRec outperforms all compared baselines across the evaluated recommendation metrics. Further analyses show lower training and inference time than TIGER and reduced gradient conflict between length and content prediction.",
+      "publishedAt": "2026-10-27T09:59:44Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36937v1",
+      "titleHash": "929b9db8268a2cf8f112c9a7509d9a81dbb9520304100062b3b75b7d8592bbbf",
+      "contentHash": "b82087c7db8350258cdd7c2ff9cb09e852227877fe145f61f740251418245c57",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8603180489303643,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "优化生成式推荐，平衡语义与决策。"
+      ],
+      "overview": "JevRec通过Jev-like决策建模与语言编码，改进LLM生成式推荐系统，优化从交互历史到语义标识符的自回归生成过程。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36918v1",
+      "title": "TrawMem: Reframing Agent Memory as Task-Oriented Role-Adaptive Workspaces",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language model (LLM) agents rely on memory systems to leverage long-term interactions, yet existing systems typically retrieve memories based on their relevance to the current query and use them as contextual evidence. However, relevance alone does not characterize how a memory contributes to task solving: the same memory may serve different roles across tasks, such as directly supporting the answer or linking to complementary memories with weaker semantic relevance but necessary information. We therefore reframe agent memory systems as Task-Oriented Role-Adaptive Workspaces, where memories are selected and organized by their task-oriented roles and relations. Based on this view, we propose TrawMem, which organizes interaction histories into local threads and constructs task-oriented workspaces by assigning roles and jointly selecting complementary memories. Experiments on LoCoMo and MemGallery with four open- and closed-source backbones show consistent improvements over representative memory systems, with macro-F1 gains of 2.23-3.14 points. On LoCoMo, TrawMem improves the LLM-Judge score over SimpleMem by 4.07 and 4.31 percentage points on Qwen3.5-9B and DeepSeek-V4-Flash, respectively, while requiring approximately 12.8% and 5.1% fewer context tokens, respectively.",
+      "publishedAt": "2026-10-27T09:46:15Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36918v1",
+      "titleHash": "1e8897a01c46a2476539462f497401044fbfeade12bb292025652775ae1d9f51",
+      "contentHash": "91b4794a0c279bc3ba6a93dde59bbfcb13a03285189afdaf619f6f5c1efba598",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8584588394480624,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "创新Agent记忆范式，增强任务适应性。"
+      ],
+      "overview": "TrawMem重构Agent记忆系统，将其定义为面向任务的角色自适应工作区，而非仅基于相关性的检索，提升长期交互利用效率。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36915v1",
+      "title": "Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "When the sources retrieved for a query disagree, the right response depends on why they disagree: a question with several valid answers, a contested topic, stale information and a false source each call for different behaviour. Cattan et al. (2025) showed that telling a generator the conflict type improves its responses by about 24 points, but that predicting the type is hard even for frontier LLMs. We study whether typed decision models, which return probabilities over fixed options in a single forward pass instead of generating text, can do this classification fast and cheaply. Using the CONFLICTS benchmark and the original paper's prompt verbatim, we evaluate all 11 decision models served by one commercial inference gateway, from 7 providers, against Gemini models on identical inputs. Asked directly, the decision models reach 50.0--67.0% accuracy; 10 of the 11 match or exceed Gemini 2.5 Flash, the paper's model (61.3%), at 4--39x lower billed cost (2 were free) and 2.6--6.0x lower latency. The current Gemini 3.8 Flash (70.0%) is significantly more accurate than 8 of them, but sending each decision model's least confident quarter of queries to it gives a cascade statistically tied with it for 8 of the 11, at 25--37% of its cost. End to end, answers generated with the types of 10 of the 11 follow the expected behaviour as often as with the LLM's types. Decomposing the taxonomy into yes/no questions lowers accuracy for every model, and a repair fitted on one model does not transfer. Pre-specified diagnostics show that dates play no measurable role and that sensitivity to source order varies widely between models. Decision models detect a planted false source less reliably than the LLM as hard labels, but their probabilities still separate planted from clean sources. We release code, prompts and all model outputs at https://github.com/Parv17k/decision-models-conflict-typing.",
+      "publishedAt": "2026-10-27T09:43:21Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36915v1",
+      "titleHash": "60a53f61da4fa11aa27f65016e9c853bb70b5370a10ae72a7c921a5c2c6e1786",
+      "contentHash": "497a6deb990c9dfb47beeec955951b603df32b21e2e537b9f839e88e5e9755bc",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8580594853432418,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "精准分类RAG冲突，优化检索响应。"
+      ],
+      "overview": "研究RAG中知识冲突的决策模型，分析无需LLM即可判断来源冲突原因（如多解、争议、过时），指导针对不同冲突类型的响应策略。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://oioannou.com/blog/ai-promised-less-work/",
+      "title": "AI promised less work. I've never worked more",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "oorestisime",
+      "publishedAt": "2026-10-27T11:08:14Z",
+      "engagement": 616,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://oioannou.com/blog/ai-promised-less-work",
+      "titleHash": "028301e996f6dff77e7efc09da77c7844f741ca7723d202ca25b78464067cecb",
+      "contentHash": "028301e996f6dff77e7efc09da77c7844f741ca7723d202ca25b78464067cecb",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8698258559149938,
+        "engagement": 0.9300950546777472
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+      "title": "Wikipedia's Cleanup of AI-Generated Content",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rbanffy",
+      "publishedAt": "2026-10-27T11:08:15Z",
+      "engagement": 449,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+      "titleHash": "33b98004030cc42764f698075bf0ec0f66f20c45e1250a33b014783f533a06f9",
+      "contentHash": "33b98004030cc42764f698075bf0ec0f66f20c45e1250a33b014783f533a06f9",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8698281819880871,
+        "engagement": 0.8844041712584478
+      }
+    },
+    {
+      "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "title": "The Mythical Man-Month in the Age of AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ilreb",
+      "publishedAt": "2026-10-27T06:25:37Z",
+      "engagement": 434,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "titleHash": "1ced778557061658802a0c512849ee626a8947db86e2461ba8f528f867a3a0dd",
+      "contentHash": "1ced778557061658802a0c512849ee626a8947db86e2461ba8f528f867a3a0dd",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8312636174721809,
+        "engagement": 0.8794964189848792
+      }
+    },
+    {
+      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+      "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gumby",
+      "publishedAt": "2026-10-27T16:40:15Z",
+      "engagement": 340,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+      "titleHash": "fcd4040e0990d624518c69046027047831c36ae4575127dde2194d139f14ea22",
+      "contentHash": "fcd4040e0990d624518c69046027047831c36ae4575127dde2194d139f14ea22",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9174199650848893,
+        "engagement": 0.8442514596641658
+      }
+    },
+    {
+      "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+      "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dpflan",
+      "publishedAt": "2026-10-27T16:25:30Z",
+      "engagement": 262,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+      "titleHash": "626a70934411eee5b757091d843b28e99a035b4c29e12bc70750ea09266af350",
+      "contentHash": "626a70934411eee5b757091d843b28e99a035b4c29e12bc70750ea09266af350",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9152513218496982,
+        "engagement": 0.8066519161632527
+      }
+    },
+    {
+      "url": "https://fishbowl.pastiche.org/2026/10/26/ai-skills",
+      "title": "“AI Skills” are worthless in 2026",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "saikatsg",
+      "publishedAt": "2026-10-27T06:33:34Z",
+      "engagement": 49,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://fishbowl.pastiche.org/2026/10/26/ai-skills",
+      "titleHash": "0079a5e601fb6b99b8765800d68a5b55f6ac83f57f127bdf3ebf4a4b55f5a08e",
+      "contentHash": "0079a5e601fb6b99b8765800d68a5b55f6ac83f57f127bdf3ebf4a4b55f5a08e",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8323246400721935,
+        "engagement": 0.5663233347786729
+      }
+    },
+    {
+      "url": "https://www.plagiarismtoday.com/2026/10/26/ai-is-ruining-haunted-attractions/",
+      "title": "AI is ruining haunted houses",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mikelgan",
+      "publishedAt": "2026-10-27T08:50:33Z",
+      "engagement": 45,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.plagiarismtoday.com/2026/10/26/ai-is-ruining-haunted-attractions",
+      "titleHash": "0499aa3b0aa15193f868119d07de9fa755f2f7490e418b8fd6ee41e0ca35d98f",
+      "contentHash": "0499aa3b0aa15193f868119d07de9fa755f2f7490e418b8fd6ee41e0ca35d98f",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8508208877965978,
+        "engagement": 0.5542526105605247
+      }
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2026/10/new-records-obtained-eff-expose-more-problems-medicares-ai-experiment",
+      "title": "New Records Obtained by EFF Expose More Problems with Medicare's AI Experiment",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hn_acker",
+      "publishedAt": "2026-10-27T22:29:50Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.eff.org/deeplinks/2026/10/new-records-obtained-eff-expose-more-problems-medicares-ai-experiment",
+      "titleHash": "74fa120d3e809b0debb279c478c4d98a27abc02271a0597d912bae0db5801280",
+      "contentHash": "74fa120d3e809b0debb279c478c4d98a27abc02271a0597d912bae0db5801280",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9703494339575988,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://lacuna.tiptreesystems.com/paper/ai-science-vs-human-science/art_3901430d6c0e4bddb284362100ef8548",
+      "title": "AI Science vs. Human Science",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "martincsweiss",
+      "publishedAt": "2026-10-27T01:51:04Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://lacuna.tiptreesystems.com/paper/ai-science-vs-human-science/art_3901430d6c0e4bddb284362100ef8548",
+      "titleHash": "96eed54b861f515126370853d2bcd36b510230ffa0165666e144543ec4477016",
+      "contentHash": "96eed54b861f515126370853d2bcd36b510230ffa0165666e144543ec4477016",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7954398436567545,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.euronews.com/2026/10/27/norwegian-media-sue-meta-over-plans-to-use-their-journalism-for-ai",
+      "title": "Norwegian media sue Meta over plans to use their journalism for AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "devonnull",
+      "publishedAt": "2026-10-27T17:47:14Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.euronews.com/2026/10/27/norwegian-media-sue-meta-over-plans-to-use-their-journalism-for-ai",
+      "titleHash": "47484b626ed63e08429bddf88ff4a917fd945554bfb010c759d10c7a9d4ade7b",
+      "contentHash": "47484b626ed63e08429bddf88ff4a917fd945554bfb010c759d10c7a9d4ade7b",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9273331348308307,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://jasonpolak.substack.com/p/ai-and-the-collapse-of-capitalism",
+      "title": "AI and the Collapse of Capitalism",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bemtevi",
+      "publishedAt": "2026-10-27T04:20:09Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jasonpolak.substack.com/p/ai-and-the-collapse-of-capitalism",
+      "titleHash": "4ee126305b17350cd9ad267ccf77e09aae5fdea4c20790357a36c1052d404103",
+      "contentHash": "4ee126305b17350cd9ad267ccf77e09aae5fdea4c20790357a36c1052d404103",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8146965842962415,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.heal.dev/benchmark",
+      "title": "Static reasoning can't prove runtime behavior: benchmark of AI PR reviewers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "batikha",
+      "publishedAt": "2026-10-27T13:14:03Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.heal.dev/benchmark",
+      "titleHash": "2a658fa2163c856233e4e0f882f6beb85e9b6d881b847c3f6dab4866bedfee9f",
+      "contentHash": "2a658fa2163c856233e4e0f882f6beb85e9b6d881b847c3f6dab4866bedfee9f",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8875637970764941,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+      "title": "Meta launches plan for $95B stock offering to fund AI expansion",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-10-27T21:08:59Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+      "titleHash": "c15386ae9b6e5641df1d944207d6f8460f8d284470beb08b87eb315784d4e3de",
+      "contentHash": "c15386ae9b6e5641df1d944207d6f8460f8d284470beb08b87eb315784d4e3de",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.957842927533143,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.neowin.net/news/trump-isnt-happy-people-are-ignoring-his-new-name-for-ai/",
+      "title": "Trump isn't happy people are ignoring his new name for AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bundie",
+      "publishedAt": "2026-10-27T20:06:36Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.neowin.net/news/trump-isnt-happy-people-are-ignoring-his-new-name-for-ai",
+      "titleHash": "35a574741daaebd54b790b29b47d4a64a304fab385e813552465a24e6d3ecc60",
+      "contentHash": "35a574741daaebd54b790b29b47d4a64a304fab385e813552465a24e6d3ecc60",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.948303267982394,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.businessinsider.com/satya-nadella-ai-alignment-changed-mind-different-problem-scales-2026-10",
+      "title": "Satya Nadella Rethinks Whether More Powerful AI Is Safer",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hirodxb",
+      "publishedAt": "2026-10-27T17:18:36Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.businessinsider.com/satya-nadella-ai-alignment-changed-mind-different-problem-scales-2026-10",
+      "titleHash": "020b220b59fc16701e40e4df3dc3eaee5709716dd10b44e3b26aced72e8c5496",
+      "contentHash": "020b220b59fc16701e40e4df3dc3eaee5709716dd10b44e3b26aced72e8c5496",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9230825160492145,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://buildtounderstand.substack.com/p/can-you-make-a-3d-game-if-you-dont",
+      "title": "Can You Make a 3D Game with AI, If You Don't Know How to Do Anything?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "aishlykov",
+      "publishedAt": "2026-10-27T15:50:22Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://buildtounderstand.substack.com/p/can-you-make-a-3d-game-if-you-dont",
+      "titleHash": "f82aa35ea9bca0627d496ce393d83b2e756a3f362e5db5ce25e03e3d38cd2976",
+      "contentHash": "f82aa35ea9bca0627d496ce393d83b2e756a3f362e5db5ce25e03e3d38cd2976",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9101064102809304,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://thenunchiproject.com/game/ai-decides",
+      "title": "Show HN: Guess what frontier LLMs do in a repeated prisoner's dilemma",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "masterofarbs",
+      "publishedAt": "2026-10-28T00:07:47Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thenunchiproject.com/game/ai-decides",
+      "titleHash": "693ea45636e68e7309ad3063ab27835a9f6eec6a301420e772db134729e65c91",
+      "contentHash": "693ea45636e68e7309ad3063ab27835a9f6eec6a301420e772db134729e65c91",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9857200579797026,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://ea.rna.nl/2026/10/27/serious-coding-with-llms-lab-notes-2026-10-27-a-code-audit-of-llm-generated-code-improving-from-sludge-to-vakwerk/",
+      "title": "A code inspection of 'serious' LLM-generated code",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gctwnl",
+      "publishedAt": "2026-10-27T13:25:41Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ea.rna.nl/2026/10/27/serious-coding-with-llms-lab-notes-2026-10-27-a-code-audit-of-llm-generated-code-improving-from-sludge-to-vakwerk",
+      "titleHash": "a9273cfe02e4de7710bebf458e84523ef6aa1e82c5ec0aac1038814dd96a1044",
+      "contentHash": "a9273cfe02e4de7710bebf458e84523ef6aa1e82c5ec0aac1038814dd96a1044",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8892220503029762,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://llmrun.dev",
+      "title": "Show HN: llmrun – which open LLMs run on your GPU, and how good they are",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "alexfank",
+      "publishedAt": "2026-10-27T12:49:57Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://llmrun.dev/",
+      "titleHash": "e0c99afd92c13aa2f78d6fdaec671ec81195b74db7601edbebcaadb3dafc4b2e",
+      "contentHash": "e0c99afd92c13aa2f78d6fdaec671ec81195b74db7601edbebcaadb3dafc4b2e",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.884138336857738,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/wenlan-app/wenlan",
+      "title": "Show HN: Wenlan – your LLM wiki that flags what it can't back up",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "h164654156465",
+      "publishedAt": "2026-10-27T17:50:33Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/wenlan-app/wenlan",
+      "titleHash": "2f593ffae5a57d74cc2f15ccdcd43870d959cf9d55c94b0c47a746aa00be0140",
+      "contentHash": "2f593ffae5a57d74cc2f15ccdcd43870d959cf9d55c94b0c47a746aa00be0140",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9278267572553095,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.llmverifications.com/",
+      "title": "Show HN: I found a more accurate upcoming LLM Benchmarks leaderboard",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "techappsdev",
+      "publishedAt": "2026-10-27T18:25:14Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.llmverifications.com/",
+      "titleHash": "80e8c2b9f6923fa7a9e0133cf305f2d038539d218debf2015e3be126b6f89eb9",
+      "contentHash": "80e8c2b9f6923fa7a9e0133cf305f2d038539d218debf2015e3be126b6f89eb9",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9330044755069805,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MRQTlwcW-aQ",
+      "title": "Anthropic Ships the #1 LLM in the World with Katelyn Lesse and Angela Jiang [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "amarbirsingh",
+      "publishedAt": "2026-10-27T20:03:47Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=MRQTlwcW-aQ",
+      "titleHash": "e2218ef4fa33367289aa8488354164bb22121098ee497ad387bd5774a78a3d6e",
+      "contentHash": "e2218ef4fa33367289aa8488354164bb22121098ee497ad387bd5774a78a3d6e",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9478747921978526,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2506.18880",
+      "title": "Omega: Can LLMs Reason Outside the Box in Math? (2025)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wslh",
+      "publishedAt": "2026-10-27T20:01:01Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2506.18880",
+      "titleHash": "f592e10a79fdaf5f45ddfb7cf4a952e4331ee048835e28a8c5035b426bcf34cc",
+      "contentHash": "f592e10a79fdaf5f45ddfb7cf4a952e4331ee048835e28a8c5035b426bcf34cc",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9474541109682892,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://usewello.com.br",
+      "title": "My LLM confirmed a booking that was never saved",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "original-frog",
+      "publishedAt": "2026-10-27T16:47:26Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://usewello.com.br/",
+      "titleHash": "4d9922abac7cb4d4b99736235ef360771a980f60cf174698fc0feb4a8d6ce20d",
+      "contentHash": "4d9922abac7cb4d4b99736235ef360771a980f60cf174698fc0feb4a8d6ce20d",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.918477966437169,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://chemicalx.xophz.com",
+      "title": "Show HN: ChemX – Architectural AST linter for LLM context bloat, AI slop",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "DoItForTheXP",
+      "publishedAt": "2026-10-27T15:43:04Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://chemicalx.xophz.com/",
+      "titleHash": "aeb1fbdcbdf7e8eefead9907cb22cd93687257097125e02ba6ce6711b51e1ceb",
+      "contentHash": "aeb1fbdcbdf7e8eefead9907cb22cd93687257097125e02ba6ce6711b51e1ceb",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9090410354561851,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36951v1",
+      "title": "Dense Representation Learning and Differentiable Shape Modeling for Spine Landmark Detection",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Spine landmark detection from spinal X-ray is a key step for estimating spine deformation severity, for building biomechanical models, and for pre-operative planning. We reframe anatomical landmark detection as a pixel-level contrastive representation learning problem, matching dense pixel embeddings with landmark prototypes. Surprisingly, even with a generic U-Net backbone, this formulation results in more discriminative heatmaps compared to the traditional heatmap regression paradigm, leading to improved discrimination between vertebral corners on distinct vertebra. Furthermore, we combine the resulting heatmaps with learnable shape priors over the global configuration of spinal landmarks to resolve ambiguities in landmark locations, yielding a simple and practical approach to spinal landmark detection. Our approach is competitive, in terms of landmark accuracy and clinical parameter estimation, with the state-of-the-art on the public AASCE dataset and on two private spinal X-ray datasets. Our code and pre-trained weights are available at https://github.com/BioMedTP/Pix2Point.",
+      "publishedAt": "2026-10-27T10:11:18Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36951v1",
+      "titleHash": "94fdfa20cbd61ecb38cdc652bbd3ac281e74d9bfe7ed7725b868332164018603",
+      "contentHash": "c28e7265a4466716f8755c5a596dd68d654fd18f73293bc0d6d4038ac793db32",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.861916183267816,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36950v1",
+      "title": "DCKV: Learned Transform Coding of the Prompt KV Cache in Hybrid Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Hybrid language models keep a key-value (KV) cache only in their few full-attention layers, but this cache is still the part of a prompt's state that grows with the prompt and that must be stored or moved to reuse it. We present DCKV, a differentiable codec for the KV cache and the first KV-cache codec that is trained end to end. Its transform, its quantizer and its entropy models, which are conditioned on the prompt tokens and on already decoded neighbouring positions, are optimized together against the frozen language model, both for the code length that the entropy models assign and for the change of the model's output. On Qwen3.5-2B, DCKV stores a compressed token in more than 55 times fewer bytes than bf16 at a loss of at most 1.8 points on three long-context benchmarks, and in more than 100 times fewer bytes at a loss of at most 3.6 points.",
+      "publishedAt": "2026-10-27T10:11:04Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36950v1",
+      "titleHash": "10e5fe13c70217fd743d3897718cfbf5b24e6a9e1667664c1c46d74a7faf3ec0",
+      "contentHash": "0efa78bb0437f6edf8e9f92746f4f8df4539da9c75d0077ba934bc57fe0fe959",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8618839150184145,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36948v1",
+      "title": "Self-Keyed In-Parameter Memorization for External Memory-Free Dialogue Recall in Frozen Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "A large language model maintains conversational content in an external storage that is outside the model and grows as the dialogue continues. This work assumes an environment where a language model has no external memory and no prior knowledge of the future question or its answer. The motivation is to research whether a dialogue can be stored in the model parameters and later answer a question about it. This work proposes self-keyed in-parameter memorization (SKIM), a closed-form method in which the model generates its own questions about each dialogue turn and writes those questions into its parameters as the keys that later retrieve the turn's content. Generating many varied questions for each turn allows a later user question to match one even when phrased differently, and its answer is recalled from the parameters alone. Evaluated on five language models, SKIM recalls most stored dialogue turns from later user questions, and it answers from the model parameters without any external storage.",
+      "publishedAt": "2026-10-27T10:10:11Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36948v1",
+      "titleHash": "4fa93652eaafff901227bdc23337715db8a91fa7497e6f5fa97514fc0baa42f4",
+      "contentHash": "03120b5db3538dd8e037659b3b7b05a8ed50bc0b1ceddd2c8f44f57c2dde8132",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8617617675886524,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36947v1",
+      "title": "Beyond QASecClaw: Agent Scaling, Verifier Feedback, and Evidence Reliability in Software Assurance",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Can additional specialist language-model contexts improve software assurance when deterministic tool evidence is already available? We study this question through five experiments spanning authored Java warning controls, OWASP Benchmark assessment, Defects4J test generation, SV-COMP assertion verdicts, and deliberately misleading evidence packages. The evaluated systems use Qwen2.5-Coder-7B-Instruct, with a 1.5B sensitivity analysis, and complete 13,638 model requests. On eight related development warnings, increasing the context count from 1 to 50 increases token use 49-fold without improving unsafe clearance. On 160 OWASP cases, model configurations trade clearance against unresolved outcomes; the ten-context arm assesses only 96 cases. On 32 SV-COMP tasks, raw verifier feedback raises mean correct model verdicts from 12.7 to 22.0, but also raises incorrect verdicts from one to seven; a JBMC-plus-JVM validation baseline returns 26 correct verdicts and six unresolved outcomes. On two sets of 120 evidence packages, models reject 70-100% of applicable counterexamples, while construction-specific scope checks classify every package correctly. No target defect is discovered in three Defects4J bugs, one unsupported by the test adapter. These descriptive results support deterministic evidence admission for the tested settings, while exposing limits of verdict aggregation, feedback interpretation, and the available evaluation coverage.",
+      "publishedAt": "2026-10-27T10:06:26Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36947v1",
+      "titleHash": "5f5ba08f84f7d59fa10e8688b5d664f9405aebef4c523c60cb9f39f05595a3ed",
+      "contentHash": "818ba6ac41d08748f5104d1f4505cccae86a28dd2d346ca250b64fbc52c55038",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8612434075837859,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36925v1",
+      "title": "Vision-Language Agents Can Learn in Their Own Latent Worlds",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Learning from experience is essential for building the next generation of agents that continually expand their capabilities. Pretrained vision-language models (VLMs) already internalize rich world knowledge, yet this knowledge is rarely leveraged to drive policy improvement through online interaction. Realizing this potential efficiently remains challenging, as policy updates shift the agent's interaction distribution, requiring the world model to adapt accordingly, while continually updating large pretrained models is computationally expensive. To address this challenge, we introduce Dwell, a model-based reinforcement learning (RL) framework that reframes a VLM as a recurrent latent transition operator, endowing it with the ability to predict, adjust, and act in latent space. Leveraging the VLM's own representations and its dual role as both world model and policy, the agent continually learns from real interactions to anticipate and evaluate action outcomes, and from latent imagination to improve its behavior. Across five interactive visual environments, Dwell achieves the strongest overall performance among trainable methods while substantially reducing the compute required for imagination, showing that effective world models for VLM agents need not reconstruct the future; they need to predict futures that are useful for action. Our code is publicly available at https://github.com/Tom111-lhx/Dwell",
+      "publishedAt": "2026-10-27T09:51:08Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36925v1",
+      "titleHash": "144d44e0057aab5cf12863edee9ece1cff42abae36cdee28377c50ca842561a5",
+      "contentHash": "0b0318bdeb8730a304282c7a9f670cfa0ef4af51651220dd0a112551a05fb126",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8591317373858391,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36911v1",
+      "title": "Developing a Speech Language Model for Basque",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Although the recent development of LLMs has paved the way for multi-modal interaction, minority languages face difficulties keeping pace. This work presents the first open Speech Language Model for Basque, designed for low-latency, end-to-end spoken interaction. Based on the LLaMA-Omni architecture, the system integrates a Latxa model as its backbone, transferring its Basque capabilities to the spoken modality by fine-tuning several modules. To address data scarcity, the English VoiceAssistant-400K corpus was translated into Basque, and the audio was synthesized using a Basque TTS. Evaluation results confirm the system's viability, achieving 3.86/5 in content quality, a 9.94% WER for spoken intelligibility, and a 3.07 UTMOS for audio quality. This work demonstrates that advanced spoken interaction systems can be developed using modular architectures and synthetic data even in low-resource languages.",
+      "publishedAt": "2026-10-27T09:40:42Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36911v1",
+      "titleHash": "20910aab2e66c4b72ef9e5a0d49d8c2e18ca59c155819befc36b299bc632dda3",
+      "contentHash": "df785e35bebe529548c8257512f73186dcf239d3c1f0e9abb6ff2c863689e285",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8576947230584754,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36900v1",
+      "title": "Natural Hard-Negative Mining from Positives for Instruction-Following Retrieval",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Instruction-following information retrieval (IFIR) requires retrievers to rank documents by both a query and its instance-specific instructions, yet instruction-conditioned contrastive supervision remains scarce. Existing synthetic methods typically fix a positive passage and generate additional negatives, overlooking the hard-negative potential of the original positive. We propose Natural Hard-Negative Mining (NHNM), which promotes convertible negatives under query-compatible instructions and repurposes original positives as natural instruction hard negatives. Its automated Candidate Cleaning, Reversal Construction, and Geometry Filtering pipeline produces compact, high-contrast supervision aligned with the pretrained retrieval space. Applied to MSMARCO, NHNM yields NHNM-MARCO, an IFIR training set of nearly 7K instances. On InstructIR and FollowIR, models with 568M to 4B parameters fine-tuned on NHNM-MARCO achieve strong instruction-following performance and match or surpass substantially larger retrievers in several settings. Controlled analyses and ablations attribute these gains to natural hard-negative supervision rather than model scale or training-data volume.",
+      "publishedAt": "2026-10-27T09:31:15Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36900v1",
+      "titleHash": "a0c9b9ff2d7723878c0c7c227af9939d0b8dbd6e33c411c486ef17087b9794ff",
+      "contentHash": "490da17c3116c4a64040d347c64b42198ea96f4ef65fc7de29aae2688edc66ae",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8563952207633019,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36888v1",
+      "title": "Noise Steering: Exploiting Wake Steering and Acoustic Directivity for Noise-Constrained Wind Farm Control via Reinforcement Learning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Existing noise mitigation strategies for wind farms usually consist in reducing turbines power output, without accounting for the wake interactions between them and the noise emission directivity. This leads to over-conservative policies and unexploited wind power. Yet, turbine yaw can simultaneously affect wake interactions and the direction of noise emission, offering an additional degree of freedom for farm-level noise control. We therefore propose Noise Steering, a model-free reinforcement learning (RL) strategy that jointly controls turbine yaw angles and power setpoints to maximise farm power while satisfying a local noise constraint in a defined region. To enable training at a reduced computational cost, a low-fidelity acoustic model is coupled with the steady-state FLORIS simulator. The RL agent effectively learns how to redirect wakes and noise directivity away from the protected region while redistributing power across the farm. On a six-turbine test farm, the policy satisfies the 40 dB noise constraint throughout the full range of turbulent winds, with an average power deficit of only 2% relative to greedy unimpeded control, and up to 7.7% at high wind speeds. In comparison, the industry-standard noise-reduced operation (NRO) baseline here generates an average power loss of 17%. When deployed in the higher-fidelity FAST.Farm simulator, the policy largely retains its performance under steady and turbulent inflow, despite differences in simulation fidelity. These results demonstrate the potential of combining yaw control and power derating through RL to improve the power-noise trade-off in wind farm operation.",
+      "publishedAt": "2026-10-27T09:23:45Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36888v1",
+      "titleHash": "5ee9b0d399d76299ca5dd053b6a421d8f66a39725e9265b6af6bbbbf68c6f046",
+      "contentHash": "d673919865bcf6401c6b53877ba8f8a2615ea411686637056a2033b5b8460da1",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8553652712705383,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36878v1",
+      "title": "RubricAtlas: Mining Type-Level Rubrics from Expert Reports to Evaluate Deep Research Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Deep research agents conduct multi-step Web searches and synthesise retrieved information into analytical reports. Evaluating these outputs requires checking which analyses they deliver, beyond the presence of relevant facts. Query-specific binary rubrics make individual requirements explicit, but task-level checklists may leave the overall analytical structure underexamined. We introduce RubricAtlas, which derives type-level analytical requirements from expert reports on different objects within the same research type and organises detailed checks around recurring analytical questions. The requirements give related tasks a shared standard for what to analyse, without prescribing their answers. Our framework links binary checkpoints to report passages and evaluates completeness separately from argument validity. Built from 3,079 Chinese financial research reports, RubricAtlas covers 99 research types. Reference-report selection experiments show that individual reports cover only about half of their type's analytical questions, and that selecting requirements from different reports changes evaluation scores and agent rankings. Across ten agents, two judge pipelines achieve checkpoint agreement of $κ$ = 0.71 and agent-ranking agreement of Kendall $τ$ = 0.87. Controlled deletions reduce scores on the affected analyses, while padding produces no detectable increase. These findings support type-level rubrics for comparing the analytical completeness of Web deep research outputs, with individual decisions traceable to report evidence.",
+      "publishedAt": "2026-10-27T09:18:00Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36878v1",
+      "titleHash": "0c9604ad98654c3da98cff1d8ec57c80cf0ee325344d7e28f00fae4cc384a68c",
+      "contentHash": "5910c8f81efeb4bd87436fd7ce7dc33dfae870d482d752aa8fc3cb2ac65c3cc5",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8545764822632986,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36877v1",
+      "title": "GUI-JEPA: Candidate-Conditioned JEPA Latents as a Fast Action Policy for Mobile GUI Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Mobile GUI agents are typically fine-tuned 7B-scale vision-language models (VLMs) that generate each action as text. However, these VLMs decode every action token by token, and even agents that score candidate actions keep a large language model or VLM in the loop, making them slow and memory-hungry. To address these issues, we propose GUI-JEPA, to our knowledge the first decoder-free GUI agent policy built on a Joint-Embedding Predictive Architecture (JEPA), which selects actions in the latent space of a JEPA encoder pretrained on unlabelled GUI screenshots. Its action- and region-conditioned latent predictor turns the screen latent into one latent per candidate action, letting lightweight heads score all candidates against the instruction in a single batched pass, without decoding a token. We further show that the scorer relies on this latent pathway and that the predictor is trained for the decision itself: a randomly initialised predictor does just as well as one pretrained on screen dynamics. On AndroidControl, GUI-JEPA is 2.8-4.0x faster on the same GPU than a Qwen2.5-VL-7B agent we fine-tune with the same inputs, while reaching 86-92% of its in-distribution accuracy with 6% of its parameters. Code is available at https://github.com/bcwang-sjtu/GUI-JEPA",
+      "publishedAt": "2026-10-27T09:17:51Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36877v1",
+      "titleHash": "460a40ee2512d42780b9dac4b1957f083dbf68ed347e75da67cb936e830c31fd",
+      "contentHash": "943ce7b39e1b74684d65984320dea1c7fdc1455eb021c83d1e12790c271973d4",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8545559148969404,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36874v1",
+      "title": "AdaGround: Token-Normalized Adaptive Zooming with Verifier-in-the-Loop Refinement for GUI Grounding",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "GUI grounding on high-resolution screens fails mostly on small targets, and zooming in is a common training-free remedy. However, most existing zooming pipelines do not match the zoom to the target's size, accept the zoomed answer unconditionally and never revisit a wrong answer. To address these issues, we propose AdaGround, a training-free framework with three components: (1) Token-Normalized Adaptive Zooming, which sets the magnification, field of view and zoom depth of each sample from the model's own estimate of the target size; (2) Verifier-in-the-Loop Refinement, which uses one marked-click Yes/No verifier to keep or reject each zoom, choose between zoom chains, trigger re-grounding and, with an existence query, decide when to abstain; and (3) Compositional Structure Grounding, which composes spreadsheet cells from their headers. On Qwen3-VL models, AdaGround surpasses state-of-the-art training-free zooming methods and many trained GUI models, improving accuracy over the backbone by 7.4 to 20.6 points on OSWorld-G and ScreenSpot-Pro, and its gains carry over to held-out UI-Vision. Code is available at https://github.com/bcwang-sjtu/AdaGround",
+      "publishedAt": "2026-10-27T09:12:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36874v1",
+      "titleHash": "391147bc2f0171125a386ec1f3c5ebed43aa1efa0b7e3a05c48c0e366759ab44",
+      "contentHash": "b55c552435f76cf4b3502b90c013bfdeb0b503e53d872bc1478b5c3f186a6ce0",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8538340855320596,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36859v1",
+      "title": "ActiveAlign: Aligning Egocentric Manipulation via Active Perception",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Real-to-Sim-to-Real (Real2Sim2Real) enables structured world representations for planning, interpretability, and safe execution. Most existing approaches rely on passive perception, which creates real2sim gaps due to imperfect observation. Inspired by how humans perceive actively through actions, we propose ActiveAlign, a framework that leverages active perception to align the Real2Sim2Real gap from interactions. ActiveAlign introduces two complementary modules: (i) ActiveAlign-Waving, which performs hand-eye calibration by exploiting active hand motions and differentiable rendering, and (ii) ActiveAlign-Touching, which refines object alignment through tactile feedback to achieve millimeter-level precision. Together, these capabilities enable strong real2sim alignment. We demonstrate that ActiveAlign-Waving can be used to curate simulation environments for open-sourced uncalibrated robot manipulation datasets, and demonstrate on a real Unitree G1 robot that ActiveAlign enables fine manipulation of millimeter-scale objects such as pressing buttons and moving sliders.",
+      "publishedAt": "2026-10-27T08:54:27Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36859v1",
+      "titleHash": "588907d451a808c6ce89879246d81798d293a0475098b20931d3e39933faf6a4",
+      "contentHash": "fca806f0bfb93f8f5cf37fab7c2b54994f1ca0fa0976b7c9a1d513544c551673",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.851353460001523,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36849v1",
+      "title": "When All Rollouts Fail: Policy-Compatible Joint Decoding for Hard-Problem Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) derives its learning signal from binary rewards via on-policy exploration and becomes a powerful paradigm for improving the reasoning of large language models. Yet it faces a learning cliff on problems beyond model's current ability: when every rollout fails, the samples reveal nothing about a correct solution, and group-relative estimators (e.g., GRPO, RLOO) collapse the update to zero advantage. Expert trajectories offer a remedy, but they are incompatible with the current policy and often lie in the student's low-probability regions, so the surviving updates demand large parameter shifts and decay into surface-level imitation rather than transferable reasoning. We argue that a useful learning signal on hard problems must be both verifiably correct and sufficiently compatible with the current policy. We propose Policy-Compatible Reinforcement Learning (PICO), which performs distribution-constrained joint decoding: expert data guides decoding at the token level while preserving the student's relative token probabilities, and a dynamic top-k mechanism confines the sampling distribution under a finite divergence budget, yielding trajectories that are verified and policy-compatible by construction. These trajectories are optimized jointly with on-policy rollouts under a mixed-behavior objective that mitigates their distribution mismatch via importance sampling. Experiments across reasoning diverse datasets and agentic benchmarks demonstrate that PICO consistently outperforms standard RLVR and prior off-policy baselines.",
+      "publishedAt": "2026-10-27T08:47:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36849v1",
+      "titleHash": "74b20b1c5dbd2f16e70fa5cf3b8c9de58a66bbc2c54b638c6e383e6ab98fe506",
+      "contentHash": "0a15095888ebb0b9b5edf43fc1800664b814509ca06bbc4cafe49b39b1cd6fe7",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8504159878775248,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36848v1",
+      "title": "Evolving Agent Teams",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "The rapid progress of software engineering agents drives interest in applying them to open-ended problems such as GPU kernel optimization. However, we find that existing coding agents converge to local optima on real-world, expert-written kernels (e.g., FlashInfer). We introduce Evolving Agent Teams, a multi-agent framework that escapes such local optima. It features (1) a central supervisor that diagnoses each local optimum and restructures a team of agents; and (2) a persistent file system that comprises a learning document, an evolution history, and per-team artifacts, grounding restructuring with accumulated experience. Under a matched token budget, Evolving Agent Teams consistently outperforms strong coding-agent baselines. With an extended token budget, Evolving Agent Teams generates a CUDA kernel that reaches 1.2x mean speedup over the production FlashInfer MLA paged decode kernel from scratch and wins on 36 of 47 production workloads from FlashInfer-Bench (0.86-0.99x on the remaining 11). It also demonstrates superior performance on tasks such as KDA prefill on AMD MI350X (3.01x over vLLM) and NVIDIA B200 (3.44x over FlashKDA), MoE expert-offload serving on Apple silicon (30.3 tokens/s decode for Qwen3.8-Flash-Next in MLX 4-bit on a 48 GB M4 Pro), and RoboDojo robot manipulation (62.1 on held-out seeds vs. 55.3 for the best leaderboard entry). Code is available at https://github.com/caoshiyi/EAT.",
+      "publishedAt": "2026-10-27T08:46:21Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36848v1",
+      "titleHash": "9664c0ea63b4bba908d1c0a55023291a2128cee5d729917bbea6c01d161bffa7",
+      "contentHash": "e3bfa01ff481d50264fea963eede956887fbda2218af0d7e5b734eded8a525dd",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8502477163529516,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36847v1",
+      "title": "Conservative Policy Iteration For Zero-Sum POSGs",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Occupancy-state reductions make dynamic programming possible for zero-sum partially observable stochastic games (zs-POSGs). Existing point-based solvers usually optimise a central value function. This restores Bellman recursion, but it requires point-based updates over high-dimensional occupancy spaces. We introduce an approximate policy-iteration algorithm for finite-horizon zs-POSGs. The method maintains one policy per player and updates both jointly along occupancy trajectories induced by conservative policy updates. Instead of approximating a full central value function, each update uses a single supporting hyperplane induced by the current joint policy. The algorithm alternates local policy improvements, conservative updates, and persistent exploration. Computation is therefore concentrated on occupancy regions where the current joint policy is exploitable. On finite-horizon zero-sum POSG benchmarks, the method is competitive at small horizons and often improves the runtime-exploitability trade-off at larger horizons compared with PBVI, HSVI, and CFR+.",
+      "publishedAt": "2026-10-27T08:45:33Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36847v1",
+      "titleHash": "1e77f828d9ecde1eff2b6977c233d5b09ef772a278a57d226afa804f60a863bd",
+      "contentHash": "3d0b2124dee781329c999106b086a395d2032cf1663586060aa0689e574ce195",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8501385827860967,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36937v1",
+      "title": "JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Generative recommendation (GR) represents items as semantic identifiers (SIDs) and autoregressively generates the next item's SID from interaction history. However, most methods assign the same SID length to all items despite highly unequal interaction frequencies. This uniform design repeatedly incurs the cost of fine-grained codes for popular items, while shortening codes to reduce this cost also compresses the semantic representations of long-tail items. Inspired by the compact forms of frequent expressions in natural language, we propose JevRec to encode items as variable-length words and generate the next item from interaction context. Linguistic encoding retains frequency-dependent semantic prefixes from shared codebooks, producing shorter SIDs for popular items and richer descriptions for long-tail items. Yet predicting a sequence-level length and generating token-level content impose different optimization requirements that may conflict under a shared output head. Our Jev-like decision modeling component therefore predicts a length distribution with a dedicated head and generates content conditioned on length through a separate head while sharing the interaction-history representation. Experiments on three public datasets show that JevRec outperforms all compared baselines across the evaluated recommendation metrics. Further analyses show lower training and inference time than TIGER and reduced gradient conflict between length and content prediction.",
+      "publishedAt": "2026-10-27T09:59:44Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36937v1",
+      "titleHash": "929b9db8268a2cf8f112c9a7509d9a81dbb9520304100062b3b75b7d8592bbbf",
+      "contentHash": "b82087c7db8350258cdd7c2ff9cb09e852227877fe145f61f740251418245c57",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8603180489303643,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36929v1",
+      "title": "DocXEval: A Systematic Evaluation of Explainability in Multimodal Document Understanding",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal transformer models have driven unprecedented performance breakthroughs in modern document understanding. However, the inherent black-box nature of these models remains a major obstacle to their safe deployment in high-stakes sectors. Despite significant progress in explainability for vision and language tasks, explainable AI (XAI) research tailored to multimodal document understanding has received little attention. To address this gap, we present \\ourframework{}, the first comprehensive explainability framework that adapts existing XAI methods and evaluation metrics to the multimodal (text, layout, and image) document understanding context, while introducing efficient multi-target adaptations of both methods and metrics for domain-specific tasks such as semantic entity recognition. Using \\ourframework{}, we systematically evaluate 13 XAI methods across 3 document understanding tasks, 8 datasets, 4 models, and 17 evaluation metrics, and find that only a few methods perform consistently across all evaluation criteria, with Occlusion emerging as the most faithful and interpretable method overall. Through a dedicated meta-evaluation, we observe moderate to strong agreement among several faithfulness and complexity metrics while identifying certain ones that produce unreliable results. Finally, through multiple dataset-wide diagnostic analyses, we uncover key insights into model behavior, including the contribution of individual modalities across tasks and labels, spatial attribution patterns around target entities, and potential dataset biases. Overall, this work serves as both a benchmark and a practical guide for future XAI research in multimodal document understanding. To support reproducibility, we publicly release our code at https://github.com/saifullah3396/docxeval/.",
+      "publishedAt": "2026-10-27T09:53:21Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36929v1",
+      "titleHash": "67e7eaa7b2610eff4bbfb5234643bd77a1d88c9fb368e7dc37d43bf25b2ef718",
+      "contentHash": "125fad5498a09af7cbc3a0e3d3df83ca2665601e32cef3d4e2f7973d05667c70",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8594373532088222,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36918v1",
+      "title": "TrawMem: Reframing Agent Memory as Task-Oriented Role-Adaptive Workspaces",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language model (LLM) agents rely on memory systems to leverage long-term interactions, yet existing systems typically retrieve memories based on their relevance to the current query and use them as contextual evidence. However, relevance alone does not characterize how a memory contributes to task solving: the same memory may serve different roles across tasks, such as directly supporting the answer or linking to complementary memories with weaker semantic relevance but necessary information. We therefore reframe agent memory systems as Task-Oriented Role-Adaptive Workspaces, where memories are selected and organized by their task-oriented roles and relations. Based on this view, we propose TrawMem, which organizes interaction histories into local threads and constructs task-oriented workspaces by assigning roles and jointly selecting complementary memories. Experiments on LoCoMo and MemGallery with four open- and closed-source backbones show consistent improvements over representative memory systems, with macro-F1 gains of 2.23-3.14 points. On LoCoMo, TrawMem improves the LLM-Judge score over SimpleMem by 4.07 and 4.31 percentage points on Qwen3.5-9B and DeepSeek-V4-Flash, respectively, while requiring approximately 12.8% and 5.1% fewer context tokens, respectively.",
+      "publishedAt": "2026-10-27T09:46:15Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36918v1",
+      "titleHash": "1e8897a01c46a2476539462f497401044fbfeade12bb292025652775ae1d9f51",
+      "contentHash": "91b4794a0c279bc3ba6a93dde59bbfcb13a03285189afdaf619f6f5c1efba598",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8584588394480624,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36915v1",
+      "title": "Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "When the sources retrieved for a query disagree, the right response depends on why they disagree: a question with several valid answers, a contested topic, stale information and a false source each call for different behaviour. Cattan et al. (2025) showed that telling a generator the conflict type improves its responses by about 24 points, but that predicting the type is hard even for frontier LLMs. We study whether typed decision models, which return probabilities over fixed options in a single forward pass instead of generating text, can do this classification fast and cheaply. Using the CONFLICTS benchmark and the original paper's prompt verbatim, we evaluate all 11 decision models served by one commercial inference gateway, from 7 providers, against Gemini models on identical inputs. Asked directly, the decision models reach 50.0--67.0% accuracy; 10 of the 11 match or exceed Gemini 2.5 Flash, the paper's model (61.3%), at 4--39x lower billed cost (2 were free) and 2.6--6.0x lower latency. The current Gemini 3.8 Flash (70.0%) is significantly more accurate than 8 of them, but sending each decision model's least confident quarter of queries to it gives a cascade statistically tied with it for 8 of the 11, at 25--37% of its cost. End to end, answers generated with the types of 10 of the 11 follow the expected behaviour as often as with the LLM's types. Decomposing the taxonomy into yes/no questions lowers accuracy for every model, and a repair fitted on one model does not transfer. Pre-specified diagnostics show that dates play no measurable role and that sensitivity to source order varies widely between models. Decision models detect a planted false source less reliably than the LLM as hard labels, but their probabilities still separate planted from clean sources. We release code, prompts and all model outputs at https://github.com/Parv17k/decision-models-conflict-typing.",
+      "publishedAt": "2026-10-27T09:43:21Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36915v1",
+      "titleHash": "60a53f61da4fa11aa27f65016e9c853bb70b5370a10ae72a7c921a5c2c6e1786",
+      "contentHash": "497a6deb990c9dfb47beeec955951b603df32b21e2e537b9f839e88e5e9755bc",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8580594853432418,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36910v1",
+      "title": "Nothing Left Behind: Finding Evidence from a Large Randomized Evaluation Corpus",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Many AI systems need to find every relevant items in a large collection and then organize what they found. The standard way to do this is to tag each item with labels from a curated vocabulary and search on those labels. Those labels are useful for organizing results, but searching on them misses items that do not fit a label and returns too much when labels are broad. We compare this approach with an embedding-based approach: find candidates by meaning using text embeddings, then have a language model keep only the relevant ones. In a corpus of 7,354 randomized trials, label search found 45% of the evidence a systematic review would include, while the new approach found 92%, at a cost per query that rises with search depth. These results support a two-stage architecture that combines broad candidate retrieval with query-specific evidence filtering.",
+      "publishedAt": "2026-10-27T09:40:24Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36910v1",
+      "titleHash": "35a689c39321460caf647c62560e92ab1ab41142515a425de47e28610531005f",
+      "contentHash": "79c2c39f76dd0628e1a8db5ddb3a0eb998fd0696b02d7d685b968ad9ec10a4ec",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8576534364336446,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36901v1",
+      "title": "HiLo-RD: Cross-Budget Self-Distillation for Masked Diffusion Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We propose HiLo-RD (High-to-Low Budget Representation Distillation) to improve masked diffusion language models (MDLMs) under a limited generation budget. Unlike autoregressive models, MDLMs choose both what to generate and where to commit it. This creates two coupled challenges: predicting useful content before reasoning is complete, and deciding when to fix answer tokens that shape later predictions. We identify budget-induced premature commitment: even when a correct solution fits, the model can fix answer fragments near the window boundary before resolving intermediate steps. These fragments become context for later predictions and redirect subsequent reasoning. Existing post-training methods do not directly transfer the stronger trajectories that the same model follows with a larger window. HiLo-RD addresses this gap by (1) pairing large-window teacher states with cropped small-window views and (2) matching their hidden representations at committed positions. This supervision guides both token prediction and commitment order without an external teacher. Across mathematics benchmarks, HiLo-RD improves low-budget accuracy and shortens responses; these gains extend to code generation without code-domain training. On GSM8K, accuracy rises by 9.4 percentage points as mean readable length falls by about 25%. Attention diagnostics and fixed-budget order interventions support the proposed mechanism. Together, these results show that large-window reasoning can improve small-window decoding.",
+      "publishedAt": "2026-10-27T09:34:08Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36901v1",
+      "titleHash": "a6e7768d4dba34900a7148709d7865fdbe085750a6a3b5815effebf9c5385b9c",
+      "contentHash": "41e16933039a58e80816496dd5b9f4ac6f380d9b6d77c0afe7e3b098d6921f13",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8567915067856606,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36813v1",
+      "title": "Words or Deeds? How LLMs Predict Users' Decisions in Human-Agent Dialogue",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Web systems increasingly predict users' decisions from what users say, yet when interests partly conflict, users may promise to cooperate to win the other side's cooperation and then not do so. Sales or service agents that rely on such promises may grant concessions to users who then do not keep their promises, at a cost to the party they represent. We test how LLMs combine users' statements with decision records to predict users' decisions, using 1,260 rounds in which 42 users played a repeated prisoner's dilemma-style game with five agents, each prompted to express a dominant Big Five trait, and could talk with the agent before every decision. Across eight open-weight LLMs, predictions from decision records separated cooperation from defection well (AUC = .80), and adding dialogue brought no detectable gain. With dialogue, predictions agreed with users' statements more often, and errors concentrated on rounds in which users broke their statements: accuracy on rounds with a statement barely changed (.73 to .74), while it rose on kept statements (.76 to .95) and fell sharply on broken ones (.65 to .17). Predictions weighted statements more heavily than users' behavior warranted: when users stated a decision they had not yet made in that game, the predicted probability of keeping it rose from .13 to .69, whereas users kept .40 of such statements. Users' decisions also varied with the agent they faced, but predictions hardly reflected this: users cooperated more with the Agreeableness agent than with the Extraversion agent (70.6% vs. 54.5%), whereas predicted cooperation was nearly identical (64.5% vs. 63.1%). Users also cooperated more with an agent when they themselves scored higher on that agent's trait, whereas predicted cooperation barely changed with these scores. Dialogue-based predictions should therefore weigh users' statements by their earlier decisions and the agent they face.",
+      "publishedAt": "2026-10-27T08:14:55Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36813v1",
+      "titleHash": "7ea48ef569c5ab22eed8f815fa0ad8d9e2fdaafd089fa2ed2a7ff5be5064c981",
+      "contentHash": "0e783001246800c81e63d4fb3726300e20ff0f0d9dbac6000dfc62e1fe403d36",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8459702841575608,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36811v1",
+      "title": "Weakness Localization Is Not Enough: State-Aware Recursive Knowledge Improvement for Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Knowledge improvement in large language models is shifting from predefined knowledge incorporation pipelines toward evaluation-guided updating. Existing methods use evaluation to localize model-specific knowledge weaknesses and guide targeted post-training. However, identifying what to improve does not necessarily provide sufficient information for deciding how to improve it. The same localized weakness can be compatible with distinct operational knowledge states: the relevant knowledge may be unavailable, available but difficult to access reliably, or accessible but ineffective for downstream use. We call this ambiguity knowledge-state aliasing. When compatible states favor different interventions, greater diagnostic resolution alone is insufficient for intervention selection. Moreover, model updates can change the underlying knowledge state before the observed weakness disappears, such that an intervention appropriate in one round may no longer address the bottleneck in the next. To address these challenges, we propose Recursive Knowledge Improvement (RKI), which formulates knowledge improvement as a sequential, state-aware intervention process. RKI organizes knowledge into graph-structured units that provide a shared basis for diagnostic evaluation and targeted intervention across rounds. At each round, RKI localizes knowledge weaknesses, estimates the model's operational knowledge state from diagnostic evidence and intervention history, selects a corresponding intervention, and re-evaluates the updated model before determining the next intervention. On HotpotEval and SafeInternalEval, RKI outperforms existing knowledge incorporation methods by 18.41 points on average. Further analyses show that knowledge states provide additional guidance for intervention selection beyond weakness localization and can change across model updates even when the observed weakness persists.",
+      "publishedAt": "2026-10-27T08:12:37Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36811v1",
+      "titleHash": "41667e371d6049bf000c258921397b55ec0b2de66f06a903f160d09db81c7f43",
+      "contentHash": "a87bb79349b300fd4b0c38c4e180b98c7ad0f7b1c9ef6c23f2645601214deda0",
+      "score": 78,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8456581476796692,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36809v1",
+      "title": "Latent Visual Contrastive Reasoning with Multi-Branch Exploration",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal large language models have made substantial progress in visual question answering, but complex visual reasoning often requires locating and comparing multiple pieces of question-relevant visual evidence. Existing methods that move intermediate reasoning into the visual latent space usually follow a single linear reasoning trajectory, which can be limiting when multiple visual hypotheses or competing evidence regions are relevant. We propose Latent Visual Contrastive Reasoning, a branch-aware latent reasoning framework that generates multiple question-conditioned latent visual branches as soft hypotheses over image tokens. To train these branches, our method uses bounding-box evidence annotations to build target evidence representations and introduces a soft contrastive branch-evidence alignment objective. This objective encourages evidence-relevant branches to align with annotated visual regions while contrasting them against negative evidence. We instantiate our method on Qwen2.5-VL backbones and train it with standard supervised fine-tuning. Experiments on perception-intensive visual reasoning benchmarks show that the proposed method achieves overall improvements over the corresponding backbone and single-path latent reasoning baselines at both 3B and 7B scales.",
+      "publishedAt": "2026-10-27T08:12:07Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36809v1",
+      "titleHash": "ef3951f644da25c351cf098d1fae203a59909f8599948d7a5623555b4625515b",
+      "contentHash": "d27bedab2c269934abc91b6bef8c52242762f457fead6e2fb353757b3a242131",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8455903049035093,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.36805v1",
+      "title": "Personality Latents: Conditioning Frozen Language Models on Individuals from Their Own Writing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Controlling the personality of a language model usually relies on written profiles or named trait categories, so it can only express what an author writes down or what a taxonomy names. We instead propose Personality Latents (PL), which learn a latent for each person from their own writing, with no personality labels and no authored profile, and inject it into a frozen language model as a soft prefix. Following generative latent optimization, each training person receives a free latent that is optimized through the frozen model itself, while an encoder learns to predict these latents so that a new person needs only one forward pass, with optional refinement at test time. We evaluate on held-out people by having the conditioned model answer neutral and interview questions and reading personality from its answers with scorers trained on real human writing. On the MBTI axes PL reaches an AUC of , ahead of persona embedding and prompt-based baselines under identical settings, and the ranking holds when the answers are scored in three different embedding spaces. A latent learned with Qwen2.5-3B-Instruct also transfers personality to Llama-3.1-8B-Instruct through a new adapter alone.",
+      "publishedAt": "2026-10-27T08:08:06Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.36805v1",
+      "titleHash": "2794dc88fa162dad6633202db6b20937ef5630eb6d334ddbfd2addd59d88cdff",
+      "contentHash": "004727923972359db400d1c7c25a13f93fa6831f2fffdf50bfdc1841b9346591",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8450455168663773,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+      "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "ni5arga",
+      "publishedAt": "2026-10-27T14:08:23.211-05:00",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "security",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+      "titleHash": "861b1f1988fafa5b29fa3c6e41da112de29358985b0a0c4b09e5c26cb99f2107",
+      "contentHash": "861b1f1988fafa5b29fa3c6e41da112de29358985b0a0c4b09e5c26cb99f2107",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.9394870203142524,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/xulingfeng/stratagems-32-the-ai-logged-a-withdrawal-p-took-it-as-proof-2jo2",
+      "title": "Stratagems #32: The AI Logged a Withdrawal. P Took It as Proof.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Make empty what is already empty. Let doubt breed inside doubt. — The 36 Stratagems, The Empty Fort...",
+      "author": "xulingfeng",
+      "publishedAt": "2026-10-27T16:46:17Z",
+      "engagement": 65,
+      "tags": [
+        "ai",
+        "discuss",
+        "programming",
+        "career",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/xulingfeng/stratagems-32-the-ai-logged-a-withdrawal-p-took-it-as-proof-2jo2",
+      "titleHash": "550c4c1bcf727d795c2e24642d27b5d97d008c7d458253afd744838c1151f628",
+      "contentHash": "c650432e8c301c3d04eb6d03e740d654eae803d98f5b0730d864bd41f4c1227f",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.9183084986689365,
+        "engagement": 0.6065146451806229
+      }
+    },
+    {
+      "url": "https://dev.to/varshithvhegde/the-most-embarrassing-private-key-in-web-pki-history-f9b",
+      "title": "The Most Embarrassing Private Key in Web PKI History",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The strange thing about this incident is that the certificates looked normal.  They had familiar CA...",
+      "author": "Varshith V Hegde",
+      "publishedAt": "2026-10-27T05:56:07Z",
+      "engagement": 32,
+      "tags": [
+        "security",
+        "webdev",
+        "devops",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/varshithvhegde/the-most-embarrassing-private-key-in-web-pki-history-f9b",
+      "titleHash": "9585d42698ad86eac3a3807e6079817f9f74b7b0104366b977b8b6dbc78a2233",
+      "contentHash": "f718e1efc897989e2d4e8bb24e5c7f7f47dad8af443ffe4f7e5c5e28914d7321",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8273382906626876,
+        "engagement": 0.5061713132926292
+      }
+    },
+    {
+      "url": "https://dev.to/javz/slowth-money-a-local-ai-agent-for-your-financial-goals-2ki2",
+      "title": "Slowth Money: a local AI agent for your financial goals",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 3: Slow and Steady          ...",
+      "author": "Julien Avezou",
+      "publishedAt": "2026-10-25T23:38:36Z",
+      "engagement": 37,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "fintech",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/javz/slowth-money-a-local-ai-agent-for-your-financial-goals-2ki2",
+      "titleHash": "64637b4ba8995c578db096bb078776db2ed033828f85fdfda6e79888522eed68",
+      "contentHash": "fc618277aa0848d99899b0fd8b82a822123c6ff5a578efbca31903bc0cd63ab6",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.6180638576925824,
+        "engagement": 0.5265945322056034
+      }
+    },
+    {
+      "url": "https://dev.to/james_anderson_h/ai-is-winning-literary-awards-the-data-says-thats-not-whats-happening-179d",
+      "title": "AI Is Winning Literary Awards. The Data Says That's Not What's Happening.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The headlines have been impossible to miss. An AI-assisted novel takes a major prize in Japan. AI...",
+      "author": "James Anderson",
+      "publishedAt": "2026-10-23T05:29:29Z",
+      "engagement": 71,
+      "tags": [
+        "ai",
+        "writing",
+        "data",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/james_anderson_h/ai-is-winning-literary-awards-the-data-says-thats-not-whats-happening-179d",
+      "titleHash": "1108e6729e3093c6310dda2161404da4b3713b7eb184de2b04a6e787bb59b976",
+      "contentHash": "7410c7b7a128e26da8778cc3ff687751a843bf6af4ed10de30c81ebe5187ab53",
+      "score": 49,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.3269293492869881,
+        "engagement": 0.6191108321437562
+      }
+    },
+    {
+      "url": "https://dev.to/kenielzep97/i-tried-to-own-my-agents-brain-3ngp",
+      "title": "I Tried To Own My Agent's Brain",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Here is the exact exchange. The model is llama3.2:latest (3.2B, Q4_K_M), running locally through...",
+      "author": "Self-Correcting Systems",
+      "publishedAt": "2026-10-26T22:25:39Z",
+      "engagement": 28,
+      "tags": [
+        "ai",
+        "security",
+        "agents",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/kenielzep97/i-tried-to-own-my-agents-brain-3ngp",
+      "titleHash": "8fd7e31b65f03ddf1fe99de95446e0f1e45d2a4661d4591d5350741f30a13574",
+      "contentHash": "ca25b249338283e8de12147caa4abd22a6c8f907a3f851958dd75cf0a6a9fce1",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.7696500728404547,
+        "engagement": 0.487465999299652
+      }
+    },
+    {
+      "url": "https://dev.to/debashish_ghosal/i-oomd-on-100-rows-because-one-file-was-590-mb-3lhp",
+      "title": "I OOM'd on 100 Rows Because One File Was 590 MB",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "My validator got SIGKILL'd on 100 rows. Not 100 million — a hundred. And I'd already done the...",
+      "author": "Debashish Ghosal",
+      "publishedAt": "2026-10-25T19:13:07Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "outofmemory",
+        "testing",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/debashish_ghosal/i-oomd-on-100-rows-because-one-file-was-590-mb-3lhp",
+      "titleHash": "279e201835f4968722b905623044c547cb1e00790ef77cf793d7915d3683fa17",
+      "contentHash": "34c5e5d949f05352422f64a4d4b4e18088354d64debef61037842a9aa15fd4c9",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.5922890556665955,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://dev.to/nabeelbaghoor/my-hvac-voice-agent-was-listening-for-the-word-invisalign-273g",
+      "title": "My HVAC Voice Agent Was Listening for the Word Invisalign",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Last week I wrote about a bug I found by diffing two exports of the same Retell voice agent: Airheads...",
+      "author": "Nabeel Hassan",
+      "publishedAt": "2026-10-25T21:35:59Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "llm",
+        "testing",
+        "devops",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/nabeelbaghoor/my-hvac-voice-agent-was-listening-for-the-word-invisalign-273g",
+      "titleHash": "3fcce999604f117b7f9e9596fa998e8ef106b22e5332be3b8634aa9647c449d6",
+      "contentHash": "935c7a69d964f0cfe10094514dbb08892199f5ef14999cc6f0cf6da35825169c",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.6060229443262972,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/kartik-nvjk/a-flaky-mcp-tool-broke-my-agent-i-went-looking-for-the-retry-setting-in-the-protocol-3hl2",
+      "title": "A flaky MCP tool broke my agent. I went looking for the retry setting in the protocol",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A remote tool server my agent depends on started timing out. Most calls went through. Some hung and...",
+      "author": "Kartik N V J K",
+      "publishedAt": "2026-10-26T13:48:00Z",
+      "engagement": 13,
+      "tags": [
+        "mcp",
+        "agents",
+        "llm",
+        "architecture",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/kartik-nvjk/a-flaky-mcp-tool-broke-my-agent-i-went-looking-for-the-retry-setting-in-the-protocol-3hl2",
+      "titleHash": "2d284e84017b95b5adca2e327ee2f0e385f1c7bcdd52aac54a172346c156381c",
+      "contentHash": "75656a8880439cad7aaedcfeb00bc18221a023f46c3e14efb9c0a859e44384a0",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7083077235737375,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "title": "shareAI-lab/learn-claude-code",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "author": "shareAI-lab",
+      "publishedAt": "2026-10-27T04:47:00Z",
+      "engagement": 79373,
+      "tags": [
+        "agent",
+        "agent-development",
+        "ai-agent",
+        "claude",
+        "claude-code",
+        "educational",
+        "llm",
+        "python",
+        "teaching",
+        "tutorial",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/shareAI-lab/learn-claude-code",
+      "titleHash": "cb04d32c8421d2288ad718ec2b63532754ee8f62abd7516bd895f3915ed47aba",
+      "contentHash": "9fa2de18f3fdfebae9b99bf2a04bde70ff9f5f52787e3e2005ef3c9f05998ce2",
+      "score": 91,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.95,
+        "timeliness": 0.8182139450836943,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "title": "baidu/Unlimited-OCR-2",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 247 likes · 513 downloads",
+      "engagement": 247,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "titleHash": "82c59f3cf1ad033f264ff0c01164d86792e2c36e62d8216e6c002817bccb80de",
+      "contentHash": "9dfeb18c864f737b5acb657a6320c413285819f05ff9bc37f9203e8ad98966d4",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7981505602754054
+      }
+    },
+    {
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 2166 likes · 1713544 downloads",
+      "engagement": 2166,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "titleHash": "48b5188b158aab9e72511f4481810b49da19c8241effafb6ea210c5d2b968ade",
+      "contentHash": "a1aee56c8b49762c9351bc42ee7091e8bd866958a30c6176f819bba467c14573",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 1
+      }
+    }
+  ]
+}
