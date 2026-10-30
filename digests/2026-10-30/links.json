@@ -1,0 +1,1805 @@
+{
+  "date": "2026-10-30",
+  "stats": {
+    "scraped": 170,
+    "deduped": 72,
+    "scored": 72
+  },
+  "summary": "今日资讯聚焦AI前沿动态与深度安全研究：Simantic推出面向AI智能体的固件仿真层，简化嵌入式开发流程；社区热议Claude Code潜在隐私风险。学术方面，关注LLM在印度金融建议中的偏见审计、多智能体系统的公平性缺陷，以及针对个人设备推理优化的无损KV缓存压缩技术。",
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50291116",
+      "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, we&#x27;re Ahnaf and Seungmin from Simantic (<a href=\"https:&#x2F;&#x2F;simantic.com\">https:&#x2F;&#x2F;simantic.com</a>). We are building the simulation layer that lets engineers and AI agents test and validate firmware without hardware.<p>Before Simantic, we were ex-firmware engineers at companies like Neuralink and Tesla. We’ve worked on some of the coolest projects, like the Cybertruck and Roadster, back when they were still early prototypes.<p>We started working on firmware back when ChatGPT didn’t exist yet, but over the years, we saw how much of the engineering and development work has been automated as the frontier models improved to this point. In software, AI can run and test code inside your computer in a matter of seconds. But as firmware engineers, we didn’t have that luxury. An AI agent can write firmware in seconds, but in order to test it, we had to flash a physical board, then manually run tests using expensive and clunky tools with software made over a decade ago.<p>To speed up the validation loop, we built the simulation layer that lets AI agents test the firmware and make decisions based on evidence, instead of waiting for the engineer to run tests for them. We used to spend hours testing our firmware manually on devboards, but now we use our own simulation to validate firmware in seconds.<p>What we offer:\n- Virtual devboards you can program and run with a single API call, without leaving your terminal.\n- An AI code reviewer for firmware, that makes informed decisions based on evidence, using our simulation as a verification engine.\n- A CI&#x2F;CD pipeline for your hardware projects that validates your firmware against a simulated version of the microcontroller on every commit.<p>Here is a demo of our simulation used in an AI code review session: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kBK1ZjGWWbQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kBK1ZjGWWbQ</a><p>Our users are using Simantic for bare-metal and RTOS development for applications like flight controllers, electric vehicles, robotics, and satellites. For safety critical systems like avionics and automotives, a robust simulation system is incredibly important, because every change in the firmware puts a human life at stake, especially for machines that cost hundreds of thousands to millions of dollars.<p>We recently helped an early stage space startup building satellites, to test their firmware on hardware that they don&#x27;t yet have. Even the development modules for those satellites costs over $100k, and we helped them do that at just a hundredth of the cost and time.<p>Early on in our journey, we established our idea to make better simulation but didn’t have a clear idea of how we would do it, we considered developing our software around open source emulation frameworks like Renode (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;renode&#x2F;renode\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;renode&#x2F;renode</a>) and QEMU (<a href=\"https:&#x2F;&#x2F;www.qemu.org&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.qemu.org&#x2F;</a>), because they were tools already used within the firmware industry. We built our MVP that was essentially a wrapper around Renode, but we quickly realized there were a lot of limitations to doing this.<p>1. We were bottlenecked by the development speed of Renode themselves. We tried making contributions on Github to fix issues we came across, but the speed in which we could merge our features in was not fast enough for a startup like us trying to move fast.<p>2. Renode is built using Dotnet, and it was proving itself to be slower than we would have liked. Renode was released in 2017, which was when all code was still being written by hand, so I think it made sense looking back, but there were limitations because of the language itself.<p>3. The open source tools were bloated, with features that we would never use. Yes, there were a  breadth of features, but we had a lot of things we had to work around just because we couldn’t remove or change them.\nUsers were complaining about simulation accuracy. Renode is an emulator at the core, but our users, especially those who are building systems where timing accuracy is crucial did not find the accuracy good enough to validate their firmware.<p>Because of these issues, we made our own simulation engine from scratch, fully written in Rust.<p>- Our simulation is focused on accuracy. Open source frameworks often focus on expandability and developer experience, which means there were a lot of tradeoffs made to prioritize a breadth of models rather than going deep into a set of select models.<p>- We have our own hardware validation rigs running 24&#x2F;7 to ensure our simulation models are as close to real world hardware as possible, and any gaps are detected and fixed as soon as we can. It currently looks like devboards connected to a Saleae Logic MSO and a SWD bus, controlled by a Linux PC, running Claude 24&#x2F;7 just finding these gaps.<p>Our cloud-hosted simulator is available to use right now! We also provide a native binary with our developer plan licenses that let you run your firmware on your machines locally without any limitations.<p>Check it out at <a href=\"https:&#x2F;&#x2F;simantic.com&#x2F;cloud-sim\">https:&#x2F;&#x2F;simantic.com&#x2F;cloud-sim</a>, and you can start using our AI firmware reviewer bot in your own Github repos here: <a href=\"https:&#x2F;&#x2F;simantic.com&#x2F;dashboard&#x2F;simantic-bot\">https:&#x2F;&#x2F;simantic.com&#x2F;dashboard&#x2F;simantic-bot</a>.<p>We currently have support for some models of the STM32F0, F4, H7 series MCUs, ESP32-S3&#x2F;C3, and RP2040, but we’re constantly working to release new models every week, and improve our existing ones.<p>Thank you, and if you have any questions, feel free to send us an email at founders@simantic.dev",
+      "author": "shong0504",
+      "publishedAt": "2026-10-29T15:56:32Z",
+      "engagement": 50,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50291116",
+      "titleHash": "aea08b8b3e2bdf066128f3d3219b4b6d77e951833441e71dfa0503e9ae39579b",
+      "contentHash": "9f54a9425c38e9f59568b819653ce90184e808135350b1d95615b6d25ece73f9",
+      "score": 87,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.906673773466321,
+        "engagement": 0.569190058699312
+      },
+      "rank": 1,
+      "reasons": [
+        "让AI自动完成固件测试，节省大量调试时间"
+      ],
+      "overview": "Simantic提供固件仿真层，使AI智能体能够安全、高效地测试和部署嵌入式系统代码，降低实机硬件依赖。"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50286306",
+      "title": "Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "The prompt issue:<p>https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code&#x2F;issues&#x2F;81138<p>The LLM sends it to websites:<p>https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ClaudeCode&#x2F;comments&#x2F;1xhqvzn&#x2F;opus_55_just_shared_my_email_address&#x2F;",
+      "author": "TekMol",
+      "publishedAt": "2026-10-29T09:06:12Z",
+      "engagement": 26,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50286306",
+      "titleHash": "48f825d94345fdad29a71961194c56191700db26ec2f2386c132b483eac87924",
+      "contentHash": "a4c3f88d05879a34796529de004c7a6b930d885038f3b918c73e65cac356d523",
+      "score": 80,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8489025719941703,
+        "engagement": 0.47712125471966244
+      },
+      "rank": 2,
+      "reasons": [
+        "揭示流行AI工具的隐私漏洞，值得警惕"
+      ],
+      "overview": "用户披露Claude Code在提示词中自动包含用户邮箱，且LLM可能将该信息泄露至外部网站，引发隐私安全隐患讨论。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38239v1",
+      "title": "The Indian Financial Automated Advice Bias (IFAAB) Dataset : Auditing Socioeconomic and Demographic Disparities in LLM-Generated Financial Advice in India",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models are increasingly used for financial guidance, yet little is known about whether their advice changes across social identities in Global South contexts. We introduce the Indian Financial Automated Advice Bias (IFAAB) benchmark, a counterfactual audit dataset of 31,734 GPT-4o-generated financial-advice responses for synthetic Indian personas varying by gender, caste, education, employment, residence, age, and district. Holding the underlying request fixed, we evaluate disparities in LLM-implied wealth, income, savings, projected gains, textual similarity, advice topics, and qualitative bias judgments. In the gender-only audit, male-labelled profiles receive 60.1\\% higher initial total resources and 46.8\\% higher post-advice total resources than comparable female-labelled profiles; in the caste-augmented audit, the post-advice total-resource gap remains 49.4\\%. Adding district information reduces the aggregate post-advice total-resource gender gap to 7.9\\%, revealing strong geographic conditioning. Standalone caste comparisons also show systematic stratification: relative to General-category profiles, OBC, SC, and ST profiles receive significantly lower post-advice total resources, respectively. Textual audits show low semantic similarity between paired gendered responses, with an average TF--IDF cosine similarity score of 0.44. Qualitative analysis shows that women are more often steered toward cautious saving, community support, and basic financial literacy, while men receive more growth-oriented advice involving investment, entrepreneurship, and asset accumulation. IFAAB provides a reusable benchmark for evaluating fairness, suitability, and consumer-protection risks in LLM-mediated financial advice, and highlights the need for locally grounded, intersectional evaluation of AI systems in high-stakes economic domains.",
+      "publishedAt": "2026-10-28T03:39:59Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38239v1",
+      "titleHash": "c7efb5f66a70e91ddc4ff2af631a1d4232beb6defd093f12b628dcd6f37d1738",
+      "contentHash": "2c10f1c2a2494d86dcdb01ba5eb0e39a80c0eec6695cff332446a27bcb297411",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6394149764468817,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "量化LLM在现实社会中的偏见，具有重要研究价值"
+      ],
+      "overview": "该数据集审计了印度背景下LLM生成的金融建议，揭示了社会经济和人口统计特征导致的建议偏差与不平等现象。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38215v1",
+      "title": "Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Clinical large language models are increasingly fielded as multi-agent teams, on the assumption that deliberation averages out individual error. It does not average out bias. Across a full factorial of five model families and four aggregation topologies on 120 real MIMIC-IV emergency cases under counterfactual demographic swaps, no configuration neutralizes the disparity: all 20 cells commit the direction of their agents' independent answers, giving Black patients more acute triage. Every model has a topology that amplifies its baseline gap, but which one varies by model, so no design is reliably safe or reliably amplifying: the disparity is relocated, never removed. Late-stage fixes fail: fairness instructions and demographic masking leave the gap untouched, and per-agent self-debiasing widens it, because the bias is already encoded in the agents' ordinary clinical numbers. We call this disparity laundering; the audits now applied to clinical AI, per model, per output, per version, can certify the parts but never the committed decision. Interventions close the gap exactly when they make counterfactual versions visible inside the system and pool them, through deliberation, into the committed decision. A diverse-perspective ensemble does both while keeping the team, with no retraining or architectural change: the disparity falls by 67 to 94% where all five perspectives pool at every round, and the one topology that never pools them is the one it cannot reliably repair. Medical multi-agent systems do not filter demographic bias; they launder it into plausible decisions no single-version audit can catch, and the only defense is to make the bias visible.",
+      "publishedAt": "2026-10-28T03:10:28Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38215v1",
+      "titleHash": "250e0c49acd4e7a14f0584ab2f2f5318e5ea11afb8c65847dc4074a10a63d213",
+      "contentHash": "005223b595888889a8dfab99d8b77dc833f333feef6b3704b225dede78652d5a",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6363938835715418,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "揭示多智能体共识机制背后的公平性陷阱"
+      ],
+      "overview": "研究表明临床多智能体系统通过共识机制虽能降低错误率，但未能消除模型偏见，甚至可能因群体效应加剧公平性缺失。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38210v1",
+      "title": "GAAC: Lossless KV Compression for Bandwidth-Efficient LLM Inference on Personal Devices",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Weight-only, lossy quantization substantially reduces the storage and memory requirements for serving large language models (LLMs), but the growing key-value (KV) cache remains a bottleneck for long-context inference on personal devices. We present Group-Adaptive Additive Codec (GAAC), a lossless KV compression and serving system that exploits exponent redundancy to reduce storage and accelerate attention without introducing KV approximation. GAAC encodes BF16 exponents using calibrated per-channel base-plus-offset codes over contiguous ranges. GAAC adapts code widths across small groups while preserving KV values bit-for-bit. A fused attention kernel reconstructs KV tiles on the fly, avoiding full-cache decompression. Block-wise compression and fixed-capacity slots support incremental cache updates and paged serving. Across five tested models, GAAC achieves 1.405-1.407$\\times$ lossless BF16 KV compression. We also study compression performance on low-precision tensors FP8 E4M3 caches ( 1.09-1.14$\\times$) and E5M2 caches (1.25-1.30$\\times$). On NVIDIA DGX Spark, GAAC accelerates decode attention at a 64K-token context by 1.19-1.27$\\times$ and end-to-end W4A16 decode steps by 1.04-1.15$\\times$. In serving, it reduces resident KV memory by approximately 26% and increases aggregate throughput by 13-29% under comparable KV-memory budgets. On Apple M4, GAAC achieves 1.02-1.25$\\times$ attention speedups, demonstrating portability beyond NVIDIA GPUs.",
+      "publishedAt": "2026-10-28T03:03:51Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38210v1",
+      "titleHash": "ac7248f72127cfe84eea3c4e00b3bd91b60d61008dd0ce419e69a8315f1918be",
+      "contentHash": "5fa5ed860b1a94cd7615abb16b818748c9430ea6136892efd4a7aa23b0265568",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6357186151296492,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "实现手机端高效运行大模型的关键技术突破"
+      ],
+      "overview": "GAAC提出一种无损KV压缩算法，显著减少LLM推理时的显存占用与带宽需求，提升个人设备上大模型运行的效率。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sandslash",
+      "publishedAt": "2026-10-29T21:40:28Z",
+      "engagement": 165,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://labs.ycombinator.com/projects/games/index.html",
+      "titleHash": "32ea59727619284dc6ba84f23b446ff9c88b7f6e5c760c7d942daade137c9d35",
+      "contentHash": "32ea59727619284dc6ba84f23b446ff9c88b7f6e5c760c7d942daade137c9d35",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9581142868545238,
+        "engagement": 0.740036029346685
+      }
+    },
+    {
+      "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+      "title": "Zombie stats: Where the numbers AI quotes come from",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mektrik",
+      "publishedAt": "2026-10-29T15:06:17Z",
+      "engagement": 144,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://trakkr.ai/trakkr-research/zombie-stats",
+      "titleHash": "2b71dc261d882fd3ab523608383f3586d47e64de06ef24f4ba2c45ad4732a48b",
+      "contentHash": "2b71dc261d882fd3ab523608383f3586d47e64de06ef24f4ba2c45ad4732a48b",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8993929737479509,
+        "engagement": 0.7204560007449916
+      }
+    },
+    {
+      "url": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
+      "title": "Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Frieren",
+      "publishedAt": "2026-10-29T14:29:06Z",
+      "engagement": 141,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning",
+      "titleHash": "33dba3d6dcb2d5b13e744792d577a9324b747c350b997b4dc4806a5e742dc7c0",
+      "contentHash": "33dba3d6dcb2d5b13e744792d577a9324b747c350b997b4dc4806a5e742dc7c0",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8940430862673072,
+        "engagement": 0.7174294481276854
+      }
+    },
+    {
+      "url": "https://convo.casa/@b/117525936178835007",
+      "title": "Proton goes all in on using AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ColinWright",
+      "publishedAt": "2026-10-29T21:49:28Z",
+      "engagement": 77,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://convo.casa/@b/117525936178835007",
+      "titleHash": "25194e2515d0dcfb827c5ab56ef51e273304e5512671345f62a5384ed4531689",
+      "contentHash": "25194e2515d0dcfb827c5ab56ef51e273304e5512671345f62a5384ed4531689",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9594988575977553,
+        "engagement": 0.6306982008968268
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50291116",
+      "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, we&#x27;re Ahnaf and Seungmin from Simantic (<a href=\"https:&#x2F;&#x2F;simantic.com\">https:&#x2F;&#x2F;simantic.com</a>). We are building the simulation layer that lets engineers and AI agents test and validate firmware without hardware.<p>Before Simantic, we were ex-firmware engineers at companies like Neuralink and Tesla. We’ve worked on some of the coolest projects, like the Cybertruck and Roadster, back when they were still early prototypes.<p>We started working on firmware back when ChatGPT didn’t exist yet, but over the years, we saw how much of the engineering and development work has been automated as the frontier models improved to this point. In software, AI can run and test code inside your computer in a matter of seconds. But as firmware engineers, we didn’t have that luxury. An AI agent can write firmware in seconds, but in order to test it, we had to flash a physical board, then manually run tests using expensive and clunky tools with software made over a decade ago.<p>To speed up the validation loop, we built the simulation layer that lets AI agents test the firmware and make decisions based on evidence, instead of waiting for the engineer to run tests for them. We used to spend hours testing our firmware manually on devboards, but now we use our own simulation to validate firmware in seconds.<p>What we offer:\n- Virtual devboards you can program and run with a single API call, without leaving your terminal.\n- An AI code reviewer for firmware, that makes informed decisions based on evidence, using our simulation as a verification engine.\n- A CI&#x2F;CD pipeline for your hardware projects that validates your firmware against a simulated version of the microcontroller on every commit.<p>Here is a demo of our simulation used in an AI code review session: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kBK1ZjGWWbQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kBK1ZjGWWbQ</a><p>Our users are using Simantic for bare-metal and RTOS development for applications like flight controllers, electric vehicles, robotics, and satellites. For safety critical systems like avionics and automotives, a robust simulation system is incredibly important, because every change in the firmware puts a human life at stake, especially for machines that cost hundreds of thousands to millions of dollars.<p>We recently helped an early stage space startup building satellites, to test their firmware on hardware that they don&#x27;t yet have. Even the development modules for those satellites costs over $100k, and we helped them do that at just a hundredth of the cost and time.<p>Early on in our journey, we established our idea to make better simulation but didn’t have a clear idea of how we would do it, we considered developing our software around open source emulation frameworks like Renode (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;renode&#x2F;renode\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;renode&#x2F;renode</a>) and QEMU (<a href=\"https:&#x2F;&#x2F;www.qemu.org&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.qemu.org&#x2F;</a>), because they were tools already used within the firmware industry. We built our MVP that was essentially a wrapper around Renode, but we quickly realized there were a lot of limitations to doing this.<p>1. We were bottlenecked by the development speed of Renode themselves. We tried making contributions on Github to fix issues we came across, but the speed in which we could merge our features in was not fast enough for a startup like us trying to move fast.<p>2. Renode is built using Dotnet, and it was proving itself to be slower than we would have liked. Renode was released in 2017, which was when all code was still being written by hand, so I think it made sense looking back, but there were limitations because of the language itself.<p>3. The open source tools were bloated, with features that we would never use. Yes, there were a  breadth of features, but we had a lot of things we had to work around just because we couldn’t remove or change them.\nUsers were complaining about simulation accuracy. Renode is an emulator at the core, but our users, especially those who are building systems where timing accuracy is crucial did not find the accuracy good enough to validate their firmware.<p>Because of these issues, we made our own simulation engine from scratch, fully written in Rust.<p>- Our simulation is focused on accuracy. Open source frameworks often focus on expandability and developer experience, which means there were a lot of tradeoffs made to prioritize a breadth of models rather than going deep into a set of select models.<p>- We have our own hardware validation rigs running 24&#x2F;7 to ensure our simulation models are as close to real world hardware as possible, and any gaps are detected and fixed as soon as we can. It currently looks like devboards connected to a Saleae Logic MSO and a SWD bus, controlled by a Linux PC, running Claude 24&#x2F;7 just finding these gaps.<p>Our cloud-hosted simulator is available to use right now! We also provide a native binary with our developer plan licenses that let you run your firmware on your machines locally without any limitations.<p>Check it out at <a href=\"https:&#x2F;&#x2F;simantic.com&#x2F;cloud-sim\">https:&#x2F;&#x2F;simantic.com&#x2F;cloud-sim</a>, and you can start using our AI firmware reviewer bot in your own Github repos here: <a href=\"https:&#x2F;&#x2F;simantic.com&#x2F;dashboard&#x2F;simantic-bot\">https:&#x2F;&#x2F;simantic.com&#x2F;dashboard&#x2F;simantic-bot</a>.<p>We currently have support for some models of the STM32F0, F4, H7 series MCUs, ESP32-S3&#x2F;C3, and RP2040, but we’re constantly working to release new models every week, and improve our existing ones.<p>Thank you, and if you have any questions, feel free to send us an email at founders@simantic.dev",
+      "author": "shong0504",
+      "publishedAt": "2026-10-29T15:56:32Z",
+      "engagement": 50,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50291116",
+      "titleHash": "aea08b8b3e2bdf066128f3d3219b4b6d77e951833441e71dfa0503e9ae39579b",
+      "contentHash": "9f54a9425c38e9f59568b819653ce90184e808135350b1d95615b6d25ece73f9",
+      "score": 87,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.906673773466321,
+        "engagement": 0.569190058699312
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/ai-generated-scientific-papers",
+      "title": "I Used AI to Fake a Scientific Paper. Here's What Happened",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pseudolus",
+      "publishedAt": "2026-10-29T10:08:04Z",
+      "engagement": 47,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://spectrum.ieee.org/ai-generated-scientific-papers",
+      "titleHash": "c3cf693db1a844f12f78c1d9d51004fe9d293eee44e220dac7640f889a222249",
+      "contentHash": "c3cf693db1a844f12f78c1d9d51004fe9d293eee44e220dac7640f889a222249",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8573712103522999,
+        "engagement": 0.5604137457918624
+      }
+    },
+    {
+      "url": "https://www.bostonglobe.com/2026/10/23/opinion/ai-impact-cognitive-ability-eric-so/",
+      "title": "MIT professor says AI is taking over your brain",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "leawi",
+      "publishedAt": "2026-10-29T15:08:49Z",
+      "engagement": 41,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bostonglobe.com/2026/10/23/opinion/ai-impact-cognitive-ability-eric-so",
+      "titleHash": "1bea9bf3352bb3a7346d6fe9d0c33e8a30743ff2db0afd7c8cb739672e9fa16c",
+      "contentHash": "1bea9bf3352bb3a7346d6fe9d0c33e8a30743ff2db0afd7c8cb739672e9fa16c",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8997586265892079,
+        "engagement": 0.5410830967993002
+      }
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
+      "title": "Google value plunges by $500B as AI fears rattle Wall Street",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dabinat",
+      "publishedAt": "2026-10-29T22:22:13Z",
+      "engagement": 34,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
+      "titleHash": "82ac6eadd26d73e9aa3a1b8123cd9d422a286121625a006acd608664fd4f17a8",
+      "contentHash": "82ac6eadd26d73e9aa3a1b8123cd9d422a286121625a006acd608664fd4f17a8",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9645540631063694,
+        "engagement": 0.5146893481167586
+      }
+    },
+    {
+      "url": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
+      "title": "Trump and aides helped Flávio Bolsonaro flee Brazil amid criminal investigations",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "luisrudge",
+      "publishedAt": "2026-10-29T18:17:54Z",
+      "engagement": 29,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
+      "titleHash": "de43f898111d3b584a91e150f796ca6a437653947c63d5db4fa06f635112e0d0",
+      "contentHash": "de43f898111d3b584a91e150f796ca6a437653947c63d5db4fa06f635112e0d0",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.927474308826714,
+        "engagement": 0.4923737515732208
+      }
+    },
+    {
+      "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+      "title": "A Defense Contractor Gave Their AI Agent Access to a Secure Pentagon System",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-10-29T18:47:56Z",
+      "engagement": 19,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system",
+      "titleHash": "880496df0f5820dd7043fef47c479dde341822bce143b2381852d30cdb416824",
+      "contentHash": "880496df0f5820dd7043fef47c479dde341822bce143b2381852d30cdb416824",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9319544733586518,
+        "engagement": 0.4336766652213271
+      }
+    },
+    {
+      "url": "https://serokell.io/blog/ai-contributions-to-ghc",
+      "title": "AI Contributions to GHC",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "alexandersechin",
+      "publishedAt": "2026-10-29T17:42:30Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://serokell.io/blog/ai-contributions-to-ghc",
+      "titleHash": "e5b6b7efafdc7295678369d863f1370a4f47b4be0b3734381d8a1c657ce0c82a",
+      "contentHash": "e5b6b7efafdc7295678369d863f1370a4f47b4be0b3734381d8a1c657ce0c82a",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9222212282593544,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://sorryharvey.com/",
+      "title": "Sorry Harvey! I Made a Free Open-Source Alternative to Your Overpriced Legal AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bigbadbubba",
+      "publishedAt": "2026-10-29T13:58:45Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sorryharvey.com/",
+      "titleHash": "9b4362ce84bded0096e90e3f0f6be018d4a5d5cb3ac164c8860e8b1f8b3c742f",
+      "contentHash": "9b4362ce84bded0096e90e3f0f6be018d4a5d5cb3ac164c8860e8b1f8b3c742f",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8896999636755454,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59",
+      "title": "AI Made Me Homeless",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thelifeline",
+      "publishedAt": "2026-10-29T20:19:09Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59",
+      "titleHash": "b08acfef0101de31e8ce7d93263542823cb5f26a1311cb2c04fc24f646cf5e40",
+      "contentHash": "b08acfef0101de31e8ce7d93263542823cb5f26a1311cb2c04fc24f646cf5e40",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9456946591435689,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://www.msn.com/en-us/news/other/the-beleaguered-chip-sellers-getting-their-revenge-on-apple/ar-AA2ghTPi",
+      "title": "Apple bullied flash memory suppliers, and why AI datacenters changed the game",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mydreamof",
+      "publishedAt": "2026-10-29T20:52:44Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.msn.com/en-us/news/other/the-beleaguered-chip-sellers-getting-their-revenge-on-apple/ar-AA2ghTPi",
+      "titleHash": "1eb18e590803b4efdd33c22730cce639726ee698127ba36c82f56782665b9159",
+      "contentHash": "1eb18e590803b4efdd33c22730cce639726ee698127ba36c82f56782665b9159",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9508042610783649,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://github.com/phpclaw-php/phpclaw-monorepo",
+      "title": "Show HN: phpClaw – AI agent runtime for PHP with tools, memory and guards",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "akashpatel7204",
+      "publishedAt": "2026-10-29T18:06:22Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/phpclaw-php/phpclaw-monorepo",
+      "titleHash": "ea23fed42334a691cdf996b3decececb6868f926bd2ee518958407d50a9c1fa2",
+      "contentHash": "ea23fed42334a691cdf996b3decececb6868f926bd2ee518958407d50a9c1fa2",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9257595751756249,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+      "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "datascientist",
+      "publishedAt": "2026-10-29T15:29:48Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thedataexchange.media/leo-de-moura-lean-aws",
+      "titleHash": "32c5927ce9721fb671369180ea49327cd19c7663490bcccb0b7445fc84f75974",
+      "contentHash": "32c5927ce9721fb671369180ea49327cd19c7663490bcccb0b7445fc84f75974",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9027930313266077,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "title": "Open-weight AI models can exploit the patch gap",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "merksittich",
+      "publishedAt": "2026-10-29T22:32:46Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://epoch.ai/publications/open-weight-models-patch-gap",
+      "titleHash": "3af16b9a021ab911aba43083c0812daccc357b630145772262244f04ab414b24",
+      "contentHash": "3af16b9a021ab911aba43083c0812daccc357b630145772262244f04ab414b24",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9661881997838533,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MgngwkPAuqQ",
+      "title": "The AI bubble is about to pop [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Bender",
+      "publishedAt": "2026-10-29T20:46:45Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=MgngwkPAuqQ",
+      "titleHash": "d61fb307ba6d6fa3025e46fee4ede24b405da55cc8d4ee6b7cb3ebc36c38b95f",
+      "contentHash": "d61fb307ba6d6fa3025e46fee4ede24b405da55cc8d4ee6b7cb3ebc36c38b95f",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9498918982548518,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://pidgeon.ai",
+      "title": "Show HN: Pidgeon – Email inboxes for AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "patrickcneuhaus",
+      "publishedAt": "2026-10-29T12:55:12Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pidgeon.ai/",
+      "titleHash": "c41d42d127d44ca5c367cc18fd066693963887b0c619086bbff519e0f77ea926",
+      "contentHash": "c41d42d127d44ca5c367cc18fd066693963887b0c619086bbff519e0f77ea926",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8806741045627771,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/",
+      "title": "Google admits AI search makes less money, but it's fixing that with more ads",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "keeda",
+      "publishedAt": "2026-10-29T18:02:07Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads",
+      "titleHash": "3982d2b0dd9d2ff3580cee2f6dd5790d2a80bc1817b6f8df583bbfa46318b17a",
+      "contentHash": "3982d2b0dd9d2ff3580cee2f6dd5790d2a80bc1817b6f8df583bbfa46318b17a",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9251285004469098,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "title": "LLM Voice",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ibobev",
+      "publishedAt": "2026-10-29T14:57:55Z",
+      "engagement": 346,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "titleHash": "754aaab11caa1bba3346d8c9cd7fbb47b6f473465517f3c158a20e83aba06e09",
+      "contentHash": "754aaab11caa1bba3346d8c9cd7fbb47b6f473465517f3c158a20e83aba06e09",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8981864022503472,
+        "engagement": 0.8467764915969579
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50286306",
+      "title": "Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "The prompt issue:<p>https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code&#x2F;issues&#x2F;81138<p>The LLM sends it to websites:<p>https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ClaudeCode&#x2F;comments&#x2F;1xhqvzn&#x2F;opus_55_just_shared_my_email_address&#x2F;",
+      "author": "TekMol",
+      "publishedAt": "2026-10-29T09:06:12Z",
+      "engagement": 26,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50286306",
+      "titleHash": "48f825d94345fdad29a71961194c56191700db26ec2f2386c132b483eac87924",
+      "contentHash": "a4c3f88d05879a34796529de004c7a6b930d885038f3b918c73e65cac356d523",
+      "score": 80,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8489025719941703,
+        "engagement": 0.47712125471966244
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50284849",
+      "title": "Ask HN: Why big LLMs use \"it's not A, it is B\" pattern? Shared dataset supplier?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jumasheff",
+      "publishedAt": "2026-10-29T05:20:39Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50284849",
+      "titleHash": "d6928807db67058402b283570824ead88e499d82c83b6b37e4b67cf553a4ba9f",
+      "contentHash": "d6928807db67058402b283570824ead88e499d82c83b6b37e4b67cf553a4ba9f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8187303281523335,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.metergraph.dev/pricing-api/",
+      "title": "Cross-Model LLM Pricing API",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "alexray",
+      "publishedAt": "2026-10-29T21:36:05Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.metergraph.dev/pricing-api",
+      "titleHash": "4b5f230462bb873fab1168239e6d0f710818cd30065129d8706eb5200243b029",
+      "contentHash": "4b5f230462bb873fab1168239e6d0f710818cd30065129d8706eb5200243b029",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9574406707422196,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://8rank.ai/game/apple-intelligence-knowledge-graph-in-the-wrong-hands",
+      "title": "Organizing a kidnap using Apple's personal knowledge graph (and an LLM)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "infwhispers",
+      "publishedAt": "2026-10-29T21:50:44Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://8rank.ai/game/apple-intelligence-knowledge-graph-in-the-wrong-hands",
+      "titleHash": "6f73786814a5d8908a5d484cd41f05861e90c13ae0842cb44921e9c4184d657b",
+      "contentHash": "6f73786814a5d8908a5d484cd41f05861e90c13ae0842cb44921e9c4184d657b",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9596938810932951,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://lists.gnu.org/archive/html/emacs-devel/2026-10/msg00508.html",
+      "title": "\"Human Emacs\": Proposal for an Emacs Fork Without LLM Contributions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "untilted",
+      "publishedAt": "2026-10-29T21:54:03Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://lists.gnu.org/archive/html/emacs-devel/2026-10/msg00508.html",
+      "titleHash": "cebc0ecf8dc0ea7ab68844a18843c632073bbe66a7857d4a3d17f21273cf7bda",
+      "contentHash": "cebc0ecf8dc0ea7ab68844a18843c632073bbe66a7857d4a3d17f21273cf7bda",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9602047292475877,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/oimo-ai/apgar",
+      "title": "Show HN: Apgar – Catch agent regressions without an LLM judge",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hey HN, We build financial AI agents, and Apgar is the tool we wrote to see whether a harness change made an agent better or worse in production. Our offline evals can&#x27;t cover every kind of question or session real users bring, and the LLM judge we run in Langfuse is too expensive to use on more than a small slice of traffic, so some failures get through.<p>Apgar is a small release health checker that sits on top of our Langfuse data. It picks up the release from the production traces, and for the first hours of each new release it compares the agent&#x27;s behavior with the previous release on things like tool calls per turn, retries of the same failing call, loops, output length and cost per turn (11 metrics right now). The release page shows what moved in both directions. When something gets worse, we get a Slack message (and a webhook) saying which metric moved and where the change is concentrated, for example only on Telegram or only in long sessions. We&#x27;ve been running it for a while and decided to open-source it: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;oimo-ai&#x2F;apgar\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;oimo-ai&#x2F;apgar</a><p>It&#x27;s not meant to be another monitoring tool. We still use Langfuse for that. Apgar only tries to answer &quot;is this release worse than the last one?&quot; It works with Langfuse or with anything that sends OpenTelemetry. There&#x27;s no LLM judge in it, so it&#x27;s cheap enough to run on all traffic. The downside is that it can&#x27;t tell that an answer is wrong if everything else about the turn looks the same. That&#x27;s still what our evals are for.<p>It runs on Docker Compose (or Helm) with ClickHouse, and it&#x27;s Apache-2.0. The Agents page can load demo data if you want to try it without connecting anything.<p>Curious how others deal with this. When you change your harness or prompts, how do you find out whether the agent actually got better or worse?",
+      "author": "jtkm6",
+      "publishedAt": "2026-10-29T17:04:06Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/oimo-ai/apgar",
+      "titleHash": "3faa0ffdccff996d4180ad8e692355335371017ba2057c77362744a9467057da",
+      "contentHash": "fa7e3d1a2a990ba5eb66add23c9f95616bc15b1fc269464f1301c9cda7a55363",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9165566076342346,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://judgementlabs.app/blog/the-coalition-room",
+      "title": "Where AI agents' social boundaries break: 5 LLMs try to form a government",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Jash271",
+      "publishedAt": "2026-10-29T23:19:01Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://judgementlabs.app/blog/the-coalition-room",
+      "titleHash": "fa2233bafbfea71afcd14096db6a5b6818e144406095b5a36e776993af95d79e",
+      "contentHash": "fa2233bafbfea71afcd14096db6a5b6818e144406095b5a36e776993af95d79e",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9733848035744126,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://kevinlynagh.com/newsletter/2026_10_29_llm_programming_and_theory_building/",
+      "title": "LLM Programming and Theory Building",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "TN1ck",
+      "publishedAt": "2026-10-29T23:56:15Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kevinlynagh.com/newsletter/2026_10_29_llm_programming_and_theory_building",
+      "titleHash": "efbb2ba1a5f6ec4bfc94d56e6189139e34bc557828b3bc6543b4eb6918f5447e",
+      "contentHash": "efbb2ba1a5f6ec4bfc94d56e6189139e34bc557828b3bc6543b4eb6918f5447e",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9792173217789153,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38252v1",
+      "title": "A Tutorial on Generative Models for Music Audio",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Music audio generation spans instrumental clips, full songs with vocals, edits of existing recordings, and systems that play alongside a musician in real time. This monograph explains the methods behind these systems for readers familiar with neural-network training who are new to music generation. It introduces neural audio codecs and autoencoders, autoregressive and masked token models, diffusion and flow matching, sampling acceleration, and preference optimization in a shared notation. Worked examples connect training objectives and sampling procedures to published systems. The application sections relate the musical requirements of instrumental generation, songs, editing, and live performance to model design. Comparison tables record representations, methods, inputs, tasks, and release information documented in papers and official sources. Symbolic composition, speech, and sound effects are included where they connect to music audio. We explain how to interpret automatic metrics and learned judges, design and report listening tests, and assess evidence about data provenance, memorization, attribution, and output detection. Selected legal decisions and disputes illustrate the implications for training and release. The reviewed systems combine established generative paradigms with new representations, planning stages, and post-training procedures. Differences in data, scale, and evaluation limit what cross-system comparisons can establish about the sources of reported gains.",
+      "publishedAt": "2026-10-28T04:04:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38252v1",
+      "titleHash": "1b0ea537a6d44a098c814dd54b02860fcc8635bd744688acfc32ca8565da0410",
+      "contentHash": "77cf293f8281bc57cb46631909c2110e8ff62eafd8ab49875b89b1ca03eedda6",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6419249080223328,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38245v1",
+      "title": "Verification-Guided Retrosynthesis: Reaction Feedback and Evidence Timing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Retrosynthesis planning seeks synthesis routes from purchasable starting materials to a target molecule. Search over predicted reactions can connect a target to available materials, yet an infeasible reaction can invalidate the resulting route. Evaluating route quality only after search has finished cannot correct errors made during search. We introduce Verification-Guided Reflow (VGR), incorporating reaction verification as a decision action in AND/OR search. Verification results are represented as binary verdicts; queries are scheduled from the search structure, and acquired verdicts exclude reactions or adjust search priorities. We define verified solvability as the fraction of targets for which a complete route accepted stepwise by the verifier is found. On Retro190, feeding verification results into search increases verified solvability from 51.1% to 62.6% relative to route evaluation without feedback. Further controlled experiments show that earlier verification and immediate prioritization of accepted reactions each improve route discovery, yet combining them performs worse than either change alone. We therefore propose early pruning and delayed guidance: rejected reactions are pruned immediately, while accepted reactions gain search priority when processed as part of a complete candidate route. In a separate comparison with the verification scheduling rule fixed, this strategy increases verified solvability from 61.1% with immediate guidance to 71.1%, using fewer proposal calls and unique verifier queries.",
+      "publishedAt": "2026-10-28T03:50:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38245v1",
+      "titleHash": "703868f30c5af2092156908f39c72d7ea4b572f060511f4f2639974c44c807f8",
+      "contentHash": "d679819265fb8517e91dfa85b69cb7f00dfff42fa2c154db45d598f1612a0b32",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 1,
+        "timeliness": 0.6405034045712927,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38244v1",
+      "title": "Precedent or Intent? What Coding Agents Follow When Evolving Existing Code",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Existing code reveals past implementation decisions but rarely explains the reasoning behind them. When coding agents implement new features or modify existing functionality, past decisions may conflict with new task instructions. This raises a fundamental question for agentic software evolution: when multiple implementations satisfy the same functional requirements, how do coding agents decide whether to follow existing code or new task instructions? We investigate this question through bidirectional, controlled experiments in purpose-built repositories, followed by validation in real-world open-source repositories. Our approach isolates three competing sources of guidance: (1) agents' default preferences, (2) repository precedents, and (3) explicit task instructions. We conduct 5,625 trials across four coding agents and six implementation pairs, with validation in four open-source repositories spanning three programming languages. We find that agents share the same default implementation choices, yet overwhelmingly follow repository precedent when it conflicts with those defaults (359/360 trials). Crucially, not all precedents carry equal influence: three supporting local files yield 96% adoption, compared with only 4% for sibling-resource files, and changing file placement alone can shift adoption from 0% to 100% at a fixed example count. When new task intent conflicts with existing code, written priority rules achieve substantially higher success than code examples alone (59/60 versus 38/60 joint successes for two agents on two implementation pairs). The effectiveness of explicit rules also extends to open-source repositories, where a harness-loaded rule raises joint success from 0/120 to 117/120. These findings motivate design-decision traceability that preserves not only implementation choices but also the rationale and priorities that should guide future changes.",
+      "publishedAt": "2026-10-28T03:50:17Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38244v1",
+      "titleHash": "7defd794cb62a8d9baddc9f9969ecaba3b7a418949cb0f16a42a919f9541c1f0",
+      "contentHash": "de1da0a2e83ef91d86e0c750c54fefbc6d710b5d45dd8784b3b4291dba4d80a7",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6404725745404554,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38241v1",
+      "title": "MEV: A Multi-Event Video Dataset for Long-Take Generation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Current datasets for text-to-video generation are largely limited to short clips depicting a single event or coarse-grained captions. As a result, they provide limited supervision for modeling long-take temporal dependencies, often leading to temporally inconsistent generations when describing multiple events. In this paper, we introduce MEV, a multi-event video dataset designed for long-take video generation. MEV provides high-quality real-world videos where subjects can perform a sequence of distinct, non-overlapping events, featuring precise temporal boundaries and fine-grained procedural annotations. This event-centric discretization reduces confounding factors and enables models to support temporally localized conditioning and build long-take videos from atomic event units. Furthermore, we introduce a comprehensive annotation pipeline that segments videos into temporally grounded events, and generates structured captions at both the global level and the event level. In addition, under an event-centric evaluation protocol, we conduct multi-event generation experiments by fine-tuning on MEV with temporally grounded event conditioning, leading to improved long-take event transitions and more coherent content. We believe this work provides a publicly available resource for multi-event fine-tuning and event-centric evaluation, together with practical insights into learning from temporally structured video-text data.",
+      "publishedAt": "2026-10-28T03:43:19Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38241v1",
+      "titleHash": "77b86d032a91a281d0d55df6f474642b364723bc8435a12e63268243ee4931cc",
+      "contentHash": "312fc115ece56f3fd711e140af1d469756efa23b280d0f44552455c7a31197c6",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6397570499277447,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38239v1",
+      "title": "The Indian Financial Automated Advice Bias (IFAAB) Dataset : Auditing Socioeconomic and Demographic Disparities in LLM-Generated Financial Advice in India",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models are increasingly used for financial guidance, yet little is known about whether their advice changes across social identities in Global South contexts. We introduce the Indian Financial Automated Advice Bias (IFAAB) benchmark, a counterfactual audit dataset of 31,734 GPT-4o-generated financial-advice responses for synthetic Indian personas varying by gender, caste, education, employment, residence, age, and district. Holding the underlying request fixed, we evaluate disparities in LLM-implied wealth, income, savings, projected gains, textual similarity, advice topics, and qualitative bias judgments. In the gender-only audit, male-labelled profiles receive 60.1\\% higher initial total resources and 46.8\\% higher post-advice total resources than comparable female-labelled profiles; in the caste-augmented audit, the post-advice total-resource gap remains 49.4\\%. Adding district information reduces the aggregate post-advice total-resource gender gap to 7.9\\%, revealing strong geographic conditioning. Standalone caste comparisons also show systematic stratification: relative to General-category profiles, OBC, SC, and ST profiles receive significantly lower post-advice total resources, respectively. Textual audits show low semantic similarity between paired gendered responses, with an average TF--IDF cosine similarity score of 0.44. Qualitative analysis shows that women are more often steered toward cautious saving, community support, and basic financial literacy, while men receive more growth-oriented advice involving investment, entrepreneurship, and asset accumulation. IFAAB provides a reusable benchmark for evaluating fairness, suitability, and consumer-protection risks in LLM-mediated financial advice, and highlights the need for locally grounded, intersectional evaluation of AI systems in high-stakes economic domains.",
+      "publishedAt": "2026-10-28T03:39:59Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38239v1",
+      "titleHash": "c7efb5f66a70e91ddc4ff2af631a1d4232beb6defd093f12b628dcd6f37d1738",
+      "contentHash": "2c10f1c2a2494d86dcdb01ba5eb0e39a80c0eec6695cff332446a27bcb297411",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6394149764468817,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38225v1",
+      "title": "FACTS-MAS: A Multi-Agent Architecture for Adaptive Forecasting from Heterogeneous Evidence",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Real-world forecasting often requires integrating heterogeneous evidence whose predictive value varies across horizons, operating regimes, and domains. We introduce FACTS-MAS, a domain-agnostic multi-agent forecasting framework that decomposes evidence into specialized channels for temporal dynamics, exogenous context, seasonality, structural information, and discrete events. Each agent generates an independently testable forecast through a common interface, while leakage-safe historical validation measures its predictive skill relative to a naive reference. These skill estimates are used to weight and combine agent forecasts, so that uninformative evidence is either removed or downweighted rather than forced to participate. A calibration procedure selects domain-specific constant means based on historical validation folds. We evaluate FACTS-MAS on weekly for-sale housing inventory from Zillow and weekly unemployment insurance claims from FRED, for 15 U.S. metropolitan areas at 4-, 8-, and 13-week forecasting horizons. Our method outperforms both a naive last-value forecast method and the TimesFM foundation model. However, a factor-adjusted exponential smoothing model performs as well as the fused forecast. The evidence therefore supports FACTS-MAS as a systematic protocol for testing, calibrating, and recomposing evidence channels before assembling them into the strongest single model for a specific application domain. Code, data, and results are available at https://github.com/Madumita24/FACTS-MAS.",
+      "publishedAt": "2026-10-28T03:20:40Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38225v1",
+      "titleHash": "bad0d59bfbe0c769c9be55e915b69bdc48a79521280a905ffea377aa3608a232",
+      "contentHash": "204bab91f93816cbe5a569d6df1c08788c9f638aefdd5b7f2de0378d599e3ed9",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6374362586613544,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38221v1",
+      "title": "CuraEval: Evaluating Demonstration Curation on Mixed-Skill Robot Data",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Robot imitation learning uses demonstrations from operators of varying skill, but selecting training data remains challenging. Existing methods score demonstrations using smoothness, diversity, or estimated influence on policy performance, but differences in selection and evaluation protocols make it difficult to determine whether they outperform simple baselines. We introduce \\textbf{CuraEval}, a framework combining mathematical analysis of demonstration scores with controlled comparisons against fixed size-matched random subsets and full-data training on mixed-skill robomimic data using Diffusion Policy and BC-RNN. We show that the evaluated PSD score depends only on episode length and squared position magnitudes, and produces nearly the same ranking as episode length on \\textit{square} ($ρ=0.999$). With Diffusion Policy, selecting the shortest 50\\% of demonstrations improves \\textit{square} success from 70.7\\% under random selection to 76.5\\%. Compared with random selection, our adapted geometric-entropy LOO selector reduces success at 25\\% retention from 94.7\\% to 74.0\\% on \\textit{can} and achieves 41.7\\% on \\textit{square}, below the mean success rates of all three independently sampled random subsets (59.8--62.5\\%). On the same 3 \\textit{square} Diffusion Policy training seeds, length-based selection at 75\\% retention improves success over full-data training from 76.7\\% to 86.7\\% under the original protocol, but lowers it from 80.5\\% to 79.5\\% after checkpoint reporting, rollout count, and evaluation seed change jointly. No evaluated curated condition significantly outperforms full-data training after Holm correction, although confidence intervals still permit useful gains. Code is available at https://github.com/jiuyixu25/CuraEval.",
+      "publishedAt": "2026-10-28T03:19:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38221v1",
+      "titleHash": "8807bc4555e835272f824ff9a327df9e0ae7167320bd9de7fa904afc3adf609c",
+      "contentHash": "8f90d13b92b6f4f962ffe168367f2039d00a2f6cf5455860979d184f01d7751e",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 1,
+        "timeliness": 0.6373050148362053,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38220v1",
+      "title": "Rubricon: Automated Rubric Generation and Refinement for LLM Evaluation and Training",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Rubrics enable reward assignment on tasks without verifiable answers, but are expensive to manually produce from scratch. We present Rubricon, a pipeline that generates discriminative rubrics without requiring human preference labels, rubric annotation, or generator-model training. Using any LLM, Rubricon samples multiple rubrics, selects the most discriminative candidate, adds criteria to capture overlooked requirements or response flaws, and prunes criteria that are misaligned or shallow. Alongside LLM self-critique and test-time scaling, Rubricon uses observed criterion pass rates on example model responses to guide refinement. Across five professional, consumer, clinical, and general-use LLM benchmarks, Rubricon produces rubrics whose scores of frontier LLM responses exhibit 9% greater alignment with labor-intensive expert-authored rubrics, compared to the best alternative synthetic rubric generation method among RRD, QSRG, OpenRubrics, and agentic generation via harnesses like Codex. On HealthBench, post-training a Qwen3.5-9B model with Rubricon rubrics yields 4.5% better performance than training with rubrics from the strongest alternative synthetic rubric generator, RRD.",
+      "publishedAt": "2026-10-28T03:18:11Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38220v1",
+      "titleHash": "706dca53250cad1d148cbd3a48d06c35784fa5c9b0c0ce71d0929f598ab9a12c",
+      "contentHash": "0b95f2b7a5068b81daadc83aca01c358470d11d7284da48390ed789701f97d0e",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6371823193779218,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38215v1",
+      "title": "Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Clinical large language models are increasingly fielded as multi-agent teams, on the assumption that deliberation averages out individual error. It does not average out bias. Across a full factorial of five model families and four aggregation topologies on 120 real MIMIC-IV emergency cases under counterfactual demographic swaps, no configuration neutralizes the disparity: all 20 cells commit the direction of their agents' independent answers, giving Black patients more acute triage. Every model has a topology that amplifies its baseline gap, but which one varies by model, so no design is reliably safe or reliably amplifying: the disparity is relocated, never removed. Late-stage fixes fail: fairness instructions and demographic masking leave the gap untouched, and per-agent self-debiasing widens it, because the bias is already encoded in the agents' ordinary clinical numbers. We call this disparity laundering; the audits now applied to clinical AI, per model, per output, per version, can certify the parts but never the committed decision. Interventions close the gap exactly when they make counterfactual versions visible inside the system and pool them, through deliberation, into the committed decision. A diverse-perspective ensemble does both while keeping the team, with no retraining or architectural change: the disparity falls by 67 to 94% where all five perspectives pool at every round, and the one topology that never pools them is the one it cannot reliably repair. Medical multi-agent systems do not filter demographic bias; they launder it into plausible decisions no single-version audit can catch, and the only defense is to make the bias visible.",
+      "publishedAt": "2026-10-28T03:10:28Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38215v1",
+      "titleHash": "250e0c49acd4e7a14f0584ab2f2f5318e5ea11afb8c65847dc4074a10a63d213",
+      "contentHash": "005223b595888889a8dfab99d8b77dc833f333feef6b3704b225dede78652d5a",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6363938835715418,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38214v1",
+      "title": "Skeleton Coding: Program Structure as a Specification for Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Coding agents are typically provided end-to-end behavioral specifications that the code they produce should satisfy, such as tests and input--output examples. How many such specifications must a developer provide, and which ones, for the agent to produce the developer's intended program? We argue that this cannot be determined a priori, for it depends on the structure of the implementation, which is left to the agent to decide. An agent first commits to a structure---a decomposition into data types, modules, and functions---which fixes a class of candidate programs; behavioral specifications then select a program within that class. A set of tests that suffices for one structure may leave another badly underdetermined, requiring different edge cases or exponentially more examples. Since the structure is chosen by the agent, developers cannot ensure their specification is complete without reverse-engineering it from thousands of lines of generated code. To resolve this, we introduce Skeleton Coding, in which developers jointly specify the structure---in high-level, code-like format---alongside behavioral specifications. Theoretically, we model AI-assisted coding as a control problem, and show that skeletons can reduce exponentially the number of tests developers must supply to steer an agent toward an acceptable program. Empirically, across four models and three benchmarks, the best-performing skeleton specifications reduce mean test error by 48.4% relative to the best end-to-end behavioral specifications. Even when the agent can query a complete reference implementation, adding a skeleton reduces mean test error relatively by up to 27.0%. Skeletons also narrow the average gap between small and large models by about 52.4% while lowering implementation cost by 15--26x, and reduce code erosion by 24.7% on average.",
+      "publishedAt": "2026-10-28T03:09:39Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38214v1",
+      "titleHash": "a33e5f007403f0d1b954c323691346b03d4fb70f729c6d8305b63e95b97c5f1d",
+      "contentHash": "dc681bbce7dea14efb55f45c083dce32cc6fb4bdb5f0004c4e9f468dcec00e09",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.636310499309934,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38210v1",
+      "title": "GAAC: Lossless KV Compression for Bandwidth-Efficient LLM Inference on Personal Devices",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Weight-only, lossy quantization substantially reduces the storage and memory requirements for serving large language models (LLMs), but the growing key-value (KV) cache remains a bottleneck for long-context inference on personal devices. We present Group-Adaptive Additive Codec (GAAC), a lossless KV compression and serving system that exploits exponent redundancy to reduce storage and accelerate attention without introducing KV approximation. GAAC encodes BF16 exponents using calibrated per-channel base-plus-offset codes over contiguous ranges. GAAC adapts code widths across small groups while preserving KV values bit-for-bit. A fused attention kernel reconstructs KV tiles on the fly, avoiding full-cache decompression. Block-wise compression and fixed-capacity slots support incremental cache updates and paged serving. Across five tested models, GAAC achieves 1.405-1.407$\\times$ lossless BF16 KV compression. We also study compression performance on low-precision tensors FP8 E4M3 caches ( 1.09-1.14$\\times$) and E5M2 caches (1.25-1.30$\\times$). On NVIDIA DGX Spark, GAAC accelerates decode attention at a 64K-token context by 1.19-1.27$\\times$ and end-to-end W4A16 decode steps by 1.04-1.15$\\times$. In serving, it reduces resident KV memory by approximately 26% and increases aggregate throughput by 13-29% under comparable KV-memory budgets. On Apple M4, GAAC achieves 1.02-1.25$\\times$ attention speedups, demonstrating portability beyond NVIDIA GPUs.",
+      "publishedAt": "2026-10-28T03:03:51Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38210v1",
+      "titleHash": "ac7248f72127cfe84eea3c4e00b3bd91b60d61008dd0ce419e69a8315f1918be",
+      "contentHash": "5fa5ed860b1a94cd7615abb16b818748c9430ea6136892efd4a7aa23b0265568",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6357186151296492,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38209v1",
+      "title": "Is it my preference? Role Grounding Attack against Agent's Memory via Social Interaction",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "LLM-based agents now share experiences on social platforms and remember new preferences to enhance their performance. However, existing memory systems contain a vulnerability in role-to-principal attribution that attackers can exploit. We identify Role Grounding Misattribution, in which an attacker-designed interaction causes the victim agent to incorrectly record a preference from the attacker as a preference of the victim's user. Specifically, we are the first to formalize Role Grounding Attack (RGA), an attack model that exploits this vulnerability through nested conversation structures. In the memory formation stage, an experience-sharing post quoting a conversation between the attacker agent and its user is published, which explicitly identifies its publisher. The inner conversation expresses preferences from the user of the attacker agent. When the victim agent remembers preferences from this nested structure, its memory loses the context binding and grounds the attacker's preference to the victim's user instead. In the memory retrieval stage, the misattributed preference persists and influences the victim agent's decisions when it encounters relevant scenarios. We instantiate RGA as tool selection manipulation and privacy leakage. Tool selection manipulation causes a tool-call preference to be misattributed to the victim's user, steering the victim toward an attacker-controlled tool. Privacy leakage extends this by misattributing both a tool-call preference and a task-requirement preference to the victim's user. The victim selects the attacker's tool, then includes sensitive information in tool arguments to satisfy the task requirement. We evaluate RGA across five mainstream memory systems and six language models. Tool manipulation and privacy leakage both achieve high attack success rates. These results call for stronger role grounding.",
+      "publishedAt": "2026-10-28T03:03:29Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38209v1",
+      "titleHash": "28b4f5e40fa914746f3912cb5d389ff39b4991287b607f0de58d729032a29c13",
+      "contentHash": "54dce9f2b175a0ac70f409fbf8be57ff17b201e848b36fb5fe6cb85e9d063a60",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6356812156725267,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38201v1",
+      "title": "From Natural Language to Real Schematics: An Automated Workflow for Power Electronics Schematic Synthesis",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Designing power electronics converters traditionally requires intensive human expertise across topology sizing, commercial component selection, circuit simulation verification, and schematic drafting. While Large Language Models (LLMs) show promise in electronic design automation (EDA), applying standalone LLMs directly to board-level power electronics schematic synthesis suffers from severe engineering hallucinations, including inaccurate analytical sizing, fabricated or mismatched component part numbers, violated voltage derating margins, and broken topological connectivity. In this paper, we propose a Bounded Dual-Loop Automated Schematic Synthesis Framework that translates natural language specifications into verified, editable KiCad schematics and manufacturing deliverables. Our workflow integrates six stages across three functional columns: (1) requirement parsing and knowledge-driven power stage synthesis covering non-isolated (Buck, Boost) and isolated/resonant (Flyback, DAB, half-bridge LLC) topologies; (2) contract- and evidence-coordinated component selection grounded in distributor APIs and OEM datasheets, coupled with closed-loop ngspice transient verification and stress feedback; and (3) modular control hardware integration and multi-format deliverable generation featuring native KiCad netlist round-trip verification. End-to-end case studies on a 24-36V to 12V,2A Buck converter (29 positions, 83 verified terminals) and an isolated 48V to 24V, 0.5A, Dual-Active Bridge (DAB) converter (87 positions, 341 verified terminals), alongside comparative evaluations against a Vanilla LLM baseline, demonstrate that our framework improves component verification coverage from 22.2 to 98.6, nominal value consistency from 0 to 97.7, and SPICE simulation pass rates from 0 to 100.",
+      "publishedAt": "2026-10-28T02:52:01Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38201v1",
+      "titleHash": "5e9489ea346836b337103194de51d48650ede28fc0db114d19d28ba6a5ac3d83",
+      "contentHash": "57dbb57293fbe93a7c01bfaff06a2e0fab2bed77330db8186c9433129955c8f1",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6345127422826575,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38197v1",
+      "title": "Convex-SKM-Net: Low-Latency Block Halfspace Corrections for Neural Convex Constraint Satisfaction",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Fast inference and strict constraint satisfaction are essential for learning-based decision-making. Existing methods often rely on constraint-specific projections or feasible-set parameterizations, while iterative repair can be costly. We introduce Convex-SKM-Net, a convex constraint-satisfaction layer that forms linearization halfspaces from residual and (sub)gradient oracles without constraint-specific inequality projectors. It applies fixed-depth dual projected-gradient descent (dual PGD) to minimum-displacement block problems using GPU-friendly matrix operations. We jointly learn the predictor and a positive-definite mobility, adapting the correction geometry to improve objective quality. We prove convergence of the outer iterates at fixed dual depth and linear convergence in distance under Slater's condition and bounded subgradients. All our test outputs on three second-order-cone model-predictive control (SOC-MPC) horizons and six power-system convex relaxations satisfy a $10^{-3}$ feasibility tolerance. Comparisons with the latest constraint-satisfaction methods show inference speedups of up to $144.3\\times$ on SOC-MPC and $7.7\\times$ on a convex quadratically constrained quadratic programming (QCQP) benchmark with joint training. On QCQP, the mean objective gap is $0.012\\%$, with full test feasibility at $10^{-4}$. Learning mobility reduces the five-seed affine-task mean gap by $22.4\\%$ and improves gaps in matched power-system comparisons.",
+      "publishedAt": "2026-10-28T02:45:00Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38197v1",
+      "titleHash": "e80f13ac52de21b43dace8931dc42c9756eccfdd04c616326377fb6b63ac88a7",
+      "contentHash": "305ee79c84d678c6a04e7bc719f042157acf550d22b6a6dc7c8952c75b8e9df4",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6337987911944223,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38194v1",
+      "title": "Prototype-Guided Dynamic Domain Modulation and a Large-Scale Multi-SKU Benchmark for Shampoo Bottle Surface Defect Detection",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Industrial shampoo-bottle surface defect detection must operate across many stock keeping units (SKUs), where differences in bottle geometry, material, label layout, reflectance, and imaging conditions can substantially alter the appearance of the same defect. Existing industrial defect datasets rarely provide both instance-level defect annotations and product-variant identities, making it difficult to study SKU-aware detection under realistic manufacturing conditions. We introduce Bottle-SKU, a large-scale multi-SKU benchmark for shampoo bottle surface defect detection. Bottle-SKU contains 13,119 images, 20,419 instance-level bounding boxes, seven defect categories, and 48 bottle SKUs, enabling evaluation of both shared defect recognition and SKU-specific appearance variation. To address the challenge of SKU-specific appearance variation, we propose Prototype-Guided Dynamic Domain Modulation (ProDMM). ProDMM constructs a visual prototype for each SKU from training images and predicts a soft SKU distribution for each input. The resulting prototype-conditioned representation dynamically generates low-rank Query/Value modulation for the visual backbone and residual conditioning for defect-text-to-visual attention, while preserving the pretrained Grounding DINO detection pathway. The model is trained jointly with detection, SKU-domain classification, and modulation-regularization objectives. Experiments on Bottle-SKU and the public GC10-DET-SKU metallic surface defect dataset demonstrate the effectiveness of prototype-guided domain conditioning for industrial surface defect detection.",
+      "publishedAt": "2026-10-28T02:40:18Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38194v1",
+      "titleHash": "2590608c6aa01a156142e79fb9d6e5c683c00d00eaddab1d8964853a57295dd5",
+      "contentHash": "9d52e757c651ce9bb7a903bf5bd68c65825f4ceb43bb1adbe180a655d576e026",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6333210119995447,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38249v1",
+      "title": "Keepace.ai: A Technical Report on a Large Language Model for Sports and Health",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models hold promise for delivering safe, scientifically grounded, and personalized exercise guidance at scale, yet the sports-and-health domain still lacks curated training corpora and rigorous evaluation benchmarks. Keepace.ai is a domain-specialized LLM built on Qwen3.5-27B through post-training, currently optimized for Chinese-language exercise guidance across three tasks: workout plan generation, sports-and-health knowledge QA, and personal sports data analysis. In internal rubric-based evaluations designed with domain experts, Keepace.ai outperforms its base model and larger general-purpose baselines, with the most pronounced improvements in exercise safety, boundary compliance, structured output completeness, and scientific accuracy. This report summarizes the current design, data pipeline, safety-first evaluation framework, and evaluation results of Keepace.ai.",
+      "publishedAt": "2026-10-28T04:00:29Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38249v1",
+      "titleHash": "c061df0ed965b4d3824a7bf37e71eb1ee90f0aed3493e6d7613fe5ddaf4b51b0",
+      "contentHash": "fdf08c6d62b53208e6d43f197e22b34aa25d07f058be2956713817a9014eb3f1",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6415216268508571,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38231v1",
+      "title": "3DCodeEdit: Benchmarking Instruction-Guided 3D Program Editing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Language models increasingly create 3D content through code, with practical workflows often relying on editing existing programs rather than regenerating them, for speed and precise control. Such edits require understanding what a program builds and foreseeing how a change reshapes it, yet prior benchmarks mostly evaluate generation or simple edits against a reference. In this paper, we introduce 3DCodeEdit, a benchmark of 2,592 instruction-guided editing tasks over 108 Blender programs that construct objects entirely in code. Its edits range from parameter to structural changes, style redesign, and scene composition, and are judged from renders against human-reviewed checklists. Across 17 models, the average success rate is only 37%, and even the strongest models complete fewer than 60% of structural and style edits. As models become more capable, their failures shift to geometric foresight, where the code runs but builds the wrong shape. We therefore study whether multi-turn feedback can compensate for this missing foresight. Feedback from a separate reviewer model that describes how the renders differ from the request helps most, more than maximum reasoning effort or an agent harness, and can let a 27B model surpass the single-shot rate of a 2.8T-parameter model.",
+      "publishedAt": "2026-10-28T03:29:59Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38231v1",
+      "titleHash": "5546eb47d3fe688c794a9923d940844ef1e83851a6d74ac7d296376ac3a8082a",
+      "contentHash": "3a2993739ac8322489c6ebf00c5462650d7a3b3cf1802843286df99161a27cb6",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6383898513313253,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38204v1",
+      "title": "Two Birds with One Stone: Skill-Augmented Generation via Unified Retrieval and Utilization",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Skills, as reusable external knowledge, have demonstrated substantial potential to enhance the ability of Large Language Models (LLMs) to solve complex tasks. However, existing skill-augmented generation methods typically rely on separate models for skill retrieval and skill utilization, resulting in disconnected optimization of these two processes. To address this gap, we propose Skill-Uni, a unified reinforcement learning framework that jointly optimizes skill retrieval and utilization. Specifically, we adopt a generative skill retrieval paradigm that enables a single model to both learn how to retrieve relevant skills and leverage them for task solving. To effectively train this unified framework, we introduce a two-stage training strategy consisting of warm-up instruction tuning and GRPO, allowing the model to progressively improve its skill retrieval and utilization capabilities. Extensive experiments on five skill-related benchmarks demonstrate the effectiveness of Skill-Uni, yielding average performance gains of 66.59% and 34.82% over the base Qwen3-4B and LLaMA3.1-8B models, respectively. Besides, Skill-Uni is compatible with various skill retrieval engines, demonstrating its flexibility and generalizability. Additional in-depth analyses also provide insights into the effectiveness of Skill-Uni.",
+      "publishedAt": "2026-10-28T02:59:08Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38204v1",
+      "titleHash": "578136917b1fba9a5fe360e0e238403bf6f744dbb280d3afffd7de8a93733b24",
+      "contentHash": "eab645ce180ea991bfa2b582a3fed487e6f561ebd6cc0bba1314adf893bbdc86",
+      "score": 78,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.635237689964339,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38181v1",
+      "title": "Component Translation and Judge-Labelled Refusal: A Multilingual Safety Evaluation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Whole-prompt translation evaluates a request in different languages but does not compare which component carries a language. We introduce a paired reversal: translate the complete request component or the complete operation component into the same target language, holding behaviour, English frame and translated-span count fixed. Component identity and non-English text quantity change together. Assigning English, Chinese and Spanish independently to the two components yields nine configurations on 190 of 300 sampled harmful behaviours retained after consensus annotation and automatic gating. Refusal scored by language-model judges is the primary outcome; unsafe compliance is reported separately. On Gemini 2.5 Flash and DeepSeek, three refusal swaps are about 5.3 percentage points and the fourth is -0.5; none survives the pre-specified six-test Holm correction. In an exploratory extension, Mistral Small 4 has a 13.7-point Spanish swap (95% interval [8.4, 18.9]), which survives the twelve-test Holm sensitivity correction under the primary judge, and 12.1 points under a second judge. GPT-5.4-mini estimates are within 2 points of zero. Component assignment supplies an additional evaluation dimension. Evaluations should record component languages and translated text quantity, comparing matched behaviours at equal translated-span count while interpreting refusal and unsafe compliance separately.",
+      "publishedAt": "2026-10-28T02:29:23Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38181v1",
+      "titleHash": "8cf78611cfc3183266e6ea663d57cfd2df8f812d0d1dd93999886cb8a719800a",
+      "contentHash": "d516dc11a5a1979ffcb0adc8713c09d56911c45c2007521963e44010fc6d2ac7",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6322126659846476,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38174v1",
+      "title": "Scaling Lean Theorem Proving for Real-World Code Verification",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We present EasyProver, a Lean proving system built from recursive agents with isolated contexts, asynchronous search, parallel tactic probing, and an elastic elaboration service. Using an off-the-shelf frontier model with no additional training, it proves 669/672 PutnamBench problems and all six IMO 2026 formalizations and resolves 597/600 NTP4VC verification conditions and all 189 VERINA tasks by proof or refutation. Because these benchmarks are close to saturation, we also introduce Aegis, which converts competitive programming problems into much harder verification tasks over real implementations. The pipeline writes safe Rust solutions, translates them into Lean with Aeneas, generates specifications, and labels each frozen statement with a kernel-checked proof or refutation. It produces 2,045 differentially validated Rust-Lean program pairs and 11,533 candidate specifications. Unlike hand-written benchmarks, these tasks carry implementation-level obligations from fixed-width arithmetic, explicit failure, generated loops, casts, and functionalized mutation. On a stratified sample of 2,000 statements, EasyProver proves 1,054 (52.7%) within a 30-minute budget per statement. The same tasks can also be used to benchmark other provers and as rewards for reinforcement learning.",
+      "publishedAt": "2026-10-28T02:23:25Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38174v1",
+      "titleHash": "f16809ba563413ea44f96c639158b16ceee4f36feb4c3477142e2107314e9603",
+      "contentHash": "11661c5f9bcc0c29174de2ec140d9bc24aae38713b1b6ce3b717c2a2d9f4fe00",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.631607702986632,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38160v1",
+      "title": "ATI-OPD: Adaptive Teacher Intervention for Stable Long-Sequence On-Policy Distillation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "On-policy distillation (OPD) trains a student on its own responses using token-level feedback from a teacher. As responses grow longer, the student's prefix can depart from the teacher's own reasoning, weakening its feedback on later tokens. Updates based on this feedback can reinforce the same deviations in later responses and destabilize training. Prior approaches such as length control and loss reweighting limit learning from problematic responses but leave their prefixes unchanged. Fixed cutoffs can also discard later reasoning. We propose \\textbf{Adaptive Teacher Intervention for On-Policy Distillation (ATI-OPD)} to improve subsequent teacher guidance by revising the student's reasoning prefix. ATI-OPD replaces the earliest high-disagreement segment with a short teacher segment, then lets the student resume its own reasoning from the revised text. To handle renewed disagreement, it excludes persistently divergent suffixes from the distillation loss while retaining useful student continuation. Training diagnostics show less teacher-student disagreement, fewer gradient spikes, and fewer extremely long responses. Across five mathematical reasoning benchmarks and two teacher-student pairs, ATI-OPD improves average student-only accuracy over standard OPD.",
+      "publishedAt": "2026-10-28T02:00:26Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38160v1",
+      "titleHash": "6a282c2b0f57eefdb42b3112f6e08f512bba0fe795d5f0a627e37e3a7daf2b67",
+      "contentHash": "00a609678cb4629fb7c3ed19352c747f2ce60c0b29bb99549718b8138c9aa4e0",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6292828172034992,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38096v1",
+      "title": "Calculation and rejection diverge in language models tested at known mechanical limits",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "When a language model returns engineering quantities with the status \"solved\", software that trusts it passes them on, even when the requested design is physically impossible. Such failures could reflect poor calculation, how the answer is requested, or a failure to judge feasibility. We set beam loads and disk speeds at known percentages above or below plastic collapse or burst, measured each model's limit calculation separately and tested 12 models in 4,860 calls, including follow-up experiments on new designs. We find that a model can recognize an impossible design when asked only whether it is feasible, yet accept the same design, reporting \"solved\", when asked for a full answer. Three models accepted beams 10 to 30% beyond collapse despite precise limit calculations in separate questions, and many accepted replies stated the violation. Asked only about feasibility, Opus 5 and Gemini 3.8 Flash rejected every impossible new design they were given, including those accepted in full answers, without false alarms. Rewording when to decline or changing the answer format raised rejection on the original beams, but not consistently on new designs. Software and benchmarks using a model's status should test feasibility judgment and full-answer rejection separately, and report the exact prompt.",
+      "publishedAt": "2026-10-28T00:28:46Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38096v1",
+      "titleHash": "ff82137568955821bf9770f8b93d07004c9623e1870872a2a54f6c543dff8c8b",
+      "contentHash": "1d3be48acb1b1c40259431e1bf1c233caa22554e33868f4487938b21864be4ba",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.62009506610473,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38095v1",
+      "title": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We introduce Nemotron 3.5 Super and Nemotron 3.5 Lightning, open and efficient Mixture-of-Experts Hybrid Mamba-Transformer models designed for reasoning, long-context understanding, and agentic workloads. Super is a 120B-parameter, 12B-active multimodal model, while Lightning is a smaller 30B-parameter, 3B-active text model; both designed for efficient deployment. Both models combine large-scale distillation, long-context training, and native speculative decoding, while Super further incorporates Indic continued pretraining and agentic software-engineering mid-training. We develop a comprehensive post-training pipeline spanning supervised fine-tuning and reinforcement learning (RLVR and RLHF), complemented in Super by specialized teacher training and multi- teacher on-policy distillation (MOPD). This transforms Super from a text-only base model into a multimodal agent capable of reasoning over text, images, video, and interactive tool environments. We further explore test-time scaling through parallel agent execution and self-verification. Across training and deployment, we jointly optimize capability and efficiency. Indic continued pretraining improves Indian-language benchmarks by up to 9.82 percentage points, while agentic mid-training strengthens software-engineering capabilities and robustness across agent harnesses. The post-trained Super model achieves 51.78% on SWE-bench Pro, surpassing Nemotron 3 Ultra despite using approximately 4.6x fewer active parameters. Post-training MTP boosting improves speculative- decoding acceptance length by up to 21.8% under probabilistic draft sampling, while NVFP4 quantization achieves 99.62% median accuracy recovery relative to BF16. Inference optimizations enable up to 4,856 output tokens/s/GPU on GB200 while sustaining at least 50 tokens/s/user.",
+      "publishedAt": "2026-10-28T00:28:08Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38095v1",
+      "titleHash": "cbc0ee1fe64e4b0919d8bc3f0a63578bfcc4ebd456715382f780013df258c3c1",
+      "contentHash": "4fec9682c168869d6a415414633d3a385cd0d669d2e48435da22f355ca4c44aa",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.620032055990023,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38076v1",
+      "title": "Prompt Lottery in LLM-as-a-Judge: Measuring and Mitigating Sensitivity to Syntactic Rephrasing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "LLM-as-a-Judge has become a standard for evaluating large language models, yet most approaches implicitly assume that a single judge prompt functions as a stable evaluation instrument. Prior work has primarily explored deliberate prompt modifications such as scoring rubrics, role descriptions, or chain-of-thought reasoning in order to optimize accuracy. In contrast, we investigate whether validated prompt variants intended to preserve evaluation semantics while differing in surface realization (\\textit{paraphrastic rephrasings}) yield consistent judgments under a fixed evaluation task. We introduce \\textit{Prompt Lottery}, a phenomenon in which paraphrastic rephrasings produce different LLMaJ judgments. Across a large-scale study spanning diverse evaluation tasks, judge families, and model backbones, we find that these variations can alter evaluation outcomes and, in some settings, reverse relative model rankings. A user study with 10 human annotators shows that LLMaJ judges exhibit 6-9$\\times$ larger agreement degradation under prompt rephrasings than humans, falling below the generally accepted threshold in usability studies. This indicates that single-prompt evaluation is insufficiently robust for model ranking. Finally, we show that multi-prompt aggregation substantially improves robustness by emphasizing judgments that remain consistent across prompt variants.",
+      "publishedAt": "2026-10-27T23:45:24Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38076v1",
+      "titleHash": "8b729a7a988f9f41b797402b598e74924f966a0acf4bae7c4c5c2c1dba49f4d0",
+      "contentHash": "3a8fe59a0682b0d58dd78af197f2acc7af931df4fed4341bf524a34c820b913e",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6157952889180398,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38067v1",
+      "title": "From Error Prediction to Causal Influence: Auditing SAE Features in Multiple-Choice QA",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Sparse autoencoders (SAEs) can predict internal features associated with model errors, but association alone does not establish causal influence. We study this distinction in multiple-choice question answering, where answer preference can be measured by the logit margin between the correct answer and the competing choices. Across eight datasets, we analyze Gemma~3 1B and 4B with Gemma Scope SAEs. We propose a pipeline to filter out the features that have high correlation with format and content artifacts, such as prompt and answer permutation, and evaluate the remaining ones with causal feature interventions. Our results show that SAE activations contain predictive signals about wrongness and uncertainty across models and datasets. After filtering artifact-contaminated features, selected features for causal intervention at question and option spans produce larger absolute margin shifts and a higher wrong-to-correct rate than randomly selected features, indicating greater causal leverage. However, answer flips are rare, and we do not observe stable effect directions across meaning-preserving changes in prompt format and answer order. An adapted HalluSAE baseline produces larger final-token margin changes, but relies on substantially contaminated features and does not significantly improve correction rates. Therefore, the identified features reflect context-dependent answer competition rather than the mechanism of incorrect answer errors.",
+      "publishedAt": "2026-10-27T23:34:33Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38067v1",
+      "titleHash": "86d7d50a8f51fcc35da27e23dbb8832a8c8b8cb95acde7dc0a83b823bf3f61d7",
+      "contentHash": "1e7bbf995b6f946d89511e7b080674d1573775b7de209b4b394b3f2f25bbd090",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6147241893609073,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38041v1",
+      "title": "CARF: Context-Aware Reasoning Supervision for Scientific Evidence Screening",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Systematic reviews synthesize biomedical evidence to inform clinical and public-health decision-making, but require domain experts to manually screen thousands of studies against detailed eligibility criteria. We investigate whether language models can assist with this bottleneck by learning from expert feedback on title and abstract screening decisions and model-generated reasoning. We introduce the Context-Aware Reasoning Framework (CARF), a human-in-the-loop framework that uses expert feedback on model-generated reasoning to adapt language models to context-dependent screening tasks. We evaluate CARF on systematic reviews of verbal autopsy and cause-of-death ascertainment methods used in global public health mortality surveillance. CARF shows competitive screening performance compared to evaluated models while retaining high sensitivity, and is more inclined to retain ambiguous, context-dependent studies for human review. Together, these findings suggest that expert-corrected reasoning is a promising supervision signal for context-dependent scientific screening, while retaining a role for human oversight.",
+      "publishedAt": "2026-10-27T22:52:42Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38041v1",
+      "titleHash": "80d8daed27037c866b952c6f63b2e6a24392a5cc9433fbcf224ed7990e063419",
+      "contentHash": "48daa031d97f4517bbc98113764a9b30a8987f7ed32cbf9f3bcd1437ac80d860",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6106102282562006,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38016v1",
+      "title": "Beyond Aggregate WER: In-domain Adaptation, Learner Speech, Code-Switching, and Speaker Attribution in Online Spanish Learning Classrooms",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Automatic speech recognition (ASR) increasingly supplies transcripts for educational NLP, but aggregate word error rate (WER) can conceal errors concentrated in learner speech, multilingual turns, and speaker attribution. We compare platform-integrated, open-weight, adapted, and commercial ASR configurations on held-out sessions of online L2 Spanish interaction between L1 English learners and their instructors and tutors. Because English is the learner's shared first language, the interactions contain Spanish-only, English-only, and code-switched turns. Evaluation combines overall WER and character error rate (CER), WER disaggregated by speaker role and language context, and diarization error rate (DER). We also adapt Whisper large-v3 and MOSS-Transcribe-Diarize with LoRA using human-corrected in-domain classroom data. MOSS adaptation produced consistent improvements across speaker roles and language contexts, whereas Whisper showed smaller gains. Domain match proved more important than data volume: Larger out-of-domain bilingual and learner corpora did not outperform the smaller classroom corpus, where learner speech and code-switching are embedded in instructor--learner interaction. The open-weight MOSS adapter was competitive with commercial Muse Voice Transcribe on WER and CER and achieved lower system-provided DER on the recordings eligible for each system. Learner, English-only, and code-switched speech remained more difficult than instructor and Spanish-only speech. The findings demonstrate the value of condition-aware evaluation and interactionally matched data for bilingual educational ASR.",
+      "publishedAt": "2026-10-27T22:13:36Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38016v1",
+      "titleHash": "b75845e1e778a2caa7b285935ad428af5837d5b66473b8236580ebbfe7446135",
+      "contentHash": "29cc76b19506d0de6e6b3ef52ed5c740639f543815504f66106e66dc142567a0",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 1,
+        "timeliness": 0.6067914806215786,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38015v1",
+      "title": "Measured or Real? When Model-Derived Measurements Can Be Corrected or Compared",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Numbers computed from trained models, such as an example's difficulty or a model's benchmark lead, change with seed and prompt. We ask when such measurements can be corrected or compared. Noise shrinks correlations, and the textbook correction divides by the square root of two estimated reliabilities. On two CIFAR-100 difficulty scores, it returned correlations above one in 70 of 100 classes. We prove that its mean squared error is infinite even when the correlation and the reliabilities use separate seeds. Our rule corrects only when both reliabilities pass a significance test, then divides by their upper confidence bounds. Its output is always bounded, and its coverage guarantees assume Gaussian noise. It helps once reliability is well estimated, more than halving the error with 500 simulated units. Prompt settings can reverse rankings. On ARC, Qwen2-1.5B trails Llama-3.2-3B by 3.8 points with no examples in the prompt and leads by 16.6 with two. Across four benchmarks, averaging the two settings names one winner for 15 of 16 such reversals. We compare models within each setting, controlling family-wise error asymptotically in the number of items for a fixed prompt grid. Aligning embedding coordinates across seeds raises held-out per-dimension reliability from 0.003 to 0.813.",
+      "publishedAt": "2026-10-27T22:12:59Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38015v1",
+      "titleHash": "1ee0bcb8b05af4b9e0a71bd4e85078c8b58c571ccd4d1fcd07d8938eade8a36b",
+      "contentHash": "8110216910cfd84871da58c8d4dd305add842e7b2d84945a7e8d5e3e4a4196a0",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6067314448388534,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38009v1",
+      "title": "Large Language Models for Accurate Medical Chart Abstraction: Enabling Scalable and Secure Artificial Intelligence Deployment in Stroke",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Medical chart abstraction transforms unstructured clinical narratives into structured variables for research and quality monitoring. We evaluated a prompting-based large language model (LLM) framework for extracting eight clinical variables from 2,416 neurointerventional acute stroke intervention reports across three hospitals. Twenty-two instruction-tuned open-source LLMs were evaluated across architectures, model sizes, and biomedical adaptations using Quick Response and Chain-of-Thought (CoT) prompting. Non-expert staff annotations served as the cross-model reference standard. Evaluation was restricted to report-variable pairs with a valid LLaMA3.3-70B CoT prediction and a corresponding reference label. Performance measures included extraction accuracy, inference latency, and agreement with expert adjudication. Twenty discordant cases per variable underwent review by two senior physicians and four medical students. LLaMA3.3-70B achieved the highest overall accuracy (94.8%). CoT improved performance on inference-dependent variables such as site of occlusion, while Quick Response was optimal for directly stated procedural fields. Expert adjudication showed that AI predictions were more closely aligned with expert interpretations than non-expert annotations for most variables, with intracranial angioplasty remaining a challenge. Locally deployed LLMs can support scalable clinical information extraction and retrospective stroke registry curation, with expert oversight for ambiguous cases.",
+      "publishedAt": "2026-10-27T22:00:24Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38009v1",
+      "titleHash": "3ce263529a159b2526eb8d3c94b247435981598455191322fbeb7a00c00c214b",
+      "contentHash": "3ffecc50aef99761a9f98c0abf7324606cfae5e97f21c376ebaef8e69a39ac64",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6055076867613985,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2610.38005v1",
+      "title": "\"It Would Make a Geordie Feel at Home\": Regional Accent Perceptions and Speech Accommodation in Voice AI",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Automatic speech recognition (ASR) systems often perform less accurately for speakers of regional dialects, but less is known about how users respond to these limitations and how regional voices produced by voice assistants (VAs) are evaluated through a sociolinguistic lens. This study investigates these issues among speakers of Newcastle English (Geordies), examining both linguistic accommodation to voice technologies and perceptions of regional versus mainstream-accented VA voices. Participants interacted with a simulated VA that spoke either Newcastle English or Standard Southern British English (SSBE). They subsequently completed semi-structured interviews about their experiences with the experimental VA and voice technologies, language use, accent attitudes, and place orientation. The findings reveal a two-way process of sociolinguistic bias. The Geordie VA was associated with familiarity, warmth, personality, and local belonging, but also with concerns about professionalism and authority, whereas the SSBE voice was perceived as more neutral, clear, and credible. Participants also reported adapting their speech when voice technologies failed to recognise them, most commonly by shifting to a more mainstream accent, enunciating more clearly, and speaking more slowly. These strategies are similar to accommodation in human-human interaction and reflect users' perceptions of what technologies can recognise, also known as perceived intelligibility pressures. Overall, the findings demonstrate that voice technologies can reproduce existing accent biases both by encouraging users to suppress regional features and by activating established social stereotypes through synthetic voices. The study positions sociolinguistics as a bridge between understanding human-AI interaction and designing inclusive technologies around users' own linguistic priorities.",
+      "publishedAt": "2026-10-27T21:56:56Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2610.38005v1",
+      "titleHash": "07ba5c59810108cfde03e8d4e9f33714e3c7498fff71e5e6c5e668536b3ba361",
+      "contentHash": "4eabc8ddb89db3361d2942d70b04ed11632d7cf2b5a087d6e625f9ad0963a64a",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6051709793456448,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://divagr.com/blog/qwenputer",
+      "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "ndr",
+      "publishedAt": "2026-10-29T05:00:04.439-05:00",
+      "engagement": 41,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://divagr.com/blog/qwenputer",
+      "titleHash": "715fdeea6cc7bf99546c851ec13ada9e0fc905d7f775d12ceab89ff875abdac0",
+      "contentHash": "715fdeea6cc7bf99546c851ec13ada9e0fc905d7f775d12ceab89ff875abdac0",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.8562723902892214,
+        "engagement": 0.5410830967993002
+      }
+    },
+    {
+      "url": "https://nim-lang.org/blog/2026/10/28/nim-240.html",
+      "title": "Nim version 2.4.0 released",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "durrendal",
+      "publishedAt": "2026-10-29T07:07:26.400-05:00",
+      "engagement": 10,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://nim-lang.org/blog/2026/10/28/nim-240.html",
+      "titleHash": "333ca3fae48c929514397ecf5f991137d1ebf868af23b679549fe029a1e4ce66",
+      "contentHash": "333ca3fae48c929514397ecf5f991137d1ebf868af23b679549fe029a1e4ce66",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8739511744519908,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://dev.to/dannwaneri/no-human-will-ever-write-code-better-than-llms-better-at-what-1dme",
+      "title": "No Human Will Ever Write Code Better Than LLMs? Better at What?",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A tweet went around saying: \"No human will ever write code better than LLMs. Accept this fact, stop...",
+      "author": "Daniel Nwaneri",
+      "publishedAt": "2026-10-29T09:34:19Z",
+      "engagement": 55,
+      "tags": [
+        "ai",
+        "programming",
+        "softwareengineering",
+        "career",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/dannwaneri/no-human-will-ever-write-code-better-than-llms-better-at-what-1dme",
+      "titleHash": "0c18670ec6eccebabe2c29da5713220da04a457692194e8e501dc0976daa4f57",
+      "contentHash": "b7a9d489303f551331c0c484cba1f3665b394b2283c1bbf0620e6bc280e77e91",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8527409069670988,
+        "engagement": 0.5827293423354002
+      }
+    },
+    {
+      "url": "https://dev.to/sarvar_04/i-almost-paid-1499-for-prime-video-i-never-use-an-open-source-ai-model-caught-it-1egm",
+      "title": "I Almost Paid ₹1,499 for Prime Video I Never Use. An Open-Source AI Model Caught It.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine    ...",
+      "author": "Sarvar Nadaf",
+      "publishedAt": "2026-10-29T12:37:40Z",
+      "engagement": 40,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "ai",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sarvar_04/i-almost-paid-1499-for-prime-video-i-never-use-an-open-source-ai-model-caught-it-1egm",
+      "titleHash": "3cc711c63108b37335469ee5a2eaec3f44ff0f91ec9a41c62250987de5bdd4c3",
+      "contentHash": "1de4dd9fceb44a0b460bf4a3ea046f4aa581b567b6e77c12d6a7b33e951758cf",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8782000372504382,
+        "engagement": 0.5375946189065784
+      }
+    },
+    {
+      "url": "https://dev.to/p0rt/last-witness-an-ai-detective-for-a-dead-1999-website-graded-on-its-ghosts-4bbe",
+      "title": "Last Witness: an AI detective for a dead 1999 website, graded on its ghosts",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine    ...",
+      "author": "Sergei Parfenov",
+      "publishedAt": "2026-10-28T14:15:37Z",
+      "engagement": 20,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "opensource",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/p0rt/last-witness-an-ai-detective-for-a-dead-1999-website-graded-on-its-ghosts-4bbe",
+      "titleHash": "0c2e5c0d1b7c5b37974c4895491104d2ed34da8e167983d4ab603cc55eae115b",
+      "contentHash": "0b70f3aa3b08e11bde0675894263c52ab9640ac08ec403987dfc1074292ef1f5",
+      "score": 54,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.7080689599235788,
+        "engagement": 0.44073976491130645
+      }
+    },
+    {
+      "url": "https://dev.to/gramli/ghost-in-the-shell-can-a-log-file-hijack-an-ai-3gk",
+      "title": "Ghost in the Shell: Can a Log File Hijack an AI?",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This week's Hacktoberfest theme is Ghost in the Machine. Unfortunately, I don't have enough time to...",
+      "author": "Daniel Balcarek",
+      "publishedAt": "2026-10-29T07:02:39Z",
+      "engagement": 70,
+      "tags": [
+        "ai",
+        "security",
+        "halloween",
+        "promptengineering",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gramli/ghost-in-the-shell-can-a-log-file-hijack-an-ai-3gk",
+      "titleHash": "b32820284769a993b2dd70e85e5a2e3828ae070f12cba057433b3206c722a115",
+      "contentHash": "b68335963528e9d542a44babf80a21a084e3771bccf55910c86ba0a3e2e0ba6c",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8322398909451085,
+        "engagement": 0.6170861162396918
+      }
+    },
+    {
+      "url": "https://dev.to/yong_yu_f98e15562e9b120a0/gemini-4-carbon-is-1-on-aa-index-still-fairwind-only-cyber-benches-210-420-and-what-to-b66",
+      "title": "Gemini 4 Carbon Is #1 on AA Index — Still Fairwind-Only: Cyber Benches, $2/$10 $4/$20, and What to Do Before the API",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Google DeepMind’s Gemini 4 Carbon (Oct 28) claims AA Index v5.0 #1 at 59 and SOTA cyber benches — still Fairwind/cyber-defenders first, no public model ID. Intro $2/$10 → $4/$20, 95% cache off, builder checklist before the API.",
+      "author": "Yong Yu",
+      "publishedAt": "2026-10-29T13:14:48Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "llm",
+        "google",
+        "cybersecurity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/yong_yu_f98e15562e9b120a0/gemini-4-carbon-is-1-on-aa-index-still-fairwind-only-cyber-benches-210-420-and-what-to-b66",
+      "titleHash": "2f64e182d66ad00d2ace134ccacd4b62ef9af7a481e18b0169b8617bc561a873",
+      "contentHash": "b1216d45a02db85f3b0b6a2858bc21aa0facdef93f870f92a1a62b861b4fa74b",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.883448033578688,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://dev.to/hiper2d/the-agent-that-refused-to-drift-3o00",
+      "title": "The agent that refused to drift",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I wanted my long-running agent to drift a little, into something interesting like curiosity and...",
+      "author": "Aliaksei Zelianouski",
+      "publishedAt": "2026-10-29T15:19:38Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "claude",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/hiper2d/the-agent-that-refused-to-drift-3o00",
+      "titleHash": "962c9f5e8900dab771bd24ec168269ddcdc7906b864e612c273e0ffd343e6176",
+      "contentHash": "5d0b1a12eced1b069be9ed07eacbdbbab6042fa3176b008ece12500fe623d4d4",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.9013215466408708,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://dev.to/susiewang/stop-snapshot-testing-voice-conversations-verify-the-turn-protocol-instead-109j",
+      "title": "Stop Snapshot-Testing Voice Conversations: Verify the Turn Protocol Instead",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Build a reproducible TypeScript test oracle for a Tencent RTC AI voice companion. Verify interruption, stale callbacks, latency recovery, and human control without treating one exact LLM response as the only correct answer.",
+      "author": "LunarDrift",
+      "publishedAt": "2026-10-25T17:08:59Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "typescript",
+        "testing",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/susiewang/stop-snapshot-testing-voice-conversations-verify-the-turn-protocol-instead-109j",
+      "titleHash": "e4ad1ad50eef4c454f28d00c56afe02956ee9617136c2b790b8202eb74006f72",
+      "contentHash": "e412d27fa9dd3eb05fd4df144f07fcdfaef0e04576fb79008ecfbbbc652decf5",
+      "score": 48,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.36402083999044693,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "automatic-speech-recognition · 415 likes · 4276 downloads",
+      "engagement": 415,
+      "tags": [
+        "model",
+        "automatic-speech-recognition"
+      ],
+      "normalizedUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "titleHash": "bf2581727dfe862b173061cd696d5693390034918fedc362ea7f58b664f97686",
+      "contentHash": "bba7f1e6516262e42e83029d485bc9b335d55e7d898268d933a1d3e5f188b2bd",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8730311102089142
+      }
+    },
+    {
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "title": "mistralai/Mistral-Large-4-1T-A52B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 1227 likes · 278 downloads",
+      "engagement": 1227,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "titleHash": "401ea8206ca528126afaf73713b54599a73169eb250ea0b826e1636d5cadd787",
+      "contentHash": "c96cd5c9688e8f0125f5f56ec831199faa22afe7f96e20d5810d4aa00ed626a3",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "title": "LiquidAI/LFM3-Omni-2B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "any-to-any · 206 likes · 1814 downloads",
+      "engagement": 206,
+      "tags": [
+        "model",
+        "any-to-any"
+      ],
+      "normalizedUrl": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "titleHash": "46b0144fc10282f08b2ee74e081d9174281406d23d0b9dcffe1b2e742c866be1",
+      "contentHash": "ef0fb7bf5c5298ba010c17a2df0585264dadf9d833d7749856e83cde00067c4e",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.771990115152306
+      }
+    },
+    {
+      "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+      "title": "openbmb/MiniCPM-OCR-1.0",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 327 likes · 1597 downloads",
+      "engagement": 327,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+      "titleHash": "41b641ecbc88ad532a5f461cfd0c3d841c01144d58f8fda8d8dfb78f7a98cf44",
+      "contentHash": "8153f7671d6a507c1cba33c959a917b8e0ddb03667b238906e4494c640cc3537",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8386246145705597
+      }
+    }
+  ]
+}
