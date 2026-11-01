@@ -1,0 +1,1137 @@
+{
+  "date": "2026-11-01",
+  "stats": {
+    "scraped": 170,
+    "deduped": 41,
+    "scored": 41
+  },
+  "recommendations": [
+    {
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "title": "HKUDS/DeepTutor",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "author": "HKUDS",
+      "publishedAt": "2026-10-31T16:51:35Z",
+      "engagement": 52835,
+      "tags": [
+        "ai-agents",
+        "ai-tutor",
+        "clawbot",
+        "cli-tool",
+        "deepresearch",
+        "interactive-learning",
+        "learning",
+        "multi-agent-systems",
+        "rag",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/HKUDS/DeepTutor",
+      "titleHash": "e0d6911ae501cbf86ff3cbcf3f6188078bc8b289d4d978d4b94aa51a12b43022",
+      "contentHash": "393b488dee7bd0a7cdc409a8cfb5219524f75403d0fa274dddd80327ca4fcd57",
+      "score": 86,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.9,
+        "timeliness": 0.9210154708990683,
+        "engagement": 1
+      },
+      "rank": 1,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "时效性强"
+      ]
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gloxkiqcza",
+      "publishedAt": "2026-10-31T13:25:00Z",
+      "engagement": 63,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "titleHash": "d2202b5fb3f928edfaa215fbaed6da20242a80f568238880e039cadbeb1b2acc",
+      "contentHash": "d2202b5fb3f928edfaa215fbaed6da20242a80f568238880e039cadbeb1b2acc",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.890987489245902,
+        "engagement": 0.6020599913279624
+      },
+      "rank": 2,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "社区热度高"
+      ]
+    },
+    {
+      "url": "https://github.com/shakewingo/Tadpole",
+      "title": "Show HN: Tadpole – an LLM agent built from scratch then post-trained on 4B model",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "shakewingo",
+      "publishedAt": "2026-10-31T12:43:42Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/shakewingo/Tadpole",
+      "titleHash": "a0797dc190dbcdb8f08cec5f5c0ba4442ac1f2b46880f21cd5e40db1f1b7489a",
+      "contentHash": "a0797dc190dbcdb8f08cec5f5c0ba4442ac1f2b46880f21cd5e40db1f1b7489a",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.75,
+        "timeliness": 0.8851027772182666,
+        "engagement": 0.20068666377598746
+      },
+      "rank": 3,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 75"
+      ]
+    },
+    {
+      "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+      "title": "Anthropic orders AI tool Claude to stop remaking video games",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "llm_nerd",
+      "publishedAt": "2026-10-31T14:41:44Z",
+      "engagement": 29,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+      "titleHash": "d996b9e19a0ab59d885f0eeba864ec595b5cef9a3e03575321ebca060355f826",
+      "contentHash": "d996b9e19a0ab59d885f0eeba864ec595b5cef9a3e03575321ebca060355f826",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9020250632180526,
+        "engagement": 0.4923737515732208
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 74"
+      ]
+    },
+    {
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "khalidkhair",
+      "publishedAt": "2026-10-31T14:29:03Z",
+      "engagement": 232,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "titleHash": "a04ef984b606f47d09b40d018857004b8dd65eef2b8a6d8c7070dc43ed70813a",
+      "contentHash": "a04ef984b606f47d09b40d018857004b8dd65eef2b8a6d8c7070dc43ed70813a",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9001912635286812,
+        "engagement": 0.7891186403420063
+      },
+      "rank": 5,
+      "reasons": [
+        "时效性强",
+        "社区热度高",
+        "综合评分 73"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+      "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "healsdata",
+      "publishedAt": "2026-10-31T13:25:10Z",
+      "engagement": 74,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+      "titleHash": "189e1ea0ddcab063d62a97ac483ab414b7617b39f2524b8a21da47a39a7f7201",
+      "contentHash": "189e1ea0ddcab063d62a97ac483ab414b7617b39f2524b8a21da47a39a7f7201",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8910113161642595,
+        "engagement": 0.6250204211305667
+      }
+    },
+    {
+      "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+      "title": "The Impact of Generative AI on Critical Thinking: Self-Reported (2025)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;research&#x2F;wp-content&#x2F;uploads&#x2F;2025&#x2F;01&#x2F;lee_2025_ai_critical_thinking_survey.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;research&#x2F;wp-content&#x2F;uploads&#x2F;...</a>",
+      "author": "the-mitr",
+      "publishedAt": "2026-10-31T18:02:29Z",
+      "engagement": 73,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+      "titleHash": "c05a9f37ce78bff4a92c8cbcc37d720ca668123a040777d1448c321ddb55ccb2",
+      "contentHash": "7248e7fc6117b7a33a410eae10b0cc83cb6a4a4b1f0deb954cb5ab883fbe7c13",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9315527255174587,
+        "engagement": 0.6230772399103254
+      }
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gloxkiqcza",
+      "publishedAt": "2026-10-31T13:25:00Z",
+      "engagement": 63,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "titleHash": "d2202b5fb3f928edfaa215fbaed6da20242a80f568238880e039cadbeb1b2acc",
+      "contentHash": "d2202b5fb3f928edfaa215fbaed6da20242a80f568238880e039cadbeb1b2acc",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.890987489245902,
+        "engagement": 0.6020599913279624
+      }
+    },
+    {
+      "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+      "title": "Anthropic orders AI tool Claude to stop remaking video games",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "llm_nerd",
+      "publishedAt": "2026-10-31T14:41:44Z",
+      "engagement": 29,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+      "titleHash": "d996b9e19a0ab59d885f0eeba864ec595b5cef9a3e03575321ebca060355f826",
+      "contentHash": "d996b9e19a0ab59d885f0eeba864ec595b5cef9a3e03575321ebca060355f826",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9020250632180526,
+        "engagement": 0.4923737515732208
+      }
+    },
+    {
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/31/amazon-sends-chills-through-its-workforce-with-mixed-message-memo-about-ai-use-corey-quinn/5306804",
+      "title": "Amazon sends chills through its workforce with mixed message memo about AI use",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Logans_Run",
+      "publishedAt": "2026-10-31T17:21:16Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theregister.com/ai-and-ml/2026/10/31/amazon-sends-chills-through-its-workforce-with-mixed-message-memo-about-ai-use-corey-quinn/5306804",
+      "titleHash": "b663279c5e76bcec06f9221c653de27443e8081dc922a3577dad6ec8174d15f9",
+      "contentHash": "b663279c5e76bcec06f9221c653de27443e8081dc922a3577dad6ec8174d15f9",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9254124654669555,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
+      "title": "AI text watermarking and quality loss",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "danielfoster",
+      "publishedAt": "2026-10-31T21:50:13Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
+      "titleHash": "73948503fb9af0dccec881f40c81413b6d84bad335fccfab63c5eceaf0c7bb4e",
+      "contentHash": "73948503fb9af0dccec881f40c81413b6d84bad335fccfab63c5eceaf0c7bb4e",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9662211794610438,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-10-29/computer-science-degree-programs-lose-students-as-ai-takes-jobs",
+      "title": "Computer Science Programs Lose Students as AI Replaces Jobs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "xqcgrek2",
+      "publishedAt": "2026-10-31T22:57:27Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bloomberg.com/news/articles/2026-10-29/computer-science-degree-programs-lose-students-as-ai-takes-jobs",
+      "titleHash": "856fd60398dcb91c9351a29d916331c89b173fd751f4a94e8089d788f23ea8a4",
+      "contentHash": "856fd60398dcb91c9351a29d916331c89b173fd751f4a94e8089d788f23ea8a4",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9767008474140151,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://www.gadgetreview.com/ai-data-centers-could-erase-15-years-of-americas-climate-progress-by-2030",
+      "title": "AI Data Centers Could Erase 15 Years of America's Climate Progress by 2030",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "entryleveljobsc",
+      "publishedAt": "2026-10-31T17:34:23Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.gadgetreview.com/ai-data-centers-could-erase-15-years-of-americas-climate-progress-by-2030",
+      "titleHash": "31b3efe9ae0f142a85ca61e0cc69bf91cf4459db9e31acb3ec358df3810994ac",
+      "contentHash": "31b3efe9ae0f142a85ca61e0cc69bf91cf4459db9e31acb3ec358df3810994ac",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9273621198259698,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://sancho.bearblog.dev/ai-is-a-coup-by-the-tasteless/",
+      "title": "AI Is a Coup by the Tasteless",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sancho-panza",
+      "publishedAt": "2026-10-31T15:14:53Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sancho.bearblog.dev/ai-is-a-coup-by-the-tasteless",
+      "titleHash": "a74f88918a0d19d093d5755e2a9ad75cebfcb17066af5e8c5d47b485ceeb3cc9",
+      "contentHash": "a74f88918a0d19d093d5755e2a9ad75cebfcb17066af5e8c5d47b485ceeb3cc9",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9068356644401807,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.reuters.com/business/reddit-pinterest-shares-tumble-weak-user-revenue-growth-2026-10-30/",
+      "title": "Reddit shares plunge as Google's AI search squeezes traffic",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "randycupertino",
+      "publishedAt": "2026-10-31T20:31:09Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/business/reddit-pinterest-shares-tumble-weak-user-revenue-growth-2026-10-30",
+      "titleHash": "7d60e697574342c6ebc8deeb541b9547dd568b9c271c3ac1755134c6a542674e",
+      "contentHash": "7d60e697574342c6ebc8deeb541b9547dd568b9c271c3ac1755134c6a542674e",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.954040828183736,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50317351",
+      "title": "Ask HN: Are you using AI to do election choices like Mayor, Special Measures",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-10-31T15:59:29Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50317351",
+      "titleHash": "3a7bf7a8d87062f7ccb879c79ba083846a0936991bc64a51631046d18dde3cd6",
+      "contentHash": "3a7bf7a8d87062f7ccb879c79ba083846a0936991bc64a51631046d18dde3cd6",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.913348348636746,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone",
+      "title": "Rewriting Copyright Law for Generative AI Would Hurt Everyone",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ilreb",
+      "publishedAt": "2026-10-31T01:26:11Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone",
+      "titleHash": "abc4adeb334c7c1ab0d8149522229ff85a5e97932ac6eb7c6d9009421901175e",
+      "contentHash": "abc4adeb334c7c1ab0d8149522229ff85a5e97932ac6eb7c6d9009421901175e",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.7939303386758644,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "title": "Postgres 19 is late, and it's AI's fault",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "soheilpro",
+      "publishedAt": "2026-10-31T01:38:56Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "titleHash": "20ed4c29c216ac409726101b3c73571a97a9ae507051faa07f16a8cd881ff168",
+      "contentHash": "20ed4c29c216ac409726101b3c73571a97a9ae507051faa07f16a8cd881ff168",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.795556181659348,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.palladiummag.com/2026/10/30/the-limits-of-ai-as-an-economic-weapon/",
+      "title": "The Limits of AI as an Economic Weapon",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "billybuckwheat",
+      "publishedAt": "2026-10-31T18:56:26Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.palladiummag.com/2026/10/30/the-limits-of-ai-as-an-economic-weapon",
+      "titleHash": "1c7903724ae994d3c4a2a30b077cbc9304df3a8c627a789bba5e51a2f5cc5908",
+      "contentHash": "1c7903724ae994d3c4a2a30b077cbc9304df3a8c627a789bba5e51a2f5cc5908",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9396515438154743,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/ai-anthropic-rsi-recursive-self-improvement-bff4e815",
+      "title": "The Smartest People in AI Believe This Is the World's Most Important Chart",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-10-31T18:54:27Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.wsj.com/tech/ai/ai-anthropic-rsi-recursive-self-improvement-bff4e815",
+      "titleHash": "1e28747ca20968f0262873ad975a3aaefb3282f89985f5b747482f80dd3585d0",
+      "contentHash": "1e28747ca20968f0262873ad975a3aaefb3282f89985f5b747482f80dd3585d0",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9393525686213678,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39375",
+      "title": "What Is Work For? Labor, Politics, and Meaning in the Age of AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Betelbuddy",
+      "publishedAt": "2026-10-31T11:28:42Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.39375",
+      "titleHash": "196ead6a333a03cb9b8f3d4aa362a7fe99dfe5fbad63bf6bd83d9043cb460438",
+      "contentHash": "196ead6a333a03cb9b8f3d4aa362a7fe99dfe5fbad63bf6bd83d9043cb460438",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8745154534596075,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.arxo.io/findings/ARXO-2026-0413/",
+      "title": "Two EU AI Act translations use FLOPs/s instead of cumulative FLOPs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rifmj",
+      "publishedAt": "2026-10-31T18:14:17Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.arxo.io/findings/ARXO-2026-0413",
+      "titleHash": "03efa463488a83ac74381eb58a434ac9681b2b2d8e3605b5cdf54b8dbd215d08",
+      "contentHash": "03efa463488a83ac74381eb58a434ac9681b2b2d8e3605b5cdf54b8dbd215d08",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9333181224032994,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://fortune.com/2026/10/30/goldman-sachs-ai-layoffs-displaced-workers-older-workers-past-tech-disruptions/",
+      "title": "Goldman says AI layoffs are leaving 'long-lasting' scar, like the last 40 years",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "randycupertino",
+      "publishedAt": "2026-10-31T15:19:40Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://fortune.com/2026/10/30/goldman-sachs-ai-layoffs-displaced-workers-older-workers-past-tech-disruptions",
+      "titleHash": "fc60673a07c7d08a13120ea338232fd04732b31633d6c7a3f0371e0dffb55608",
+      "contentHash": "fc60673a07c7d08a13120ea338232fd04732b31633d6c7a3f0371e0dffb55608",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9075319183089289,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://consumerrights.wiki/w/Proton_senior_management_prioritizes_AI_over_security",
+      "title": "Proton senior management prioritizes AI over security",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "DeepLogin",
+      "publishedAt": "2026-10-31T22:01:11Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://consumerrights.wiki/w/Proton_senior_management_prioritizes_AI_over_security",
+      "titleHash": "43d98cac2f14dd26d722d7c9333be5e2fe880808f0ccfaaabe02c0a836743f7f",
+      "contentHash": "43d98cac2f14dd26d722d7c9333be5e2fe880808f0ccfaaabe02c0a836743f7f",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9679228483576854,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://hyperparameter.space/blog/software-is-eating-ai/",
+      "title": "Software is Eating AI (2017)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jruohonen",
+      "publishedAt": "2026-10-31T18:27:27Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://hyperparameter.space/blog/software-is-eating-ai",
+      "titleHash": "9197955bc27d820aae607444e18f289ef4fd978049fe384bbbe4e7ef9a186c17",
+      "contentHash": "9197955bc27d820aae607444e18f289ef4fd978049fe384bbbe4e7ef9a186c17",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9352919357447379,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "khalidkhair",
+      "publishedAt": "2026-10-31T14:29:03Z",
+      "engagement": 232,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "titleHash": "a04ef984b606f47d09b40d018857004b8dd65eef2b8a6d8c7070dc43ed70813a",
+      "contentHash": "a04ef984b606f47d09b40d018857004b8dd65eef2b8a6d8c7070dc43ed70813a",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9001912635286812,
+        "engagement": 0.7891186403420063
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.29820",
+      "title": "UlaCache: Unified Logical Addressing for Sparse LLM Serving",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wslh",
+      "publishedAt": "2026-10-31T16:30:16Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.29820",
+      "titleHash": "25dede9471ed6dc9b1658706dc2807f960d818ba60ba6a4974d25ff28fc128b2",
+      "contentHash": "25dede9471ed6dc9b1658706dc2807f960d818ba60ba6a4974d25ff28fc128b2",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9178707258493783,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://jacquesmattheij.com/local-inference-with-large-language-models/",
+      "title": "Local Inference with LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "_Microft",
+      "publishedAt": "2026-10-31T16:25:37Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jacquesmattheij.com/local-inference-with-large-language-models",
+      "titleHash": "53c5522053055503acf2ade5cc60f839ff3e72fd2baee7df37d812f166b6026b",
+      "contentHash": "53c5522053055503acf2ade5cc60f839ff3e72fd2baee7df37d812f166b6026b",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9171861616495396,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/shakewingo/Tadpole",
+      "title": "Show HN: Tadpole – an LLM agent built from scratch then post-trained on 4B model",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "shakewingo",
+      "publishedAt": "2026-10-31T12:43:42Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/shakewingo/Tadpole",
+      "titleHash": "a0797dc190dbcdb8f08cec5f5c0ba4442ac1f2b46880f21cd5e40db1f1b7489a",
+      "contentHash": "a0797dc190dbcdb8f08cec5f5c0ba4442ac1f2b46880f21cd5e40db1f1b7489a",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.75,
+        "timeliness": 0.8851027772182666,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://ocrbench.app/blog/llm-ocr-cost-calculator/",
+      "title": "Show HN: Free OCR Cost Calculator – Estimate multi-provider LLM token costs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Here is a cost calculator i made to estimate ocr cost on the main llm provider, it request the free endpoints of each llm provider and multiply by the input token price.",
+      "author": "gustutu",
+      "publishedAt": "2026-10-31T10:38:43Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ocrbench.app/blog/llm-ocr-cost-calculator",
+      "titleHash": "c376a84d35772b94b613abaada6781af49018b012f38d6424b4045e0da81b23c",
+      "contentHash": "44651e2cfd89e06b9974f176c80a306030d99723a826cba237250e640e50a426",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8675300082487466,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://hazyresearch.stanford.edu/blog/2026-10-12-ncm",
+      "title": "Non-autoregressive NC LLM spits tokens 21x faster than text diffusion",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "LarsDu88",
+      "publishedAt": "2026-10-31T06:31:05Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://hazyresearch.stanford.edu/blog/2026-10-12-ncm",
+      "titleHash": "65d2bccf1db2cd3194ee4a81f6f7278e48404a3b7500c1ab80db145b9cfd816d",
+      "contentHash": "65d2bccf1db2cd3194ee4a81f6f7278e48404a3b7500c1ab80db145b9cfd816d",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8337362890798408,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.38210",
+      "title": "GAAC: Lossless KV Cache Compression for Faster LLM Inference",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wslh",
+      "publishedAt": "2026-10-31T15:34:12Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.38210",
+      "titleHash": "687de13921ba833a895da5dd3dd7048b9e3c34ebb708734a35929f05740f372f",
+      "contentHash": "687de13921ba833a895da5dd3dd7048b9e3c34ebb708734a35929f05740f372f",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9096506468535538,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/samamatariq3527/Deferred-Cognitive-Architecture",
+      "title": "Show HN: Reducing LLM Context Complexity from O(N^2) to O(k)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "samamatariq",
+      "publishedAt": "2026-10-31T16:34:19Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/samamatariq3527/Deferred-Cognitive-Architecture",
+      "titleHash": "52b0385d65cd767152e169505c1496406d309d7a6aecf60262657496e29496e7",
+      "contentHash": "52b0385d65cd767152e169505c1496406d309d7a6aecf60262657496e29496e7",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9184673754740798,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/researchbyayan/ChemEZ",
+      "title": "ChemEZ: LLM Wrapper with Chemistry Processing and Visualization",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "researchbyayan",
+      "publishedAt": "2026-10-31T13:47:08Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/researchbyayan/ChemEZ",
+      "titleHash": "b086ccf280b433e71f8399661937556a3b5a91ed059863a7ffa225d6ae14e539",
+      "contentHash": "b086ccf280b433e71f8399661937556a3b5a91ed059863a7ffa225d6ae14e539",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8941572868305346,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+      "title": "Let’s Build a Brain",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "signal-11",
+      "publishedAt": "2026-10-31T10:09:27.573-05:00",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://aatishb.com/myriad/lets-build-a-brain",
+      "titleHash": "7f5d5c3865f0586c56f6ff87ffa88cb4ae278c8354de7eae62a658a4799284b9",
+      "contentHash": "7f5d5c3865f0586c56f6ff87ffa88cb4ae278c8354de7eae62a658a4799284b9",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.9060468339665193,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+      "title": "Building fine-grained version control for agents with Rust and Durable Objects",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "tomhoule",
+      "publishedAt": "2026-10-30T11:50:44.030-05:00",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "vcs",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+      "titleHash": "85668789c56c3ac0e4edb792b55537a3d9547dff943d64adab1e39056564ba98",
+      "contentHash": "85668789c56c3ac0e4edb792b55537a3d9547dff943d64adab1e39056564ba98",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.8,
+        "timeliness": 0.7309108316358566,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+      "title": "Avoid Public Functions Calling Other Public Functions",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "telemachus",
+      "publishedAt": "2026-10-31T13:05:03.141-05:00",
+      "engagement": 38,
+      "tags": [
+        "api",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+      "titleHash": "a09c2b07c26a3fcc5f2d18bf91150d2916061cfe23626114071610f655864ed0",
+      "contentHash": "a09c2b07c26a3fcc5f2d18bf91150d2916061cfe23626114071610f655864ed0",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9319367912749963,
+        "engagement": 0.530354869008833
+      }
+    },
+    {
+      "url": "https://www.codesimplicity.com/post/the-secret-of-fast-programming-stop-thinking/",
+      "title": "The Secret of Fast Programming: Stop Thinking »",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "jkoppel",
+      "publishedAt": "2026-10-31T05:20:48.000-05:00",
+      "engagement": 4,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.codesimplicity.com/post/the-secret-of-fast-programming-stop-thinking",
+      "titleHash": "a4992b5ee919504baefdf920373183493cf4c941762e1a44d50ec82e8c05877b",
+      "contentHash": "a4992b5ee919504baefdf920373183493cf4c941762e1a44d50ec82e8c05877b",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8650396642512385,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/ayush_singh_9b0d83152be5b/a-two-line-function-caught-ai-collusion-better-than-the-ai-did-3nmd",
+      "title": "A Two-Line Function Caught AI Collusion Better Than the AI Did",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A few days back, I took part in the Apart Research sprint where our team worked on the AI collusion...",
+      "author": "Ayush Singh",
+      "publishedAt": "2026-10-31T04:17:26Z",
+      "engagement": 49,
+      "tags": [
+        "ai",
+        "agents",
+        "airesearch",
+        "machinelearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/ayush_singh_9b0d83152be5b/a-two-line-function-caught-ai-collusion-better-than-the-ai-did-3nmd",
+      "titleHash": "3b41bcf6d2d465a44e0e6b694196a69582977b3b7e897d1dd56ee5620eac24cd",
+      "contentHash": "597c609204cb8a49c95a330163a3ff3248bbe59154acadc1d5d0753806aad91b",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.816047783380747,
+        "engagement": 0.5663233347786729
+      }
+    },
+    {
+      "url": "https://dev.to/sizzlebop/i-retested-my-moe-offloading-benchmarks-some-of-my-conclusions-changed-6f4",
+      "title": "I Retested My MoE Offloading Benchmarks. Some of My Conclusions Changed.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A follow-up to my original 16GB GPU experiment, this time with consistent quantization, repeated...",
+      "author": "Jessica Doering",
+      "publishedAt": "2026-10-31T19:33:06Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "machinelearning",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sizzlebop/i-retested-my-moe-offloading-benchmarks-some-of-my-conclusions-changed-6f4",
+      "titleHash": "d8243e4e5cc85453b7293a661077ea9b8d21e208288ec6aee10fe779da16e5a1",
+      "contentHash": "01ea34c85a871fb931ca3c4d92a597ce6e009c3efd97f0b96a4972d4682697f1",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.94519598935411,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://dev.to/gnomeman4201/same-evidence-different-judgment-a-small-experiment-on-implied-conclusions-and-evidence-ordering-ndg",
+      "title": "Same Evidence, Different Judgment? A Small Experiment on Implied Conclusions and Evidence Ordering",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "GnomeMan4201 · Study: composed-inference-ordering-v1.1 · Collected October 31, 2026 UTC  What I ran:...",
+      "author": "GnomeMan4201",
+      "publishedAt": "2026-10-31T02:22:16Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "machinelearning",
+        "rag",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gnomeman4201/same-evidence-different-judgment-a-small-experiment-on-implied-conclusions-and-evidence-ordering-ndg",
+      "titleHash": "13039bc48f85ca170803ae4c868dbb451f9e3f68c9ddf5f9a7fdabd7c5e6b879",
+      "contentHash": "75917bdd21ee36f8750fc72e7f288654eb86780a436cefdcd826bd85c72606f1",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8011068507450227,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://dev.to/hosseinhezami/architecting-a-human-in-the-loop-ai-support-agent-with-n8n-and-laravel-40nc",
+      "title": "Architecting a Human-in-the-Loop AI Support Agent with n8n and Laravel",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Deploying fully autonomous AI agents in customer-facing environments is a massive operational risk....",
+      "author": "Hossein Hezami",
+      "publishedAt": "2026-10-31T08:56:23Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "n8n",
+        "laravel",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/hosseinhezami/architecting-a-human-in-the-loop-ai-support-agent-with-n8n-and-laravel-40nc",
+      "titleHash": "4c48685bb03024f02e488189f8fec310e8455b2e9287da1e51dc7aad15a8c46e",
+      "contentHash": "d8bb4015da9b998a975a35d5c5b56c472fae3bb4e8a58a2eec1a0f17e3e6718c",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.853401940151415,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "title": "HKUDS/DeepTutor",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "author": "HKUDS",
+      "publishedAt": "2026-10-31T16:51:35Z",
+      "engagement": 52835,
+      "tags": [
+        "ai-agents",
+        "ai-tutor",
+        "clawbot",
+        "cli-tool",
+        "deepresearch",
+        "interactive-learning",
+        "learning",
+        "multi-agent-systems",
+        "rag",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/HKUDS/DeepTutor",
+      "titleHash": "e0d6911ae501cbf86ff3cbcf3f6188078bc8b289d4d978d4b94aa51a12b43022",
+      "contentHash": "393b488dee7bd0a7cdc409a8cfb5219524f75403d0fa274dddd80327ca4fcd57",
+      "score": 86,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.9,
+        "timeliness": 0.9210154708990683,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/speridlabs/idol",
+      "title": "speridlabs/idol",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-to-3d · 211 likes · 2367 downloads",
+      "engagement": 211,
+      "tags": [
+        "model",
+        "image-to-3d"
+      ],
+      "normalizedUrl": "https://huggingface.co/speridlabs/idol",
+      "titleHash": "8b3742f3510875b1d0da4e513338c0ad6b65f582ede1f9e757b6bbc0ed3ebe85",
+      "contentHash": "efc3a0279820389c4b76c55ba090a07cc716ebfcee5539cba46b1f021983dbf4",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7754452869762506
+      }
+    },
+    {
+      "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+      "title": "LiquidAI/LFM3-VL-2B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 189 likes · 8091 downloads",
+      "engagement": 189,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+      "titleHash": "f1abba0c2bcfa069f07cbd36ff942021f1354f8af68bd18a316d633ea74afb54",
+      "contentHash": "ae6b8cd915398ec6ee66f96c21e84a6e829d9bbe787d21622d886760346bcc4d",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7595845336509429
+      }
+    },
+    {
+      "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+      "title": "Diffuspace/Clover-35B-A3B-Preview",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 188 likes · 2021 downloads",
+      "engagement": 188,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+      "titleHash": "6f15271987bc86f6b81da475d051a87deb4e203bd0a480dfc85f6ca7c3b3cb17",
+      "contentHash": "e61abf2338d165abdcd945748864fa0a37ffada46b53689a2ffeb542846928f4",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7588206013910814
+      }
+    }
+  ]
+}
