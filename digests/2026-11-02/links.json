@@ -1,0 +1,1035 @@
+{
+  "date": "2026-11-02",
+  "stats": {
+    "scraped": 170,
+    "deduped": 37,
+    "scored": 37
+  },
+  "summary": "今日聚焦AI安全与落地痛点：从防御恶意提示注入的实战指南，到防止敏感数据泄露至LLM的浏览器插件，再到多智能体协作的荒诞实验与商业伦理争议，探讨AI在提升效率的同时引发的信任危机与监管边界，助您全面审视智能体时代的机遇与风险。",
+  "recommendations": [
+    {
+      "url": "https://dev.to/rudratosh/your-ai-agent-trusts-everything-it-reads-a-field-guide-to-hijacking-claude-gpt-gemini-copilot-1l6k",
+      "title": "Your AI Agent Trusts Everything It Reads — A Field Guide to Hijacking Claude, GPT, Gemini & Copilot",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A README file in your ~/Downloads folder should not be able to expose your SSH keys. A calendar...",
+      "author": "Rudratosh Shastri",
+      "publishedAt": "2026-11-01T10:03:30Z",
+      "engagement": 21,
+      "tags": [
+        "security",
+        "ai",
+        "llm",
+        "cybersecurity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/rudratosh/your-ai-agent-trusts-everything-it-reads-a-field-guide-to-hijacking-claude-gpt-gemini-copilot-1l6k",
+      "titleHash": "934d7809d6c4129777459cbc98b02ab5f362022f18a1e7e750844f9aec188dd6",
+      "contentHash": "cdbc8dc6e94f6a2b1baa8fbb3b83df1f645985199b1d6f04394a2608d9dbf478",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.6,
+        "timeliness": 0.8597426271225952,
+        "engagement": 0.4474742269407354
+      },
+      "rank": 1,
+      "reasons": [
+        "揭秘AI提示注入攻击链，守护开发安全。"
+      ],
+      "overview": "详细介绍如何通过伪造文档和指令劫持Claude等主流AI模型，揭示因过度信任输入而导致的SSH密钥泄露等严重安全隐患，为开发者提供防御恶意提示注入的实战指导。"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50326183",
+      "title": "EraseAI Firewall – stop secrets and PII before they reach Public LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN — we built a Chrome extension that checks what you&#x27;re about to send to ChatGPT, Claude, Gemini or Replit, and stops it if it contains an API key, password, card number, email or similar.<p>It hooks the send button (and Enter), checks the prompt on your device, and if it finds something, shows what and where. You can Send Anyway or Cancel; the paid tier adds Sanitize &amp; Send (replaces values with placeholders) and scanning of attached files — PDFs, Word&#x2F;Excel&#x2F;PowerPoint, images via in-browser OCR, zip archives.<p>Things you&#x27;ll probably ask:<p>- Where does my text go? Without an account, nowhere: the checks run in the extension, with the same rules our server uses (the extension&#x27;s scanner is generated from the server&#x27;s rule code). If you add an API key, text is sent to our API for scanning and your history keeps the first 500 characters with secrets masked. Image OCR also runs locally, in the extension (the OCR engine and language data ship inside it; nothing is fetched at runtime).\n- How does detection work? Pattern rules plus validators (e.g. Luhn for card numbers, context checks so &quot;ISBN 978…&quot; isn&#x27;t a card). No LLM in the loop. It will miss secrets it has no pattern for, and it will sometimes flag harmless text — both are fixable and we&#x27;d like examples.\n- Why an extension and not a proxy? Consumer AI apps pin TLS and personal laptops don&#x27;t have a corporate proxy. The extension sees the text before it&#x27;s encrypted.<p>Free to install and free to use: prompt checks run on your device with no account and no limit. Personal ($5&#x2F;month) adds one-click Sanitize, attachment&#x2F;screenshot scanning, history and the Android app. Organizations can roll it out via Chrome policy (Google Admin&#x2F;Intune). Would love feedback, especially false positives and things it should have caught.<p>https:&#x2F;&#x2F;eraseai.ai&#x2F;start?utm_source=hackernews&amp;utm_medium=post&amp;utm_campaign=launch",
+      "author": "vantwardsolutio",
+      "publishedAt": "2026-11-01T14:45:27Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50326183",
+      "titleHash": "3bc329b1caafee3a09cfee789fbdb0292eea4f96b717ff3e5b5f7cf539ab6f9b",
+      "contentHash": "bb9f3d59a2a2bbf8007c0fd4495bbf4c5a3d0a990140328044500ebba8420b66",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8995297787659629,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 2,
+      "reasons": [
+        "一键拦截隐私泄露，LLM使用更安心。"
+      ],
+      "overview": "一款Chrome扩展工具，在用户向ChatGPT等公共LLM发送数据前进行扫描，自动拦截包含API密钥、密码或银行卡号等敏感信息的请求，有效防止隐私泄露。"
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "entryleveljobsc",
+      "publishedAt": "2026-11-01T13:47:24Z",
+      "engagement": 149,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "titleHash": "787336fe75b98c3303133da7e968717f00b7189b4e868160df40ca306600244c",
+      "contentHash": "787336fe75b98c3303133da7e968717f00b7189b4e868160df40ca306600244c",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8911903100483521,
+        "engagement": 0.7253637530185605
+      },
+      "rank": 3,
+      "reasons": [
+        "荒诞实验揭示多智能体协作的瓶颈。"
+      ],
+      "overview": "研究展示了在Minecraft中运行的AI智能体集群未能成功构建文明，反而陷入官僚主义困境，通过荒诞的实验结果反思当前多智能体协作在复杂长期任务中的局限性。"
+    },
+    {
+      "url": "https://eva.ac/blog/llms/",
+      "title": "So I guess everyone uses LLMs to think now",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "xyzeva",
+      "publishedAt": "2026-11-01T21:49:04Z",
+      "engagement": 63,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://eva.ac/blog/llms",
+      "titleHash": "46ea0101e6113eac4ab5a58188950729826dcedcc6ddf89511823e26bf305881",
+      "contentHash": "46ea0101e6113eac4ab5a58188950729826dcedcc6ddf89511823e26bf305881",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9627962055107175,
+        "engagement": 0.6020599913279624
+      },
+      "rank": 4,
+      "reasons": [
+        "反思LLM对人类独立思考的潜在侵蚀。"
+      ],
+      "overview": "讨论当前开发者普遍依赖LLM辅助思维的现象，引发关于人类独立思考能力退化、认知外包依赖以及AI对传统逻辑构建过程影响的社会与技术反思。"
+    },
+    {
+      "url": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
+      "title": "Muse AI agent is a commercial surveillance network disguised as an AI assistant",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Anon84",
+      "publishedAt": "2026-11-01T18:33:02Z",
+      "engagement": 34,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
+      "titleHash": "ac53cf5ee9a6ada5e6e6516f0efd1478f958f3017c16c20301f31dd89e33fbda",
+      "contentHash": "ac53cf5ee9a6ada5e6e6516f0efd1478f958f3017c16c20301f31dd89e33fbda",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9329840215497103,
+        "engagement": 0.5146893481167586
+      },
+      "rank": 5,
+      "reasons": [
+        "警示AI助手背后的数据监控陷阱。"
+      ],
+      "overview": "揭露一款名为Muse的AI助手实际构建了商业监控网络，通过后台数据收集实现用户画像，探讨其如何将助手指向用户隐私侵犯与数据监控，揭示商业AI背后的伦理黑箱。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "title": "The AI cost of JavaScript frameworks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "luu",
+      "publishedAt": "2026-11-01T06:06:19Z",
+      "engagement": 297,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
+      "titleHash": "7bc12a069d08f5847091e181a354ee5ca37cd0f5ac84012aeea5c66c6cebb00b",
+      "contentHash": "7bc12a069d08f5847091e181a354ee5ca37cd0f5ac84012aeea5c66c6cebb00b",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8276388070861254,
+        "engagement": 0.8247387546920851
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2409.02292",
+      "title": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hapax_legomena",
+      "publishedAt": "2026-11-01T01:46:29Z",
+      "engagement": 181,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2409.02292",
+      "titleHash": "1fe269f05bda895884966601aa16614c2a3a5f66a95645f96fd100ad6348550f",
+      "contentHash": "1fe269f05bda895884966601aa16614c2a3a5f66a95645f96fd100ad6348550f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7938435378725763,
+        "engagement": 0.7533571293283582
+      }
+    },
+    {
+      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
+      "title": "Frontier Airlines Likely Breached",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "999900000999",
+      "publishedAt": "2026-11-01T16:46:33Z",
+      "engagement": 172,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam",
+      "titleHash": "5f2d1b0c08c2d29e50e7a1b0a346726cdf6b86543f3e920b4df3a16a1ed2ac8e",
+      "contentHash": "5f2d1b0c08c2d29e50e7a1b0a346726cdf6b86543f3e920b4df3a16a1ed2ac8e",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9171790831271796,
+        "engagement": 0.7460153677095985
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "throwoutway",
+      "publishedAt": "2026-11-01T22:10:45Z",
+      "engagement": 160,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+      "titleHash": "8253190a7ed8c6aef3bdee0fd0b5e53fb413ef6dc4fd613b7dc192b448bffe0d",
+      "contentHash": "8253190a7ed8c6aef3bdee0fd0b5e53fb413ef6dc4fd613b7dc192b448bffe0d",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9661517126122188,
+        "engagement": 0.7356086253439499
+      }
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "entryleveljobsc",
+      "publishedAt": "2026-11-01T13:47:24Z",
+      "engagement": 149,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "titleHash": "787336fe75b98c3303133da7e968717f00b7189b4e868160df40ca306600244c",
+      "contentHash": "787336fe75b98c3303133da7e968717f00b7189b4e868160df40ca306600244c",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8911903100483521,
+        "engagement": 0.7253637530185605
+      }
+    },
+    {
+      "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
+      "title": "It wasn't AI that flipped Proton's charge",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Raed667",
+      "publishedAt": "2026-11-01T18:53:55Z",
+      "engagement": 141,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.raed.dev/posts/proton-loser-thinking",
+      "titleHash": "477dd0403de49046a4f7289fd14ccfce404e0827607211158dcbe7770af20ac7",
+      "contentHash": "477dd0403de49046a4f7289fd14ccfce404e0827607211158dcbe7770af20ac7",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9361154576164178,
+        "engagement": 0.7174294481276854
+      }
+    },
+    {
+      "url": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
+      "title": "Muse AI agent is a commercial surveillance network disguised as an AI assistant",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Anon84",
+      "publishedAt": "2026-11-01T18:33:02Z",
+      "engagement": 34,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
+      "titleHash": "ac53cf5ee9a6ada5e6e6516f0efd1478f958f3017c16c20301f31dd89e33fbda",
+      "contentHash": "ac53cf5ee9a6ada5e6e6516f0efd1478f958f3017c16c20301f31dd89e33fbda",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9329840215497103,
+        "engagement": 0.5146893481167586
+      }
+    },
+    {
+      "url": "https://www.cnn.com/2026/10/30/business/ai-stocks-bonds-debt",
+      "title": "The question we should all be asking about AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "heresie-dabord",
+      "publishedAt": "2026-11-01T12:44:36Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnn.com/2026/10/30/business/ai-stocks-bonds-debt",
+      "titleHash": "73d1eee7f927fe77aa84504bc30e05acb784c726e36f7bfbed1428807b13a5e1",
+      "contentHash": "73d1eee7f927fe77aa84504bc30e05acb784c726e36f7bfbed1428807b13a5e1",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.882255494137771,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://proton.me/blog/ai-manifesto",
+      "title": "Proton's AI manifesto for software engineering",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jonbaer",
+      "publishedAt": "2026-11-01T21:58:17Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://proton.me/blog/ai-manifesto",
+      "titleHash": "caee303ca8551afe5816d06e7d621396da48a0e2edadcae79caa9fc491d47321",
+      "contentHash": "caee303ca8551afe5816d06e7d621396da48a0e2edadcae79caa9fc491d47321",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9642210645849218,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://joshbocanegra.medium.com/a-90-chance-of-ai-saving-humanity-bf12fb7914ee",
+      "title": "A 90% Chance of AI Saving Humanity",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jbai",
+      "publishedAt": "2026-11-01T13:19:04Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://joshbocanegra.medium.com/a-90-chance-of-ai-saving-humanity-bf12fb7914ee",
+      "titleHash": "ffb2d66b0c5d23a03e2c0ccdf0bc540e06866406563356e397f769390b39d635",
+      "contentHash": "ffb2d66b0c5d23a03e2c0ccdf0bc540e06866406563356e397f769390b39d635",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8871480612465426,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/27/chinese-markets-lose-trillions-ai-race-beijing",
+      "title": "Chinese markets lose trillions as race for AI supremacy with US takes its toll",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "PeterHolzwarth",
+      "publishedAt": "2026-11-01T03:27:55Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/world/2026/oct/27/chinese-markets-lose-trillions-ai-race-beijing",
+      "titleHash": "8ed0bfda3329489555d8d42b8f04766de0a69ae448a812e6d01f5b8ac2d542af",
+      "contentHash": "8ed0bfda3329489555d8d42b8f04766de0a69ae448a812e6d01f5b8ac2d542af",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8068690896547137,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=usZLo_9Jz54",
+      "title": "James Mickens' Talk: A Sober Analysis of AI Impact (LABScon '26)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "corroclaro",
+      "publishedAt": "2026-11-01T02:17:57Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=usZLo_9Jz54",
+      "titleHash": "78027609b8ceffc0cb4ab92690d84fef569868e9954c6acfa5d4055f26718fbf",
+      "contentHash": "78027609b8ceffc0cb4ab92690d84fef569868e9954c6acfa5d4055f26718fbf",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7978616674895662,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NWNbAEivyvs",
+      "title": "Are There Problems Beyond the Reach of AI [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "efavdb",
+      "publishedAt": "2026-11-01T20:06:51Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=NWNbAEivyvs",
+      "titleHash": "00533147b30d94be1cfd6c9d338bf7f37af869897330029a28219302f862f416",
+      "contentHash": "00533147b30d94be1cfd6c9d338bf7f37af869897330029a28219302f862f416",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9471344193268965,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.engadget.com/2302459/ai-software-clones-coming-for-big-name-companies-adobe/",
+      "title": "AI Software Clones Are Coming for Big-Name Companies Like Adobe",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "entryleveljobsc",
+      "publishedAt": "2026-11-01T17:37:47Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.engadget.com/2302459/ai-software-clones-coming-for-big-name-companies-adobe",
+      "titleHash": "1131ab81187d84da3baacfb25a5daeb153933b7df41321837ef54c6c64f4ed4d",
+      "contentHash": "1131ab81187d84da3baacfb25a5daeb153933b7df41321837ef54c6c64f4ed4d",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9247497579486581,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://fortune.com/2026/10/30/kentucky-administrator-ai-religious-exemption-title-vii-humanism/",
+      "title": "Opt out of AI use at work based on religious freedoms law",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sheeshkebab",
+      "publishedAt": "2026-11-01T14:24:38Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://fortune.com/2026/10/30/kentucky-administrator-ai-religious-exemption-title-vii-humanism",
+      "titleHash": "0d73d1bcad5420b05e8e1e05a81ffd451ce0dcc5c0331bcee1e0223e63d32efb",
+      "contentHash": "0d73d1bcad5420b05e8e1e05a81ffd451ce0dcc5c0331bcee1e0223e63d32efb",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8965303167489632,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://avartha.ai/blog/introducing-avartha/",
+      "title": "Avartha: Fastest open-weight frontier voice AI beats OpenAI, Google, and xAI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rajveerb",
+      "publishedAt": "2026-11-01T22:28:27Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://avartha.ai/blog/introducing-avartha",
+      "titleHash": "ffb7c6cf14d9548d382c365bcf04597d327ab3dd3a78569d188bf35598281b09",
+      "contentHash": "ffb7c6cf14d9548d382c365bcf04597d327ab3dd3a78569d188bf35598281b09",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.968899459587462,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.bbc.com/future/article/20261029-the-ai-bubble-could-expose-your-deepest-secrets",
+      "title": "The AI bubble could expose your deepest secrets",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "devonnull",
+      "publishedAt": "2026-11-01T18:41:23Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.com/future/article/20261029-the-ai-bubble-could-expose-your-deepest-secrets",
+      "titleHash": "8e06a99f2ecd8f6aa5a1dd4d7e3813d1c3a3e221b5358d2ba0d8ef19e40c4ed4",
+      "contentHash": "8e06a99f2ecd8f6aa5a1dd4d7e3813d1c3a3e221b5358d2ba0d8ef19e40c4ed4",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9342348348389358,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=o4AUKGdScNI",
+      "title": "DIY AI Lockpicking Robot: ESP32 and Claude AI Opens Any Lock [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "fortran77",
+      "publishedAt": "2026-11-01T17:47:17Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=o4AUKGdScNI",
+      "titleHash": "49778c2d16bbcc03517a26407f1a975c491ed46ae0cc4fa02c1b6e355a9483fc",
+      "contentHash": "49778c2d16bbcc03517a26407f1a975c491ed46ae0cc4fa02c1b6e355a9483fc",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9261604121982264,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.reddit.com/r/technology/s/bU94PCfFwr",
+      "title": "AI-driven layoffs are creating a new class of boomerang employees",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "zomtorg",
+      "publishedAt": "2026-11-01T09:07:46Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reddit.com/r/technology/s/bU94PCfFwr",
+      "titleHash": "e48443d38db75452eb7747de5e4f166e2421a25fa3a961cceef68de90aed8d99",
+      "contentHash": "e48443d38db75452eb7747de5e4f166e2421a25fa3a961cceef68de90aed8d99",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8520886914035113,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://eva.ac/blog/llms/",
+      "title": "So I guess everyone uses LLMs to think now",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "xyzeva",
+      "publishedAt": "2026-11-01T21:49:04Z",
+      "engagement": 63,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://eva.ac/blog/llms",
+      "titleHash": "46ea0101e6113eac4ab5a58188950729826dcedcc6ddf89511823e26bf305881",
+      "contentHash": "46ea0101e6113eac4ab5a58188950729826dcedcc6ddf89511823e26bf305881",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9627962055107175,
+        "engagement": 0.6020599913279624
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40269",
+      "title": "When Modernization Breaks Working Code: A Study of LLMs on Legacy PHP",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "tambourine_man",
+      "publishedAt": "2026-11-01T21:22:28Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.40269",
+      "titleHash": "2214600efde693a0d4ec9c0db6e9ed3666b8ca1478df319c5f899cedce82f468",
+      "contentHash": "2214600efde693a0d4ec9c0db6e9ed3666b8ca1478df319c5f899cedce82f468",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9586957578923294,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://huggingface.co/datasets/HuggingFaceBio/FineDNA",
+      "title": "FineDNA: Open data to train LLMs on DNA",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pixel_art",
+      "publishedAt": "2026-11-01T07:13:15Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://huggingface.co/datasets/HuggingFaceBio/FineDNA",
+      "titleHash": "246941f9486f1b3dbb1a11cd362c6b5c7e7218beb04ad86d8393848512a5dbc7",
+      "contentHash": "246941f9486f1b3dbb1a11cd362c6b5c7e7218beb04ad86d8393848512a5dbc7",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8365751339541114,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50331001",
+      "title": "In LLM era, can software startup survive?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Nowadays, vibe coding is everywhere. Turning an idea into software is just matter of tokens. I was joking the other day. Creating a tax return softwar is much faster than purchasing Turbotax at Costco.<p>Large companies still have compute resources and customer bases. For startup, users are expecting open source and free software. Posts of subscription or one-time purchase software on Reddit will get tons of downvotes instantly.",
+      "author": "sjia",
+      "publishedAt": "2026-11-01T23:28:46Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50331001",
+      "titleHash": "9a0c095e093275ed8a78bdf538bb3473fa95bec4721e068e87318f705aa5d96d",
+      "contentHash": "18ba7b902cf48b8520bf33e4afa94470b54ea8db93ab321d03034d6e189ce9ef",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9783218473879598,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://libreagi.com/",
+      "title": "Private BitTorrent Tracker for LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "satuke",
+      "publishedAt": "2026-11-01T18:28:33Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://libreagi.com/",
+      "titleHash": "9ebd73aa9d44863a4ab98bba767e9735c0ecf23b6aaf9ca307dc29ac2e01d8ab",
+      "contentHash": "9ebd73aa9d44863a4ab98bba767e9735c0ecf23b6aaf9ca307dc29ac2e01d8ab",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9323131144814651,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/huggingface/carbon",
+      "title": "Open data and code to teach LLMs to read DNA",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "testerui",
+      "publishedAt": "2026-11-01T07:10:25Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/huggingface/carbon",
+      "titleHash": "773d0207d1ee9f4247ab819c3d7795fc224c5efda81e63a93a55ff2ca8ba8fe1",
+      "contentHash": "773d0207d1ee9f4247ab819c3d7795fc224c5efda81e63a93a55ff2ca8ba8fe1",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8361949046163057,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://huggingface.co/divagr1925/QwenPU",
+      "title": "QwenPU: An LLM running inside another LLM's weights",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "joshcsimmons",
+      "publishedAt": "2026-11-01T10:15:39Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://huggingface.co/divagr1925/QwenPU",
+      "titleHash": "823874aa91c69bb92bcfe1340855ce5ce33936b8d354e86a1d5c7731fb9729b5",
+      "contentHash": "823874aa91c69bb92bcfe1340855ce5ce33936b8d354e86a1d5c7731fb9729b5",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8614203098934043,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50326183",
+      "title": "EraseAI Firewall – stop secrets and PII before they reach Public LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN — we built a Chrome extension that checks what you&#x27;re about to send to ChatGPT, Claude, Gemini or Replit, and stops it if it contains an API key, password, card number, email or similar.<p>It hooks the send button (and Enter), checks the prompt on your device, and if it finds something, shows what and where. You can Send Anyway or Cancel; the paid tier adds Sanitize &amp; Send (replaces values with placeholders) and scanning of attached files — PDFs, Word&#x2F;Excel&#x2F;PowerPoint, images via in-browser OCR, zip archives.<p>Things you&#x27;ll probably ask:<p>- Where does my text go? Without an account, nowhere: the checks run in the extension, with the same rules our server uses (the extension&#x27;s scanner is generated from the server&#x27;s rule code). If you add an API key, text is sent to our API for scanning and your history keeps the first 500 characters with secrets masked. Image OCR also runs locally, in the extension (the OCR engine and language data ship inside it; nothing is fetched at runtime).\n- How does detection work? Pattern rules plus validators (e.g. Luhn for card numbers, context checks so &quot;ISBN 978…&quot; isn&#x27;t a card). No LLM in the loop. It will miss secrets it has no pattern for, and it will sometimes flag harmless text — both are fixable and we&#x27;d like examples.\n- Why an extension and not a proxy? Consumer AI apps pin TLS and personal laptops don&#x27;t have a corporate proxy. The extension sees the text before it&#x27;s encrypted.<p>Free to install and free to use: prompt checks run on your device with no account and no limit. Personal ($5&#x2F;month) adds one-click Sanitize, attachment&#x2F;screenshot scanning, history and the Android app. Organizations can roll it out via Chrome policy (Google Admin&#x2F;Intune). Would love feedback, especially false positives and things it should have caught.<p>https:&#x2F;&#x2F;eraseai.ai&#x2F;start?utm_source=hackernews&amp;utm_medium=post&amp;utm_campaign=launch",
+      "author": "vantwardsolutio",
+      "publishedAt": "2026-11-01T14:45:27Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50326183",
+      "titleHash": "3bc329b1caafee3a09cfee789fbdb0292eea4f96b717ff3e5b5f7cf539ab6f9b",
+      "contentHash": "bb9f3d59a2a2bbf8007c0fd4495bbf4c5a3d0a990140328044500ebba8420b66",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8995297787659629,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/YasserManss/modeljury",
+      "title": "Show HN: Modeljury – a jury of cheap LLMs that escalates the hard cases",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yassermanss",
+      "publishedAt": "2026-11-01T12:58:26Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/YasserManss/modeljury",
+      "titleHash": "1d4505c097c9cb85bb87ade0f73534b071ae89e1a7a1370db8aa06d03c67f7c2",
+      "contentHash": "1d4505c097c9cb85bb87ade0f73534b071ae89e1a7a1370db8aa06d03c67f7c2",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.884215893110559,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50326374",
+      "title": "Sell a developer problem that LLM's can't solve?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Is there a service or site you can sell a problem set (reasonably main stream), that no LLM can currently solve?<p>It seems it possibly high value to a lab, and useful to have solved for the customer.",
+      "author": "campervans",
+      "publishedAt": "2026-11-01T15:08:56Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50326374",
+      "titleHash": "42843fd09357db32795a7d95761ac78bcff824818a8081c8d87fa171438eaca3",
+      "contentHash": "485aebe2544407b372b8d5c8e1362a3a31847c28480bd4619ff4339b4e9f56fb",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9029255267539829,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://dataswamp.org/~solene/2026-11-01-braindead-local-intelligence.html",
+      "title": "An easy way to try local AI with braindead-local-intelligence",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "msangi",
+      "publishedAt": "2026-11-01T14:26:47.146-06:00",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://dataswamp.org/~solene/2026-11-01-braindead-local-intelligence.html",
+      "titleHash": "2a08fa1ece0bc91cba1048af94b15d32e3d4c5dba8b100909a22f80e7988a084",
+      "contentHash": "2a08fa1ece0bc91cba1048af94b15d32e3d4c5dba8b100909a22f80e7988a084",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.9501688767720504,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://dev.to/soumyadeepdey/my-local-ai-invented-162-python-packages-i-reran-everything-from-scratch-and-161-came-back-4j73",
+      "title": "My Local AI Invented 162 Python Packages. I Reran Everything From Scratch, and 161 Came Back.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine  I...",
+      "author": "Soumyadeep Dey ",
+      "publishedAt": "2026-11-01T02:22:52Z",
+      "engagement": 39,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "ai",
+        "halloween",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/soumyadeepdey/my-local-ai-invented-162-python-packages-i-reran-everything-from-scratch-and-161-came-back-4j73",
+      "titleHash": "51f4306b6446c34bf113f3664eababac9c90756bb22307c76fef3a278d9aa0ac",
+      "contentHash": "68c4ea636990dbaf54e50922bfdb38c0404a73e51d43222b21603013ebc75077",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.798491335159408,
+        "engagement": 0.5340199971093208
+      }
+    },
+    {
+      "url": "https://dev.to/dj29/every-codebase-has-a-do-not-touch-file-i-built-an-ai-necromancer-to-summon-the-ghost-of-the-2no5",
+      "title": "Every Codebase Has a '// DO NOT TOUCH' File. I Built an AI Necromancer to Summon the Ghost of the Developer Who Wrote It 💀🔮",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine    ...",
+      "author": "Dhruv Jani",
+      "publishedAt": "2026-10-31T17:57:27Z",
+      "engagement": 85,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "opensource",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/dj29/every-codebase-has-a-do-not-touch-file-i-built-an-ai-necromancer-to-summon-the-ghost-of-the-2no5",
+      "titleHash": "2f009ca7bacf66b3620de4341911e8abde2b07239896998ff4342ee309147cf4",
+      "contentHash": "be639d9f1caba970ba20b8698c6802315bdf3eeb30e3443224d642e07688dde5",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.736294106346617,
+        "engagement": 0.6448328170811892
+      }
+    },
+    {
+      "url": "https://dev.to/nathan_tarbert/my-open-source-project-is-brand-new-and-already-has-contributors-heres-what-i-did-3fb4",
+      "title": "My open source project is brand new and already has contributors. Here's what I did.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "In the spirit of Hacktoberfest, with it being the last day of October, I wanted to share my story...",
+      "author": "Nathan Tarbert",
+      "publishedAt": "2026-10-30T16:03:47Z",
+      "engagement": 96,
+      "tags": [
+        "opensource",
+        "github",
+        "ai",
+        "webdev",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/nathan_tarbert/my-open-source-project-is-brand-new-and-already-has-contributors-heres-what-i-did-3fb4",
+      "titleHash": "28a3263f8adc2ad1aea0abebb7bcee3c49df3cba961d9562284adea624c99e24",
+      "contentHash": "12778d765e0463fd8bfdb17f8148dcbf8997f3fbab632b1deb5ac83e4d67c1fa",
+      "score": 54,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.5738354480704463,
+        "engagement": 0.6622572447554149
+      }
+    },
+    {
+      "url": "https://dev.to/rudratosh/your-ai-agent-trusts-everything-it-reads-a-field-guide-to-hijacking-claude-gpt-gemini-copilot-1l6k",
+      "title": "Your AI Agent Trusts Everything It Reads — A Field Guide to Hijacking Claude, GPT, Gemini & Copilot",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A README file in your ~/Downloads folder should not be able to expose your SSH keys. A calendar...",
+      "author": "Rudratosh Shastri",
+      "publishedAt": "2026-11-01T10:03:30Z",
+      "engagement": 21,
+      "tags": [
+        "security",
+        "ai",
+        "llm",
+        "cybersecurity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/rudratosh/your-ai-agent-trusts-everything-it-reads-a-field-guide-to-hijacking-claude-gpt-gemini-copilot-1l6k",
+      "titleHash": "934d7809d6c4129777459cbc98b02ab5f362022f18a1e7e750844f9aec188dd6",
+      "contentHash": "cdbc8dc6e94f6a2b1baa8fbb3b83df1f645985199b1d6f04394a2608d9dbf478",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.6,
+        "timeliness": 0.8597426271225952,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://dev.to/remdore/i-hid-instructions-in-my-server-logs-to-see-which-models-would-follow-them-1bd2",
+      "title": "I hid instructions in my server logs to see which models would follow them",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Every Monday, ExtraTime, my football quiz site, gets a health report written by a model. It reads the...",
+      "author": "Remdore",
+      "publishedAt": "2026-11-01T11:23:32Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "llm",
+        "security",
+        "digitalocean",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/remdore/i-hid-instructions-in-my-server-logs-to-see-which-models-would-follow-them-1bd2",
+      "titleHash": "79191019026f2c0965402a671f81f9efd75405f2958388ab9b0a3fc4dad58bb3",
+      "contentHash": "cc14d62092aa3b87131537d83667c32b1c281b73a8dc130a17c8608b722a7759",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.8708541232657309,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/khushighosh/i-ran-local-llms-on-a-laptop-with-no-gpu-here-are-the-real-numbers-2j87",
+      "title": "I Ran Local LLMs on a Laptop With No GPU: Here Are the Real Numbers",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Most local-LLM posts are written on machines with a good GPU. Mine doesn't have one, so I'm sharing...",
+      "author": "Khushighosh",
+      "publishedAt": "2026-11-01T19:15:40Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "ollama",
+        "opensource",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/khushighosh/i-ran-local-llms-on-a-laptop-with-no-gpu-here-are-the-real-numbers-2j87",
+      "titleHash": "aa6978f9af370bd0afe86f9c9b76876edd51eaf99deb556c607dc19b17ad0fb0",
+      "contentHash": "4237f024d229b6ca47162b5b41329770ba769402b3f6afbb5e270886ba5ea950",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.9393880211019611,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b",
+      "title": "Edge0/Audio8-TTS-Realistic-0.6b",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-to-speech · 207 likes · 4613 downloads",
+      "engagement": 207,
+      "tags": [
+        "model",
+        "text-to-speech"
+      ],
+      "normalizedUrl": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b",
+      "titleHash": "55bd355dad7cae5bf40a29051f3c6ef91382fe28387f413b0a736e1aa6d3cecd",
+      "contentHash": "21e46b9e85ed25128164b37f8e8ec4f3f1ea69443c3df0fdd6dc18c76156cece",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7726877783209205
+      }
+    }
+  ]
+}
