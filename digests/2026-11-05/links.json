@@ -1,0 +1,1479 @@
+{
+  "date": "2026-11-05",
+  "stats": {
+    "scraped": 170,
+    "deduped": 58,
+    "scored": 58
+  },
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "title": "Ask HN: What's your current AI agentic setup?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I&#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.<p>1) What AI subscriptions are you personally paying for? (Claude, ChatGPT&#x2F;Codex, Cursor, etc)<p>- Which tiers?<p>- Have you purchased multiple subscriptions from the same provider (eg two Claude accounts)?<p>2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models.<p>- Which models and providers?<p>3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses?<p>- What made you switch harnesses (if you switched)?<p>4) Are you using any agent orchestration or swarm tools?<p>- For example, Munder Difflin, Gas Town, Ruflo, or something custom.<p>5) Are you using broader agent platforms like OpenClaw &#x2F; Hermes Agent &#x2F; Grok bot &#x2F; Dots &#x2F; Muse?<p>- If you are using them, what are your main use cases?<p>-----<p>I know my workflow has differed significantly from a year ago, and so it would be interesting to capture a snapshot today of what people are using and why.",
+      "author": "eggbrain",
+      "publishedAt": "2026-11-04T14:37:22Z",
+      "engagement": 138,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50366117",
+      "titleHash": "0d88d690c1940bcbf3594dc2ee586b8f7a84709ae84531ef622ccd3b03147642",
+      "contentHash": "d6dd820359d0a9b43be5dc75c78b7fb847ba906628f5dd0225ffe04443bcbeb8",
+      "score": 89,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8901135057933619,
+        "engagement": 0.714338266751365
+      },
+      "rank": 1,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "社区热度高"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50368804",
+      "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN! I&#x27;m Luke from Kino (<a href=\"https:&#x2F;&#x2F;kino.ai\">https:&#x2F;&#x2F;kino.ai</a>). Kino lets you make great videos with your agents and your teammates. Storage of footage and assets, a rich video editor, and review links for teammates are all bundled into one. Your colleagues and Codex &#x2F; Claude Code can work on the same timeline with review notes and footage all in one place. See a basic overview at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video\">https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video</a> and our launch video (made entirely with Kino!) at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;launch-video\">https:&#x2F;&#x2F;kino.ai&#x2F;launch-video</a><p>Opus 5.5 can edit videos and make great motion graphics now. But with a raw agent harness, you need to describe tiny edits either in words or in quick one-off UIs, you can’t refer to footage shared across your devices, and feedback from teammates comes as screenshots on Slack.<p>Kino is code-first. All editing, all motion graphics, all dragging of timeline items around, all teammate comments, and all 3D scenes are expressed as code, built on Remotion. This was hard to get right, as we found ourselves building a what-you-see-is-what-you-get editor for React, which we then turned into a video editor. For our launch video I told Claude-with-Kino to find a macOS Leopard install disk and reskin our whole video to match.<p>Kino is also fully collaborative and real-time, so you can see your teammates&#x27; cursors and exactly which part of the timeline they’re currently watching. For our launch video I had 5+ agents editing the timeline concurrently while my friend Donald had his swarm working a few minutes further down. Donald had one agent rotoscoping to make our visual effects work, I had an LLM color grading all media via our LUT support, and we both made tiny tweaks to the timeline along the way.<p>To make this code-first editor work with video footage, everything gets transcribed, embedded, described, and face-detected. You can scrub your footage locally after you drag it in, but we upload a low-res proxy so your teammates and cloud inference can see it. This local scrubbing plus custom pro media decoders means you can drag a 250GB ProRes clip from your new iPhone right into your Kino timeline. We built custom decoders for professional codecs such as ProRes, BRAW, R3D, and more (see my extremely successful nine point HN post <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50198052\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50198052</a>). None of the performance we’re getting would have been possible before WebCodecs and libraries like Mediabunny.<p>I grew up making YouTube videos, and during my undergrad at MIT I co-directed a 3.5 hour archival footage documentary on the history of my school and technological development in America (<a href=\"https:&#x2F;&#x2F;regressions.net\" rel=\"nofollow\">https:&#x2F;&#x2F;regressions.net</a>). Much of the work was logging footage, managing hard drives, manually syncing Premiere project state, and planning our movie in a spreadsheet.<p>Our first launch in 2023 proclaimed that Kino was &quot;Silicon Valley meets Hollywood.&quot; It was more like Palantir for Hollywood; we ran bespoke on-prem Kino deployments with our team of forward deployed engineers on shows like Survivor and A24&#x27;s Beef. It was a rush, but it felt like the slowest way to improve video editing for the whole world. Bound by the Avid Media Composer and strict studio security rules, we couldn&#x27;t touch frontier models, and we couldn&#x27;t make editors &gt;10x faster. So in 2025, we rebuilt Kino as a true editor, and we took a bet on coding-as-editing.<p>Everything in Kino has a URL: projects, clips, footage, comments and replies, even a single frame and the line of code that draws it. Projects and media living in one place and everything being addressable means that your agents and team have a single, editable source of truth for video production. At a lower level, I now paste Kino links into my agent constantly, whether it’s making sure Codex knows exactly which timeline item (among thousands) I am referring to or which teammate’s comment needs fixing.<p>We have teams managing their whole company’s media in Kino, spinning up agents to make new videos every day, then using review links to flag issues. One founder ships ads like this: each day he uses Kino&#x27;s YouTube support to find b-roll he is allowed to use, he edits something, his co-founder leaves notes such as “we need to use this clip instead” and his agent can then apply them. Full-time filmmakers are also using Kino. They tend to resemble “toxenmaxxer” software developers, where 15+ agents iterate on a single project, each trusting Kino as the source of truth for timeline state, graphics, media, everything.<p>The full editor is free, including unlimited imports and exports, real-time collaboration and MCP access for your own agent. Pro is $25 per editor per month and adds unlimited MCP tool calls, share links, more storage, YouTube search, and the ability to edit alongside your team. You can download it at <a href=\"https:&#x2F;&#x2F;kino.ai\">https:&#x2F;&#x2F;kino.ai</a>. We have not yet released Kino for the pure web browser, just Electron for now.<p>If you make videos personally, if you have ProRes media and you want to try to break Kino, if you have legacy video editor projects to bring in, or if you want to make more content for your company, we&#x27;d love to hear how Kino works for you.",
+      "author": "lukeigel",
+      "publishedAt": "2026-11-04T17:31:53Z",
+      "engagement": 71,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50368804",
+      "titleHash": "454c2e9efc94f15f5ff30ab7ecdc210b1ee21987c246d014e092ad0d3ffd226c",
+      "contentHash": "b0e4a53b4a2cc037ba8fe3cbf4975be388f253820235df46f06ef730b32b4b7f",
+      "score": 88,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9153901008747608,
+        "engagement": 0.6191108321437562
+      },
+      "rank": 2,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "社区热度高"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05345v1",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+      "publishedAt": "2026-11-03T18:45:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05345v1",
+      "titleHash": "ba5876b9486a26bcb070e4fa963e19587ac0aef2b9267960272140ce05c2914b",
+      "contentHash": "e246b5299e5c36511431c1ac53da9bc088a709cc5a618e36be8765bbdc8105d1",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7351645711126298,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 80"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05341v1",
+      "title": "Weight-space programming for auditing clinical decision networks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Machine learning models in radiotherapy are commissioned by testing them on cases with known answers, which may not reveal a shortcut that the test cases share with the training data. Frontier language models have recently been reported to read and write the raw weights of small neural networks, an ability called weight-space programming. The purpose of this study was to determine whether such a model, given only a clinical protocol and a network's weights, can audit and repair the network. Networks with 433 to 4,801 parameters were trained to screen head-and-neck planning requests against four rules. Flaws were planted through the training data: confounds that hid each rule, a 3 Gy shift in the cord threshold, and a hidden trigger. Claude Opus 5.5 audited each network blind, without tools, data or code execution, and every claim and repair was tested on about 420,000 requests. The language model named the broken rule in 16 of 18 flawed networks (95% CI 67% to 97%), including all 15 with a confound or a threshold shift. It repaired each of the 16 by changing a median of 3 parameters. Fine-tuning on protocol-labeled requests also repaired every network, but changed nearly every parameter. Each confound and shift it found was visible in single units, and a simple statistic chosen for each flaw type found the same flaws. It cleared 2 of 5 healthy networks without being forced and found 1 of 3 triggers. Testing against the protocol detected every flaw, and black-box testing found the confounds and the shift faster. The results indicate that, in small networks, weight-space programming can locate and repair flaws that silence an input or shift a threshold, but cannot yet certify that a network is correct.",
+      "publishedAt": "2026-11-03T18:41:15Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05341v1",
+      "titleHash": "8646f9f8e38df10dfee03ff68c477cd9ba962c95673479aa5ab193941e8e7ed6",
+      "contentHash": "b97faf5144004ab873d756be52234ff0dfaaf30d8c3576e618ebc61d59d42386",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.734677174270739,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 80"
+      ]
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05320v1",
+      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views together consistently. The output is real-ready data: synchronized camera views labelled with the robot's actions, on which a policy can be trained directly and deployed on the real robot. Independent judges certify the expert and every rendered episode before admission. On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46. Adapting a task is fully automatic and costs \\$21 of API usage on average, paid once per task, plus \\$5 for a render contract; every further episode costs \\$0.80 on average for simulation, rendering, and review, with no robot or operator. One hour of three-view data for a task costs \\$107 on average, these costs included, slightly below a quote of \\$117 for teleoperation in China and below \\$290 in labour alone in North America.",
+      "publishedAt": "2026-11-03T18:25:14Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05320v1",
+      "titleHash": "fbcbfaeb78ed1d48f5211f73f479d42b1b4e8613a93492d1850b4925b4ee5076",
+      "contentHash": "07bc02a7852d5bfa999c47dc9a36ac9cca4769e11284ef34a87ae802cf6cdb84",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7327915616587901,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "综合评分 80"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pseudolus",
+      "publishedAt": "2026-11-04T11:52:17Z",
+      "engagement": 1089,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "titleHash": "070697be00eb8a7d29669dd422be7b22ca8b83fb6527780e5fdd0b679a1bcd4a",
+      "contentHash": "070697be00eb8a7d29669dd422be7b22ca8b83fb6527780e5fdd0b679a1bcd4a",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.866845921816091,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+      "title": "Geoffrey Hinton: it might turn out we were better off without AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "alkyon",
+      "publishedAt": "2026-11-04T10:23:34Z",
+      "engagement": 300,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+      "titleHash": "a3d3b0caaea9e2519381cb106d7581963600dcdf14bbe5eb197018fb9b73c210",
+      "contentHash": "a3d3b0caaea9e2519381cb106d7581963600dcdf14bbe5eb197018fb9b73c210",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8545940768954362,
+        "engagement": 0.8261888318646143
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "title": "Ask HN: What's your current AI agentic setup?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I&#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.<p>1) What AI subscriptions are you personally paying for? (Claude, ChatGPT&#x2F;Codex, Cursor, etc)<p>- Which tiers?<p>- Have you purchased multiple subscriptions from the same provider (eg two Claude accounts)?<p>2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models.<p>- Which models and providers?<p>3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses?<p>- What made you switch harnesses (if you switched)?<p>4) Are you using any agent orchestration or swarm tools?<p>- For example, Munder Difflin, Gas Town, Ruflo, or something custom.<p>5) Are you using broader agent platforms like OpenClaw &#x2F; Hermes Agent &#x2F; Grok bot &#x2F; Dots &#x2F; Muse?<p>- If you are using them, what are your main use cases?<p>-----<p>I know my workflow has differed significantly from a year ago, and so it would be interesting to capture a snapshot today of what people are using and why.",
+      "author": "eggbrain",
+      "publishedAt": "2026-11-04T14:37:22Z",
+      "engagement": 138,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50366117",
+      "titleHash": "0d88d690c1940bcbf3594dc2ee586b8f7a84709ae84531ef622ccd3b03147642",
+      "contentHash": "d6dd820359d0a9b43be5dc75c78b7fb847ba906628f5dd0225ffe04443bcbeb8",
+      "score": 89,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8901135057933619,
+        "engagement": 0.714338266751365
+      }
+    },
+    {
+      "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+      "title": "Everything is an AI scam now",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "speckx",
+      "publishedAt": "2026-11-04T21:05:19Z",
+      "engagement": 129,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now",
+      "titleHash": "91f77d9cb17db75142fcfd300fc79e63f708326e964f29c442973f4ab995bab8",
+      "contentHash": "91f77d9cb17db75142fcfd300fc79e63f708326e964f29c442973f4ab995bab8",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9472810726015,
+        "engagement": 0.704647784102279
+      }
+    },
+    {
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "peter_d_sherman",
+      "publishedAt": "2026-11-04T19:55:14Z",
+      "engagement": 106,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "titleHash": "1f345b8c43507415e93cd114a94acb59d9c8ccc681b854e512dd3e235657ca1d",
+      "contentHash": "1f345b8c43507415e93cd114a94acb59d9c8ccc681b854e512dd3e235657ca1d",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9366886375902942,
+        "engagement": 0.6764612592284033
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50368804",
+      "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN! I&#x27;m Luke from Kino (<a href=\"https:&#x2F;&#x2F;kino.ai\">https:&#x2F;&#x2F;kino.ai</a>). Kino lets you make great videos with your agents and your teammates. Storage of footage and assets, a rich video editor, and review links for teammates are all bundled into one. Your colleagues and Codex &#x2F; Claude Code can work on the same timeline with review notes and footage all in one place. See a basic overview at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video\">https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video</a> and our launch video (made entirely with Kino!) at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;launch-video\">https:&#x2F;&#x2F;kino.ai&#x2F;launch-video</a><p>Opus 5.5 can edit videos and make great motion graphics now. But with a raw agent harness, you need to describe tiny edits either in words or in quick one-off UIs, you can’t refer to footage shared across your devices, and feedback from teammates comes as screenshots on Slack.<p>Kino is code-first. All editing, all motion graphics, all dragging of timeline items around, all teammate comments, and all 3D scenes are expressed as code, built on Remotion. This was hard to get right, as we found ourselves building a what-you-see-is-what-you-get editor for React, which we then turned into a video editor. For our launch video I told Claude-with-Kino to find a macOS Leopard install disk and reskin our whole video to match.<p>Kino is also fully collaborative and real-time, so you can see your teammates&#x27; cursors and exactly which part of the timeline they’re currently watching. For our launch video I had 5+ agents editing the timeline concurrently while my friend Donald had his swarm working a few minutes further down. Donald had one agent rotoscoping to make our visual effects work, I had an LLM color grading all media via our LUT support, and we both made tiny tweaks to the timeline along the way.<p>To make this code-first editor work with video footage, everything gets transcribed, embedded, described, and face-detected. You can scrub your footage locally after you drag it in, but we upload a low-res proxy so your teammates and cloud inference can see it. This local scrubbing plus custom pro media decoders means you can drag a 250GB ProRes clip from your new iPhone right into your Kino timeline. We built custom decoders for professional codecs such as ProRes, BRAW, R3D, and more (see my extremely successful nine point HN post <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50198052\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50198052</a>). None of the performance we’re getting would have been possible before WebCodecs and libraries like Mediabunny.<p>I grew up making YouTube videos, and during my undergrad at MIT I co-directed a 3.5 hour archival footage documentary on the history of my school and technological development in America (<a href=\"https:&#x2F;&#x2F;regressions.net\" rel=\"nofollow\">https:&#x2F;&#x2F;regressions.net</a>). Much of the work was logging footage, managing hard drives, manually syncing Premiere project state, and planning our movie in a spreadsheet.<p>Our first launch in 2023 proclaimed that Kino was &quot;Silicon Valley meets Hollywood.&quot; It was more like Palantir for Hollywood; we ran bespoke on-prem Kino deployments with our team of forward deployed engineers on shows like Survivor and A24&#x27;s Beef. It was a rush, but it felt like the slowest way to improve video editing for the whole world. Bound by the Avid Media Composer and strict studio security rules, we couldn&#x27;t touch frontier models, and we couldn&#x27;t make editors &gt;10x faster. So in 2025, we rebuilt Kino as a true editor, and we took a bet on coding-as-editing.<p>Everything in Kino has a URL: projects, clips, footage, comments and replies, even a single frame and the line of code that draws it. Projects and media living in one place and everything being addressable means that your agents and team have a single, editable source of truth for video production. At a lower level, I now paste Kino links into my agent constantly, whether it’s making sure Codex knows exactly which timeline item (among thousands) I am referring to or which teammate’s comment needs fixing.<p>We have teams managing their whole company’s media in Kino, spinning up agents to make new videos every day, then using review links to flag issues. One founder ships ads like this: each day he uses Kino&#x27;s YouTube support to find b-roll he is allowed to use, he edits something, his co-founder leaves notes such as “we need to use this clip instead” and his agent can then apply them. Full-time filmmakers are also using Kino. They tend to resemble “toxenmaxxer” software developers, where 15+ agents iterate on a single project, each trusting Kino as the source of truth for timeline state, graphics, media, everything.<p>The full editor is free, including unlimited imports and exports, real-time collaboration and MCP access for your own agent. Pro is $25 per editor per month and adds unlimited MCP tool calls, share links, more storage, YouTube search, and the ability to edit alongside your team. You can download it at <a href=\"https:&#x2F;&#x2F;kino.ai\">https:&#x2F;&#x2F;kino.ai</a>. We have not yet released Kino for the pure web browser, just Electron for now.<p>If you make videos personally, if you have ProRes media and you want to try to break Kino, if you have legacy video editor projects to bring in, or if you want to make more content for your company, we&#x27;d love to hear how Kino works for you.",
+      "author": "lukeigel",
+      "publishedAt": "2026-11-04T17:31:53Z",
+      "engagement": 71,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50368804",
+      "titleHash": "454c2e9efc94f15f5ff30ab7ecdc210b1ee21987c246d014e092ad0d3ffd226c",
+      "contentHash": "b0e4a53b4a2cc037ba8fe3cbf4975be388f253820235df46f06ef730b32b4b7f",
+      "score": 88,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9153901008747608,
+        "engagement": 0.6191108321437562
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "karakoram",
+      "publishedAt": "2026-11-04T15:28:31Z",
+      "engagement": 69,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens",
+      "titleHash": "88f2095d71b738ca3d87cd3de93c440bf3ce7823710ae260f1969bcdccbfddf4",
+      "contentHash": "88f2095d71b738ca3d87cd3de93c440bf3ce7823710ae260f1969bcdccbfddf4",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8974487733428507,
+        "engagement": 0.6150326800047523
+      }
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+      "title": "AI data centers comprehensively defeated at US midterm elections",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rndsignals",
+      "publishedAt": "2026-11-04T15:35:51Z",
+      "engagement": 55,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+      "titleHash": "6c5df1371a392707aa37c7c7f5086bc2131d5acfe974acefdb3b6c3986f01854",
+      "contentHash": "6c5df1371a392707aa37c7c7f5086bc2131d5acfe974acefdb3b6c3986f01854",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8985053678230317,
+        "engagement": 0.5827293423354002
+      }
+    },
+    {
+      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+      "title": "AI stocks slide as Texas governor result raises data center risks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "1659447091",
+      "publishedAt": "2026-11-04T07:00:20Z",
+      "engagement": 53,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+      "titleHash": "4689cd2aaca47d07e77e73f4107c5470f6e64dbb0b910aac708f7bebcf41e36f",
+      "contentHash": "4689cd2aaca47d07e77e73f4107c5470f6e64dbb0b910aac708f7bebcf41e36f",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8271761339247226,
+        "engagement": 0.5774645866076562
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
+      "title": "Jaron Lanier on parallels between AI and social media",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "musha68k",
+      "publishedAt": "2026-11-04T14:10:14Z",
+      "engagement": 43,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=WxaRn8kX2eI",
+      "titleHash": "775bdab1d2c37c94868ac502cccb128fdcdb9647adc41387976c5845a52534ca",
+      "contentHash": "775bdab1d2c37c94868ac502cccb128fdcdb9647adc41387976c5845a52534ca",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8862467610839733,
+        "engagement": 0.5478175588287292
+      }
+    },
+    {
+      "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
+      "title": "You'll need nerves of steel to work with AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "theorchid",
+      "publishedAt": "2026-11-05T00:01:30Z",
+      "engagement": 38,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents",
+      "titleHash": "7de68485efef67ff7affb1ed35d055b3811c2b33df5b82394d063ef063623662",
+      "contentHash": "7de68485efef67ff7affb1ed35d055b3811c2b33df5b82394d063ef063623662",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9744416060485089,
+        "engagement": 0.530354869008833
+      }
+    },
+    {
+      "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
+      "title": "American Voters Overwhelmingly Reject AI Data Centers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "latexr",
+      "publishedAt": "2026-11-05T00:43:13Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers",
+      "titleHash": "9415a142715daf993a0beb3ba9a49cb5570873729680e92f80b27b37acd8a461",
+      "contentHash": "9415a142715daf993a0beb3ba9a49cb5570873729680e92f80b27b37acd8a461",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9809858791025529,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://apnews.com/press-release/ein-presswire-newsmatics/press-release-89b81414fe7cc937935f093a01305110",
+      "title": "Dev Reverse Engineers Billion Dollar Harvey AI and Releases It Free, Open Source",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "lolyeahnope",
+      "publishedAt": "2026-11-04T17:42:05Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/press-release/ein-presswire-newsmatics/press-release-89b81414fe7cc937935f093a01305110",
+      "titleHash": "599adfddf7f05092fe9c85752dd121148461a881ba824ddd012cf0c4ac66b04e",
+      "contentHash": "599adfddf7f05092fe9c85752dd121148461a881ba824ddd012cf0c4ac66b04e",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9168894526172178,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a",
+      "title": "Google will cut off search access for students at schools that reject AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "billybuckwheat",
+      "publishedAt": "2026-11-04T04:40:06Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a",
+      "titleHash": "985d45b4b4d3b6629b82e5d02e262983046a228fa033a78866a6e9d2cf02bd42",
+      "contentHash": "985d45b4b4d3b6629b82e5d02e262983046a228fa033a78866a6e9d2cf02bd42",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8087720503077632,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://jasonpolak.substack.com/p/disaster-is-still-better-than-ai",
+      "title": "Disaster is still better than AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bemtevi",
+      "publishedAt": "2026-11-04T13:05:26Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jasonpolak.substack.com/p/disaster-is-still-better-than-ai",
+      "titleHash": "b0fc8c0bf2305f5cf84b74b677c1f697c8774a8f6c94dd669e75fdf5c2924a48",
+      "contentHash": "b0fc8c0bf2305f5cf84b74b677c1f697c8774a8f6c94dd669e75fdf5c2924a48",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8770800063331717,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://www.tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x",
+      "title": "AI triggers PCB shortage for PC makers as order books full until 2030, costs 12x",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "akyuu",
+      "publishedAt": "2026-11-04T23:05:24Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x",
+      "titleHash": "175eca4838a6970b3ed78fc942561f0a874bb894d4222e539388aae8fa151ac8",
+      "contentHash": "175eca4838a6970b3ed78fc942561f0a874bb894d4222e539388aae8fa151ac8",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9657097361541405,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+      "title": "Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "_____k",
+      "publishedAt": "2026-11-04T12:14:23Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+      "titleHash": "a5765fae1eeaec5c9b9da575bdebd45a5186d9fa8af610d78b64f97eda5efa43",
+      "contentHash": "a5765fae1eeaec5c9b9da575bdebd45a5186d9fa8af610d78b64f97eda5efa43",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8699251777952093,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/ai-slop-trust-science",
+      "title": "AI Slop Threatens Trust in Science",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rbanffy",
+      "publishedAt": "2026-11-04T11:51:32Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://spectrum.ieee.org/ai-slop-trust-science",
+      "titleHash": "dd58248314b83944b22d3586dce7e1ccaa42314365d7db1079f731d003b179be",
+      "contentHash": "dd58248314b83944b22d3586dce7e1ccaa42314365d7db1079f731d003b179be",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8667416112247499,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50362700",
+      "title": "Ask HN: Impact of US Elections on AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "First off, apologies for brining up politics. Unfortunately, it is relevant to the conversation.<p>The US midterm elections just concluded, and with the “blue tsunami” I would like to know opinions of people in AI.<p>What will the impact be? I’m not politically active, so I’m curious to know what folks think the future looks like.<p>Open source? Data centers? Space based compute?",
+      "author": "talmr",
+      "publishedAt": "2026-11-04T08:16:44Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50362700",
+      "titleHash": "d61d9d63f65e4a4a4dde7640f447add9943365e21c820ef75af8112e5b1b9eb8",
+      "contentHash": "2204b4ae092721aed6cd7a0309decd34b7c0af7d684e663f7345c1b2d5d367ac",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8373784241337909,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending",
+      "title": "Apple Cuts Internal AI Usage Budgets in Move to Reduce Spending",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "layer8",
+      "publishedAt": "2026-11-04T20:38:23Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending",
+      "titleHash": "ccd69d9b1eecbaefc29b6222ef2ca11bd77790a71eaa12bfa45a39309aca0428",
+      "contentHash": "ccd69d9b1eecbaefc29b6222ef2ca11bd77790a71eaa12bfa45a39309aca0428",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9431962529173048,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://en.andros.dev/blog/94a77341/i-got-banned-from-lobsters-for-writing-like-an-llm/",
+      "title": "I got banned from Lobsters for writing like an LLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "O1111OOO",
+      "publishedAt": "2026-11-04T14:37:01Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://en.andros.dev/blog/94a77341/i-got-banned-from-lobsters-for-writing-like-an-llm",
+      "titleHash": "a3d5cef328216ab4e0dc86deca35154a2609d7a510db506d19b1265d4125550c",
+      "contentHash": "a3d5cef328216ab4e0dc86deca35154a2609d7a510db506d19b1265d4125550c",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8900635180381494,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.28876",
+      "title": "LLMs tested on historical prediction markets, NONE outperformed the market",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dataMike",
+      "publishedAt": "2026-11-04T07:16:54Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2609.28876",
+      "titleHash": "7bb6e26026036e9a5b3d8a2960607674fe0bfe1de26f64f46b54886df3d5eca6",
+      "contentHash": "7bb6e26026036e9a5b3d8a2960607674fe0bfe1de26f64f46b54886df3d5eca6",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.82937780368769,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://blog.ai-process.dev/2026/10/26/go-vs-python-llm-gateway/",
+      "title": "Go vs. Python for an LLM Gateway: What We Measured",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "coylone",
+      "publishedAt": "2026-11-04T18:06:08Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.ai-process.dev/2026/10/26/go-vs-python-llm-gateway",
+      "titleHash": "8f7c63407eb7163449493debba057ba4a3eff8cb5d74c42002935351a9f15d95",
+      "contentHash": "8f7c63407eb7163449493debba057ba4a3eff8cb5d74c42002935351a9f15d95",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9204344178302212,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://swarm-world.4rc4de.com/public/app/",
+      "title": "Show HN: Swarm World – local LLM creatures living in a little tile world",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "This is a hobby project: a small tile world where every creature is a local language model. A creature only knows what its body senses, written out as text (&quot;You see: a boulder 4 steps northwest; a campfire (burning) 5 steps east ... Others: Loam 2 steps southeast, carrying a stone knife&quot;). It acts by stating an intention, and the world decides whether that works. There are 34 verbs, things like gather, craft, give, teach, dig and climb.<p>I been watching these swarms happen and I wanted to see what swarms could do, and their emergent behaviors. I was interested in accomplishing tasks with them, I want to see if they can live!<p>The recent minecraft and mindustry had my brain thinking, if the world was made for AI agents first, maybe they&#x27;d be able to do better?<p>So this world was sorta made to be world-to-text and then text-to-world sorta. They see the whole world as a text adventure.<p>That ya&#x27;ll would be entertained too. I can mix models as well, lets other PC register a brain and agents.<p>I will open source it, just need to make sure there fallbacks for my paid assets.<p>I&#x27;ll also post more details by in the comments on the setup.",
+      "author": "kalcode",
+      "publishedAt": "2026-11-04T14:09:29Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://swarm-world.4rc4de.com/public/app",
+      "titleHash": "e6c3a321ead3ab764477f71f577615ea1933759dff25514f8e92886e4911a462",
+      "contentHash": "9b8e39ab0ade303fc67cdfb7edb75d8b47e7fe7d25d232072a1967aa75584510",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8861401182917148,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/SecondCityOsD/greasemonkey-for-UXP-browsers/commit/5a36b28392d847a919c9897c56d408acac632d1c",
+      "title": "An example of LLM overengineering in the wild",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "countWSS",
+      "publishedAt": "2026-11-04T12:58:52Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/SecondCityOsD/greasemonkey-for-UXP-browsers/commit/5a36b28392d847a919c9897c56d408acac632d1c",
+      "titleHash": "f82d2733e3db85020fed4c580c1862c34d992022382f6a32b1332feebf29303f",
+      "contentHash": "f82d2733e3db85020fed4c580c1862c34d992022382f6a32b1332feebf29303f",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8761563782596796,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://evalship.com/",
+      "title": "Show HN: Evalship – find the flaws in your LLM evals",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gghootch",
+      "publishedAt": "2026-11-04T10:03:08Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://evalship.com/",
+      "titleHash": "de2078049c31043c626174cad1e90d33fc137be0cb957147d39b7084c74bfc61",
+      "contentHash": "de2078049c31043c626174cad1e90d33fc137be0cb957147d39b7084c74bfc61",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8517968388016587,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://github.com/67spp/sentinsentinel-ai-gateway",
+      "title": "Open-source LLM Firewall with reversible PII scrubbing and FinOps routing",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "67spp",
+      "publishedAt": "2026-11-04T18:30:45Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/67spp/sentinsentinel-ai-gateway",
+      "titleHash": "5c4dd77cd657f7d918b27c7ec6488fdca0f35e0e77aa69ef7560b3b99d707a83",
+      "contentHash": "5c4dd77cd657f7d918b27c7ec6488fdca0f35e0e77aa69ef7560b3b99d707a83",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9240771041214024,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://reckoningscience.org/regulation-by-ai-replaying-epas-glyphosate-decisions/",
+      "title": "LLMs replayed 50 years of EPA glyphosate decisions. None was more lenient",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kaurov",
+      "publishedAt": "2026-11-04T16:36:15Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://reckoningscience.org/regulation-by-ai-replaying-epas-glyphosate-decisions",
+      "titleHash": "2f96a5b72cf614259de9b6a324e576d8eec1f87e1d3e87ff263e601c39df9df2",
+      "contentHash": "2f96a5b72cf614259de9b6a324e576d8eec1f87e1d3e87ff263e601c39df9df2",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9072553153994866,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://wohoef.github.io/posts/which-game/",
+      "title": "I asked LLMs which game 40 neural nets play, given only the weights",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wohoef",
+      "publishedAt": "2026-11-04T16:24:24Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://wohoef.github.io/posts/which-game",
+      "titleHash": "1575df445d5598a7c66639f5e38fd32ee7781bfaedfbb49f8496785b787cc7c7",
+      "contentHash": "1575df445d5598a7c66639f5e38fd32ee7781bfaedfbb49f8496785b787cc7c7",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9055319523370087,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://leanpub.com/theartandscienceofllmjailbreaking",
+      "title": "I Wrote a Book: The Art and Science of LLM Jailbreaking",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "danllm",
+      "publishedAt": "2026-11-04T13:58:04Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://leanpub.com/theartandscienceofllmjailbreaking",
+      "titleHash": "305b3df5dc06d29c27332e19a3d970f338923778f4bf12e6c0f082fe88982bde",
+      "contentHash": "305b3df5dc06d29c27332e19a3d970f338923778f4bf12e6c0f082fe88982bde",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8845183615131188,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05377v1",
+      "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model's rich spatiotemporal features, compressing each latent video frame by $\\boldsymbol{300\\times}$ ($\\boldsymbol{1{,}200 \\rightarrow 4}$ tokens). In addition, by leveraging the video model's generative prior, these latent actions capture action-relevant dynamics disentangled from visual appearance. The resulting latent space serves as a shared action interface across embodiments (human and robot), environments, and action parameterizations. On LARY-Bench, DreamX achieves state-of-the-art performance among latent action models. Moreover, actions encoded in one setting remain effective in another: the latent space supports any-to-any video transfer and zero-shot action transfer across diverse embodiments and environments. Furthermore, this shared interface also enables policy learning in a compact latent action space, reducing the computational cost of video-diffusion-based policies.",
+      "publishedAt": "2026-11-03T18:59:56Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05377v1",
+      "titleHash": "e33a42495c087b4c2fd17688b57fcc8bf32af997f6e2532f943d9acec45acc54",
+      "contentHash": "9d17a9f4dc18f1527e42db49986fe588966f3d0590f24df6b9028f8a904edf4e",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7368828625130082,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05376v1",
+      "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as a symbiosis loop of sensing, keeping, understanding, living alongside, acting for and thinking with the person, and growing, enclosed by a personal runtime and by trust. Because a symbiont changes what a person can do in front of others, it also raises risks of a new kind, from covert assistance in examinations to pressure on everyone to adopt it, and we treat their governance as part of the paradigm.",
+      "publishedAt": "2026-11-03T18:59:52Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05376v1",
+      "titleHash": "2da8df847c1b391add682429a40e8b8b9e29e2e40149f768dcd6a88fbaa7c0bb",
+      "contentHash": "0ec765096dab5d8f08d0746231b434fb749d657d07de89e557583dffc90b1bdf",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7368749803286442,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05373v1",
+      "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. Its practical variant, DNO-Prct, iterates on-policy sampling, LLM-based rating of the samples together with a teacher's gold response, large-margin preference-pair selection and a DPO-style contrastive update. We re-implement DNO-Prct independently and study it on two open-weight instruct models, Llama 3.1 8B Instruct and Mistral 7B Instruct v0.1, with GPT-4o or a larger open-weight model of the same family as the annotator. On AlpacaEval 2.0 with GPT-4o as judge, three iterations raise the length-controlled (LC) win rate against GPT-4o from 31.7% to 45.3% for Llama and from 6.8% to 18.4% for Mistral, and the tuned 8B model scores above Llama 3.1 70B Instruct on every reported win rate. With same-family open-weight annotators, the runs retain 62% (Llama) and 82% (Mistral) of the LC gain achieved with GPT-4o as annotator, so the rating step does not require a proprietary model. In a separate ablation configuration, variants that remove the gold responses, remove the data look-back, or accept only teacher-preferred pairs score 6 to 10 LC points below the full procedure, whereas varying the number of on-policy samples per prompt (1 to 7) moves the LC win rate by at most 2.1 points, and a margin sweep (1 to 5) run in its own pipeline by at most 2.4 points. We also report the cost of the pipeline and where the practical algorithm departs from the theory it approximates. All results are single runs, and GPT-4o is both the teacher and the evaluation judge; we discuss what this implies for the reported gains.",
+      "publishedAt": "2026-11-03T18:59:15Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05373v1",
+      "titleHash": "4297aef99394059fd06d310c3a99512b242f2a7fab72fd7b9bc964380fb1dfaa",
+      "contentHash": "890b14169f343eea371ac0bd38a9bddb8e4d239783c248f4a353d62aa1929695",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7368020741201237,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05358v1",
+      "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two model organisms--language models deliberately trained to exhibit a specific misalignment--that differ in what triggers the behavior. The narrow-trigger organism misbehaves only when the prompt contains a specific cue: it cheats on multiple-choice questions by following a planted hint that points to a wrong answer, and behaves normally otherwise. The broad-trigger organism has no such cue: after fine-tuning on insecure code, it gives harmful responses across a wide range of open-ended prompts. We then formalize post-hoc behavioral suppression and evaluate methods along three criteria: immediate suppression of the target behavior, durability under further training, and preservation of general capability. We compare standard methods--SFT, GRPO, and gradient-ascent unlearning--along these dimensions. Building on prior work on alignment shallowness, we hypothesize that more durable suppression requires the ability to recover from a wider range of misalignment states. We introduce Prefix-Expanded Adversarial Reinforcement Learning (PEARL), a GRPO variant that augments rollouts with continuations from intermediate states sampled along cached organism trajectories. Across both organism settings and two model families (Qwen3-4B, GPT-OSS-20B), PEARL achieves strong immediate suppression while preserving task accuracy, and remains durable under further fine-tuning on either the organism's data or unrelated data. It obtains the greatest benefit when the undesirable behavior is broad and cannot be addressed through targeted SFT. Together, our framework and method offer a step toward more durable post-hoc removal of undesired behaviors.",
+      "publishedAt": "2026-11-03T18:54:08Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05358v1",
+      "titleHash": "ef18d84161b63f0c1cc31823cc42c0f5f8edb9fb9a76c57780f717fd7f6d8440",
+      "contentHash": "63c34858ec0a25ac3761fe2d09818a85e4751b5181d0a9a6cb2611767a63a2c0",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7361974258241009,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05345v1",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+      "publishedAt": "2026-11-03T18:45:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05345v1",
+      "titleHash": "ba5876b9486a26bcb070e4fa963e19587ac0aef2b9267960272140ce05c2914b",
+      "contentHash": "e246b5299e5c36511431c1ac53da9bc088a709cc5a618e36be8765bbdc8105d1",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7351645711126298,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05341v1",
+      "title": "Weight-space programming for auditing clinical decision networks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Machine learning models in radiotherapy are commissioned by testing them on cases with known answers, which may not reveal a shortcut that the test cases share with the training data. Frontier language models have recently been reported to read and write the raw weights of small neural networks, an ability called weight-space programming. The purpose of this study was to determine whether such a model, given only a clinical protocol and a network's weights, can audit and repair the network. Networks with 433 to 4,801 parameters were trained to screen head-and-neck planning requests against four rules. Flaws were planted through the training data: confounds that hid each rule, a 3 Gy shift in the cord threshold, and a hidden trigger. Claude Opus 5.5 audited each network blind, without tools, data or code execution, and every claim and repair was tested on about 420,000 requests. The language model named the broken rule in 16 of 18 flawed networks (95% CI 67% to 97%), including all 15 with a confound or a threshold shift. It repaired each of the 16 by changing a median of 3 parameters. Fine-tuning on protocol-labeled requests also repaired every network, but changed nearly every parameter. Each confound and shift it found was visible in single units, and a simple statistic chosen for each flaw type found the same flaws. It cleared 2 of 5 healthy networks without being forced and found 1 of 3 triggers. Testing against the protocol detected every flaw, and black-box testing found the confounds and the shift faster. The results indicate that, in small networks, weight-space programming can locate and repair flaws that silence an input or shift a threshold, but cannot yet certify that a network is correct.",
+      "publishedAt": "2026-11-03T18:41:15Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05341v1",
+      "titleHash": "8646f9f8e38df10dfee03ff68c477cd9ba962c95673479aa5ab193941e8e7ed6",
+      "contentHash": "b97faf5144004ab873d756be52234ff0dfaaf30d8c3576e618ebc61d59d42386",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.734677174270739,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05340v1",
+      "title": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a grader converts units and applies tolerance bands. From the same inputs, separate checking items test error detection, showing a colleague's worksheet or only the colleague's result, half correct and half with one planted error. On a held-out test split of 1,200 items (half for two models), 12 models scored 33.3 to 100.0% on calculation. Of the nine answers graded incorrect for the four best (99.3-100.0%), five contained model errors and four followed NCRP Report 151 on points our items misstate or leave open. Below them, most models did worst on level-3 clinical tasks, and Claude Sonnet 5.5 omitted the inverse-square correction in 19 of 20 isocentric MU items. Five models detected at least 96.7% of mostly large planted errors with at most 4% false alarms; for four of the other seven, checking only the result raised false alarms significantly. In an exploratory targeted test with 20 public cases of an omitted inverse-square correction, the three best models tested caught it in every worksheet, and three weaker models accepted 16 to 18 of 20 planted worksheets, one of them while applying the correction in most of its own calculations. Claude Opus 5.5 accepted 6 of 20 wrong results, although it applied the correction in all 20 of its own. We report the effect of two problems in our shielding items, found after the runs, and release the code, per-item outcomes and targeted-test responses.",
+      "publishedAt": "2026-11-03T18:40:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05340v1",
+      "titleHash": "8ae469ba2c07fd25699b67af8194bd5a7d1d8c0c91872b557365fa2af98aa21b",
+      "contentHash": "017670f7eb963f1f818a577ec3c309fc316152d0e6bbcbd46e5dcebfdde2eaa3",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7345985921446598,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05334v1",
+      "title": "A simple adaptive accelerated optimistic dual averaging method for unconstrained convex optimization in $p$-norm geometry",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Efficient preconditioning plays an important role in large-scale first-order optimization. In this paper, we propose an adaptive accelerated optimistic dual averaging ($\\text{A}^2$ODA) method for unconstrained convex optimization that adopts low-cost preconditioning based on $p$-norm geometry for $p\\in[2,\\infty]$. The method is line-search-free and employs a new stepsize selection technique based on an aggregated affine lower model. Its update structure is simple and unified across $p\\in[2,\\infty]$, with the case $p>2$ requiring no more elaborate updates than the Euclidean case $p=2$. Under a generalized local smoothness condition, we derive a convergence bound that separates the effects of constant and gap-dependent curvature, with the latter potentially yielding faster-decaying terms. In the special case of local smoothness, this bound recovers a nearly optimal convergence rate.",
+      "publishedAt": "2026-11-03T18:35:20Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05334v1",
+      "titleHash": "7288f365dd02c70244f5db58fc3479e6aecd217d6df22c72f81c309a916a7c67",
+      "contentHash": "b1f4720afb21a26f55fda37b881d2b8dea5bd034e6f3ef2c5a2145b433a3d413",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.733980051554137,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05320v1",
+      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views together consistently. The output is real-ready data: synchronized camera views labelled with the robot's actions, on which a policy can be trained directly and deployed on the real robot. Independent judges certify the expert and every rendered episode before admission. On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46. Adapting a task is fully automatic and costs \\$21 of API usage on average, paid once per task, plus \\$5 for a render contract; every further episode costs \\$0.80 on average for simulation, rendering, and review, with no robot or operator. One hour of three-view data for a task costs \\$107 on average, these costs included, slightly below a quote of \\$117 for teleoperation in China and below \\$290 in labour alone in North America.",
+      "publishedAt": "2026-11-03T18:25:14Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05320v1",
+      "titleHash": "fbcbfaeb78ed1d48f5211f73f479d42b1b4e8613a93492d1850b4925b4ee5076",
+      "contentHash": "07bc02a7852d5bfa999c47dc9a36ac9cca4769e11284ef34a87ae802cf6cdb84",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7327915616587901,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05319v1",
+      "title": "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In LLM-based recommendation, memory acts as a user-level agent in a memory-augmented backbone. Yet users and items remain asymmetric: only the user is given a structured profile; it enters a bandwidth-limited reranker prompt; and it is frozen after warmup. We recast LLM-based recommendation as an agentic-communication process in four stages: BUILD a self-description, TRANSMIT it along the collaborative graph, UNDERSTAND the other side, and SYNC it from the next interaction. This formulation reveals three unresolved communication challenges: the item side never produces a comparable self-description (one-sided BUILD); profile-level signals enter only the bandwidth-limited reranker prompt rather than retrieval, where they would not compete for context tokens (prompt-trapped UNDERSTAND); and the user's description is frozen after warmup with no principled update rule (absent SYNC). We instantiate the missing stages as HARP (Homophily-aware Agentic Recommendation via dual Profiles), a training-free, three-operator addition to a frozen LLM backbone: a rule-extracted symmetric item profile (zero extra LLM calls), a channel-decomposable profile-level homophily H(phi_u, phi_i) consumed at retrieval time rather than inside the reranker prompt, and a single-pass reflective update realising in-context profile evolution without any gradient step. On four public benchmarks (Yelp, Books, MovieTV, Goodreads), HARP lifts Hit@1 over the strongest published baseline by 6.9%-24.0%, with family-wise Holm-corrected p < 1e-9 on every dataset. Ablations and a per-case attribution study show that the operators contribute complementary gains, with the retrieval-side gate as the main source; we also report the trade-off introduced by the reflective pass. We formulate agentic communication and provide a training-free instantiation. Code is available at https://github.com/Jove-Zhen/HARP.",
+      "publishedAt": "2026-11-03T18:24:20Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05319v1",
+      "titleHash": "b77402d559ce52acba4702e36577ba805ec77b67e9f86adbb40b40913bc1b6e0",
+      "contentHash": "c2e01799a8d1411aaee45e0f77aa28bf32c70b37910691bb288f6043795dc6cf",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7326857500478506,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05306v1",
+      "title": "You don't need long context",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
+      "publishedAt": "2026-11-03T18:17:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05306v1",
+      "titleHash": "b936163f31be58c4a4b225b8009abe6951a4ac9efe8a8564b0aeb5c228eb0cc4",
+      "contentHash": "4dfbce534c1bf7cf6212d0651fada010c40645d3169446058baaf2b697d69df2",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7318691636557345,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05304v1",
+      "title": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Looped transformers are a parameter-efficient alternative to standard transformers for language modeling. By reapplying the same layers across multiple loop steps, recent looped language models match the performance of non-looped models several times their size. While this architecture effectively reduces parameter memory, each loop step still stores its own keys and values, so the key-value (KV) cache grows linearly with the number of loop steps and becomes the main memory bottleneck. We observe that the KV cache of looped models is highly redundant along the loop axis and that the loop steps differ substantially in their sensitivity to quantization. Based on these observations, we propose $\\textbf{LoopVQ}$, a KV cache vector quantization method for looped transformers that codes channels of multiple loop steps jointly, and fine-tunes the codebooks to match the output of the full-precision model. At 0.5 bits per element, LoopVQ outperforms existing KV cache vector quantization methods for standard LLMs on general, long chain-of-thought reasoning, and long-context retrieval tasks with Ouro and Huginn models. Its design is orthogonal to these methods, and combined with TaSQ, it retains much of the BF16 accuracy even at 0.25 bits per element. We also implement LoopVQ in SGLang, where it nearly halves the decode latency at a 32K-token context and raises the peak serving throughput by up to $4.3\\times$ and $6.1\\times$ on the 1.4B and 2.6B Ouro models compared to the BF16 baseline.",
+      "publishedAt": "2026-11-03T18:16:29Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05304v1",
+      "titleHash": "ff2915fe5e514cf436dd21a6c0eaadb355ab815ff1fca90f3647fa5df12f029f",
+      "contentHash": "b229893ed106bf26b844694a29f60fd589334186c6ecfbc79dfff96affebfc25",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7317634852346729,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05292v1",
+      "title": "Personas Are Not People: Identity as State, Not Attribute",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Synthetic populations, large sets of simulated people, are increasingly used in place of real people to pretest surveys, simulate users and communities, and evaluate AI systems. Each simulated person is defined by a persona, a written profile of fixed traits, demographics, and attitudes that a language model is instructed to act out. Every such system assumes that a person's identity is a stable attribute that behaves the same way in every situation the simulation presents. We show that this assumption is not a harmless simplification. Three decades of personality research find the opposite. How a given person behaves varies more across contexts than people vary from one another. Drawing on identity economics, which describes how different situations activate different identities and norms within the same person, we separate behavior into three parts, which are stable traits, the identity a context calls up, and the situation itself. We then prove, under two stated assumptions, that any simulation built on fixed personas, no matter how detailed the personas or how large the underlying model, cannot reproduce the part of a population's behavior that is specific to it and its circumstances. We propose a new evaluation criterion based on this result and a person-in-context design that can meet it in principle. We test one version on a naturalistic Reddit personality corpus and on a published clinical-trial recruitment survey of a community with documented distrust of medical institutions. The design does produce context-dependent behavior when tested directly, but in neither setting does it fully match the real population, and we show where it falls short. The consequence for practice is a risk that synthetic-population evaluations misrepresent the groups whose behavior is most shaped by context, a distortion that richer personas cannot correct.",
+      "publishedAt": "2026-11-03T18:07:27Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05292v1",
+      "titleHash": "9a9db5da4996b2d2b2f2d74ee96a9be5a70d26f6f2d7bde3d56645ec380f3f28",
+      "contentHash": "77a2be32284124f6b68429c5756a71d7bb9321b98ec918e3c1a37195e42e78b9",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7307036299019297,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05290v1",
+      "title": "False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "An LLM assistant that cannot see official severe-weather alerts may tell users that conditions are calm while a warning is active. We call this false reassurance and measure it by replaying 117 frozen cases built from real U.S. National Weather Service (NWS) alerts (69 alert cases, 32 no-alert controls, 16 non-U.S. locations) through five conditions of a Claude-based preparedness pipeline that differ in alert access and prompt design. One rater hand-labeled all 342 alert-case responses under a seven-category scheme written after an initial binary pass, which we disclose. False reassurance was 0.0% for the production pipeline (0/66, 95% CI 0.0-5.5) and for the same alerts under a neutral prompt (0/69), 37.7% for a blind neutral prompt (26/69), and 44.9% when the blind prompt also told the model to disclose its blind spot (31/69). Every case was implicit; no response explicitly denied an alert. Real alerts removed false reassurance (paired McNemar p < 0.0001); the disclosure instruction did not (p = 0.40). An automated regex measure suggested the opposite and missed 53 of 57 true cases, so we do not use it. Alert data alone was not enough for safe behavior: with a neutral prompt the model raised some alarm on 87.5% of no-alert controls, against 0% under the production prompt, and a preregistered single-sentence ablation showed that one production instruction explains part of that gap. We also report two failures common to similar systems, NWS test products ingested as real alerts and a token budget that fails on complex cases, and we release the dataset, labels and code.",
+      "publishedAt": "2026-11-03T18:04:53Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05290v1",
+      "titleHash": "fb6960a6a8f9efb94e2b34ffa573dce369ab46d20ec9be182cc27b1b4290a489",
+      "contentHash": "111931a9f7c80b2fff060d136b48c96347076a192a73a229840f71aea3546fcd",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7304027708890912,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05287v1",
+      "title": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Fine-tuning a large language model (LLM) on harmful data in a narrow domain, such as bad medical advice, can make it broadly misaligned. How realistic this risk is remains unclear, since models are very rarely fine-tuned on explicitly harmful data in practice. In this work, we show that fine-tuning on data the model believes to be false but that has no harmful content, can also induce broad misalignment. Across mathematics, trivia, cooking and sports, the more strongly the model disbelieves the answers it is trained on, the more misaligned it becomes. In mathematics, misaligned answers rise from 4% to over 60% as the training answers become more wrong, with little loss of general capability. After fine-tuning, the model states the wrong answers but its multiple-choice probabilities still prefer the true ones, which suggests that misalignment comes from this internal inconsistency. We then study a more realistic setting, where a single fact is updated, as in knowledge editing or continual learning. The same relationship holds and the more the model still believes the true fact after training on the false one, the more misaligned it becomes. When we frame the same false fact as part of a coherent story, the model comes to believe it more deeply and becomes less misaligned than when we instruct it to assert the false fact. Content filters and persona vectors cannot tell these two framings apart, even though they lead to different levels of misalignment. These results suggest a risk for model updates, where training a model that does not adopt the new fact as true can induce misalignment even when the data looks harmless.",
+      "publishedAt": "2026-11-03T18:02:21Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05287v1",
+      "titleHash": "0fe9c7c22a62a8c50d14f18601d0c50f5f7320860340d7c3443c212b80cfe0d5",
+      "contentHash": "1b614e6ae505206dfd3e61814ff49f839d0551a62029e6ce838da6a5f7b14820",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7301059406089867,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05355v1",
+      "title": "Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "When a language model answers, we can usually only estimate why. We build a transformer in which every step is a Born measurement - attention $|\\langle q|k\\rangle|^4$ normalised over each row, a measured product in place of the feed-forward nonlinearity, and a Born readout. With its denominators held at their values for the input, each class probability is a polynomial in the word amplitudes, so its integrated-gradient evidence is computed by a finite quadrature with no quadrature error: the words' contributions sum to the class probability above its no-information share, to $10^{-11}$ or better. On e-SNLI natural language inference, with about 98k parameters outside the embedding, the model reaches $76.98 \\pm 0.17$% test accuracy, level with a softmax transformer of the same size ($76.62 \\pm 0.36$%). Deleting the word its evidence ranks first changes the answer in 45% of test pairs, out of the 53% any single deletion can change, against 32% for the softmax model explained the same way and 40% by its attention x gradient. Attention can look more like the words annotators highlighted, yet accounts for the answer less well: deleting the word it ranks first changes the Born Transformer's answer in 32% of pairs. The same weights compile exactly to optoelectronic optics and to qubits, and a coherent attention layer becomes one circuit equal to the model (852 CNOTs on 23 qubits). On IBM's ibm_kingston, reading only the attention overlaps by Hadamard tests, the device gave the model's answers on two short test pairs and kept or changed them under deletion as the model does; the evidence itself did not yet survive the device, and we work out the shots and calibration that measuring it on hardware would need.",
+      "publishedAt": "2026-11-03T18:52:44Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05355v1",
+      "titleHash": "1f381ac66af1030966a44858fa09c44328c8026f6e61fc611ed39e7e85726c9b",
+      "contentHash": "9c6f9de47fbef8bdeb85b84fd070ced1db6223a654895623261ad02192fb955c",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7360320696417697,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05344v1",
+      "title": "A Circuit for In-Context Learning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In-context learning (ICL) lets a pretrained language model perform a task specified by demonstrations in its prompt, with no parameter updates. With arbitrary labels the model must acquire a mapping it cannot have memorized, so the learning happens within a single forward pass. Prior work found candidate parts but not how they compose. We give the composition for few-shot sentence classification with arbitrary labels in three 3-4B-parameter transformers. The model implements a key-value memory over label-token positions: each label token's residual stream encodes the label's identity, and middle-layer attention heads write into it the class of the preceding demonstration as its key. At the query, upper-layer heads match the query's class against the stored keys and copy out the matching labels. An early-layer signal encoding whether any label has repeated gates this readout; in its absence the readers attend to the start of the prompt and no label is favored. A separate set of heads suppresses the most recently seen label. Each step is established causally by activation patching, head ablations against random-head baselines, and steering with the model's own signals. A softmax model of the readout with two constants per head, fit on one prompt distribution, predicts another. The computation is conserved across the three models, the named heads alone reproduce the behaviour, and a transformer trained from scratch grows the same parts. The circuit transfers to semantic concepts and to labels with meaning, and the same parts, with a causal gate, appear from 0.6B to 8B in one family and survive instruction tuning. ICL in this setting is a gated associative lookup built from a few identifiable component types, traced causally from demonstrations to prediction.",
+      "publishedAt": "2026-11-03T18:44:34Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05344v1",
+      "titleHash": "9ba6c413333bbcbfa6291af770c991b03c6513326997b05fe89a5f27489e04cc",
+      "contentHash": "10b6b8d7ead1812b30ad24b5ded6f32c4a381e06c8f805321875c74603bba3c1",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7350682433391126,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05313v1",
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learning. However, self-generated memories often contain noisy supervision and functionally entangled, redundant, or conflicting knowledge, making direct distillation difficult. Under limited training budgets, these issues can hinder knowledge internalization and even degrade performance. To address this problem, we propose MDSKILL, a multi-view distillation approach for skill memory internalization. MDSKILL organizes skill memories into three complementary functional views (state grounding, action planning, and execution control) and selects high-quality skills using dynamic metrics to construct view-specific and integrated reasoning branches. OPSD then transfers and consolidates complementary experiential knowledge across these branches into a shared policy, enabling efficient skill internalization and continuous agent self-evolution. We evaluate MDSKILL on three agent benchmarks against RL, skill-augmented, and self-distillation baselines that do not rely on stronger external teacher models. Without additional computational overhead, MDSKILL improves upon SOTA performance by up to 7.1% and 8.1% on ALFWorld and WebShop. Extensive ablations and evolution analyses further validate its effectiveness in knowledge internalization and policy improvement. The code is available at https://anonymous.4open.science/r/MDSKILL-CF53.",
+      "publishedAt": "2026-11-03T18:19:55Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05313v1",
+      "titleHash": "aa230ddcf4049f40e3c9d4e50605505f686f104920090ef6fa98e5e4f703057b",
+      "contentHash": "577d19cac139fbab9787dce6532189eea213d7f8646caaf035d9ebd52c63bfa1",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7321667088300137,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05278v1",
+      "title": "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Language-subspace interventions aim to improve multilingual reasoning by suppressing language-related components in mid-layer activations. Using MATH and MGSM across four open-weight LLMs, we ask three questions: do estimated language subspaces capture translation-associated variation? Does projecting them out remove language information? And do they improve accuracy without compromising response language? For the first question, we build subspaces using the existing Mean-SVD construction and our DiffPCA. Both capture substantial translation-associated variation and show similar patterns across model depth. For the second, we project out each subspace and train linear probes to classify language from the projected activations. The probes still identify language almost perfectly, showing that neither subspace exhaustively captures language information. For the third, we evaluate several intervention configurations on Qwen2.5-7B, by varying subspace creation methods and intervention operators. We find that the intervention that most improves MGSM accuracy sacrifices response-language fidelity, with only one intervention improving joint accuracy--answers that are correct and in the target language--slightly, by 1.60 points. Interestingly, subtle changes in the prompt alone can reproduce the accuracy gains albeit with significant damage to language fidelity. We argue that causal interventions must be judged on more than accuracy, to fully account for language substitution trade-offs.",
+      "publishedAt": "2026-11-03T17:58:52Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05278v1",
+      "titleHash": "20211efd96bb1e778026d81330577c4ccd2a04d85c00f489c41d5fb7c6c34a56",
+      "contentHash": "6e4c2c1c79c0dcd348884065ae77234e60df7bd12de26059c944a4c5f5f03d5e",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7296979959294025,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05234v1",
+      "title": "ARLoop: Fully-Open Pre-trained Looped Transformers with Attention Residuals",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Looped transformers increase effective depth by repeatedly applying a shared set of transformer layers, offering a parameter-efficient way to scale computation. However, standard residual connections aggregate information across recurrent depth into a single stream, providing limited control over which intermediate representations from preceding layers should be reused. In this paper, we introduce ARLoop, a looped transformer architecture based on attention residuals, where the input of each layer is selectively aggregated through attention over model depth. Distinct from standard transformers, we find that looped transformers do not require access to the full residual history: sliding-window depth attention matches or outperforms full-history attention at larger recurrent depths. Across controlled experiments with multiple parameter scales (140M and 370M) and recurrent depths (R = 1 to 5), ARLoop consistently outperforms prior residual designs for looped transformers. More importantly, we further scale ARLoop to 0.6B and 1.2B parameters under a realistic LLM pretraining recipe, demonstrating that the gains transfer to realistic pretraining, with particularly strong improvements on math and coding tasks. Our 1.2B model, pretrained on only 0.5T tokens with three recurrences, outperforms Huginn-3.5B (the only fully-open looped LLM as of our release date) across all evaluated tasks and is competitive with similar-sized non-looped models such as Qwen3.5-2B despite being trained on substantially less data.",
+      "publishedAt": "2026-11-03T17:18:33Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05234v1",
+      "titleHash": "ed9719e845a529a3f694a7c3cb00d71ec7ad052f8bf3a65f6486ba538d28f1ca",
+      "contentHash": "8ca3aadc6fa63327b8a785e0b22ed9604921847fccaf11366fa49de1f8ec52ff",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.724992931743258,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05181v1",
+      "title": "What Does the Model See? Representation Validity in Multimodal LLM-Based Video Analysis",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal large language models (MLLMs) allow social scientists to analyze video at scale, but researchers must decide which parts of a video to provide as input. We use the term representation validity to examine how text, audio, video, and combined inputs affect measurement and subsequent analysis. We compare input representations across six open-weight MLLMs and three human-annotated video datasets. No representation consistently performs best. On seven news-related constructs, native-video performance varies little across models (macro-F1 = .70-.77), while extracted-text performance ranges from .52 to .80. Three models perform better with text and three with video. Combining inputs rarely improves performance. Higher classification accuracy also does not reliably produce estimates closer to those based on human codes. The highest-F1 representation best reproduces human-coded regression coefficients in 17 of 42 comparisons. Even when each model uses its highest-F1 deployable representation, 45% of sample-prevalence estimates differ from the human-coded benchmark by more than ten percentage points. Input representation therefore requires validation for both the construct being measured and the quantity estimated from the resulting labels.",
+      "publishedAt": "2026-11-03T16:42:49Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05181v1",
+      "titleHash": "935c57dfc8a6f2fa9810f6908f82afd3ab9dc7ebdfe6abe0ca58b0d96312bac0",
+      "contentHash": "72453b38cb39b453d92e8d7eb61e48c764d3ce2e7a54a330d2ca63f4711a4f90",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7208481218911518,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05166v1",
+      "title": "When Self-Verification Hurts: Calibrated Answer Repair for Financial Question Answering",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Financial question answering can fail even when a model extracts a plausible number from the supplied evidence: the answer may attach it to the wrong entity, period, unit, or accounting concept. Asking the model to verify and revise its draft can help, but open-ended revision may alter content that was already correct or inspect the wrong relation and reinforce the original error. We formulate repair as a decision that balances the information it may recover against the correct content it may damage. Based on this trade-off, we introduce Calibrated Answer Repair (CAR), which first estimates whether a draft is likely to benefit from repair, then selects a targeted check, localizes the relevant evidence or draft span, and limits the permitted edit. Across FinRank, Fin-RATE, and FinQA with three open-weight models, CAR outperforms generic verification in all dataset-model settings. At the system level, it recovers 14.6% of initially missed answer requirements while damaging 2.1% of initially correct ones. Its post-draft token cost is over 30 percent lower than the iterative revision alternatives. Ablations on two dataset-model settings show that evidence localization and bounded editing are the main contributors to CAR's gains.",
+      "publishedAt": "2026-11-03T16:36:53Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05166v1",
+      "titleHash": "f1b0bc772a2583abeb41fcb55eca4e2d82a44efa2446af28e5530564942e760b",
+      "contentHash": "f2489bb20c8b576a8beb879cb8a766f400144aaa4b4e1ca1543c7aadcd7885b0",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.720162193556934,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.05147v1",
+      "title": "GM League Arena: An Interactive Long-Horizon Task Benchmark Based on Professional Sports League Management",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Long-horizon decision-making under sustained competition requires large language models (LLMs) to balance immediate investment with future resource needs. However, local success in multi-step interactions can not adequately capture cumulative decision effects or demonstrate long-term goal achievement under resource constraints and sustained competition. To address this gap, we introduce GM Bench, a benchmark for managing professional sports teams across seasons under resource constraints and competition among teams. We build the environment simulators for four sports and add financial constraints, player demands, and market mechanisms to establish a unified task across sports. Diverse rosters of comparable strength are constructed from real-world player data, and each LLM is evaluated as a team general manager to assess its long-term management capabilities. We evaluate competitive performance, cash reserves, and cross-season improvement across four sports. Over five NBA seasons, Claude Opus 5.5 ranks first among 29 LLMs, while GPT-6 Astra and GPT-6.1 Sol combine strong performance with larger cash reserves.",
+      "publishedAt": "2026-11-03T16:21:59Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.05147v1",
+      "titleHash": "c7ffed4e70170cc9b7aa5cfef7af5ca6a015875e31a92afe4eb5429d92a48853",
+      "contentHash": "fe13b9e7c5ce671daee848f97dad5f79ae29f918939e2c57569de87fd743d8f1",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7184425467124602,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://dev.to/sylwia-lask/were-building-ai-to-replace-ourselves-whats-the-plan-4oll",
+      "title": "We're Building AI to Replace Ourselves. What's the Plan?",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Weren't we supposed to be replaced by AI by now? Or at least work less? AI agents were supposed to...",
+      "author": "Sylwia Laskowska",
+      "publishedAt": "2026-11-04T08:06:25Z",
+      "engagement": 171,
+      "tags": [
+        "discuss",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sylwia-lask/were-building-ai-to-replace-ourselves-whats-the-plan-4oll",
+      "titleHash": "7e84c3d4523c8487e1c5e43b1948634722b207d60b9a416e38784657e45bc953",
+      "contentHash": "ebfcc4273f6b90b1074fd449c485add0dd7837d1e98e5e44aa66c8dc3a69b769",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8359934374917122,
+        "engagement": 0.7451761489691829
+      }
+    },
+    {
+      "url": "https://dev.to/tokenlat/your-ai-bill-grew-4x-and-nobody-can-tell-you-which-step-did-it-523",
+      "title": "Your AI bill grew 4x and nobody can tell you which step did it",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A team I talked to last month had a 4x jump in inference spend over one quarter. Not a crisis — they...",
+      "author": "TokenLat",
+      "publishedAt": "2026-11-04T02:24:22Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "observability",
+        "architecture",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/tokenlat/your-ai-bill-grew-4x-and-nobody-can-tell-you-which-step-did-it-523",
+      "titleHash": "76527af5a8acf1e01b3d6469d277d6f86108508122dd6deab3416f0eb33d8e2f",
+      "contentHash": "94312961ae8b0fc983b74a8755887e0ad492edb05c8d29dcd4d09a6c3373e05e",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.7913486080586434,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://dev.to/sudodevesh/i-tested-all-claude-55-models-to-find-the-perfect-one-heres-what-happened-3g3h",
+      "title": "I Tested All Claude 5.5 Models to Find the Perfect One (Here's What Happened)",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I needed to pick a Claude model for production.  Three options. Three price points. Three levels of...",
+      "author": "Devesh Korde",
+      "publishedAt": "2026-11-03T18:27:44Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "claude",
+        "developers",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sudodevesh/i-tested-all-claude-55-models-to-find-the-perfect-one-heres-what-happened-3g3h",
+      "titleHash": "9f06d6d858d79ab470e930826af8d497ab5f1f56970e1fcce520ab41b371418b",
+      "contentHash": "d29fda1a68213ac1b3df59711af52e005eb7887baf471d9ac99bcaddd2809d02",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.7330855590639034,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "title": "moonshotai/Kimi-K3.1-Pro",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 535 likes · 797 downloads",
+      "engagement": 535,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "titleHash": "23a6fa4c14b2bf33a8f3823f635f48c830fe285e3016989b88c60dcb8170dbf0",
+      "contentHash": "657c9cbe5a4ab1d5f5f62e66a53d833f1e2aedf2b510a62a849bf9b53ceb8d64",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.9097215965642568
+      }
+    },
+    {
+      "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+      "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 249 likes · 1979 downloads",
+      "engagement": 249,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+      "titleHash": "ff33b090acfb56adff5610c7154bb09142b63cfcf6bdb8d1c4c8ff2e067c9416",
+      "contentHash": "2c06f59ea1f5a4f9431d3c2ed97b1cc64371e5880c13c9529e5b0d83c637fd93",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7993133362240125
+      }
+    }
+  ]
+}
