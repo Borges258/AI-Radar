@@ -1,0 +1,2006 @@
+{
+  "date": "2026-11-07",
+  "stats": {
+    "scraped": 160,
+    "deduped": 70,
+    "scored": 70
+  },
+  "recommendations": [
+    {
+      "url": "https://github.com/langflow-ai/langflow",
+      "title": "langflow-ai/langflow",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "author": "langflow-ai",
+      "publishedAt": "2026-11-07T00:24:47Z",
+      "engagement": 156395,
+      "tags": [
+        "agents",
+        "chatgpt",
+        "generative-ai",
+        "large-language-models",
+        "multiagent",
+        "react-flow",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/langflow-ai/langflow",
+      "titleHash": "9301237a696386b4b5b04c1b8b99807f8cd6685586ff1ad0915f143721484076",
+      "contentHash": "22d17a97748fcc46f6b97441c0f94d45e06022e6ba2f751e163f3384c7640c71",
+      "score": 98,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.95,
+        "timeliness": 0.9817602117052429,
+        "engagement": 1
+      },
+      "rank": 1,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "时效性强"
+      ]
+    },
+    {
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "title": "asgeirtj/system_prompts_leaks",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perplexity, DeepSeek and 30+ others. Updated daily.",
+      "author": "asgeirtj",
+      "publishedAt": "2026-11-06T21:02:05Z",
+      "engagement": 70957,
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-prompts",
+        "anthropic",
+        "chatbot",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini",
+        "generative-ai",
+        "google",
+        "grok",
+        "llm",
+        "openai",
+        "prompt",
+        "prompt-engineering",
+        "system-prompt",
+        "system-prompts",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "titleHash": "fc76571f0b1187d767a75e02bd7ff031a50900de96ce6dcacc58ec0835d3229e",
+      "contentHash": "21ead54f78b0d1c68d140f030e44825170d9545521262828bda8c9d5a48b9e1d",
+      "score": 98,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.95,
+        "timeliness": 0.9503437209674448,
+        "engagement": 1
+      },
+      "rank": 2,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "时效性强"
+      ]
+    },
+    {
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "title": "rasbt/LLMs-from-scratch",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "author": "rasbt",
+      "publishedAt": "2026-11-06T21:20:06Z",
+      "engagement": 107934,
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "attention-mechanism",
+        "deep-learning",
+        "finetuning",
+        "from-scratch",
+        "generative-ai",
+        "gpt",
+        "instruction-tuning",
+        "language-model",
+        "large-language-models",
+        "llm",
+        "machine-learning",
+        "natural-language-processing",
+        "pretraining",
+        "python",
+        "pytorch",
+        "tokenizer",
+        "transformers",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/rasbt/LLMs-from-scratch",
+      "titleHash": "d49004ff4c161bd2755ef9efb755eb6e0dfbc70a8d0a1bff8518645ea961d31e",
+      "contentHash": "05ed3f9e46e83c08e396451b300a7729d52a2f9abeb5fc5468b7435414f45ebd",
+      "score": 97,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.9530949373263269,
+        "engagement": 1
+      },
+      "rank": 3,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "时效性强"
+      ]
+    },
+    {
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "title": "rohitg00/ai-engineering-from-scratch",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "author": "rohitg00",
+      "publishedAt": "2026-11-06T19:31:00Z",
+      "engagement": 77165,
+      "tags": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "ai-engineering",
+        "computer-vision",
+        "course",
+        "deep-learning",
+        "dsh",
+        "from-scratch",
+        "generative-ai",
+        "llm",
+        "machine-learning",
+        "mcp",
+        "python",
+        "rea",
+        "reinforcement-learning",
+        "rust",
+        "transformers",
+        "tutorial",
+        "typescript",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "titleHash": "ea33da54766cb9bb440899aa4c081044fcc5bea4b1a235dbfffc6ba452483535",
+      "contentHash": "c21889b05e9d9a73d06d4a90510fbc1a1d2415c3af8743ef8467d8351ead02a9",
+      "score": 96,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.9365560239714953,
+        "engagement": 1
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "时效性强"
+      ]
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "title": "langchain-ai/langgraph",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Build resilient agents.",
+      "author": "langchain-ai",
+      "publishedAt": "2026-11-06T17:24:12Z",
+      "engagement": 44588,
+      "tags": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "chatgpt",
+        "deepagents",
+        "enterprise",
+        "framework",
+        "gemini",
+        "generative-ai",
+        "langchain",
+        "langgraph",
+        "llm",
+        "multiagent",
+        "open-source",
+        "openai",
+        "pydantic",
+        "python",
+        "rag",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/langchain-ai/langgraph",
+      "titleHash": "c79fffdc12b3d5bfd7dd79d57d819cf9a3768d1ead0ac6ffe39af1a61b32f8da",
+      "contentHash": "ae54c9159b8c492d1a58f85935ded37d91b917de497dbbe39801344142b33225",
+      "score": 96,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.9176941722824568,
+        "engagement": 1
+      },
+      "rank": 5,
+      "reasons": [
+        "领域相关性高",
+        "来源权威",
+        "时效性强"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+      "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ChrisArchitect",
+      "publishedAt": "2026-11-06T04:00:28Z",
+      "engagement": 286,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05",
+      "titleHash": "e0e7e022f9cde870ba51a99726ef2fe653b17be45698c78a928a1ebd52b93c2b",
+      "contentHash": "e0e7e022f9cde870ba51a99726ef2fe653b17be45698c78a928a1ebd52b93c2b",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8066618766286409,
+        "engagement": 0.8192939655779975
+      }
+    },
+    {
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "title": "AI is dramatically accelerating AI research",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yurivish",
+      "publishedAt": "2026-11-06T20:27:23Z",
+      "engagement": 207,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "titleHash": "9d6ffdfb1ea9493afb520eb518e801d6b9604018d7236d549f95bf68c48cea14",
+      "contentHash": "9d6ffdfb1ea9493afb520eb518e801d6b9604018d7236d549f95bf68c48cea14",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9450672586883507,
+        "engagement": 0.7726877783209205
+      }
+    },
+    {
+      "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
+      "title": "I struggle to believe that AI R&D is ingenious",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "porridgeraisin",
+      "publishedAt": "2026-11-06T05:19:04Z",
+      "engagement": 180,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
+      "titleHash": "c92efba7356cd1ae03594534bcedb7735e64ab0d76a1c4c931514689fb6d1eef",
+      "contentHash": "c92efba7356cd1ae03594534bcedb7735e64ab0d76a1c4c931514689fb6d1eef",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8168994542472815,
+        "engagement": 0.7525595249563949
+      }
+    },
+    {
+      "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
+      "title": "University libraries are being swarmed by AI bots, putting public access at risk",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "blakesterz",
+      "publishedAt": "2026-11-06T14:13:09Z",
+      "engagement": 125,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
+      "titleHash": "b0da7a7470f5365da778a639dede8cc9f4785dcafeaf0bf37faad2aac641e310",
+      "contentHash": "b0da7a7470f5365da778a639dede8cc9f4785dcafeaf0bf37faad2aac641e310",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8899898732735096,
+        "engagement": 0.7001235150391877
+      }
+    },
+    {
+      "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air",
+      "title": "FAA begins retiring decades old floppy disks from air traffic control",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pseudolus",
+      "publishedAt": "2026-11-06T15:03:24Z",
+      "engagement": 89,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air",
+      "titleHash": "ec47719e02be9d56085d933a9cf8cd29d04eba5bc28d595cd38c7db967b00183",
+      "contentHash": "ec47719e02be9d56085d933a9cf8cd29d04eba5bc28d595cd38c7db967b00183",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8971945550596657,
+        "engagement": 0.6514141698131083
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+      "title": "AI for scientific discovery: How researchers use Claude",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ersinesen",
+      "publishedAt": "2026-11-06T09:13:30Z",
+      "engagement": 88,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.anthropic.com/research/how-researchers-use-claude",
+      "titleHash": "b9298fde2515a372ef9717dd226ca1fb0720f3e0225b95650102a87cc4aad38c",
+      "contentHash": "b9298fde2515a372ef9717dd226ca1fb0720f3e0225b95650102a87cc4aad38c",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8482123534122141,
+        "engagement": 0.6497966688816376
+      }
+    },
+    {
+      "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+      "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "brazukadev",
+      "publishedAt": "2026-11-06T18:04:06Z",
+      "engagement": 80,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06",
+      "titleHash": "95e08e8a4f40952fa03d4c776d7465dec662e46e981ddaf583757a8a5c2b2848",
+      "contentHash": "95e08e8a4f40952fa03d4c776d7465dec662e46e981ddaf583757a8a5c2b2848",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9235880896743467,
+        "engagement": 0.63616167295955
+      }
+    },
+    {
+      "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/",
+      "title": "Closed AI models dominate the price-performance frontier",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kevin_hu",
+      "publishedAt": "2026-11-06T02:49:56Z",
+      "engagement": 76,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier",
+      "titleHash": "9ef1508cc0bff99c1816b3484b594cb4c2cfad4e1e8072efc375da3cf4d656fd",
+      "contentHash": "9ef1508cc0bff99c1816b3484b594cb4c2cfad4e1e8072efc375da3cf4d656fd",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.797584246351881,
+        "engagement": 0.6288302417241606
+      }
+    },
+    {
+      "url": "https://obelisk.club/research/app-store-2026",
+      "title": "App Store 2026 in numbers: AI, pricing, abandoned apps",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Peter216",
+      "publishedAt": "2026-11-06T07:59:19Z",
+      "engagement": 60,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://obelisk.club/research/app-store-2026",
+      "titleHash": "15c51f9e4c5903199fa17333bdad37e73f41833158cf740ec0df29507cf1251e",
+      "contentHash": "15c51f9e4c5903199fa17333bdad37e73f41833158cf740ec0df29507cf1251e",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8381761221907611,
+        "engagement": 0.595109945003589
+      }
+    },
+    {
+      "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "title": "Perplexity launches AI agents for work",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cybermango",
+      "publishedAt": "2026-11-06T17:59:41Z",
+      "engagement": 59,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "titleHash": "9e6228475a708c5a59a9e95e91b9ac5e9b8422858834dda6c097e6971d065cd8",
+      "contentHash": "9e6228475a708c5a59a9e95e91b9ac5e9b8422858834dda6c097e6971d065cd8",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9229338115110098,
+        "engagement": 0.5927170834612145
+      }
+    },
+    {
+      "url": "https://halfnarp.events.ccc.de",
+      "title": "40C3 halfnarp – Submit talk preferences to aid scheduling",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hanemile",
+      "publishedAt": "2026-11-06T18:16:43Z",
+      "engagement": 46,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://halfnarp.events.ccc.de/",
+      "titleHash": "f9bd228193f24b2ab8e53be2f2e7183b618695616f04c62e910aa54140ece707",
+      "contentHash": "f9bd228193f24b2ab8e53be2f2e7183b618695616f04c62e910aa54140ece707",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9254596496531786,
+        "engagement": 0.5573659526452391
+      }
+    },
+    {
+      "url": "https://jamesyu.org/science-fiction-predictions-of-ai/",
+      "title": "How accurately did science fiction stories predict AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jamesjyu",
+      "publishedAt": "2026-11-06T04:36:22Z",
+      "engagement": 39,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jamesyu.org/science-fiction-predictions-of-ai",
+      "titleHash": "7996b6792bca7abf94be504845be15df3398282a14498f4170615d57c254c43f",
+      "contentHash": "7996b6792bca7abf94be504845be15df3398282a14498f4170615d57c254c43f",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.811321801349509,
+        "engagement": 0.5340199971093208
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
+      "title": "Global stocks tumble as AI panic grips markets after Democrats' midterm success",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "drayfield",
+      "publishedAt": "2026-11-06T07:52:53Z",
+      "engagement": 35,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
+      "titleHash": "f1cbebf093d821de513bd19ba9ddf4d53de4c6f1010b3081ebdfea4f607fdfad",
+      "contentHash": "f1cbebf093d821de513bd19ba9ddf4d53de4c6f1010b3081ebdfea4f607fdfad",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.837311375465972,
+        "engagement": 0.5187675002557625
+      }
+    },
+    {
+      "url": "https://github.com/zalando-incubator/agentic-identity-broker",
+      "title": "Show HN: Agentic Identity Broker, OAuth Delegation for AI Agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, I’m Jan. I am co-author of the Agentic Identity Broker (AIB), an MIT-licensed OAuth2 broker in the Zalando Incubator, that lets a user give an AI agent scoped, revocable access to MCP services.<p>The broker solves three major challenges that are especially relevant in corporate environments: (A) Enable users to delegate workloads to agents without providing the agents all the user’s tokens. (B) Connect fragmented identity and authorization systems. (C) Centralize tool approvals and audit logging.<p>We built AIB to fill an infrastructure gap in our own agent platform. At this moment in time, IETF working groups are still finalizing standards for agent identity, and vendors are still turning the necessary infrastructure into off-the-shelf products. We needed that infrastructure today.<p>How it works: the user consents once per agent and service. The broker stores the third-party tokens encrypted. At request time a gateway (e.g. Agentgateway) does RFC 8693 token exchange. Agents never see user tokens and MCP servers only implement tools and don’t need to care about all the OAuth 2.1 plumbing.<p>AIB is v0.1 and runs in production, bringing together hundreds of our agents with dozens of internal and external MCP servers.<p>To try it locally: clone the repo, run &quot;just compose-up-detached&quot;.<p>The current features focus on on-behalf-of (OBO) use cases, where human actors delegate to agents. Next we are looking to also support headless agents, where agents are invoked by machines. Intent-based authorization is yet another package on our roadmap. If you’ve built either, or have feedback on the UI&#x2F;UX, I’d like to hear from you!",
+      "author": "jbspeakr",
+      "publishedAt": "2026-11-06T15:07:47Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/zalando-incubator/agentic-identity-broker",
+      "titleHash": "3aba16a4c9a591c47ea62300f34feace4792294ede8e1714a95be9b5c44bdaa3",
+      "contentHash": "435a6e6c1d4889d2e0a92ea9925b1b8f9ec9d959f0c7cae09575bba7ff3baa14",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8978257796661606,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://theainewsreport.com/2026-11-06-hn-agentic-setups-counted.html",
+      "title": "AI coding agent setups from 663 Hacker News comments",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "titusblair",
+      "publishedAt": "2026-11-06T16:23:51Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://theainewsreport.com/2026-11-06-hn-agentic-setups-counted.html",
+      "titleHash": "ab525e1e49096874dbb21327fbf185c8ea7cb952e388488de908057763ffb142",
+      "contentHash": "ab525e1e49096874dbb21327fbf185c8ea7cb952e388488de908057763ffb142",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9088508441497758,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://carlhandellen.substack.com/p/an-ai-rant",
+      "title": "An AI Rant",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "exploringclouds",
+      "publishedAt": "2026-11-06T18:00:30Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://carlhandellen.substack.com/p/an-ai-rant",
+      "titleHash": "7af59829fcdd171c432d8ce908782f4665f294ed9dddb2ea693c499b8ea17dfa",
+      "contentHash": "7af59829fcdd171c432d8ce908782f4665f294ed9dddb2ea693c499b8ea17dfa",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9230547558525997,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://adikshatriyag-crypto.github.io/aegis-kernel/",
+      "title": "Show HN: AegisKernel – Zero-trust POSIX runtime for AI agents in <0.016ms",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "adityawebde",
+      "publishedAt": "2026-11-06T17:00:23Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://adikshatriyag-crypto.github.io/aegis-kernel",
+      "titleHash": "99f59edbdb156491b4769d05e9682f170f03c2eabcf19cf5ec78331a63a5233d",
+      "contentHash": "99f59edbdb156491b4769d05e9682f170f03c2eabcf19cf5ec78331a63a5233d",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9141939911683479,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/protesters-break-into-microsoft-ai-data-centre-site-in-amsterdam",
+      "title": "Protesters break into Microsoft AI data centre site in Amsterdam",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-11-06T21:07:45Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/6/protesters-break-into-microsoft-ai-data-centre-site-in-amsterdam",
+      "titleHash": "dd340bbe339dba99392f49f003d893bfdf4d02abb1e12c42ccdce806fecead56",
+      "contentHash": "dd340bbe339dba99392f49f003d893bfdf4d02abb1e12c42ccdce806fecead56",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9512081913052324,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.theslopindex.com",
+      "title": "The Slop Index: Which AI Model Writes the Least Like AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vitaelabitur",
+      "publishedAt": "2026-11-06T23:57:51Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theslopindex.com/",
+      "titleHash": "24b9a18ba00c2305417ed4488e8b400b7166d6e3875c515597912b2bd7a4c4e4",
+      "contentHash": "24b9a18ba00c2305417ed4488e8b400b7166d6e3875c515597912b2bd7a4c4e4",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9775267205851148,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/",
+      "title": "\"No human at the helm\": Delaware plan would let AI agents run businesses",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cobbzilla",
+      "publishedAt": "2026-11-06T18:55:43Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses",
+      "titleHash": "a8711752d1b34ce05f0a26787b9aa2b23e88b7b2fe7da716111aefc14e999344",
+      "contentHash": "a8711752d1b34ce05f0a26787b9aa2b23e88b7b2fe7da716111aefc14e999344",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9312689433569202,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.21375",
+      "title": "Memorilla: Latent Semantic Memory for LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "handfuloflight",
+      "publishedAt": "2026-11-06T18:03:33Z",
+      "engagement": 86,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.21375",
+      "titleHash": "1ab23603bfc4d9c047eb958826a4ded16303c29d03099c0b600ce85c0f45aa0f",
+      "contentHash": "1ab23603bfc4d9c047eb958826a4ded16303c29d03099c0b600ce85c0f45aa0f",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9235065860869949,
+        "engagement": 0.6465064175395395
+      }
+    },
+    {
+      "url": "https://www.tinyfish.ai/blog/inside-tinyresearch",
+      "title": "Stop running everything through LLMs: How I fixed my research agent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "manavm12",
+      "publishedAt": "2026-11-06T08:04:58Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tinyfish.ai/blog/inside-tinyresearch",
+      "titleHash": "059e7264e94451ff956a225e3f4c32bec6f29c62dc30f75330773688a6868feb",
+      "contentHash": "059e7264e94451ff956a225e3f4c32bec6f29c62dc30f75330773688a6868feb",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8389363124765439,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://www.doubleai.com/research/can-llms-redesign-themselves-as-they-train",
+      "title": "Can LLMs redesign themselves as they train?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bilsbie",
+      "publishedAt": "2026-11-06T20:30:38Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.doubleai.com/research/can-llms-redesign-themselves-as-they-train",
+      "titleHash": "ad7cdc131a70f94e59507777d053f96aeb02fd2acc3609c5d09168902d03ae36",
+      "contentHash": "ad7cdc131a70f94e59507777d053f96aeb02fd2acc3609c5d09168902d03ae36",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9455602040728225,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://sketchagent.dev/",
+      "title": "SketchAgentBench – evaluate LLMs on 3D spatial reasoning",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "wsxiaoys",
+      "publishedAt": "2026-11-06T20:28:24Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sketchagent.dev/",
+      "titleHash": "717f220ba71e50973d07a89894c2490cd58ed074547a8649431d9f613ab0d436",
+      "contentHash": "717f220ba71e50973d07a89894c2490cd58ed074547a8649431d9f613ab0d436",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9452214327517503,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://blog.doubleword.ai/llms-play-pokemon",
+      "title": "I Spent $1000 Making LLMs Play Competitive Pokémon",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kkm",
+      "publishedAt": "2026-11-06T15:16:14Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.doubleword.ai/llms-play-pokemon",
+      "titleHash": "493ee4fd63e40dbd6b3d4d8b3ae4382e2496c67b8915cc22fed41fcf40163893",
+      "contentHash": "493ee4fd63e40dbd6b3d4d8b3ae4382e2496c67b8915cc22fed41fcf40163893",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.89904388526088,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50390442",
+      "title": "Ask HN: Has anyone used LLMs to audit TrueCrypt for backdoors?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "TrueCrypt was discontinued in 2014 under mysterious circumstances, prompting speculation about possible US government involvement. Now that LLMs can help with source code analysis, has anyone revisited the code and found evidence of a backdoor or other signs of government interference?",
+      "author": "dlphii",
+      "publishedAt": "2026-11-06T10:09:46Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50390442",
+      "titleHash": "5ebe6b952bed35bbd5e8a01ef8f5995dad339ddae363b8bac1298cd898f0ee13",
+      "contentHash": "1b5cd7d29aa7a8c06f0442da0ba8dc8c287f774a39158206e155ce30d55f30aa",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.85590470723466,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://harpers.org/archive/2026/11/communion-saints-sam-kestenbaum-chatbot-spirituality/",
+      "title": "\"Communion of Saints\" on reaching new spiritual echelons via LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "YPGolyadkin",
+      "publishedAt": "2026-11-06T16:41:53Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://harpers.org/archive/2026/11/communion-saints-sam-kestenbaum-chatbot-spirituality",
+      "titleHash": "8682f06adcab1fe98650435c8b2a280d7ac9f333bea3233adc3146cccf3001b8",
+      "contentHash": "8682f06adcab1fe98650435c8b2a280d7ac9f333bea3233adc3146cccf3001b8",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.911484377352985,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/",
+      "title": "Frontier quality at 1% of the cost: a production benchmark of LLM classifiers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "eivarv",
+      "publishedAt": "2026-11-06T12:42:07Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers",
+      "titleHash": "991a9cfd1f41859b2aca6fcbfe244f9b302e55084c86067545cf05250941f962",
+      "contentHash": "991a9cfd1f41859b2aca6fcbfe244f9b302e55084c86067545cf05250941f962",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8770848309759262,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08483v1",
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
+      "publishedAt": "2026-11-05T18:59:29Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08483v1",
+      "titleHash": "79d016e1dab3dfb8c1907405ec2c0648e52f6e968cfb43549f28378ecbc4a982",
+      "contentHash": "8537e816803a4a1a760b6f2f15ce782ea0a60c60095f36d0266d96458d6a8d75",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7395955003515431,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08478v1",
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ended research question and reproduces its proposed method as the baseline; an AI-Scientist entering the environment is evaluated against what the human authors achieved. We release the first 1,000 verified environments. With the world as an evaluation, we found that frontier AI-Scientists can already surpass the human researchers 74% of the time. As a record of how AI does science, it contains 6,400 hours of research traces, with every idea, experiment, failure, and success. As a training ground, we are able to raise (+158%) a small model to match frontier models in research ideation. At last, AI-Scientists' own world has arrived, grown from and growing with science itself.",
+      "publishedAt": "2026-11-05T18:58:17Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08478v1",
+      "titleHash": "f937bb3b6648045304dbab4f5329103761b343ffdadb0b6f67f4ed42525d2fa5",
+      "contentHash": "63dd2751ebfc9f66dc6aaeb8f521f6feaa796d22e5946d4c2c7f0f73ae1ada2a",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7394531116887404,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08472v1",
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark: it involves different frameworks and hardware, covers whole repositories, and is long-horizon and challenging. We introduce XStack, a benchmark that evaluates agents on migrating ML repositories between these two ecosystems. Each agent receives a PyTorch repository and a clean TPU machine and must deliver a JAX repository. Its output passes if it meets our grading criteria, based on the source repository's published result, authenticated and calibrated by us. Migration by agents remains unreliable: Claude Opus 5 passes 75%, GPT-5.6-sol 45%, and every other agent at most 40%. XStack is a step toward freeing ML code from its ecosystem. We release XStack to make progress toward reliable migration across frameworks and hardware measurable.",
+      "publishedAt": "2026-11-05T18:55:54Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08472v1",
+      "titleHash": "c3fca2b119239608e29757e6fe5621ba89d581c60d76546dedb4158313ba3884",
+      "contentHash": "c2b46c207e667447ea96a6113549d88cae425ea926954e3650bce1baec3e9960",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7391703932681104,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08469v1",
+      "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transition law that describe how it computes, not what it outputs. Experiments see that law only through finite, partial and noisy interventions. We ask when such a quantity is identifiable from an experiment's access, continuous in the mechanism and certifiable from finite data, and answer exactly for a deliberately demanding case - the integrated information $\\varphi$ of integrated information theory - in stochastic networks of four and five units with known ground truth. Behavior can be silent: a recurrent and a feed-forward network with identical input-output laws at their response delay carry 0.28 and 0 bits, yet internal recordings separate them within 4-53 trials. Partial access can be just as blind: in our examples, units left out of a one-step recording impose precision floors of 0.30-1.02 bits that no sample size lowers, and in all-but-self parity networks, recordings of any length see several hidden units only through the product of their fidelities - a symmetry that one intervention broke in exact checks. The measure has sharp edges: because $\\varphi$ selects a partition, and the cause and effect it specifies, by one criterion and reports another, infinitesimal changes of mechanism that cross an edge change it by 25-100% at 99% of the edges we found in random networks, and about 1% of surrogate models that fit interventional data almost perfectly misreport it by more than 20%. One-sided claims survive: the same data certify a lower bound on both sides of an edge, and we prove $\\varphi>1.004$ bits throughout a 64-dimensional region of mechanisms and certify it from about $10^7$ controlled transitions with false-certificate probability at most $α$. Measurability is thus a design question with computable answers.",
+      "publishedAt": "2026-11-05T18:55:31Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08469v1",
+      "titleHash": "72e07985c64d63a7430476402425345693eff50333db7b8a70fa0d3a063adab6",
+      "contentHash": "81f82de18e446c84cc03c1153619857446bebcab1f8aefaf31ecc33753bde75b",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7391249311665973,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08465v1",
+      "title": "Towards interpreting any residual stream direction by scaling activation inversion",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "To interpret a direction in a language model's residual stream, we can look for text that strongly activates it. But when such text is found by scanning a corpus, it is limited to what that corpus contains. We develop Maximally-Activating Example Metamodels (MAEMs), language models which map residual stream directions from a subject model to text exemplars that strongly activate those directions. Our objective is to maximise the cosine similarity of a supplied residual stream direction with the activations of the text generated by the MAEM. This label-free RL objective helps to scale MAEMs on diverse sources of residual stream directions. Empirically, we find the resultant metamodel produces informative exemplars: a Qwen3.6-27B MAEM inverts held-out activations better than corpus search or a natural-language autoencoder (NLA), beats corpus search (at 10M tokens) on a majority of held-out languages/domains, and activates 89% of held-out SAE features. It also identifies concepts behind steering vectors about as well as NLAs, recovers the payloads of LoRA backdoors more often than corpus search, and can even verbalise some model workspace inner monologue. Unlike explanations produced by other metamodels (e.g. NLAs), MAEM exemplars can be verified with a forward pass on the subject model, making the MAEM objective a grounded alternative for scaling the training of metamodels.",
+      "publishedAt": "2026-11-05T18:54:40Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08465v1",
+      "titleHash": "484b4eca52bf805a5eccdb581c38b2a09f3803380a696eadebbeb5d9eb18c6b2",
+      "contentHash": "ac3d7f16e70d5ac03cf00a5af67e09e4b302e170be3c82c368156eda8eb7c02f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.739024133871806,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08452v1",
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.",
+      "publishedAt": "2026-11-05T18:45:36Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08452v1",
+      "titleHash": "1e9499e49d3eccd2d811ff957f3f5c1a7b19833bd8e8401c216462f19f78c71b",
+      "contentHash": "0fc50004d804fb9a22536e6a0bbd38a4cd61fade1d44e402f213a2449ff55607",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7379498156919007,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08439v1",
+      "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model's developer does not control. We compare two releases of a 307M-parameter multilingual cross-encoder, Ru-Jev, trained on thirteen Russian-language tasks; the later release adds an augmentation that presents labels in several surface forms. Holding questions fixed and varying only how eighteen routing labels are worded, we evaluate ten label vocabularies, produced by three separate processes and checked for overlap with the training data, with five candidates per question and, for eight of them, also with eighteen. On held-out vocabularies made of ordinary or borrowed words (English-derived jargon, office slang, department names), the augmented release is more accurate in every setting, by up to 0.24. Eleven of these fourteen gains survive a Holm correction (slang with eighteen candidates and descriptive sentences with five do not), and for jargon on all labels the label-level interval excludes zero in both settings. On abbreviations and opaque codes it gives no usable gain: on abbreviations it is not better, and worse on the clean slice, and on opaque codes both releases stay at or below chance once labels related to training options are removed. In most cells where accuracy rises, the risk-coverage area falls, but with eighteen candidates confident errors rise on jargon and slang. On two datasets neither release saw, accuracy moves by -8.4 and +5.6 points. We also report four evaluation hazards from comparing the two releases.",
+      "publishedAt": "2026-11-05T18:31:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08439v1",
+      "titleHash": "af8491ec33c5ae37287cd0bc1f678c92759ac31752fc7a1a01382b46036723f2",
+      "contentHash": "3dd74c006702ff4cea41fb03cc0aa5f8d27a7b4281a90eb5dd0bcfc21c418a5e",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7362703844313256,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08438v1",
+      "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making AI safety one of the defining challenges of our time. Yet we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them. Mechanistic interpretability offers a path towards understanding these systems by studying their internal representations and computations, with the aim of evaluating, predicting, and controlling behaviour. We survey mechanistic interpretability for AI safety in order to answer the question: Does understanding how models work actually make them safer? We place mechanistic interpretability in the broader context of interpretability research and compare its mechanistic evidence with behavioural evaluation. We introduce the foundations of mechanistic interpretability, including features, polysemanticity, transformer computation, and circuits, and survey methods for feature extraction and analysis, circuit discovery and causal verification, explaining intermediate representations in natural language, learning dynamics, and training-data attribution. Beyond surveying existing methods, we propose a unified framework for evaluating mechanistic interpretability claims and characterise six research orientations by their goals, assumptions, and trade-offs. Finally, we examine how mechanistic understanding can support AI safety, including knowledge editing, steering, and monitoring, and assess its limitations, failure modes, open problems, and relationship to behavioural safety measures. We also release a repository of code notebooks with worked examples that reproduce key findings from surveyed methods, allowing readers to build intuition through hands-on experimentation.",
+      "publishedAt": "2026-11-05T18:30:54Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08438v1",
+      "titleHash": "d03ae7c6f5fa034bc72802d8498996ac54e836ba15bc503eca068541d366d9fc",
+      "contentHash": "939c674b7984cf366c5940f7c1693e6478ca5fe08bb3b970120af2ca21ee6375",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7362113192379937,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08433v1",
+      "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient's clinical state correct as it changes. We examine the errors of five memory systems on longitudinal medical dialogue and find three recurring causes: the retrieved evidence gives an outdated state, includes another person's health facts, or lacks a safety fact the answer depends on. We present MedGraph, a graph memory built for these three cases. Construction extracts dated facts from each session, attributes each fact to the person it describes, and links medication, diagnosis, and measurement records into chains that keep earlier states. Retrieval ranks the patient's chains as units, reads each chain at the time the question asks about, and adds the original dialogue text; a patient profile lists every recorded safety fact with every question. On MedMemoryBench, MedGraph has the highest overall accuracy with both a GPT and a Qwen backbone, 10.5 and 10.4 points above the strongest of five baselines, with efficient memory construction and answering in the GPT setting.",
+      "publishedAt": "2026-11-05T18:27:20Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08433v1",
+      "titleHash": "9bd23ae646854d6dd4acc49f9221e03ffa5a0554815a41e08260f471691f95ff",
+      "contentHash": "cc1b09499a2d86e77f20bf28b08a1e6807174357b395cda04762368bc835e89a",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7357901249569032,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08428v1",
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access; retrieval over summaries and messages, confirmed mutation, and full orchestration. Meta access can turn a chat client from many screens into one entry point for finding, navigating, organising, and operating it, while raising risks around grounding, privacy, prompt injection, and trust. General-purpose agentic harnesses are runtimes; because they can change their own settings, meta access becomes reflexive and needs a separate control-plane boundary. We ground this in the Meta Chat prototype of the Chat AI client. It builds bounded context from, e.g., summaries, settings, and relevant messages; links references to conversations, topics, and personas; supports confirmed, reversible changes; offers a browsable tutorial library; and recommends personas as user-started conversations. By exposing application state in structured form, meta access can extend screen readers from widget descriptions to semantic workspace operations. Meta access thus turns chat from a window onto one conversation into a control layer for the whole workspace, extending chat toward agentic capability without surrendering user control. As assistants become embedded in IDEs, dashboards, office suites, and operating systems, AI-era interfaces should expose a structured, permissioned model of their state and capabilities, ideally by opening their existing metamodels through a debugger-like interface.",
+      "publishedAt": "2026-11-05T18:22:24Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08428v1",
+      "titleHash": "84640c78a877b93609b0742fa7935d50c411a5b97d21af05f79b4de83835c5fc",
+      "contentHash": "59e9718f547147d7942697fc75a122f3309d35233934b732bc96a8f018b8779d",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7352079356067969,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08425v1",
+      "title": "Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Vision-Language-Action models (VLAs) enable general-purpose embodied intelligence, but their performance is brittle under distribution shift, where unanticipated failures can damage equipment or endanger people. Deploying VLAs in real-world systems therefore requires a runtime monitor that is timely, calibrated, and informative while being efficient enough to run on the edge. Existing methods fail to fulfill these requirements. We present VLA-Tug, a lightweight probe over the latent layers of a VLA backbone that improves early failure detection and bounds the missed-detection and false-alarm rates, with minimal inference overhead. We show that supervising on the pre-failure segment of a trajectory increases early failure detection at matched false-positive rates by up to 30% over the strongest learned baseline. Under shift to unseen tasks, the bounds on missed-detection and false-alarm rates remain valid in up to 86% of runs, versus at most 21% for baselines. Unlike existing methods, VLA-Tug predicts the failure mode to enable corrective actions, raising top-3 accuracy on unseen tasks by up to 44% over a majority baseline. VLA-Tug enables real-time monitoring where the well-timed and informative probe supports lightweight steering that improves task success. We release a dataset of 3,180 annotated manipulation episodes to support future work on latent failure detection in VLAs at https://vla-tug.github.io.",
+      "publishedAt": "2026-11-05T18:21:07Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08425v1",
+      "titleHash": "671e8c7c65010162c1a2f55213de154fade3dff11f864b83577b33114b665f5c",
+      "contentHash": "2e527bb31b999a92c2abf72e3f9dc9ed5f1e0664ed04c9de43a53a5d5c759703",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.735056563218661,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08417v1",
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the resulting accumulation of defects benchmark maintenance debt: a growing gap between benchmark scores and the capabilities they are intended to measure. We introduce a continuous-validation workflow for agentic benchmarks that combines community reports, task artifacts, agent traces, automated oracle checks, and human-gated repairs. We apply this workflow to Terminal-Bench 2.0, a benchmark that underwent extensive human and LM-assisted review and red-teaming before release. Our audit identifies issues in roughly 30% of the benchmark, and we release the resulting repairs as Terminal-Bench 2.1. These repairs change evaluation results: accuracy increased by over 10 percentage points and leaderboard positions move by up to three ranks, even as the overall ranking remains highly correlated (Spearman rho = 0.958). We evaluate how resource allocation shapes benchmark conclusions. We show that fixed wall-clock can materially change agent performance: For example, extending the time limit closes a 20pp harness gap on GPT 5.4 and shrinks a 30 pp gap on GPT 5.4 mini to 5 pp. Benchmark maintenance is therefore not only about repairing task artifacts: resource budgets are part of the measurement specification and must be validated alongside the tasks themselves. More broadly, benchmark maintenance debt is not just accumulated implementation bugs: our results show that as models improve, both evaluation assumptions and resource settings may need to be revalidated.",
+      "publishedAt": "2026-11-05T18:18:39Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08417v1",
+      "titleHash": "202841c4bd477673d91548110136fb4900677487795e714b5a28d56f2871abc1",
+      "contentHash": "72e1f24845898d450a7417239bc13f28f79dae778969a918e106e4b33620a2ac",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7347657012096107,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08412v1",
+      "title": "The Gold Rush in AI4Math, II: What are signatures of AI-assisted Proofs?",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "The growing use of AI in mathematics raises a question: can we detect AI involvement in proofs, separately from AI assistance with writing? Historical arXiv papers, recent papers disclosing substantive AI use, and manuscripts released by OpenAI provide a rich empirical basis for studying this question. However, several challenges remain: lack of matched case-control pairs; potential incompleteness of disclosure; and lack of ready-to-use features designed to capture signals of AI involvement in proofs. To address these challenges, we construct five cohorts comprising 8,281 papers by combining existing manuscripts with those we produced using generative AI. These cohorts span different levels of AI involvement and include matched pairs of papers addressing the same research problems. We then introduce ProofTrace, a framework that represents each paper as a graph of immediate proof support (GIPS) and extracts interpretable features of mathematical organization. Our study yields three discoveries. First, principal-component projections of our features reveal a qualitative gradient of AI involvement, where AI-reworded papers remain close to human papers, the two AI-generated cohorts depart in broadly shared directions, and papers disclosing substantive AI use occupy intermediate positions which shifts toward AI-generated cohorts over time. Second, we identify recurring signatures of AI-generated proofs, such as fewer externally cited results, greater reliance on intermediate conclusions, and altered graph connectivity; many of these signatures persist under controls for research field, manuscript length, or graph size. Finally, in a separate detection experiment, ProofTrace distinguishes human-written papers from those disclosing substantive AI use. Its performance remains stable under AI rewording, whereas the performance of state-of-the-art text-based detectors declines sharply.",
+      "publishedAt": "2026-11-05T18:17:18Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08412v1",
+      "titleHash": "be7d3f3f1adfb1ea50e6d6f9687715e845e3d2dc72767c496223cf73948c9fb0",
+      "contentHash": "5abc3a9417ac694bd4bc9f95e6ba86aa0cc27a430d9d30367e351841ae38d1d8",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7346065619537634,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08403v1",
+      "title": "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Self-consistency (SC) is a widely used decoding strategy for improving chain-of-thought reasoning, but it requires sampling many complete reasoning trajectories with a preset budget. Its efficient variants reduce the cost mainly by stopping full-trajectory sampling early or distributing the number of samples across questions. In this paper, we propose StepBack, a step-level error-localized resampling method for efficient test-time reasoning. Given a small set of draft trajectories, StepBack localizes likely first error positions using lightweight signals and then resamples the detected error step and its suffix, followed by majority answer voting. Empirically, StepBack matches the accuracy of SC on average across seven mathematical reasoning and multi-hop QA benchmarks, while reducing token usage by up to 41.26%. In addition, by nature, StepBack can be combined with adaptive inference methods such as Adaptive Consistency, further improving their inference-time efficiency.",
+      "publishedAt": "2026-11-05T18:12:49Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08403v1",
+      "titleHash": "ae8882cd0c16b51abaa613d937016163016f54b126cf6de4553279e0d6d99404",
+      "contentHash": "fe2a141a741701bde2d666492589a3841fa57a7b00c289f1de00b4c42d49b84f",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7340783097094488,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08392v1",
+      "title": "Learning a patient world model for health system simulation in intensive care",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Designing healthcare strategies requires anticipating their clinical and operational consequences before implementation, a task that often relies on health system simulation. Such a simulation necessitates modeling how patient states evolve and generate care demands. However, conventional approaches typically tailor compact state transitions to a single policy question and omit history-dependent dynamics, thus requiring the redefinition of states and transitions when there is a new question that entails different clinical information. We propose to learn a patient world model from longitudinal EHRs using a neural network to provide a shared clinical representation of patient trajectories that can serve simulation questions across scenarios. Taking ICU operations as an example, we train the model on MIMIC-IV, freeze it, and couple its time-queryable predictions to shared ICU calendars, resources, and queues via scenario-specific mappings, so that one model renders admission demand, care tasks, and discharge proposals across simulations evaluating ICU bed capacity, care dispatch, and post-ICU transfer capacity. Experiments show that our model matches Markov and semi-Markov comparators in aggregate occupancy and directional responses to capacity and dispatch policies. It also reproduces policy gains from replayed observed trajectories. For patients entering the same support state from different prior trajectories, the learned representation captures a 24-h recovery difference (-6.4 predicted versus -6.7 observed percentage points), a contrast missed by compact state models, which propagates into distinct simulated care demand, queue burden, and bed use. These results indicate that a learned world model of patient dynamics has the potential to replace question-specific state models, allowing new care policies to be evaluated by reconfiguring the scenario without model rebuilding.",
+      "publishedAt": "2026-11-05T18:06:42Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08392v1",
+      "titleHash": "327190b055174eaf0f34dd2a00f96a6b5c4621a14135684792361f596afc5446",
+      "contentHash": "213bffbded41d21f7e397a8cb3f5294918ba8d90e941cd7f8d10dab5266771bf",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7333582212943681,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08453v1",
+      "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher's per-token supervision. Does this dense signal reduce the training FLOPs needed to reach a target accuracy compared with reinforcement learning? We systematically compare vanilla reverse-KL OPD with Group Relative Policy Optimization (GRPO) across task difficulty, student and teacher size, domain, and optimization choices, measuring held-out accuracy against training FLOPs. With an external post-trained teacher, OPD generally loses to GRPO in accuracy per training FLOP at matched settings, even when the teacher is further trained with GRPO, and often suffers response-length inflation. Yet a different teacher changes the picture: when the teacher is the student's own GRPO checkpoint, OPD recovers that checkpoint's accuracy on math with $50\\times$ fewer distillation FLOPs than GRPO needs to reach the same accuracy. Following the same teacher setting, we consistently observe this high efficiency with a larger student, on code, and in a second model family. On a single domain, however, the GRPO checkpoint is already the desired model, so distilling it adds to total compute. Across domains, separate GRPO checkpoints hold different capabilities, and no single checkpoint serves every domain. Multi-teacher OPD (DeepSeek-AI, 2026) consolidates per-domain GRPO experts into a single student that matches each expert's accuracy, with the distillation stage costing only 5.2% (on 2 domains) and 8.0% (on 4 domains) of the specialist training FLOPs. Counting specialist training and distillation together, this pipeline reaches joint GRPO's performance on the 2-domain mix with 42.0% fewer total FLOPs.",
+      "publishedAt": "2026-11-05T18:47:05Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08453v1",
+      "titleHash": "edfe56737f653f1844fec0ad1b1adf95fc9725bf9fa9f642570e18fad6ce51e5",
+      "contentHash": "444923b753ca97d96c80598a86fc5cb34c441e5c37f18acf035d32a2cc0a77e9",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7381254700711124,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08362v1",
+      "title": "SpecCTMC: Exact Speculative Simulation of Diffusion Language Model Continuous-Time Markov Chains",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Masked diffusion language models offer parallel text generation, but independently sampling multiple tokens can disrupt their dependencies and change the output distribution. Exact continuous-time sampling avoids this approximation, yet typically requires one sequential model evaluation per token. We introduce SpecCTMC, a training-free speculative sampler that reduces this sequential bottleneck without a separate draft model. SpecCTMC proposes successive token updates using previously computed model predictions, evaluates their intermediate states in parallel, and applies an exact acceptance-and-correction procedure. We prove that SpecCTMC preserves the joint distribution of event times, generation order, and token values of the underlying continuous-time Markov chain. It therefore introduces neither time-discretization error nor additional factorization error from parallel decoding. Experiments on LLaDA-8B-Instruct and Dream-v0-Instruct-7B across five benchmarks demonstrate 1.73-4.38x fewer sequential model evaluations than direct continuous-time sampling, while preserving the reference sampling distribution. Our code is available at: https://github.com/kasakh/specctmc",
+      "publishedAt": "2026-11-05T17:41:20Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08362v1",
+      "titleHash": "39e87a61d597fe9af4a9bd77d51a6fd4b0537195def5225782aeb896cc256cb8",
+      "contentHash": "01d576eab15b7a732399987493b21bd37ada881cd039cfaa5bed069679e13c53",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7303794458162755,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08334v1",
+      "title": "Cultural Adaptation within Repeated Social Interactions",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Much of human culture is tacit and is typically learned through situated social interaction. As LLMs are deployed as interactive agents across diverse communities, assessing their cultural competence demands moving beyond existing question-answering approaches, shifting from what they know to how they adapt. In this work, we broaden the scope of cultural adaptation in NLP by investigating whether LLMs can adapt through repeated interactions via a sandbox environment. By reframing cultural adaptation as a continuous process of norm assimilation through social interaction, our work demonstrates that memory mechanisms foster longitudinal learning across repeated interactions, facilitate transfer to different social settings, and enable multilingual norm assimilation across five languages. Together, our findings lay the groundwork for continuous, interaction-driven cultural adaptation in LLMs.",
+      "publishedAt": "2026-11-05T17:23:30Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08334v1",
+      "titleHash": "ca6758b7d90fcd592ca0b1084bcf4d3b857838f72ed340251922a6186a278072",
+      "contentHash": "a5c8ef0b96c4ac111682bc31c90735dde5249e6d0f6b313042a322a173d4c170",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.72829254603449,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08323v1",
+      "title": "Polarity Classification with Multitask Learning Syntax Augmentation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Sentiment Analysis (SA) is a fundamental NLP task concerned with the identification and categorization of subjective information in text. While lexicon-based methods offer transparency, they often struggle with linguistic phenomena such as negation and intensification. Syntactic parsing has been integrated into SA pipelines to address this, but conventional parsers introduce significant computational overhead. Recent work shows that reformulating dependency parsing as a Sequence Labeling (SEL) task can improve efficiency. We propose and compare two strategies for integrating syntactic knowledge into a neural sentiment analysis model under unified Multi-Task Learning (MTL). The first, Standard-MTL, jointly learns dependency parsing (via sequence labeling) and sentiment polarity classification using a shared encoder with two task-specific heads. The second, Contrastive-MTL, provides implicit syntactic guidance through a contrastive auxiliary objective and a syntax-biased attention pooling mechanism, without requiring explicit label prediction. Both rely on syntactic annotations during training and eliminate need for hand-crafted compositional rules or external parsing at inference. We evaluate eleven datasets spanning seven languages---the MARC corpus (English, Spanish, French, German) and seven datasets from SemEval-2022 Task 10 (English, Spanish, Norwegian, Basque, Catalan)---using four established SEL encodings. With the relative encoding, Contrastive-MTL outperforms a syntax-naive baseline on 10 of 11 datasets and surpasses the external rule-based pipeline (SELSP) that parses at inference on all six datasets where the latter applies, while being 1.5--9$\\times$ faster at evaluation. Standard-MTL is more dataset- and encoding-dependent. These results show implicit syntactic supervision during training can match or exceed explicit parsing at inference without computational overhead.",
+      "publishedAt": "2026-11-05T17:19:09Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08323v1",
+      "titleHash": "a7b4ebc2de432569a41ab9d5b367c16f35800372e7a08b6b8f5f491a5f0ccb42",
+      "contentHash": "a4c50277d5ca3e7ea07f5f25fb72087346e0fd0222974c58ca2b1db005086dfc",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.727784401863382,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08315v1",
+      "title": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear. We benchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and factual accuracy under KG-aware (graph-grounded) and KG-agnostic conditions. Inter-annotator agreement was substantial, with Cohen's kappa of 0.781 (range: 0.753-0.807) and Fleiss' kappa of 0.77. Results show that general-purpose models, particularly GPT-5.1 and Gemini 2.0 Pro, generally outperform domain-specific models on multi-hop and high-level reasoning tasks, although performance declines as query complexity increases. KG grounding reduces hallucination rates across all evaluated models. Contrary to our initial hypothesis, domain-specific models do not consistently outperform general-purpose models on specialized tasks without graph grounding. These findings highlight the value of combining broad language-model capabilities with structured domain knowledge. We provide practical guidance for selecting LLM-KG integration strategies based on task complexity and computational constraints, and discuss hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI.",
+      "publishedAt": "2026-11-05T17:12:58Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08315v1",
+      "titleHash": "c4fb92405ab421e3c853056d86cede5f3072603e363fdb458fdcb8bf0065b177",
+      "contentHash": "e863de3c00438c206b3528d8712513ad39b1448e15c63700c8a6813de9c1bb60",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7270627101835696,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08311v1",
+      "title": "LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Automatic sleep stage classification from electroencephalography (EEG) signals is a critical task in clinical sleep medicine. While deep learning models have shown promising results in this domain, their performance is fundamentally constrained by the quality of training labels, which human experts manually annotate and that are subject to inter-rater disagreement and systematic labeling errors. In this paper, we propose a novel LLM-assisted label-noise filtering pipeline that operates exclusively during training to identify and remove unreliable sleep-stage annotations before retraining the classifier. Specifically, TinySleepNet is first trained on the original dataset to extract per-epoch SoftMax confidence scores, then low-confidence epochs are submitted to LLaMA 3.1 along with their EEG spectral features and surrounding sequence context. The LLM evaluates each epoch against AASM sleep-scoring guidelines and assigns a verdict of RELIABLE or SUSPICIOUS. Suspicious epochs are removed from the training set, and TinySleepNet is retrained on the cleaned data. Evaluated on the Sleep-EDF Expanded dataset using 20-fold cross-validation, our method improves overall accuracy from 81.8% to 84.6% and Macro F1-score from 75.6% to 77.4%, with particularly notable gains in REM detection. Crucially, because the LLM operates only during training, the lightweight TinySleepNet architecture (1.3M parameters) is preserved at inference, making the proposed pipeline suitable for real-time, wearable sleep monitoring applications.",
+      "publishedAt": "2026-11-05T17:12:05Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08311v1",
+      "titleHash": "60517732b18bba3057abc0765af31f999aa7f580743907d4a2759e760c4b3c04",
+      "contentHash": "f52fb095b7deec1dc201031fe97da7bb9eeccafbf621d1dd82c72dc55e7ed154",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7269596698091324,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08307v1",
+      "title": "Measured Coupling for Parallel Decoding in Diffusion Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Diffusion language models can write many tokens per step, but must choose which tokens are safe to commit together. Mean-field decoding penalizes pairs of positions whose predictions look alike. We replace this proxy with the coupling itself: how much committing one token changes the model's confidence at another. Cheap probes inside the main forward pass measure it, with no training or extra model, and it plugs into the same mean-field rule. On three models and four benchmarks, our method needs far fewer steps than mean-field decoding and is faster in most settings, also with a key-value cache, at an average accuracy cost of 1.1 points. Shuffling the couplings or replacing them with a uniform bonus loses this gain.",
+      "publishedAt": "2026-11-05T17:10:03Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08307v1",
+      "titleHash": "5465339ddb975632ade8ac0f7ce0cb8f645a1e931a8b1e66fcec759bf832c412",
+      "contentHash": "6078186c61c3c758385f36b98992627248d3836e4912e7481034acf336496635",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.726722538024387,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08281v1",
+      "title": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Personal AI agents face social engineering attacks supported by forged multimodal content, but existing evaluations mainly focus on text-based dialogue, leaving their intrinsic security under such attacks insufficiently studied. We introduce Multimodal-SEA, an interactive benchmark comprising 608 expert-designed tasks grounded in real-world fraud cases, covering 14 domains and 152 attack scenarios with prepared multimodal content. The tasks span four difficulty levels and reflect the distinct social and cultural contexts of Chinese and English environments. Agents inspect content, verify requests, and execute actions in simulated applications, with attack outcomes grounded in verifiable tool execution logs. To enable controlled red teaming of personal agents, we design a multimodal attack harness that integrates task information, attack progression control, and multimodal content construction to evaluate their intrinsic security against adaptive social engineering attacks in simulated environments. Evaluating seven widely used multimodal models across six dimensions reveals that all are vulnerable, with attack success rates of 7.1% to 34.5%. Adding multimodal content increases attack success from 19.9% to 29.2%, despite increased proactive verification coverage. Stronger safety instructions reduce attack success without improving recognition of deceptive multimodal content, while lower attack success rates for some models accompany excessive refusal of legitimate requests.",
+      "publishedAt": "2026-11-05T16:46:31Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08281v1",
+      "titleHash": "8721bf15a57de07dcc9939b8fb7f663ecb21e27e5bc0160827c79452efede48d",
+      "contentHash": "6703720fa20a805c271bb32d398c12ab2d53117390fa8e6f00708c99027cefd9",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7239836510364237,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08262v1",
+      "title": "The Geometry of Simulated Perspectives: Dissociating Representation and Behaviour in a Multimodal Language Model",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multimodal language models can simulate different observers, yet it remains unclear how assigned perspectives reshape their internal representations and whether these changes govern their judgements. Here, we investigate the representational geometry of persona-conditioned visual interestingness in Qwen3-VL-8B-Instruct. Across 100 images and 53 prompting conditions, we systematically vary persona content and the linguistic framing used to introduce it, while recording behavioural ratings and layer-wise hidden states. We observe a systematic reorganisation of representational geometry across processing depth: early layers primarily encode image identity, whereas persona-specific structures emerge in later layers. Strikingly, prompt framing reshapes internal representations more strongly than persona identity, whereas persona content has a greater impact on behavioural judgements. This dissociation is further illustrated by minimal identity statements that alter representations even without changing responses. These findings demonstrate that representational distance does not necessarily reflect behavioural relevance. More broadly, they reveal how simulated perspectives emerge as distinct structures within the representational space of artificial cognitive systems, highlighting a fundamental distinction between the geometry of internal representations and their functional consequences.",
+      "publishedAt": "2026-11-05T16:36:49Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08262v1",
+      "titleHash": "9302e592c32ef332f1c6a05886da9c86d586ca5de16ab86a94ce73682bbc4307",
+      "contentHash": "7cf709e133d8a71134c2e5aca65b6fd2e665353ff0a75d6b55a4ed7087e804c4",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7228577394470137,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.08237v1",
+      "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agentic, verifiable, and terminal at once, over 18 real CUMCM and MCM problems (2023--2025). Each task ships the verbatim statement, official attachments, and figures in a containerized terminal; the agent returns one JSON artifact, scored on the numeric core of the final question against a reproduction of the Outstanding-award paper. Two design choices distinguish it: direction-aware, one-sided scoring, which never penalises beating the anchor, and two-layer feasibility verification---a programmatic gate over six decidable invariant forms plus 624 Lean~4 obligations---with a hard gate that zeroes infeasible answers. Each task is scored against a panel of human outstanding papers rather than one, so a model must be close to many accepted answers; across seven multimodal entries (three seeds each) the strongest reach a multi-reference O-Eval of 64.58\\%, while the \\$2.54 open model holds 59.81\\% at $1/100$ the cost. TB-MathModel turns the numeric core of modeling into a reproducible, machine-checkable signal for measuring long-horizon modeling competence and for collecting agent trajectories. The source code is available at https://github.com/wxj630/terminal-bench-math-modeling.",
+      "publishedAt": "2026-11-05T16:18:35Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.08237v1",
+      "titleHash": "84caea9c514de2cfdb8a2a470a66cbf8cc271edd577e1a0cbbb8b59859c97107",
+      "contentHash": "6b919ad86edea9d741ae877afbe6de8b2f1b56c7688c19b4dc183fbb94fcb623",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7207460721191357,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://dev.to/xulingfeng/an-ai-testing-presentation-became-the-final-push-for-organizational-change-at-my-company-12ag",
+      "title": "An AI Testing Presentation Became the Final Push for Organizational Change at My Company",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "From a multi-agent testing experiment to a broader discussion about how engineering teams should...",
+      "author": "xulingfeng",
+      "publishedAt": "2026-11-06T01:27:32Z",
+      "engagement": 175,
+      "tags": [
+        "discuss",
+        "ai",
+        "programming",
+        "career",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/xulingfeng/an-ai-testing-presentation-became-the-final-push-for-organizational-change-at-my-company-12ag",
+      "titleHash": "44974af0afe3e389c08da437b9049c003cf3496c3b68dceb00f67cf31ee464a0",
+      "contentHash": "51058fadb5b844aa9b21d03e80fe237ecc004c9488726a3e2c2e1dc0a5c9130a",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7871086686171885,
+        "engagement": 0.7485042226047166
+      }
+    },
+    {
+      "url": "https://dev.to/devteam/an-update-on-the-hacktoberfest-open-source-ai-challenge-ghost-in-the-machine-winners-44bp",
+      "title": "An Update on the Hacktoberfest Open-Source AI Challenge: Ghost in the Machine Winners",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Hey all, we have a quick update for everyone who participated in the Hacktoberfest Open-Source AI...",
+      "author": "Jem",
+      "publishedAt": "2026-11-06T22:28:31Z",
+      "engagement": 42,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "hacktoberfest",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/devteam/an-update-on-the-hacktoberfest-open-source-ai-challenge-ghost-in-the-machine-winners-44bp",
+      "titleHash": "d58ca5dc6494f5664253e254e4fe0f6f5cc6c2ab9854e4610b9739674fbdec13",
+      "contentHash": "467914c0ff34025202eb77e75592906ef1e7bc9bafb082b14efc7a11b3e57140",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.963615178678918,
+        "engagement": 0.5444894851931955
+      }
+    },
+    {
+      "url": "https://dev.to/johnnylemonny/one-markdown-file-can-hijack-your-ai-coding-agent-the-hidden-cost-of-blindly-trusting-agentsmd-167n",
+      "title": "One Markdown File Can Hijack Your AI Coding Agent: The Hidden Cost of Blindly Trusting AGENTS.md",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "How a single AGENTS.md or CLAUDE.md file in your Downloads folder or a pull request can silently hijack your AI coding agent, steal OAuth tokens, and execute shell commands—plus how to lock down your local workflow.",
+      "author": "𝗝𝗼𝗵𝗻",
+      "publishedAt": "2026-11-05T15:30:00Z",
+      "engagement": 70,
+      "tags": [
+        "ai",
+        "webdev",
+        "programming",
+        "security",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/johnnylemonny/one-markdown-file-can-hijack-your-ai-coding-agent-the-hidden-cost-of-blindly-trusting-agentsmd-167n",
+      "titleHash": "c9d075fe129c98f0a9d913d8ae32ffbe5ab3a33988cf343bbcf29d5145f0b0f3",
+      "contentHash": "9786a326264f2977a027866d32a6e9995c8fb3d92bbbe943a3ae21960ecd1b48",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.7151495310670634,
+        "engagement": 0.6170861162396918
+      }
+    },
+    {
+      "url": "https://dev.to/amananandrai/i-built-llm-explained-43-interactive-pages-that-take-you-from-tokens-to-ai-agents-2n37",
+      "title": "I Built LLM Explained: 43 Interactive Pages That Take You From Tokens to AI Agents",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I kept running into the same problem while learning about large language models.  I'd read a blog...",
+      "author": "amananandrai",
+      "publishedAt": "2026-11-02T21:03:27Z",
+      "engagement": 19,
+      "tags": [
+        "ai",
+        "showdev",
+        "machinelearning",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/amananandrai/i-built-llm-explained-43-interactive-pages-that-take-you-from-tokens-to-ai-agents-2n37",
+      "titleHash": "8f90005d9f801b5928f4df1496ba854ca2b732b0cba7a55cbbb7fd23e3faa743",
+      "contentHash": "47944730bb9425c2e2f7df9a0ca7b9c49f7df92656580d90b09f00fc8427005b",
+      "score": 69,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.6,
+        "timeliness": 0.3772268658453984,
+        "engagement": 0.4336766652213271
+      }
+    },
+    {
+      "url": "https://dev.to/wiseai/using-evil-spirits-to-cast-out-evil-spirits-4jjg",
+      "title": "Using Evil Spirits To Cast Out Evil Spirits!",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Hey everyone 👋,  This post is something I have been sitting on for a while, and I am finally writing...",
+      "author": "Mahmoud 🦀",
+      "publishedAt": "2026-11-06T11:11:37Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "llm",
+        "lmm",
+        "science",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/wiseai/using-evil-spirits-to-cast-out-evil-spirits-4jjg",
+      "titleHash": "319deb9e816631a851a2a64f5ce694c53e77c7fac587fbac5289ae0693b746ad",
+      "contentHash": "8f0174477f55c53dc6ac81e130971f24735af0da9a7bfd8d95c01aad4ef6c9de",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8644408824849013,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/tokenlat/deterministic-delivery-is-an-architecture-decision-not-a-model-setting-2091",
+      "title": "Deterministic delivery is an architecture decision, not a model setting",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "1. The argument is being filed under the wrong heading   Most debates about agent...",
+      "author": "TokenLat",
+      "publishedAt": "2026-11-06T05:40:25Z",
+      "engagement": 9,
+      "tags": [
+        "llm",
+        "observability",
+        "architecture",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/tokenlat/deterministic-delivery-is-an-architecture-decision-not-a-model-setting-2091",
+      "titleHash": "56f17fa610738b46998d97a5f743aece4c15f269ab20e2576e92dfc777e4741d",
+      "contentHash": "985ca018309df23a5f75cefc4eee641ff2e0bbe95c67695eb5743cc51072703c",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8197026360012878,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://dev.to/adiletakmatov/building-an-ai-for-hard-conversations-five-agents-one-safety-regex-and-a-supervisor-who-graded-53ic",
+      "title": "Building an AI for hard conversations: five agents, one safety regex, and a supervisor who graded us blind",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Context: Dicamus is an AI self-help service, not therapy and not a crisis line. If you are in danger...",
+      "author": "Adilet Akmatov",
+      "publishedAt": "2026-11-06T06:32:52Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "llm",
+        "python",
+        "architecture",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/adiletakmatov/building-an-ai-for-hard-conversations-five-agents-one-safety-regex-and-a-supervisor-who-graded-53ic",
+      "titleHash": "335f536212ea747688af53cfa0897d5f6eb3405aebbbadb4fe077e7613f88cb3",
+      "contentHash": "7f39bd1c8b5633201181083f2bc3cbf84763e6b6b6ef6795173b156dde4bd321",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.826630067712052,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/langflow-ai/langflow",
+      "title": "langflow-ai/langflow",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "author": "langflow-ai",
+      "publishedAt": "2026-11-07T00:24:47Z",
+      "engagement": 156395,
+      "tags": [
+        "agents",
+        "chatgpt",
+        "generative-ai",
+        "large-language-models",
+        "multiagent",
+        "react-flow",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/langflow-ai/langflow",
+      "titleHash": "9301237a696386b4b5b04c1b8b99807f8cd6685586ff1ad0915f143721484076",
+      "contentHash": "22d17a97748fcc46f6b97441c0f94d45e06022e6ba2f751e163f3384c7640c71",
+      "score": 98,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.95,
+        "timeliness": 0.9817602117052429,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/shadcn-ui/ui",
+      "title": "shadcn-ui/ui",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+      "author": "shadcn-ui",
+      "publishedAt": "2026-11-06T16:20:36Z",
+      "engagement": 127528,
+      "tags": [
+        "ai",
+        "base-ui",
+        "components",
+        "gen-ui",
+        "generative-ai",
+        "generative-ui",
+        "laravel",
+        "nextjs",
+        "radix-ui",
+        "react",
+        "react-aria",
+        "react-aria-components",
+        "shadcn",
+        "tailwindcss",
+        "tanstack",
+        "ui",
+        "vite",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/shadcn-ui/ui",
+      "titleHash": "51f33a8f96187a8e57af55761c81a0ad8bd0e0abb5ae53689d86a788671028c7",
+      "contentHash": "b307a0eecd877c88e475f7e49ce7c04776aa38bb66818dcef6f2e589280687db",
+      "score": 81,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.95,
+        "timeliness": 0.9083770290318954,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "title": "microsoft/generative-ai-for-beginners",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "21 Lessons, Get Started Building with Generative AI ",
+      "author": "microsoft",
+      "publishedAt": "2026-11-05T03:43:23Z",
+      "engagement": 123070,
+      "tags": [
+        "ai",
+        "azure",
+        "chatgpt",
+        "dall-e",
+        "generative-ai",
+        "generativeai",
+        "gpt",
+        "language-model",
+        "llms",
+        "microsoft-for-beginners",
+        "openai",
+        "prompt-engineering",
+        "semantic-search",
+        "transformers",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/microsoft/generative-ai-for-beginners",
+      "titleHash": "8022a9c3e02dce2295a76ed48177e48717ac73ea68881b1cfce3c41d56e99dc3",
+      "contentHash": "8d95372bb5236a796437df8170d8ea54fda713be1b3e6e71b2ff49fa611ee554",
+      "score": 90,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.6384954125911262,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "title": "rasbt/LLMs-from-scratch",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "author": "rasbt",
+      "publishedAt": "2026-11-06T21:20:06Z",
+      "engagement": 107934,
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "attention-mechanism",
+        "deep-learning",
+        "finetuning",
+        "from-scratch",
+        "generative-ai",
+        "gpt",
+        "instruction-tuning",
+        "language-model",
+        "large-language-models",
+        "llm",
+        "machine-learning",
+        "natural-language-processing",
+        "pretraining",
+        "python",
+        "pytorch",
+        "tokenizer",
+        "transformers",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/rasbt/LLMs-from-scratch",
+      "titleHash": "d49004ff4c161bd2755ef9efb755eb6e0dfbc70a8d0a1bff8518645ea961d31e",
+      "contentHash": "05ed3f9e46e83c08e396451b300a7729d52a2f9abeb5fc5468b7435414f45ebd",
+      "score": 97,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.9530949373263269,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "title": "microsoft/ai-agents-for-beginners",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "18 Lessons to Get Started Building AI Agents",
+      "author": "microsoft",
+      "publishedAt": "2026-11-07T01:53:41Z",
+      "engagement": 79063,
+      "tags": [
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-rag",
+        "ai-agents",
+        "ai-agents-framework",
+        "autogen",
+        "foundry",
+        "foundry-local",
+        "generative-ai",
+        "microsoft-foundry",
+        "semantic-kernel",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/microsoft/ai-agents-for-beginners",
+      "titleHash": "a504532000f67cc61a40514f7e291b3969136a676ca33249ff652454503bb1fd",
+      "contentHash": "1e302506614021bb9a03ec3b0cfadda66f3143e93ce7303b854b296bc9cbbae9",
+      "score": 93,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.9,
+        "timeliness": 0.9958644613963146,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "title": "rohitg00/ai-engineering-from-scratch",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "author": "rohitg00",
+      "publishedAt": "2026-11-06T19:31:00Z",
+      "engagement": 77165,
+      "tags": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "ai-engineering",
+        "computer-vision",
+        "course",
+        "deep-learning",
+        "dsh",
+        "from-scratch",
+        "generative-ai",
+        "llm",
+        "machine-learning",
+        "mcp",
+        "python",
+        "rea",
+        "reinforcement-learning",
+        "rust",
+        "transformers",
+        "tutorial",
+        "typescript",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "titleHash": "ea33da54766cb9bb440899aa4c081044fcc5bea4b1a235dbfffc6ba452483535",
+      "contentHash": "c21889b05e9d9a73d06d4a90510fbc1a1d2415c3af8743ef8467d8351ead02a9",
+      "score": 96,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.9365560239714953,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "title": "asgeirtj/system_prompts_leaks",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perplexity, DeepSeek and 30+ others. Updated daily.",
+      "author": "asgeirtj",
+      "publishedAt": "2026-11-06T21:02:05Z",
+      "engagement": 70957,
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-prompts",
+        "anthropic",
+        "chatbot",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor",
+        "gemini",
+        "generative-ai",
+        "google",
+        "grok",
+        "llm",
+        "openai",
+        "prompt",
+        "prompt-engineering",
+        "system-prompt",
+        "system-prompts",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "titleHash": "fc76571f0b1187d767a75e02bd7ff031a50900de96ce6dcacc58ec0835d3229e",
+      "contentHash": "21ead54f78b0d1c68d140f030e44825170d9545521262828bda8c9d5a48b9e1d",
+      "score": 98,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.95,
+        "timeliness": 0.9503437209674448,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "title": "langchain-ai/langgraph",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "Build resilient agents.",
+      "author": "langchain-ai",
+      "publishedAt": "2026-11-06T17:24:12Z",
+      "engagement": 44588,
+      "tags": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "chatgpt",
+        "deepagents",
+        "enterprise",
+        "framework",
+        "gemini",
+        "generative-ai",
+        "langchain",
+        "langgraph",
+        "llm",
+        "multiagent",
+        "open-source",
+        "openai",
+        "pydantic",
+        "python",
+        "rag",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/langchain-ai/langgraph",
+      "titleHash": "c79fffdc12b3d5bfd7dd79d57d819cf9a3768d1ead0ac6ffe39af1a61b32f8da",
+      "contentHash": "ae54c9159b8c492d1a58f85935ded37d91b917de497dbbe39801344142b33225",
+      "score": 96,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.9176941722824568,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://github.com/lyogavin/airllm",
+      "title": "lyogavin/airllm",
+      "source": "github",
+      "sourceName": "GitHub",
+      "summary": "AirLLM 2.8T LLM inference with single 4GB GPU",
+      "author": "lyogavin",
+      "publishedAt": "2026-11-06T06:15:38Z",
+      "engagement": 41870,
+      "tags": [
+        "chinese-llm",
+        "chinese-nlp",
+        "finetune",
+        "generative-ai",
+        "instruct-gpt",
+        "instruction-set",
+        "llama",
+        "llm",
+        "lora",
+        "open-models",
+        "open-source",
+        "open-source-models",
+        "qlora",
+        "github",
+        "repo"
+      ],
+      "normalizedUrl": "https://github.com/lyogavin/airllm",
+      "titleHash": "246ea8fded38f007d6343c12ce1f6f598c81d62713722a6d7d91d1bdc1e7d379",
+      "contentHash": "304cd10bb612507d0c9b81b392dcf16da2c74b8ed1b0001dff79ba1fb1d3a75f",
+      "score": 94,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.9,
+        "timeliness": 0.8243475092743167,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+      "title": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 223 likes · 20256 downloads",
+      "engagement": 223,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+      "titleHash": "13588047a8479bb8643bdea8c52ef0163a92e01538072f280cb502363f8f22c6",
+      "contentHash": "8cbb794a070f461ae23022cde735985ffdd5da1a26eae85a83708f133aa93066",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7834160061113876
+      }
+    }
+  ]
+}
