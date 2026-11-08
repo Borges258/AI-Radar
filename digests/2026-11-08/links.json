@@ -1,0 +1,926 @@
+{
+  "date": "2026-11-08",
+  "stats": {
+    "scraped": 170,
+    "deduped": 33,
+    "scored": 33
+  },
+  "summary": "今日焦点涵盖AI行业动态与开源安全。微软研究院AI前沿组解散引发关注，新工具0rwx提供AI权限模型，同时Hanzo AI被曝GitHub垃圾营销。法律层面探讨LLM逆向工程对开源的影响，Hugging Face上TwIL-8B模型热度持续。",
+  "recommendations": [
+    {
+      "url": "https://hunch.net/?p=13764006",
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;AaY5O\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;AaY5O</a><p><a href=\"https:&#x2F;&#x2F;businessexaminer.ca&#x2F;victoria-articles&#x2F;item&#x2F;microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;businessexaminer.ca&#x2F;victoria-articles&#x2F;item&#x2F;microsoft...</a>",
+      "author": "srean",
+      "publishedAt": "2026-11-07T18:02:17Z",
+      "engagement": 386,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://hunch.net/?p=13764006",
+      "titleHash": "e4b466fd900dd6d3622da2622bad5808a4be717400be12811c1ee5fb1fc85363",
+      "contentHash": "fc327b970f7b86fae0eb431d869f2e93664955f063f4ef300ddeb71d59c4eac8",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9283202055174932,
+        "engagement": 0.8625703216729704
+      },
+      "rank": 1,
+      "reasons": [
+        "洞察巨头AI战略变动"
+      ],
+      "overview": "探讨微软研究院AI前沿小组解散的背景与影响，分析巨头内部AI战略调整及人才流动趋势，为理解当前AI研发格局变化提供参考。"
+    },
+    {
+      "url": "https://0rwx.com/",
+      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thes1lv3r",
+      "publishedAt": "2026-11-07T16:14:29Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://0rwx.com/",
+      "titleHash": "55268faeab789c7a7f65196ebbc66333c7647b49c5481be46e6f3bdb77fce89d",
+      "contentHash": "55268faeab789c7a7f65196ebbc66333c7647b49c5481be46e6f3bdb77fce89d",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9124014986570141,
+        "engagement": 0.318080836479775
+      },
+      "rank": 2,
+      "reasons": [
+        "直观AI权限管理新思路"
+      ],
+      "overview": "介绍一个受Unix权限启发的简单AI使用模型，通过类文件权限机制管理AI交互，为开发者提供直观、易于理解的AI安全控制框架。"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50406105",
+      "title": "Tell HN: Hanzo AI Is Spamming From GitHub Contributions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Email received:<p>Hey $name,<p>Wanted to invite you to the Hanzo beta — we&#x27;re looking for top open-source devs to help us shape the future of agentic AI.<p>Join the beta: https:&#x2F;&#x2F;hanzo[.]app&#x2F;beta<p>I was checking out your open-source work on s3tools&#x2F;s3cmd (especially what you&#x27;ve been building with Open-Source AI &#x2F; ML) — really impressive engineering. We&#x27;ve been exploring autonomous decision systems and tool-use agents and would love your input.<p>Let me know if you&#x27;d like to hop on a quick call, we&#x27;re trying to speak with as many builders as we can: https:&#x2F;&#x2F;cal[.]com&#x2F;antje-worring<p>Warmly,\nAntje Worring\nCo-CEO, Hanzo AI<p>GitHub: https:&#x2F;&#x2F;github[.]com&#x2F;zooqueen<p>LinkedIn: https:&#x2F;&#x2F;www.linkedin[.]com&#x2F;in&#x2F;antje-worring&#x2F;<p>Hanzo AI, Inc. · 1 Ferry Building, Suite 201, San Francisco, CA 94111\nUnsubscribe: https:&#x2F;&#x2F;hanzo[.]app&#x2F;unsubscribe\nReply &#x27;stop&#x27; to opt out<p>(I have not participated in the repo in question in over a decade)",
+      "author": "toomuchtodo",
+      "publishedAt": "2026-11-07T17:06:04Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50406105",
+      "titleHash": "5cd3809f51fc32426e991cc404e4fef66b2ccd5007fa1d48d554ff7110332ed4",
+      "contentHash": "48bca6fe80f09cb6eeaeda64e09f9b1f6d1007a739a7110d1d6ebc950e7c520a",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9199844031152887,
+        "engagement": 0.23299000144533963
+      },
+      "rank": 3,
+      "reasons": [
+        "揭示AI营销乱象"
+      ],
+      "overview": "曝光Hanzo AI在GitHub通过虚假开源贡献进行垃圾邮件营销的现象，揭示AI初创公司获取种子用户的争议手段及其对社区信任的影响。"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50409438",
+      "title": "Ask HN: If LLM reverse engineering is deemed illegal, is that precedent for OSS?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "With the efforts to clamp down on LLM-assisted reverse engineering - I am wondering;<p>If LLM assisted reverse engineering is deemed illegal by the courts, is that precedent for a class action that asserts OSS licenses are violated by labs that trained LLMs on that code?<p>There are two modalities for this;<p>1) LLM being post-trained against a decompiled binary - then used to output working source code.<p>2) LLM being used to analyze decompiled binary and used to output working source code.<p>How can it be &quot;clean room&quot; when an LLM is trained on or reads OSS but not clean room when the same is done for decompiled software?",
+      "author": "apatheticonion",
+      "publishedAt": "2026-11-08T00:37:05Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50409438",
+      "titleHash": "20709fea3d86a3a1841eef337b5e526235a9b3dea04ccb3d104e757b262b78e5",
+      "contentHash": "120387566b8a3869c57f0613145f8e5f5fc0e9ad7fbde1f9412ed1c2d29b1d9e",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9890280300068094,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 4,
+      "reasons": [
+        "评估开源法律风险"
+      ],
+      "overview": "讨论若LLM辅助逆向工程被法院判为非法，是否会对开源软件生态产生类似先例影响，分析当前开源社区面临的法律风险边界。"
+    },
+    {
+      "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+      "title": "webAI-Official/TwIL-8B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 212 likes · 15324 downloads",
+      "engagement": 212,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/webAI-Official/TwIL-8B",
+      "titleHash": "70e183b2feed39b692ec011bcaacce8721c02de53a33e95900cf7b9978b06b65",
+      "contentHash": "4c9d78f1430bfc67aa411008c40f41ae10c47feff54321be0204a7925e1aec32",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7761265344795792
+      },
+      "rank": 5,
+      "reasons": [
+        "高性价比文本生成模型"
+      ],
+      "overview": "展示Hugging Face平台上的TwIL-8B文本生成模型，该模型拥有较高下载量与社区点赞，具备一定实用价值，适合关注本地化文本生成应用的开发者。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://hunch.net/?p=13764006",
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;AaY5O\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;AaY5O</a><p><a href=\"https:&#x2F;&#x2F;businessexaminer.ca&#x2F;victoria-articles&#x2F;item&#x2F;microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;businessexaminer.ca&#x2F;victoria-articles&#x2F;item&#x2F;microsoft...</a>",
+      "author": "srean",
+      "publishedAt": "2026-11-07T18:02:17Z",
+      "engagement": 386,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://hunch.net/?p=13764006",
+      "titleHash": "e4b466fd900dd6d3622da2622bad5808a4be717400be12811c1ee5fb1fc85363",
+      "contentHash": "fc327b970f7b86fae0eb431d869f2e93664955f063f4ef300ddeb71d59c4eac8",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9283202055174932,
+        "engagement": 0.8625703216729704
+      }
+    },
+    {
+      "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
+      "title": "The AI sell-off compared to well-known stock market crashes",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hubraumhugo",
+      "publishedAt": "2026-11-07T02:20:06Z",
+      "engagement": 84,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
+      "titleHash": "8c0d0b6a383d186465416308812be04314dd73536faf3f43a70c31de38a59845",
+      "contentHash": "8c0d0b6a383d186465416308812be04314dd73536faf3f43a70c31de38a59845",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7980751075936926,
+        "engagement": 0.6431396419047642
+      }
+    },
+    {
+      "url": "https://www.searchenginejournal.com/brave-sells-its-search-index-to-ai-and-your-website-is-probably-in-it/595829/",
+      "title": "Brave Sells Its Search Index to AI, and Your Website Is Probably in It",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "linhns",
+      "publishedAt": "2026-11-07T02:59:27Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.searchenginejournal.com/brave-sells-its-search-index-to-ai-and-your-website-is-probably-in-it/595829",
+      "titleHash": "0854cd0526846893655f162e96d8fadf89d911f1ed1edfc6297a18cfc656c80c",
+      "contentHash": "0854cd0526846893655f162e96d8fadf89d911f1ed1edfc6297a18cfc656c80c",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8031298839785214,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://kevinboone.me/ai.html",
+      "title": "I don't care if web content is AI-generated",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-11-07T14:02:56Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kevinboone.me/ai.html",
+      "titleHash": "962b8ec67beb20e9a810adeb16dca1b7c202d055e6132f96218bbc50549ad01e",
+      "contentHash": "962b8ec67beb20e9a810adeb16dca1b7c202d055e6132f96218bbc50549ad01e",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8933449947714878,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://digitalminds.cam/inter-ai-morality.pdf",
+      "title": "Inter-AI Morality: How AI Systems Treat One Another [pdf]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dadadavid",
+      "publishedAt": "2026-11-07T08:02:02Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://digitalminds.cam/inter-ai-morality.pdf",
+      "titleHash": "87396824ffc1ed9c03bbcae2154f4ecb81c2249081e72b0eac87eefb4bb0b790",
+      "contentHash": "87396824ffc1ed9c03bbcae2154f4ecb81c2249081e72b0eac87eefb4bb0b790",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8430836380853373,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://backwords.greg.technology/",
+      "title": "Show HN: Backwords – Let AI teach you how to speak in reverse",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gregsadetsky",
+      "publishedAt": "2026-11-07T03:39:46Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://backwords.greg.technology/",
+      "titleHash": "2375fd1d8507bd2df546d2905d067c469001029f3edf7f225e9ff7ee2d6c650f",
+      "contentHash": "2375fd1d8507bd2df546d2905d067c469001029f3edf7f225e9ff7ee2d6c650f",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8083420419023836,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://phys.org/news/2026-11-air-holes-silicon-wafers-flat.html",
+      "title": "Air holes turn silicon wafers into flat UV focusing mirrors for compact optics",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-11-07T14:51:40Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://phys.org/news/2026-11-air-holes-silicon-wafers-flat.html",
+      "titleHash": "f111797196617c36a3668174e669645d88c17a8238bf0b134438cd47eb6062e7",
+      "contentHash": "f111797196617c36a3668174e669645d88c17a8238bf0b134438cd47eb6062e7",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9003577081072147,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://0rwx.com/",
+      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thes1lv3r",
+      "publishedAt": "2026-11-07T16:14:29Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://0rwx.com/",
+      "titleHash": "55268faeab789c7a7f65196ebbc66333c7647b49c5481be46e6f3bdb77fce89d",
+      "contentHash": "55268faeab789c7a7f65196ebbc66333c7647b49c5481be46e6f3bdb77fce89d",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9124014986570141,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.ft.com/content/af97585a-3381-42a9-838b-9a205ab81232",
+      "title": "Why does America hate AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-11-07T13:46:27Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.ft.com/content/af97585a-3381-42a9-838b-9a205ab81232",
+      "titleHash": "0bb3dcef7265e077d5e41d30dcc967ecfe9eb9b0145767eaecbd3526186cc81b",
+      "contentHash": "0bb3dcef7265e077d5e41d30dcc967ecfe9eb9b0145767eaecbd3526186cc81b",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8909854306300599,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.honest-broker.com/p/the-ai-business-model-just-collapsed",
+      "title": "The AI Business Model Just Collapsed",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "paulpauper",
+      "publishedAt": "2026-11-07T04:30:10Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.honest-broker.com/p/the-ai-business-model-just-collapsed",
+      "titleHash": "d2e9260f2f75d0c94c00ebb9ffc2d12cf4ec3705d2c137e9ffef0397a41dee82",
+      "contentHash": "d2e9260f2f75d0c94c00ebb9ffc2d12cf4ec3705d2c137e9ffef0397a41dee82",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8149053774721776,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://frontofficesports.com/article/lebron-james-demands-ai-betting-app-stop-using-his-likeness/",
+      "title": "YC Backed Bron AI Accused of Using LeBron's Name and Likeness",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sicgods",
+      "publishedAt": "2026-11-07T03:34:25Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://frontofficesports.com/article/lebron-james-demands-ai-betting-app-stop-using-his-likeness",
+      "titleHash": "5719e2f771c448792341bedc07f100666f3d7f7ef202f83b181c6af2c87dbffb",
+      "contentHash": "5719e2f771c448792341bedc07f100666f3d7f7ef202f83b181c6af2c87dbffb",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8076484495834615,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://maildignity.com/",
+      "title": "Show HN: I made a guardrail against AI outreach slop (API/MCP)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "harryden",
+      "publishedAt": "2026-11-07T13:48:09Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://maildignity.com/",
+      "titleHash": "d860eff3a05f7930c2215e49c9f8f700d2eae90fd879eda7a1fc5492912792ae",
+      "contentHash": "d860eff3a05f7930c2215e49c9f8f700d2eae90fd879eda7a1fc5492912792ae",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8912284945345192,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://endpoints.news/church-quits-role-at-ai-startup-radical-claims-sleazy-behavior-stole-credit-from-partner/",
+      "title": "Church quits role at AI startup claims 'sleazy' behavior stole credit",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-11-07T06:16:44Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://endpoints.news/church-quits-role-at-ai-startup-radical-claims-sleazy-behavior-stole-credit-from-partner",
+      "titleHash": "62d3fc1c8a226ab8e29f3438575ab4d6243e6fe84cfdf97e2b8965e6f329ec24",
+      "contentHash": "62d3fc1c8a226ab8e29f3438575ab4d6243e6fe84cfdf97e2b8965e6f329ec24",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8289590071538485,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://jsdev.space/companies-rehiring-workers/",
+      "title": "AI Layoffs Backfire as Companies Start Rehiring Workers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "javatuts",
+      "publishedAt": "2026-11-07T20:07:15Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://jsdev.space/companies-rehiring-workers",
+      "titleHash": "098c989c040531057af62804a83da6f9e5f742ec40e2f1288e41e73f94ba8931",
+      "contentHash": "098c989c040531057af62804a83da6f9e5f742ec40e2f1288e41e73f94ba8931",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9471218136307678,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.puglieseweb.com/blog/architecture-as-truth",
+      "title": "AI Promoted Everybody. Architecture as Truth (AAT) Is the New Job",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "puglieseweb",
+      "publishedAt": "2026-11-07T18:37:04Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.puglieseweb.com/blog/architecture-as-truth",
+      "titleHash": "877b2aa1592911df497ee083bfa1f05967e9e8fbddb7432c7fc522b12b053370",
+      "contentHash": "877b2aa1592911df497ee083bfa1f05967e9e8fbddb7432c7fc522b12b053370",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9335156556543647,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50406105",
+      "title": "Tell HN: Hanzo AI Is Spamming From GitHub Contributions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Email received:<p>Hey $name,<p>Wanted to invite you to the Hanzo beta — we&#x27;re looking for top open-source devs to help us shape the future of agentic AI.<p>Join the beta: https:&#x2F;&#x2F;hanzo[.]app&#x2F;beta<p>I was checking out your open-source work on s3tools&#x2F;s3cmd (especially what you&#x27;ve been building with Open-Source AI &#x2F; ML) — really impressive engineering. We&#x27;ve been exploring autonomous decision systems and tool-use agents and would love your input.<p>Let me know if you&#x27;d like to hop on a quick call, we&#x27;re trying to speak with as many builders as we can: https:&#x2F;&#x2F;cal[.]com&#x2F;antje-worring<p>Warmly,\nAntje Worring\nCo-CEO, Hanzo AI<p>GitHub: https:&#x2F;&#x2F;github[.]com&#x2F;zooqueen<p>LinkedIn: https:&#x2F;&#x2F;www.linkedin[.]com&#x2F;in&#x2F;antje-worring&#x2F;<p>Hanzo AI, Inc. · 1 Ferry Building, Suite 201, San Francisco, CA 94111\nUnsubscribe: https:&#x2F;&#x2F;hanzo[.]app&#x2F;unsubscribe\nReply &#x27;stop&#x27; to opt out<p>(I have not participated in the repo in question in over a decade)",
+      "author": "toomuchtodo",
+      "publishedAt": "2026-11-07T17:06:04Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50406105",
+      "titleHash": "5cd3809f51fc32426e991cc404e4fef66b2ccd5007fa1d48d554ff7110332ed4",
+      "contentHash": "48bca6fe80f09cb6eeaeda64e09f9b1f6d1007a739a7110d1d6ebc950e7c520a",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9199844031152887,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://epyhia.com/meta-launches-muse-ai-spaces-former-security-chief-calls-password",
+      "title": "Former Meta Security Chief Calls Password Access for AI Agents 'Insane'",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "arbuge",
+      "publishedAt": "2026-11-07T13:59:07Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://epyhia.com/meta-launches-muse-ai-spaces-former-security-chief-calls-password",
+      "titleHash": "a30993342f958e6e4dd087bee088bfb2b0a224742950cb8dc0616714a19c2761",
+      "contentHash": "a30993342f958e6e4dd087bee088bfb2b0a224742950cb8dc0616714a19c2761",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8927980894069852,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.economist.com/finance-and-economics/2026/11/05/ai-is-turning-protectionists-into-free-traders",
+      "title": "AI is turning protectionists into free traders",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-11-07T13:20:23Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.economist.com/finance-and-economics/2026/11/05/ai-is-turning-protectionists-into-free-traders",
+      "titleHash": "2aeaf9f6ce859e956461b5c2cd338cd5e3ae0bd18767f610a947d6dc28253088",
+      "contentHash": "2aeaf9f6ce859e956461b5c2cd338cd5e3ae0bd18767f610a947d6dc28253088",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8872667410097529,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/ai-math-online-encryption-quantum-computers-57926bb2",
+      "title": "Quantum Computers Are Poised to Crack Encryption. AI Could Beat Them to It",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "fortran77",
+      "publishedAt": "2026-11-07T04:39:33Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.wsj.com/tech/ai/ai-math-online-encryption-quantum-computers-57926bb2",
+      "titleHash": "8d5a0f9a38f1965afd81855bc95dee3a2679b471263d614627a48d56b4ecac3c",
+      "contentHash": "8d5a0f9a38f1965afd81855bc95dee3a2679b471263d614627a48d56b4ecac3c",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8161331926910291,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/lhadzic377-netizen/TokiRecur",
+      "title": "TokiRecur – llama.cpp LLM launcher with KV-cache recycling",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "TokiRecur",
+      "publishedAt": "2026-11-07T18:08:43Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/lhadzic377-netizen/TokiRecur",
+      "titleHash": "62a5d3addb98e3da3d9683a2846baf80f9cd476a7305543f7192b1e6a6ce9c52",
+      "contentHash": "62a5d3addb98e3da3d9683a2846baf80f9cd476a7305543f7192b1e6a6ce9c52",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9292789430681804,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50409438",
+      "title": "Ask HN: If LLM reverse engineering is deemed illegal, is that precedent for OSS?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "With the efforts to clamp down on LLM-assisted reverse engineering - I am wondering;<p>If LLM assisted reverse engineering is deemed illegal by the courts, is that precedent for a class action that asserts OSS licenses are violated by labs that trained LLMs on that code?<p>There are two modalities for this;<p>1) LLM being post-trained against a decompiled binary - then used to output working source code.<p>2) LLM being used to analyze decompiled binary and used to output working source code.<p>How can it be &quot;clean room&quot; when an LLM is trained on or reads OSS but not clean room when the same is done for decompiled software?",
+      "author": "apatheticonion",
+      "publishedAt": "2026-11-08T00:37:05Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50409438",
+      "titleHash": "20709fea3d86a3a1841eef337b5e526235a9b3dea04ccb3d104e757b262b78e5",
+      "contentHash": "120387566b8a3869c57f0613145f8e5f5fc0e9ad7fbde1f9412ed1c2d29b1d9e",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9890280300068094,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.lesswrong.com/posts/CDMozTX7ShiqbFLrf/towards-understanding-score-seeking-in-llms-1",
+      "title": "Towards understanding score-seeking in LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "eatitraw",
+      "publishedAt": "2026-11-07T22:09:45Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.lesswrong.com/posts/CDMozTX7ShiqbFLrf/towards-understanding-score-seeking-in-llms-1",
+      "titleHash": "642a7b8f42056e38f523dfb10c22761d137988a773ec62b846b60ae73e6bc447",
+      "contentHash": "642a7b8f42056e38f523dfb10c22761d137988a773ec62b846b60ae73e6bc447",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9659218508330378,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/Miyamoto-Renya/LaplacesScissors",
+      "title": "Show HN: Laplace's Scissors – A tool for directly editing LLM weights",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "032renya",
+      "publishedAt": "2026-11-07T18:23:18Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Miyamoto-Renya/LaplacesScissors",
+      "titleHash": "e166a4b75c5de945ba9f2f680b202174fcea4a2676d87c18a8b36d92fa10ab1c",
+      "contentHash": "e166a4b75c5de945ba9f2f680b202174fcea4a2676d87c18a8b36d92fa10ab1c",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9314559149347069,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://fixingtao.com/2026/11/sentient-llms/",
+      "title": "Sentient LLMs Are Possible (Sorta)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gslepak",
+      "publishedAt": "2026-11-07T15:45:48Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://fixingtao.com/2026/11/sentient-llms",
+      "titleHash": "c43ab93ff7826896fd483281daff5559f940b7deb051245d1d609f4d473f0109",
+      "contentHash": "c43ab93ff7826896fd483281daff5559f940b7deb051245d1d609f4d473f0109",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9082120358528666,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/dphnAI/nf12",
+      "title": "Lossless compression of LLMs to 12-bits",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "AlpinDale",
+      "publishedAt": "2026-11-08T00:07:43Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/dphnAI/nf12",
+      "titleHash": "3971b4cdf443330be30620b8c12e02361ed75775fdde448bd96f55e9f15f3028",
+      "contentHash": "3971b4cdf443330be30620b8c12e02361ed75775fdde448bd96f55e9f15f3028",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9843787875729265,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://lucaskostka.com/posts/building-trust-llm-thought-experiment",
+      "title": "Building trust, an LLM thought experiment",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "greatNespresso",
+      "publishedAt": "2026-11-08T01:27:23Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://lucaskostka.com/posts/building-trust-llm-thought-experiment",
+      "titleHash": "75f9a5d492c4be469b26e91e64a54b013c18aa9c4265e65966d4836c879361c4",
+      "contentHash": "75f9a5d492c4be469b26e91e64a54b013c18aa9c4265e65966d4836c879361c4",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9970424482368366,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://tomclancy.info/joshua-judges-ruth.html",
+      "title": "Catching prompt injections hidden in PDFs",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "tclancy",
+      "publishedAt": "2026-11-07T13:34:01.032-06:00",
+      "engagement": 2,
+      "tags": [
+        "a11y",
+        "ai",
+        "pdf",
+        "security",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://tomclancy.info/joshua-judges-ruth.html",
+      "titleHash": "357e7d03081e2943f1a81d7827c5ae7c9dc8f86c1f0deb9007d536a0ca1b18a2",
+      "contentHash": "357e7d03081e2943f1a81d7827c5ae7c9dc8f86c1f0deb9007d536a0ca1b18a2",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.9420849855984944,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "title": "Firecracker VM Escape: PwnEscape Part 2",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "atmosx",
+      "publishedAt": "2026-11-07T02:44:02.325-06:00",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "security",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pwn.ai/blog/firecracker-escape",
+      "titleHash": "caa85a7f7099445a4d4e2761eb70e344e7bbb6c904c3c02011b7f6ca5ece5dd5",
+      "contentHash": "caa85a7f7099445a4d4e2761eb70e344e7bbb6c904c3c02011b7f6ca5ece5dd5",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.8487850448032677,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://dev.to/gde/building-railpulse-ai-deploying-an-open-source-railway-dispatch-agent-with-gemma-and-google-cloud-2b9g",
+      "title": "Building RailPulse AI: Deploying an Open-Source Railway Dispatch Agent with Gemma and Google Cloud Run",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Author: Robina Mirbahar AI/ML Google Developer Expert (GDE) | Google Cloud Champion Innovator GitHub...",
+      "author": "Robina Mirbahar",
+      "publishedAt": "2026-11-07T07:35:33Z",
+      "engagement": 31,
+      "tags": [
+        "ai",
+        "googlecloud",
+        "opensource",
+        "python",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/building-railpulse-ai-deploying-an-open-source-railway-dispatch-agent-with-gemma-and-google-cloud-2b9g",
+      "titleHash": "ca9e7e9601e4c47a5460300bb9b802365cb09839f20807b76c8fff0f8fe4d236",
+      "contentHash": "8225d299a9467d4a6837a352fe07198747ce977599073f1c0f309090d5f9573f",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8395087485103062,
+        "engagement": 0.5017166594399687
+      }
+    },
+    {
+      "url": "https://dev.to/advikdivekar/theres-a-pattern-hidden-in-qwen35-08bs-neurons-that-training-cant-explain-58od",
+      "title": "There's a Pattern Hidden in Qwen3.5-0.8B's Neurons That Training Can't Explain",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Qwen3.5-0.8B's Neurons Are Secretly Ranked   TL;DR. The MLP neurons of Qwen3.5-0.8B appear...",
+      "author": "Advik Divekar",
+      "publishedAt": "2026-11-07T05:35:51Z",
+      "engagement": 43,
+      "tags": [
+        "interpretability",
+        "llm",
+        "larp",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/advikdivekar/theres-a-pattern-hidden-in-qwen35-08bs-neurons-that-training-cant-explain-58od",
+      "titleHash": "9c77c99539d5ac7ec00808f699f0096cf9ac36d234a19ff3aa13bfb46ebba17e",
+      "contentHash": "989ee3d8cb0da3b5549bf9071c704a4b0404b18daabca8037af99a120f655bf6",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8235390305541139,
+        "engagement": 0.5478175588287292
+      }
+    },
+    {
+      "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 505 likes · 1369 downloads",
+      "engagement": 505,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "titleHash": "a57255e6f85309bc5d65ecf60bb21c9c5077bf6400ccf827c3afb6cc11a03eb9",
+      "contentHash": "9fccab2a28f62365f2bd49dc14c75edfee5128a00ff71262b8a32e9a71dc61c4",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.9013835056132664
+      }
+    },
+    {
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "title": "unsloth/Qwen3.8-Flash-Next-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 1510 likes · 1423501 downloads",
+      "engagement": 1510,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "titleHash": "0e734eb69f1273a11a30b44cb45f6a77ebf286945a6c261d9fdd8c455cad9e8c",
+      "contentHash": "b1ddd5f142c963b78ab8bcfcbe08e88a0e1b6ab12032172d2760faf4bae425dd",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+      "title": "webAI-Official/TwIL-8B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 212 likes · 15324 downloads",
+      "engagement": 212,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/webAI-Official/TwIL-8B",
+      "titleHash": "70e183b2feed39b692ec011bcaacce8721c02de53a33e95900cf7b9978b06b65",
+      "contentHash": "4c9d78f1430bfc67aa411008c40f41ae10c47feff54321be0204a7925e1aec32",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7761265344795792
+      }
+    }
+  ]
+}
