@@ -1,0 +1,1004 @@
+{
+  "date": "2026-11-09",
+  "stats": {
+    "scraped": 170,
+    "deduped": 36,
+    "scored": 36
+  },
+  "recommendations": [
+    {
+      "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+      "title": "Why I will not be using LLMs in my coding",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Risse",
+      "publishedAt": "2026-11-08T12:14:10Z",
+      "engagement": 108,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+      "titleHash": "0dc96550cf4bb5d716741caad669a9a40f14df3f43d5618491f5f68eebf46d13",
+      "contentHash": "0dc96550cf4bb5d716741caad669a9a40f14df3f43d5618491f5f68eebf46d13",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8766063308083916,
+        "engagement": 0.6791421659802079
+      },
+      "rank": 1,
+      "reasons": [
+        "时效性强",
+        "社区热度高",
+        "综合评分 70"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50411036",
+      "title": "Ask HN: LLM-Resistant Publishing Strategies",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "As has been discussed at length, LLM companies carried out the most egregious theft of labor [0] and intellectual property [1] in human history.<p>I am one among the many (artists, musicians, writers, developers), who continue to be appaled at tech billionaires profiting from this [2]. As such, I have mostly ceased publishing original content online, while I wait for effective defenses to emerge.<p>The two industry-standards are `robots.txt` and captchas. Neither works: the former is simply ignored, even by industry heavyweights [3]; the latter is trivial to bypass (using AI itself [4], remote solving services [5], or anti-detect browsers&#x2F;impersonators [6] + residential proxies [7]).<p>Emerging strategies include special fonts for creating OCR-resistant documents, tho current options don&#x27;t seem to be effective [8]. Under the &quot;dark forest&quot; theory [9], paywalling or private distribution seem viable options, provided you can trust the recipients to not leak the content; of course, this is a death sentence for the libre ethos of the past 50 years, tho perhaps it was long overdue [10].<p>Please share your thoughts on any alternatives, real or speculative.<p>[0] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49752056 - Microsoft exec called AI scraping &#x27;the largest theft of labor in human history&#x27; (techcrunch.com)<p>[1] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=41275073 - Ex-Google CEO: AI startups can steal IP and hire lawyers to &#x27;clean up the mess&#x27; (theverge.com)<p>[2] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=40297027 - StackOverflow is banning accounts that delete answers in protest against OpenAI (benui.ca)<p>[3] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50401213 - Brave Sells Its Search Index to AI, and Your Website Is Probably in It (searchenginejournal.com)<p>[4] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49930138 - Meta&#x27;s Muse is fantastic for web scraping (sigh.dev)<p>[5] https:&#x2F;&#x2F;captchathecat.com&#x2F;<p>[6] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42547820 - Curl-Impersonate (github.com&#x2F;lexiforest)<p>[7] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48864252 - An update on residential proxies and the scraper situation (lwn.net)<p>[8] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48873513 - Ghost Font: A font that humans can read but AI cannot (mixfont.com)<p>[9] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47566442 - The Cognitive Dark Forest (ryelang.org)<p>[10] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50224074 - PHP Foundation &#x27;under-funded&#x27; with one full-time staff member, director says (reuters.com)",
+      "author": "negura",
+      "publishedAt": "2026-11-08T06:57:42Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50411036",
+      "titleHash": "c6902fd3c982efa1295d42a62edee8cfc6bc8b452011c6dbf246468282236dcd",
+      "contentHash": "2619df6d5faa9a238849fe536818f6cd16de34d4b3f59ed30ab6353260cb1318",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8332058248491874,
+        "engagement": 0.20068666377598746
+      },
+      "rank": 2,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 70"
+      ]
+    },
+    {
+      "url": "https://github.com/RikiyaT/lm_understand-logs",
+      "title": "LLMs can understand and write neural network weights",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "modinfo",
+      "publishedAt": "2026-11-08T20:18:49Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/RikiyaT/lm_understand-logs",
+      "titleHash": "5168fefbbe9b9af3609fbfd11db0efef80d2f459f8269ce84c442cfad619f646",
+      "contentHash": "5168fefbbe9b9af3609fbfd11db0efef80d2f459f8269ce84c442cfad619f646",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9474938624225874,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 3,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 70"
+      ]
+    },
+    {
+      "url": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
+      "title": "Agents don't suggest the use of LLMs for problems where they should",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pajtai",
+      "publishedAt": "2026-11-09T01:37:58Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
+      "titleHash": "fceebfb9ebad6596e4753578f286069e571e923700e6103ec1816747eac6faa7",
+      "contentHash": "fceebfb9ebad6596e4753578f286069e571e923700e6103ec1816747eac6faa7",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9972767475680892,
+        "engagement": 0.10034333188799373
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 70"
+      ]
+    },
+    {
+      "url": "https://dev.to/jon_at_backboardio/we-built-our-own-inference-engine-and-put-it-up-against-vllm-and-sglang-on-four-models-and-three-12b",
+      "title": "We built our own inference engine and put it up against vLLM and SGLang on four models and three kinds of GPU.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "357 seconds.  That's how long the median request waited for its first token when we ran GLM-5.3 on...",
+      "author": "Jonathan Murray",
+      "publishedAt": "2026-11-07T17:11:02Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "llm",
+        "machinelearning",
+        "performance",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/jon_at_backboardio/we-built-our-own-inference-engine-and-put-it-up-against-vllm-and-sglang-on-four-models-and-three-12b",
+      "titleHash": "b13a06e5e53d94a3c373b43a14369fff6946cb5c2403b4baf067ea2058f67559",
+      "contentHash": "770271d14ca25d6cd908e8f22ad258b47d0a95dbf09dc28c785ec8eb0f2dc17c",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.7297057876836469,
+        "engagement": 0.3010299956639812
+      },
+      "rank": 5,
+      "reasons": [
+        "领域相关性高",
+        "综合评分 70"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "title": "How I Fight AI Brain Fry",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kyunez",
+      "publishedAt": "2026-11-08T19:37:42Z",
+      "engagement": 153,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "titleHash": "41db1d3eab3337f6f60552cf1403ac9fba748946901ec34708303bc6f6b33d4e",
+      "contentHash": "41db1d3eab3337f6f60552cf1403ac9fba748946901ec34708303bc6f6b33d4e",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9412636300846746,
+        "engagement": 0.7291735736121544
+      }
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+      "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "zzzeek",
+      "publishedAt": "2026-11-08T18:43:07Z",
+      "engagement": 89,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+      "titleHash": "efc51e40efb4deb2f8bffc0a96b7a4404f28b4316532176f0302d2baffa7e87e",
+      "contentHash": "efc51e40efb4deb2f8bffc0a96b7a4404f28b4316532176f0302d2baffa7e87e",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9330560964227077,
+        "engagement": 0.6514141698131083
+      }
+    },
+    {
+      "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test/",
+      "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bushwart",
+      "publishedAt": "2026-11-08T15:00:42Z",
+      "engagement": 54,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://taskandpurpose.com/news/drone-mimicking-bird-test",
+      "titleHash": "eef9ad4f4c989d7362aaa3e4f9af3bd48af8cfd226098812ce5c91d2341cdb02",
+      "contentHash": "eef9ad4f4c989d7362aaa3e4f9af3bd48af8cfd226098812ce5c91d2341cdb02",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9003453445621283,
+        "engagement": 0.5801208964980813
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
+      "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mfiguiere",
+      "publishedAt": "2026-11-08T15:19:51Z",
+      "engagement": 34,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
+      "titleHash": "7f0519f33960a49e73fc3848815a5cc3a786bd5edf9da8d91071bd664f9a5e0b",
+      "contentHash": "7f0519f33960a49e73fc3848815a5cc3a786bd5edf9da8d91071bd664f9a5e0b",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9031160285836388,
+        "engagement": 0.5146893481167586
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zrlLUUdqDJI",
+      "title": "Etsy changes terms to train AI on your creations, while blocking you doing it [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "fortran77",
+      "publishedAt": "2026-11-08T19:14:41Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=zrlLUUdqDJI",
+      "titleHash": "a9ee110fa2d3213dfaf222452bb695e9095c07ad5d3e6ca1930211f872ff314d",
+      "contentHash": "a9ee110fa2d3213dfaf222452bb695e9095c07ad5d3e6ca1930211f872ff314d",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9377939156436244,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+      "title": "I'm Not Convinced the AI Bubble Exists",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "matteoraso",
+      "publishedAt": "2026-11-08T23:44:36Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+      "titleHash": "4a795549dc7fe271484c08eac45d2458f3b9f7b18d8583e1c60db94e2e98b8a9",
+      "contentHash": "4a795549dc7fe271484c08eac45d2458f3b9f7b18d8583e1c60db94e2e98b8a9",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9793005052151204,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://carette.xyz/posts/ai-stance-is-not-binary/",
+      "title": "AI stance is not binary",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "LucidLynx",
+      "publishedAt": "2026-11-08T14:24:58Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://carette.xyz/posts/ai-stance-is-not-binary",
+      "titleHash": "80c09ef05e98a25992d4353c4f1b3d2160611e2062383543af8903b446d541cd",
+      "contentHash": "80c09ef05e98a25992d4353c4f1b3d2160611e2062383543af8903b446d541cd",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8951980388560355,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://thinkstream.app/",
+      "title": "ThinkStream – AI generates the work. We still need to understand it",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "aginext",
+      "publishedAt": "2026-11-08T09:20:04Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thinkstream.app/",
+      "titleHash": "080783d944f6d06f72caed5391b2e5429780de5f85bc6c88cfe037f51236421a",
+      "contentHash": "080783d944f6d06f72caed5391b2e5429780de5f85bc6c88cfe037f51236421a",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8524576553520763,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
+      "title": "I Resist Generative \"AI\"",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "lobo_tuerto",
+      "publishedAt": "2026-11-08T13:49:01Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
+      "titleHash": "209a951ac5b07938a909defd874b678651dac8ecb6edf95b7fe52b7a1e5d9f37",
+      "contentHash": "209a951ac5b07938a909defd874b678651dac8ecb6edf95b7fe52b7a1e5d9f37",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8900492179768356,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.techradar.com/pro/70-percent-of-brits-say-please-or-thank-you-when-speaking-to-ai-and-some-even-apologize",
+      "title": "70% of Brits say please or thank you when speaking to AI, some even apologize",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "giuliomagnifico",
+      "publishedAt": "2026-11-08T05:58:20Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.techradar.com/pro/70-percent-of-brits-say-please-or-thank-you-when-speaking-to-ai-and-some-even-apologize",
+      "titleHash": "8f89b0533d01e44ede9f966829be615d3fe6c192fd485b725e11f087d7d3173c",
+      "contentHash": "8f89b0533d01e44ede9f966829be615d3fe6c192fd485b725e11f087d7d3173c",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8253068651434073,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "title": "Anthropic warns that it's close to RSI capability, a.k.a. self-building AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "RickJWagner",
+      "publishedAt": "2026-11-08T02:39:59Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai",
+      "titleHash": "4728ffab168ff65d55a7056a489be079ba00ee4bac8943e6d360b30aef25f3c9",
+      "contentHash": "4728ffab168ff65d55a7056a489be079ba00ee4bac8943e6d360b30aef25f3c9",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.7994547009080153,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "http://togelius.blogspot.com/2026/11/ai-alignment-considered-harmful.html",
+      "title": "AI Alignment Considered Harmful",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pretext",
+      "publishedAt": "2026-11-08T11:19:35Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "http://togelius.blogspot.com/2026/11/ai-alignment-considered-harmful.html",
+      "titleHash": "defd1b6864bb18a07919a864b64d91f24ee70c73662b68a158e59ffd796c10dd",
+      "contentHash": "defd1b6864bb18a07919a864b64d91f24ee70c73662b68a158e59ffd796c10dd",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.868962589205674,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/features/2026-max-richter-weekend-interview/",
+      "title": "One of Classical Music's Biggest Stars Says AI Is Degrading Our Taste",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mancerayder",
+      "publishedAt": "2026-11-08T16:32:55Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bloomberg.com/features/2026-max-richter-weekend-interview",
+      "titleHash": "ce4557fd5a65929b0d4737f03690d83da62b2da728e391a19394f7c075431ed8",
+      "contentHash": "ce4557fd5a65929b0d4737f03690d83da62b2da728e391a19394f7c075431ed8",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9137661067223524,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://rpallas.xyz/good-night-and-good-luck/",
+      "title": "Good Night, and Good Luck: AI, fear and what the job data says",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ibobev",
+      "publishedAt": "2026-11-08T03:14:51Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://rpallas.xyz/good-night-and-good-luck",
+      "titleHash": "1c32c6ab20d4eb77fdc50731940657cc7f8b2e32d1bbd700cfbec04da0cd4a8d",
+      "contentHash": "1c32c6ab20d4eb77fdc50731940657cc7f8b2e32d1bbd700cfbec04da0cd4a8d",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8039396898401183,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.blogto.com/tech/2026/11/canada-ai-translation-tool-making-mistakes/",
+      "title": "Canada's AI translation tool keeps making hilarious mistakes",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jethronethro",
+      "publishedAt": "2026-11-08T18:52:42Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.blogto.com/tech/2026/11/canada-ai-translation-tool-making-mistakes",
+      "titleHash": "7cbafa4aef40c03592514bf52007deb4ba58809447834c6cd03d53c2cd5d7b72",
+      "contentHash": "7cbafa4aef40c03592514bf52007deb4ba58809447834c6cd03d53c2cd5d7b72",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9344919164384426,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.seangoedecke.com/llms-are-terrible-at-designing-ai-systems/",
+      "title": "LLMs are terrible at designing AI systems",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ingve",
+      "publishedAt": "2026-11-08T12:33:58Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.seangoedecke.com/llms-are-terrible-at-designing-ai-systems",
+      "titleHash": "b2027208098432cf870cdd9d53fdc6d7ca1ebe12e963d66ec4889a9d3bdff569",
+      "contentHash": "b2027208098432cf870cdd9d53fdc6d7ca1ebe12e963d66ec4889a9d3bdff569",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8793956714219296,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.businessinsider.com/ai-human-slop-software-security-vulnerabilities-internet-2026-10",
+      "title": "The internet has a human slop problem, and AI is exposing it",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ghernando",
+      "publishedAt": "2026-11-08T05:09:25Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.businessinsider.com/ai-human-slop-software-security-vulnerabilities-internet-2026-10",
+      "titleHash": "1c8cb7698cbbd0a1eceee4ad76e69ff4733f51ed7cefbe1574b8b073109d1025",
+      "contentHash": "1c8cb7698cbbd0a1eceee4ad76e69ff4733f51ed7cefbe1574b8b073109d1025",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8188546206592409,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/08/ai-clog-public-bodies-local-authorities-onslaught-chatbot-generated-correspondence",
+      "title": "AI clog': UK public bodies battle onslaught of chatbot-generated complaints",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "alibarber",
+      "publishedAt": "2026-11-08T13:01:16Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/technology/2026/nov/08/ai-clog-public-bodies-local-authorities-onslaught-chatbot-generated-correspondence",
+      "titleHash": "da1c3ae30ddbf9724c6c9fd65fc55b470474892b35bc9c1af370f25e7f32ffa2",
+      "contentHash": "da1c3ae30ddbf9724c6c9fd65fc55b470474892b35bc9c1af370f25e7f32ffa2",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8832561416118626,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://slopcalculator.com/",
+      "title": "Show HN: Is your product AI slop?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nshelia",
+      "publishedAt": "2026-11-08T18:32:31Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://slopcalculator.com/",
+      "titleHash": "8f09f57ecd2ee2e43a639da89f7606215ecaedd453850134b1166228273b1865",
+      "contentHash": "8f09f57ecd2ee2e43a639da89f7606215ecaedd453850134b1166228273b1865",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.931470524059233,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://aircheck.dev",
+      "title": "Show HN: Aircheck shows every post your agents queued today on one screen",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kyisaiah47",
+      "publishedAt": "2026-11-08T15:04:09Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://aircheck.dev/",
+      "titleHash": "2b35f5536b97ea42dd45c8f382bc058d99c15f78e6aed0c4d114fe4190c75303",
+      "contentHash": "2b35f5536b97ea42dd45c8f382bc058d99c15f78e6aed0c4d114fe4190c75303",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9008438732341781,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+      "title": "Why I will not be using LLMs in my coding",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Risse",
+      "publishedAt": "2026-11-08T12:14:10Z",
+      "engagement": 108,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+      "titleHash": "0dc96550cf4bb5d716741caad669a9a40f14df3f43d5618491f5f68eebf46d13",
+      "contentHash": "0dc96550cf4bb5d716741caad669a9a40f14df3f43d5618491f5f68eebf46d13",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8766063308083916,
+        "engagement": 0.6791421659802079
+      }
+    },
+    {
+      "url": "https://invertedpassion.substack.com/p/modern-llms-have-tiny-gpts-hidden",
+      "title": "Modern LLMs have tiny GPTs hidden inside them",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-11-08T05:27:00Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://invertedpassion.substack.com/p/modern-llms-have-tiny-gpts-hidden",
+      "titleHash": "dc12e34eeb0d67f97605a5d27b870cc98874b23198abd48d81813f0a1f025b36",
+      "contentHash": "dc12e34eeb0d67f97605a5d27b870cc98874b23198abd48d81813f0a1f025b36",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8211680833503812,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50411036",
+      "title": "Ask HN: LLM-Resistant Publishing Strategies",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "As has been discussed at length, LLM companies carried out the most egregious theft of labor [0] and intellectual property [1] in human history.<p>I am one among the many (artists, musicians, writers, developers), who continue to be appaled at tech billionaires profiting from this [2]. As such, I have mostly ceased publishing original content online, while I wait for effective defenses to emerge.<p>The two industry-standards are `robots.txt` and captchas. Neither works: the former is simply ignored, even by industry heavyweights [3]; the latter is trivial to bypass (using AI itself [4], remote solving services [5], or anti-detect browsers&#x2F;impersonators [6] + residential proxies [7]).<p>Emerging strategies include special fonts for creating OCR-resistant documents, tho current options don&#x27;t seem to be effective [8]. Under the &quot;dark forest&quot; theory [9], paywalling or private distribution seem viable options, provided you can trust the recipients to not leak the content; of course, this is a death sentence for the libre ethos of the past 50 years, tho perhaps it was long overdue [10].<p>Please share your thoughts on any alternatives, real or speculative.<p>[0] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49752056 - Microsoft exec called AI scraping &#x27;the largest theft of labor in human history&#x27; (techcrunch.com)<p>[1] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=41275073 - Ex-Google CEO: AI startups can steal IP and hire lawyers to &#x27;clean up the mess&#x27; (theverge.com)<p>[2] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=40297027 - StackOverflow is banning accounts that delete answers in protest against OpenAI (benui.ca)<p>[3] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50401213 - Brave Sells Its Search Index to AI, and Your Website Is Probably in It (searchenginejournal.com)<p>[4] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49930138 - Meta&#x27;s Muse is fantastic for web scraping (sigh.dev)<p>[5] https:&#x2F;&#x2F;captchathecat.com&#x2F;<p>[6] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=42547820 - Curl-Impersonate (github.com&#x2F;lexiforest)<p>[7] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48864252 - An update on residential proxies and the scraper situation (lwn.net)<p>[8] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48873513 - Ghost Font: A font that humans can read but AI cannot (mixfont.com)<p>[9] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47566442 - The Cognitive Dark Forest (ryelang.org)<p>[10] https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50224074 - PHP Foundation &#x27;under-funded&#x27; with one full-time staff member, director says (reuters.com)",
+      "author": "negura",
+      "publishedAt": "2026-11-08T06:57:42Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50411036",
+      "titleHash": "c6902fd3c982efa1295d42a62edee8cfc6bc8b452011c6dbf246468282236dcd",
+      "contentHash": "2619df6d5faa9a238849fe536818f6cd16de34d4b3f59ed30ab6353260cb1318",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8332058248491874,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/RikiyaT/lm_understand-logs",
+      "title": "LLMs can understand and write neural network weights",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "modinfo",
+      "publishedAt": "2026-11-08T20:18:49Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/RikiyaT/lm_understand-logs",
+      "titleHash": "5168fefbbe9b9af3609fbfd11db0efef80d2f459f8269ce84c442cfad619f646",
+      "contentHash": "5168fefbbe9b9af3609fbfd11db0efef80d2f459f8269ce84c442cfad619f646",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9474938624225874,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://joshuadd79.github.io/bring-your-own-brain/",
+      "title": "I made an open-web protocol for local LLM storage sharing",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pathmap",
+      "publishedAt": "2026-11-08T14:38:57Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://joshuadd79.github.io/bring-your-own-brain",
+      "titleHash": "ea645ea192ca8c943a5488687fad4f2009a1175ad9e610ba6c39bc64e35a3a34",
+      "contentHash": "ea645ea192ca8c943a5488687fad4f2009a1175ad9e610ba6c39bc64e35a3a34",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8972087923742398,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50410733",
+      "title": "Interleaf: An experimental tool for LLM assisted knowledge exploration",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "atulvi",
+      "publishedAt": "2026-11-08T05:43:41Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50410733",
+      "titleHash": "529035cdbe931aa6211090aba8093b457328f9c8cd36210cc072b37a68d03d5d",
+      "contentHash": "529035cdbe931aa6211090aba8093b457328f9c8cd36210cc072b37a68d03d5d",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8233691743776432,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
+      "title": "Agents don't suggest the use of LLMs for problems where they should",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pajtai",
+      "publishedAt": "2026-11-09T01:37:58Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
+      "titleHash": "fceebfb9ebad6596e4753578f286069e571e923700e6103ec1816747eac6faa7",
+      "contentHash": "fceebfb9ebad6596e4753578f286069e571e923700e6103ec1816747eac6faa7",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9972767475680892,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://emergencemagazine.org/essay/benchmarking/",
+      "title": "Benchma(r)king: Carpentry with LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dnw",
+      "publishedAt": "2026-11-08T23:19:10Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://emergencemagazine.org/essay/benchmarking",
+      "titleHash": "e7a63ae928810cee621dbca096dffb8d71077c565b15a51b0d941c204166a9d2",
+      "contentHash": "e7a63ae928810cee621dbca096dffb8d71077c565b15a51b0d941c204166a9d2",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9753123190045249,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://djad04.github.io/php2shell-deep-dive/",
+      "title": "PHP2Shell — Deep Dive",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "hoistbypetard",
+      "publishedAt": "2026-11-07T23:51:54.004-06:00",
+      "engagement": 7,
+      "tags": [
+        "programming",
+        "security",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://djad04.github.io/php2shell-deep-dive",
+      "titleHash": "8aecfd5245bc1040f46dc2a5c6c9b602d15971bff91951b66160c604c6101215",
+      "contentHash": "8aecfd5245bc1040f46dc2a5c6c9b602d15971bff91951b66160c604c6101215",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8244554022517792,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://dev.to/gde/being-doing-having-why-50-years-of-senior-craft-lives-in-context-not-code-29dl",
+      "title": "Being, Doing, Having: Why 50 Years of Senior Craft Lives in Context, Not Code",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Why does standard AI code generation try to jump straight to 'Have' without the proper 'Be'? How ladder rungs, the 'Null-State' couch flash, and stand-up comedy explain what separates senior engineers from junior token streamers.",
+      "author": "Randal L. Schwartz",
+      "publishedAt": "2026-11-06T23:51:03Z",
+      "engagement": 35,
+      "tags": [
+        "ai",
+        "programming",
+        "architecture",
+        "productivity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/being-doing-having-why-50-years-of-senior-craft-lives-in-context-not-code-29dl",
+      "titleHash": "56bf373d5934303c59b42a430fc7f5033db7201e7e78ec9a275f2b556141a7c7",
+      "contentHash": "ea15313c18147cbf58a7e87b26e00a66021b1db80c608cf606b5526395b0259a",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.6175594448436349,
+        "engagement": 0.5187675002557625
+      }
+    },
+    {
+      "url": "https://dev.to/aws-builders/how-to-master-aws-for-ai-3la4",
+      "title": "How to Master AWS for AI?",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Ciao Amici 👋  Every hiking trail in the Alps has a map at the trailhead. A good one shows you the...",
+      "author": "Mursal Furqan Kumbhar",
+      "publishedAt": "2026-11-07T11:48:28Z",
+      "engagement": 27,
+      "tags": [
+        "machinelearning",
+        "aws",
+        "ai",
+        "beginners",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/aws-builders/how-to-master-aws-for-ai-3la4",
+      "titleHash": "9f5b0bb17043aabfccb857ddc500cc0d695ce6a44b024c3c4d6a216b1bde5f82",
+      "contentHash": "b85ee8cf1a1b730a206bcea65eb9776dc63e791d58922de6c3ec1513c082084f",
+      "score": 54,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.69289977449346,
+        "engagement": 0.4823860104474064
+      }
+    },
+    {
+      "url": "https://dev.to/cmdsiraj/building-an-explainable-icd-10-pcs-recommender-with-constrained-llm-traversal-3ie9",
+      "title": "Building an Explainable ICD-10-PCS Recommender with Constrained LLM Traversal",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "During my internship at Conifer Health (Tenet Health), I got a task on a POC. I was working on a...",
+      "author": "siraj",
+      "publishedAt": "2026-11-03T01:18:53Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "healthcare",
+        "architecture",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/cmdsiraj/building-an-explainable-icd-10-pcs-recommender-with-constrained-llm-traversal-3ie9",
+      "titleHash": "83d837d304f759a0fcef188057a8dda3c457344f1d4004aabc9212e59b77229c",
+      "contentHash": "d6b10ffd443ac18497c1e97239e1bbbbce8cd5098d636d69953c29a4a9277937",
+      "score": 47,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.24855695465916117,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/jon_at_backboardio/we-built-our-own-inference-engine-and-put-it-up-against-vllm-and-sglang-on-four-models-and-three-12b",
+      "title": "We built our own inference engine and put it up against vLLM and SGLang on four models and three kinds of GPU.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "357 seconds.  That's how long the median request waited for its first token when we ran GLM-5.3 on...",
+      "author": "Jonathan Murray",
+      "publishedAt": "2026-11-07T17:11:02Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "llm",
+        "machinelearning",
+        "performance",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/jon_at_backboardio/we-built-our-own-inference-engine-and-put-it-up-against-vllm-and-sglang-on-four-models-and-three-12b",
+      "titleHash": "b13a06e5e53d94a3c373b43a14369fff6946cb5c2403b4baf067ea2058f67559",
+      "contentHash": "770271d14ca25d6cd908e8f22ad258b47d0a95dbf09dc28c785ec8eb0f2dc17c",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.7297057876836469,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "title": "NousResearch/Arete-27B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 294 likes · 1747 downloads",
+      "engagement": 294,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/NousResearch/Arete-27B",
+      "titleHash": "4ee5177f471410bc32bf6a027ebe32639337f9d6750ef3a947afc66ee1a6ad9c",
+      "contentHash": "b3e47634d5a3ccfec3d48d24ec9297b8576614ff601114f04a4949a20d989999",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8232740053260543
+      }
+    },
+    {
+      "url": "https://huggingface.co/PrunaAI/P-H3-Image-Comfy",
+      "title": "PrunaAI/P-H3-Image-Comfy",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-to-image · 253 likes · 625136 downloads",
+      "engagement": 253,
+      "tags": [
+        "model",
+        "text-to-image"
+      ],
+      "normalizedUrl": "https://huggingface.co/PrunaAI/P-H3-Image-Comfy",
+      "titleHash": "bbf1d9e5adce142f2ed7eb2cfc77b4f1d6b54d0ca1e3e4beee694a36d1703f9f",
+      "contentHash": "9bccf4921aacd959ad53b45c84e89dc642421755c1e5ce263c77f68a8ea69bf9",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8016112388733126
+      }
+    },
+    {
+      "url": "https://huggingface.co/Viggle/Viggle-Remake",
+      "title": "Viggle/Viggle-Remake",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "video-to-video · 195 likes · 76308 downloads",
+      "engagement": 195,
+      "tags": [
+        "model",
+        "video-to-video"
+      ],
+      "normalizedUrl": "https://huggingface.co/Viggle/Viggle-Remake",
+      "titleHash": "2cb95abe5dc3be58dd3ec6ccd1a9dbb6ca850db66bef16cc719604544fbc87ca",
+      "contentHash": "13dbf9b9f3129f207f400f2144892caba08bb1b0a18139c3a0d7ba5ebf9ae02a",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7640853571188253
+      }
+    }
+  ]
+}
