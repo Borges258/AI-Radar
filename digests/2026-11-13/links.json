@@ -1,0 +1,1006 @@
+{
+  "date": "2026-11-13",
+  "stats": {
+    "scraped": 170,
+    "deduped": 36,
+    "scored": 36
+  },
+  "summary": "今日资讯聚焦AI前沿动态与实用工具。值得关注Inception Labs关停其扩散模型API的消息，以及中国前沿AI模型中出现的出口管制GPU指纹争议。同时，针对旧设备运行的LLM优化方案、多智能体隐私测试工具AgentLeak，以及关于智能体团队效率的深度研究，为开发者提供了新的视角与实践参考。",
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50470335",
+      "title": "Inception's Diffusion LLM API Is Shutting Down",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Sad to hear, but I got an email from hello@inceptionlabs.ai announcing the Mercury API that hosts their diffusion models is shutting down.<p>No blog post yet but I assume one is coming.<p>Here is the full email:\n```\nHi,<p>We want to share an important update regarding the Mercury API. After careful consideration, we’ve made the decision to wind down the service. The Mercury API will remain fully available through December 28, 2026.<p>After this date, you will no longer have access to the service or any data submitted to the platform. We encourage you to retrieve any necessary data before then. If you have questions or need assistance with the transition, please reply to this email. We’re happy to help.<p>It’s been a privilege building Mercury alongside customers like you. Your feedback and ideas have been invaluable in shaping the platform, and we’re deeply grateful for your support and trust.<p>Warmly,\nThe Inception Team\n```<p>Also a shorter message on their discord from Yannis Miraoui:\n```\nHi everyone, API access to all Mercury models will end on December 28, 2026.\nMercury models will no longer be available from Nov 8 via OpenRouter.<p>Thank you for building with Mercury and for being part of this from the start!\nPlease contact us if you have any additional questions.\n```",
+      "author": "_matthew_",
+      "publishedAt": "2026-11-12T16:51:58Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50470335",
+      "titleHash": "2ef105672dc3743c267afa1f4b284e0612459f192462afb0bfe7a6966692e3b2",
+      "contentHash": "2a426dd004aab00e9652cc6e6700c5804cb9026e86d62680733fa30b77a4dfed",
+      "score": 80,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9082058426341657,
+        "engagement": 0.38204267855941265
+      },
+      "rank": 1,
+      "reasons": [
+        "关键API变动，需评估影响"
+      ],
+      "overview": "Inception Labs宣布其托管扩散模型的Mercury API即将停止服务，虽然目前官方博客尚未发布正式公告，但邮件通知已证实这一变动，影响相关模型的使用。"
+    },
+    {
+      "url": "https://dev.to/p0rt/five-of-my-eight-agents-left-out-the-same-caveat-a-vote-would-have-made-it-official-d5j",
+      "title": "Five of My Eight Agents Left Out the Same Caveat. A Vote Would Have Made It Official.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A 260-configuration study at matched token budgets: agent teams changed the score by 0.0% on average. When a swarm is worth it, and what my agents got wrong.",
+      "author": "Sergei Parfenov",
+      "publishedAt": "2026-11-12T17:10:34Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "machinelearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/p0rt/five-of-my-eight-agents-left-out-the-same-caveat-a-vote-would-have-made-it-official-d5j",
+      "titleHash": "056faf06efed78750c0592ff669cbc8bcf8fa85049bb4d86a11e4a598b3f2d85",
+      "contentHash": "12f9dfe1f0660fad677056c1a5d12ae95cb8a7ae40755d401a0535c2a1374bfe",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.9109203258568006,
+        "engagement": 0.3010299956639812
+      },
+      "rank": 2,
+      "reasons": [
+        "揭示多智能体真实效能"
+      ],
+      "overview": "一项针对260种配置的研究显示，在相同令牌预算下，多智能体团队并未显著提升任务得分。文章分析了何时使用智能体集群有价值，并指出了现有系统常见的错误。"
+    },
+    {
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "firloop",
+      "publishedAt": "2026-11-12T21:56:11Z",
+      "engagement": 185,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://unemploymentlabs.com/checkpoint-forensics",
+      "titleHash": "41634d1516624d9af1107a23eb1abf4658923c4c85e527b49728e6af178a6019",
+      "contentHash": "41634d1516624d9af1107a23eb1abf4658923c4c85e527b49728e6af178a6019",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9536367585094666,
+        "engagement": 0.7565043147393055
+      },
+      "rank": 3,
+      "reasons": [
+        "关注地缘科技合规风险"
+      ],
+      "overview": "新闻指出中国前沿AI模型中带有出口管制GPU的数字指纹，暗示这些模型可能使用了受美国限制的硬件进行训练，引发了关于技术合规与供应链安全的热议。"
+    },
+    {
+      "url": "https://github.com/hyperionaidev/smolmaxxing/",
+      "title": "I'm making LLMs work on small and old devices",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mrashad74",
+      "publishedAt": "2026-11-12T15:23:10Z",
+      "engagement": 286,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/hyperionaidev/smolmaxxing",
+      "titleHash": "5f43c804598cc76cb65094c86d3c38f2f9b282fe55b02efda3f8e59f60d7e954",
+      "contentHash": "5f43c804598cc76cb65094c86d3c38f2f9b282fe55b02efda3f8e59f60d7e954",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8953574545884515,
+        "engagement": 0.8192939655779975
+      },
+      "rank": 4,
+      "reasons": [
+        "低门槛运行大模型方案"
+      ],
+      "overview": "该项目致力于让大型语言模型能在小型及老旧设备上高效运行，通过优化技术降低对高端硬件的依赖，提升AI技术在资源受限环境下的可用性与普及率。"
+    },
+    {
+      "url": "https://github.com/Privatris/AgentLeak",
+      "title": "Show HN: AgentLeak – open-source privacy testing for multi-agent LLM systems",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yagobski",
+      "publishedAt": "2026-11-13T01:36:36Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Privatris/AgentLeak",
+      "titleHash": "5a8390766b1b52ab270914936a3f628f0f6add240362b54882b19920b1a81746",
+      "contentHash": "5a8390766b1b52ab270914936a3f628f0f6add240362b54882b19920b1a81746",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9879665653486644,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 5,
+      "reasons": [
+        "多智能体系统安全必备"
+      ],
+      "overview": "AgentLeak是一个开源工具，专门用于对多智能体LLM系统进行隐私测试，帮助开发者识别潜在的数据泄露风险，增强智能体架构的安全性。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "firloop",
+      "publishedAt": "2026-11-12T21:56:11Z",
+      "engagement": 185,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://unemploymentlabs.com/checkpoint-forensics",
+      "titleHash": "41634d1516624d9af1107a23eb1abf4658923c4c85e527b49728e6af178a6019",
+      "contentHash": "41634d1516624d9af1107a23eb1abf4658923c4c85e527b49728e6af178a6019",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9536367585094666,
+        "engagement": 0.7565043147393055
+      }
+    },
+    {
+      "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+      "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "anigbrowl",
+      "publishedAt": "2026-11-12T21:09:49Z",
+      "engagement": 113,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+      "titleHash": "687a80f2b51ea5729600d42ca80e6524a3e9ff34b62e37bf4fd33ff5819cdc06",
+      "contentHash": "687a80f2b51ea5729600d42ca80e6524a3e9ff34b62e37bf4fd33ff5819cdc06",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9465684403018292,
+        "engagement": 0.6856349504454909
+      }
+    },
+    {
+      "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "title": "Why You Should Expect an AI Crash",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "toomuchtodo",
+      "publishedAt": "2026-11-12T23:08:31Z",
+      "engagement": 83,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "titleHash": "49d9c0231f5cc4dee101d8dcecb042c4e32f2f8982ae65c95c3fdee87ce18713",
+      "contentHash": "49d9c0231f5cc4dee101d8dcecb042c4e32f2f8982ae65c95c3fdee87ce18713",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9647690818180131,
+        "engagement": 0.6414264286872938
+      }
+    },
+    {
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sroussey",
+      "publishedAt": "2026-11-12T23:06:17Z",
+      "engagement": 75,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "titleHash": "6b1e8543b0c110061f7c0a69efb4e35bccbf72f0b0ae5de532fb2e580295f5aa",
+      "contentHash": "6b1e8543b0c110061f7c0a69efb4e35bccbf72f0b0ae5de532fb2e580295f5aa",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9644234284212551,
+        "engagement": 0.6269378640935971
+      }
+    },
+    {
+      "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+      "title": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thunderbong",
+      "publishedAt": "2026-11-13T00:38:41Z",
+      "engagement": 57,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+      "titleHash": "1a230608e3a873def23c2d4221094c2f3332597595621a381664b623b79bbde3",
+      "contentHash": "1a230608e3a873def23c2d4221094c2f3332597595621a381664b623b79bbde3",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.978828146516562,
+        "engagement": 0.5878093311876458
+      }
+    },
+    {
+      "url": "https://yourairedlines.com",
+      "title": "Show HN: AI Red Lines – write down what would make you act on AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ap11071",
+      "publishedAt": "2026-11-12T14:31:21Z",
+      "engagement": 33,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://yourairedlines.com/",
+      "titleHash": "315e664ea14287d729178950da45e9ba0d68d6eef668cfae81fa37a770d10bf3",
+      "contentHash": "315e664ea14287d729178950da45e9ba0d68d6eef668cfae81fa37a770d10bf3",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8879442920310887,
+        "engagement": 0.5104929723474184
+      }
+    },
+    {
+      "url": "https://blog.cip.org/p/ai-models-know-what-women-peace-and",
+      "title": "AI Models Know What Women, Peace and Security Is. They Just Don't Bring It Up",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "frantj",
+      "publishedAt": "2026-11-12T17:32:49Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.cip.org/p/ai-models-know-what-women-peace-and",
+      "titleHash": "f0b866b506055137339c8c02fb1f044689fb88d335ab94995d61aba7b2b5ff5d",
+      "contentHash": "f0b866b506055137339c8c02fb1f044689fb88d335ab94995d61aba7b2b5ff5d",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9141781519755949,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+      "title": "Hugging Face CEO vows to keep fighting for open-source AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "01-_-",
+      "publishedAt": "2026-11-12T18:17:29Z",
+      "engagement": 18,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit",
+      "titleHash": "d3a87ae705bb2a32e002f934034ce09aa69351a1217f8985c4220f4ebfb764da",
+      "contentHash": "d3a87ae705bb2a32e002f934034ce09aa69351a1217f8985c4220f4ebfb764da",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9207534172058904,
+        "engagement": 0.4262512003176096
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/12/rise-and-fall-of-nvidia-ceo-jensen-huang-profile",
+      "title": "Washing dishes at Denny's to rockstar of AI, the rise and fall of Jensen Huang",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ljf",
+      "publishedAt": "2026-11-12T18:15:53Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/technology/2026/nov/12/rise-and-fall-of-nvidia-ceo-jensen-huang-profile",
+      "titleHash": "90d2a1bdebe4f1279c72d39d6cd564eec49a3082c1158b45f9ca4dde69db28e3",
+      "contentHash": "90d2a1bdebe4f1279c72d39d6cd564eec49a3082c1158b45f9ca4dde69db28e3",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9205170706428736,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://twitter.com/willdepue/status/2120992457630326841",
+      "title": "Top Chinese AI labs built their newest models on Nvidia's Blackwell chips",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "leroy_masochist",
+      "publishedAt": "2026-11-12T21:49:52Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/willdepue/status/2120992457630326841",
+      "titleHash": "e06fe86058d160cd0736605d76201e260e909df166f44602913b71c86b88f864",
+      "contentHash": "e06fe86058d160cd0736605d76201e260e909df166f44602913b71c86b88f864",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9526707241053777,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://podqi.com/research/ai-search-brand-risk",
+      "title": "AI search is recommending fake retail websites",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jesse1xu",
+      "publishedAt": "2026-11-12T19:46:22Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://podqi.com/research/ai-search-brand-risk",
+      "titleHash": "4f45675bccd61c1fc0048b11d6ea455d1f8bdef9a44eb261e3f8a26b45182e8d",
+      "contentHash": "4f45675bccd61c1fc0048b11d6ea455d1f8bdef9a44eb261e3f8a26b45182e8d",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9339787281036296,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "title": "Reverse Engineering My Coway Air Purifier to Ditch the Cloud",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "scottjg",
+      "publishedAt": "2026-11-12T22:03:09Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
+      "titleHash": "f67051a97aac8e1544a5278cda682523d3e3cca2b7922f83818a2e0e4aaecdef",
+      "contentHash": "f67051a97aac8e1544a5278cda682523d3e3cca2b7922f83818a2e0e4aaecdef",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9547033361616803,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.motherjones.com/politics/2026/11/google-ai-protests-students-parents-families-new-york-nationwide-search-lawsuit/",
+      "title": "Kids and Parents Are Protesting Google's Classroom AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-11-12T23:41:14Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.motherjones.com/politics/2026/11/google-ai-protests-students-parents-families-new-york-nationwide-search-lawsuit",
+      "titleHash": "425643644a615fa463b9e56e2c3ad82b42734593e5b9a998d8420d67d7383b1a",
+      "contentHash": "425643644a615fa463b9e56e2c3ad82b42734593e5b9a998d8420d67d7383b1a",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9698468694656247,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-faced-pressure-to-boost-its-ai-backstop-before-huang-exit",
+      "title": "Nvidia Faced Pressure to Boost Its AI Backstop Before Huang Exit",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mfiguiere",
+      "publishedAt": "2026-11-12T21:53:21Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-faced-pressure-to-boost-its-ai-backstop-before-huang-exit",
+      "titleHash": "287187f5b1e52cfa7c9295f82476f2d85604d42182ea710b7cec8516cb60fd54",
+      "contentHash": "287187f5b1e52cfa7c9295f82476f2d85604d42182ea710b7cec8516cb60fd54",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9532033238321993,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/human-centered-ai-product-design",
+      "title": "Smarter AI Product Design Centers the User's Real Needs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "rbanffy",
+      "publishedAt": "2026-11-12T14:36:06Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://spectrum.ieee.org/human-centered-ai-product-design",
+      "titleHash": "8eb03565e07aae585eb3a9adbbf485dd539709a875488811e654d213888fa5cc",
+      "contentHash": "8eb03565e07aae585eb3a9adbbf485dd539709a875488811e654d213888fa5cc",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8886212887299246,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://medium.com/vibecodingpub/the-end-of-human-code-is-ai-taking-us-back-to-punch-cards-55ea032075d3",
+      "title": "The End of Human Code: Is AI Taking Us Back to Punch Cards?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mailalirezaa",
+      "publishedAt": "2026-11-12T12:47:27Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://medium.com/vibecodingpub/the-end-of-human-code-is-ai-taking-us-back-to-punch-cards-55ea032075d3",
+      "titleHash": "41063df30225f39de9ca5d6fa04ef8eaaf55b6a3f7d9fd452ca7cb8c51bc13c2",
+      "contentHash": "41063df30225f39de9ca5d6fa04ef8eaaf55b6a3f7d9fd452ca7cb8c51bc13c2",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8732642267928942,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50470199",
+      "title": "What's Going on at Inception AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Got an email from Inception AI about them spinning down their API service for the Mercury models completely. Big shift from their announcements of Mercury 3 less than a month ago.<p>Anyone know what&#x27;s going on?",
+      "author": "sampaz",
+      "publishedAt": "2026-11-12T16:43:40Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50470199",
+      "titleHash": "cc62c83df4f2982d8736b0981d5bf94d6c693d26d23c693fcbc89922275e44cb",
+      "contentHash": "5bdf420c16cb3a1d048be01100b6a4daa2ff051abe79067d8b6e02aac26b81f4",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9069971550116869,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://mirendil.com/news/series-a/",
+      "title": "Mirendil raises $1B Series A led by Kleiner Perkins to democratize AI R&D",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dvaplima",
+      "publishedAt": "2026-11-12T23:10:40Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://mirendil.com/news/series-a",
+      "titleHash": "e68452404ccfaa267080766a35ed7109ecb1de71d021a0427b0c4bbea1337e39",
+      "contentHash": "e68452404ccfaa267080766a35ed7109ecb1de71d021a0427b0c4bbea1337e39",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9651019547355266,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/hyperionaidev/smolmaxxing/",
+      "title": "I'm making LLMs work on small and old devices",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mrashad74",
+      "publishedAt": "2026-11-12T15:23:10Z",
+      "engagement": 286,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/hyperionaidev/smolmaxxing",
+      "titleHash": "5f43c804598cc76cb65094c86d3c38f2f9b282fe55b02efda3f8e59f60d7e954",
+      "contentHash": "5f43c804598cc76cb65094c86d3c38f2f9b282fe55b02efda3f8e59f60d7e954",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8953574545884515,
+        "engagement": 0.8192939655779975
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50470335",
+      "title": "Inception's Diffusion LLM API Is Shutting Down",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Sad to hear, but I got an email from hello@inceptionlabs.ai announcing the Mercury API that hosts their diffusion models is shutting down.<p>No blog post yet but I assume one is coming.<p>Here is the full email:\n```\nHi,<p>We want to share an important update regarding the Mercury API. After careful consideration, we’ve made the decision to wind down the service. The Mercury API will remain fully available through December 28, 2026.<p>After this date, you will no longer have access to the service or any data submitted to the platform. We encourage you to retrieve any necessary data before then. If you have questions or need assistance with the transition, please reply to this email. We’re happy to help.<p>It’s been a privilege building Mercury alongside customers like you. Your feedback and ideas have been invaluable in shaping the platform, and we’re deeply grateful for your support and trust.<p>Warmly,\nThe Inception Team\n```<p>Also a shorter message on their discord from Yannis Miraoui:\n```\nHi everyone, API access to all Mercury models will end on December 28, 2026.\nMercury models will no longer be available from Nov 8 via OpenRouter.<p>Thank you for building with Mercury and for being part of this from the start!\nPlease contact us if you have any additional questions.\n```",
+      "author": "_matthew_",
+      "publishedAt": "2026-11-12T16:51:58Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50470335",
+      "titleHash": "2ef105672dc3743c267afa1f4b284e0612459f192462afb0bfe7a6966692e3b2",
+      "contentHash": "2a426dd004aab00e9652cc6e6700c5804cb9026e86d62680733fa30b77a4dfed",
+      "score": 80,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9082058426341657,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+      "title": "LLM-Anthropic 0.31",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "millspore",
+      "publishedAt": "2026-11-12T08:48:58Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://simonwillison.net/2026/Nov/9/llm-anthropic",
+      "titleHash": "bf11f7d09c79b76193a4627b5fd1e21b9c5e059dfc7eaee3f93969461c9d15ff",
+      "contentHash": "bf11f7d09c79b76193a4627b5fd1e21b9c5e059dfc7eaee3f93969461c9d15ff",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.8404801588804502,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://ecosistemastartup.com/spectra-comprime-llms-3x-en-menos-de-50-mb-de-ram/",
+      "title": "Compress any LLM 3x in one click, near-lossless, vLLM successor",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "NeuraCryption",
+      "publishedAt": "2026-11-12T16:53:48Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ecosistemastartup.com/spectra-comprime-llms-3x-en-menos-de-50-mb-de-ram",
+      "titleHash": "e90668406e5a7b778a508e917f4918f2d905768dc7d770411bebb0fd06043730",
+      "contentHash": "e90668406e5a7b778a508e917f4918f2d905768dc7d770411bebb0fd06043730",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9084730394743741,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://wici.ai/article/running-800b-models-with-inferssd",
+      "title": "Running 800B-parameter LLMs on consumer hardware with InferSSD",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andyxukq",
+      "publishedAt": "2026-11-12T17:43:16Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://wici.ai/article/running-800b-models-with-inferssd",
+      "titleHash": "c271478b2f7f729df2e146504de583b6b0ee815f7c469d2b8697c69b9ee3bf6d",
+      "contentHash": "c271478b2f7f729df2e146504de583b6b0ee815f7c469d2b8697c69b9ee3bf6d",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.915712247112228,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://cro.sh/specmaxx/",
+      "title": "Show HN: Pick your dream LLM H/W setup and simulate its throughput",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Also, you can share your simulation with query parameters, ex) <a href=\"https:&#x2F;&#x2F;cro.sh&#x2F;specmaxx&#x2F;?m=deepseek-ai&#x2F;DeepSeek-V4.1-Flash&amp;d=apple-m5-ultra-80c&amp;cap=1&amp;nodes=2&amp;xl=thunderbolt-5-rdma-macos-26-2&amp;tp=2&amp;olt=ssd&amp;sd=dspark&amp;sdu=code\" rel=\"nofollow\">https:&#x2F;&#x2F;cro.sh&#x2F;specmaxx&#x2F;?m=deepseek-ai&#x2F;DeepSeek-V4.1-Flash&amp;d...</a>",
+      "author": "namjh",
+      "publishedAt": "2026-11-12T11:05:09Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://cro.sh/specmaxx",
+      "titleHash": "deebfd52ad41eb8d8ae60a813053cebc140b6f8037821e9754a7ea66ab2375af",
+      "contentHash": "fd66729e26dd3af2969e362c520223c38cc5715112fcc602771e57ca8f45f859",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.859047366869816,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/ffseika0304/shanhai-gateway",
+      "title": "Show HN: ShanHaiGateway – multi-upstream LLM gateway in Go",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ffseika0304",
+      "publishedAt": "2026-11-12T09:13:38Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/ffseika0304/shanhai-gateway",
+      "titleHash": "fe28d72332a07d5288fbb6ef93b25e865f9821ae99f563101139f22e9bc8cabc",
+      "contentHash": "fe28d72332a07d5288fbb6ef93b25e865f9821ae99f563101139f22e9bc8cabc",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8438131898598773,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+      "title": "Making Immersive LLM Chat Experiences More Accessible",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "speckx",
+      "publishedAt": "2026-11-12T13:29:37Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible",
+      "titleHash": "de3be472ff8533135ed038fd1f3cf1706d6cd55a6a604f2c984d7389f4fd9ff9",
+      "contentHash": "de3be472ff8533135ed038fd1f3cf1706d6cd55a6a604f2c984d7389f4fd9ff9",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8791924760826204,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/Privatris/AgentLeak",
+      "title": "Show HN: AgentLeak – open-source privacy testing for multi-agent LLM systems",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yagobski",
+      "publishedAt": "2026-11-13T01:36:36Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Privatris/AgentLeak",
+      "titleHash": "5a8390766b1b52ab270914936a3f628f0f6add240362b54882b19920b1a81746",
+      "contentHash": "5a8390766b1b52ab270914936a3f628f0f6add240362b54882b19920b1a81746",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9879665653486644,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/saystreet/demo",
+      "title": "Show HN: SayStreet – Voice shopping for blind users; the LLM never touches money",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dminglv",
+      "publishedAt": "2026-11-13T00:35:25Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/saystreet/demo",
+      "titleHash": "d7a2b4d15fb7c81ddea1cb123bee46ffbc1aecc336b2da82c51363bb7166c8d3",
+      "contentHash": "d7a2b4d15fb7c81ddea1cb123bee46ffbc1aecc336b2da82c51363bb7166c8d3",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9783152362534948,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://dev.to/ben/long-live-rails-3p21",
+      "title": "Long Live Rails",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "When DHH took the stage at Rails World 2026 and talked openly about going \"pencils down\" on...",
+      "author": "Ben Halpern",
+      "publishedAt": "2026-11-12T15:30:50Z",
+      "engagement": 95,
+      "tags": [
+        "rails",
+        "ruby",
+        "rust",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/ben/long-live-rails-3p21",
+      "titleHash": "46732775b465d0cea1535c5e72439242dd5375ecb19db4959dca16ab7acca87e",
+      "contentHash": "4419a18ebc97b315b78d723bf38d537957ae65f2fb4d5f8eb89985bc3dd462f4",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8964595290782397,
+        "engagement": 0.6607570776798561
+      }
+    },
+    {
+      "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+      "title": "MCP Is Dead Simple. And That's Exactly the Problem",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "What exactly is MCP? Is it some mysterious technology that requires secret knowledge to implement?...",
+      "author": "Sylwia Laskowska",
+      "publishedAt": "2026-11-12T08:14:36Z",
+      "engagement": 136,
+      "tags": [
+        "mcp",
+        "ai",
+        "agents",
+        "typescript",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+      "titleHash": "053d3911d8cb3a568b692da65a72acf3f5bf1fba8946a3e7ad1212c2c4197e69",
+      "contentHash": "d18df7d9eb7c2b82128ed03579f213c3107ffff1aadc3a7e5d7812c8367472b6",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8358583736905222,
+        "engagement": 0.7122401890521356
+      }
+    },
+    {
+      "url": "https://dev.to/annavi11arrea1/ultimate-ai-roast-168b",
+      "title": "Ultimate AI Roast! 😂😹",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I asked my favorite AI to Roast me. Thanks @trickell for this idea.   You need to try this with your...",
+      "author": "Anna Villarreal",
+      "publishedAt": "2026-11-12T04:55:27Z",
+      "engagement": 58,
+      "tags": [
+        "ai",
+        "webdev",
+        "claude",
+        "cli",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/annavi11arrea1/ultimate-ai-roast-168b",
+      "titleHash": "1cfca38583c601d768736d2084f3e2e33db5228d5f5b48669762b11ae57c8113",
+      "contentHash": "558020e4a88103da2ff66436e2904fa45531ffbe95f880af37a838ae7eafeb09",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8095717670011393,
+        "engagement": 0.5902840038807148
+      }
+    },
+    {
+      "url": "https://dev.to/dannwaneri/ai-code-is-unmaintainable-so-is-ours-3mek",
+      "title": "AI Code Is Unmaintainable? So Is Ours.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "If you’ve been in the software industry for any length of time, you’ve probably heard people talking...",
+      "author": "Daniel Nwaneri",
+      "publishedAt": "2026-11-11T15:59:00Z",
+      "engagement": 47,
+      "tags": [
+        "ai",
+        "programming",
+        "softwareengineering",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/dannwaneri/ai-code-is-unmaintainable-so-is-ours-3mek",
+      "titleHash": "0d0367226eb8f8b5ad25fcd2a598c563deb77a1a102ddadd514b4ca3bb0c7fb1",
+      "contentHash": "2bda39fbf69f4e987cbf340cc3eb0d0fa7bc0e5b3b7ad4d8ce7e1850498b2387",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.7147432955287235,
+        "engagement": 0.5604137457918624
+      }
+    },
+    {
+      "url": "https://dev.to/p0rt/five-of-my-eight-agents-left-out-the-same-caveat-a-vote-would-have-made-it-official-d5j",
+      "title": "Five of My Eight Agents Left Out the Same Caveat. A Vote Would Have Made It Official.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A 260-configuration study at matched token budgets: agent teams changed the score by 0.0% on average. When a swarm is worth it, and what my agents got wrong.",
+      "author": "Sergei Parfenov",
+      "publishedAt": "2026-11-12T17:10:34Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "machinelearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/p0rt/five-of-my-eight-agents-left-out-the-same-caveat-a-vote-would-have-made-it-official-d5j",
+      "titleHash": "056faf06efed78750c0592ff669cbc8bcf8fa85049bb4d86a11e4a598b3f2d85",
+      "contentHash": "12f9dfe1f0660fad677056c1a5d12ae95cb8a7ae40755d401a0535c2a1374bfe",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.9109203258568006,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "title": "unsloth/Qwen3.8-27B-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "model · 5810 likes · 6097719 downloads",
+      "engagement": 5810,
+      "tags": [
+        "model",
+        "ml"
+      ],
+      "normalizedUrl": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "titleHash": "f79aeffd6cf8759217e1c7139ab0d4cdc88b11b8fdef93dcc0ef8b31b1d50917",
+      "contentHash": "e4243aae9a79c46a003a7304ce3fab60a5d66d3b559c6cc58fc317c5415d7129",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "title": "Zyphra/ZONOS3-Mini",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-to-speech · 232 likes · 8543 downloads",
+      "engagement": 232,
+      "tags": [
+        "model",
+        "text-to-speech"
+      ],
+      "normalizedUrl": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "titleHash": "5a436165d56abc11578eda0349552fa2a8cb966d5a10f58b01b5cb814841b053",
+      "contentHash": "513994886c7d8f3942ccd17a2c7ef07e2dd51df485d5e60ee399b2451ef1933c",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7891186403420063
+      }
+    },
+    {
+      "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
+      "title": "tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 210 likes · 3738 downloads",
+      "engagement": 210,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
+      "titleHash": "0acaf84bace6f9f0aa2ac0f6eca5b2e36161c852fdf91ebea9ce5aefe95611b8",
+      "contentHash": "fe916fe8912f6999fe5022d8daa17978c30d27a752cb2a66dadf856bf069155a",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7747608184325642
+      }
+    }
+  ]
+}
