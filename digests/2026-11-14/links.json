@@ -1,0 +1,1571 @@
+{
+  "date": "2026-11-14",
+  "stats": {
+    "scraped": 170,
+    "deduped": 62,
+    "scored": 62
+  },
+  "summary": "今日焦点涵盖AI基础设施与前沿探索。Langfuse推出基于Rust的开源网关，强化LLM调用追踪与可观测性；MeditionBench尝试用AI缓解冲突与极化；学术研究聚焦LLM路由优化、伊斯兰教法计算模拟及架构记录框架，展现AI在工程、社会及理论领域的多维突破。",
+  "recommendations": [
+    {
+      "url": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+      "title": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, this is Max, Marc and Clemens, co-founders of Langfuse, the open source tool for agent &amp; observability &amp; evals (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse</a>).<p>It’s been a minute since our last Show HN in August 2023 (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37310070\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37310070</a>) - we’ve been busy building out and serving our tracing &amp; eval pieces over the past years and have been very lucky to build a successful company and open source project around it. Today, we are happy to show the beta of Langfuse AI Gateway: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse&#x2F;tree&#x2F;main&#x2F;ai-gateway\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse&#x2F;tree&#x2F;main&#x2F;ai-gateway</a>. You may ask, why an AI Gateway as our second product: it’s been one our community’s strongest asks + integration pattern that we’ve seen. We want to offer a scalable, reliable and secure way to solve for the gateway use case in the same way that we’ve done with tracing&#x2F;evals over the past years. And we’ve recently grown our team with some excellent folks - expect to see more bigger bets from us.<p>Our observability SDKs currently see the code you instrument. Much of a company&#x27;s model traffic runs through code that is not or cannot be easily instrumented: coding agents like Pi, Claude Code and Codex, internal tools, scripts etc. Third party gateways are already popular ways to emit traces to Langfuse and we’re happy to now ship one natively.<p>You change your base URL and your API key. Langfuse AI Gateway forwards the native request with a provider key that does not need to be distributed across the team. Right now, it doesn&#x27;t translate between APIs, responses are relayed unchanged. This was a conscious decision to ensure stability for gateway users, as translation between e.g. OpenAI responses and Anthropic messages are imperfect and might lead to subtle failures in your agents.<p>If you pass a traceparent header, the call lands inside your existing Langfuse traces.<p>You can try by docker composing langfuse up and then on to http:&#x2F;&#x2F;localhost:3000<p>--<p>git clone <a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse.git\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse.git</a><p>cd langfuse<p>docker compose up<p>--<p>On Cloud, each call becomes a Langfuse generation with tokens, cost, latency and time to first token. Prompts and outputs are recorded if you opt in. If you self-hosted you can also track nothing, not even metadata.<p>Some details:<p>- Written in Rust. Stateless, with no database; it talks only to the Langfuse platform and the providers.<p>- 22MB Docker image. Under 3ms median overhead with tracing on, 1,000+ concurrent streams on 2 vCPUs.<p>- MIT licensed. Self-host it with Docker Compose or Helm or use our Cloud version.<p>- Your provider keys and contracts. We don&#x27;t resell tokens.<p>What’s next? \n- Budget caps per key, user, team<p>- Custom model aliases and fallbacks<p>- Guardrails<p>- PII redaction<p>- SCIM user provisioning<p>We’ll be around &amp; looking forward to all questions &amp; comments",
+      "author": "clemo_ra",
+      "publishedAt": "2026-11-13T15:10:20Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+      "titleHash": "98c11eaffeda774040a9b6093adf5855eef98440144b1500af70c4a895f88d66",
+      "contentHash": "9100f4c1b0bdf309143c5958b5103c08ff1a8be8331ac6da70d768930791dede",
+      "score": 83,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8953699220351163,
+        "engagement": 0.3333333333333333
+      },
+      "rank": 1,
+      "reasons": [
+        "强化LLM可观测性，工程落地利器"
+      ],
+      "overview": "该项目由Langfuse团队开发，是一个基于Rust的开源网关，旨在追踪每一次LLM调用，提供代理可观测性及评估支持，帮助开发者更精准地监控和优化AI应用性能。"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50491841",
+      "title": "Show HN: Feedback/AMA MeditionBench; LLMs for mediation and conflict resolution",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I am the founder of Human Assisted Intelligence and I believe AI can be used to reduce polarization and improve the way people communicate and reach agreement.<p>At <a href=\"https:&#x2F;&#x2F;mediationbench.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;mediationbench.com&#x2F;</a>, there are many frontier LLMs tested, but it is difficult to keep up. I&#x27;ve been trying to get more free openrouter or huggingface credits. \nAzure for OpenAI and Anthropic have both provided token credits. (Thank You!)<p>The research paper is there as well.<p>There have been efforts to use LLMs to lie and play diplomacy, which are excellent compliments to this work.<p>In v4, the test will get harder as Claude nearly saturated the test. Astra was surprisingly low, perhaps because of alignment or safety efforts.<p>I&#x27;d love to get feedback and hear from all of you. I&#x27;ve been working on related ideas for 20 years, so it&#x27;s definitely a passion project with too much time in isolation.",
+      "author": "hendler",
+      "publishedAt": "2026-11-13T23:50:03Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50491841",
+      "titleHash": "7b6f7dff4fbce6d2fe7802ba9d85069e06e46ca8ac515374164d970f6e83271a",
+      "contentHash": "79505fc9e047253c99756527f47319c4292e5860e14cfc4dc063e8d01bf4f71d",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9732352932366302,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 2,
+      "reasons": [
+        "AI赋能社会和解，极具人文关怀"
+      ],
+      "overview": "创始人提出的反馈与AMA项目，利用LLM辅助调解和冲突解决，旨在减少社会极化，通过智能工具改善人际沟通效率，促进不同观点者达成共识，具有显著的社会应用潜力。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17241v1",
+      "title": "Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Modern automated heuristic discovery (AHD) systems increasingly rival hand-crafted heuristics by leveraging Large Language Models (LLMs) to iteratively mutate and refine solutions. A natural assumption is that more powerful and more expensive models consistently yield better heuristics. We challenge this empirically: across multiple NP-hard combinatorial optimization problems, we find no consistent advantage for larger, costlier models. This raises a deeper question: given a pool of LLMs spanning frontier and freely hosted or open-weight models, how should one adaptively select which model to invoke at each step of the search? The challenge is non-trivial. The optimal LLM may shift over the course of a run, and because one LLM's output seeds the context for subsequent calls, each model's reward signal is non-stationary and entangled across the heuristic population, thus violating the independence assumptions of classical online decision-making settings. We address this through Ballad (Bandit-based LLM Routing for Automated Heuristic Discovery), an online bandit algorithm that learns to orchestrate a pool of LLMs into an ensemble that matches or exceeds what any soloist LLM achieves alone. This orchestration is powered by an LLM selection policy that favors rare, high-scoring heuristics over stable averages, a DAG-based credit propagation mechanism through the genealogy of the heuristic population, and discounting of stale observations to remain attuned to each model's current utility. Across five NP-hard combinatorial optimization problems and a pool of four models of varying capability and cost, Ballad not only matches the best individual LLM in hindsight but, in several cases, surpasses every individual model while reducing API cost by up to 65.6% relative to always using the strongest model.",
+      "publishedAt": "2026-11-12T18:28:08Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17241v1",
+      "titleHash": "55ba9c0772ac867a43cb1e10555fb958014d96392d3b48665c615cddb6ed905e",
+      "contentHash": "17c3ab93c397a4ea3fd41af75dad9aee5047245b6464a4d1876d361094246044",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7335714801980394,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "创新路由策略，提升启发式效率"
+      ],
+      "overview": "这篇论文提出了Ballad框架，采用基于多臂老虎机的算法进行LLM路由，结合启发式发现，自动迭代变异和优化解决方案，使自动启发式发现系统在性能上能与手工设计的启发式算法相媲美。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17235v1",
+      "title": "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "This paper presents Al Ghasali, a computational framework designed to formalize and simulate Islamic jurisprudential (Fiqh) rulings. Building upon recent set theoretic formalizations of al sabr wa al Taqsim that extract minimal operational rules as simple Horn clause logical programs, this work proves that the semantics of closed Fiqh chapters collapse completely to deterministic Finite State Automata (FSA). We establish a formal computational hierarchy, demonstrating that restricting formalization to finite propositional Horn theories guarantees decidability and constant time (O(1)) verdict extraction after offline compilation. The framework formally proves that hierarchical compositions of sub-chapter FSAs preserve this O(1) complexity, and that temporal juristic requirements, such as Tartib (order), are deterministically flattened into static ontological states, preserving the memoryless property of the automaton. To generate human-readable juristic summaries, Al Ghasali incorporates Large Language Models (LLMs) via an architecture where the deterministic FSA strictly controls the probabilistic LLM. Crucially, the paper formulates sufficient design safety conditions for this FSA LLM integration, ensuring strict adherence to the epistemological boundaries of Usul al Fiqh. To neutralize the risk of LLM hallucination, the system employs a Grammar Guided Constrained Decoding mechanism. We formally define the mapping function that dynamically constructs unambiguous right linear grammars from the FSA execution history. The paper mathematically proves that this architecture, augmented by a Bounded Neutral Lexicon and Valence Locking, guarantees the absolute absence of Decisional Hallucination, Juristic Factual Hallucination, and Semantic Inversion reducing the LLM to a pure linguistic transformer of deterministic juristic facts",
+      "publishedAt": "2026-11-12T18:23:56Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17235v1",
+      "titleHash": "68fba332d83682713866698bdf0361023c5f91d768dde043e054a336fe246d80",
+      "contentHash": "6a5fed5ccf901638d08ea9eefba651cf3392abda577dfbc0821ae83ed9f42604",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7330772979765856,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "跨界融合，形式化模拟宗教法理"
+      ],
+      "overview": "该研究构建了Al-Ghasali计算框架，结合有限状态自动机与大语言模型，对伊斯兰教法（Fiqh）裁决进行形式化和模拟，探索利用计算理论严谨处理宗教法律逻辑的可能性。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17332v1",
+      "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document which ideas succeeded, which were abandoned, and why. In academia, limited compute and inconsistent baselines often restrict evaluations to small-scale, single-point comparisons, making it difficult to establish whether improvements hold at larger scales or translate into broader impact. ArchSpace addresses both gaps as a public platform for Recording, Reviewing, and Referencing Architecture Researc}: each proposal is recorded with its experiments and reasoning, reviewed by the community, and referenced by later work. To evaluate ideas before costly large-scale training, ArchSpace leverages scaling laws to predict model loss at larger scales from smaller experiments, a practice widely adopted in industry. We provide initial references that make the platform usable: Qwen3.5 and OLMo3 baselines, fitted scaling laws, and a reusable training recipe. Ideas validated through this review can in turn become new baselines, and ArchSpace thereby aims to broaden the range of ideas that shape the next generation of models.",
+      "publishedAt": "2026-11-12T18:59:52Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17332v1",
+      "titleHash": "ce61be54d0d88efac3a3d69b9e0e8b4ae245befbd3eae8781d0ca93b4725d036",
+      "contentHash": "cef827062cbddd9642d3d9cfd527d48859fb2ccc90e5130534fef9d58e2c0a15",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7373160846591882,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "规范架构研究，提升透明度与复用"
+      ],
+      "overview": "论文介绍了ArchSpace系统，用于记录、审查和引用LLM架构研究。鉴于模型架构决定扩展行为及成本，该系统帮助学术界和工业界系统化管理架构演进，提升研究的可复现性与透明度。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "__vivek",
+      "publishedAt": "2026-11-13T10:18:13Z",
+      "engagement": 484,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://status.claude.com/incidents/nn11wk485zfn",
+      "titleHash": "0eebf03f0275aa651363eb5b0895e57a66a0b18b76c4781842efb69003336455",
+      "contentHash": "0eebf03f0275aa651363eb5b0895e57a66a0b18b76c4781842efb69003336455",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8543719366884577,
+        "engagement": 0.8952472462007545
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bookofjoe",
+      "publishedAt": "2026-11-13T17:30:10Z",
+      "engagement": 337,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "titleHash": "8f6b3ce1278b9fe478faedea58f2b06ccae87abfdcb21e7946dc33280799bd62",
+      "contentHash": "8f6b3ce1278b9fe478faedea58f2b06ccae87abfdcb21e7946dc33280799bd62",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9156858227257384,
+        "engagement": 0.8429722334258849
+      }
+    },
+    {
+      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+      "title": "AI is destroying the trust between writers and readers",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "FinnLobsien",
+      "publishedAt": "2026-11-13T11:13:46Z",
+      "engagement": 314,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391",
+      "titleHash": "d2d6f2291319a7abb57080a49b11c811f5018ff06ce3fa1ab3b6ccba23a5ffa3",
+      "contentHash": "d2d6f2291319a7abb57080a49b11c811f5018ff06ce3fa1ab3b6ccba23a5ffa3",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8620210242336546,
+        "engagement": 0.8327701845965335
+      }
+    },
+    {
+      "url": "https://orcasairband.com/",
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mmaunder",
+      "publishedAt": "2026-11-13T22:04:24Z",
+      "engagement": 216,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://orcasairband.com/",
+      "titleHash": "29541da162f4a2a17feb9d8ed97ceb15c6fcd0cefbeec71c093c6416b2eaca5b",
+      "contentHash": "29541da162f4a2a17feb9d8ed97ceb15c6fcd0cefbeec71c093c6416b2eaca5b",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9568764270582675,
+        "engagement": 0.7788199112828432
+      }
+    },
+    {
+      "url": "https://www.slopmanifesto.com/",
+      "title": "No AI Slop: A Manifesto",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bankombinator",
+      "publishedAt": "2026-11-13T19:51:56Z",
+      "engagement": 185,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.slopmanifesto.com/",
+      "titleHash": "71a6778feab79d1a3af6bbbb48524c65b74ceae9885e4ddfac47ccfd32a1207d",
+      "contentHash": "71a6778feab79d1a3af6bbbb48524c65b74ceae9885e4ddfac47ccfd32a1207d",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9367532279681039,
+        "engagement": 0.7565043147393055
+      }
+    },
+    {
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+      "title": "All US airports are currently ground stopped",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "defly",
+      "publishedAt": "2026-11-13T21:06:52Z",
+      "engagement": 169,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/flightradar24/status/2121347654714077605",
+      "titleHash": "701ee98b2c6f2e27e2ae4e64fbd4abe3ba8ad83e4faa5807e92c6b5dbd8bd2e9",
+      "contentHash": "701ee98b2c6f2e27e2ae4e64fbd4abe3ba8ad83e4faa5807e92c6b5dbd8bd2e9",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9480838920780335,
+        "engagement": 0.7434829737927581
+      }
+    },
+    {
+      "url": "https://text.npr.org/nx-s1-6029408",
+      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kamaraju",
+      "publishedAt": "2026-11-13T15:29:10Z",
+      "engagement": 166,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://text.npr.org/nx-s1-6029408",
+      "titleHash": "b6df52d98835f1931122c6515cc24cca4d4e37dc3ed1a1eab00ac2bb95d3c967",
+      "contentHash": "b6df52d98835f1931122c6515cc24cca4d4e37dc3ed1a1eab00ac2bb95d3c967",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8980796652591506,
+        "engagement": 0.7409054903825277
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "helloplanets",
+      "publishedAt": "2026-11-13T15:08:44Z",
+      "engagement": 147,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "titleHash": "c572626d919a78e0dcdd88cb15553d58806b2f68af55a814e073e574034c9d52",
+      "contentHash": "c572626d919a78e0dcdd88cb15553d58806b2f68af55a814e073e574034c9d52",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8951400935102581,
+        "engagement": 0.7234205717983192
+      }
+    },
+    {
+      "url": "https://www.dwarkesh.com/p/rsi",
+      "title": "The avalanche that hit math is coming for AI development",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "crescit_eundo",
+      "publishedAt": "2026-11-13T18:39:42Z",
+      "engagement": 60,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.dwarkesh.com/p/rsi",
+      "titleHash": "c51081b48bc4171f62a03f765ff7c8353b3c88dc2d607795af8f2e3f96861201",
+      "contentHash": "c51081b48bc4171f62a03f765ff7c8353b3c88dc2d607795af8f2e3f96861201",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9259590298102099,
+        "engagement": 0.595109945003589
+      }
+    },
+    {
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/",
+      "title": "Are we just going to ignore that books are destroyed for AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nyxtom",
+      "publishedAt": "2026-11-13T18:14:38Z",
+      "engagement": 54,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why",
+      "titleHash": "b81d65bb72c4a4719abbe7ccbeaa6a4a4189048e19b66dcb13ceb289f674af7a",
+      "contentHash": "b81d65bb72c4a4719abbe7ccbeaa6a4a4189048e19b66dcb13ceb289f674af7a",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9222423341085352,
+        "engagement": 0.5801208964980813
+      }
+    },
+    {
+      "url": "https://coyotetracks.org/blog/right-amount-of-ai/",
+      "title": "Is there a 'right amount' of AI?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "milali",
+      "publishedAt": "2026-11-13T09:27:05Z",
+      "engagement": 36,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://coyotetracks.org/blog/right-amount-of-ai",
+      "titleHash": "eb34d1217f6140df12d2e82fba8d51b41518b1b797a3058d8ae3e6544bf69ce4",
+      "contentHash": "eb34d1217f6140df12d2e82fba8d51b41518b1b797a3058d8ae3e6544bf69ce4",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8473910177634576,
+        "engagement": 0.5227339080223317
+      }
+    },
+    {
+      "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
+      "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "toppa33",
+      "publishedAt": "2026-11-14T00:28:11Z",
+      "engagement": 35,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
+      "titleHash": "0b2cecd5079428382b11a88951e56f40e36ade48d326a802ce2fe26aeb609b58",
+      "contentHash": "0b2cecd5079428382b11a88951e56f40e36ade48d326a802ce2fe26aeb609b58",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9792083085911525,
+        "engagement": 0.5187675002557625
+      }
+    },
+    {
+      "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
+      "title": "Amodei Says AI Will Cure Cancer in a Decade. Doctors Are Skeptical",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "robin_reala",
+      "publishedAt": "2026-11-13T14:34:13Z",
+      "engagement": 31,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
+      "titleHash": "faff6e071e57f3c0166f12fbd65c69f7893313b6ae2ab591b48971b0e10d635d",
+      "contentHash": "faff6e071e57f3c0166f12fbd65c69f7893313b6ae2ab591b48971b0e10d635d",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8901963067922143,
+        "engagement": 0.5017166594399687
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50484426",
+      "title": "Ask HN: Can anyone name anything new that AI has done?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "We&#x27;re 2 years into this. Still looking for something that an AI did all by itself that is actually new. Everything I&#x27;ve seen so far still involves a human sussing out the new thing or the model is just aggregating data that is already there from disconnected sources that never got tied together.",
+      "author": "SamInTheShell",
+      "publishedAt": "2026-11-13T14:53:56Z",
+      "engagement": 29,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50484426",
+      "titleHash": "258c0213ed7b3d92643a7adf1997b989f0ba2148ca230ef09b909b5955c21c94",
+      "contentHash": "f918388226937d2c19c5423cbba4639e29e2b4e7480f2efa540b069b7df6db6d",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8930169498725223,
+        "engagement": 0.4923737515732208
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50480941",
+      "title": "Claude AI Is Down",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Claude AI is down according to independent detectors [1]. The official status page ha no incident issue yet.<p>[1] https:&#x2F;&#x2F;downdetector.co.uk&#x2F;status&#x2F;claude-ai&#x2F;\n[2] https:&#x2F;&#x2F;status.claude.com&#x2F;uptime",
+      "author": "cheptsov",
+      "publishedAt": "2026-11-13T09:55:06Z",
+      "engagement": 27,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50480941",
+      "titleHash": "5f255d042d950c11cedbf14908c8b03d7fe279c149d78264425501302b62623d",
+      "contentHash": "19ab89acf3827a414054ce37adaa36ad01643cc393995ff2e0eede36019d5bad",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8512088649389353,
+        "engagement": 0.4823860104474064
+      }
+    },
+    {
+      "url": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
+      "title": "FAA tees up $875M AI tool to help manage air traffic congestion",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "brandonb",
+      "publishedAt": "2026-11-13T23:02:44Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion",
+      "titleHash": "a5b3d0eff5f4026d986b9751489e3471b9bd860d577ebb0ece72ba0af06784f7",
+      "contentHash": "a5b3d0eff5f4026d986b9751489e3471b9bd860d577ebb0ece72ba0af06784f7",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9658744737309596,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://www.pcworld.com/article/3283946/ai-agents-have-a-big-problem-nobody-wants-to-let-them-in.html",
+      "title": "AI agents have a big problem: Nobody wants to let them in",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "PLenz",
+      "publishedAt": "2026-11-13T12:37:41Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.pcworld.com/article/3283946/ai-agents-have-a-big-problem-nobody-wants-to-let-them-in.html",
+      "titleHash": "9218ccee62ab109d00ec2f74c8d72554c680bedf92ea7fcebd818ecc2e9c1ac4",
+      "contentHash": "9218ccee62ab109d00ec2f74c8d72554c680bedf92ea7fcebd818ecc2e9c1ac4",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8737061870409215,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "title": "FAA expands AI advice to manage air traffic congestion across US airspace",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "samizdis",
+      "publishedAt": "2026-11-13T22:37:24Z",
+      "engagement": 15,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace",
+      "titleHash": "722d1388b75ffca7ca569165518beb1f14494f0ad2ff0ab4c4db8e681cbc6827",
+      "contentHash": "722d1388b75ffca7ca569165518beb1f14494f0ad2ff0ab4c4db8e681cbc6827",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9619564019364777,
+        "engagement": 0.4013733275519749
+      }
+    },
+    {
+      "url": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+      "title": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, this is Max, Marc and Clemens, co-founders of Langfuse, the open source tool for agent &amp; observability &amp; evals (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse</a>).<p>It’s been a minute since our last Show HN in August 2023 (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37310070\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37310070</a>) - we’ve been busy building out and serving our tracing &amp; eval pieces over the past years and have been very lucky to build a successful company and open source project around it. Today, we are happy to show the beta of Langfuse AI Gateway: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse&#x2F;tree&#x2F;main&#x2F;ai-gateway\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse&#x2F;tree&#x2F;main&#x2F;ai-gateway</a>. You may ask, why an AI Gateway as our second product: it’s been one our community’s strongest asks + integration pattern that we’ve seen. We want to offer a scalable, reliable and secure way to solve for the gateway use case in the same way that we’ve done with tracing&#x2F;evals over the past years. And we’ve recently grown our team with some excellent folks - expect to see more bigger bets from us.<p>Our observability SDKs currently see the code you instrument. Much of a company&#x27;s model traffic runs through code that is not or cannot be easily instrumented: coding agents like Pi, Claude Code and Codex, internal tools, scripts etc. Third party gateways are already popular ways to emit traces to Langfuse and we’re happy to now ship one natively.<p>You change your base URL and your API key. Langfuse AI Gateway forwards the native request with a provider key that does not need to be distributed across the team. Right now, it doesn&#x27;t translate between APIs, responses are relayed unchanged. This was a conscious decision to ensure stability for gateway users, as translation between e.g. OpenAI responses and Anthropic messages are imperfect and might lead to subtle failures in your agents.<p>If you pass a traceparent header, the call lands inside your existing Langfuse traces.<p>You can try by docker composing langfuse up and then on to http:&#x2F;&#x2F;localhost:3000<p>--<p>git clone <a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse.git\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse.git</a><p>cd langfuse<p>docker compose up<p>--<p>On Cloud, each call becomes a Langfuse generation with tokens, cost, latency and time to first token. Prompts and outputs are recorded if you opt in. If you self-hosted you can also track nothing, not even metadata.<p>Some details:<p>- Written in Rust. Stateless, with no database; it talks only to the Langfuse platform and the providers.<p>- 22MB Docker image. Under 3ms median overhead with tracing on, 1,000+ concurrent streams on 2 vCPUs.<p>- MIT licensed. Self-host it with Docker Compose or Helm or use our Cloud version.<p>- Your provider keys and contracts. We don&#x27;t resell tokens.<p>What’s next? \n- Budget caps per key, user, team<p>- Custom model aliases and fallbacks<p>- Guardrails<p>- PII redaction<p>- SCIM user provisioning<p>We’ll be around &amp; looking forward to all questions &amp; comments",
+      "author": "clemo_ra",
+      "publishedAt": "2026-11-13T15:10:20Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+      "titleHash": "98c11eaffeda774040a9b6093adf5855eef98440144b1500af70c4a895f88d66",
+      "contentHash": "9100f4c1b0bdf309143c5958b5103c08ff1a8be8331ac6da70d768930791dede",
+      "score": 83,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8953699220351163,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50481227",
+      "title": "Ask HN: Do you see a human written book more valuable than an AI written one?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I have been working on a book for the past year and half and Im finally done with it.<p>But now that it is time to publish it i think what I have written and reviewed by hand would not be as good as an AI written one.<p>I wonder if anyone values human work more than AI even if it&#x27;s not as good. Would love to hear your opinions on this.",
+      "author": "znano",
+      "publishedAt": "2026-11-13T10:20:59Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50481227",
+      "titleHash": "57372113c52e8ec5982a0843ccd195e7e4c519fa20b4b9c45cc6fa1281769793",
+      "contentHash": "071a13b6ea94f66f8bf320945b42501634e2ff1249f4d05f4720ce452a3c19ce",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8547512860068247,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://github.com/con-dog/clingon",
+      "title": "I let an LLM use my TUI like a user. It found multiple UX bugs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "purple-leafy",
+      "publishedAt": "2026-11-13T06:05:02Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/con-dog/clingon",
+      "titleHash": "29d228f2e795af9c0976cf019b65249f4e5399cc76a07d1420122182aff239f3",
+      "contentHash": "29d228f2e795af9c0976cf019b65249f4e5399cc76a07d1420122182aff239f3",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8203599169905701,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://thinkidiot.com/tools/local-model-finder",
+      "title": "I built a tool to find local LLMs that fit your hardware",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "reachsumit",
+      "publishedAt": "2026-11-13T14:23:47Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thinkidiot.com/tools/local-model-finder",
+      "titleHash": "d1563bb44790da648b4104bab4444ff563bbfad79977a7ced47c6c439b2e66ae",
+      "contentHash": "d1563bb44790da648b4104bab4444ff563bbfad79977a7ced47c6c439b2e66ae",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8887073327602235,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://nathan.rs/posts/detllm/",
+      "title": "Eliminating Nondeterminism in LLM Inference with Integer-Only Arithmetic",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "shortlived",
+      "publishedAt": "2026-11-13T16:32:18Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://nathan.rs/posts/detllm",
+      "titleHash": "7028553d066d89b828c0a0f2385813ba3bfdbd935ec774d69eeb82bccd40f17f",
+      "contentHash": "7028553d066d89b828c0a0f2385813ba3bfdbd935ec774d69eeb82bccd40f17f",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9072232542212243,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://changelog.complete.org/archives/44973-must-we-always-use-llms-this-way",
+      "title": "Must we always use LLMs this way?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "justusw",
+      "publishedAt": "2026-11-13T10:05:52Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://changelog.complete.org/archives/44973-must-we-always-use-llms-this-way",
+      "titleHash": "9b2eb7c9ffa20e1e3cf41db703f03b7235e51e895a7b307f38bc82420cc7d69d",
+      "contentHash": "9b2eb7c9ffa20e1e3cf41db703f03b7235e51e895a7b307f38bc82420cc7d69d",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.852680615804513,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50491841",
+      "title": "Show HN: Feedback/AMA MeditionBench; LLMs for mediation and conflict resolution",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I am the founder of Human Assisted Intelligence and I believe AI can be used to reduce polarization and improve the way people communicate and reach agreement.<p>At <a href=\"https:&#x2F;&#x2F;mediationbench.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;mediationbench.com&#x2F;</a>, there are many frontier LLMs tested, but it is difficult to keep up. I&#x27;ve been trying to get more free openrouter or huggingface credits. \nAzure for OpenAI and Anthropic have both provided token credits. (Thank You!)<p>The research paper is there as well.<p>There have been efforts to use LLMs to lie and play diplomacy, which are excellent compliments to this work.<p>In v4, the test will get harder as Claude nearly saturated the test. Astra was surprisingly low, perhaps because of alignment or safety efforts.<p>I&#x27;d love to get feedback and hear from all of you. I&#x27;ve been working on related ideas for 20 years, so it&#x27;s definitely a passion project with too much time in isolation.",
+      "author": "hendler",
+      "publishedAt": "2026-11-13T23:50:03Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50491841",
+      "titleHash": "7b6f7dff4fbce6d2fe7802ba9d85069e06e46ca8ac515374164d970f6e83271a",
+      "contentHash": "79505fc9e047253c99756527f47319c4292e5860e14cfc4dc063e8d01bf4f71d",
+      "score": 82,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9732352932366302,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://ycao.net/posts/llm-comprehension-acceptance",
+      "title": "We Dislike LLM Output, Not Because of Comprehension",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "xiaoyu2006",
+      "publishedAt": "2026-11-13T23:45:46Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ycao.net/posts/llm-comprehension-acceptance",
+      "titleHash": "14f174a3d99e211d878f64985448b1145a9b50d2fa2ca7dab391b10bdd2828f4",
+      "contentHash": "14f174a3d99e211d878f64985448b1145a9b50d2fa2ca7dab391b10bdd2828f4",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.972566653461148,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://chatpanel.net/",
+      "title": "Show HN: Chap – Meeting notes from live captions (no bot) with any LLM or agent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Chap is an AI Agent that is botless in capturing meeting notes (zoom, google meet, teams, webex) and a linked notebook (AI note taking), on any model or agent (claude code, codex and any CLI agents(opencode, hermes etc.), works with even apple intelligence models or webllm or local&#x2F;remote models. its much more once you start looking into it.",
+      "author": "veeragoni",
+      "publishedAt": "2026-11-13T06:31:06Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://chatpanel.net/",
+      "titleHash": "553e876b3433a2324e478866de104e38c93d938825b45c2673bfbe3d3a2e6ea0",
+      "contentHash": "217b2a8a575adfea061571809fc848a40d6411b71f67261873afedca878db61a",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8237981884451689,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.researchgate.net/publication/417439900_Cooperation_Between_Autonomous_LLM_Agents_in_the_Repeated_Prisoner%27s_Dilemma_Exploitation_Cheap_Talk_and_Reputation",
+      "title": "Cooperation Between Autonomous LLM Agents in the Prisoner's Dilemma",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "marojejian",
+      "publishedAt": "2026-11-13T20:46:58Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.researchgate.net/publication/417439900_Cooperation_Between_Autonomous_LLM_Agents_in_the_Repeated_Prisoner%27s_Dilemma_Exploitation_Cheap_Talk_and_Reputation",
+      "titleHash": "51ca1b7832e9789b8a14263318ebbd86816e8db4c9f614331e8fb154b6de07b7",
+      "contentHash": "51ca1b7832e9789b8a14263318ebbd86816e8db4c9f614331e8fb154b6de07b7",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9450615142007389,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50489240",
+      "title": "Using LLMs outside of reflection is an anti-pattern",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "LLMs have a great deal of value in that they are the world&#x27;s most advanced rubber duck.[1]<p>They contain all of the references[2] from Google + the ability to somewhat encourage self-evaluation and reflection. However in terms of patterns&#x2F;anti-patterns, the use of LLMs to create code without human interaction is itself an emerging anti-pattern. Just like any bit of code that functions despite being a form of pasta[3], an anti-pattern doesn&#x27;t mean things won&#x27;t function... but you are guaranteed to bake-in a certain level of performance loss and general negative quirkiness; just like in cases of programming in regards to date &amp; time-zones, the devil is in the details and often appears years down the line, not right away.<p>The fruit of the LLM tree is made more tempting by taking away part of what creates good code: the difficulty. Difficult games or experiences create people who are capable of handling deviations from standard running procedures and anticipate failure upstream. This isn&#x27;t possible with a LLM structure because the whole aim is reducing the difficulty of production and increasing speed.<p>Consider the example of the Luddite[4], where the artisan weaver is replaced by a leap in industrialization: this isn&#x27;t so much the case with a LLM. They work faster, but with far less accuracy. Imagine a rug weaved together in minutes with no discernible pattern. Certainly under the supervision of an expert this improves but imperfections emerge in the system that require a halt of the speed, rollbacks that eat away at production time and create vast effects in terms of customer opinion of the process and the product.<p>Not to use LLMs at all is likely folly. Knowing how to use them well will be the difference between the master and the apprentice.[5]<p>Hopefully more identification of LLM patterns and anti-patterns will begin to evolve along with what seems to be another new release from Pandora&#x27;s Box.[6]<p>[1] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Rubber_duck_debugging<p>[2] https:&#x2F;&#x2F;www.theguardian.com&#x2F;technology&#x2F;2026&#x2F;nov&#x2F;03&#x2F;google-search-artificial-intelligence<p>[3] https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Spaghetti_code#Pasta-related<p>[4] https:&#x2F;&#x2F;www.britannica.com&#x2F;event&#x2F;Who-were-the-Luddites-and-why-did-they-protest-machinery<p>[5] https:&#x2F;&#x2F;disney.fandom.com&#x2F;wiki&#x2F;\nThe_Sorcerer%27s_Apprentice<p>[6] https:&#x2F;&#x2F;www.nga.gov&#x2F;educational-resources&#x2F;greco-roman-origin-myths&#x2F;pandoras-box",
+      "author": "jcarmackdaddy",
+      "publishedAt": "2026-11-13T20:32:40Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50489240",
+      "titleHash": "160587dc6f43ec85e13de56e626d3dcd0a79602970034af83bbc619119a481f0",
+      "contentHash": "71a4f985ff927427013859ed82224d4e994c6f787ee1bce599d69b606adcf16d",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9428956052414633,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17323v1",
+      "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic regimes where labeled data is scarce but unlabeled data is abundant. In this work, we introduce Agentic Semi-Supervised Learning (AgentSSL), framing SSL as a program search problem and studying how agents navigate this space under limited supervision. We find that even under weak feedback and matched compute, agents can synthesize code that combines and adapts established SSL techniques, exceeding the strongest human-engineered baselines in 8 of 12 settings by up to +21.8%. However, our results identify program selection as a critical bottleneck in AgentSSL, where performance drops by as much as 47% when selecting based on the agent's feedback metric. To systematically study this bottleneck, we introduce ProgramSelectBench, a large-scale benchmark with a combined total of 16,977 agent-generated and human-engineered SSL programs, and evaluate both unsupervised and active program selection methods. We further evaluate AgentSSL on real-world ecology detection tasks, highlighting the opportunities and challenges of transferring agent-discovered strategies beyond controlled benchmarks.",
+      "publishedAt": "2026-11-12T18:59:06Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17323v1",
+      "titleHash": "58644a3600074a66c811248de50972b10c2c7990d459be5df8e3a03508a29a05",
+      "contentHash": "8e8bf48745276b75e18a2e4c4016c0b7fcfcf1ef34ec581b9a7bc533391263eb",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7372253933123558,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17316v1",
+      "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Coding agents tackle successive tasks on an evolving repository, carrying forward edits and writing memory before the next task is known. Selecting memory for unknown next tasks requires balancing future usefulness against the costs of writing and reading it. The actor must also decide when acting on available memory saves effort as the task unfolds. We introduce Coding-Repository Memory (CoReMem), a cost-internalizing framework that guides memory design and actor adaptation through measured memory value on the next task. Prospective segment valuation compares runs of the next task with and without individual trajectory segments from the same inherited repository state, guiding a compact memory built around anchors: repository locations and executable checks. Actor adaptation estimates on-policy memory value within rollout groups with and without memory, using a reward that prioritizes resolution and penalizes step count in successful runs. Provenance-gated value credit assigns the additional value term to steps identified as using memory-supplied anchors, while every step retains outcome credit. On ChainSWE, CoReMem raises the 27B actor's resolve rate from 21.0% to 25.7%, with 17% fewer steps and 11% fewer total cache-aware tokens, including memory-module calls, relative to the untrained actor model without memory.",
+      "publishedAt": "2026-11-12T18:58:22Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17316v1",
+      "titleHash": "edaf7f224232ed3cca7698862185f0c7b212a1979f0283f55280c044a1b4a6da",
+      "contentHash": "ea4e91b5d8dd8f7b76f33d8391cd52a091e55fcedd34927c46798f91af40c46d",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7371386536202895,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17313v1",
+      "title": "Sketching Language Models for Context Attribution",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens and a fixed measurement function. Computing all LOO values directly requires $n$ model evaluations. Under a stability assumption, our algorithm estimates all LOO values to error proportional to $\\varepsilon$ with constant probability using $O(\\sqrt{\\log(1/\\varepsilon)}/\\varepsilon)$ evaluation calls. To complement our upper bound, we prove a matching $Ω(\\sqrt{\\log(1/\\varepsilon)}/\\varepsilon)$ lower bound on the number of evaluation calls in an oracle model. Empirically, we verify coefficient decay consistent with stability and evaluate the performance of our sketching algorithm on a small language-model retrieval task. Technically, our result is based on a sketching algorithm for arithmetic circuits whose Taylor coefficients satisfy the stability condition recently introduced by Gunn [Gun26]. A direct adaptation of their forward differentiation sketches would require $\\widetilde{O}(\\log(n)/\\varepsilon^2)$ evaluation calls. Our key observation is that we can apply forward differentiation to the backpropagation circuit, with only constant overhead over a forward sketch of the same Taylor degree. This reduces the variance of the sketches and is key to our improved evaluation bound. Our lower bound builds on the techniques of Amsel, Chen, Duman Keles, Halikias, Musco, and Musco [ACDH+26, SIAM Journal on Matrix Analysis and Applications] for lower bounding the number of matrix-vector queries to estimate the diagonal elements of random matrices.",
+      "publishedAt": "2026-11-12T18:57:48Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17313v1",
+      "titleHash": "5a683792176b697fb5bd002c0a23d603032abc207c8ac85a4abfc55f28e02381",
+      "contentHash": "dfd5fed0d4f76b5cd95c9357aea0aec6e8e7b24f2b4b032b55964b94507396d3",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7370716344846073,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17309v1",
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+      "publishedAt": "2026-11-12T18:56:56Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17309v1",
+      "titleHash": "8592cc5766366e5b2e012f6238d7e0107265509a5d061d875acbd8a6e804c7f1",
+      "contentHash": "2d30e400f5fa0b25728a11f29c30c98a6e2be5350c521354b1fa335cb5f0b42e",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7369691464157366,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17298v1",
+      "title": "Consistent Video-to-Video Translation via Explicit Correspondences",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Interactive video-to-video applications require real-time generation while maintaining long-range temporal consistency. However, recent methods achieve speed by restricting attention to a fixed-length causal window. This limits long-range consistency whenever relevant history falls outside the context window. To address this limitation, we introduce vid2vid-long, a correspondence-based approach grounded in a simple observation. Video-to-video translation provides an explicit cross-frame reference: the regions that match in the input video should match in the output video too. Concretely, we compute patch-level correspondences in the input, guiding retrieval of previously generated outputs in the corresponding regions, and condition the model on these patches through correspondence cross-attention. Our experiments demonstrate that vid2vid-long consistently improves long-range temporal consistency across recent video models while preserving generation quality and real-time performance.",
+      "publishedAt": "2026-11-12T18:55:09Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17298v1",
+      "titleHash": "8dd0d2e11fad0cccde2d2cc80cd4a5d302d673df1db7578b7203fb81f9d0b9ec",
+      "contentHash": "e5aa5fba32f1fb3f275f70f24cdb8eec3e4436782086599a666bdbba143da904",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7367583023338736,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17297v1",
+      "title": "Goal Encoding in LLMs",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this encoding is causal for next action and is plastic: transplanting it into a different environment, e.g., another programming language, triggers the same operation realized with a different sequence of tokens. The LM also sustains the encoding throughout the action's execution, which is puzzling because a transformer LM without recurrence cannot carry a state forward for more tokens than it has layers left. We propose that it does not need to. Under a non-recurrent goal-seeking (NRGS) account, the LM frequently re-reads the goal from the task specification, compares it with the progress visible in the growing context, and pursues what remains. We test the predictions of this account with targeted causal interventions.",
+      "publishedAt": "2026-11-12T18:55:06Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17297v1",
+      "titleHash": "55b8c801e4c68414b475923cbd4c24089a0b53ea03bf7c01ac433ac18d2bfabe",
+      "contentHash": "153a82c20b6ad4cacdfff6740d1f32457fd5d6a5ac8e2135364e95b2b6069890",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7367523916869808,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17294v1",
+      "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "On-device inference requires kernels that make effective use of local accelerators. Efficient training and evaluation of models that generate Apple Metal kernels benefit from native macOS tools and concurrent agent sessions. These sessions alternate between model requests, development commands, and GPU execution, leaving GPU capacity idle for much of a rollout. We present Metal Sandbox, infrastructure that combines restricted per-instance file access, native command execution, and command-level scheduling across interconnected Macs. Each agent retains its workspace and private development environment. Parallel commands can run concurrently, while serial commands share one execution slot per node; eligible waiting commands can migrate to available Macs and return results to the original agent. Integration with Harbor supports task execution, automatic verification, and rollout collection through a common workflow. Controlled experiments on four Mac mini M4 nodes achieve $1.68\\times$--$2.05\\times$ gains in command throughput under concentrated demand. Sixteen static agent traces give an estimated $2.14\\times$ sustained-throughput gain for four sessions per node versus one, assuming continuously replenished sessions and unchanged mean durations. Replaying these measured traces under dynamic scheduling reduces mean tool waiting by 18.8% and batch elapsed time by 22.3%, assuming unchanged phase durations. Metal Sandbox and its Harbor integration are open-source on GitHub.",
+      "publishedAt": "2026-11-12T18:54:42Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17294v1",
+      "titleHash": "148c6a9b61c218e4a824e8c105670249a39062db7618e0c31cc8189967b2059e",
+      "contentHash": "a30d2a86b8707cca0da98367da28d7658f76d789a13902e6c0c2146cacf0b50d",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7367051082188611,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17280v1",
+      "title": "Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We propose Synthesis Smuggling, a novel threat model in which an adversarial LLM infers sensitive information about a user from routine assistance-seeking interactions and steganographically encodes that into innocuous-looking model-generated content. The user may then unknowingly transmit that information by sharing the generated artifact, say as an email, social-media post, or message, through ordinary communication channels. An adversary monitoring these channels can discover this information. We demonstrate this threat by training two open-weight models to infer gender and age-group labels from conversational cues and encode their predictions using invisible characters or word choices. These results show that user-shared model outputs can become a covert channel for personal inferences, even when the model itself has no direct means of contacting an adversary.",
+      "publishedAt": "2026-11-12T18:51:05Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17280v1",
+      "titleHash": "e7ee71beb8b55191fa5510c88083e6114a617122100fb6dc6671763fadb77358",
+      "contentHash": "0023e90f971493be7bf2242e0e6875826fdd894fa715ab6670e4123f08f29157",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7362777245970297,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17267v1",
+      "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire task-relevant information, verify whether the evidence supporting prior decisions remains valid, and revise their plans when necessary. Our results reveal that even frontier LLMs struggle with static tasks, with no model consistently excelling across tasks, while strong static performance does not ensure dynamic reliability. Further analysis identifies a key bottleneck: agents struggle to acquire and translate relevant evidence into valid decisions and maintain their correctness as the world evolves. By releasing LiveGeo together with its GeoWorld platform, we aim to provide the community with a flexible and extensible infrastructure for studying the next generation of agents capable of reliable action in evolving geographic worlds.",
+      "publishedAt": "2026-11-12T18:45:58Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17267v1",
+      "titleHash": "ed1d4ce28c5306cca8afacac68114dffa555a7ec97291dc8f1019704ace58ee7",
+      "contentHash": "cc7d459323a9c64fb3ca3f745a59aa63b1014506011b4d2ff8e2a4ec60c08cf1",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7356735085698403,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17241v1",
+      "title": "Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Modern automated heuristic discovery (AHD) systems increasingly rival hand-crafted heuristics by leveraging Large Language Models (LLMs) to iteratively mutate and refine solutions. A natural assumption is that more powerful and more expensive models consistently yield better heuristics. We challenge this empirically: across multiple NP-hard combinatorial optimization problems, we find no consistent advantage for larger, costlier models. This raises a deeper question: given a pool of LLMs spanning frontier and freely hosted or open-weight models, how should one adaptively select which model to invoke at each step of the search? The challenge is non-trivial. The optimal LLM may shift over the course of a run, and because one LLM's output seeds the context for subsequent calls, each model's reward signal is non-stationary and entangled across the heuristic population, thus violating the independence assumptions of classical online decision-making settings. We address this through Ballad (Bandit-based LLM Routing for Automated Heuristic Discovery), an online bandit algorithm that learns to orchestrate a pool of LLMs into an ensemble that matches or exceeds what any soloist LLM achieves alone. This orchestration is powered by an LLM selection policy that favors rare, high-scoring heuristics over stable averages, a DAG-based credit propagation mechanism through the genealogy of the heuristic population, and discounting of stale observations to remain attuned to each model's current utility. Across five NP-hard combinatorial optimization problems and a pool of four models of varying capability and cost, Ballad not only matches the best individual LLM in hindsight but, in several cases, surpasses every individual model while reducing API cost by up to 65.6% relative to always using the strongest model.",
+      "publishedAt": "2026-11-12T18:28:08Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17241v1",
+      "titleHash": "55ba9c0772ac867a43cb1e10555fb958014d96392d3b48665c615cddb6ed905e",
+      "contentHash": "17c3ab93c397a4ea3fd41af75dad9aee5047245b6464a4d1876d361094246044",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7335714801980394,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17239v1",
+      "title": "When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In interactive systems where users engage with LLMs, users are adaptive and, after observing LLM responses, can change their prompting strategy, as well as the type and difficulty of subsequent tasks. Thus model responses can influence the set of prompts on which the model is subsequently evaluated. We study the implications of this user adaptivity and prompt endogeneity for the evaluation of LLMs. We define two classes of estimands for comparing models: the common-distribution effect, which compares model performance on the same distribution of prompts, and the induced-distribution effect, which compares each model on the prompt distribution generated through user interaction. We show that offline benchmark evaluation and live A/B testing target different quantities, with the standard difference-in-means estimators for the two methods converging to the common-distribution effect and the induced-distribution effect, respectively. This distinction can affect decision-making: the two comparisons can rank models differently and lead to discrepancies in deployment recommendations. We characterize when such ranking reversals occur and provide a sufficient condition under which the rankings are guaranteed to agree. This result provides a practical heuristic for assessing whether offline evaluation is sufficient to reproduce the decision suggested by a live experiment. Third, we show, in a stylized linear model of interactions, that user adaptivity can increase variance in estimation. Finally, we discuss implications of user adaptivity for the interpretation of experiments and show that adaptivity creates a common mechanism leading to common evaluation challenges, such as reward hacking and novelty effects. Together, this work highlights the necessity of measuring both model performance as well as changes in the user behavior that the model induces.",
+      "publishedAt": "2026-11-12T18:26:51Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17239v1",
+      "titleHash": "67f8ba08895e0b7246442c710713091b1c625534e91a8efcde6193a7a05c167f",
+      "contentHash": "f9dbfa0cba095b751e53762d58654d652124a0ef60be7f85866b33a1f45037c7",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7334204447406563,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17235v1",
+      "title": "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "This paper presents Al Ghasali, a computational framework designed to formalize and simulate Islamic jurisprudential (Fiqh) rulings. Building upon recent set theoretic formalizations of al sabr wa al Taqsim that extract minimal operational rules as simple Horn clause logical programs, this work proves that the semantics of closed Fiqh chapters collapse completely to deterministic Finite State Automata (FSA). We establish a formal computational hierarchy, demonstrating that restricting formalization to finite propositional Horn theories guarantees decidability and constant time (O(1)) verdict extraction after offline compilation. The framework formally proves that hierarchical compositions of sub-chapter FSAs preserve this O(1) complexity, and that temporal juristic requirements, such as Tartib (order), are deterministically flattened into static ontological states, preserving the memoryless property of the automaton. To generate human-readable juristic summaries, Al Ghasali incorporates Large Language Models (LLMs) via an architecture where the deterministic FSA strictly controls the probabilistic LLM. Crucially, the paper formulates sufficient design safety conditions for this FSA LLM integration, ensuring strict adherence to the epistemological boundaries of Usul al Fiqh. To neutralize the risk of LLM hallucination, the system employs a Grammar Guided Constrained Decoding mechanism. We formally define the mapping function that dynamically constructs unambiguous right linear grammars from the FSA execution history. The paper mathematically proves that this architecture, augmented by a Bounded Neutral Lexicon and Valence Locking, guarantees the absolute absence of Decisional Hallucination, Juristic Factual Hallucination, and Semantic Inversion reducing the LLM to a pure linguistic transformer of deterministic juristic facts",
+      "publishedAt": "2026-11-12T18:23:56Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17235v1",
+      "titleHash": "68fba332d83682713866698bdf0361023c5f91d768dde043e054a336fe246d80",
+      "contentHash": "6a5fed5ccf901638d08ea9eefba651cf3392abda577dfbc0821ae83ed9f42604",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7330772979765856,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17220v1",
+      "title": "Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Oral exams are compelling because (1) students can be asked to provide their reasoning for an answer and (2) their interactive nature permits follow-up questions to resolve ambiguous answers. But oral exams scale poorly. In this paper, we present scalable conversational assessment, an LLM-based system that conducts interactive text-based conversations with students to assess their ability to make and support an argument. We use a two-agent architecture to separate concerns and reduce the likelihood that answers are leaked to the student: the interviewer interacts directly with the student, but only receives guidance about the next question to ask the student; the hidden evaluator knows the goals of the whole activity, tracks the student's progress using a rubric, and guides the interviewer on when to follow-up on the current question or proceed to the next question. The system was first tested using a collection of simulated students with LLM personas of a particular ability level or adversarial tactic (e.g., answer-extractors, prompt-injectors, confident fabricators). A novel element of this evaluation was that it required the use of a fictional assessment topic to prevent personas that shouldn't have information from using knowledge present in the LLM's pre-training. The system was also deployed in a small, elective AI literacy course in both formative and summative contexts. Through manual and post-facto AI review of the transcripts we identified opportunities to improve the follow-up question generation and ensure that grading only credited ideas that the student (and not the interviewer) contributed.",
+      "publishedAt": "2026-11-12T18:16:37Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17220v1",
+      "titleHash": "6639dbf4603ce570f9a244c14b26c063c57af80de35697883896d674cc351010",
+      "contentHash": "78b990e4a47de974804a805552c09dde35d7d40baa175b7b117569fe8eebea89",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.732217196177084,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17214v1",
+      "title": "Introducing Feedback Delays to Non-Delayed Adversarial MDPs: Optimal $\\sqrt S$ and $\\sqrt K$ Dependencies in Tabular and Linear AMDPs",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "We study regret minimization in episodic Adversarial Markov Decision Processes (AMDPs) with unknown transitions and bandit feedback. In tabular AMDPs with $S$ states, $A$ actions, and horizon $H$, the best known $K$-episode regret is $\\tilde O(HS\\sqrt{AK})$, whose $\\sqrt S$ gap to the $Ω(H\\sqrt{SAK})$ lower bound has long remained open. In linear AMDPs with $d$-dimensional features, after a five-year line of improvements starting from $K^{14/15}$, computationally efficient algorithms without a simulator or exploratory assumptions still only attain $\\tilde O(K^{3/4})$ regret. A common challenge in both settings is to estimate the Q-function of a changing policy: past data comes from earlier policies that differ from (and are correlated with) the current one, while freezing the policy for future episodes worsens the dependency on $K$. We instead propose a general technique called introduced feedback delays: we estimate the Q-function of the policy using future episodes while still updating the policy, as if the feedback were delayed. While feedback delays are usually an obstacle imposed by the environment, here they are introduced voluntarily and, perhaps surprisingly, come at no extra cost. We develop Geometric Resampling with Rejection (GRR) to account for policy changes during the delay, and threshold the visitation probabilities to avoid long delays on rarely visited state-action pairs. With this unified technique, our policy optimization algorithms achieve, with high probability, $\\tilde O(\\text{poly}(H)\\sqrt{SAK})$ regret in tabular AMDPs, resolving the open problem; and $\\tilde O(\\text{poly}(d,H)\\sqrt K)$ regret in linear AMDPs, giving the first efficient algorithm optimal in $K$. They also naturally extend to delayed AMDPs with a total feedback delay $\\mathfrak D$, yielding the first bounds optimal in $S$ and $\\mathfrak D$ (tabular) and in $K$ and $\\mathfrak D$ (linear).",
+      "publishedAt": "2026-11-12T18:10:46Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17214v1",
+      "titleHash": "9608d10074984d3595ee80e349f9832fbf519828420b9048b078278c842e217b",
+      "contentHash": "4ffe090b49c0e68c81e6dc3ed0673abb40fe5bef40e0bd9d3dfcb875f0968a65",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 1,
+        "timeliness": 0.731530232621104,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17199v1",
+      "title": "MALNISI-Infused Graph Construction and Weighted Contrastive Loss based GAT for Unsupervised Representation Learning in HSI",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Hyperspectral images (HSI) possess discriminating spectral characteristics with respect to land utilization due to high-dimensional information. Recently, unsupervised representation learning using graph neural networks has unveiled these utilization-specific complex spectral relations. This article has three main contributions. First, it proposes an index, the Mean Absolute Local Neighborhood Inverse Spectral Index (MALNISI), which measures the similarity between two pixels based on their neighborhood information. The index is used to construct a weighted adjacency matrix, giving the HSI a graph structure. Second, it proposes an upgraded Graph Attention Network that learns compact latent representations of hyperspectral data from the constructed graph. In this network, an enhanced multi-head attention mechanism incorporates the MALNISI weights as an auxiliary feature to emphasize learned attention between neighboring pixels. To alleviate over-smoothing and preserve fine-grained spectral details, the architecture integrates residual connections, skip projections, and feature normalization, which together enhance representation capability, stabilize learning, and accelerate convergence. Third, it proposes a weighted contrastive loss function that incorporates neighborhood-aware MALNISI between connected pixels, encouraging strongly connected pixels in the high-dimensional space to remain close in the latent space, and weakly connected pixels to stay apart. The resulting discriminative low-dimensional embeddings are then clustered using spectral clustering. Experimental analysis on six benchmark HSI datasets demonstrates the efficiency and necessity of the three aforementioned contributions, and the comparative study highlights superior performance over fourteen state-of-the-art approaches.",
+      "publishedAt": "2026-11-12T18:02:53Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17199v1",
+      "titleHash": "4966897a77f0777012e7fe187e94935706ca19c5ef4c53bacbe22ff8828716eb",
+      "contentHash": "9cf49b5107e96da13a912660d63d7cd9686f88443c25f59d6d4e791a6736a757",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7306055147599574,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17332v1",
+      "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document which ideas succeeded, which were abandoned, and why. In academia, limited compute and inconsistent baselines often restrict evaluations to small-scale, single-point comparisons, making it difficult to establish whether improvements hold at larger scales or translate into broader impact. ArchSpace addresses both gaps as a public platform for Recording, Reviewing, and Referencing Architecture Researc}: each proposal is recorded with its experiments and reasoning, reviewed by the community, and referenced by later work. To evaluate ideas before costly large-scale training, ArchSpace leverages scaling laws to predict model loss at larger scales from smaller experiments, a practice widely adopted in industry. We provide initial references that make the platform usable: Qwen3.5 and OLMo3 baselines, fitted scaling laws, and a reusable training recipe. Ideas validated through this review can in turn become new baselines, and ArchSpace thereby aims to broaden the range of ideas that shape the next generation of models.",
+      "publishedAt": "2026-11-12T18:59:52Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17332v1",
+      "titleHash": "ce61be54d0d88efac3a3d69b9e0e8b4ae245befbd3eae8781d0ca93b4725d036",
+      "contentHash": "cef827062cbddd9642d3d9cfd527d48859fb2ccc90e5130534fef9d58e2c0a15",
+      "score": 80,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7373160846591882,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17320v1",
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces it when the surrounding context remains fixed. These findings motivate DiVR , a verifier that predicts whether a partially generated sequence will reach a correct answer. Trained on the final correctness of the model's own trajectories, DiVR decides when to regenerate a block and which alternative to retain, while the generator itself stays unchanged. On five reasoning benchmarks with LLaDA-8B-Base, DiVR raises the average accuracy of the fine-tuned generator from 35.3\\% to 43.4\\% at $1.9$-$3.5\\times$ the cost of greedy decoding, above search baselines that use $3.8$-$7.4\\times$. It also complements post-training such as supervised fine-tuning and reinforcement learning, and generalizes to other generators, including Dream.",
+      "publishedAt": "2026-11-12T18:58:50Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17320v1",
+      "titleHash": "ca82f789f883274ad9bc1cbc20127545109664722cfe1e8b0bc5ccff96900b3b",
+      "contentHash": "55a81fef5b09ddba0d086cd4b87083cf05dd0f77c03dfdaa7578b2de81355c4f",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.737193848453881,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17314v1",
+      "title": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a neural network can enable it to learn rapidly. We study neural networks that have been optimized via meta-learning, a technique that exposes a network to many related functions to facilitate its subsequent learning of similar functions. Prior work has shown that these meta-learned networks can learn new functions rapidly, but how they do so remains unclear. To investigate their internal structure, we take inspiration from classic work demonstrating additive relationships among the learned vectors that neural networks use to represent words (e.g., \"king\" minus \"man\" plus \"woman\" approximates \"queen\"). Analogously, we look for additive relationships among a meta-learned network's \"representations\" of different functions; when a meta-learned network rapidly learns to implement a specific function, all of its adapted parameter values can be concatenated into a single vector that we treat as representing the function. We find that such parameter vectors can be added and subtracted according to symbolic relationships among the functions they represent, yielding new parameter vectors that successfully represent the functions predicted by the corresponding symbolic manipulations: the networks specified by these artificially recombined vectors actually implement the intended functions without any direct training on them. Our results suggest that meta-learning can tune a network's starting point to organize subsequent learning along systematic, functionally meaningful trajectories through the space of possible parameter vectors, providing a geometric basis for realizing inductive biases in neural networks.",
+      "publishedAt": "2026-11-12T18:57:49Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17314v1",
+      "titleHash": "c854a5b66ae674cb86811721f6b489f10f0ea52103764217a057558b99dbe87b",
+      "contentHash": "09c24faa886eb371d4fda2e862a2dcf33c9356c9f6bd5bd7b84b96eab6b2b3d4",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7370736035776164,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17287v1",
+      "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
+      "publishedAt": "2026-11-12T18:52:33Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17287v1",
+      "titleHash": "d16f3eb934cde3d698b3151a33889ff5daaa9e4e498a1d267050689405bbe690",
+      "contentHash": "64ff6d120cf84ee7e210dc81d6b3d68ef721f95a1f9d9c3d3116d954c6e79445",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7364510095941614,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17191v1",
+      "title": "Maximizing Capacity Utilization of LoRA Adapters for Mitigating the Learning-Forgetting Trade-off",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Low-Rank Adaptation (LoRA) often underperforms full fine-tuning, especially in heterogeneous and continual-learning settings in which substantial forgetting occurs. In general, it suffers from an undesirable learning-forgetting trade-off across diverse fine-tuning settings. We identify a potential contributor: LoRA adapters, especially high-rank ones, frequently fail to realize the available capacity afforded by the configured rank. Specifically, we find that standard LoRA updates have effective rank far below their configured rank, limiting how broadly the update energy is distributed. Therefore, we propose training mechanisms that optimize the original objective while maximizing adapter effective rank. Our main method adds a simple, stable, differentiable, and SVD-free Rényi-2 effective-rank regularizer to the language-modeling loss. We also connect capacity maximization to norm-bounded updates. In mixed-domain rank sweeps on three models evaluated with multiple random seeds, a penalty weight of $λ=0.01$ lowers mean Wiki perplexity at every tested rank of at least $16$ relative to unpenalized LoRA. Mean training perplexity improves or increases by at most $0.02$ in all but one model-rank comparison. Single-task and scheduling experiments further show that the balance between learning and retention depends on the configuration. We also observe that several LoRA variants in the literature also suffer from the identified capacity issue, and our approach provides a complementary axis of improvement to LoRA-based parameter-efficient fine-tuning. These results suggest that effective rank is not only a post-hoc diagnostic of adapter quality, but a trainable objective for improving the learning-forgetting frontier. Our code is available at https://github.com/tomohiro-sawada/lora-capacity-utilization",
+      "publishedAt": "2026-11-12T17:55:33Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17191v1",
+      "titleHash": "b8d3745da9f1ffd4b5b7233d4c3fd6cf3ce18b6062c0cff12de8eac5830e2649",
+      "contentHash": "aff618a448a8460f9fdebbdea5b5f8695493455592f7dd79c64b5d515e26a44c",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7297463596172743,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17169v1",
+      "title": "Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "A small fine-tuned parser that emits a well-formed but wrong tree fails silently: nothing downstream can tell. We ask whether the output format, a free design choice, controls how often this happens. On the PIZZA ordering benchmark we fine-tune two sub-billion models (Qwen3.5-0.8B and LFM2.5-350M) with LoRA on six lossless encodings of the same target tree, from 44.3 down to 10.9 tokens per order, including two matched-length pairs that vary surface form at fixed length. Across 300 runs (5 training pool sizes, 5 seeds) with a hierarchical bootstrap and Holm correction fixed before the results were read, shortening alone never helps, but writing the target in ordinary words does. The word encoding is the most accurate format on both models (87.5% vs. 85.8% exact match for the native s-expression on Qwen) while emitting 4.1x fewer tokens, and it cuts the silent error rate by 2.3x on Qwen and 1.8x on LFM2, separating at every pool size. Error analysis locates much of the gain in negation. All runs also learn to refuse off-menu input (held out: 95.9-99.0% handled) and to apply in-utterance self-corrections. Strict refusal has a measured price: 2.1-10.1% of real, mostly polite, orders are refused.",
+      "publishedAt": "2026-11-12T17:43:44Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17169v1",
+      "titleHash": "3e00961a1372c0e6cd831b1e5c749f744297d8c279532ede1d0212c3eabc8dff",
+      "contentHash": "be9a12c887ceeb78565b6fec7b8e597a399aff1f849f6833ea68613b97bce13a",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7283640765385417,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17167v1",
+      "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions. As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. These results suggest that a poor actor can still teach well, because judging an action after the episode ends reveals the consequences that acting must anticipate. Code is available at https://github.com/ZJU-REAL/decision-agents.",
+      "publishedAt": "2026-11-12T17:42:46Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17167v1",
+      "titleHash": "ff01c14bf6c68b93a2397860ec8528200338e5d5413bb57f4fda11206971f6fc",
+      "contentHash": "e0c38ab5431fdbd9e52ff66f4ebc5bf06712772eca39cedcfcc776de2cfbfb80",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.7282511142985368,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17128v1",
+      "title": "Parameter-Efficient Conciseness Adaptation: Differentiable Length Control for Concise Clinical Reasoning in Smaller Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Smaller language models (SLMs) make it feasible to deploy clinical natural language processing where large proprietary models are too costly, and parameter-efficient fine-tuning allows them to be specialised on commodity hardware. One obstacle persists after training: on medical tasks these models answer at far greater length than the clinical question requires. In clinical decision support and point-of-care use, where time is short, such verbosity is hard to act on even when the underlying reasoning is sound. Existing length-control methods depend on preference optimisation, reward models, or proprietary teachers that undercut the accessibility making SLMs attractive. We introduce Parameter-Efficient Conciseness Adaptation (PECA), which adds a single differentiable conciseness term to the QLoRA supervised fine-tuning objective. Because the token count is discrete and non-differentiable, PECA instead raises the end-of-sequence probability once generation exceeds a token budget, a smooth signal optimised during ordinary training, with no preference data, no auxiliary model, and a single commodity GPU. On a 1.7-billion-parameter model fine-tuned on the medical-o1-reasoning-SFT corpus, PECA reduces mean response length by 72.8% while improving multiple-choice diagnostic accuracy from 40.8% to 44.0%. A sweep over the conciseness strength traces an interpretable accuracy-to-length frontier for balancing brevity and diagnostic completeness.",
+      "publishedAt": "2026-11-12T17:21:12Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17128v1",
+      "titleHash": "5bffaa368b1554b15d34dd135b1ce03f4b5f350fbde61d1eee1cb0a53bba5a04",
+      "contentHash": "e4a95b380333d66cbf468ea00d5d53e9492975d16b14adce33358243fbccfbb4",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7257354383302181,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17115v1",
+      "title": "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Enforcement defenses against prompt injection, such as CaMeL, Progent, IPIGuard and DRIFT, ask the agent's own model to write a security artifact (a program, a privilege policy, a dependency graph or a constraint list) that code then enforces. We ask whether small language model (SLM) agents can be trusted to write these artifacts. Across 15 open-weight models, 13 of them between 1.7B and 12B parameters, they cannot: the policies, graphs and constraints that the agent's model writes admit attacks on 14 (Progent), 13 (IPIGuard) and 11 (DRIFT) of the models, and CaMeL's programs fail to run in up to 68% of episodes. We present CapLite, which derives its policy from the tool schemas, commits the write calls before any tool result is read, and admits a write only if every argument that decides whom or what it affects is stated in the user's request. This guarantees write integrity: injected text cannot add a write, and no write reaches a recipient, amount, object or destination that the user did not state. No attack succeeds in 13,935 attacked AgentDojo episodes. CapLite reaches utility under attack comparable to CaMeL's (29.0% vs. 27.2%) with fewer tokens than every other enforcement defense and than the undefended agent: 17.1k per episode, 18% of CaMeL's, and the highest utility per token of all enforcement defenses.",
+      "publishedAt": "2026-11-12T17:07:22Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17115v1",
+      "titleHash": "2e4cff2ff92cbdb2c362a07647b1368ce2ae7f3926a975d2b9757212e223b16e",
+      "contentHash": "7fc2669dbf1f6399c8509a90f2d983ff4587350714192dbbfa742f32646fe294",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7241264051391865,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17108v1",
+      "title": "LazyWeights: Decode-on-Demand Edge LLMs",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Memory decides which LLMs an edge device runs, and how fast: capacity on a $4$ GB Jetson Nano, bandwidth on an $8$ GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, $\\texttt{llama.cpp}$'s K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. $\\texttt{LazyWeights}$ keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At $1\\%$ and $3.5\\%$ perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are $5.7-31.4\\%$ smaller than the best $\\texttt{llama.cpp}$ format. A bit-exact $0.21$ mm$^2$ ASIC decoder unit ($1$ GHz, $7$ nm) cuts Orin latency and energy per token by up to $36\\%$ and $38\\%$ ($54\\%$ and $44\\%$ with prompt-lookup speculation). On the Nano, $\\texttt{LazyWeights}$ needs $58-64\\%$ less time and $53-57\\%$ less energy per token than CPU $\\texttt{llama.cpp}$, and runs a streamed Mistral-7B 6.6$\\times$ faster at $3.89$ bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).",
+      "publishedAt": "2026-11-12T17:03:40Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17108v1",
+      "titleHash": "db3264b63c05191241ed01448a26b6e16d0882f65db1d25e0aee8bc415a38e18",
+      "contentHash": "6c1bd708db1fd46706ac80fdbb468e25dbbd37f34fb60f4edd6abcdb38e8a2e6",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7236966422450953,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.17107v1",
+      "title": "Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "In NLP, models trained via Empirical Risk Minimization (ERM) often exploit spurious correlations, such as dialectal markers, at the expense of robust linguistic features, thereby degrading their out-of-distribution (OOD) generalization. Invariant Risk Minimization (IRM) aims to suppress such shortcuts by identifying predictive relationships that remain stable across environments, but its practical utility for NLP remains debated. We use a causality-driven framework to evaluate IRM under three shortcut-generating mechanisms: label-generated features, confounding, and selection bias. Our results show that IRM successfully rejects shortcuts across the evaluated causal and anti-causal structures, including under limited environmental variation and increasing label noise. We then extend our analysis beyond controlled synthetic artifacts to two less constrained settings: gender-profession associations in Bias in Bios and semantically loaded actor-name shortcuts in ActorCorr. These experiments show that invariant learning can mitigate more realistic textual shortcuts, while semantically meaningful features require careful calibration of the invariance penalty.",
+      "publishedAt": "2026-11-12T17:03:05Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.17107v1",
+      "titleHash": "e9b5cbebfe69a49bcef1a02c820cb30242f98e96203315cca371ee0effbf7f1b",
+      "contentHash": "797609c74b1a29e148399774b6778d1143c4d7dc7d24a5202e979f1170599eb1",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7236289081786487,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://e-means.github.io/",
+      "title": "e-means: 10x faster k-means at equal loss",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "Mateon1",
+      "publishedAt": "2026-11-13T02:37:31.574-06:00",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://e-means.github.io/",
+      "titleHash": "02001b165e7891ae4c28632f19aaacdee4610293ec38c3f76cefbd371873598f",
+      "contentHash": "02001b165e7891ae4c28632f19aaacdee4610293ec38c3f76cefbd371873598f",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.8406797194983332,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://www.joshka.net/cell-borders/",
+      "title": "Terminal borders that don't cost a cell",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "joshka",
+      "publishedAt": "2026-11-13T06:03:19.804-06:00",
+      "engagement": 42,
+      "tags": [
+        "design",
+        "graphics",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.joshka.net/cell-borders",
+      "titleHash": "b15b47da278cbcd194fc69706aa5b4d184f13038611eabe67e12d09f78cea616",
+      "contentHash": "b15b47da278cbcd194fc69706aa5b4d184f13038611eabe67e12d09f78cea616",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8689035514040491,
+        "engagement": 0.5444894851931955
+      }
+    },
+    {
+      "url": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
+      "title": "Congrats to the Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine Winners!",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The results are in for the final week of our Hacktoberfest DEV Challenges! For Ghost in the Machine,...",
+      "author": "Jem",
+      "publishedAt": "2026-11-13T15:56:26Z",
+      "engagement": 92,
+      "tags": [
+        "devchallenge",
+        "hf26challenge",
+        "hacktoberfest",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/devteam/congrats-to-the-hacktoberfest-open-source-ai-challenge-week-4-ghost-in-the-machine-winners-nok",
+      "titleHash": "b7943ec3cd1cd30842c087f45bbd58e25ae52b1a686af6a12122ecc1dbbb100d",
+      "contentHash": "f5296bbec507128a3528ce3976549e3d867eda87f6a082a5d424d64ea878841f",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.9020173201649619,
+        "engagement": 0.6561609828513117
+      }
+    },
+    {
+      "url": "https://dev.to/javz/ai-is-getting-better-here-is-my-plan-to-stay-ahead-2822",
+      "title": "AI is getting better. Here is my plan to stay ahead.",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "AI is getting better every day.  As a software engineer, this is a topic that is often top of mind,...",
+      "author": "Julien Avezou",
+      "publishedAt": "2026-11-12T15:35:00Z",
+      "engagement": 64,
+      "tags": [
+        "ai",
+        "productivity",
+        "programming",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/javz/ai-is-getting-better-here-is-my-plan-to-stay-ahead-2822",
+      "titleHash": "334157d3e0ed64ae9b7610fe4796459f4d4066257ca172c430994e8bd350a3bf",
+      "contentHash": "93edc258653cbf7bbc26412076cb95ae82c2c4c2eba215b497cab9c8f68dd720",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.7134737655282752,
+        "engagement": 0.6043044522142852
+      }
+    },
+    {
+      "url": "https://dev.to/amananandrai/how-open-source-llms-differ-comparing-130-model-architectures-3b9d",
+      "title": "How Open-Source LLMs Differ: Comparing 130+ Model Architectures",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A few weeks ago I wrote about LLM Explained, a free, open-source course of 43 interactive pages that...",
+      "author": "amananandrai",
+      "publishedAt": "2026-11-13T10:38:47Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "llm",
+        "deeplearning",
+        "deepseek",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/amananandrai/how-open-source-llms-differ-comparing-130-model-architectures-3b9d",
+      "titleHash": "25d134be4e49a9f943a343c35c0526e2245d5235d9aa41a381c096342b663109",
+      "contentHash": "89cadd5e07eeaa9f97d3daf044172ded198b7bf1f1658c177230a9e6c511bbdc",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.8571959556273905,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "title": "thinkingmachines/Inkling-2-Small",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 248 likes · 1064 downloads",
+      "engagement": 248,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "titleHash": "574fe60eceee6a377f698043d323215091335bce25959f14bea48805be9fda40",
+      "contentHash": "25b85aa3ccb75cf9d5c413bd5fa4874525614b999e5009a30492df4172caeda3",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7987331156985787
+      }
+    },
+    {
+      "url": "https://huggingface.co/Cactus-Compute/mirage",
+      "title": "Cactus-Compute/mirage",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 255 likes · 18959 downloads",
+      "engagement": 255,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/Cactus-Compute/mirage",
+      "titleHash": "50e02f2f4a5bf6faddff38db28371fcef567040229dee63f2e5186f80e226975",
+      "contentHash": "0fe0cd0ac2cebd8a45711fadc984c21ddcde9786b35585d716c169fc7df7c2c5",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8027466551039498
+      }
+    }
+  ]
+}
