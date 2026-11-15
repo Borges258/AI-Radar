@@ -1,0 +1,1052 @@
+{
+  "date": "2026-11-15",
+  "stats": {
+    "scraped": 170,
+    "deduped": 38,
+    "scored": 38
+  },
+  "summary": "今日AI资讯聚焦实用技能与成本控制。探讨独立开发者如何通过具体AI技能获取经济优势；推荐自托管AI原生PDF阅读器Gamma，提升论文阅读效率；警示MCP服务器对上下文窗口的隐性消耗，建议采用轻量级工具；同时关注英伟达通过资助初创企业制造GPU稀缺性的争议，以及利用AMD免费API运行Gemma 4 31B模型的实践方案。",
+  "recommendations": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50494696",
+      "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities?<p>What is accessible to learn just from the internet and experimentation, without a degree program, assuming a preexisting moderately technical background? The clearer and more specific (eg. “Learn how-to x with y”) the better.<p>Thank you!",
+      "author": "shnock",
+      "publishedAt": "2026-11-14T06:56:42Z",
+      "engagement": 78,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50494696",
+      "titleHash": "07d72a634fc3ad7a5a86b2c33da2bb5975b72e5072064a00a534ba530860e5fb",
+      "contentHash": "751365bd9fa2b7b01a49b1b35b4e46cb2a16a1e56440832c09549186fbec6f07",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8316705475848756,
+        "engagement": 0.6325423637634805
+      },
+      "rank": 1,
+      "reasons": [
+        "指导个人掌握变现AI技能的关键路径"
+      ],
+      "overview": "Hacker News社区发起讨论，询问独立个体应学习哪些具体且实用的AI技能，以在LLM和智能体时代获得经济优势并充分利用新技术能力。"
+    },
+    {
+      "url": "https://gammapdf.com/",
+      "title": "Show HN: Gamma PDF – AI-native PDF reader, self-hosted",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Author here.<p>I have been reading papers and taking notes for years, using Zotero for the PDFs, Obsidian for the notes, and, recently, an AI chat tab for my questions. Gamma PDF is my attempt to make that one place.<p>In Gamma, you open a paper by simply pasting an arXiv (or DOI) link. Highlight a sentence, or drag a box round a figure, and it becomes a note beside the page with the quote and a link back.<p>You can ask the AI about a figure or some text, and you get an answer that cites a page you can click.<p>You can read and annotate papers on an iPad with the Apple Pencil. Notability (Goodnotes) import&#x2F;export is supported.<p>You can connect to Zotero&#x27;s cloud and use Gamma as a better Zotero client, or import your whole library with no effort.<p>You can deploy Gamma with Docker and read papers from anywhere.<p>You can connect Gamma to Codex (Claude) with Gamma MCP, using it as a knowledge base.<p>Try it without installing: <a href=\"https:&#x2F;&#x2F;gammapdf.com\" rel=\"nofollow\">https:&#x2F;&#x2F;gammapdf.com</a>",
+      "author": "tim4431",
+      "publishedAt": "2026-11-14T08:08:11Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gammapdf.com/",
+      "titleHash": "c6658093c6f311e6c807de08ed983a9e7ee730ed5fba1692aaf2cb037f988da9",
+      "contentHash": "e44594571f69fbc9ecdadebd248d9bf103494702b222fe81e519f1e2be12ba98",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8412643505389846,
+        "engagement": 0.3333333333333333
+      },
+      "rank": 2,
+      "reasons": [
+        "一站式解决AI辅助论文阅读痛点"
+      ],
+      "overview": "开发者推出Gamma PDF，一款自托管的AI原生PDF阅读器，旨在整合Zotero、Obsidian及AI聊天功能，帮助用户更高效地阅读论文并管理笔记。"
+    },
+    {
+      "url": "https://dev.to/necoz/your-mcp-servers-are-silently-draining-your-context-window-the-hidden-cost-of-tool-heavy-ai-agents-fkl",
+      "title": "Your MCP Servers Are Silently Draining Your Context Window: The Hidden Cost of Tool-Heavy AI Agents",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Why attaching dozens of Model Context Protocol (MCP) tools degrades LLM reasoning, inflates API bills, and how small, focused TypeScript micro-tools fix the problem.",
+      "author": "𝗝𝗼𝗵𝗻",
+      "publishedAt": "2026-11-12T16:30:00Z",
+      "engagement": 96,
+      "tags": [
+        "ai",
+        "typescript",
+        "opensource",
+        "productivity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/necoz/your-mcp-servers-are-silently-draining-your-context-window-the-hidden-cost-of-tool-heavy-ai-agents-fkl",
+      "titleHash": "a64d1039a3273a6eea7ea5374eb267919dd3b859006eda5998397e1b49ea89c6",
+      "contentHash": "d96843e3274b268571125f36a5e4bd6a6f5c1680be449dd333e4a34520c6dd37",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.57439922738705,
+        "engagement": 0.6622572447554149
+      },
+      "rank": 3,
+      "reasons": [
+        "揭示MCP工具隐性成本并提供优化方案"
+      ],
+      "overview": "文章指出挂载大量MCP工具会严重占用上下文窗口，导致LLM推理能力下降和API成本激增，建议改用小型、专注的TypeScript微工具来解决问题。"
+    },
+    {
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "speckx",
+      "publishedAt": "2026-11-14T02:52:59Z",
+      "engagement": 1036,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "titleHash": "695a8fe9676a47cfee486e50c98f038b5ff8beea0d8cae87089b49b49f23f456",
+      "contentHash": "695a8fe9676a47cfee486e50c98f038b5ff8beea0d8cae87089b49b49f23f456",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7997761430638881,
+        "engagement": 1
+      },
+      "rank": 4,
+      "reasons": [
+        "揭秘芯片巨头市场策略与行业争议"
+      ],
+      "overview": "报道称英伟达涉嫌通过资助AI初创企业购买其GPU来人为制造市场稀缺性，这一策略引发行业对其垄断行为和市场操纵手段的广泛质疑。"
+    },
+    {
+      "url": "https://dev.to/gde/cant-beat-free-gemma-4-31b-on-amd-token-lab-with-a-local-chat-page-and-an-adk-agent-c5b",
+      "title": "Can't Beat Free: Gemma 4 31B on AMD Token Lab, with a Local Chat Page and an ADK Agent",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "AMD Token Lab is a free OpenAI-compatible API on AMD GPUs that comes with the AMD AI Developer Program. How to sign up, a local chat page that keeps the key off the browser, a terminal client, and a small ADK agent that calls Gemma 4 31B through it.",
+      "author": "xbill",
+      "publishedAt": "2026-11-13T16:49:06Z",
+      "engagement": 49,
+      "tags": [
+        "gemma",
+        "amd",
+        "adk",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/cant-beat-free-gemma-4-31b-on-amd-token-lab-with-a-local-chat-page-and-an-adk-agent-c5b",
+      "titleHash": "fbc55e601fdfe50f5fee9a388791a94f2b56a2217e525041c414c0e853125961",
+      "contentHash": "e920852aad32ccbd887d2b895d3d658eab230e436f8b914d7b52d1a2f3bde845",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.7259189299860315,
+        "engagement": 0.5663233347786729
+      },
+      "rank": 5,
+      "reasons": [
+        "零成本体验前沿开源大模型部署技巧"
+      ],
+      "overview": "教程展示如何在AMD Token Lab免费API上运行Gemma 4 31B模型，包括构建本地聊天页面及ADK智能体，强调密钥安全与零成本使用AMD AI资源。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "speckx",
+      "publishedAt": "2026-11-14T02:52:59Z",
+      "engagement": 1036,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "titleHash": "695a8fe9676a47cfee486e50c98f038b5ff8beea0d8cae87089b49b49f23f456",
+      "contentHash": "695a8fe9676a47cfee486e50c98f038b5ff8beea0d8cae87089b49b49f23f456",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7997761430638881,
+        "engagement": 1
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50494696",
+      "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities?<p>What is accessible to learn just from the internet and experimentation, without a degree program, assuming a preexisting moderately technical background? The clearer and more specific (eg. “Learn how-to x with y”) the better.<p>Thank you!",
+      "author": "shnock",
+      "publishedAt": "2026-11-14T06:56:42Z",
+      "engagement": 78,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50494696",
+      "titleHash": "07d72a634fc3ad7a5a86b2c33da2bb5975b72e5072064a00a534ba530860e5fb",
+      "contentHash": "751365bd9fa2b7b01a49b1b35b4e46cb2a16a1e56440832c09549186fbec6f07",
+      "score": 76,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8316705475848756,
+        "engagement": 0.6325423637634805
+      }
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+      "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "marginalia_nu",
+      "publishedAt": "2026-11-14T15:58:57Z",
+      "engagement": 48,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+      "titleHash": "1e00ad5c6e18c257474e9707745f738cd8099b139b5cd8037a898c58a3968645",
+      "contentHash": "1e00ad5c6e18c257474e9707745f738cd8099b139b5cd8037a898c58a3968645",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9072706416009572,
+        "engagement": 0.5633986933428379
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+      "title": "Israeli airstrike on Nasser hospital in Gaza killed surgeon and others",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "0x54MUR41",
+      "publishedAt": "2026-11-14T05:31:44Z",
+      "engagement": 48,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+      "titleHash": "1b34544c87f2488a4e63174883bc804082071a18b73af5d0238a2d0a81ae9d37",
+      "contentHash": "1b34544c87f2488a4e63174883bc804082071a18b73af5d0238a2d0a81ae9d37",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8204093489383099,
+        "engagement": 0.5633986933428379
+      }
+    },
+    {
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "title": "Open-source AI without Jensen",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pr337h4m",
+      "publishedAt": "2026-11-14T12:44:01Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "titleHash": "18b0a276f4366d51513682a7f8a62076b0e820bac8c0d070d8f0e45d8e58b205",
+      "contentHash": "18b0a276f4366d51513682a7f8a62076b0e820bac8c0d070d8f0e45d8e58b205",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8793329430919112,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://willdady.com/why-platform-teams-fail",
+      "title": "Why platform teams fail (and AI makes it worse)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Groady",
+      "publishedAt": "2026-11-14T12:32:36Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://willdady.com/why-platform-teams-fail",
+      "titleHash": "b04765367b77ea8359e04a144bb16cc8dbe6ee615c05a8a7218d3e6d342a4c5b",
+      "contentHash": "b04765367b77ea8359e04a144bb16cc8dbe6ee615c05a8a7218d3e6d342a4c5b",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8777236443685319,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://entropicdrift.com/blog/mkdocs-drift-automation/",
+      "title": "Transforming Ripgrep's Documentation with AI Automation and MkDocs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ankitg12",
+      "publishedAt": "2026-11-14T05:19:51Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://entropicdrift.com/blog/mkdocs-drift-automation",
+      "titleHash": "c1763032854c27c69c3f54e348f93d8e2b28123e79f842431ef19bbd3752d12e",
+      "contentHash": "c1763032854c27c69c3f54e348f93d8e2b28123e79f842431ef19bbd3752d12e",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.818846573316895,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://epyhia.com/new-access-to-justice-benchmark-finds-leading-ai-models-miss-critical",
+      "title": "New 'Access to Justice' Benchmark: Leading AI Models Miss Critical Legal Details",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "arbuge",
+      "publishedAt": "2026-11-14T14:10:31Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://epyhia.com/new-access-to-justice-benchmark-finds-leading-ai-models-miss-critical",
+      "titleHash": "7982c4cf044735793ab8c77330e0acf731e9c4075276df6910f5cb3f5a7b3a56",
+      "contentHash": "7982c4cf044735793ab8c77330e0acf731e9c4075276df6910f5cb3f5a7b3a56",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8916222795700591,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://gammapdf.com/",
+      "title": "Show HN: Gamma PDF – AI-native PDF reader, self-hosted",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Author here.<p>I have been reading papers and taking notes for years, using Zotero for the PDFs, Obsidian for the notes, and, recently, an AI chat tab for my questions. Gamma PDF is my attempt to make that one place.<p>In Gamma, you open a paper by simply pasting an arXiv (or DOI) link. Highlight a sentence, or drag a box round a figure, and it becomes a note beside the page with the quote and a link back.<p>You can ask the AI about a figure or some text, and you get an answer that cites a page you can click.<p>You can read and annotate papers on an iPad with the Apple Pencil. Notability (Goodnotes) import&#x2F;export is supported.<p>You can connect to Zotero&#x27;s cloud and use Gamma as a better Zotero client, or import your whole library with no effort.<p>You can deploy Gamma with Docker and read papers from anywhere.<p>You can connect Gamma to Codex (Claude) with Gamma MCP, using it as a knowledge base.<p>Try it without installing: <a href=\"https:&#x2F;&#x2F;gammapdf.com\" rel=\"nofollow\">https:&#x2F;&#x2F;gammapdf.com</a>",
+      "author": "tim4431",
+      "publishedAt": "2026-11-14T08:08:11Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gammapdf.com/",
+      "titleHash": "c6658093c6f311e6c807de08ed983a9e7ee730ed5fba1692aaf2cb037f988da9",
+      "contentHash": "e44594571f69fbc9ecdadebd248d9bf103494702b222fe81e519f1e2be12ba98",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8412643505389846,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.shotoku.dev/",
+      "title": "Show HN: Shotoku – Local-first action governance and budget caps for AI agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "IssaPrvj",
+      "publishedAt": "2026-11-14T13:02:53Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.shotoku.dev/",
+      "titleHash": "2905e62c5fece3a7a7f5ed405dae59d45db0acae8a316bb78ba80784d3dd88ce",
+      "contentHash": "2905e62c5fece3a7a7f5ed405dae59d45db0acae8a316bb78ba80784d3dd88ce",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8819988669543932,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://tilt.now/tilt/MTwqny",
+      "title": "Air-Traffic Resilience Portfolio",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "drupeek",
+      "publishedAt": "2026-11-14T12:34:07Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://tilt.now/tilt/MTwqny",
+      "titleHash": "cc69054ffc90cb31ffd441338e3203256c918d7dc3cf54adc76d1b5be9b65e52",
+      "contentHash": "cc69054ffc90cb31ffd441338e3203256c918d7dc3cf54adc76d1b5be9b65e52",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8779372646572714,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.economist.com/briefing/2026/11/12/can-the-ai-boom-make-enough-money-to-sustain-itself",
+      "title": "Can the AI boom make enough money to sustain itself?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "svara",
+      "publishedAt": "2026-11-15T01:24:39Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.economist.com/briefing/2026/11/12/can-the-ai-boom-make-enough-money-to-sustain-itself",
+      "titleHash": "e285be172508835e9a8e6a1faf370e5461c8fd97551b34e989e6575148821979",
+      "contentHash": "e285be172508835e9a8e6a1faf370e5461c8fd97551b34e989e6575148821979",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9934738883489423,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://opencyclone.vercel.app/",
+      "title": "Show HN: Open-Source Version of Cyclon: Phone where AI is the interface?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Exorust",
+      "publishedAt": "2026-11-14T02:46:12Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://opencyclone.vercel.app/",
+      "titleHash": "6440dc6a3170630c346e1be73dc97ff348a65c1aa1a95d338e8cb2b7980c8708",
+      "contentHash": "6440dc6a3170630c346e1be73dc97ff348a65c1aa1a95d338e8cb2b7980c8708",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7989061475791598,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://www.betonit.ai/p/so-far-ai-pessimism-is-observationally",
+      "title": "So Far, AI Pessimism Is Observationally Equivalent to AI Optimism",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "JulianPaul",
+      "publishedAt": "2026-11-14T11:53:42Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.betonit.ai/p/so-far-ai-pessimism-is-observationally",
+      "titleHash": "a18edec033d451a6419dc2c2e7c8618d4979f01346f348d845b62984b8371338",
+      "contentHash": "a18edec033d451a6419dc2c2e7c8618d4979f01346f348d845b62984b8371338",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8722623638283563,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.astralcodexten.com/p/ai-company-employees-should-unionize",
+      "title": "AI Company Employees Should Unionize",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "JimmyBuckets",
+      "publishedAt": "2026-11-14T19:47:33Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.astralcodexten.com/p/ai-company-employees-should-unionize",
+      "titleHash": "9882933a643cefd68eb69c0cc03c422d28339442f064ee4fde98128e6bab4b03",
+      "contentHash": "9882933a643cefd68eb69c0cc03c422d28339442f064ee4fde98128e6bab4b03",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.941166285990921,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c8n50w445zgpo",
+      "title": "Thousands turn out in Edinburgh to protest against AI data centres",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nothing_is_real",
+      "publishedAt": "2026-11-14T18:47:10Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.co.uk/news/articles/c8n50w445zgpo",
+      "titleHash": "cdd0fa9e02a0027a9357eb3fa56a7448f92b30a88c17dd058f2f04802d0c6dfc",
+      "contentHash": "cdd0fa9e02a0027a9357eb3fa56a7448f92b30a88c17dd058f2f04802d0c6dfc",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9320917794878577,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "title": "Jensen Huang's departure blasts big hole in AI startup funding",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nlpnerd",
+      "publishedAt": "2026-11-14T16:52:24Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
+      "titleHash": "a530fa2a93ca43c49db20781f4884f725e4cab24289a05850962688854ae8b2f",
+      "contentHash": "a530fa2a93ca43c49db20781f4884f725e4cab24289a05850962688854ae8b2f",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9150849381257439,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://github.com/ai-timon/timon",
+      "title": "Show HN: Timon, an open-source AI workstation for coordinating agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Saucisse_dev",
+      "publishedAt": "2026-11-14T12:52:01Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/ai-timon/timon",
+      "titleHash": "7a3090c0dfc7bcc31a1ac8b38ab999a7018d8c03952bc3f529cc83b9ca5bf789",
+      "contentHash": "7a3090c0dfc7bcc31a1ac8b38ab999a7018d8c03952bc3f529cc83b9ca5bf789",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8804623847607825,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://thebuild.com/blog/stop-using-ai-to-report-postgresql-bugs/",
+      "title": "Christophe Pettus: Stop Using AI to Report PostgreSQL Bugs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "omegaSigma95",
+      "publishedAt": "2026-11-14T17:58:50Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thebuild.com/blog/stop-using-ai-to-report-postgresql-bugs",
+      "titleHash": "bc6fa1c728b3706d7b62c35c781d9435e9d3a4a37f21d1fb15553ef8da0cc613",
+      "contentHash": "bc6fa1c728b3706d7b62c35c781d9435e9d3a4a37f21d1fb15553ef8da0cc613",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9248912534507258,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "http://ainiconva.com",
+      "title": "App like GitHub for your conversations with AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "charlesamumdemo",
+      "publishedAt": "2026-11-14T12:09:08Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "http://ainiconva.com/",
+      "titleHash": "8b81aaba72c9115811600aaeacb98a41804f484d0b7b9790be2bfbdd7689d9db",
+      "contentHash": "8b81aaba72c9115811600aaeacb98a41804f484d0b7b9790be2bfbdd7689d9db",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.874425014702018,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://posthog.com/newsletter/decision-models",
+      "title": "Not Everything Needs an LLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "eigenBasis",
+      "publishedAt": "2026-11-14T06:25:03Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://posthog.com/newsletter/decision-models",
+      "titleHash": "73ca9c94ffec1c845ca11e682fba31c4dec4e41d8a3736ad54db368bfb3049c2",
+      "contentHash": "73ca9c94ffec1c845ca11e682fba31c4dec4e41d8a3736ad54db368bfb3049c2",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8274578092405083,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.05943",
+      "title": "Global Optimization for Combinatorial Geometry Problems Revisited in Era of LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "YeGoblynQueenne",
+      "publishedAt": "2026-11-14T11:53:06Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2601.05943",
+      "titleHash": "3b667307d1ba8be95472b208514db5d65ae3ca7f2f60f7e22c5f6246b694cc4c",
+      "contentHash": "3b667307d1ba8be95472b208514db5d65ae3ca7f2f60f7e22c5f6246b694cc4c",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8721783947872067,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://waldo.vanderlore.de/blog/whatyousay-privacy-voice-pipeline/",
+      "title": "Write the eval before the fix: building a WhatsApp transcriber with LLM-TDD",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "waldov",
+      "publishedAt": "2026-11-14T12:43:31Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://waldo.vanderlore.de/blog/whatyousay-privacy-voice-pipeline",
+      "titleHash": "04f109f1b0ce12cb9734f1c645d65a0d79ba6b753091039d6cbd416a258a95b4",
+      "contentHash": "04f109f1b0ce12cb9734f1c645d65a0d79ba6b753091039d6cbd416a258a95b4",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8792624011125172,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2K_Rm8cho1I",
+      "title": "DeepSeek's New LLM Engine Just Made GPUs 3x More Valuable [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "yogthos",
+      "publishedAt": "2026-11-15T00:07:46Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=2K_Rm8cho1I",
+      "titleHash": "fc10e10895892e74520dd23d57309ae4d5fed95de079caa3c903d8b70aedeea7",
+      "contentHash": "fc10e10895892e74520dd23d57309ae4d5fed95de079caa3c903d8b70aedeea7",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9812936887980138,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://pgaleone.eu/ai/2026/11/14/backdooring-llms-and-trust/",
+      "title": "Backdooring LLMs – Do you trust your AI provider?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "me2too",
+      "publishedAt": "2026-11-14T09:20:54Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://pgaleone.eu/ai/2026/11/14/backdooring-llms-and-trust",
+      "titleHash": "da79196eaec78852cadd58735fa9bd13a1b60e8c45ff953e930f953c1a786e93",
+      "contentHash": "da79196eaec78852cadd58735fa9bd13a1b60e8c45ff953e930f953c1a786e93",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8511372378220768,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://shawnsomething.com/thoughts/proof-of-effort/",
+      "title": "Proof of effort: When LLMs destroyed the time for execution",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Shawn_Something",
+      "publishedAt": "2026-11-14T23:38:35Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://shawnsomething.com/thoughts/proof-of-effort",
+      "titleHash": "19c2e0a97c44f73830c69f6bec34f2b256f0a1819a6179a594fc394c733a3451",
+      "contentHash": "19c2e0a97c44f73830c69f6bec34f2b256f0a1819a6179a594fc394c733a3451",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9767095345416948,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.nikita-pavlichenko.com/blog/every-llm-architecture-change",
+      "title": "I Tried Every LLM Architecture Change Since 2020",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "scoresmoke",
+      "publishedAt": "2026-11-14T18:41:54Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nikita-pavlichenko.com/blog/every-llm-architecture-change",
+      "titleHash": "ee10df06b1b19fbef9e89c0ac0d617089274e2a04be396e7bc42e7f30ad1962f",
+      "contentHash": "ee10df06b1b19fbef9e89c0ac0d617089274e2a04be396e7bc42e7f30ad1962f",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9313044568499009,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://staydecent.ca/blog/on-llms-do-the-benefits-outweigh-the-costs/",
+      "title": "LLMs: Do the Benefits Outweigh the Costs?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cickpass_broken",
+      "publishedAt": "2026-11-14T16:06:37Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://staydecent.ca/blog/on-llms-do-the-benefits-outweigh-the-costs",
+      "titleHash": "f2247f3701f6e0616f725dd0e429ec09593228d05262a1f48222cd84c8973c11",
+      "contentHash": "f2247f3701f6e0616f725dd0e429ec09593228d05262a1f48222cd84c8973c11",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9083873821823996,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://py-code.org/blog/new-pypi-packages-imports/",
+      "title": "What new PyPI packages import: LLM, httpx, pydantic v2",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "aidotguru",
+      "publishedAt": "2026-11-14T13:28:13Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://py-code.org/blog/new-pypi-packages-imports",
+      "titleHash": "505f5ec3da3e6405c06cb7801dc64640d6b8bac5b37438a16142d4a4ef7708a4",
+      "contentHash": "505f5ec3da3e6405c06cb7801dc64640d6b8bac5b37438a16142d4a4ef7708a4",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8855912697664358,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.28259",
+      "title": "Use LLM for direct robot control",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kevinlu",
+      "publishedAt": "2026-11-14T17:55:04Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2610.28259",
+      "titleHash": "bf20af60dc1b58e6ddbd8a10e0df12dc3119a7ac8d8b5d03b1c49ce51f898887",
+      "contentHash": "bf20af60dc1b58e6ddbd8a10e0df12dc3119a7ac8d8b5d03b1c49ce51f898887",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.924332450943612,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "title": "You could have invented transformers from memory",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "GrayGnome",
+      "publishedAt": "2026-11-13T22:49:47.565-06:00",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://alexwang.ai/posts/associative-memory",
+      "titleHash": "be5903495a9bb64c08360df5552990a23a3e40de67a195c3553a562821ced33a",
+      "contentHash": "be5903495a9bb64c08360df5552990a23a3e40de67a195c3553a562821ced33a",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.8,
+        "timeliness": 0.8149070227719498,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://dev.to/gde/cant-beat-free-gemma-4-31b-on-amd-token-lab-with-a-local-chat-page-and-an-adk-agent-c5b",
+      "title": "Can't Beat Free: Gemma 4 31B on AMD Token Lab, with a Local Chat Page and an ADK Agent",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "AMD Token Lab is a free OpenAI-compatible API on AMD GPUs that comes with the AMD AI Developer Program. How to sign up, a local chat page that keeps the key off the browser, a terminal client, and a small ADK agent that calls Gemma 4 31B through it.",
+      "author": "xbill",
+      "publishedAt": "2026-11-13T16:49:06Z",
+      "engagement": 49,
+      "tags": [
+        "gemma",
+        "amd",
+        "adk",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/cant-beat-free-gemma-4-31b-on-amd-token-lab-with-a-local-chat-page-and-an-adk-agent-c5b",
+      "titleHash": "fbc55e601fdfe50f5fee9a388791a94f2b56a2217e525041c414c0e853125961",
+      "contentHash": "e920852aad32ccbd887d2b895d3d658eab230e436f8b914d7b52d1a2f3bde845",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.7259189299860315,
+        "engagement": 0.5663233347786729
+      }
+    },
+    {
+      "url": "https://dev.to/necoz/your-mcp-servers-are-silently-draining-your-context-window-the-hidden-cost-of-tool-heavy-ai-agents-fkl",
+      "title": "Your MCP Servers Are Silently Draining Your Context Window: The Hidden Cost of Tool-Heavy AI Agents",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Why attaching dozens of Model Context Protocol (MCP) tools degrades LLM reasoning, inflates API bills, and how small, focused TypeScript micro-tools fix the problem.",
+      "author": "𝗝𝗼𝗵𝗻",
+      "publishedAt": "2026-11-12T16:30:00Z",
+      "engagement": 96,
+      "tags": [
+        "ai",
+        "typescript",
+        "opensource",
+        "productivity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/necoz/your-mcp-servers-are-silently-draining-your-context-window-the-hidden-cost-of-tool-heavy-ai-agents-fkl",
+      "titleHash": "a64d1039a3273a6eea7ea5374eb267919dd3b859006eda5998397e1b49ea89c6",
+      "contentHash": "d96843e3274b268571125f36a5e4bd6a6f5c1680be449dd333e4a34520c6dd37",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.57439922738705,
+        "engagement": 0.6622572447554149
+      }
+    },
+    {
+      "url": "https://dev.to/paramveer_singh_53163a04c/swizzle-runtime-v010-how-we-reached-209-toks-and-43ms-ttft-on-a-4gb-laptop-gpu-in-pure-rust-4l7l",
+      "title": "Swizzle Runtime v0.1.0: How We Reached 209 tok/s and 43ms TTFT on a 4GB Laptop GPU in Pure Rust",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Autonomous coding agents, local developer tools, and edge robotics are bottlenecked by the...",
+      "author": "Paramveer Singh",
+      "publishedAt": "2026-11-14T14:55:59Z",
+      "engagement": 11,
+      "tags": [
+        "rust",
+        "cuda",
+        "llm",
+        "opensource",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/paramveer_singh_53163a04c/swizzle-runtime-v010-how-we-reached-209-toks-and-43ms-ttft-on-a-4gb-laptop-gpu-in-pure-rust-4l7l",
+      "titleHash": "efd2baa1a7bddfeef85d949e8c9ccb17ec63da2cf4de40b7e3a0dacf577d3620",
+      "contentHash": "780a79a771075d3f4773bc1605ef9ec4943ad8b704c96446efa865217edcf05d",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8981505904689193,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/m_t_ramkrushna/does-your-ai-feature-ever-say-i-dont-know-friday-ai-question-57gf",
+      "title": "Does your AI feature ever say \"I don't know\"? (Friday AI question)",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Friday AI Question. This week's question is one I think most teams never ask out loud:  When your AI...",
+      "author": "M.T.Ramkrushna",
+      "publishedAt": "2026-11-13T04:20:35Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "discuss",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/m_t_ramkrushna/does-your-ai-feature-ever-say-i-dont-know-friday-ai-question-57gf",
+      "titleHash": "692c760aaa9888a98b1627cf2cfd02d2dd584f5ca4168c97df820b7b4217da0d",
+      "contentHash": "7efc40be823075fbda995f520a14a737eee13350d5371f6dfcd365f21ff0b13d",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.6437679220374403,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+      "title": "Edge0/Edge0-145B-NVFP4",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 262 likes · 33819 downloads",
+      "engagement": 262,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+      "titleHash": "e2e7d91e97af01863bdb21e0ddd480868da73073f551a25419e3907059bd3e28",
+      "contentHash": "57deef4bec9b2f3b92f575ad3193ba9488556c0eee17a0204405f9a07fec5181",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8066519161632527
+      }
+    },
+    {
+      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-to-image · 295 likes · 96251 downloads",
+      "engagement": 295,
+      "tags": [
+        "model",
+        "text-to-image"
+      ],
+      "normalizedUrl": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "titleHash": "99b8d14735e69725fedb9049fffcc1cdadd67933df4151c633c0ff3f2046679d",
+      "contentHash": "963a8e535bde5c8384ec804a848dd93e5fbff757090cc6eac240aa7c9176882b",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8237639036863129
+      }
+    },
+    {
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "title": "higurashi-ai/Haru-4B",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "audio-to-audio · 234 likes · 1262 downloads",
+      "engagement": 234,
+      "tags": [
+        "model",
+        "audio-to-audio"
+      ],
+      "normalizedUrl": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "titleHash": "3834eaa2f370ebf05b9a2b2defc273ed26bb387e26b4a613967091b3ca2760bf",
+      "contentHash": "1ff637b474fdab5955bf36a0850388465c2e6dcbc4d57da24045c27f1942675e",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7903559540905788
+      }
+    }
+  ]
+}
