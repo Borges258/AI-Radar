@@ -1,0 +1,1703 @@
+{
+  "date": "2026-11-17",
+  "stats": {
+    "scraped": 170,
+    "deduped": 68,
+    "scored": 68
+  },
+  "summary": "今日资讯聚焦LLM推理与效率前沿：探讨TypeSafe模型能否替代微调分类器，揭示对话历史对推理的隐性损耗，并介绍LoopFill加速循环Transformer解码。同时覆盖多模态与垂直领域：法国手语AAC模型、新加坡法律歧义基准。兼顾技术创新与社会价值，适合关注AI效能、可解释性及行业落地的读者。",
+  "recommendations": [
+    {
+      "url": "http://arxiv.org/abs/2611.20191v1",
+      "title": "Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Typed Decision Models such as TypeSafe's Jev, also called System One or System 1 models, answer typed questions about an input with a probability for each option, and they need no training. Many NLP papers still fine-tune a task-specific classifier, and prompted large language models (LLMs) trail such classifiers on most text classification benchmarks. We ask how many of these fine-tuned classifiers a Typed Decision Model can replace under each paper's own evaluation, and what is needed where it cannot. We swap the predictors of 24 ACL-venue papers for Jev, keep each paper's splits, label definitions and metric, and check the results with Cloudflare's Clef, Microsoft-Decision-1 and OpenAI's GPT-6 Luna Decisions. The resulting 46 English test sets, with their questions and published scores, form the TDM-Gauntlet benchmark. With a zero-shot prompt, Jev directly replaced the paper's predictor on 12 of the 46 test sets, mostly single judgments with plain labels, but rarely where the paper's method was trained on its labels. Where Jev scored lower, we most often attributed the shortfall to an annotation convention that the label name does not state. With 500 training labels plus validation and no user-managed GPU, calibration and GEPA-style prompt optimization closed a median 72% of the gap to the paper's method, about twice what off-the-shelf GEPA closed, for a median $1.66 per search. On the same labels, fine-tuned encoders such as RoBERTa and DeBERTa closed 59%, and LoRA fine-tuning of the open LLM Qwen3.8-27B closed 97%. Fine-tuning remains the most accurate option, but a zero-shot prompt is often enough for plain labels, and prompt optimization closes most of the remaining gap.",
+      "publishedAt": "2026-11-15T18:44:24Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20191v1",
+      "titleHash": "4f2a5aed441a933313b57a84dded517c199e37d09869e6513c52d97bb2d50141",
+      "contentHash": "fd96ea37c6faa5fb4637cfc04365615c510c9e664d3762f7258e497b77eb61d1",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7208353646385495,
+        "engagement": 0
+      },
+      "rank": 1,
+      "reasons": [
+        "探索去微调化的轻量级决策替代方案"
+      ],
+      "overview": "介绍TypeSafe等Typed Decision模型，评估其在ACL论文中替代微调分类器的可行性，强调无需额外训练即可处理类型化问题。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20094v1",
+      "title": "FRAAC: A French Multimodal Large Language Model and Dataset forPictogram-Based Augmentative and Alternative Communication",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Pictograms are a core modality in augmentative and alternative communication (AAC), yet recent multimodal large language models (MLLMs) cannot reliably interpret or produce pictogram sequences. Two obstacles explain this gap: the absence of a standardized pictogram grammar and the scarcity of parallel text-pictogram data. We introduce Retrieval-Augmented Pictogram Selection (RAPS), an annotation method that refines a rule-based transcription system's output with LLM-based concept extraction and retrieval over a pictogram vocabulary, handling cases where hand-written rules fail (named entities, numbers, polysemous words) without requiring new rules. Applied to French, RAPS yields a synthetic corpus of 1.4 million parallel pairs, of which 300k are publicly released. In a human ranking study where annotators order four pictogram transcriptions of the same sentence, RAPS outperforms the rule-based state of the art. Moreover, we show that standard reference-based metrics separate systems of clearly different quality but fail to rank strong systems against each other. Finally, we build an instruction-tuned model that supports interaction in several AAC modalities: it accepts pictogram or text input and answers in pictograms, speech, or text.",
+      "publishedAt": "2026-11-15T16:12:06Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20094v1",
+      "titleHash": "b539e821e9b6e0bf3f6dd9ce2847019ce4b933494663238c69b3ffbcf7a53544",
+      "contentHash": "ea7e664d470399d5a405a036fb0230b30c9fec1591f50ef5098b624783c80f02",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7034340460593886,
+        "engagement": 0
+      },
+      "rank": 2,
+      "reasons": [
+        "打破MLLM手语沟通障碍，助力包容性设计"
+      ],
+      "overview": "提出FRAAC模型与数据集，解决法语手语沟通辅助中MLLM无法可靠理解或生成图像符号（Pictograms）的痛点，赋能残障人士。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20071v1",
+      "title": "The Silent Cost of Conversation History in LLM Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) in multi-turn information systems accumulate their own earlier replies and a growing task state. We asked whether this conversation history lowers accuracy, and whether process-level quality metrics warn before it does. Each analysis was fixed before its outcomes were computed. In Study 1, on 48 sharded math tasks, retaining its replies lowered final success by 0.21 for GPT-4o-mini and 0.29 for Mistral-7B (Holm-adjusted p = 0.026 and 0.004); Llama-4 Scout showed the same direction, not significant. Study 2 introduces CDR-Stream, 100-turn state-tracking dialogues with an exact answer per turn and per-model difficulty calibration. With the full history, accuracy fell from about 0.6 to 0.1 within twenty turns at matched difficulty, whereas a solver-verified state summary kept it 0.52-0.59 higher (Holm-adjusted p less than 0.001). Consistency and logical coherence fell far less than accuracy, and stability rose. None of these metrics, a paired readiness measure or calibrated single-stream drift detectors gave robust, model-general early warning, although in Study 2 the repeat-based metrics were complete only for GPT-4o-mini. In the monitors we tested, a single 100-turn stream had power only for very large drops. Systems built on LLMs should keep task state outside the transcript and monitor across sessions.",
+      "publishedAt": "2026-11-15T15:22:15Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20071v1",
+      "titleHash": "37fad0f421da9dbe821d76b7290502e09b32f768dec599ef2c9cb6f6e7212a8a",
+      "contentHash": "9d77d5c008bfa97d0ffef5f17832c4179daf93ed29e6c9435320471433f7b104",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6978300919102467,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "揭示多轮对话性能陷阱，优化系统架构"
+      ],
+      "overview": "研究LLM在多轮对话中因积累历史消息和任务状态而导致的准确性下降问题，量化对话历史的‘隐性成本’，为系统设计提供依据。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19649v1",
+      "title": "LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Looped Transformers improve parameter efficiency by repeatedly applying the same Transformer layers. During autoregressive decoding, however, generating each token requires several sequential passes through these layers, leading to high decoding latency. Pipelined self-speculative methods use shallow-loop predictions to process tokens at different loops in the same batch, but each token must reach the drafting depth before the next can enter the pipeline. We introduce LoopFill, a training-free speculative decoding algorithm for looped LLM that combines multi-token suffix drafts with shallow-loop predictions in a single draft tree. Both drafters contribute to one tree, so a suffix lookup can immediately extend a shallow prediction and several future tokens can enter the pipeline together. The shared block computes the highest-scoring draft candidates at different loop depths in one batch, and full-depth verification preserves the model's autoregressive output distribution. Across seven benchmarks, LoopFill's average speedup over greedy autoregressive decoding is $5.85\\times$ on Ouro-2.6B and $5.13\\times$ on Huginn-3.5B. The speedups exceed those of LoopAhead, the strongest baseline, by \\(40\\%\\) on Ouro-2.6B and \\(25\\%\\) on Huginn-3.5B.",
+      "publishedAt": "2026-11-14T22:35:41Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19649v1",
+      "titleHash": "4ed68f6b67864f145e5db67629da74d3f9c795fb127ae4fcbb1f20abc36d7d14",
+      "contentHash": "69d70da6c4c8f93d747f278d634d13a2023c89f14ee5308126092430dffc0846",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.593757681026407,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "显著提升循环架构推理速度，降低延迟"
+      ],
+      "overview": "提出LoopFill方法，通过流水线式多token推测解码优化循环Transformer的自回归生成效率，突破参数复用模型在解码速度上的瓶颈。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19643v1",
+      "title": "SG-LegalClarify: A Large-Scale Benchmark for Legal Reasoning and Ambiguity Recognition in Singapore Law",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Singapore offers a distinctive testbed for legal reasoning by large language models (LLMs). Its legal system combines inherited English common law with jurisdiction-specific statutes, requiring models to distinguish local doctrine from generic common-law intuition. This setting also highlights the challenge of recognizing underspecification in lay legal queries, because the facts material to a legal outcome depend on the governing doctrine. Yet legal benchmarks rarely cover Singapore law or test this form of ambiguity recognition. To address these gaps, we introduce SG-LegalClarify, a large-scale benchmark for open-ended legal reasoning and ambiguity recognition in Singapore law. SG-LegalClarify contains 1,100 lawyer-authored source questions spanning 10 legal domains, including 340 fully specified and 760 underspecified questions. Each underspecified question has a fixed hidden-fact assignment and a fully specified counterpart, yielding 1,860 evaluation instances. Responses are graded with lawyer-authored Issue, Rule, Application, and Conclusion (IRAC) rubrics. We evaluate 19 LLMs, closed-book and with web search, using a multi-turn pipeline in which models decide whether to answer or clarify, and a user simulator reveals hidden facts only when asked. We find the benchmark far from saturated: the best models satisfy only 69.8% of mandatory rubric items closed-book (average 53.8%) and 77.8% with web search (average 63.0%). Models also struggle to recognize when clarification is necessary. We will release the public split of our benchmark, the model outputs on it, and the evaluation pipeline to support future research.",
+      "publishedAt": "2026-11-14T22:16:38Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19643v1",
+      "titleHash": "8c57d1940aa9d840d42faabd2a932d505cecffed80c118764dd5698d74578ecf",
+      "contentHash": "ad65a0e75f8e490332979a34dbc3d744213263b618c978eedc041994b3d1319e",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5919455801316553,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "填补新加坡法律AI评估空白，精准度高"
+      ],
+      "overview": "发布SG-LegalClarify基准，针对新加坡法律体系中的混合特色，测试LLM在法律推理及模糊性识别上的表现，填补区域法律AI评测空白。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "title": "United Airlines experiencing a widespread system outage, airline says",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50524260\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50524260</a>",
+      "author": "bearsyankees",
+      "publishedAt": "2026-11-16T22:14:38Z",
+      "engagement": 212,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+      "titleHash": "fc164582c2aa9154b3ae49378f2306e5cd4cef30528f78317bcf5d959cab94e8",
+      "contentHash": "49edc6f6e6a4a61c59e9c8b407d32f7f8ded42980a36ef0c99072493ab49ae83",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9393535508126512,
+        "engagement": 0.7761265344795792
+      }
+    },
+    {
+      "url": "https://apnews.com/article/united-airlines-outage-5a5e5f75bb07f11ffb8750901f0076ff",
+      "title": "United Airlines has a widespread system outage",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "tedd4u",
+      "publishedAt": "2026-11-16T22:22:18Z",
+      "engagement": 48,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/united-airlines-outage-5a5e5f75bb07f11ffb8750901f0076ff",
+      "titleHash": "d1147018eb31484af395e60cf453e96cc180c0f8dab30f4db8ee4751519b957c",
+      "contentHash": "d1147018eb31484af395e60cf453e96cc180c0f8dab30f4db8ee4751519b957c",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9405097815804223,
+        "engagement": 0.5633986933428379
+      }
+    },
+    {
+      "url": "https://www.businessinsider.com/ai-math-class-university-homework-caltech-careers-2026-11",
+      "title": "Caltech professor no longer grades homework's because everyone uses AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ishanz",
+      "publishedAt": "2026-11-16T20:47:53Z",
+      "engagement": 47,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.businessinsider.com/ai-math-class-university-homework-caltech-careers-2026-11",
+      "titleHash": "bf0c3e4ffe6f0bb656f9aa69099cd16f528274dbd2f0eaa6fcb99eb8a1819851",
+      "contentHash": "bf0c3e4ffe6f0bb656f9aa69099cd16f528274dbd2f0eaa6fcb99eb8a1819851",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.926369168617334,
+        "engagement": 0.5604137457918624
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+      "title": "FBI says Artex AI open-source hacking tool used to breach networks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "novateg",
+      "publishedAt": "2026-11-16T18:12:21Z",
+      "engagement": 45,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours",
+      "titleHash": "59080b736b19560d1ed3765ccb71503b01a1338d8cea6cb251a3dabf5016162d",
+      "contentHash": "59080b736b19560d1ed3765ccb71503b01a1338d8cea6cb251a3dabf5016162d",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9035372950233472,
+        "engagement": 0.5542526105605247
+      }
+    },
+    {
+      "url": "https://www.gameworkers.co.uk/ai-manifesto/",
+      "title": "Generative AI Usage in the Games Industry",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "kingbob000",
+      "publishedAt": "2026-11-16T15:59:48Z",
+      "engagement": 42,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.gameworkers.co.uk/ai-manifesto",
+      "titleHash": "9c63bba0b5a25e114357118b6093a1ba9eb92c07af6a1952ae39685dc66e5a22",
+      "contentHash": "9c63bba0b5a25e114357118b6093a1ba9eb92c07af6a1952ae39685dc66e5a22",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8845239958194699,
+        "engagement": 0.5444894851931955
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50520076",
+      "title": "Ask HN: If AI tools are so good, why isn't your bug backlog empty?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "A lot of people outside tech ask me if AI is going to replace programmers and I just think: if that were the case we should be running out of things to do<p>The bug backlog should be empty and we&#x27;ve caught up to every feature request from PMs to the point that we are bottlenecked on the business side<p>But that does not seem to be the case with my own company or most devs I talk to in the industry<p>So what gives?",
+      "author": "ex-aws-dude",
+      "publishedAt": "2026-11-16T17:20:28Z",
+      "engagement": 41,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50520076",
+      "titleHash": "1b8a98e5cd7be094b13848b7d93a9a504579bb8e98243ef4b75c8e4141739fac",
+      "contentHash": "1e736ac0a5c49d5818036b3c970f088dc329de3397a98275c25ead0bacb8316a",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8960468222062151,
+        "engagement": 0.5410830967993002
+      }
+    },
+    {
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+      "title": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "jethronethro",
+      "publishedAt": "2026-11-16T19:09:05Z",
+      "engagement": 29,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+      "titleHash": "f0ebfe9a4d18d45be1134649d016ffb4ee8f4e20097759f6b936d55992b7d3de",
+      "contentHash": "f0ebfe9a4d18d45be1134649d016ffb4ee8f4e20097759f6b936d55992b7d3de",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9117996579761372,
+        "engagement": 0.4923737515732208
+      }
+    },
+    {
+      "url": "https://gizmodo.com/the-fed-is-worried-ai-agents-could-trigger-a-bank-run-2000840566",
+      "title": "The Fed Is Worried AI Agents Could Trigger a Bank Run",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pera",
+      "publishedAt": "2026-11-16T21:12:02Z",
+      "engagement": 24,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gizmodo.com/the-fed-is-worried-ai-agents-could-trigger-a-bank-run-2000840566",
+      "titleHash": "7762309993653e2f78bef00510bce34830885a44de6fbef0a80341f3ff05a55a",
+      "contentHash": "7762309993653e2f78bef00510bce34830885a44de6fbef0a80341f3ff05a55a",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9299657064585356,
+        "engagement": 0.46598000289067926
+      }
+    },
+    {
+      "url": "https://cloudnativenow.com/features/kubernetes-is-strengthening-its-position-as-the-ai-platform-of-choice/",
+      "title": "Kubernetes Is Strengthening Its Position as the AI Platform of Choice",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "CrankyBear",
+      "publishedAt": "2026-11-16T20:48:53Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://cloudnativenow.com/features/kubernetes-is-strengthening-its-position-as-the-ai-platform-of-choice",
+      "titleHash": "15796452903da9df69a000f7c1d137d7c47858a7a6ac025539d6abc6128606ce",
+      "contentHash": "15796452903da9df69a000f7c1d137d7c47858a7a6ac025539d6abc6128606ce",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9265178171575343,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://ourworldindata.org/no-matter-how-you-ask-more-americans-are-negative-than-positive-about-ai",
+      "title": "No matter how you ask, more Americans are negative than positive about AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "atlasunshrugged",
+      "publishedAt": "2026-11-16T21:58:29Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://ourworldindata.org/no-matter-how-you-ask-more-americans-are-negative-than-positive-about-ai",
+      "titleHash": "fdd2e4e24e584651862cd9b445ea51e6ad3a4c6f98354b85bfdae6c65e7ac72d",
+      "contentHash": "fdd2e4e24e584651862cd9b445ea51e6ad3a4c6f98354b85bfdae6c65e7ac72d",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9369225743461236,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://www.reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16/",
+      "title": "California sues OpenAI over AI models' cyberattacks on Hugging Face",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sdeframond",
+      "publishedAt": "2026-11-16T21:51:24Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16",
+      "titleHash": "e9fc07a61d2a3ad95a10d2e1cef7d130510bc691fcb0305e7ee319aebd53e6f5",
+      "contentHash": "e9fc07a61d2a3ad95a10d2e1cef7d130510bc691fcb0305e7ee319aebd53e6f5",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.93585834231334,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://studio.sinapsdata.com.br",
+      "title": "Show HN: A free interactive course on AI agent governance",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sadrk",
+      "publishedAt": "2026-11-17T02:12:13Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://studio.sinapsdata.com.br/",
+      "titleHash": "5539991ae6506db123dec18d9a67a8e14d1baa4bcb18b97329f1f782471b89f2",
+      "contentHash": "5539991ae6506db123dec18d9a67a8e14d1baa4bcb18b97329f1f782471b89f2",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9758533778666695,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
+      "title": "Google: AI agent turned a security patch into a exploit with no human help",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "sshah03",
+      "publishedAt": "2026-11-16T14:14:09Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
+      "titleHash": "1ec0d95838604a65bff24d3ed0908901bc12ebbb4d478e877dab2f16422b439b",
+      "contentHash": "1ec0d95838604a65bff24d3ed0908901bc12ebbb4d478e877dab2f16422b439b",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8696562531028942,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://www.reddit.com/r/google_antigravity/comments/1xx9nl3/google_ai_ultra_subscription_not_worth_it/",
+      "title": "Google AI Ultra Subscription Not Worth It",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "behnamoh",
+      "publishedAt": "2026-11-16T04:59:22Z",
+      "engagement": 12,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reddit.com/r/google_antigravity/comments/1xx9nl3/google_ai_ultra_subscription_not_worth_it",
+      "titleHash": "3bece2b582e45498d3458fbb3a86b70aeb4c1dae08ff6b99603ab3280ee0dc6a",
+      "contentHash": "3bece2b582e45498d3458fbb3a86b70aeb4c1dae08ff6b99603ab3280ee0dc6a",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7955889260636597,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://www.nbcchicago.com/news/local/united-airlines-experiencing-widespread-system-outage/4017556/",
+      "title": "United Airlines experiencing 'widespread system outage'",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "scapecast",
+      "publishedAt": "2026-11-16T22:21:50Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nbcchicago.com/news/local/united-airlines-experiencing-widespread-system-outage/4017556",
+      "titleHash": "2967155a79348c545830c25161fe36db90fbf02461f395cdb5c81244fcaf9ab7",
+      "contentHash": "2967155a79348c545830c25161fe36db90fbf02461f395cdb5c81244fcaf9ab7",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9404393616563204,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.thetimes.com/business/companies-markets/article/nvidia-jensen-huang-us-treasury-ai-chips-china-ckwd9037f",
+      "title": "Nvidia ordered to explain $12B supply of AI chips to China",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ronny683",
+      "publishedAt": "2026-11-16T14:20:50Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.thetimes.com/business/companies-markets/article/nvidia-jensen-huang-us-treasury-ai-chips-china-ckwd9037f",
+      "titleHash": "15d97ce13d151fbae492628f2a7426785e79a844f472a1e9a360bbf0be982676",
+      "contentHash": "15d97ce13d151fbae492628f2a7426785e79a844f472a1e9a360bbf0be982676",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.870589325491934,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/",
+      "title": "California is suing OpenAI over its 'rogue' AI agent hack",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-11-16T21:12:54Z",
+      "engagement": 10,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack",
+      "titleHash": "bb7b7f8aec71ca1730e3cb1b94008ac22ea31ebd37ee308173bb4b913436feac",
+      "contentHash": "bb7b7f8aec71ca1730e3cb1b94008ac22ea31ebd37ee308173bb4b913436feac",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9300950339749376,
+        "engagement": 0.34713089505274164
+      }
+    },
+    {
+      "url": "https://www.cnn.com/2026/11/16/economy/ai-bubble-anthropic-ipo-recession",
+      "title": "AI bubble will likely burst and cause a recession by 2028 election",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-11-16T19:14:39Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnn.com/2026/11/16/economy/ai-bubble-anthropic-ipo-recession",
+      "titleHash": "7977cec7b6710313559ec03538dced97e4f477a12dab658e033286dfb2a22bab",
+      "contentHash": "7977cec7b6710313559ec03538dced97e4f477a12dab658e033286dfb2a22bab",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9126144191415417,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+      "title": "Reports of AI-related child sexual abuse material rise 8,400% in two years",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cdrnsf",
+      "publishedAt": "2026-11-16T21:28:39Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+      "titleHash": "d67c61f15e9339da1a8ed82bf90f26cbad40577315bab07bba2af010534497e1",
+      "contentHash": "d67c61f15e9339da1a8ed82bf90f26cbad40577315bab07bba2af010534497e1",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9324484486979514,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+      "title": "California sues OpenAI over Hugging Face, other AI model loss of control",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "q3k",
+      "publishedAt": "2026-11-16T19:15:38Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+      "titleHash": "6f3227d2e80d87209ad648df52be27d6b19c24bca4e698208cbae4339ddf4a5a",
+      "contentHash": "6f3227d2e80d87209ad648df52be27d6b19c24bca4e698208cbae4339ddf4a5a",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9127584196623938,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://github.com/chuanqisun/spaceship",
+      "title": "Show HN: Near-Realtime LLM Steering",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "osmoscraft",
+      "publishedAt": "2026-11-16T16:47:40Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/chuanqisun/spaceship",
+      "titleHash": "997545e80b4449e2e430a08a8a61d682726e4127a9e4f4518abcbd8a71434dcf",
+      "contentHash": "997545e80b4449e2e430a08a8a61d682726e4127a9e4f4518abcbd8a71434dcf",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8913435083123176,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://mnemosyneresearch.com/findings/what-gives-away-ai-writing",
+      "title": "What gives away LLM writing",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "whoisflavia",
+      "publishedAt": "2026-11-16T17:55:58Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://mnemosyneresearch.com/findings/what-gives-away-ai-writing",
+      "titleHash": "df32ea042b135a7c9732ff9bc0315c3849f29bf280e1f6b5e8ce71057f511a69",
+      "contentHash": "df32ea042b135a7c9732ff9bc0315c3849f29bf280e1f6b5e8ce71057f511a69",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9011652694257393,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.oreilly.com/library/view/an-illustrated-guide/9798341662681/",
+      "title": "An Illustrated Guide to AI Agents:Concepts and Code for Building Agents with LLM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "teleforce",
+      "publishedAt": "2026-11-17T02:18:46Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.oreilly.com/library/view/an-illustrated-guide/9798341662681",
+      "titleHash": "065771967f313c9c149228d9a6ca42b640abf58a660a23b87fc104ec849dc8e1",
+      "contentHash": "065771967f313c9c149228d9a6ca42b640abf58a660a23b87fc104ec849dc8e1",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9768794923446891,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/a-schaefers/claudes-workbench",
+      "title": "Claude's Workbench – Claude architects and reviews, local LLMs write the code",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "telecommuter",
+      "publishedAt": "2026-11-17T01:59:57Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/a-schaefers/claudes-workbench",
+      "titleHash": "4f504cb1cc7268794052ba03e5a70f47f79af7eeb7610b994a2485d4c7162194",
+      "contentHash": "4f504cb1cc7268794052ba03e5a70f47f79af7eeb7610b994a2485d4c7162194",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9739345963347763,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://www.youtube.com/shorts/GrgpK1KhsJ8",
+      "title": "Retain control over the writing process with LLMs [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "lamuswawir",
+      "publishedAt": "2026-11-16T12:55:28Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/shorts/GrgpK1KhsJ8",
+      "titleHash": "dd6114c017b4683621b8f4f8fe9e61a74ec7c907dc6e894c73129ae8a3a7b093",
+      "contentHash": "dd6114c017b4683621b8f4f8fe9e61a74ec7c907dc6e894c73129ae8a3a7b093",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8587460324946938,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/hawking-systems/runtime",
+      "title": "A new implementation for LLMs through Nvidia GPUs natively on Apple Silicon",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "joshuahicks",
+      "publishedAt": "2026-11-16T19:57:07Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/hawking-systems/runtime",
+      "titleHash": "688a561deb293ce13220ff1fc819d6168cab578989f269b7d1fe30e95f02b710",
+      "contentHash": "688a561deb293ce13220ff1fc819d6168cab578989f269b7d1fe30e95f02b710",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9188540321310797,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LVXtFnEbNU0",
+      "title": "Everything You Wanted to Know About LLM Post-Training [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-11-17T03:18:56Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=LVXtFnEbNU0",
+      "titleHash": "5cb78ad13b900841669ff9489425ed3c34c2cc040efbeb22109f08d755a2b6bc",
+      "contentHash": "5cb78ad13b900841669ff9489425ed3c34c2cc040efbeb22109f08d755a2b6bc",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9863557451390402,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.12304",
+      "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "matt_d",
+      "publishedAt": "2026-11-16T19:43:01Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2611.12304",
+      "titleHash": "8baa60e8ca484ffb60f080bc1bb83f06cd95ff899c72cfa3a676b40c243eabf5",
+      "contentHash": "8baa60e8ca484ffb60f080bc1bb83f06cd95ff899c72cfa3a676b40c243eabf5",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9167776074580445,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://softwaredoug.com/blog/2026/11/12/agent-search-traffic",
+      "title": "Prefer synthetic traffic over LLM as a judge",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "softwaredoug",
+      "publishedAt": "2026-11-16T16:34:20Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://softwaredoug.com/blog/2026/11/12/agent-search-traffic",
+      "titleHash": "9daf121b84eea274a44873ce3de6312888801fcc288850bd264618390d13b3ed",
+      "contentHash": "9daf121b84eea274a44873ce3de6312888801fcc288850bd264618390d13b3ed",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8894386569754609,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19714v1",
+      "title": "An Interpretable Acoustic Coordinate System for Japanese Consonant Morae in Dysarthric Speech",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Dysarthria reduces speech intelligibility, requiring self-directed rehabilitation based on fine-grained feedback to capture gradual articulatory changes. For Japanese speakers, such feedback is naturally provided in mora units due to its distinct moraic timing and consonant-vowel structure. While recent visualization methods have explored distance-based feedback, most are limited to vowels. Extending them to consonants is challenging, as generative embeddings often smooth transient spectral structures. We propose a visualization system for Japanese consonant morae that maps articulatory deviations onto a two-dimensional space defined by temporal and spectral distances from healthy reference speech. Experiments show consistent geometric separation of consonant categories, with Silhouette Coefficients exceeding 0.5 and origin-based ROC-AUC scores above 0.86. Furthermore, evaluations using real dysarthric speech achieved a high ROC-AUC of 0.897 in screening for unclear pronunciations. Perturbation tests confirm orthogonal temporal and spectral shifts, yielding a physically interpretable mapping for rehabilitation.",
+      "publishedAt": "2026-11-15T01:51:55Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19714v1",
+      "titleHash": "f3861031059683b257c8cd3c9f3bfa580e1da8376ad2890795c5d70520a9f77e",
+      "contentHash": "73da187a1c04780d1dc042a6bcf5e2e6a399ef5c802a649787df9db3a39e322d",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6127500335817437,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19710v1",
+      "title": "Joint Learning of Factual and Counterfactual Worlds for Causal Prior-data Fitted Networks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Estimating treatment effects is central to science across many disciplines and requires counterfactual reasoning about alternative worlds. In the real world, however, each unit reveals its outcome only under the factual world. Thus, the factual and counterfactual outcomes can never be jointly learned by any model trained on real data. The problem is therefore tractable only in synthetic settings, where both worlds can be generated. Recent progress on prior-data fitted networks (PFNs) has shown that models pre-trained purely on synthetic data can transfer to real-world prediction. This paradigm has since carried over to causal effect estimation. Despite this fully synthetic setup, existing causal PFNs carry the real-world constraint into their training objective, confining learning to a single world's outcome per unit. The dependence between the two worlds is thereby lost, and the density of the treatment effect relies by default on independence, which is implausible in practice. We therefore propose joint learning, a training setup in which a causal PFN learns the joint distribution of the factual and counterfactual outcomes of each unit. From the joint distribution, we obtain both the response and the individual treatment effect densities, and at inference, we apply optimal transport across units to obtain an approximation of the average treatment effect density. Ours is therefore the first causal PFN approach to provide all three densities together while accounting for the cross-world dependence. We apply joint learning and optimal transport to existing causal PFNs and evaluate it across semi-synthetic, synthetic, and real benchmarks spanning diverse causal scenarios. The jointly trained models significantly improve upon their baselines in point estimation and uncertainty quantification in most settings, indicating that joint learning is a preferable training setup for causal PFNs.",
+      "publishedAt": "2026-11-15T01:41:28Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19710v1",
+      "titleHash": "9725cb8e0042e7cd50337909dddd557ee9050efd4c578dd5a851e46f8782523a",
+      "contentHash": "7221e396cea5f8228576b1798af65a62188a7b3282e6dc857ecbbf5d23c2cb25",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.61172349020261,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19709v1",
+      "title": "Cache or Denoise Less? Residual Reuse in a Flow-Matching World Action Model",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Flow-matching robot policies generate each action chunk through repeated network evaluations, one per denoising step. Cross-cycle caches such as C$^3$ache reuse computation from earlier replanning calls, but whether they beat simply taking fewer steps is unclear. We compare the two in Fast-WAM, a 6B-parameter world action model, on LIBERO-Goal. Two uncached steps keep the success of ten: on all 500 initial states they are non-inferior within two percentage points, for one checkpoint and noise seed. Under PyTorch's default compile mode, they also cut a replanning call on an RTX A6000 from 202 to 92 ms. This leaves little room for caching. A cache that keeps two fresh steps cannot be faster than two uncached steps: every call still encodes the images, runs the video expert and computes those two steps. Caching the first of two steps, refreshed every fourth call, saves at most 11--14% of a call by our cost model. Cached policies are also fragile. Their losses tracked the share of the flow path the cached steps cover: under Fast-WAM's current time shift, C$^3$ache's eight cached steps cover 80% of the path instead of 44%, and the cached policy succeeds on 63% of states against 95% uncached. Resampling the noise on every call cost caches covering 60% or more of the path 14--40 points. These results argue for fewer-step baselines and for testing reuse under the deployed sampler and noise settings. We release our evaluation harness, logs and a checklist.",
+      "publishedAt": "2026-11-15T01:40:18Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19709v1",
+      "titleHash": "df9292e4f0bb04b2ff011f73b8b7cf83f119a9ef62c858c545ed321466087f39",
+      "contentHash": "97436e978baaeaa8bf3fc7d9dd399fea28cf361ffbf1e8e5b92d3a7405767917",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6116089908545469,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19700v1",
+      "title": "Where Should LLM Agents Adapt at Test Time? In Context, in Weights, or Both",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "LLM agents operating repeatedly in the same environment, such as a code repository, a database, or an application suite, encounter tasks that share latent structure. Experience can reveal this structure, allowing agents to reuse environment knowledge and learn from environmental feedback. Agents can adapt at test-time using this experience through two channels: retaining it in context and updating their weights. These channels are usually studied separately, leaving unclear what each contributes and when they complement each other. We compare in-context learning (ICL), reinforcement learning with verifiable rewards using GRPO, and self-distillation using SDPO, alone and in combination, using a shared online protocol and modular framework. Agents encounter matched task streams, are evaluated on each task before adapting to it, and learn only from their own attempts and environment feedback. We evaluate 14 adaptation mechanisms and a stateless baseline with Qwen3.5-9B on 109 tasks from four environments drawn from SWE-bench Verified, AppWorld, ScienceWorld, and BIRD-Critic-SQLite, using five task orders per environment. ICL provides the largest standalone gain: its best policy raises mean success across environments from 28.8% to 49.4%. Adding GRPO to this policy achieves the highest mean success, 51.6%. While adding GRPO improves the overall mean under every ICL policy, SDPO has mixed effects. Trace analyses show fewer lookups and shorter attempts under ICL, consistent with reusing knowledge of the shared structure. However, ICL also frequently skips inspection and verification for the current task. Adding GRPO to ICL helps restore these behaviors while preserving its reduced environment lookups. These observations suggest that reinforcement learning with verifiable rewards can refine how agents use retained experience, motivating the joint study of context management and weight updates.",
+      "publishedAt": "2026-11-15T01:07:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19700v1",
+      "titleHash": "3ecf12f7fae7c3f44cd2fb9eb356f3cc1027d53b1e03dfa8c443cd61ec61d430",
+      "contentHash": "5ace896fd1219ecd77374286df3293c14d77b7d777edecf9e0d1841527f46565",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6083872910871609,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19698v1",
+      "title": "Data Attribution Should Steer Pretraining",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Pretraining data curation decides what a model learns from, yet what makes a document worth learning from depends on what the model already knows. Influence-driven selectors already rank documents to improve one run; we argue that training-data attribution should steer pretraining by identifying testable data properties that become reusable curation criteria, evaluated on new data against cheaper selectors at matched total cost, discovery included. A document ranking is consumed by the run it was computed for, whereas an explained data property can be tested across corpora and checkpoints, especially where familiar quality signals diverge from measured usefulness. Because historical contribution, an understandable explanation, and future data value require distinct evidence, we specify a feedback loop that interprets attributed sources, tests candidate data changes, and states for five claim types what evidence each requires and what none establishes. We close with a falsifiable comparison against perplexity, classifier, and mixing baselines at equal total compute.",
+      "publishedAt": "2026-11-15T01:03:01Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19698v1",
+      "titleHash": "dda6ead505f688662b3e7b11edbeee8d648113cac2011d212022f36d93eb780d",
+      "contentHash": "674eda89310d3a6012a72180b4ea06733afbf7e66d1d9ca3fdc7a27e1f479641",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6079611830200311,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19692v1",
+      "title": "MathaMAGICal: Validating Trajectory Data Attribution During Capability Acquisition",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Influence-function-based methods like MAGIC provide exact first-order scores for trajectory data attribution, yet only retraining indicates whether those scores accurately predict data removal. We evaluate MAGIC on $86$M- and $152$M-parameter GPT-2-style models learning multistep arithmetic from scratch on filtered web text and four synthetic math families. Full-run attribution at $86$M suffers from numerical overflow, and even with metagradient clipping, scores correlate near chance with retraining (linear datamodeling score, LDS, $0.17$--$0.22$). In contrast, short checkpoint windows yield stable, accurate predictions at both scales (LDS $0.86$--$0.99$ across four $100$-step windows at $152$M), whereas a single-checkpoint gradient-dot baseline shows near-zero correlation. Rankings of individual training blocks predict retraining only within that single run and do not transfer across seeds or hyperparameters ($ρ\\le 0.09$), whereas format-level patterns replicate across runs. Two data families, worked examples and primitive facts, occupy $2.1$--$2.6\\times$ their corpus share in both the helpful and harmful $5\\%$ score tails, reflecting strong bidirectional local sensitivity distinct from net benefit under multi-epoch family deletion. These results show that trajectory attribution is reliable within short, validated windows and yields family-level insights that generalize across runs.",
+      "publishedAt": "2026-11-15T00:51:17Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19692v1",
+      "titleHash": "c3d3d46af6f3582cd21bc3633240aaba243c54f14e44e71fabd9caa1df75cc6b",
+      "contentHash": "495daaa9c6f8ff9c633e536a2eb113eb0acc6102617b52c6958296336b27cd75",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6068176970282148,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19670v1",
+      "title": "Architecting the Corporate AI Infrastructure: The Evolving Roles of AI Governance Committees and Chief Ethics Officers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "The accelerating integration of artificial intelligence (AI) into core business operations has created an urgent need for robust corporate governance infrastructures capable of managing complex ethical, legal, and operational risks. While organizations have increasingly adopted high-level AI ethics principles, a critical implementation gap persists: fewer than half of organizations that cite AI governance as a boardroom priority have a formalized governance framework in place. This paper addresses that gap by proposing a structured corporate AI governance architecture (CAIGA) centred on two mutually reinforcing pillars. First, it examines the evolving mandate of specialized C-suite roles, specifically Chief Privacy Officers (CPOs) and Chief Ethics Officers (ChEOs), in formalizing accountability for AI usage across the enterprise. Second, it argues that cross-functional AI Governance Committees, uniting representatives from legal, technology, data science, cybersecurity, and business units, are the essential organizational mechanism for translating ethical principles into operational decisions, including strategic go/no-go approvals for new AI initiatives. Drawing on a conceptual review of peer-reviewed governance literature, regulatory frameworks including the EU AI Act, and documented industry practice, this paper contributes a replicable governance architecture that embeds clear accountability policies, structured risk management workflows, and an organization-wide ethical AI culture. The framework is illustrated through application to the financial services sector. The findings have direct implications for corporate leaders, risk professionals, and policymakers navigating the rapidly evolving global AI regulatory landscape.",
+      "publishedAt": "2026-11-14T23:48:47Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19670v1",
+      "titleHash": "6c7cae0a76c00857806d31e80d44fbb0519dd3613961c98f6ec314fa18ede6ba",
+      "contentHash": "ce92648d416365892702591f1a759aad52f4eda6260d8ef7650ffebea67d301c",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.6007628357215664,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19663v1",
+      "title": "When AI Agents Should Repair, Replan, or Abandon: A Threshold Theory of Plan Commitment",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "AI agents often discover mid-execution that their plan is broken, for example when an action fails or a tool is withdrawn. Deployed systems use conventions such as retry loops or \"always replan,\" and a recent benchmark finds no fixed strategy dominates. This paper derives the optimal policy. In the model, a disruption destroys the causal support of part of a plan; repair is a partial reset that preserves the plan's structure, replanning is a full reset, and changing a plan is costly because others have conditioned on it. The optimal policy is a threshold in effective disruption depth: repair shallow damage, replan after deep damage, and abandon the goal when even a fresh plan is not worth its cost. Depth depends on plan structure. In expectation, a single broken action forces 1+R(G)/n actions to be revalidated, where R(G) counts the pairs of actions joined by a dependency path; to first order, a fully serial plan switches to replanning at raw damage about w times smaller than a plan of w parallel chains. A closed-form stability-price threshold determines when a worse repaired plan should be kept over a better fresh one. As language-model planners push replanning costs toward zero, the stability price becomes the only force sustaining plan commitment. Under repeated disruptions, revision frictions make commitment hysteresis optimal: the agent keeps executing a plan it would never choose fresh, and each repair adds patch debt until the debt outweighs repair's cost advantage and the agent rebuilds. A value-of-diagnosis result states when measuring damage is worth its compute and shows that \"always replan\" is optimal when damage is predictably deep and replanning is the better fallback. A separately implemented numerical checker tests each proposition (zero violations; 1.6 million static-model evaluations), and the model's regime map reproduces that benchmark's regime flips qualitatively.",
+      "publishedAt": "2026-11-14T23:19:31Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19663v1",
+      "titleHash": "f2d1f06bdc4c2ce6a9620ebecac2c5e080aa99b47733eb338aed21b3fc1e017a",
+      "contentHash": "2d85fa1c859289394ede1d1db4ea182e302b896d2cbbfd6346c07a3df9f2dd42",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.5979483520048959,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19656v1",
+      "title": "BadGCL: Towards Persistent Backdoor Attack on Graph Continual Learning Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Backdoor attacks pose a persistent security threat to machine learning systems, yet their behavior under graph continual learning (GCL) remains underexplored. Conventional graph backdoor attacks often lose effectiveness as models are updated across successive tasks, creating the impression that continual updates naturally weaken malicious associations. This work reveals a contrasting vulnerability: knowledge-preservation mechanisms in GCL can also preserve early injected backdoors when the poisoned update is compatible with the clean-task signal being retained. For graph data, this risk is amplified by structural triggers, which are embedded into the message-passing paths of graph neural networks (GNNs) and can induce stable representation shifts across tasks. To expose this risk, we propose BadGCL, a model-agnostic framework for persistent backdoor attacks under a strict early-stage intervention setting. BadGCL learns topology-aware structural triggers using a gradient mutual-information objective that couples poisoned gradients with clean-task optimization signals, together with a propagation consistency objective that stabilizes trigger-induced effects through graph message passing. We provide theoretical analysis showing that gradient compatibility and propagation stability jointly support long-term backdoor persistence under benign continual updates. Extensive experiments across task-IL and class-IL protocols, four GCL benchmarks, and diverse victim systems show that BadGCL achieves persistent attack effectiveness with limited clean-utility degradation, substantially outperforming graph and continual-learning backdoor baselines and remaining robust against representative defenses.",
+      "publishedAt": "2026-11-14T22:56:28Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19656v1",
+      "titleHash": "6fa11d6a798ba4501449c5244b84b6af8c4027ae82002e2fded34db9711a6085",
+      "contentHash": "3b539172e093d0bfcfd0fbe29cdd78a439e6b5290cc130472de4d220d5cc4b12",
+      "score": 73,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.5957409904733906,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19649v1",
+      "title": "LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Looped Transformers improve parameter efficiency by repeatedly applying the same Transformer layers. During autoregressive decoding, however, generating each token requires several sequential passes through these layers, leading to high decoding latency. Pipelined self-speculative methods use shallow-loop predictions to process tokens at different loops in the same batch, but each token must reach the drafting depth before the next can enter the pipeline. We introduce LoopFill, a training-free speculative decoding algorithm for looped LLM that combines multi-token suffix drafts with shallow-loop predictions in a single draft tree. Both drafters contribute to one tree, so a suffix lookup can immediately extend a shallow prediction and several future tokens can enter the pipeline together. The shared block computes the highest-scoring draft candidates at different loop depths in one batch, and full-depth verification preserves the model's autoregressive output distribution. Across seven benchmarks, LoopFill's average speedup over greedy autoregressive decoding is $5.85\\times$ on Ouro-2.6B and $5.13\\times$ on Huginn-3.5B. The speedups exceed those of LoopAhead, the strongest baseline, by \\(40\\%\\) on Ouro-2.6B and \\(25\\%\\) on Huginn-3.5B.",
+      "publishedAt": "2026-11-14T22:35:41Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19649v1",
+      "titleHash": "4ed68f6b67864f145e5db67629da74d3f9c795fb127ae4fcbb1f20abc36d7d14",
+      "contentHash": "69d70da6c4c8f93d747f278d634d13a2023c89f14ee5308126092430dffc0846",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.593757681026407,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19643v1",
+      "title": "SG-LegalClarify: A Large-Scale Benchmark for Legal Reasoning and Ambiguity Recognition in Singapore Law",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Singapore offers a distinctive testbed for legal reasoning by large language models (LLMs). Its legal system combines inherited English common law with jurisdiction-specific statutes, requiring models to distinguish local doctrine from generic common-law intuition. This setting also highlights the challenge of recognizing underspecification in lay legal queries, because the facts material to a legal outcome depend on the governing doctrine. Yet legal benchmarks rarely cover Singapore law or test this form of ambiguity recognition. To address these gaps, we introduce SG-LegalClarify, a large-scale benchmark for open-ended legal reasoning and ambiguity recognition in Singapore law. SG-LegalClarify contains 1,100 lawyer-authored source questions spanning 10 legal domains, including 340 fully specified and 760 underspecified questions. Each underspecified question has a fixed hidden-fact assignment and a fully specified counterpart, yielding 1,860 evaluation instances. Responses are graded with lawyer-authored Issue, Rule, Application, and Conclusion (IRAC) rubrics. We evaluate 19 LLMs, closed-book and with web search, using a multi-turn pipeline in which models decide whether to answer or clarify, and a user simulator reveals hidden facts only when asked. We find the benchmark far from saturated: the best models satisfy only 69.8% of mandatory rubric items closed-book (average 53.8%) and 77.8% with web search (average 63.0%). Models also struggle to recognize when clarification is necessary. We will release the public split of our benchmark, the model outputs on it, and the evaluation pipeline to support future research.",
+      "publishedAt": "2026-11-14T22:16:38Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19643v1",
+      "titleHash": "8c57d1940aa9d840d42faabd2a932d505cecffed80c118764dd5698d74578ecf",
+      "contentHash": "ad65a0e75f8e490332979a34dbc3d744213263b618c978eedc041994b3d1319e",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5919455801316553,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19636v1",
+      "title": "ROUNDS: Source-Framed Diagnostic Revision after Multi-Turn Clinical Evidence",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) achieve high scores on medical benchmarks, but does this performance translate into reliable diagnosis as a conversation unfolds? In diagnostic conversations, users can provide clinical findings across multiple turns, ask for a diagnosis without supplying answer options, and introduce opinions from others. Models must therefore form diagnoses from the available evidence and decide how to respond to subsequent advice. We introduce ROUNDS, a framework that evaluates these abilities after a fixed sequence of clinical evidence delivered over multiple turns. ROUNDS compares diagnosis with and without answer options, presents the same incorrect diagnosis under clinician and lay framing, and varies support for competing diagnoses in written five-clinician panels. Across seven models and 1,035 cases from five datasets, average accuracy was 76.9% with answer options and 57.0% without them. Clinician-framed misleading advice produced lower final accuracy than lay-framed advice in every model, with differences of 4.6 to 38.2 percentage points. Initially correct diagnoses more often became incorrect answers than abstentions, and many adopted the suggested disease. Conversely, accuracy increased as more panel members supported the correct diagnosis, including when the majority opinion remained unchanged. These findings reveal a gap between medical benchmark performance and reliable diagnosis in conversation: models respond to external opinions, but remain vulnerable to abandoning correct diagnoses without new clinical evidence.",
+      "publishedAt": "2026-11-14T21:45:59Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19636v1",
+      "titleHash": "8bd3af98090b08aba82a9e8615ffca2542692be7e96fd57319966d0b58ab4b4b",
+      "contentHash": "233138121ace8bfa994f424874f474b9afdd11684083a719b3f7d786c7353537",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5890416475937641,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19630v1",
+      "title": "Where slide-level foundation-model classifiers fail on atypical breast lesions",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Whether a ductal breast lesion is called atypical hyperplasia or low-grade carcinoma in situ increasingly determines surgery. However, slide-level classifiers built on pathology foundation models (PFMs) perform worst on these lesions. Using four PFMs, cross-validation on BRACS and preregistered hypotheses, we studied where the classification of atypia fails. Because slides are labelled with their most severe lesion, only 39% of the slides with annotated atypical ductal hyperplasia (ADH) were labelled ADH. Attention ranked the lesion high but rarely first, and showing the model only the lesion helped little, whereas classifiers trained per decision with lesion-level labels improved all four atypical boundaries. ADH regions inserted into benign slides raised the probability of malignancy more than that of atypia. In a hospital with pathologist-labelled single-subtype slides and in HISTAI, benign slides were scored closer to lesions and triage specificity fell from 0.48-0.53 to 0.00-0.07 and 0.22.",
+      "publishedAt": "2026-11-14T21:29:49Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19630v1",
+      "titleHash": "6af666830aab60f9aefa9668a2a35c2f54482a90cd5b99e33bcba5745ec7d0b4",
+      "contentHash": "561693036634cc77865b6132aa32d38dc5ac7354a66b653832956d4f0ec03af6",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.5875156809085651,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19625v1",
+      "title": "Robust Well-Log Reconstruction Across Point Gaps and Whole Wells via Boundary-Gated Soft-Thresholding Kalman Fusion",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Missing wireline logs hinder subsurface characterization. Deep reconstruction networks suffer from gap-boundary steps and cross-basin shifts, while interpolation and Gaussian smoothers struggle with long intervals and outliers. We propose boundary-gated soft-thresholding Kalman fusion (ST-KF), unifying multiresolution wavelet shrinkage, distance-gated residual prior learning, and closed-form robust Kalman smoothing with learning--inference decoupling. Across two public benchmarks totaling 263 wells in the Norwegian North Sea and New Zealand's Taranaki Basin, ST-KF ranks first over 0.15--100-m anchored gaps with 0.09% parameter overhead. Against the strongest of nine baselines, pooled RMSE falls by 5.0%--8.3% for bulk density and 6.4%--15.6% for compressional slowness; against the four strongest baselines, reductions are 0.7%--4.1% for neutron porosity and 1.3%--2.9% for photoelectric factor. Ablations and sensitivity analyses confirm operator synergy and stable performance: removing state-space fusion increases short-gap errors by up to 58.8%, while zero-shot transfer cuts anchored errors by 14%--68%. The results show that local borehole continuity transfers across basins whereas cross-property mappings shift with regional geology, supporting measurement-guided log reconstruction.",
+      "publishedAt": "2026-11-14T21:17:44Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19625v1",
+      "titleHash": "e3766e7625b22cdd5520a4206ca54f2f409d3fd1c6facf96f8a5b43975c14c90",
+      "contentHash": "216e19bc64dccc383a22230c70db609f834cd81eda949d565411398925083ef7",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.586377720898965,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.19624v1",
+      "title": "Well-Log Reconstruction with Pre-trained Geological Knowledge: A Knowledge-Conditioned Large-Language-Model Generative Agent",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Missing well-log intervals make subsurface reconstruction ill-posed. Existing numerical regression models lack geological prior knowledge to constrain ambiguous inverse mappings. We propose GeoLog-Agent, a knowledge-conditioned generative agent using pre-trained large language models (LLMs) as a source of geological priors. A universal Geo-Harness translates LLM stratigraphic reasoning into formation-anchored petrophysical trajectories, feature-wise linear modulation, and conditional adversarial constraints. On the Norwegian North Sea benchmark, GeoLog-Agent achieves a mean $R^2$ of 0.9307 and a peak $R^2$ of 0.9713. It exceeds the nine-baseline average $R^2$ of 0.8387 by 0.0920, with a 30.97% average RMSE reduction, and exceeds the strongest baseline by 0.0274--0.0498 in $R^2$, with 16.25%--24.05% lower RMSE. Ablations confirm the effectiveness and synergy of geological prior reasoning, multi-scale dilated generation, and conditional adversarial modules. Transferring the coupling mechanism to six conventional deep learning models improves their $R^2$ by 0.0162--0.0789 with cross-well stability. These results demonstrate how foundation-model domain reasoning can constrain deep generative reconstruction of missing petrophysical measurements.",
+      "publishedAt": "2026-11-14T21:14:27Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.19624v1",
+      "titleHash": "2b1041ac75c2e8ebd4a159d7c73ad6a2fd62c60de560425ba037e22d5618925e",
+      "contentHash": "523174c7b0fe6aeae884231a80c80fb38291d852db1944ce4269f6f1903223ad",
+      "score": 77,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.5860688907007682,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20216v1",
+      "title": "FIDEL: Abugida-Aware Pre-tokenization for Ethiopic Languages",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Subword tokenizers assume that meaningful linguistic units can be recovered by splitting text at learned boundaries, an assumption better suited to concatenative morphology than to Semitic root-and-pattern systems. The challenge is acute for the Ethiopic languages, whose abugida script encodes consonant-vowel units as single characters and hides consonantal structure. We introduce FIDEL (FIdäl DEcomposition and Linearization), a family of reversible abugida-aware pre-tokenization schemes that expose consonant and vowel-order structure, extend SPLINTER reductions from abjad scripts to the Ethiopic abugida, and evaluate them on three Ethiopic languages under controlled conditions, holding corpus, architecture, budget and protocol fixed so that tokenization is the only variable. We report intrinsic tokenizer statistics for BPE and UnigramLM across vocabulary sizes alongside downstream NLP tasks, including transfer scenarios. We find that FIDEL reduction improves news classification consistently and named-entity recognition at larger capacity, while sentiment analysis performance declines under the more aggressive schemes, and extractive question answering performance is preserved.",
+      "publishedAt": "2026-11-15T19:26:55Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20216v1",
+      "titleHash": "5d00e4d5d3e8398d7e428d044a0cd8304e390176b0cf23efebbfa55f01246bbe",
+      "contentHash": "dfc8337f7a3d11803fc1eec4a20e2a09be51743c7b34bd7937d0b260c3f7ab9b",
+      "score": 52,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 1,
+        "timeliness": 0.7257695943302548,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20191v1",
+      "title": "Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Typed Decision Models such as TypeSafe's Jev, also called System One or System 1 models, answer typed questions about an input with a probability for each option, and they need no training. Many NLP papers still fine-tune a task-specific classifier, and prompted large language models (LLMs) trail such classifiers on most text classification benchmarks. We ask how many of these fine-tuned classifiers a Typed Decision Model can replace under each paper's own evaluation, and what is needed where it cannot. We swap the predictors of 24 ACL-venue papers for Jev, keep each paper's splits, label definitions and metric, and check the results with Cloudflare's Clef, Microsoft-Decision-1 and OpenAI's GPT-6 Luna Decisions. The resulting 46 English test sets, with their questions and published scores, form the TDM-Gauntlet benchmark. With a zero-shot prompt, Jev directly replaced the paper's predictor on 12 of the 46 test sets, mostly single judgments with plain labels, but rarely where the paper's method was trained on its labels. Where Jev scored lower, we most often attributed the shortfall to an annotation convention that the label name does not state. With 500 training labels plus validation and no user-managed GPU, calibration and GEPA-style prompt optimization closed a median 72% of the gap to the paper's method, about twice what off-the-shelf GEPA closed, for a median $1.66 per search. On the same labels, fine-tuned encoders such as RoBERTa and DeBERTa closed 59%, and LoRA fine-tuning of the open LLM Qwen3.8-27B closed 97%. Fine-tuning remains the most accurate option, but a zero-shot prompt is often enough for plain labels, and prompt optimization closes most of the remaining gap.",
+      "publishedAt": "2026-11-15T18:44:24Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20191v1",
+      "titleHash": "4f2a5aed441a933313b57a84dded517c199e37d09869e6513c52d97bb2d50141",
+      "contentHash": "fd96ea37c6faa5fb4637cfc04365615c510c9e664d3762f7258e497b77eb61d1",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7208353646385495,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20158v1",
+      "title": "Who Can You Hide Behind? Author-Conditioned Style Transfer and the Evasion of a Commercial AI-Text Detector",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "AI-text detectors can be sensitive to changes in writing style. We examined this sensitivity by rewriting 991 AI-generated answers with Gemini, using prompts that included a writing sample from one of 55 named authors. We scored each original and its rewrite with the QuillBot AI detector. The median score fell from 100% to 0%, and the mean fell from 67.9% to 11.2%. Of the rewrites, 66% received a score of exactly 0%. Among the 699 originals scored at least 50%, 71% of rewrites scored below 10% (paired Wilcoxon signed-rank test, p-value below 1e-100). Scores varied across the authors used in the prompts. All rewrites associated with 10 authors scored 0%, whereas the mean score remained above 50% for six authors (Kruskal-Wallis test, p-value below 1e-80). Greater reuse of five-word sequences from the author sample was associated with lower scores, although rewrites with less than 5% reuse still averaged 15.2%. These results describe one detector and one rewriting system, not detectors in general. The study lacks a generic-rewrite baseline, did not measure preservation of meaning, and produced rewrites that were substantially longer than the originals.",
+      "publishedAt": "2026-11-15T17:59:34Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20158v1",
+      "titleHash": "2403ea9d043dc33dd06fbce435cc0205f76b855b7dcfcd1b9cd33137d41b4bb3",
+      "contentHash": "395fc5ae561ff0cb9805ff3ffc3f880d74be84b7b2e943a1b0b758dad70ed724",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7156686115489395,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20156v1",
+      "title": "Risk-certified prompt optimization for LLM-as-a-judge guardrails",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "LLM-as-a-judge guardrails are often controlled primarily through system prompts, yet standard prompt optimization methods target average performance rather than explicit safety constraints. This paper studies system-prompt selection as a constrained optimization problem: maximize benign pass rate while keeping the missed-attack rate below a user-specified level α with finite-sample statistical control. The framework combines LLM-based judging, automatic prompt generation, and distribution-free risk certification. This work instantiates it in two procedures: CPS and CRISP. CPS generates a fixed pool of prompts from training data, then certifies candidates on a held-out evaluation set using simultaneous upper confidence bounds and selects the certified prompt with the highest benign utility. CRISP instead integrates risk feedback into an adaptive search, using hard example-guided rewriting and a reusable-holdout interface to steer generation toward the feasible utility frontier. Experiments on four datasets covering prompt injection, system-prompt leakage, and sensitive-information disclosure show that risk-certified selection consistently respects the target missed-attack level on heldout tests, while utility improves as the permitted risk is relaxed. CRISP is especially useful when fixed-pool search fails to produce certifiable high-utility candidates.",
+      "publishedAt": "2026-11-15T17:45:49Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20156v1",
+      "titleHash": "371a36e979b2bcc7025b422e4a2ba2e364ad75cad8f765938780c4bb8b3e3c0c",
+      "contentHash": "cc4f75a81157d41b7dba6ed36216bccbfff2e3ac9609a6d59d8f92a545600ee6",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.714091445568694,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20148v1",
+      "title": "Centered Ablation: Why Last-Layer Directional Ablation Under-Fires or Collapses, and a Closed-Form Fix",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Directional ablation removes a hidden state's component along a \"behaviour direction\" while a language model runs. It is the standard way to switch a behaviour such as refusal off, but it is erratic: on some models it barely fires, on others the text collapses into repetition. We show why, and fix it. At the last residual stream, ablation is exactly a logit bias: a fixed vocabulary footprint scaled by a gate, the cosine between the hidden state and the direction. The gate is measured from the origin, but last-layer states share a large common mode far from it, so a direction that overlaps the common mode fires on benign text and under-fires on its targets. Centered Ablation (CA) projects the common mode out of the direction, in closed form. Across 8 models, CA raises attack success by 29 and 46 points where the standard recipe under-fires, cuts collapse on Gemma-2-9B from 50\\% to 1\\%, and preserves 12 to 40 points more benign answers on high-overlap models, 39 to 46 more than the affine offset of prior work. Two numbers computed before generation predict, on models the analysis had not seen, which gain faithfulness and which gain attack success, and a collapse index marks when text degenerates. We also show that two standard safety judges score collapsed text in opposite directions, which can fabricate a 46-point effect.",
+      "publishedAt": "2026-11-15T17:30:14Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20148v1",
+      "titleHash": "4377f013753ba40851f8165a59c2ead224c42f3fdbb7f987ef6b685115a54f0b",
+      "contentHash": "c7af82fc2c4f40998ea6f9032dfe131fc44ba49b852580bb0ee11df9d860238a",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.712308192119754,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20145v1",
+      "title": "Rank, Don't Regress: A 279M Text Ranker Beats 2B and 7B VLMs on Referential Urdu GUI Grounding",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "UI grounding asks a model to find the screen element that a user instruction refers to. Most current systems use a vision-language model (VLM) that reads a screenshot and outputs pixel coordinates. We study this task on Urdu mobile web pages, a setting with no published UI grounding results. Instead of regressing coordinates, we take the candidate elements from the page DOM and train a 279M-parameter cross-encoder (mDeBERTa-v3-base) to pick one. The click point is the centre of the picked element's box, so it is exact whenever the right element is picked. We built a frozen test set of 304 instructions from six Urdu news sites; 149 of them (49%) are referential and never quote the full target text. Test domains were banned from training data before collection started. The ranker scores 73.4% point-in-box accuracy, against 29.6% for UI-TARS-2B and 23.7% for Qwen2.5-VL-7B, both zero-shot. On the referential slice the ranker scores 65.8%, against 30.2% for a string-matching baseline that needs no training. In a controlled comparison at small scale, with training data drawn from the same pages, a coordinate-regression model of similar size scores 1.6%. Adding element geometry as input tokens gives the best variant, at 75.7%. The ranker's errors concentrate in two places: elements that share identical text, and ordinal instructions such as \"the fourth link\".",
+      "publishedAt": "2026-11-15T17:26:42Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20145v1",
+      "titleHash": "b61a90ab454b7f97a9452b22700e920785dd1508e0c274e28d4de0a67ae46dfc",
+      "contentHash": "219bbf9884570141cc5b81780ea54fc2623f8d6e3734728b4b7c4e3de3e7ef35",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7119044805802137,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20144v1",
+      "title": "HEAMS: Holistic Evaluation of Agent Memory Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Memory systems allow AI agents to persist information across interactions, making them more personalized and more capable on long-horizon tasks. This persistence introduces new risks: stored information can be disclosed in inappropriate contexts, resist correction or deletion, be retained beyond what users desire, or be poisoned to influence later agent behaviour. Yet memory systems are typically evaluated on task performance and efficiency alone. We argue that a memory system should instead be understood as the custodian of its user's persistent information, with responsibilities that extend beyond helping an agent complete its tasks, and that it should be evaluated holistically against all such responsibilities. We present Holistic Evaluation of Agent Memory Systems (HEAMS), an open-source framework for evaluating agent memory systems in this way. First, we state the responsibilities of agent memory systems as explicit behavioural desiderata spanning performance, efficiency, security, privacy, and user sovereignty. Second, we assemble a benchmark suite that covers these desiderata and acknowledge the gaps that remain. Third, we develop MilaMem, a prototype memory system, and a governance layer that can wrap any memory system, enabling controlled study of memory system design choices. Fourth, we compare memory systems across the full HEAMS benchmark suite. We find that no memory system leads every performance benchmark, and strong performance scores may coexist with poor privacy, user-sovereignty, and security scores. Governance strongly influences results: recall policies can reduce inappropriate disclosure at a cost in helpfulness, while both recall and retention policies improve poisoning resistance. Performance and efficiency benchmarks alone therefore cannot reveal how well a memory system meets its responsibilities. Code: https://github.com/milatechtransfer/heams",
+      "publishedAt": "2026-11-15T17:26:34Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20144v1",
+      "titleHash": "bf217e48589120254fa6ae373a40849e9aa0a1f51ebfea4df4573720308c3bba",
+      "contentHash": "993ab4eaf54ab35f1c0c478eed6da7e237695efa3d399d6cbb836292eb5d9edd",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7118892506633854,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20140v1",
+      "title": "Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Delegating resume screening to large language models (LLMs) requires organizations to establish whether they can distinguish candidates by relevant qualifications while allowing only authorized users to change screening rules or approve exceptions. To this end, we develop a system architecture that separates candidate evidence, evaluation, permission controls, and assessment record, and empirically examine two complementary dimensions of its deployment readiness. First, we assess its operational readiness on four LLMs using a controlled experiment on 210 resumes across 14 job roles and six decision interfaces. Second, we assess its compliance readiness by testing how it handles unauthorized user requests and instructions embedded in resumes. We find that operational performance depends on the choice of evaluation interface: scalar scores generally distinguish qualification changes better than simple pass/fail judgments, while comparative judgments are sensitive to presentation order. Explicit permission rules and separation of resume content from instructions reduce unauthorized compliance, to a varying degree of effectiveness across LLMs and usage contexts. Finally, we find that LLM evaluators often diverge between their decisions and offered justifications. Going beyond simply evaluating LLMs for hiring tasks, our framework supports an audit of a fully configured resume evaluation system to enable its deployment decision.",
+      "publishedAt": "2026-11-15T17:16:09Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20140v1",
+      "titleHash": "db76029377d9ad5d488289081ec220f3ce13d642eba4943b29306526206c67d4",
+      "contentHash": "7deb9f22c04b915097acf29b163c4dbe86329a78761382b931f06f2a5792d494",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.710700419898411,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20129v1",
+      "title": "Can decision models extract clinical data from cancer pathology reports? An evaluation of accuracy, calibration, and failure modes",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Decision models are a new class of language model that, instead of generating text, choose one option per question from a fixed list and return a probability for every option. They have not yet been evaluated on clinical text. We evaluated two open-weights decision models, Nimble 9B and Tev1 4B, for extracting 25 fields from 1,113 oral cavity cancer pathology reports from a single centre, against a prospectively maintained clinical database. We compared them with two generative models: Qwen3.5 9B, run locally, and GLM-5.3-flash, run through a cloud API. Tev1 reached a mean field accuracy of 0.917 (95% CI 0.913 to 0.920), the same as Qwen3.5 9B (0.918; p = 0.26), and was four times faster (15 s against 61 s per report). Nimble reached 0.862 and GLM-5.3-flash 0.986. Both decision models matched GLM-5.3-flash on simple dichotomous categories. They were weak on measurements binned into categories, on fields whose correct answer was not reported, and on some complex decisions (e.g. involved margins). We found that the main cause of the inferior performance of Nimble's came from asking 25 questions in one request: with two questions per request, its accuracy improved. Pooled over fields, the returned probabilities were well calibrated (expected calibration error 0.022 and 0.026), but they did not flag systematic errors within single fields. A simulated strategy of sending answers with a probability below 0.94 to GLM-5.3-flash raised Tev1's accuracy to 0.982, with 38% of answers escalated. Decision models can extract explicitly stated findings from pathology reports quickly on local hardware and return useful probabilities. They should be validated in the configuration in which they will be used, restricted to the fields in which they are reliable, and combined with other methods for numeric values.",
+      "publishedAt": "2026-11-15T16:57:38Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20129v1",
+      "titleHash": "128046c456b6450057516d3b592239404c286f736e234fa4f05c71857db74327",
+      "contentHash": "1db46a124ad4f9838ea7691c94c74dffa505e379fd8d02d964fcc2fa34f138f0",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7085920533971555,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20126v1",
+      "title": "A Corpus-Driven SentencePiece Unigram Tokenizer for Sindhi: Design and Benchmark Against Fourteen Existing Tokenizers",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Sindhi is a low-resource Indo-Aryan language written mainly in an extended Perso-Arabic script. Several Sindhi tokenizers have been released on public model hubs, but they have not been compared with one another on shared data. We train SentencePiece Unigram tokenizers with byte fallback at four vocabulary sizes (32k to 150k) on about 1.10 million Sindhi sentences and a smaller, repeated Urdu, Persian and Arabic slice, from four public sources, and compare them with fourteen existing tokenizers on four evaluation sets: FLORES+, Sindhi Wikipedia, a news-derived sentiment corpus, and a contemporary news corpus. The metrics are fertility, single-token retention, UNK rate, byte-fallback rate, and round-trip character loss. At 64k, our tokenizer averages 1.147 tokens per word, against 1.208 for the best existing tokenizer and 1.512 for XLM-RoBERTa, and keeps 88.6% of words as single tokens. On fertility, single-token retention and UNK rate it is best or tied for best in all four evaluation sets at 64k and above; at 32k it trails one baseline on FLORES+. Margins over the best Sindhi-adapted baselines are small (0.002 fertility on FLORES+ at 64k), and we report no significance tests. A round-trip check finds no character loss for our tokenizer and silent character deletion (up to 0.85% of characters) in two existing ones; seven others lose less than 0.1%. We evaluate intrinsic metrics only, so effects on downstream tasks remain untested. Code and tokenizer files are public (DOI: 10.5281/zenodo.23962474).",
+      "publishedAt": "2026-11-15T16:56:02Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20126v1",
+      "titleHash": "9af2027192dc5ffb331c878cb233f096d22ae2ac73646c0f50794f0a06485cd1",
+      "contentHash": "214f5a528a5244b05ce68313aec413bc0372f57fc635a349be504bb08f6ef4f5",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.7084101661586484,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20094v1",
+      "title": "FRAAC: A French Multimodal Large Language Model and Dataset forPictogram-Based Augmentative and Alternative Communication",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Pictograms are a core modality in augmentative and alternative communication (AAC), yet recent multimodal large language models (MLLMs) cannot reliably interpret or produce pictogram sequences. Two obstacles explain this gap: the absence of a standardized pictogram grammar and the scarcity of parallel text-pictogram data. We introduce Retrieval-Augmented Pictogram Selection (RAPS), an annotation method that refines a rule-based transcription system's output with LLM-based concept extraction and retrieval over a pictogram vocabulary, handling cases where hand-written rules fail (named entities, numbers, polysemous words) without requiring new rules. Applied to French, RAPS yields a synthetic corpus of 1.4 million parallel pairs, of which 300k are publicly released. In a human ranking study where annotators order four pictogram transcriptions of the same sentence, RAPS outperforms the rule-based state of the art. Moreover, we show that standard reference-based metrics separate systems of clearly different quality but fail to rank strong systems against each other. Finally, we build an instruction-tuned model that supports interaction in several AAC modalities: it accepts pictogram or text input and answers in pictograms, speech, or text.",
+      "publishedAt": "2026-11-15T16:12:06Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20094v1",
+      "titleHash": "b539e821e9b6e0bf3f6dd9ce2847019ce4b933494663238c69b3ffbcf7a53544",
+      "contentHash": "ea7e664d470399d5a405a036fb0230b30c9fec1591f50ef5098b624783c80f02",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.7034340460593886,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20071v1",
+      "title": "The Silent Cost of Conversation History in LLM Reasoning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language models (LLMs) in multi-turn information systems accumulate their own earlier replies and a growing task state. We asked whether this conversation history lowers accuracy, and whether process-level quality metrics warn before it does. Each analysis was fixed before its outcomes were computed. In Study 1, on 48 sharded math tasks, retaining its replies lowered final success by 0.21 for GPT-4o-mini and 0.29 for Mistral-7B (Holm-adjusted p = 0.026 and 0.004); Llama-4 Scout showed the same direction, not significant. Study 2 introduces CDR-Stream, 100-turn state-tracking dialogues with an exact answer per turn and per-model difficulty calibration. With the full history, accuracy fell from about 0.6 to 0.1 within twenty turns at matched difficulty, whereas a solver-verified state summary kept it 0.52-0.59 higher (Holm-adjusted p less than 0.001). Consistency and logical coherence fell far less than accuracy, and stability rose. None of these metrics, a paired readiness measure or calibrated single-stream drift detectors gave robust, model-general early warning, although in Study 2 the repeat-based metrics were complete only for GPT-4o-mini. In the monitors we tested, a single 100-turn stream had power only for very large drops. Systems built on LLMs should keep task state outside the transcript and monitor across sessions.",
+      "publishedAt": "2026-11-15T15:22:15Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20071v1",
+      "titleHash": "37fad0f421da9dbe821d76b7290502e09b32f768dec599ef2c9cb6f6e7212a8a",
+      "contentHash": "9d77d5c008bfa97d0ffef5f17832c4179daf93ed29e6c9435320471433f7b104",
+      "score": 79,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.6978300919102467,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20062v1",
+      "title": "Mandarin Wh-Indefinites Follow Nonveridicality in Multilingual LLMs, Unlike English any",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Multilingual LLMs learn mostly from English. Do they carry English polarity licensing over to other languages? English any is licensed by downward-entailing (DE) contexts, Mandarin wh-indefinites such as shenme 'what/something' by nonveridical ones, and the two classes come apart: perhaps licenses shenme but not any, while only licenses any but entails existence. We test this dissociation in a pre-registered study of twelve open LLMs (0.5B-9B, four families), using 48 matched bilingual frames in 21 contexts and a log-probability difference-in-differences normalised by negation. All 11 models that pass the measurement gate license Mandarin wh-indefinites under possibility, necessity and evidential adverbs, at 0.42-2.33 times the strength of negation, while English any gets nothing in the same contexts. An exploratory extension to Qwen2.5-32B shows the same. The English side is weaker: any under only, first and regret is licensed but at a fraction of negation, so only 3 models show the full double dissociation in sentence probabilities. When prompted to choose between sentences, most gated models show it. In exploratory directional ablations, a direction that carries English licensing, held-out classes included, does not reach Mandarin licensing in most models. The models do not simply apply the English rule to Mandarin.",
+      "publishedAt": "2026-11-15T15:10:01Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20062v1",
+      "titleHash": "4706443aae6df5412aed52c87f47eef02f6ed5702d12ae251fb5ed4120596791",
+      "contentHash": "f1c8b0b020b8d0560653fb2e4de4ac31a3712e96ab0cb4267a6a80ed546d6853",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.6964617013807572,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20044v1",
+      "title": "A Dataset for Misogyny Detection in Polish Social Media: Transferability of Hateful Speech Detection from General to Specific Types of Hate",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Harmful language detection is commonly evaluated on broadly defined hate speech and toxicity benchmarks, yet it remains unclear whether models that successfully detect harmful language in general can transfer this capability to more specific forms of hate. We investigate this problem for misogyny detection in Polish, an area for which dedicated resources remain scarce. We introduce a new dataset of Polish social media comments annotated for misogyny, gender-directed hateful speech. Using this resource, we first assess the reliability of LLM-assisted annotation and then evaluate general-to-specific transfer by comparing models trained on general harmful language data, safety-specialized models, and models fine-tuned directly for misogyny detection. Our results show that strong performance on general harmful language detection does not transfer uniformly to misogyny; safety-specialized models demonstrate substantially stronger generalization ability. The study contributes a new Polish resource for gender-directed harmful language and demonstrates that the scope and granularity of prior safety training are important factors in transferring harmful language detection from general to specific forms of hate.",
+      "publishedAt": "2026-11-15T14:44:24Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20044v1",
+      "titleHash": "809bce353f2e32c1da27b4f41f39712bf5efc80f4ef2c6541f97f6386173b2c6",
+      "contentHash": "30dcd04fed2141231fc2b02ebb74de1bf4cbca7dd5fbdfca3fb7529dc4bb0660",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6936049703314953,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.20012v1",
+      "title": "Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Offline language models could extend access to maternal-health information where internet connectivity is unreliable, but deployment requires both clinically appropriate responses and feasible local execution. This study presents an offline Android assistant integrating ready-made quantized language models, a clinically validated local knowledge package, conversational context, and model-initiated local retrieval. Gemma 4 E2B and Qwen3.5 0.8B were compared across 45 conversations and 312 turns per configuration, including a dedicated offline agentic benchmark. Gemma achieved higher response-quality, context-retention, and safety scores; Qwen offered faster generation and lower memory use. Clinician assessment of 150 Gemma responses across nine clinical domains yielded a mean quality score of 3.80/4, with 147 responses meeting the acceptance criterion. A paired RAG-on/off experiment evaluated 74 questions: retrieval improved 11 responses, left 56 neutral, produced four adverse response changes, and left three pairs unassessable. RAG-on had descriptively higher mean usefulness, safety, correctness, and actionability in the conditional 70-pair subset excluding the four flagged pairs from both conditions. Physical-device testing demonstrated offline responses on a 6 GB Android handset, with a 14.3 s median latency, alongside successful reconnection synchronization in the integrated application. Together, the findings document clinical response quality and practical performance of the integrated offline maternal-health assistant.",
+      "publishedAt": "2026-11-15T13:42:56Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.20012v1",
+      "titleHash": "f0a6b6dcc311a5b4de56052f22bcb236c600fad029393889ca864ff225f66685",
+      "contentHash": "3463ecbe18dff3517124690b58ae2b68017618e33567a81c2c857df442f88dbf",
+      "score": 75,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.6867979999131729,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9-97SB5XJh4",
+      "title": "[SPLASH'26] Mojo: Towards One Systems Language for All Hardware",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "melodyogonna",
+      "publishedAt": "2026-11-16T17:27:11.723-06:00",
+      "engagement": 2,
+      "tags": [
+        "programming",
+        "video",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=9-97SB5XJh4",
+      "titleHash": "3d4bf52b9e74442c27e6c19b4934f14d047de877bb6863e27f46bcc6830eb3a7",
+      "contentHash": "3d4bf52b9e74442c27e6c19b4934f14d047de877bb6863e27f46bcc6830eb3a7",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.9503540060250373,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=op51SyyPJmw",
+      "title": "Safe Systems-programming with Mutable Value Semantics | Dave Abrahams",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "trousers",
+      "publishedAt": "2026-11-16T16:13:03.094-06:00",
+      "engagement": 3,
+      "tags": [
+        "programming",
+        "video",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=op51SyyPJmw",
+      "titleHash": "a35dcfc37a3fca24543dbe128c6503139cd329bc8c0dbbf7308d333d04087544",
+      "contentHash": "a35dcfc37a3fca24543dbe128c6503139cd329bc8c0dbbf7308d333d04087544",
+      "score": 54,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.939115169706252,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://yorickpeterse.com/articles/migrating-from-github-to-codeberg/",
+      "title": "Migrating from GitHub to Codeberg",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "yorickpeterse",
+      "publishedAt": "2026-11-15T23:10:34.395-06:00",
+      "engagement": 67,
+      "tags": [
+        "programming",
+        "vcs",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://yorickpeterse.com/articles/migrating-from-github-to-codeberg",
+      "titleHash": "2b95355a9207635afa681263c8c49cf11563f4e329757e842ae1915cbb84894b",
+      "contentHash": "2b95355a9207635afa681263c8c49cf11563f4e329757e842ae1915cbb84894b",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.7970207586469972,
+        "engagement": 0.6108363042354121
+      }
+    },
+    {
+      "url": "https://citrons.xyz/journal/2026-04-13",
+      "title": "Paint in the memory of other programs",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "gavinmorrow",
+      "publishedAt": "2026-11-15T21:37:36.159-06:00",
+      "engagement": 68,
+      "tags": [
+        "programming",
+        "visualization",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://citrons.xyz/journal/2026-04-13",
+      "titleHash": "2cbbae723be49be2f0346a668d8a846bc00408ad706a57c838c59a692bda67c3",
+      "contentHash": "2cbbae723be49be2f0346a668d8a846bc00408ad706a57c838c59a692bda67c3",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.7852196779954888,
+        "engagement": 0.6129496969124184
+      }
+    },
+    {
+      "url": "https://dev.to/webdeveloperhyper/ai-avatar-v28-security-support-voxel-avatar-2i5i",
+      "title": "AI Avatar v28 (Security Support, Voxel Avatar)🛡️",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Intro   AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its...",
+      "author": "Web Developer Hyper",
+      "publishedAt": "2026-11-16T04:34:39Z",
+      "engagement": 49,
+      "tags": [
+        "ai",
+        "webdev",
+        "productivity",
+        "security",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/webdeveloperhyper/ai-avatar-v28-security-support-voxel-avatar-2i5i",
+      "titleHash": "4927542f3d1a8fbbc652992fdccd83f1861216aa207eae06a9793e40aa6f4098",
+      "contentHash": "bc30ba79a93bb0798ae66dbf939f9e76b3847cff9f9a5b2f1f42b1c707ef13ac",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.7924400153855513,
+        "engagement": 0.5663233347786729
+      }
+    },
+    {
+      "url": "https://dev.to/akhourianmolkumar/removebg-is-shutting-down-heres-a-free-no-upload-alternative-4ebo",
+      "title": "remove.bg Is Shutting Down — Here's a Free, No-Upload Alternative",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "On December 1, 2026 at 9:00 AM CET, remove.bg — the site that turned \"one-click background removal\"...",
+      "author": "Akhouri Anmol Kumar",
+      "publishedAt": "2026-11-13T11:05:50Z",
+      "engagement": 215,
+      "tags": [
+        "showdev",
+        "webdev",
+        "ai",
+        "webassembly",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/akhourianmolkumar/removebg-is-shutting-down-heres-a-free-no-upload-alternative-4ebo",
+      "titleHash": "e4d575d5995a86586348876d351b13ac7adcb3adbd1f4c4acd43a8bf03fa67d5",
+      "contentHash": "f6bc0581628ffaa14040d6006085bd03df62ef6142e58398470213c2a8f4ebc9",
+      "score": 53,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.42188606346814866,
+        "engagement": 0.7781512503836435
+      }
+    },
+    {
+      "url": "https://dev.to/devopsdaily/the-agentic-loop-explained-step-through-the-plan-build-judge-and-repeat-loop-behind-ai-coding-36g2",
+      "title": "The Agentic Loop Explained: Step Through the Plan, Build, Judge and Repeat Loop Behind AI Coding Agents",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Ask a chat model for a signup endpoint and you get one answer. A coding agent works differently: it...",
+      "author": "DevOps Daily",
+      "publishedAt": "2026-11-16T10:52:54Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "programming",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/devopsdaily/the-agentic-loop-explained-step-through-the-plan-build-judge-and-repeat-loop-behind-ai-coding-36g2",
+      "titleHash": "8c2f7d136cd096b7f77f8a9643fb9f59cc360555d5e8812dff219b3d65d1c60a",
+      "contentHash": "f3c33b5aec45df3e34c8464adb714559c06f6f8b2399251d4010f2eb7ed45179",
+      "score": 74,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8420229778723538,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://dev.to/kartik_sarangmath/the-harness-doesnt-matter-4ggb",
+      "title": "The Harness Doesn't Matter",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "By Kartik Sarangmath, Co-founder at Omnara. Originally posted on X.  Models are out. Harnesses are...",
+      "author": "Kartik Sarangmath",
+      "publishedAt": "2026-11-12T17:09:39Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "opensource",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/kartik_sarangmath/the-harness-doesnt-matter-4ggb",
+      "titleHash": "17d3e609f2e10cf742acf9da2a30c5bef3fa441907b4994e91d8c41ffeb4e93c",
+      "contentHash": "3935514ce18b1e3f4f4be5609734e34ba78790997b77596601b2608f9fe5f6e1",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.35497979687215864,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://huggingface.co/Abiray/MiniMax-H3-Image-GGUF",
+      "title": "Abiray/MiniMax-H3-Image-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-to-image · 290 likes · 155475 downloads",
+      "engagement": 290,
+      "tags": [
+        "model",
+        "text-to-image"
+      ],
+      "normalizedUrl": "https://huggingface.co/Abiray/MiniMax-H3-Image-GGUF",
+      "titleHash": "c601e63f11acd53c0c45a6e04e6bd84b80320938ba1f092c3b2e5d5b73819ac1",
+      "contentHash": "987305c828f424443721c888cb237ed7f4f6194f1e24011427427e1de1b42a0e",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8212976629953025
+      }
+    }
+  ]
+}
