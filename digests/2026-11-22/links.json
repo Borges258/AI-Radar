@@ -1,0 +1,880 @@
+{
+  "date": "2026-11-22",
+  "stats": {
+    "scraped": 170,
+    "deduped": 31,
+    "scored": 31
+  },
+  "recommendations": [
+    {
+      "url": "https://unmark.grandimam.com/",
+      "title": "Show HN: Stop applying to jobs using AI-generated resume",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "When LLMs hands you a resume or pdf it carry markers of how it was made, including the source. You can&#x27;t see them on the page but applicant tracking systems can read it.<p>So recruiters are flagging such profiles and rejecting them entirely. I had tested this across 40+ AI models (OpenAI, Anthropic, Google, Meta, etc) to produce a resume and every single file carried a marker.<p>To solve this problem. I had built a free tool to show what your file says and gives you a cleaned version:<p>- Drop your resume and get a cleaned copy\n- Free, no account.<p>What it doesn&#x27;t do: it won&#x27;t rewrite your resume or make AI-sounding wording more human. It only deals with what&#x27;s hidden in the file.<p>It&#x27;s a simple tool, but it feels absolutely necessary now as more people are using AI for generating their entire resume or even editing them. I am the developer, happy to answer any questions.",
+      "author": "grandimam",
+      "publishedAt": "2026-11-21T10:21:01Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://unmark.grandimam.com/",
+      "titleHash": "cf632bf38d0e688949a151832ee5f9c1fea446dd640eb746c76d2554cf8d6860",
+      "contentHash": "3627e9e14e8d24f59814a814baaca3dd7b4bdaa02b6273407ee67cbdc2b75f66",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8552121504235402,
+        "engagement": 0.25938375012788123
+      },
+      "rank": 1,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 81"
+      ]
+    },
+    {
+      "url": "http://ricapar.net/ClawDOS/",
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Ricapar",
+      "publishedAt": "2026-11-21T05:38:01Z",
+      "engagement": 159,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "http://ricapar.net/ClawDOS",
+      "titleHash": "a6cfe9ef8892b432f085721f3e713d96d8a157594d37ab26453adb860c152b48",
+      "contentHash": "a6cfe9ef8892b432f085721f3e713d96d8a157594d37ab26453adb860c152b48",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8172475182996818,
+        "engagement": 0.7347066608853083
+      },
+      "rank": 2,
+      "reasons": [
+        "时效性强",
+        "社区热度高",
+        "综合评分 70"
+      ]
+    },
+    {
+      "url": "https://www.pandex.io",
+      "title": "Pandex – Official European Law for AI Agents, over MCP",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vasie",
+      "publishedAt": "2026-11-21T20:47:41Z",
+      "engagement": 38,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.pandex.io/",
+      "titleHash": "7f617330f15f19579eabb4df4f3a38eccc0c55aaad4f3e860677a11ed3a59523",
+      "contentHash": "7f617330f15f19579eabb4df4f3a38eccc0c55aaad4f3e860677a11ed3a59523",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9456747514056633,
+        "engagement": 0.530354869008833
+      },
+      "rank": 3,
+      "reasons": [
+        "时效性强",
+        "社区热度高",
+        "综合评分 70"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.06257",
+      "title": "Analysis of Local Open-Weight LLM Agents on Vulnerability-Reproduction Tasks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "krapcys",
+      "publishedAt": "2026-11-21T15:39:28Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2611.06257",
+      "titleHash": "66c87ef8f38474be37ff4712b88f89022933b9c490121914143775c07de6b413",
+      "contentHash": "66c87ef8f38474be37ff4712b88f89022933b9c490121914143775c07de6b413",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9000453079861459,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 4,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 69"
+      ]
+    },
+    {
+      "url": "https://github.com/Eddie-Town/evalsift-lite",
+      "title": "EvalSift – 100 hand-labeled LLM agent traces",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Eddie-Town",
+      "publishedAt": "2026-11-21T16:00:08Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Eddie-Town/evalsift-lite",
+      "titleHash": "087462d67382caf1e465e0ac80b7e150dddf2fb4e5c04876bd6e51401ee28b8c",
+      "contentHash": "087462d67382caf1e465e0ac80b7e150dddf2fb4e5c04876bd6e51401ee28b8c",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9030347957249734,
+        "engagement": 0.10034333188799373
+      },
+      "rank": 5,
+      "reasons": [
+        "领域相关性高",
+        "时效性强",
+        "综合评分 68"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://ricapar.net/ClawDOS/",
+      "title": "ClawDOS – An AI coding agent for DOS",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Ricapar",
+      "publishedAt": "2026-11-21T05:38:01Z",
+      "engagement": 159,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "http://ricapar.net/ClawDOS",
+      "titleHash": "a6cfe9ef8892b432f085721f3e713d96d8a157594d37ab26453adb860c152b48",
+      "contentHash": "a6cfe9ef8892b432f085721f3e713d96d8a157594d37ab26453adb860c152b48",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8172475182996818,
+        "engagement": 0.7347066608853083
+      }
+    },
+    {
+      "url": "https://www.pandex.io",
+      "title": "Pandex – Official European Law for AI Agents, over MCP",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "vasie",
+      "publishedAt": "2026-11-21T20:47:41Z",
+      "engagement": 38,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.pandex.io/",
+      "titleHash": "7f617330f15f19579eabb4df4f3a38eccc0c55aaad4f3e860677a11ed3a59523",
+      "contentHash": "7f617330f15f19579eabb4df4f3a38eccc0c55aaad4f3e860677a11ed3a59523",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9456747514056633,
+        "engagement": 0.530354869008833
+      }
+    },
+    {
+      "url": "https://clawvet.vercel.app/",
+      "title": "Show HN: ClawVet – Offline AST scanner and rug-pull diff for AI agent skills",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bazmou",
+      "publishedAt": "2026-11-21T09:40:06Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://clawvet.vercel.app/",
+      "titleHash": "06717470f5c8511acaad220404d413495623b5529d06dbf13d575ffe4b6cece5",
+      "contentHash": "06717470f5c8511acaad220404d413495623b5529d06dbf13d575ffe4b6cece5",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8496159790271522,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://gist.github.com/dexhorthy/4cc96f01be5b1208519e75dad250a948",
+      "title": "The No AI Slop Manifesto",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ohjeez",
+      "publishedAt": "2026-11-22T01:18:06Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://gist.github.com/dexhorthy/4cc96f01be5b1208519e75dad250a948",
+      "titleHash": "131abbfaefc29398da059cadf1f7a1824ea132360363292e897df02077a4ff0e",
+      "contentHash": "131abbfaefc29398da059cadf1f7a1824ea132360363292e897df02077a4ff0e",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9876093734940983,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://twitter.com/theallinpod/status/2123994998156722681",
+      "title": "David Friedberg: Restricting Open Source AI Is a Path to Tyranny",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pretext",
+      "publishedAt": "2026-11-21T17:45:41Z",
+      "engagement": 7,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://twitter.com/theallinpod/status/2123994998156722681",
+      "titleHash": "4536e34e316694a962485ec0d83548f09260cf8eb5aeafcff54ed18d48170bd3",
+      "contentHash": "4536e34e316694a962485ec0d83548f09260cf8eb5aeafcff54ed18d48170bd3",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9184584449702404,
+        "engagement": 0.3010299956639812
+      }
+    },
+    {
+      "url": "https://blog.mozilla.org/addons/2026/11/20/developer-spotlight-webbrain/",
+      "title": "Mozilla Developer Spotlight: WebBrain – Open-source local-first AI browser agent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "webbrain",
+      "publishedAt": "2026-11-21T13:09:10Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.mozilla.org/addons/2026/11/20/developer-spotlight-webbrain",
+      "titleHash": "bbf1171f5394f0e5793b063e970f264979c9008304e324441c58544909c8fff8",
+      "contentHash": "bbf1171f5394f0e5793b063e970f264979c9008304e324441c58544909c8fff8",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8785996723396798,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://apnews.com/article/anthropic-history-openai-dario-amodei-ipo-53fb21bd250b936d93c5c8885af8d393",
+      "title": "Anthropic's IPO raises questions about AI safety and shareholder pressure",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ComputedCamp995",
+      "publishedAt": "2026-11-21T09:16:46Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://apnews.com/article/anthropic-history-openai-dario-amodei-ipo-53fb21bd250b936d93c5c8885af8d393",
+      "titleHash": "25f84be08d7d5788c44ca7c942dfd186bcc5227202fb2b5dd6b7fe816c9173ba",
+      "contentHash": "25f84be08d7d5788c44ca7c942dfd186bcc5227202fb2b5dd6b7fe816c9173ba",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8464410906709054,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://unmark.grandimam.com/",
+      "title": "Show HN: Stop applying to jobs using AI-generated resume",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "When LLMs hands you a resume or pdf it carry markers of how it was made, including the source. You can&#x27;t see them on the page but applicant tracking systems can read it.<p>So recruiters are flagging such profiles and rejecting them entirely. I had tested this across 40+ AI models (OpenAI, Anthropic, Google, Meta, etc) to produce a resume and every single file carried a marker.<p>To solve this problem. I had built a free tool to show what your file says and gives you a cleaned version:<p>- Drop your resume and get a cleaned copy\n- Free, no account.<p>What it doesn&#x27;t do: it won&#x27;t rewrite your resume or make AI-sounding wording more human. It only deals with what&#x27;s hidden in the file.<p>It&#x27;s a simple tool, but it feels absolutely necessary now as more people are using AI for generating their entire resume or even editing them. I am the developer, happy to answer any questions.",
+      "author": "grandimam",
+      "publishedAt": "2026-11-21T10:21:01Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://unmark.grandimam.com/",
+      "titleHash": "cf632bf38d0e688949a151832ee5f9c1fea446dd640eb746c76d2554cf8d6860",
+      "contentHash": "3627e9e14e8d24f59814a814baaca3dd7b4bdaa02b6273407ee67cbdc2b75f66",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8552121504235402,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.rmrfbench.com/",
+      "title": "Show HN: RMRFBench – How often AI agents wreck a server when asked to rm a file",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "eadz",
+      "publishedAt": "2026-11-21T08:28:37Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.rmrfbench.com/",
+      "titleHash": "000e8831adb321a086f7d71f72ede0a8b182f480cb435c4d4eda89c5afec4cd0",
+      "contentHash": "000e8831adb321a086f7d71f72ede0a8b182f480cb435c4d4eda89c5afec4cd0",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8399269338605209,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/Musset-App/musset",
+      "title": "Show HN: Musset, open-source Scrivener alternative with an AI that never writes",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "I’m writing my first novel and could not find an app that fit my workflow: quiet like iA Writer, organized like Scrivener, and with AI so I can discuss my book while I write it. It allows me to feel less “alone” and have a sounding board while I write.<p>- A book is a folder of plain Markdown files. Musset commits to a git repo, tracks versions and drafts without you having to know git.<p>- Revisions are CriticMarkup inside the text. It manages docx revisions too, so your editor can edit a Word doc and you import their comments.<p>- PDFs are typeset using Typst, embedded in the app, following each language’s typographic rules.<p>- Spelling and grammar are checked using LanguageTool, also embedded.<p>- Mac&#x2F;Word, WordStar, vi and Emacs keyboard modes.<p>The AI is optional and uses your Codex or Claude Code CLI. It comments, leaves margin notes, and checks continuity and your chapters against your style rules.<p>It’s GPL-3.0 and free during the beta. When or if it reaches 1.0, if there is sufficient interest, the idea is to make it a small one-time payment ($9.90). There is a paid sync service (git hosting) that lets you share a book with beta readers and editors.<p>Download: <a href=\"https:&#x2F;&#x2F;musset.app\" rel=\"nofollow\">https:&#x2F;&#x2F;musset.app</a><p>I’d love to have some feedback!",
+      "author": "julienmarie",
+      "publishedAt": "2026-11-21T05:42:49Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Musset-App/musset",
+      "titleHash": "914dd08ddfa24d33c89744f62b0adfd33bdfe995c3bdf70543d112918ab95897",
+      "contentHash": "019492cee627ee1482b4a4856fd88827a1dbcbc2d7668abead62f6b6ff6acd8b",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8178771749746733,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.economist.com/finance-and-economics/2026/11/19/ai-is-swallowing-maths-is-economics-next",
+      "title": "AI is swallowing maths. Is economics next?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-11-21T17:57:18Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.economist.com/finance-and-economics/2026/11/19/ai-is-swallowing-maths-is-economics-next",
+      "titleHash": "3b0df785c21a70ce3e884404829de0375405d48c2aec479d08b2f22827d27372",
+      "contentHash": "3b0df785c21a70ce3e884404829de0375405d48c2aec479d08b2f22827d27372",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9201719585786678,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.rameznaam.com/p/the-most-important-charts-in-ai-are",
+      "title": "The Most Important Charts in AI Are Wrong",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "D-Machine",
+      "publishedAt": "2026-11-21T02:45:31Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.rameznaam.com/p/the-most-important-charts-in-ai-are",
+      "titleHash": "dd8bfd99905faf5b1f83eb5149663144a5b1dfb68aff06c0e71a7e8316ece406",
+      "contentHash": "dd8bfd99905faf5b1f83eb5149663144a5b1dfb68aff06c0e71a7e8316ece406",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.7949381055349667,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://tech.yahoo.com/general/article/are-all-of-these-outages-a-coincidence--or-a-glimpse-of-our-ai-future-210035788.html",
+      "title": "Are all of these outages a coincidence – or a glimpse of our AI future?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nephihaha",
+      "publishedAt": "2026-11-21T20:14:20Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://tech.yahoo.com/general/article/are-all-of-these-outages-a-coincidence--or-a-glimpse-of-our-ai-future-210035788.html",
+      "titleHash": "7f13846acd9b0c6c70f204600f1db510f5e9c745e59f2bc9d8b40e3099a85478",
+      "contentHash": "7f13846acd9b0c6c70f204600f1db510f5e9c745e59f2bc9d8b40e3099a85478",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9406279303914511,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/runpod/runpod-mcp/issues/202",
+      "title": "RunPod's MCP server tells AI agents to rate it and not mention it to the user",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "XadniGraves",
+      "publishedAt": "2026-11-21T14:53:19Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/runpod/runpod-mcp/issues/202",
+      "titleHash": "45f3480b8595ef8387590120e297d73ad3b3e5f458f2bee75176eee875074bba",
+      "contentHash": "45f3480b8595ef8387590120e297d73ad3b3e5f458f2bee75176eee875074bba",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8934052655976221,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+      "title": "Google rolls out new search homepage with AI chat history and no search button",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Brajeshwar",
+      "publishedAt": "2026-11-21T08:39:42Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar",
+      "titleHash": "c7006ba8b22af28a834a9f0e0baaeffe9afee2a4fa0b8eb78ac1d92d7528ccf8",
+      "contentHash": "c7006ba8b22af28a834a9f0e0baaeffe9afee2a4fa0b8eb78ac1d92d7528ccf8",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8414219291820626,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.motherjones.com/politics/2026/11/ai-safety-anthropic-open-ai/",
+      "title": "The AI Safety Community Is Increasingly Freaked Out. Should They Be?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "donkan168",
+      "publishedAt": "2026-11-21T15:01:23Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.motherjones.com/politics/2026/11/ai-safety-anthropic-open-ai",
+      "titleHash": "d3ab182db0449c60442e49851624732b967c572b598d85b3e0b0ba5a2198ed13",
+      "contentHash": "d3ab182db0449c60442e49851624732b967c572b598d85b3e0b0ba5a2198ed13",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8945623510086093,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.rand.org/pubs/research_reports/RRA4980-1.html",
+      "title": "Federal Revenue When AI Replaces Labor",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "littlexsparkee",
+      "publishedAt": "2026-11-21T06:12:31Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.rand.org/pubs/research_reports/RRA4980-1.html",
+      "titleHash": "09b7181e37c9d431b8ab52c4ff4dfe84c53b3b3a1c45c389312f1ce7c3466341",
+      "contentHash": "09b7181e37c9d431b8ab52c4ff4dfe84c53b3b3a1c45c389312f1ce7c3466341",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8217839774419015,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.jkfsom.com/writing/four-levels-of-agentic-commerce/",
+      "title": "Your next customer might be an AI agent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "JKFSOM",
+      "publishedAt": "2026-11-21T15:33:32Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.jkfsom.com/writing/four-levels-of-agentic-commerce",
+      "titleHash": "d2d0c61ce2051e4c6f3a73847f8f7a700d889b063a77aaf4e6717f1ffe66cd9d",
+      "contentHash": "d2d0c61ce2051e4c6f3a73847f8f7a700d889b063a77aaf4e6717f1ffe66cd9d",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8991888656556002,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JK5QY7rIpR8",
+      "title": "AI's Favourite Myth: Taste Is the Last Human Advantage",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "adhi01",
+      "publishedAt": "2026-11-21T19:08:30Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=JK5QY7rIpR8",
+      "titleHash": "1268b18d5b884501d7a63fb2e3ccc71a4f8b6f43283dfbda5418e2f211832674",
+      "contentHash": "1268b18d5b884501d7a63fb2e3ccc71a4f8b6f43283dfbda5418e2f211832674",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9307443631562142,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "title": "Three breaches, endless leaks: Your AI supply chain needs canaries",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "qznc",
+      "publishedAt": "2026-11-21T09:26:37Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "titleHash": "e4ceaa612b10a09e63c47abc46af8b1c87836bf14875d0e7be68632e058e777c",
+      "contentHash": "e4ceaa612b10a09e63c47abc46af8b1c87836bf14875d0e7be68632e058e777c",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8477798974913918,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://www.innerkore.com/blog/brain-doesnt-think-sentences-llm/",
+      "title": "Brain Doesn't Think in Sentences. Why Should an LLM?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gagan2020",
+      "publishedAt": "2026-11-21T21:04:11Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.innerkore.com/blog/brain-doesnt-think-sentences-llm",
+      "titleHash": "2697a1f1f1e1718d542b50120ddb5b034218c7e5a9cd7d7623e5208eaa595e25",
+      "contentHash": "2697a1f1f1e1718d542b50120ddb5b034218c7e5a9cd7d7623e5208eaa595e25",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9481816828799493,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://github.com/VBS2004/pencil",
+      "title": "Show HN: Pencil – LLM writes whiteboard lessons as JSON, a browser draws them",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "VBS2004",
+      "publishedAt": "2026-11-21T18:33:22Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/VBS2004/pencil",
+      "titleHash": "218c5813f062be689cb61c4a586b1df6e2877890585331266d77ab33d7806b22",
+      "contentHash": "218c5813f062be689cb61c4a586b1df6e2877890585331266d77ab33d7806b22",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9255123603966988,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.06257",
+      "title": "Analysis of Local Open-Weight LLM Agents on Vulnerability-Reproduction Tasks",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "krapcys",
+      "publishedAt": "2026-11-21T15:39:28Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2611.06257",
+      "titleHash": "66c87ef8f38474be37ff4712b88f89022933b9c490121914143775c07de6b413",
+      "contentHash": "66c87ef8f38474be37ff4712b88f89022933b9c490121914143775c07de6b413",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9000453079861459,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://bfontaine.net/blog/2026/11/21/llms-and-the-illusion-of-competence/",
+      "title": "LLMs and the Illusion of Competence",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hk__2",
+      "publishedAt": "2026-11-21T11:25:08Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://bfontaine.net/blog/2026/11/21/llms-and-the-illusion-of-competence",
+      "titleHash": "a0fc7b01368719ca90733fc717663ed4ba5247ba8d2fec66f225123fe4da0054",
+      "contentHash": "a0fc7b01368719ca90733fc717663ed4ba5247ba8d2fec66f225123fe4da0054",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8640556130426649,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/flipcyde101/kvdiff",
+      "title": "Kvdiff – Local proxy showing the byte breaking your LLM prompt cache",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "flipcyde101",
+      "publishedAt": "2026-11-21T22:38:12Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/flipcyde101/kvdiff",
+      "titleHash": "ab59e7e6548771bef014399ab920b58faf10b08549b1419cae0117dafeaeb585",
+      "contentHash": "ab59e7e6548771bef014399ab920b58faf10b08549b1419cae0117dafeaeb585",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9625934726477716,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://github.com/Eddie-Town/evalsift-lite",
+      "title": "EvalSift – 100 hand-labeled LLM agent traces",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Eddie-Town",
+      "publishedAt": "2026-11-21T16:00:08Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/Eddie-Town/evalsift-lite",
+      "titleHash": "087462d67382caf1e465e0ac80b7e150dddf2fb4e5c04876bd6e51401ee28b8c",
+      "contentHash": "087462d67382caf1e465e0ac80b7e150dddf2fb4e5c04876bd6e51401ee28b8c",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9030347957249734,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://danb.id.au/blog/pii-redaction-before-llm.html",
+      "title": "PII redaction before LLM processing",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dbetteridge",
+      "publishedAt": "2026-11-21T15:45:16Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://danb.id.au/blog/pii-redaction-before-llm.html",
+      "titleHash": "8d5d12310072722e46e1c13b463b0bff4fea491f5d1dead7e527827c1a877c05",
+      "contentHash": "8d5d12310072722e46e1c13b463b0bff4fea491f5d1dead7e527827c1a877c05",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9008832904443181,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://blog.tenstral.net/2026/11/new-fdo-website.html",
+      "title": "Changes on freedesktop.org",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "hugoarnal",
+      "publishedAt": "2026-11-21T05:41:23.942-06:00",
+      "engagement": 8,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.tenstral.net/2026/11/new-fdo-website.html",
+      "titleHash": "9b4cf83657a6036b55af0085068bdf8a281af3215d44aa9b7110d3d4b17fda99",
+      "contentHash": "9b4cf83657a6036b55af0085068bdf8a281af3215d44aa9b7110d3d4b17fda99",
+      "score": 54,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8663136059117156,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/thethirdcup/the-chairs-are-back-the-coffee-is-on-243p",
+      "title": "The Chairs Are Back. The Coffee Is On. ☕",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Welcome to The Third Cup.           The Renovation Is Done. We're Open Again!   Finally, the...",
+      "author": "xulingfeng",
+      "publishedAt": "2026-11-21T11:24:29Z",
+      "engagement": 112,
+      "tags": [
+        "community",
+        "discuss",
+        "ai",
+        "writing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/thethirdcup/the-chairs-are-back-the-coffee-is-on-243p",
+      "titleHash": "967075b64d1ebbed678936eb140c0310aab6da042dd1cf43c584c300fcc44203",
+      "contentHash": "35232ccce29ac0293370acde735caa400275497742afeeb2abc620a64d699877",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8639655004977579,
+        "engagement": 0.6843594811611399
+      }
+    },
+    {
+      "url": "https://dev.to/toxy4ny/the-rigor-ratchet-adversarial-field-notes-from-testing-a-frontier-preview-model-on-myself-1n4c",
+      "title": "The Rigor Ratchet: adversarial field notes from testing a frontier preview model on myself",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "TL;DR. I adversarially tested Qwen4-Max-Preview (Alibaba's free preview, November 2026) by asking it...",
+      "author": "KL3FT3Z",
+      "publishedAt": "2026-11-16T14:07:23Z",
+      "engagement": 16,
+      "tags": [
+        "ai",
+        "webdev",
+        "security",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/toxy4ny/the-rigor-ratchet-adversarial-field-notes-from-testing-a-frontier-preview-model-on-myself-1n4c",
+      "titleHash": "8bad6b61ded92d8fe472f4116c9bb3a71fe1d69527c8956844a136ba27d34c8c",
+      "contentHash": "3f6c19fe8f25551a626be9bfba02bc146e484dbb6827d456eb4ddc23ef0c4c09",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.2793386826776043,
+        "engagement": 0.41014964045942465
+      }
+    },
+    {
+      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-text · 258 likes · 9540 downloads",
+      "engagement": 258,
+      "tags": [
+        "model",
+        "image-text-to-text"
+      ],
+      "normalizedUrl": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "titleHash": "fce19cc333b64e9294d474cdd445d8c79ce3fb8e3720a241954a9fcc8383c71d",
+      "contentHash": "a99b08895fc6e602ea2ede070c86dccbd0596c392fbe4c6408900d5556056267",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8044332546937506
+      }
+    }
+  ]
+}
