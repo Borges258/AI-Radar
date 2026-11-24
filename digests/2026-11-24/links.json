@@ -1,0 +1,1626 @@
+{
+  "date": "2026-11-24",
+  "stats": {
+    "scraped": 140,
+    "deduped": 64,
+    "scored": 64
+  },
+  "summary": "今日精选聚焦AI前沿应用与优化。RepoClean探索代码清理Agent，PCC提升LLM剪枝效率，FiRE革新翻译评估，PseuDRAGON助力金融数据脱敏，HEART优化心电特征学习。涵盖软件工程、模型压缩、隐私保护及医疗AI，展现LLM在垂直领域的最新突破。",
+  "recommendations": [
+    {
+      "url": "http://arxiv.org/abs/2611.30350v1",
+      "title": "RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language model (LLM) agents have demonstrated strong repository-level programming capabilities. However, as software evolves, repository code may become redundant or obsolete, increasing maintenance costs and potentially introducing functional issues. Agents must therefore identify and remove unnecessary code safely, yet autonomous repository-level code cleanup remains insufficiently evaluated in isolation. To evaluate this capability, we introduce RepoClean, a benchmark of 200 cleanup tasks from 34 popular open-source Python repositories. RepoClean is constructed by automatically reintroducing deleted code from real repository histories into newer versions, preserving current implementations and retaining instances where previously passing tests consequently fail. To restore existing functionality without new feature development, agents must use repository interfaces and cross-file dependencies to determine which historical code to remove and which implementations to preserve. Evaluation of seven models shows that even the best-performing model, GPT-6 Astra, resolves only 23% of tasks. Further analysis reveals that agents remove substantially less obsolete code when cleanup is not explicitly requested. RepoClean provides a foundation for systematically studying these cleanup challenges and advancing coding agents toward autonomous software maintenance.",
+      "publishedAt": "2026-11-23T09:22:53Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30350v1",
+      "titleHash": "c7786e87806eb83f14df71b76d6595e5b5c13238ea940e786478c877e979d864",
+      "contentHash": "a416e4972c16752c9289a6b122eea4e56f693c62e165090eb057ecc3d62eb933",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8174498694273056,
+        "engagement": 0
+      },
+      "rank": 1,
+      "reasons": [
+        "洞察代码维护Agent能力边界"
+      ],
+      "overview": "RepoClean基准测试了大模型在仓库级代码清理中的表现，旨在解决软件演进过程中冗余或过时代码自动识别与移除的关键挑战，评估Agent处理复杂代码库的能力。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30183v1",
+      "title": "PCC: Pivotal Channel Compensation for Layer Pruning of Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Treating independent layers as the minimal pruning unit allows layer pruning to efficiently eliminate many redundant parameters and achieve high compression rates. Layer pruning has become a promising and prevalent structured pruning technique for large language models (LLMs). However, multi-layer removal can lead to significant performance degradation for LLMs. Although some works have explored various compensation methods for pruned layers, they are inefficient and costly. Observing that the expression of a large proportion of information is concentrated on a small number of pivotal channels, we propose a novel post-pruning compensation method for layer pruning, called pivotal channel compensation (PCC). PCC can achieve significant performance improvement by compensating for a small number of channels through learnable linear transformations at the pruning interface. Besides, we propose a new evaluation metric, called channel-wise average performance improvement (CAPI), which can measure the efficiency of channel-wise compensation. Our experimental results across various LLMs demonstrate that PCC can achieve significant and consistent improvements and high CAPI on language modeling and zero-shot question answering for the state-of-the-art cross-layer and consecutive-layer pruning methods. Compared with existing compensation methods, PCC can achieve competitive results with fewer additional parameters and less training cost.",
+      "publishedAt": "2026-11-23T07:29:16Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30183v1",
+      "titleHash": "55d849c737e668815bd0540bec2a6e54f80ec0904712f12ca2823844c6f704e6",
+      "contentHash": "520ac2d9b00bfeb9b86899aae22aaef7d4dbd34653e218891c2c92de02974b20",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8026828631703895,
+        "engagement": 0
+      },
+      "rank": 2,
+      "reasons": [
+        "平衡LLM压缩率与模型精度"
+      ],
+      "overview": "提出PCC层剪枝方法，通过处理关键通道补偿，在高效剔除LLM冗余参数的高压缩率同时，显著降低精度损失，为模型轻量化部署提供新的有效路径。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30168v1",
+      "title": "FiRE: Fine-grained Ranking Evaluation for Machine Translation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Developing reliable machine translation (MT) systems hinges on our ability to distinguish superior translations from inferior ones. However, existing evaluation paradigms, whether limited to coarse overall rankings or misaligned with human preferences, fail to deliver interpretable, fine-grained feedback in reference-free settings. We present a Fine-Grained Ranking Evaluation method (FiRE) that leverages off-the-shelf large language models to perform criterion-driven pairwise comparison across three complementary dimensions: faithfulness, fluency, and consistency of style, instead of producing a single holistic judgment. To enable rigorous meta-evaluation of evaluation paradigms in the absence of any suitable testbed, we construct the first human-annotated, reference-free benchmark for fine-grained ranking evaluation, achieving substantial inter-annotator agreement. Through meta-evaluation on this benchmark and existing MQM datasets, FiRE demonstrably outperforms regression-based and error-analysis metrics in aligning with human comparative judgments, while providing more informative insights into translation quality. Finally, our examination of LLM evaluator biases (position and self-enhancement) and their handling of tied cases offers guidance for more nuanced MT evaluation. Code and benchmark resources are available at https://github.com/wygao8/FiRE-MT.",
+      "publishedAt": "2026-11-23T07:13:35Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30168v1",
+      "titleHash": "08edf01ee33e6595cd6f3e009c3733b7942c816b0ffc90aefa68f8a14e52e38f",
+      "contentHash": "ccaf75448dd29524e87634ff276df746c7a21884bffef8fa434157c80321b8e7",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.800665527238269,
+        "engagement": 0
+      },
+      "rank": 3,
+      "reasons": [
+        "革新机器翻译质量评估标准"
+      ],
+      "overview": "FiRE提出了细粒度机器翻译排序评估框架，旨在更可靠地辨别优质与劣质译文，弥补现有评估范式在区分细微翻译质量差异上的不足，提升MT系统评估精度。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30353v1",
+      "title": "PseuDRAGON: Knowledge-Guided Local LLMs for Financial-Data Pseudonymization in Closed Networks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Staff pseudonymizing financial data in closed networks must interpret abbreviated column names, identify personal information, and choose processing methods. Local language models can assist, but may give different labels for the same input. PseuDRAGON keeps confirmed judgments and corrections outside a fixed model and reuses them through exact-name lookup and learned rules. For expert review, the workflow searches institutional policy, national privacy law, then international sources. Across 92 columns from one institution, rules increase reuse under the same approval checks from 75 to 83 labels without reuse errors when all training judgments are available. With 25% of the training judgments, withholding non-PII rules for unseen names eliminated the extra PII misses in replay at the cost of lower reuse. Revising or withdrawing approvals rebuilds derived rules, and tests on synthetic records verify that selected methods produce the specified outputs. In three paired runs, the history-first baseline cut automated identification time by 83.0% on average versus no reuse.",
+      "publishedAt": "2026-11-23T09:24:48Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30353v1",
+      "titleHash": "2d1468ef35b213d37486e476cc4788c6ed60b6924ce6d070815639c0406cc5c8",
+      "contentHash": "610cff7b773057af151d1fc002799ffaa55c3c009ae868a1ac67fb7ee199a48b",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8177012989171153,
+        "engagement": 0
+      },
+      "rank": 4,
+      "reasons": [
+        "实现金融数据离线安全脱敏"
+      ],
+      "overview": "PseuDRAGON利用知识引导的本地LLM，在封闭网络中自动解析缩写列名并识别个人信息，为金融数据脱敏提供了无需联网的高安全隐私保护解决方案。"
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30298v1",
+      "title": "HEART: Hierarchical Expert Adaptive Refinement Transformer for ECG Representation Learning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Learning robust representations from electrocardiograms (ECGs) is challenging because repeated cardiac cycles coexist with subtle and sparse diagnostic cues in local morphology and rhythm-level context. Existing ECG foundation models commonly rely on Transformerbased patch encoders with uniformly shared dense refinement pathways, limiting adaptive processing across heterogeneous ECG tokens. We propose HEART (Hierarchical Expert Adaptive Refinement Transformer), an ECG foundation model that introduces stage-specific conditional expert refinement during self-supervised pre-training. HEART places a local-level MoE over patch-level representations before temporal contextualization and a global-level MoE over context-integrated token representations after self-attention. Token-level Top-1 routing allows different patches or contextual tokens within the same ECG to follow different expert pathways. On public ECG benchmarks, HEART achieves strong performance under both linear probing and fine-tuning, with particularly large frozen-encoder gains on PTB-XL Form and Rhythm (+6.76 AUROC points each over the strongest protocol-reproduced baseline). Routing analyses provide qualitative evidence of complementary local and global expert specialization. We release our code and pretrained models at https://anonymous.4open.science/r/HEART-5E9F.",
+      "publishedAt": "2026-11-23T08:50:50Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30298v1",
+      "titleHash": "254dd0dc33e5ee49051ac6628ef2a19e3ef0760ecd82ff289693c9162df5e3a0",
+      "contentHash": "055c76e0ed8aae6033f5f1a6c708c97c2fba9a889e26fb84e622bff7c281eba3",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8132569676628445,
+        "engagement": 0
+      },
+      "rank": 5,
+      "reasons": [
+        "提升心电信号诊断特征精度"
+      ],
+      "overview": "HEART是一种分层专家自适应精调Transformer，专门用于心电信号（ECG）表征学习，能有效从重复心脏周期中提取稀疏且细微的诊断线索，提升医学AI精度。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping/",
+      "title": "Buckle Up the AI Bubble Is Popping",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "only_in_america",
+      "publishedAt": "2026-11-23T16:01:20Z",
+      "engagement": 32,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping",
+      "titleHash": "9a9879add22079d2187d973944c28ffa3e8075b77cd2b7392b6ee5d1dd54febe",
+      "contentHash": "9a9879add22079d2187d973944c28ffa3e8075b77cd2b7392b6ee5d1dd54febe",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8714174838889175,
+        "engagement": 0.5061713132926292
+      }
+    },
+    {
+      "url": "https://davidtemkin.github.io/declarelang/",
+      "title": "Declare is a UI language for you and your AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ilamont",
+      "publishedAt": "2026-11-24T02:36:56Z",
+      "engagement": 30,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://davidtemkin.github.io/declarelang",
+      "titleHash": "a822fbeb782000db952e6b7edc99887630941e4ae23894b95038bbc2aff29277",
+      "contentHash": "a822fbeb782000db952e6b7edc99887630941e4ae23894b95038bbc2aff29277",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.964976419774497,
+        "engagement": 0.49712056461142423
+      }
+    },
+    {
+      "url": "https://www.theatlantic.com/newsletters/2026/11/jensen-huang-ai-apology-nvidia/689366/",
+      "title": "Jensen Huang's Apology May Be the Only Correct Use of AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Bluestein",
+      "publishedAt": "2026-11-23T20:33:07Z",
+      "engagement": 26,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theatlantic.com/newsletters/2026/11/jensen-huang-ai-apology-nvidia/689366",
+      "titleHash": "583142be5d84f9c0df685ee08675c462f00464517c07f693bad05690bd9c8c74",
+      "contentHash": "583142be5d84f9c0df685ee08675c462f00464517c07f693bad05690bd9c8c74",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9102588535848901,
+        "engagement": 0.47712125471966244
+      }
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+      "title": "US to blacklist Asian AI firm Megaspeed",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "shrewdcomputer",
+      "publishedAt": "2026-11-23T22:48:25Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+      "titleHash": "684c2b4ff5090cbf1b0c8effd35dd249328c776f09b56bdbf7f75b4eb15b149f",
+      "contentHash": "684c2b4ff5090cbf1b0c8effd35dd249328c776f09b56bdbf7f75b4eb15b149f",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9302357030389328,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://theintercept.com/2026/11/21/trump-jason-watson-air-force-solitary-speech/",
+      "title": "An Air Force Major Is Being Held in Solitary Confinement for Criticizing Trump",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "firefax",
+      "publishedAt": "2026-11-23T10:04:39Z",
+      "engagement": 14,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://theintercept.com/2026/11/21/trump-jason-watson-air-force-solitary-speech",
+      "titleHash": "78b76faacaa20e06579834a4b3c6460aebef728da73d55b4b9f1e344f72a371c",
+      "contentHash": "78b76faacaa20e06579834a4b3c6460aebef728da73d55b4b9f1e344f72a371c",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8229464026389387,
+        "engagement": 0.3920304196852271
+      }
+    },
+    {
+      "url": "https://www.gnanaguru.com/blog/things-two-years-in-ai-taught-me/",
+      "title": "The AI conversation we're not having",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gnanaguru16",
+      "publishedAt": "2026-11-23T21:46:33Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.gnanaguru.com/blog/things-two-years-in-ai-taught-me",
+      "titleHash": "0fa126e9e8c343bbf59483d0a6f490ecf4834a45a9a2a3c50da3f1fa873c58c9",
+      "contentHash": "0fa126e9e8c343bbf59483d0a6f490ecf4834a45a9a2a3c50da3f1fa873c58c9",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9210473495442777,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://kudelskisecurity.com/research/sandboxing-coding-agents",
+      "title": "Sandboxing AI Coding Agents: Nono vs. Docker Sbx vs. Microsandbox vs. OpenShell",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "spiridow",
+      "publishedAt": "2026-11-23T13:11:15Z",
+      "engagement": 13,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://kudelskisecurity.com/research/sandboxing-coding-agents",
+      "titleHash": "3e5f0763d15a16de6850ae8e32a7365f55f30bf23a1757b3aaf1df8708f6587d",
+      "contentHash": "3e5f0763d15a16de6850ae8e32a7365f55f30bf23a1757b3aaf1df8708f6587d",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.847958063851177,
+        "engagement": 0.38204267855941265
+      }
+    },
+    {
+      "url": "https://www.rnz.co.nz/news/world/2757034/the-ai-bubble-hasn-t-burst-but-it-has-significantly-deflated",
+      "title": "The AI bubble hasn't burst, but it has significantly deflated",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "billybuckwheat",
+      "publishedAt": "2026-11-23T23:25:26Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.rnz.co.nz/news/world/2757034/the-ai-bubble-hasn-t-burst-but-it-has-significantly-deflated",
+      "titleHash": "88485c3f6008e3709c5b2ec0c9d9720746bf36bf1db1bad4d307eaef206b5e8a",
+      "contentHash": "88485c3f6008e3709c5b2ec0c9d9720746bf36bf1db1bad4d307eaef206b5e8a",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9357771397626846,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.reddit.com/r/RedditEng/comments/1y3wbkw/we_let_ai_approve_prs_at_reddit_heres_what/",
+      "title": "r/RedditEngin: We Let AI Approve PRs at Reddit. Here's What Happened",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "greazy",
+      "publishedAt": "2026-11-24T02:56:06Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reddit.com/r/RedditEng/comments/1y3wbkw/we_let_ai_approve_prs_at_reddit_heres_what",
+      "titleHash": "e1658dade96dd57f935a2f72ccc9aa6f42bcd85a5ad1ebd2514593abc17a519e",
+      "contentHash": "e1658dade96dd57f935a2f72ccc9aa6f42bcd85a5ad1ebd2514593abc17a519e",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9679485851500498,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/g0mtcg4mi",
+      "title": "Amazon signs $7.5B deal for Israeli AI startup Decart",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "danielklnstein",
+      "publishedAt": "2026-11-23T15:17:24Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.calcalistech.com/ctechnews/article/g0mtcg4mi",
+      "titleHash": "7c2a12a9b1e9911c3bc40c3d9c923b5c06f702a57493ae7c5ab31af5138ac299",
+      "contentHash": "7c2a12a9b1e9911c3bc40c3d9c923b5c06f702a57493ae7c5ab31af5138ac299",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8652963435332681,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://linch.substack.com/p/ai-is-already-massively-speeding",
+      "title": "AI is massively speeding up AI research",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "gmays",
+      "publishedAt": "2026-11-24T02:19:54Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://linch.substack.com/p/ai-is-already-massively-speeding",
+      "titleHash": "3f11f95a1b0f53f58050eb3776ff7c0beb017d4fc4f472b594ac4d4c68b32587",
+      "contentHash": "3f11f95a1b0f53f58050eb3776ff7c0beb017d4fc4f472b594ac4d4c68b32587",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9623427293177891,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://quickchat.ai/post/six-macbook-airs-private-llm-before-lunch",
+      "title": "Six Spare MacBook Airs Ran a Private LLM Before Lunch",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "piotrgrudzien",
+      "publishedAt": "2026-11-23T14:48:18Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://quickchat.ai/post/six-macbook-airs-private-llm-before-lunch",
+      "titleHash": "080c79126709bcfff4026636453447fe4235df6c43f7a23818aef568af91b1d3",
+      "contentHash": "080c79126709bcfff4026636453447fe4235df6c43f7a23818aef568af91b1d3",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8612655915115082,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://codeyam.com/apps/cadyam",
+      "title": "Show HN: A free creative suite, built in Rust, for AI collaboration",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "Hi HN, I&#x27;m Nadia, one of the makers of CadYam. My cofounder Jared is here to answer questions as well.<p>CadYam is a desktop design app built for a person and an AI agent to work on the same project: a CAD drawing, a video, an interior design plan, a data analysis, etc. You can sketch something by asking it to your agent and drop a pin on a specific place to ask for changes.<p>We built this after a lot of frustration trying to learn traditional CAD tools, which have a steep learning curve and take a lot of time and effort before you can build anything complex. With CadYam, the agent can do the work for you with your guidance or teach you how to use the app if you&#x27;d like to do some manual work yourself, so you also don&#x27;t always need the agent.<p>The agent&#x27;s changes show up as a preview you iterate on with natural language. No technical skills required to use it. You can watch a short demo (under a minute) at <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;NbA28Pshxyo\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;NbA28Pshxyo</a> or click around some demo exports in your browser without installing anything: <a href=\"https:&#x2F;&#x2F;codeyam-ai.github.io&#x2F;cadyam-exports&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;codeyam-ai.github.io&#x2F;cadyam-exports&#x2F;</a><p>We were also inspired by the HN threads about creative tools rebuilt in Rust, e.g. discussed in this HN thread: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49959605\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49959605</a><p>Some technical details:<p>- CadYam is written in Rust and runs a local MCP server. Agents connect to it and use the same commands you do, so they can drive almost everything in the app. CadYam has instructions for connecting a range of agents.<p>- We built CadYam with CodeYam (codeyam.com), a product we developed for building software with AI. It lets us develop quickly while keeping the app well organized and well tested. We&#x27;re shipping about two dozen fixes and features a day (more than 600 in the last month), so feature suggestions and bug reports are welcome and should get fixed quickly.<p>- The app is currently free for macOS, Windows, and Linux. It probably won&#x27;t be free forever, but if we do charge, it will be a small amount. It&#x27;s inexpensive for us to develop, and it doubles as a demo of what you can build with CodeYam.<p>We&#x27;d love for you to try it and share your feedback.",
+      "author": "nadis",
+      "publishedAt": "2026-11-23T16:17:11Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://codeyam.com/apps/cadyam",
+      "titleHash": "fdf33f902c6868bfc2f8ac315b6b9cc8b7cb059a76d62619dc32b15095d4aa48",
+      "contentHash": "34ea135d677da2a1ba841980f280651d55c6c5b6444d1e2ec0c8baecf32728d8",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8736364422184334,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://github.com/NPC-Worldwide/incognide",
+      "title": "Incognide, the AI-native IDE for research and development, reaches 500 gh stars",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "caug37",
+      "publishedAt": "2026-11-24T02:02:59Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/NPC-Worldwide/incognide",
+      "titleHash": "5495f3fa85c922ceb68d7aeb6e2a1b628e6a302a568d75b4d335dce794861a99",
+      "contentHash": "5495f3fa85c922ceb68d7aeb6e2a1b628e6a302a568d75b4d335dce794861a99",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9597341897108033,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.404media.co/google-wants-to-make-a-24-7-ai-tv-channel-youll-be-the-main-character/",
+      "title": "Google Wants to Make a 24/7 AI TV Channel. You'll Be the Main Character",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "only_in_america",
+      "publishedAt": "2026-11-23T18:55:17Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.404media.co/google-wants-to-make-a-24-7-ai-tv-channel-youll-be-the-main-character",
+      "titleHash": "301186333f7a105a091740165199ea537beb647429fd2e71df376ba2c0ea572f",
+      "contentHash": "301186333f7a105a091740165199ea537beb647429fd2e71df376ba2c0ea572f",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8960816898385744,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/sport/ng-interactive/2026/nov/23/chess-world-championship-ai",
+      "title": "AI conquered chess. What happened next should give us hope",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mellosouls",
+      "publishedAt": "2026-11-23T14:25:58Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/sport/ng-interactive/2026/nov/23/chess-world-championship-ai",
+      "titleHash": "6ec5090f1a7da902844e774dde81ec968258f449956888b9ddffaa5424767945",
+      "contentHash": "6ec5090f1a7da902844e774dde81ec968258f449956888b9ddffaa5424767945",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8581848533395385,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer",
+      "title": "AI may have solved math's greatest mystery. Can humans understand the answer?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pseudolus",
+      "publishedAt": "2026-11-23T11:10:13Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.science.org/content/article/ai-may-have-solved-math-s-greatest-mystery-can-humans-understand-answer",
+      "titleHash": "53a61bf75f1724e4e604daf606e9fff93488ce8998c1289670d5caeb22760b1e",
+      "contentHash": "53a61bf75f1724e4e604daf606e9fff93488ce8998c1289670d5caeb22760b1e",
+      "score": 57,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8316496774942177,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://www.techradar.com/pro/nearly-all-software-teams-admit-to-shipping-ai-generated-code-as-study-finds-verification-has-not-kept-pace-with-that-shift",
+      "title": "Nearly all software teams admit to shipping AI-generated code",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "billybuckwheat",
+      "publishedAt": "2026-11-23T20:41:47Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.techradar.com/pro/nearly-all-software-teams-admit-to-shipping-ai-generated-code-as-study-finds-verification-has-not-kept-pace-with-that-shift",
+      "titleHash": "0903e55a248d2cb35c3fda92fec4f503aabdc3479d57c8f889f1530c12a1dd42",
+      "contentHash": "0903e55a248d2cb35c3fda92fec4f503aabdc3479d57c8f889f1530c12a1dd42",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9115255130641277,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.20031",
+      "title": "Latent Introspection: LLMs Can Detect Prior Concept Injections",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "joecobb",
+      "publishedAt": "2026-11-23T22:29:48Z",
+      "engagement": 51,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://arxiv.org/abs/2602.20031",
+      "titleHash": "4122465a0ab17cfebe3d4961d73b1c07c8a18f7884a1aa14a14cbc6975ba862e",
+      "contentHash": "4122465a0ab17cfebe3d4961d73b1c07c8a18f7884a1aa14a14cbc6975ba862e",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9274611785700645,
+        "engagement": 0.572001114544933
+      }
+    },
+    {
+      "url": "https://www.greptile.com/blog/trex-computer-use",
+      "title": "How should an LLM see a computer?",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "dakshgupta",
+      "publishedAt": "2026-11-23T17:19:25Z",
+      "engagement": 50,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.greptile.com/blog/trex-computer-use",
+      "titleHash": "0f33464f2aa6549fe3ec1592557418aa73258d70c08e1e102a75106a5ab27469",
+      "contentHash": "0f33464f2aa6549fe3ec1592557418aa73258d70c08e1e102a75106a5ab27469",
+      "score": 69,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8824037372604394,
+        "engagement": 0.569190058699312
+      }
+    },
+    {
+      "url": "https://wordspies.com/",
+      "title": "Show HN: Game that determines which LLMs you can beat at Language Processing",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "hardicecream",
+      "publishedAt": "2026-11-24T01:32:36Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://wordspies.com/",
+      "titleHash": "ef4f69fbee3ec56a5a7b72a1f6b50da8d9e9512b1d7da59d6a5135310ecd6fbe",
+      "contentHash": "ef4f69fbee3ec56a5a7b72a1f6b50da8d9e9512b1d7da59d6a5135310ecd6fbe",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9550668444323572,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/xhjkl/please",
+      "title": "Show HN: `please-cli`, a local LLM with SSH socket bridging and a Metal 4 engine",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "xhjkl",
+      "publishedAt": "2026-11-23T16:53:23Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/xhjkl/please",
+      "titleHash": "7dd19564d394ad364ba9b25e5539d48e543a522dd3f4249dfdf9e2730bf072c3",
+      "contentHash": "7dd19564d394ad364ba9b25e5539d48e543a522dd3f4249dfdf9e2730bf072c3",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8787255646232524,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50617796",
+      "title": "What is the likelihood LLMs exploited the learn software to verify their Riemann",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "hypothesis?<p>The navier-stokes openai finding seemed to have problems with the LLM exploiting the software. How likely is it that within 17 million pages lies an exploit instead of a real result?<p>Not familiar with Lean, thanks in advance.",
+      "author": "rsoto2",
+      "publishedAt": "2026-11-23T19:33:36Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50617796",
+      "titleHash": "5c88c82b0c92e3177a5cb0498c6f68c36ff733f38a2a53cee13094a41c15a3c9",
+      "contentHash": "0dd7e81d31a39dde18742f9eb4ff0ec76806c4d48e5d72bebc0faec816c4f816",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.901607713370004,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://github.com/nuglifeleoji/Sentry",
+      "title": "Sentry: An external self-improving failure management layer for LLM agents",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "matt_d",
+      "publishedAt": "2026-11-24T00:56:07Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/nuglifeleoji/Sentry",
+      "titleHash": "dd3a9ce5869428fcfd29aa830c84eba3c12b9359b5d93b716a56de42f6059c37",
+      "contentHash": "dd3a9ce5869428fcfd29aa830c84eba3c12b9359b5d93b716a56de42f6059c37",
+      "score": 70,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9494924270603893,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/tech/MyPositionOnCurrentLLMs",
+      "title": "My position on today's current large scale LLMs and their use",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "speckx",
+      "publishedAt": "2026-11-23T18:41:34Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://utcc.utoronto.ca/~cks/space/blog/tech/MyPositionOnCurrentLLMs",
+      "titleHash": "45d74cbbef90e0519eb4b57e03b7148e12110b4ec7fa0ec995ae901d306e5cfc",
+      "contentHash": "45d74cbbef90e0519eb4b57e03b7148e12110b4ec7fa0ec995ae901d306e5cfc",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8941117177107473,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.economist.com/science-and-technology/2026/11/18/llms-are-developing-filthy-mouths",
+      "title": "LLMs are developing filthy mouths",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "theanonymousone",
+      "publishedAt": "2026-11-23T17:34:57Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.economist.com/science-and-technology/2026/11/18/llms-are-developing-filthy-mouths",
+      "titleHash": "5ac220ea663dcec36442c5995ddb857683eb4de8ec998c26c9e4a9f2d54677af",
+      "contentHash": "5ac220ea663dcec36442c5995ddb857683eb4de8ec998c26c9e4a9f2d54677af",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8846057256819496,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30353v1",
+      "title": "PseuDRAGON: Knowledge-Guided Local LLMs for Financial-Data Pseudonymization in Closed Networks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Staff pseudonymizing financial data in closed networks must interpret abbreviated column names, identify personal information, and choose processing methods. Local language models can assist, but may give different labels for the same input. PseuDRAGON keeps confirmed judgments and corrections outside a fixed model and reuses them through exact-name lookup and learned rules. For expert review, the workflow searches institutional policy, national privacy law, then international sources. Across 92 columns from one institution, rules increase reuse under the same approval checks from 75 to 83 labels without reuse errors when all training judgments are available. With 25% of the training judgments, withholding non-PII rules for unseen names eliminated the extra PII misses in replay at the cost of lower reuse. Revising or withdrawing approvals rebuilds derived rules, and tests on synthetic records verify that selected methods produce the specified outputs. In three paired runs, the history-first baseline cut automated identification time by 83.0% on average versus no reuse.",
+      "publishedAt": "2026-11-23T09:24:48Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30353v1",
+      "titleHash": "2d1468ef35b213d37486e476cc4788c6ed60b6924ce6d070815639c0406cc5c8",
+      "contentHash": "610cff7b773057af151d1fc002799ffaa55c3c009ae868a1ac67fb7ee199a48b",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8177012989171153,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30350v1",
+      "title": "RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Large language model (LLM) agents have demonstrated strong repository-level programming capabilities. However, as software evolves, repository code may become redundant or obsolete, increasing maintenance costs and potentially introducing functional issues. Agents must therefore identify and remove unnecessary code safely, yet autonomous repository-level code cleanup remains insufficiently evaluated in isolation. To evaluate this capability, we introduce RepoClean, a benchmark of 200 cleanup tasks from 34 popular open-source Python repositories. RepoClean is constructed by automatically reintroducing deleted code from real repository histories into newer versions, preserving current implementations and retaining instances where previously passing tests consequently fail. To restore existing functionality without new feature development, agents must use repository interfaces and cross-file dependencies to determine which historical code to remove and which implementations to preserve. Evaluation of seven models shows that even the best-performing model, GPT-6 Astra, resolves only 23% of tasks. Further analysis reveals that agents remove substantially less obsolete code when cleanup is not explicitly requested. RepoClean provides a foundation for systematically studying these cleanup challenges and advancing coding agents toward autonomous software maintenance.",
+      "publishedAt": "2026-11-23T09:22:53Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30350v1",
+      "titleHash": "c7786e87806eb83f14df71b76d6595e5b5c13238ea940e786478c877e979d864",
+      "contentHash": "a416e4972c16752c9289a6b122eea4e56f693c62e165090eb057ecc3d62eb933",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8174498694273056,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30335v1",
+      "title": "MH-RAG-DIVE: Dynamic and Cost-Efficient Multi-Hop RAG Evaluation via Tree-Cached Dialogue Simulation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Quality assessment is essential for determining whether changes to a Retrieval-Augmented Generation system improve or maintain its performance. However, existing evaluation approaches often rely on single-turn or single-hop interactions and therefore do not capture the complexity of multi-hop, multi-turn conversations. We introduce MH-RAG-DIVE, a dynamic interactive user simulation framework designed to evaluate RAG systems in more complex multi-hop and multi-turn settings. The framework extends RAG-DIVE with a Context Discoverer, which identifies documents that can be combined to generate multi-hop questions within an ongoing conversation. To address the high computational cost of dynamic user simulation, we further introduce a Conversation Cacher, which reuses turns from previous evaluation runs while preserving the dynamic nature of the evaluation. We evaluate the framework across six distinct RAG configurations and compare its results with the original RAG-DIVE evaluation and the static, human-created CLAPNQ dataset. Our experiments show consistent performance trends across the evaluation approaches, while the more complex multi-hop and multi-turn setting exposes additional challenges for RAG systems. Furthermore, the Conversation Cacher substantially reduces token consumption, demonstrating its potential to make dynamic evaluation more cost-efficient. Finally, we apply MH-RAG-DIVE to an industrial RAG system with domain-specific data, demonstrating its applicability to real-world evaluation scenarios. Overall, our results show that the proposed approach provides a more complex and cost-efficient framework for evaluating RAG systems. All code and experimental data are publicly available in our GitHub repository (https://github.com/Daniel-Innsbruck/MH-RAG-DIVE).",
+      "publishedAt": "2026-11-23T09:13:07Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30335v1",
+      "titleHash": "3e60b77d9eebbf53538e3fc76c52d0abd1051cb698f081e891da9c08a3569de4",
+      "contentHash": "649f15ed42c0418a1013000b2d91ca2f9bc0ec2734c71533599ce2dbe38d8176",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8161698723782325,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30298v1",
+      "title": "HEART: Hierarchical Expert Adaptive Refinement Transformer for ECG Representation Learning",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Learning robust representations from electrocardiograms (ECGs) is challenging because repeated cardiac cycles coexist with subtle and sparse diagnostic cues in local morphology and rhythm-level context. Existing ECG foundation models commonly rely on Transformerbased patch encoders with uniformly shared dense refinement pathways, limiting adaptive processing across heterogeneous ECG tokens. We propose HEART (Hierarchical Expert Adaptive Refinement Transformer), an ECG foundation model that introduces stage-specific conditional expert refinement during self-supervised pre-training. HEART places a local-level MoE over patch-level representations before temporal contextualization and a global-level MoE over context-integrated token representations after self-attention. Token-level Top-1 routing allows different patches or contextual tokens within the same ECG to follow different expert pathways. On public ECG benchmarks, HEART achieves strong performance under both linear probing and fine-tuning, with particularly large frozen-encoder gains on PTB-XL Form and Rhythm (+6.76 AUROC points each over the strongest protocol-reproduced baseline). Routing analyses provide qualitative evidence of complementary local and global expert specialization. We release our code and pretrained models at https://anonymous.4open.science/r/HEART-5E9F.",
+      "publishedAt": "2026-11-23T08:50:50Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30298v1",
+      "titleHash": "254dd0dc33e5ee49051ac6628ef2a19e3ef0760ecd82ff289693c9162df5e3a0",
+      "contentHash": "055c76e0ed8aae6033f5f1a6c708c97c2fba9a889e26fb84e622bff7c281eba3",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8132569676628445,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30290v1",
+      "title": "Uncovering Separable and Composable Skill Mechanisms in Vision-Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Recent work has sought to localize the internal mechanisms underlying visual reasoning skills in vision-language models. These methods largely overlook separability and composability in both mechanism identification and evaluation. We propose separability and composability as two important desiderata for skill localization. Separability requires identified mechanisms to contribute primarily to their target skills while having limited effects on other skills, enabling precise diagnosis and targeted intervention. Composability requires skill mechanisms to be combinable to support complex tasks, allowing a small set of mechanisms to account for broader capabilities. In this work, we propose a multi-skill interpretability framework DISCO, built around these two properties. For identification, we propose Separable Head Selection, which selects skill-specific attention heads based on their contributions across skills. For evaluation, we are the first to design metrics for measuring separability and composability of identified heads. Extensive experiments on three VLMs and four fundamental visual reasoning skills demonstrate the effectiveness of DISCO. It achieves the highest separability, outperforming the strongest baseline by 24.80, 18.38, and 13.75 points across the three models, respectively, while also achieving the highest composability on all three models.",
+      "publishedAt": "2026-11-23T08:45:46Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30290v1",
+      "titleHash": "5e0bd96ed7df07af6c6a0618e60985823c22156eba20e4271b1c242a63589b71",
+      "contentHash": "abd4d4cbbd5ec4eb35f7caf2bc26c6ad5da11020e9ae8090329c457dc7ed7522",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8125960987513768,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30287v1",
+      "title": "MMMem: Self-Improving Agents with Task-Aware Multimodal Experience Consolidation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "AI agents accumulate conversations, images, and documents through long-term interactions with users. Answering later questions often requires connecting evidence across these records, yet the resulting understanding is rarely retained, allowing mistakes to recur on related questions. Existing multimodal memory methods largely focus on storing and retrieving records, with limited mechanisms for learning from completed tasks and consolidating task-specific experience. We therefore propose MMMem, a task-aware multimodal memory framework that extracts and consolidates experience from completed tasks through four complementary strategies. First, source-linked multi-view memory organizes original text, images, and rendered pages alongside generated scene images that combine clues across records for retrieval. Second, source-generated tasks support knowledge alignment at two levels: warm-up consolidates source knowledge into task-relevant experiences in external memory, while self-training adapts the model's parametric knowledge to task demands. Third, the same vision-language model distills completed tasks into experiences that record the task context, conclusion, and support links. Finally, task-aware retrieval recalls source views and relevant experiences for answering and verification, while source-supported reuse guides long-term retention. Across three memory benchmarks and two vision-language readers, MMMem outperforms eight baselines. With Qwen3.5-9B, MMMem achieves relative gains of 36.9%, 17.6%, and 15.2% over the best-performing baselines on LoCoMo, Mem-Gallery, and LooGLE v2, respectively. Ablations show consistent gains from training and memory warm-up, while case studies illustrate how individual components work in practice.",
+      "publishedAt": "2026-11-23T08:44:23Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30287v1",
+      "titleHash": "be5f5fe6e7996c252fb178c2065a8ada4c69a549dceced9f0575a03f1f9f9f6f",
+      "contentHash": "b2ca7275227ac55efd1cfd2fdd1cd54d59dee63af36b60f8dffeafc430afe8e7",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8124157574942424,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30286v1",
+      "title": "A statistical measure of trust in generative AI",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Trustworthiness is a crucial issue for generative AI, as modern models can produce convincing and confident responses even when their outputs are incomplete, unsupported, or wrong. The frequent absence of ground-truth knowledge or labels complicates verification of generative AI outputs. To address this issue, we propose a trustworthiness framework grounded in model-internal confidence calibrated against an external expert reference. We estimate per-token trustworthiness of a student generative model as the statistical typicality of each generated token relative to an expert model's distribution, where the expert is used as a distributional reference rather than as a source of factual verification labels. To this end, we introduce an AI ontology calibrator that leverages the student model's internal latent features and token-level output statistics to compute expert-reference acceptance scores. Combined with traditional token-level confidence, entropy, and perplexity statistics, calibrator scores yield a compact set of $15$ response-level indicators for correctness classification. Evaluated across BF program generation, mathematical problem solving, and medical question answering, combined calibrator and traditional indicators provide complementary reliability signal which could be used to build detectors of untrustworthy outputs and hallucinations. Remarkably, our experiments show that these detectors are transferable across domains, although transferability is not always symmetric.",
+      "publishedAt": "2026-11-23T08:43:54Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30286v1",
+      "titleHash": "ca2289716740856526d29ed885c0255ab083df61493db5abcbd9549ba15a3e40",
+      "contentHash": "a0657893f0cce7a3d0d3a5a7da4daec59c44694697f70c0720fdf1441f67413a",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8123527561290848,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30281v1",
+      "title": "Learning Heterogeneous Reasoning in Large Language Models: From Mode Compatibility to Local Bottlenecks",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Post-training large language models routinely pools reasoning trajectories from diverse teachers or algorithms, yet it remains unclear whether standard supervised fine-tuning (SFT) can learn such heterogeneous strategies without explicit mode conditioning. We study the learnability and local bottlenecks of heterogeneous reasoning through a formal mixture formulation and controlled experiments. We first formalize the representational compatibility of the optimal autoregressive model with latent reasoning mixtures: the target next-token distribution weights modes by their prefix posteriors and concentrates on a single mode once alternative modes assign negligible likelihood to the prefix. In a verifiable symbolic graph-search environment with paired breadth-first and depth-first search trajectories, no consistent disadvantage is observed for unlabeled mixed SFT relative to homogeneous or labeled baselines under matched token budgets while preserving both modes. Scaling across 0.6B--14B models and data budgets largely eliminates global mode confusion, shifting the primary bottleneck to local state-tracking transitions. Because a local mistake affects the final outcome only when subsequent reasoning is sensitive to that step, we find that only a small fraction of local errors are outcome-determining \\emph{Critical Reasoning Nodes (CRNs)}, and that single-step repairs at these nodes rescue failing trajectories across symbolic search and natural language benchmarks whenever the model has sufficient downstream competence to complete the remaining derivation. Our environment is open-sourced at https://github.com/Bowen1911/Symbolic_graph_env.",
+      "publishedAt": "2026-11-23T08:39:59Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30281v1",
+      "titleHash": "33983576739e253b64fc8bf2997d804c313376814139eb14034225183977b824",
+      "contentHash": "d39525baff31a98a6115b750e34fa949cb82b181f7f68ed5e5d3b42c92ae750b",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8118424058263485,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30280v1",
+      "title": "Evaluating Persona Consistency in LLM User Simulators Without External Reference Annotations",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Standard evaluations assess LLM-simulated personas against an external ground truth, such as community trait annotations, but that reference is unavailable when the persona is inferred only from a short, task-oriented chat. We ask how persona consistency can be evaluated without such a reference, and propose a self-anchored internal-consistency diagnostic: the persona describes itself once and acts twice. A Likert self-report supplies a soft internal anchor; two behavioral profiles come from constrained scenario choices scored without a judge and from open-ended responses judged by an LLM. Consistency is the correlation between the self-report and each behavioral profile, in a shared six-facet BFI-2 space. The framework compares persona-construction strategies by assessing how consistently their elicited responses reflect their self-reported traits. Across ordinary-user chats (WildChat and LMSYS) and well-documented personas with community annotations (the Personality Database, PDB), profile-enriched representations agree with the anchor more closely than a raw-dialogue baseline. On PDB, this self-anchored ordering reproduces the community-annotation ordering. The pattern is stable across answering and judge models.",
+      "publishedAt": "2026-11-23T08:38:35Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30280v1",
+      "titleHash": "35915f2cd4c199399d9622e37efe3f202bc6a5fbe83090843a025804e9aa37db",
+      "contentHash": "290eb62b3131de9917453ce4f7535aececf9ee0d9c68516f35473a28a8f4e25e",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8116600613108166,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30277v1",
+      "title": "A New Perspective on ANN-to-SNN Conversion: Hardware-Aligned Multi-Threshold Neuron Dynamics for Neuromorphic Inference",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "By accumulating spikes over multiple timesteps, rate coding approximates the real-valued activations of an ANN, a principle that underpins numerous ANN-to-SNN conversion methods. However, the converted SNNs typically incur loss in accuracy compared to the original ANN. Existing methods either increase a number of timesteps or introduce more complex neuronal dynamics to reduce this accuracy gap. Yet, both approaches ultimately lead to the same outcome: redundancy either in information or in computation, thereby suffering from efficiency degradation. To address this issue, we propose \\textbf{PRIME} (\\underline{P}otential-\\underline{R}esidual \\underline{I}ntegration for \\underline{M}ulti-threshold \\underline{E}ncoding), a multi-threshold concurrent spiking neuron framework redesigned from a hardware data representation perspective:a) We introduce the Residual Membrane Potential Amplification (RMPA) mechanism, which replaces rate coding with Integration Coding by actively amplifying the residual membrane potential. RMPA enables the binary representation of spikes to carry substantially more information, achieving near-lossless conversion with as few as two timesteps.b) Complementarily, we implement concurrent spike firing in multi-threshold neurons, where spikes are decoded directly from the binary representation of floating-point data, eliminating membrane potential--threshold comparisons and replacing multiplications with lightweight bit-shift and accumulation operations that align with hardware computation primitives. At $T=2$ and $D=3$, we achieve competitive performance across both vision and language benchmarks with only 40.6\\% of the FP32 bit-transmission cost and 13.4\\% of the FP32 multiplication energy consumption. The PRIME framework establishes a new design principle for efficient ANN-to-SNN conversion, bridging the gap between algorithmic efficiency and hardware constraints.",
+      "publishedAt": "2026-11-23T08:34:22Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30277v1",
+      "titleHash": "d27565d51aa7f95deaa0b99bb3ff2fe3e6cb4f3d6633cdb788f5c730eaa36535",
+      "contentHash": "043ca84c73ff11759b341b756e4276da598e04fb487a2c70d501b8d4e26015da",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8111111044021143,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30259v1",
+      "title": "Attributing Security Outcomes in LLM-Agent Evaluations: The Role of Content-Free State",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Security benchmarks for LLM agents record whether each attack succeeded and compare agents, attacks, and defenses by attack success rate (ASR). Such comparisons are valid only if the agent, the attack, and the defense cause each verdict. We show that verdicts also depend on content-free state: details of a run that carry no information about the system under test, such as the Python hash seed, the order of tools or evidence, and the scoring of failed runs. We require that this state influence no verdict (decision noninterference) and treat it as untrusted input, because evaluators and requesters of LLM-based gates can choose it. Our framework, TARE (Testing Attribution of Reported Effects), attributes a reported effect to the agent, attack, or defense only if it exceeds the measured influence of content-free state. On Agent Security Bench (ASB), runs with a fixed hash seed are identical for seven agents from four model families, yet changing the seed changes up to 17% of an agent's verdicts while the ASR moves by at most 5 points. The seed acts through the tool order: sorting the tool list instead of reverse-sorting it raises the ASR by up to 19 points, because ASB's naming convention places attacker tools first. When the same evidence is reordered, six of seven LLM judges change their decision on 17-91% of 98 proposed actions. Across eighteen agent-defense combinations, TARE's worst-case test attributes effects to two of three defenses, one of them in opposite directions on two agents, and a test fixed in advance confirms a 4.8-point decrease from the third; in the attributed decreases, 35-69% of the stopped attacks end without any tool call, which ASB counts as a failed attack. Reproducible verdicts are thus not necessarily attributable, and security evaluations of LLM agents should report the influence of content-free state. We release TARE, the ASB patch, and all verdict tables.",
+      "publishedAt": "2026-11-23T08:24:44Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30259v1",
+      "titleHash": "3112d811ba469e14d8e7be73cdd89e41ed8c91eaa4ace0d3b66ac1b12425a393",
+      "contentHash": "8016ebef46a5e967a0489bfe0ddf5d80927b774ffada545219e8926de2d0987c",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8098583583192882,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30253v1",
+      "title": "Voyag: Joint Multi-Intent Detection and Execution-Relation Classification for In-Vehicle Voice Assistants",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "An in-vehicle voice assistant must decide not only which intents an utterance contains but also how co-active intents may be executed: concurrently, in a fixed order, or not at all without arbitration. We present Voyag, a single-forward decision model that jointly predicts ten controlled vehicle-intent slots and a three-way execution relation (parallel, sequential, mutually exclusive) over each co-active intent pair. Voyag combines a multilingual ModernBERT-style encoder (mmBERT-base, 306.9M parameters), a typed per-slot choice head, and a lightweight GroupCalibration relation head (1.61M parameters) that consumes marker hidden states, pooled context, explicit resource-requirement profiles, and symmetrized outer-product conflict features. All objectives are optimized in one joint loss: soft cross-entropy over slot choices, focal cross-entropy over relations, and a mutex-consistency penalty. On a synthetic Chinese vehicle-life benchmark with semantic scene-level splits and a leakage audit (30,017 / 3,473 / 5,000 groups), validation-only selection yields 0.9893 slot accuracy and 0.0526 expected calibration error over 50,000 slot decisions. Conditioned on gold intents, the relation head reaches 0.8548 accuracy, 0.8473 macro-F1, and 0.6062 mutually-exclusive recall over 4,000 pairs; end to end with one encoder forward it reaches 0.8530 accuracy and 0.8464 macro-F1. Against a two-stage rule pipeline, the aggregate end-to-end gain is small and borderline, so we claim no aggregate advantage; the learned head's advantage lies in sequential and parallel recall where surface rules are blind. We report rule baselines with a tautology disclosure and a held-out thermal conflict failure.",
+      "publishedAt": "2026-11-23T08:19:59Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30253v1",
+      "titleHash": "2a3bd0bad43d0ffb892c1e5e532d57a398ff562da30a8de7f1bd806e4f3410c0",
+      "contentHash": "822ff69cac498c000ec599baae8aebeff3f50fa16c790ffffa1b26a1d2fbcc37",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.809241367209509,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30252v1",
+      "title": "StutterStigma-TR: A Novel Turkish Dataset and Target-Aware BERT Framework for Stuttering-Related Stigma Detection",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Computational research on disability-related ableist harm remains limited, and condition specific resources for stuttering-related stigma are particularly scarce. This study introduces StutterStigma-TR, a Turkish dataset of 6,019 public X/Twitter posts annotated as Stigmatizing, Non-stigmatizing/contextual, or Supportive using a speech and language therapy-informed protocol with independent lived-experience evaluation. We also propose StutterStigma-BERT, a BERTurk-based target-aware framework that combines explicit target marking, target-span representation, target-conditioned context, character-level and handcrafted orthographic information, and gated discourse cues. The framework is evaluated in complementary three-class and binary settings using controlled three-seed ablation analyses and final 20-seed robustness evaluations. Under the common training protocol, Gated Discourse-OrthoTarget trained with cross-entropy is selected as the final configuration for both tasks based on internal-validation Macro-F1. Across 20 random seeds, the final three-class model achieves a mean Macro-F1 of 73.54%, while the final binary model achieves 85.17% using validation-selected decision thresholds. Task adapted harmful-language comparators are additionally evaluated under the common training protocol, and the proposed model obtains the highest mean Macro-F1 among them. For the primary three-class task, matched backbone analyses show higher internal validation Macro-F1 with BERTurk than with TurkishBERTweet or Turkish Mamba, while substantial train-validation separation persists across all three backbones. Separate direct-transfer and zero-shot experiments examine performance without StutterStigma-TR supervision. Across the task-adapted, direct-transfer, and zero-shot comparisons, the condition-specific supervised systems retain the strongest aggregate performance.",
+      "publishedAt": "2026-11-23T08:19:33Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30252v1",
+      "titleHash": "a2026d43a785d78577139b4340deb5cde882c20cd7ea4391e8e0b8dfb6076c43",
+      "contentHash": "f48bce4cd52abf21a0907054dae0e155fa8af5fd233cb9a146024521bbf8d1c5",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8091851037037896,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30235v1",
+      "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders, with a mean latency of 0.43 s per target.",
+      "publishedAt": "2026-11-23T08:04:09Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30235v1",
+      "titleHash": "d933c6a4c13158f734e8a1802e3300fb8ee65713a369e83fd894318bc3cde105",
+      "contentHash": "a86d77e53112c86d4216a20efef7f664f1400211016eb84b6450903ce615dbec",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8071881230079991,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30233v1",
+      "title": "CLIP-FMoE: Scalable CLIP via Fused Mixture-of-Experts with Enforced Specialization",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Mixture-of-Experts (MoE) architectures have emerged as a promising approach for scaling deep learning models while maintaining computational efficiency. However, existing MoE adaptations for Contrastive Language-Image Pre-training (CLIP) models suffer from significant computational overhead during sequential training and degradation of zero-shot capabilities. To address these limitations, we propose CLIP-FMoE, a novel approach that integrates MoE architecture into CLIP fine-tuning. Our method uses Isolated Constrained Contrastive Learning, a pipeline that trains specialized experts on cluster-based data partitions to accelerate expert specialization. Additionally, we introduce a Fusion Gate mechanism to mitigate catastrophic forgetting of pre-trained knowledge. Extensive experiments across multiple benchmarks demonstrate that our approach achieves consistent improvements on downstream tasks while preserving zero-shot capabilities. Furthermore, our method demonstrates robust performance across varying context lengths, making it particularly suitable for diverse real-world applications.",
+      "publishedAt": "2026-11-23T08:03:39Z",
+      "tags": [
+        "paper",
+        "cs.AI"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30233v1",
+      "titleHash": "0f1f9aa82749720a8b51c7e60e12d8a28e2b3962df8a7235f3e9d87d1efb3253",
+      "contentHash": "e93e341eee77a791eef92bc7917b110d47a6d2e2f3687d05ddec85e4697c98aa",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8071233686411947,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30334v1",
+      "title": "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Entity disambiguation (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question answering, and information extraction. Recent work has applied LLMs to this problem, achieving stateof-the-art performance. Notably, reasoning LLMs have been shown to perform entity disambiguation in a true zero-shot fashion, generalizing across knowledge bases and domains. However, it is unclear whether this capability survives, or remains competitive, with smaller LLMs, where entity disambiguation has typically relied on reranking rather than reasoning. We ask when reasoning is worth its cost at small scale. We compare pointwise, listwise, and reasoning-based candidate-selection components within a classical coarse-to-fine entity disambiguation pipeline, across the classical, few-shot and true zero-shot settings. The reasoning paradigm is trained with distillation and reinforcement learning recipes. The benefit of reasoning grows with domain shift: negligible in-domain, decisive in the true zero-shot setting. We show that two distinct factors are at work: the reranker's uncertainty over the candidates locates where the paradigms disagree, while shift governs which is right when they do.",
+      "publishedAt": "2026-11-23T09:11:54Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30334v1",
+      "titleHash": "56cb003302a84eeef0c6dc94fbf081ded4579616ae013f1186ba9a789804288c",
+      "contentHash": "bb710b137144ec9b391cb05633380190c9fa9aed9c87f17c981019b5b887b088",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.816010557094152,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30273v1",
+      "title": "DUET: Dual-MDL Unsupervised Entropy-Trie Segmentation for Low-Resource Languages",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Morphological segmentation, the task of decomposing words into constituent morphemes, becomes particularly challenging under extreme data scarcity, a regime that can arise in language documentation and linguistic reasoning. This difficulty stems from existing approaches' reliance on annotated data, external resources, or recurring patterns that emerge only in larger corpora. To address this limitation, we propose Dual-MDL Unsupervised Entropy-Trie Segmentation (DUET), a deterministic unsupervised algorithm that decouples structural candidate generation from statistical candidate ranking. DUET combines branching entropy with recursive paradigm discovery to generate linguistically plausible candidate segmentations, then ranks them using a dual minimum description length (MDL) criterion: a corpus-level objective rewards morpheme reuse, while a construction-tree objective guards against over-segmentation. On the SIGMORPHON 2023 interlinear glossing shared task, DUET outperforms unsupervised baselines in Morpheme F1 under both the standard and simulated extremely low-resource settings, while providing broader candidate coverage. Augmenting prompts with DUET segmentations improves performance on a linguistic reasoning benchmark, yielding the best overall results among the evaluated segmentation methods.",
+      "publishedAt": "2026-11-23T08:30:47Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30273v1",
+      "titleHash": "159442b633d084ff9c35647084974f50c85a232a982d223926a52aaa9b09bc2f",
+      "contentHash": "2f8fa95552394d8697aeb125888b7b2adec0322141d5b98041111e291ad0cd9a",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8106448891816723,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30218v1",
+      "title": "Ontology-Compiled 2D Clinical State Fields with Bidirectional Diffusion Encoders for Zero-Training Cross-Ontology Medical Coding",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Healthcare systems continually revise clinical taxonomies, update reimbursement schedules, and harmonize cross-border registries. Existing automated coding models bind clinical text understanding to fixed vocabulary-specific heads, requiring manual relabeling and retraining whenever code sets change. We introduce Ontology-Compiled 2D Clinical State Fields (OCSF), a vocabulary-free framework that decouples clinical document reading from target ontology indexing so one trained encoder can switch across arbitrary medical vocabularies in seconds without target training. A single-pass bidirectional diffusion-pretrained encoder and vocabulary-free decoder map each clinical note into a fixed-dimension two-dimensional state matrix with zero code-specific parameters. Any target ontology is compiled offline on CPU from public text descriptions into a scale-invariant Tikhonov deconvolution operator that suppresses sibling-code interference while preserving source decision thresholds. Trained solely on English MIMIC-IV ICD-9 discharge summaries and evaluated without target tuning across 58,706 held-out test notes and five unseen ontologies spanning English ICD-10, MS-DRG, Spanish, Greek, and Chinese (115-185,458 codes), OCSF reaches 63.15% Micro-F1 on in-domain ICD-9 (outperforming a matched closed-vocabulary classifier and eliminating late-epoch tail overfitting) and transfers directly to 26,085 English ICD-10 codes (29.23% recall at gold cardinality), MS-DRG groups, and multilingual terminologies, compiling up to 185,458 codes in under 10 seconds on CPU with sub-millisecond GPU readout.",
+      "publishedAt": "2026-11-23T07:50:43Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30218v1",
+      "titleHash": "11dfecf6d7e13958acf85d03ade08082eb2e6dad2701a7bffba236d85f87f27a",
+      "contentHash": "9538cce28ad14a206aaef5b4ccc21d85487f324c3fcfb12b2360960735fb85d7",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8054501907095087,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30207v1",
+      "title": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is right, so the reward labels themselves must be checked. To this end, we release SWE-Gym-Verified with its 1,087 audited tasks, every verdict with its executed evidence, our training sets, and the full audit pipeline.",
+      "publishedAt": "2026-11-23T07:45:13Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30207v1",
+      "titleHash": "d73c31182a66540d941e63bfac5f5cc92ee7a24aa6c49048135bd6a81fdc6041",
+      "contentHash": "438dd4a199b4258f71594c29267d687a097265cfae1fd84c5e384d83226b5596",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8047397113286261,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30205v1",
+      "title": "PackLoop: Row-Packed Self-Speculative Decoding for Looped Language Models under Concurrency",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Looped language models reuse one block of weights T times per token, trading parameters for test-time depth, but autoregressive decoding then pays T sequential passes per token. Self-speculative decoders recover 2-10x for a single request, yet their gains fade as requests share a GPU, and current practice is to speculate less as load grows. We show that what fails under load is the layout of speculative work, not speculation. In concurrent decoding the unit of cost is the row, one request advancing on one loop, which reads that loop's key-value (KV) cache once; additional positions inside a row are nearly free. Pipelined schedules such as the wavefront place every speculative position on a different loop, hence in a row of its own, so each token is still read T times. We present PackLoop, built on one principle: speculate only inside rows that are read anyway. Deep loops accumulate positions and advance them as a block in one row, context-copy proposals join the row that the first loop already reads, and a closed-form admission rule, the economic order quantity of inventory theory, sets how long to accumulate from a cost model calibrated once per engine. PackLoop is exact: in FP32 its output is token-for-token identical to autoregressive decoding, also under sampling and early exit. Across 164 load points spanning three GPUs, four Ouro models, six benchmarks, and contexts up to 32K tokens, one PackLoop configuration is faster than the best existing schedule, chosen per point, at 161 points (median 1.25x, up to 1.76x) and never significantly slower. Its lead grows with concurrency and context length, the regime in which existing self-speculation gains least.",
+      "publishedAt": "2026-11-23T07:42:44Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30205v1",
+      "titleHash": "b79722dc4c581d888dbf95fe19f7c8a70437334193bc85688d598931fb638024",
+      "contentHash": "4116c6f5344b061139e8bd520228f834d9adabb832ecb1898fdcd997d525e030",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8044191245222747,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30202v1",
+      "title": "VADE: A Verifiable Agent Data Engine from Professional Sources",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Language agents have shown their practical value, particularly in software engineering, where abundant public code and executable tests support training and evaluation at scale. Extending this success to other professional domains, such as law and finance, is not straightforward: many agent tasks involve open-ended analysis, making outcomes hard to verify and, in turn, hard to use as scalable supervision. As a result, high-quality tasks in these domains are still largely expert-authored, making them expensive to scale and limiting their use for training. To address this bottleneck, we introduce VADE, a data engine that automatically constructs verifiable analysis tasks from public sources used in professional practice. VADE exploits a simple asymmetry: professional analyses are difficult to solve because the relevant evidence must first be found and interpreted, but much easier to verify once that evidence is fixed. During task synthesis, the engine constructs a reference analysis from source evidence and asks an independent agent to reproduce its conclusions from the same evidence without seeing it. Only after the analysis is verified is it compiled into an open-ended task with an item-level scoring contract, allowing the same task to support both evaluation and training. We apply VADE across four professional domains; in an independent expert review of 186 finance tasks, 93.5% meet a high bar for source fidelity, answer correctness, and evaluation fairness. In finance, these tasks expose substantial remaining model errors, particularly unsupported facts and inferences, while training on verified solver trajectories improves held-out performance and yields gains that transfer to public finance benchmarks such as Finance Agent Benchmark v2. Together, these results suggest a practical path toward scalable, verifiable supervision for open-ended professional tasks.",
+      "publishedAt": "2026-11-23T07:41:50Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30202v1",
+      "titleHash": "68fea3a4ede4569883c5b8010471dce3b4efa14fa9348970410e109b67916a57",
+      "contentHash": "4500d1874c95d4f586ed9e528b4c0cc15a8177ea7ac6af17fd604e8b1ee9fa5c",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8043029702324471,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30196v1",
+      "title": "Laya-IsoToken: Day-One Clinical Codebook Switching via Closed-Form Operator Compilation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Healthcare systems periodically revise diagnostic and procedural classifications (ICD-9 to ICD-10/11), update hospital reimbursement groupers (MS-DRG), and deploy clinical coding across languages. Supervised coding networks bind clinical text encoders to fixed per-code classifier weights, forcing hospitals to re-annotate tens of thousands of records before switching codebooks, whereas standalone large language models incur high latency and hallucinate invalid codes. Here we show that day-one clinical codebook switching becomes feasible without target-labeled notes when local clinical evidence reading is decoupled from a strictly frozen multilingual concept space. Laya-IsoToken trains a clinical span reader once on source records with zero per-code classifier parameters, separating text evidence from historical disease prevalence. Given only public target code descriptions, closed-form matrix compilation aligns distributional shifts, compensates for paraphrased definitions, and deduplicates sibling codes in under three seconds, while a pre-deployment geometric residual routes unfamiliar concepts to offline language model verification. Across 32,804 MIMIC-IV ICD-9 discharges, Laya-IsoToken matches published supervised baselines (62.6% Micro-F1) while reducing active calibration error by 32%. Switched with zero target training notes to 13,783 unseen-patient ICD-10 discharges, MS-DRG groups, and multilingual cohorts, it outperforms biomedical dense retrievers, semantic crosswalks (+5.4 F1 points on ICD-10, paired $d_z = 0.49$, $p < 0.001$), and official US CMS equivalence mappings (+3.5 points, $p < 0.001$) at 9.4 ms per admission. Pairing this reader with an offline 31B verifier across 1,000 full discharge summaries lifts zero-training ICD-10 coding to 40.6% Micro-F1 (57.0% category F1, $d_z = 0.66$, $p < 0.001$) with 0.0% invalid code hallucinations.",
+      "publishedAt": "2026-11-23T07:38:42Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30196v1",
+      "titleHash": "c164e00caf2aab5f3938679321d05a5ddd9b7fcd27574f44d9c7bfe14a663b22",
+      "contentHash": "be61c13779d7b41aa2d0d623cf942448943179d6ccb833fa5b7dd343eed7865e",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 1,
+        "timeliness": 0.8038987120487804,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30190v1",
+      "title": "Same Executions, Different Gaps: Judgment Rules in Web-Agent Evaluation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Success-rate gains guide the development of web agents. Yet knowing which agent ranks first does not tell us how much confidence to place in its reported advantage. We study the comparison itself: how success is defined, what evidence supports the judgments, and how the difference between agents is estimated. On fixed web-agent executions, changing a judge from predicting likely completion to requiring recorded support can remove most of a reported lead without changing the ranking. This effect persists when unresolved completion is distinguished from supported failure. Controlled source additions explain how missing relations between task requirements, objects and observations can conceal a difference or create an apparent advantage. We also find that making both agents' score estimates more accurate can make their difference less accurate, because their original errors partly canceled. To estimate a chosen outcome difference, we combine judge predictions with reference labels for sampled task pairs. Across four released execution systems, regression fitted on the same 50 labeled pairs reduces estimation error relative to direct paired sampling. The results give agent researchers a practical basis for assessing claimed improvements: make the comparison target explicit, retain the evidence needed to check it, and use paired labels to estimate the difference directly.",
+      "publishedAt": "2026-11-23T07:35:54Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30190v1",
+      "titleHash": "e81d46821768bf0aa319bbe84a1b6319f1843aacaae9e316b0d33069c649fd1a",
+      "contentHash": "8c9d628dd272d5d06ae5b2a24c988a48dde21c3b94b93b50ffa1a2646ab16da7",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.8035376319720522,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30183v1",
+      "title": "PCC: Pivotal Channel Compensation for Layer Pruning of Large Language Models",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Treating independent layers as the minimal pruning unit allows layer pruning to efficiently eliminate many redundant parameters and achieve high compression rates. Layer pruning has become a promising and prevalent structured pruning technique for large language models (LLMs). However, multi-layer removal can lead to significant performance degradation for LLMs. Although some works have explored various compensation methods for pruned layers, they are inefficient and costly. Observing that the expression of a large proportion of information is concentrated on a small number of pivotal channels, we propose a novel post-pruning compensation method for layer pruning, called pivotal channel compensation (PCC). PCC can achieve significant performance improvement by compensating for a small number of channels through learnable linear transformations at the pruning interface. Besides, we propose a new evaluation metric, called channel-wise average performance improvement (CAPI), which can measure the efficiency of channel-wise compensation. Our experimental results across various LLMs demonstrate that PCC can achieve significant and consistent improvements and high CAPI on language modeling and zero-shot question answering for the state-of-the-art cross-layer and consecutive-layer pruning methods. Compared with existing compensation methods, PCC can achieve competitive results with fewer additional parameters and less training cost.",
+      "publishedAt": "2026-11-23T07:29:16Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30183v1",
+      "titleHash": "55d849c737e668815bd0540bec2a6e54f80ec0904712f12ca2823844c6f704e6",
+      "contentHash": "520ac2d9b00bfeb9b86899aae22aaef7d4dbd34653e218891c2c92de02974b20",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.8026828631703895,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30181v1",
+      "title": "Retrieval-Augmented Generation in the Agentic Era: Tradition, Present, and Prospect",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Retrieval-augmented generation (RAG) couples frozen language models with external, updatable knowledge, so that generation is grounded in retrieved evidence rather than in parametric memory alone. This work maps RAG in the agentic era by joining them on a single lifecycle axis, from offline indexing through pre-retrieval, retrieval, post-retrieval, and orchestration over these stages. It treats indexing and orchestration as first-class components and agentic workflows as a paradigm of their own, and it covers the agentic work that has appeared since those reviews. Beyond these components, it covers evaluation, applications, and the questions that remain open for future exploration. From tradition to present and beyond, this work systematically reviews RAG from a perspective of the agentic era.",
+      "publishedAt": "2026-11-23T07:25:50Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30181v1",
+      "titleHash": "28d7d3b8a0b0dc2f34da6151fe68ae0dd05f8db619a493fb66cab0c698cbe675",
+      "contentHash": "8fdd91505dbabed12f20f70891d0e9afb778a53faf50f630c48ae9f0d65ab1ae",
+      "score": 77,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 1,
+        "timeliness": 0.8022408001708173,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30168v1",
+      "title": "FiRE: Fine-grained Ranking Evaluation for Machine Translation",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Developing reliable machine translation (MT) systems hinges on our ability to distinguish superior translations from inferior ones. However, existing evaluation paradigms, whether limited to coarse overall rankings or misaligned with human preferences, fail to deliver interpretable, fine-grained feedback in reference-free settings. We present a Fine-Grained Ranking Evaluation method (FiRE) that leverages off-the-shelf large language models to perform criterion-driven pairwise comparison across three complementary dimensions: faithfulness, fluency, and consistency of style, instead of producing a single holistic judgment. To enable rigorous meta-evaluation of evaluation paradigms in the absence of any suitable testbed, we construct the first human-annotated, reference-free benchmark for fine-grained ranking evaluation, achieving substantial inter-annotator agreement. Through meta-evaluation on this benchmark and existing MQM datasets, FiRE demonstrably outperforms regression-based and error-analysis metrics in aligning with human comparative judgments, while providing more informative insights into translation quality. Finally, our examination of LLM evaluator biases (position and self-enhancement) and their handling of tied cases offers guidance for more nuanced MT evaluation. Code and benchmark resources are available at https://github.com/wygao8/FiRE-MT.",
+      "publishedAt": "2026-11-23T07:13:35Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30168v1",
+      "titleHash": "08edf01ee33e6595cd6f3e009c3733b7942c816b0ffc90aefa68f8a14e52e38f",
+      "contentHash": "ccaf75448dd29524e87634ff276df746c7a21884bffef8fa434157c80321b8e7",
+      "score": 81,
+      "breakdown": {
+        "relevance": 1,
+        "authority": 1,
+        "timeliness": 0.800665527238269,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "http://arxiv.org/abs/2611.30161v1",
+      "title": "OpenViVE: New Benchmark and Dual-Stream Co-Attention Framework for Vietnamese Visual Entailment",
+      "source": "arxiv",
+      "sourceName": "ArXiv",
+      "summary": "Visual Entailment (VE) determines whether a textual hypothesis is entailed, contradicted, or unverifiable from an image. However, existing VE benchmarks are largely English-centric and do not capture Vietnamese-specific linguistic distinctions or culturally grounded visual contexts. To address this gap, we introduce OpenViVE, the first large-scale native Vietnamese VE benchmark, containing 62,268 balanced image-hypothesis pairs from 10,378 culturally grounded images. OpenViVE is constructed using an Artifact-Aware Hybrid LLM-Human Pipeline that combines constrained generation, human validation, and PMI-guided refinement. The pipeline substantially reduces hypothesis-only shortcuts, with Contradiction accuracy dropping from 96% to 66% after artifact refinement. We further evaluate a dual-stream PhoBERT-ConvNeXt framework with bidirectional co-attention to align visual evidence with Vietnamese hypotheses. The framework achieves 84.84% accuracy and 84.90% macro-F1 on the test set, while PhoBERT consistently outperforms multilingual XLM-R variants. These results highlight the importance of language-specific encoding and explicit cross-modal interaction for Vietnamese VE.",
+      "publishedAt": "2026-11-23T07:07:06Z",
+      "tags": [
+        "paper",
+        "cs.CL"
+      ],
+      "normalizedUrl": "http://arxiv.org/abs/2611.30161v1",
+      "titleHash": "8400ed1a921a88f58cf9982e2d4979121ebc12c19a75bed69f0761148aaeabb1",
+      "contentHash": "8c5eba146c59ac29e29a6fd4deb2bb0581db07e03840391f54fbda424f123b66",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 1,
+        "timeliness": 0.7998330634971328,
+        "engagement": 0
+      }
+    },
+    {
+      "url": "https://blog.veitheller.de/Simple_Sudoku_Solvers_SIII%2C_EIII%3A_Verilog.html",
+      "title": "Simple Sudoku Solver in Verilog",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "abhin4v",
+      "publishedAt": "2026-11-23T04:40:21.240-06:00",
+      "engagement": 12,
+      "tags": [
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.veitheller.de/Simple_Sudoku_Solvers_SIII%2C_EIII%3A_Verilog.html",
+      "titleHash": "b73d746285c6202c0d369a77d55238237184711a3da08085bcacaffadb6a821f",
+      "contentHash": "b73d746285c6202c0d369a77d55238237184711a3da08085bcacaffadb6a821f",
+      "score": 54,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.8276743637796673,
+        "engagement": 0.3713144507689456
+      }
+    },
+    {
+      "url": "https://mng.quest/",
+      "title": "Marches & Gnats programming challenges",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "kqr",
+      "publishedAt": "2026-11-22T23:12:52.149-06:00",
+      "engagement": 4,
+      "tags": [
+        "games",
+        "programming",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://mng.quest/",
+      "titleHash": "e5c9268078eb850970481d8ed71ed87dbf9974e992b8e5508ff917dd5034331a",
+      "contentHash": "e5c9268078eb850970481d8ed71ed87dbf9974e992b8e5508ff917dd5034331a",
+      "score": 51,
+      "breakdown": {
+        "relevance": 0.3,
+        "authority": 0.8,
+        "timeliness": 0.7853069113770774,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/ayush_singh_9b0d83152be5b/i-made-my-rag-safer-it-got-worse-under-load-3olm",
+      "title": "I Made My RAG Safer. It Got Worse Under Load",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "RAG isn't dead, but unverified RAG should be. Here's what checking every sentence actually cost me on...",
+      "author": "Ayush Singh",
+      "publishedAt": "2026-11-22T05:23:14Z",
+      "engagement": 111,
+      "tags": [
+        "ai",
+        "rag",
+        "discuss",
+        "productivity",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/ayush_singh_9b0d83152be5b/i-made-my-rag-safer-it-got-worse-under-load-3olm",
+      "titleHash": "8c45d1f91f8c776982f89ff9a90ec81d1e482b9499975fd2dd9ad66756720715",
+      "contentHash": "56963f94a936182b9193b3adaf4ef2ba3cbbe47ec085f97aceabd13d553a487a",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.6243358794725202,
+        "engagement": 0.6830726742233938
+      }
+    },
+    {
+      "url": "https://dev.to/gde/proofreader-vs-rewriter-vs-prompt-api-test-the-task-not-the-demo-pi9",
+      "title": "Proofreader vs. Rewriter vs. Prompt API: Test the Task, Not the Demo",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "“Make this message better” is not one task. It can mean correcting a spelling mistake, changing the...",
+      "author": "Raju Dandigam",
+      "publishedAt": "2026-11-23T15:10:00Z",
+      "engagement": 43,
+      "tags": [
+        "webdev",
+        "ai",
+        "typescript",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/proofreader-vs-rewriter-vs-prompt-api-test-the-task-not-the-demo-pi9",
+      "titleHash": "8008d9b30b14cc73dbc556bbe815804a5b496ca1bf94e3f7d1ba02b78d9c9a80",
+      "contentHash": "00b170776268a858a72e5e22a4b75f1a380b26e3b4f984ef94e8763d05bcdca9",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8642695469576888,
+        "engagement": 0.5478175588287292
+      }
+    },
+    {
+      "url": "https://dev.to/amananandrai/loop-transformers-thinking-deeper-without-getting-bigger-glm-54-inkling-2-mini-501m",
+      "title": "Loop Transformers: Thinking Deeper Without Getting Bigger (GLM-5.4 & Inkling 2 Mini)",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A loop transformer runs the same block of layers more than once for every token. That lets a model...",
+      "author": "amananandrai",
+      "publishedAt": "2026-11-23T15:24:07Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "machinelearning",
+        "llm",
+        "deeplearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/amananandrai/loop-transformers-thinking-deeper-without-getting-bigger-glm-54-inkling-2-mini-501m",
+      "titleHash": "318f39dfb36ff9bc6a562c5ffbfc77bd31663e5e9d3b98e9b1b9cacea4394d24",
+      "contentHash": "74fa6d6a6707880ce08b6120cc85039abe173f25f339632667ca1c30bd8958cb",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.866229361710591,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://dev.to/aws-heroes/vibe-coding-is-3d-printed-steak-i5b",
+      "title": "Vibe Coding Is 3D-Printed Steak",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Somewhere in a grocery freezer in the Northeast there is a box of filet mignon. It's marbled. It's...",
+      "author": "Brian Tarbox",
+      "publishedAt": "2026-11-22T19:31:03Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "llm",
+        "softwaredevelopment",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/aws-heroes/vibe-coding-is-3d-printed-steak-i5b",
+      "titleHash": "665f88efe912447ea3acf9022e5f05c8975cb8dcdeda44c36164dd9f6e6435cd",
+      "contentHash": "f16f0b5520fd55e699c5cb4ab2ce506e348cc78faab728c5bd6d5957e7cf757a",
+      "score": 56,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.7153137805230783,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://dev.to/axrisi/riemann-hypothesis-draft-by-masullo-what-ai-auditors-and-a-lean-bug-tracker-found-in-three-days-14cj",
+      "title": "Riemann Hypothesis draft by Masullo: what AI auditors and a Lean bug tracker found in three days",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A 940-page human Riemann Hypothesis draft got AI-assisted audits within hours and a public Lean formalization. What the project's counts mean, what is attributed, and wha",
+      "author": "Nikoloz Turazashvili (@axrisi)",
+      "publishedAt": "2026-11-23T15:30:00Z",
+      "engagement": 1,
+      "tags": [
+        "ai",
+        "news",
+        "opensource",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/axrisi/riemann-hypothesis-draft-by-masullo-what-ai-auditors-and-a-lean-bug-tracker-found-in-three-days-14cj",
+      "titleHash": "152bbfb785d5dcbf53f61a02b0fdf2dee01b83fd47c69a938d8294ef84c1ffbe",
+      "contentHash": "4d734c9ef277ba61afe0fac5471a8fe81d6beceb29e26a01e42621a2ae0653c0",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.867047455450858,
+        "engagement": 0.10034333188799373
+      }
+    },
+    {
+      "url": "https://dev.to/crzy_undefinedundefined/breaking-my-own-agents-2-25-ways-to-make-my-n8n-lead-qualifier-lie-all-25-worked-45i",
+      "title": "Breaking My Own Agents #2: 25 Ways to Make My n8n Lead Qualifier Lie. All 25 Worked",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A one-person bike repair shop with \"No budget right now\" got a 🔥 Hot lead (90) ping in my Slack....",
+      "author": "Crzy undefined (undefined)",
+      "publishedAt": "2026-11-19T06:12:45Z",
+      "engagement": 4,
+      "tags": [
+        "n8n",
+        "ai",
+        "security",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/crzy_undefinedundefined/breaking-my-own-agents-2-25-ways-to-make-my-n8n-lead-qualifier-lie-all-25-worked-45i",
+      "titleHash": "fe7318483dba05ad8334379cc5161f5f0923fc1cf3c12b68820eb7c0adac8c16",
+      "contentHash": "e5dcda9184d130fb68e589baa7a242933ff0754b31ecc8acbd6231be64567c38",
+      "score": 55,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.31465798813050566,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/tamer_kalla/build-a-tiny-llm-output-evaluation-harness-in-python-no-framework-required-14e9",
+      "title": "Build a Tiny LLM Output Evaluation Harness in Python (No Framework Required)",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "The problem   Every team I have seen wire an LLM into a production service eventually ships...",
+      "author": "Tamer Kalla",
+      "publishedAt": "2026-11-17T06:42:50Z",
+      "engagement": 4,
+      "tags": [
+        "python",
+        "ai",
+        "llm",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/tamer_kalla/build-a-tiny-llm-output-evaluation-harness-in-python-no-framework-required-14e9",
+      "titleHash": "90cf24e930bd2e96b005e22b9b87a0e5a6842f094ef612db3da250ffa148f50c",
+      "contentHash": "3037fa285202e59ef702ee5d60742312e5bb4d00df1cf226585fea06cca0908d",
+      "score": 46,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.19918122119792261,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://dev.to/sneha_kumari/beyond-vector-search-building-medmatch-v2-an-ai-assisted-clinical-trial-matching-platform-2hd2",
+      "title": "Beyond Vector Search: Building MedMatch V2, an AI-Assisted Clinical Trial Matching Platform",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "How I combined semantic retrieval, LLM-based eligibility evaluation, PostgreSQL pgvector, and...",
+      "author": "Sneha Kumari",
+      "publishedAt": "2026-11-20T08:10:21Z",
+      "engagement": 5,
+      "tags": [
+        "ai",
+        "architecture",
+        "database",
+        "llm",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/sneha_kumari/beyond-vector-search-building-medmatch-v2-an-ai-assisted-clinical-trial-matching-platform-2hd2",
+      "titleHash": "5f5a4d5630e8a36ade4f28fee09dba984ee8ba04ddb884a489ef40cce611e314",
+      "contentHash": "6a1e52607a623830dc3a7268ba95230d76a4c18f267ff0d7c40edae1e15b0bad",
+      "score": 51,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.40399575228986523,
+        "engagement": 0.25938375012788123
+      }
+    },
+    {
+      "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "title": "inclusionAI/Ling-3.2-air",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "model · 125 likes · 0 downloads",
+      "engagement": 125,
+      "tags": [
+        "model",
+        "ml"
+      ],
+      "normalizedUrl": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "titleHash": "e8c4f815a1d2b0057fad8917a7ae7da82741d652c75f318cb63013400785ee1c",
+      "contentHash": "ee566cd5e9a23ec516e692b35e4e8d8b0dd0eade39ad3391e2f968da86a6b038",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7001235150391877
+      }
+    }
+  ]
+}
