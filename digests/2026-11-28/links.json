@@ -1,0 +1,1107 @@
+{
+  "date": "2026-11-28",
+  "stats": {
+    "scraped": 140,
+    "deduped": 40,
+    "scored": 40
+  },
+  "summary": "今日技术雷达聚焦底层创新与实战应用：Llm.asm 探索纯汇编实现 LLM 推理，突破性能边界；n8n 结合 GMI Cloud 简化 AI Agent 搭建；Dev.to 分享自动化排障经验，提升效率；HN 热议 AI 社交动态及美军云安全漏洞，展现技术伦理与安全警示。",
+  "recommendations": [
+    {
+      "url": "https://github.com/alesha-pro/llm.asm",
+      "title": "Llm.asm – Pure x86-64 Assembly for LLM Inference and Training",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "codetiger",
+      "publishedAt": "2026-11-28T03:39:41Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/alesha-pro/llm.asm",
+      "titleHash": "17a03b24b7bd5e2a11c25b067bf3c65d6b5d27dbf82f4fa3001b36049b3a9eb4",
+      "contentHash": "17a03b24b7bd5e2a11c25b067bf3c65d6b5d27dbf82f4fa3001b36049b3a9eb4",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9951409123876798,
+        "engagement": 0.23299000144533963
+      },
+      "rank": 1,
+      "reasons": [
+        "硬核底层探索，极致性能优化典范。"
+      ],
+      "overview": "该项目展示了使用纯 x86-64 汇编语言编写的大语言模型推理与训练代码，旨在深入理解底层计算原理并探索极致性能优化，适合追求硬核底层技术的开发者阅读。"
+    },
+    {
+      "url": "https://dev.to/himanshu_748/build-an-n8n-ai-agent-with-gmi-clouds-community-node-30m6",
+      "title": "Build an n8n AI Agent with GMI Cloud's community node",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I wanted an n8n AI Agent that talks to GMI Cloud without me pasting a custom OpenAI base URL into the...",
+      "author": "Himanshu Kumar",
+      "publishedAt": "2026-11-27T15:47:15Z",
+      "engagement": 2,
+      "tags": [
+        "n8n",
+        "ai",
+        "llm",
+        "tutorial",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/himanshu_748/build-an-n8n-ai-agent-with-gmi-clouds-community-node-30m6",
+      "titleHash": "3017950802ca23b1497a1520addf3247e1bc7b1118916163b20d508c42083a51",
+      "contentHash": "e04fac106129ffe4ef7da3d4fa0e63cac1c8e69747bfe67ed4c58cc3574df81a",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8876467810433382,
+        "engagement": 0.1590404182398875
+      },
+      "rank": 2,
+      "reasons": [
+        "简化配置，快速落地 n8n 云 AI 方案。"
+      ],
+      "overview": "教程演示了如何利用 GMI Cloud 社区节点在 n8n 中构建 AI 智能体，通过简化配置避免手动填写 OpenAI 基础 URL，帮助用户快速部署云端 AI 自动化工作流。"
+    },
+    {
+      "url": "https://dev.to/aheadkit/the-check-that-catches-the-loop-misses-the-fixation-56hg",
+      "title": "The Check That Catches the Loop Misses the Fixation",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Six times. A small triage helper I run on my laptop listed the same five GitHub issues six times in a...",
+      "author": "AheadKit",
+      "publishedAt": "2026-11-27T07:00:00Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/aheadkit/the-check-that-catches-the-loop-misses-the-fixation-56hg",
+      "titleHash": "02e0439836b67309c80636bb147adae714764bea70f49643f47ddef1f02ccd64",
+      "contentHash": "e9a5600f179bf7c24a1d7c853c78cc340ca1e020b760730c78e316b66993f648",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.8156425798214011,
+        "engagement": 0.4184241683677687
+      },
+      "rank": 3,
+      "reasons": [
+        "真实复盘自动化陷阱，避免同类错误。"
+      ],
+      "overview": "作者分享了一个在笔记本电脑上运行的分诊助手工具，该工具因逻辑缺陷多次重复列出相同问题，文章详细复盘了这一‘循环’故障的发现与修复过程。"
+    },
+    {
+      "url": "https://construct22.com/",
+      "title": "Group chat where your AI talks behind your back",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "utiiiD",
+      "publishedAt": "2026-11-27T06:44:34Z",
+      "engagement": 691,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://construct22.com/",
+      "titleHash": "aee712c716721badda5d803bd292d3025222fb77d774d303ffe7941602c30caa",
+      "contentHash": "aee712c716721badda5d803bd292d3025222fb77d774d303ffe7941602c30caa",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8136253133827329,
+        "engagement": 0.946702031485586
+      },
+      "rank": 4,
+      "reasons": [
+        "新颖社交实验，洞察 AI 行为伦理。"
+      ],
+      "overview": "一款创新的群体聊天应用，其中 AI 代理在后台进行私密交流，模拟人类社交中的‘背后闲谈’现象，引发关于 AI 社会性行为与隐私边界的讨论。"
+    },
+    {
+      "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+      "title": "US Air Force's cloud computing platform hacked",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "freakynit",
+      "publishedAt": "2026-11-27T12:54:11Z",
+      "engagement": 336,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+      "titleHash": "51519da26fe195c5a60460ce351e47f3ed24439fc4800c233530a5e71b6b0c0c",
+      "contentHash": "51519da26fe195c5a60460ce351e47f3ed24439fc4800c233530a5e71b6b0c0c",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8633370951689239,
+        "engagement": 0.8425433002904462
+      },
+      "rank": 5,
+      "reasons": [
+        "重大安全警示，重视云端防御。"
+      ],
+      "overview": "新闻报道美国空军云计算平台遭受黑客攻击，揭示了关键基础设施面临的安全威胁，提醒企业和个人重视云环境配置漏洞及潜在的数据泄露风险。"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://construct22.com/",
+      "title": "Group chat where your AI talks behind your back",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "utiiiD",
+      "publishedAt": "2026-11-27T06:44:34Z",
+      "engagement": 691,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://construct22.com/",
+      "titleHash": "aee712c716721badda5d803bd292d3025222fb77d774d303ffe7941602c30caa",
+      "contentHash": "aee712c716721badda5d803bd292d3025222fb77d774d303ffe7941602c30caa",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8136253133827329,
+        "engagement": 0.946702031485586
+      }
+    },
+    {
+      "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+      "title": "US Air Force's cloud computing platform hacked",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "freakynit",
+      "publishedAt": "2026-11-27T12:54:11Z",
+      "engagement": 336,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+      "titleHash": "51519da26fe195c5a60460ce351e47f3ed24439fc4800c233530a5e71b6b0c0c",
+      "contentHash": "51519da26fe195c5a60460ce351e47f3ed24439fc4800c233530a5e71b6b0c0c",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8633370951689239,
+        "engagement": 0.8425433002904462
+      }
+    },
+    {
+      "url": "https://thesoapbox.email/archive/3",
+      "title": "I'm Scared of AI",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "mgirkins",
+      "publishedAt": "2026-11-27T17:45:31Z",
+      "engagement": 206,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thesoapbox.email/archive/3",
+      "titleHash": "ca60027fe79511a66c05b88dfc3fe0f36c0845c7b739b799202d303c01828324",
+      "contentHash": "ca60027fe79511a66c05b88dfc3fe0f36c0845c7b739b799202d303c01828324",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9046515764573058,
+        "engagement": 0.771990115152306
+      }
+    },
+    {
+      "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+      "title": "AI on brink of making online security useless, mathematicians fear",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;4hRp8\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;4hRp8</a>",
+      "author": "conradqh",
+      "publishedAt": "2026-11-27T11:09:04Z",
+      "engagement": 118,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+      "titleHash": "bbf86f1bcaf226399d112cabd458e7c443dee4875579f4b7c1df301705054121",
+      "contentHash": "0fb585ec89ca9365471214fd2add00b5446eec5fb2cc91b1b9a7b82dce5b4061",
+      "score": 65,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.8488981180355593,
+        "engagement": 0.6918489871308436
+      }
+    },
+    {
+      "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "Tiwariparth6165",
+      "publishedAt": "2026-11-28T01:32:56Z",
+      "engagement": 95,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "titleHash": "1d0610c113ecd2ae02133e734fd78f0731b89b3114563cdebcd1061a64c1a5c0",
+      "contentHash": "1d0610c113ecd2ae02133e734fd78f0731b89b3114563cdebcd1061a64c1a5c0",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9751070106393451,
+        "engagement": 0.6607570776798561
+      }
+    },
+    {
+      "url": "https://github.com/skeeto/prospero",
+      "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ingve",
+      "publishedAt": "2026-11-27T20:23:14Z",
+      "engagement": 43,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/skeeto/prospero",
+      "titleHash": "67cd992d7832b4f2b831b59773d9fe5ae1a1084c2575231b2b362de4b839df22",
+      "contentHash": "67cd992d7832b4f2b831b59773d9fe5ae1a1084c2575231b2b362de4b839df22",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9278365877218324,
+        "engagement": 0.5478175588287292
+      }
+    },
+    {
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+      "title": "Hackers breach US Air Force flagship Cloud One computing platform",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "pseudolus",
+      "publishedAt": "2026-11-27T11:52:53Z",
+      "engagement": 41,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27",
+      "titleHash": "11f6005998be798078349dda6849a22caeb20855b51dacdf3d94251980242d68",
+      "contentHash": "11f6005998be798078349dda6849a22caeb20855b51dacdf3d94251980242d68",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8548872536991016,
+        "engagement": 0.5410830967993002
+      }
+    },
+    {
+      "url": "https://thequantuminsider.com/2026/11/26/stanford-physicist-uses-ai-to-tackle-quantum-gravity-problem/",
+      "title": "Stanford Physicist Uses AI to Tackle Quantum Gravity Problem",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "thunderbong",
+      "publishedAt": "2026-11-27T14:55:57Z",
+      "engagement": 23,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://thequantuminsider.com/2026/11/26/stanford-physicist-uses-ai-to-tackle-quantum-gravity-problem",
+      "titleHash": "343c741c61ac46e083963a5069bc462f411cd301c36c421656186eb25a1f1325",
+      "contentHash": "343c741c61ac46e083963a5069bc462f411cd301c36c421656186eb25a1f1325",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8803704410824591,
+        "engagement": 0.46007041390386866
+      }
+    },
+    {
+      "url": "https://www.seattletimes.com/business/dungeons-dragons-maker-will-pass-ai-settlement-money-to-authors/",
+      "title": "Dungeons and Dragons maker will pass AI settlement money to authors",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "doctorzook",
+      "publishedAt": "2026-11-27T17:05:45Z",
+      "engagement": 21,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.seattletimes.com/business/dungeons-dragons-maker-will-pass-ai-settlement-money-to-authors",
+      "titleHash": "5acabe6089543bb55f9a32b13299b4e189087aba854f209839dc5de0db056ff1",
+      "contentHash": "5acabe6089543bb55f9a32b13299b4e189087aba854f209839dc5de0db056ff1",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8988977407574154,
+        "engagement": 0.4474742269407354
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer",
+      "title": "Pizza history: AI agent's cardless purchase is a first for UK",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "6LLvveMx2koXfwn",
+      "publishedAt": "2026-11-27T11:41:11Z",
+      "engagement": 20,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer",
+      "titleHash": "64e0a19a9336fe2e16de29d866688241f31acd75df1f61e10b45a7840c80701b",
+      "contentHash": "64e0a19a9336fe2e16de29d866688241f31acd75df1f61e10b45a7840c80701b",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8532839018507046,
+        "engagement": 0.44073976491130645
+      }
+    },
+    {
+      "url": "https://blog.terraformindustries.com/2026/11/24/terraform-industries-activates-muroc-desert-test-site/",
+      "title": "Synthetic fuel from sunlight, water and air",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "andsoitis",
+      "publishedAt": "2026-11-27T17:57:29Z",
+      "engagement": 20,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.terraformindustries.com/2026/11/24/terraform-industries-activates-muroc-desert-test-site",
+      "titleHash": "06c1d27426b47f1ff297ae8078116693285ad1d68e423b5dcbbf534c8243fbf9",
+      "contentHash": "06c1d27426b47f1ff297ae8078116693285ad1d68e423b5dcbbf534c8243fbf9",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9063902308213455,
+        "engagement": 0.44073976491130645
+      }
+    },
+    {
+      "url": "https://substack.com/@pancooke/note/c-395539528",
+      "title": "Pan Cooke ( pancooke): \"A comic I wrote about AI art and what we risk to lose.\"",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "teddyh",
+      "publishedAt": "2026-11-27T20:01:33Z",
+      "engagement": 11,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://substack.com/@pancooke/note/c-395539528",
+      "titleHash": "75687e2f62f327cf711934f797d1f82393f78af7aa8c187a7248ad87b1235a79",
+      "contentHash": "75687e2f62f327cf711934f797d1f82393f78af7aa8c187a7248ad87b1235a79",
+      "score": 61,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9246141539884961,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-03875-6",
+      "title": "Has AI just cracked Internet encryption (Nature essay)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "bluenose69",
+      "publishedAt": "2026-11-27T12:05:25Z",
+      "engagement": 9,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.nature.com/articles/d41586-026-03875-6",
+      "titleHash": "b46644dd2154414efb6aa0d0bc0f762132c4ec9453ae468c8ad95aaf0593475b",
+      "contentHash": "b46644dd2154414efb6aa0d0bc0f762132c4ec9453ae468c8ad95aaf0593475b",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8566081445301692,
+        "engagement": 0.3333333333333333
+      }
+    },
+    {
+      "url": "https://www.reuters.com/legal/litigation/airline-norse-atlantics-norwegian-operating-unit-declares-bankruptcy-2026-11-27/",
+      "title": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "theanonymousone",
+      "publishedAt": "2026-11-27T14:17:48Z",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/legal/litigation/airline-norse-atlantics-norwegian-operating-unit-declares-bankruptcy-2026-11-27",
+      "titleHash": "5cf0d28724a4ac3cb225b9eb7383d1a6f5bf840fe06e5f1ae4d95659b265bf94",
+      "contentHash": "5cf0d28724a4ac3cb225b9eb7383d1a6f5bf840fe06e5f1ae4d95659b265bf94",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.8749979787972844,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50672702",
+      "title": "I was hired by an AI agent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "summary": "has anyone else been hired by agents? i had a very pleasant experience as it was a more reasonable client then any of my other commercial clients I have worked with, but my final invoice was paid in 2000 bank transactions of $5!?!",
+      "author": "dev_chad",
+      "publishedAt": "2026-11-27T23:31:19Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://news.ycombinator.com/item?id=50672702",
+      "titleHash": "b8a538cb62e0c46ef9458b4dd0f68a076727316d6025d7d807238ee12988db60",
+      "contentHash": "8e980b253f402f7b4754e2324ef1cf780268c0b647142cd1083b0cf845230e0e",
+      "score": 67,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.7999999999999999,
+        "timeliness": 0.9562637203317562,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.reuters.com/legal/litigation/spanish-airline-plus-ultra-lay-off-entire-workforce-union-says-2026-11-27/",
+      "title": "Spanish airline Plus Ultra to lay off entire workforce, union says",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "frank_clover",
+      "publishedAt": "2026-11-27T18:45:47Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.reuters.com/legal/litigation/spanish-airline-plus-ultra-lay-off-entire-workforce-union-says-2026-11-27",
+      "titleHash": "e8fe8c92713e6e518eb3f6ec5c0770ecafe26418545d88f6f6865caa2f86619b",
+      "contentHash": "e8fe8c92713e6e518eb3f6ec5c0770ecafe26418545d88f6f6865caa2f86619b",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.913441833574263,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-pushes-back-axios-184139218.html",
+      "title": "Anthropic CEO pushes back on Axios reporting on AI and free will",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "cybermango",
+      "publishedAt": "2026-11-27T23:07:02Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-pushes-back-axios-184139218.html",
+      "titleHash": "7cc048061512106868856d951beb0034711c9b0dfeda18bd0edffdb0d766e688",
+      "contentHash": "7cc048061512106868856d951beb0034711c9b0dfeda18bd0edffdb0d766e688",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9525450994514915,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+      "title": "SAP Weighs Cutting at Least 10k Roles in AI Restructure",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "DiabloD3",
+      "publishedAt": "2026-11-27T20:43:03Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+      "titleHash": "b3103326d702aca5449b513aae6b30590c69731be685f0f35237ac82818d83e9",
+      "contentHash": "b3103326d702aca5449b513aae6b30590c69731be685f0f35237ac82818d83e9",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9307914284117198,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://alextheward.com/blog/mozilla_is_now_an_ai_company",
+      "title": "Mozilla is now an AI company (2025)",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ErenayDev",
+      "publishedAt": "2026-11-27T18:29:14Z",
+      "engagement": 6,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://alextheward.com/blog/mozilla_is_now_an_ai_company",
+      "titleHash": "ffd6a977c127baa7aae85223f71900fa9d0f43977104244e14f55aaa93c0af21",
+      "contentHash": "ffd6a977c127baa7aae85223f71900fa9d0f43977104244e14f55aaa93c0af21",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.75,
+        "timeliness": 0.9110194433140998,
+        "engagement": 0.28169934667141894
+      }
+    },
+    {
+      "url": "https://github.com/alesha-pro/llm.asm",
+      "title": "Llm.asm – Pure x86-64 Assembly for LLM Inference and Training",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "codetiger",
+      "publishedAt": "2026-11-28T03:39:41Z",
+      "engagement": 4,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/alesha-pro/llm.asm",
+      "titleHash": "17a03b24b7bd5e2a11c25b067bf3c65d6b5d27dbf82f4fa3001b36049b3a9eb4",
+      "contentHash": "17a03b24b7bd5e2a11c25b067bf3c65d6b5d27dbf82f4fa3001b36049b3a9eb4",
+      "score": 72,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.75,
+        "timeliness": 0.9951409123876798,
+        "engagement": 0.23299000144533963
+      }
+    },
+    {
+      "url": "https://papail.io/papers/wsm/",
+      "title": "Weight-Space Micromachines: Brain Implants for LLMs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "ksec",
+      "publishedAt": "2026-11-27T18:25:02Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://papail.io/papers/wsm",
+      "titleHash": "8c267edce8189a5059da0b637cb6ab4c04d0dd7de8f44b564cb25dfd2d688682",
+      "contentHash": "8c267edce8189a5059da0b637cb6ab4c04d0dd7de8f44b564cb25dfd2d688682",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.910405720419416,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://blog.aperiodic.io/p/quant-reads-weekly-1-llm-trading-costs",
+      "title": "In 75 LLM trading papers, half deduct no trading costs",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "szemy2",
+      "publishedAt": "2026-11-27T17:26:19Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://blog.aperiodic.io/p/quant-reads-weekly-1-llm-trading-costs",
+      "titleHash": "faa2430b79ee31b300fb205a85a1124068f014df670b10272e39e2d18c1651d4",
+      "contentHash": "faa2430b79ee31b300fb205a85a1124068f014df670b10272e39e2d18c1651d4",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.90186894378646,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://github.com/nmayp/carpool",
+      "title": "Carpool – cut LLM costs by batching tasks and compiling repeated calls into code",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "nmayp",
+      "publishedAt": "2026-11-27T13:52:18Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://github.com/nmayp/carpool",
+      "titleHash": "222f9e4856da11e9121c072428b0a21bd2b1208b909781b6612e46f30bd0f19e",
+      "contentHash": "222f9e4856da11e9121c072428b0a21bd2b1208b909781b6612e46f30bd0f19e",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8714252439099849,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2zufRUcZeuc",
+      "title": "Show HN: I ran an LLM written in F# on a Commodore 64 [video]",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "reverseblade2",
+      "publishedAt": "2026-11-27T22:03:30Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.youtube.com/watch?v=2zufRUcZeuc",
+      "titleHash": "18eb68bc19eb27c45d1ac4bf62240fd4a9bf66b91d847b337e2d5747258277d3",
+      "contentHash": "18eb68bc19eb27c45d1ac4bf62240fd4a9bf66b91d847b337e2d5747258277d3",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.942884208258857,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://docs.google.com/document/d/1NlgkmxuXkmBfgBuUdx85rM8FgA6hxcXbRaSWATI95T8/edit?usp=sharing",
+      "title": "LLM-assisted English translation of a 9th-century Syriac liturgical commentary",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "abj908",
+      "publishedAt": "2026-11-27T19:43:16Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://docs.google.com/document/d/1NlgkmxuXkmBfgBuUdx85rM8FgA6hxcXbRaSWATI95T8/edit?usp=sharing",
+      "titleHash": "bf6f33bd6ae1d45fddd1a3ef9b1f67b029f605f231379cf577ccb12ea438210c",
+      "contentHash": "bf6f33bd6ae1d45fddd1a3ef9b1f67b029f605f231379cf577ccb12ea438210c",
+      "score": 64,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9219057018704151,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://indicllms.com",
+      "title": "Indic LLMs Leaderboard: Compare Gemma, Qwen and More on Indian Languages",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "techappsdev",
+      "publishedAt": "2026-11-27T18:27:49Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://indicllms.com/",
+      "titleHash": "bde2c3ac304447c77d5126d15b10434547314b3715e72c17ce5c4fd7383b7291",
+      "contentHash": "bde2c3ac304447c77d5126d15b10434547314b3715e72c17ce5c4fd7383b7291",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9108123873818574,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://costpertoken.vercel.app",
+      "title": "Show HN: CostPerToken – Rank LLM API providers by your monthly bill",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "UkatoSpeaks",
+      "publishedAt": "2026-11-27T18:07:09Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://costpertoken.vercel.app/",
+      "titleHash": "aed6c7949e5b1a3a525c6087a0366089655324a57dbe9e481dd8a63729f61dad",
+      "contentHash": "aed6c7949e5b1a3a525c6087a0366089655324a57dbe9e481dd8a63729f61dad",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.9077971520029546,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.neuron-ai.dev/blog/why-i-built-iq-stream/",
+      "title": "I Built IQ-Stream: Streaming LLM Tokens to the Browser Without the Workarounds",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "author": "valerione",
+      "publishedAt": "2026-11-27T15:10:35Z",
+      "engagement": 2,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.neuron-ai.dev/blog/why-i-built-iq-stream",
+      "titleHash": "c793f4582b9622768144017b199cc95f5cb4b7a871426c6e8991013eebf65d6c",
+      "contentHash": "c793f4582b9622768144017b199cc95f5cb4b7a871426c6e8991013eebf65d6c",
+      "score": 63,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.75,
+        "timeliness": 0.8824399146468745,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://www.draketo.de/software/curb-ai-impact",
+      "title": "Curb impacts of AI on programming to maintain EU sovereignty",
+      "source": "lobsters",
+      "sourceName": "Lobste.rs",
+      "author": "aggsol",
+      "publishedAt": "2026-11-27T01:00:03.110-06:00",
+      "engagement": 8,
+      "tags": [
+        "ai",
+        "tech-news"
+      ],
+      "normalizedUrl": "https://www.draketo.de/software/curb-ai-impact",
+      "titleHash": "9517da47eca100ec41f8fe0a78820fb6e94a80a450c8a086ca8c0e29d0a1d33f",
+      "contentHash": "9517da47eca100ec41f8fe0a78820fb6e94a80a450c8a086ca8c0e29d0a1d33f",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.8,
+        "timeliness": 0.815649363301394,
+        "engagement": 0.318080836479775
+      }
+    },
+    {
+      "url": "https://dev.to/cloudwerx/how-i-built-my-own-os-942",
+      "title": "How I built my own OS",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I run my own operating system now. Not a fork with a new wallpaper and a different logo in the...",
+      "author": "CLOUDWERX LAB",
+      "publishedAt": "2026-11-27T09:12:07Z",
+      "engagement": 42,
+      "tags": [
+        "ai",
+        "linux",
+        "programming",
+        "opensource",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/cloudwerx/how-i-built-my-own-os-942",
+      "titleHash": "d523a10afeb2c031d17b003f83f2330727a716283b96c1d19327e91093cb48c9",
+      "contentHash": "7fb0604b08861249f20a884abbf1908b3591614a2e8b2e0b0a6bfabacfd9d6f1",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.8331173099469603,
+        "engagement": 0.5444894851931955
+      }
+    },
+    {
+      "url": "https://dev.to/aws/can-your-agent-review-your-cloud-architecture-4coh",
+      "title": "Can Your Agent Review Your Cloud Architecture?",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "A Well-Architected review used to be a multi-day effort when I was a solutions architect. The Agent Toolkit for AWS ships a real Well-Architected skill that reads your code, pulls the live framework from AWS docs, and produces an evidence-backed report. Here's what it does, where it helps, and where it still needs you.",
+      "author": "Rohini Gaonkar",
+      "publishedAt": "2026-11-25T20:32:18Z",
+      "engagement": 23,
+      "tags": [
+        "aws",
+        "ai",
+        "architecture",
+        "security",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/aws/can-your-agent-review-your-cloud-architecture-4coh",
+      "titleHash": "da16e950f364fee13544da9cf724aeb42e8d08f5ed7e64e17a18457ddcd07b7a",
+      "contentHash": "e8553966a06d900f212a9fc49d3305999dc52764fd3357ed6a24cbbd328ad4e3",
+      "score": 58,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.5853513450376003,
+        "engagement": 0.46007041390386866
+      }
+    },
+    {
+      "url": "https://dev.to/ndcodes/part-7-what-reading-the-code-could-never-find-8c1",
+      "title": "Part 7: What Reading the Code Could Never Find",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "This is the last part of a series on building an HL7 v2-to-FHIR R4 interoperability service in...",
+      "author": "Nnamdi Felix Ibe",
+      "publishedAt": "2026-11-25T06:38:30Z",
+      "engagement": 25,
+      "tags": [
+        "discuss",
+        "ai",
+        "programming",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/ndcodes/part-7-what-reading-the-code-could-never-find-8c1",
+      "titleHash": "220e2d48aebe0d45b464348ad282203b45fa178842a7f4b4d8509c7ad8d74b46",
+      "contentHash": "a588de97a555ef4b5b786adc762b3ac78130098caad0f36c45ed7ed93c7d0f3e",
+      "score": 50,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.6,
+        "timeliness": 0.512053152373266,
+        "engagement": 0.4716577826569393
+      }
+    },
+    {
+      "url": "https://dev.to/gde/thinking-on-constrained-deployments-gemma-e4b-on-4gb-1650-2cc6",
+      "title": "Thinking on Constrained Deployments: Gemma E4B on 4GB 1650",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Gemma 4 E4B fits a 4 GB laptop card and answers like an 8 GB desktop card in 15 of 16 settings, at 1.59 times the time. The drafter nearly doubles its speed; thinking doubles its time.",
+      "author": "xbill",
+      "publishedAt": "2026-11-27T16:16:35Z",
+      "engagement": 11,
+      "tags": [
+        "gemma",
+        "llm",
+        "benchmark",
+        "ai",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/gde/thinking-on-constrained-deployments-gemma-e4b-on-4gb-1650-2cc6",
+      "titleHash": "0e565c205e09c4c4d2a9e8862fc0aa816f26b28494928740d20ff0ba2e5edb13",
+      "contentHash": "558afa42eea2d731bf693256e3b9ed159b241be531f1b321a72f4d81e99c166a",
+      "score": 62,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.6,
+        "timeliness": 0.8918343862432662,
+        "engagement": 0.35972708201587494
+      }
+    },
+    {
+      "url": "https://dev.to/aheadkit/the-check-that-catches-the-loop-misses-the-fixation-56hg",
+      "title": "The Check That Catches the Loop Misses the Fixation",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "Six times. A small triage helper I run on my laptop listed the same five GitHub issues six times in a...",
+      "author": "AheadKit",
+      "publishedAt": "2026-11-27T07:00:00Z",
+      "engagement": 17,
+      "tags": [
+        "ai",
+        "agents",
+        "llm",
+        "testing",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/aheadkit/the-check-that-catches-the-loop-misses-the-fixation-56hg",
+      "titleHash": "02e0439836b67309c80636bb147adae714764bea70f49643f47ddef1f02ccd64",
+      "contentHash": "e9a5600f179bf7c24a1d7c853c78cc340ca1e020b760730c78e316b66993f648",
+      "score": 68,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.8156425798214011,
+        "engagement": 0.4184241683677687
+      }
+    },
+    {
+      "url": "https://dev.to/p0rt/two-llms-can-trade-a-fact-with-one-rotation-where-they-look-most-alike-they-almost-never-do-43e7",
+      "title": "Two LLMs Can Trade a Fact With One Rotation. Where They Look Most Alike, They Almost Never Do",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "One rotation and no training: in 303 of 895 swaps, a small LLM gave another model's answer. Where the two looked most alike, 15 did.",
+      "author": "Sergei Parfenov",
+      "publishedAt": "2026-11-27T14:32:24Z",
+      "engagement": 3,
+      "tags": [
+        "ai",
+        "llm",
+        "machinelearning",
+        "deeplearning",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/p0rt/two-llms-can-trade-a-fact-with-one-rotation-where-they-look-most-alike-they-almost-never-do-43e7",
+      "titleHash": "14daf8d6291ad9f76b1d0ee688b8de3afd2a0d3c2ebcd920ccb6051305623669",
+      "contentHash": "a516bcd852b7c13388bf8574e95b371b6d7ca6f5ceabe5591dd618dcd43f52af",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.75,
+        "authority": 0.6,
+        "timeliness": 0.8770501349502127,
+        "engagement": 0.20068666377598746
+      }
+    },
+    {
+      "url": "https://dev.to/himanshu_748/build-an-n8n-ai-agent-with-gmi-clouds-community-node-30m6",
+      "title": "Build an n8n AI Agent with GMI Cloud's community node",
+      "source": "devto",
+      "sourceName": "Dev.to",
+      "summary": "I wanted an n8n AI Agent that talks to GMI Cloud without me pasting a custom OpenAI base URL into the...",
+      "author": "Himanshu Kumar",
+      "publishedAt": "2026-11-27T15:47:15Z",
+      "engagement": 2,
+      "tags": [
+        "n8n",
+        "ai",
+        "llm",
+        "tutorial",
+        "dev"
+      ],
+      "normalizedUrl": "https://dev.to/himanshu_748/build-an-n8n-ai-agent-with-gmi-clouds-community-node-30m6",
+      "titleHash": "3017950802ca23b1497a1520addf3247e1bc7b1118916163b20d508c42083a51",
+      "contentHash": "e04fac106129ffe4ef7da3d4fa0e63cac1c8e69747bfe67ed4c58cc3574df81a",
+      "score": 71,
+      "breakdown": {
+        "relevance": 0.8999999999999999,
+        "authority": 0.6,
+        "timeliness": 0.8876467810433382,
+        "engagement": 0.1590404182398875
+      }
+    },
+    {
+      "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "title": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 289 likes · 24931 downloads",
+      "engagement": 289,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "titleHash": "3ec8645a8367ebf0c9e4c6414507197e51e88f00238d540647c538ff9657a0e4",
+      "contentHash": "c92e5f0ed3095c46d99f785d16976064da778515d0b83e9329e3783e113ecbc4",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8207993326329853
+      }
+    },
+    {
+      "url": "https://huggingface.co/kandinskylab/Kandinsky-ImageSR-2.0",
+      "title": "kandinskylab/Kandinsky-ImageSR-2.0",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-to-image · 198 likes · 582 downloads",
+      "engagement": 198,
+      "tags": [
+        "model",
+        "image-to-image"
+      ],
+      "normalizedUrl": "https://huggingface.co/kandinskylab/Kandinsky-ImageSR-2.0",
+      "titleHash": "97edb3b2ed8a9408bacb5e045735601409eab0ea5111a7edf51fc29b3e56176d",
+      "contentHash": "2dcecce21e9996c26beaf9332727bbe97008a444bc1ad8f4e69ce566b5de834a",
+      "score": 59,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.7662843588032356
+      }
+    },
+    {
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "title": "baidu/ERNIE-5.5-Flash-Preview",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "text-generation · 393 likes · 2609 downloads",
+      "engagement": 393,
+      "tags": [
+        "model",
+        "text-generation"
+      ],
+      "normalizedUrl": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "titleHash": "c36bb5d94edb0e054171320e7991a12443fe36e82656d66d5c821466d55aa364",
+      "contentHash": "1100011da693fdafe2b209c3f48593b304c28c9dc88ecee318de2a7de9ec848c",
+      "score": 66,
+      "breakdown": {
+        "relevance": 0.6,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.8651654072751914
+      }
+    },
+    {
+      "url": "https://huggingface.co/Lakonik/pi-H3",
+      "title": "Lakonik/pi-H3",
+      "source": "huggingface",
+      "sourceName": "Hugging Face",
+      "summary": "image-text-to-video · 369 likes · 97525 downloads",
+      "engagement": 369,
+      "tags": [
+        "model",
+        "image-text-to-video"
+      ],
+      "normalizedUrl": "https://huggingface.co/Lakonik/pi-H3",
+      "titleHash": "8229ef498a5619495d29fed9687768bae7bb7ceaf53f24f7e764d3f1a7fe8c5c",
+      "contentHash": "2feb339c8d7e994310f2b17c83a156c15de2d31b7647a8b462bb6c3240c08ef0",
+      "score": 60,
+      "breakdown": {
+        "relevance": 0.44999999999999996,
+        "authority": 0.85,
+        "timeliness": 0.4,
+        "engagement": 0.856067241355665
+      }
+    }
+  ]
+}
